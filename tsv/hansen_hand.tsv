@@ -246,7 +246,7 @@ is called the Linear Projection Coefficient	称为线性投影系数
 and dividing by 2 , this equation takes the form	并除以 2 ，这个方程的形式为
 We now have an explicit expression for the best linear predictor:	我们现在有一个最优线性预测器的显式表达式：
 This completes the derivation of the model	这样就完成了模型的推导
-We summarize some of the most important properties	我们总结了一些最重要的属性
+We summarize some of the most important properties	我们总结了一些最重要的特征
 Theorem 2.9 Properties of Linear Projection Model	定理 2.9 线性投影模型的性质
 It is useful to reflect on the generality of Theorem 2.9	反思定理 2.9 的一般性是有帮助的
 Invertibility and Identification	可逆性和识别
@@ -303,7 +303,7 @@ Galton noticed another interesting feature of the bivariate distribution	高尔�
 This is sometimes called the reverse regression	这有时被称为逆回归
 While this algebraic discovery is quite simple, it is counter-intuitive	虽然这个代数发现非常简单，但它是反直觉的
 Instead, (2.50) is a valid projection, not (2.51)	相反，(2.50) 是有效的投影，而 (2.51)不是有效的
-It is not a causal relation, but a natural feature of joint distributions	它不是因果关系，而是联合分布的自然属性
+It is not a causal relation, but a natural feature of joint distributions	它不是因果关系，而是联合分布的自然特征
 Limitations of the Best Linear Projection	最优线性投影的局限性
 Let's compare the linear projection and linear CEF models	让我们比较一下线性投影和线性 CEF 模型
 Furthermore, the linear projection may be a poor approximation to the CEF	此外，线性投影可能不是 CEF 的近似值
@@ -348,7 +348,7 @@ This means the CEF has causal economic meaning, giving strong justification to e
 It is important to understand the critical role of the CIA	了解条件独立假设的关键作用是很重要的
 In the wage/education example it means that education is not selected by individuals based on their unobserved characteristics	在工资/教育示例中，这意味着个体不会根据他们未观察到的特征来选择教育
 It follows that educational attainment and type are independent once we condition on the test score	因此，一旦我们以考试成绩为条件，教育程度和类型是独立的
-This means that college attendence is independent of type, conditional on the aptitude test score	这意味着大学入学率与类型无关，取决于能力倾向测试分数
+This means that college attendence is independent of type, conditional on the aptitude test score	这意味着大学入学率与类型无关，取决于能力倾向检验分数
 The conditional ACE depends on the test score	条件 ACE 取决于考试成绩
 Define a dummy highscore to indicate students who received a high test score	定义一个虚拟变量 highscore 来表示获得高分的学生
 To summarize our findings, we have shown how it is possible that a simple regression will give a false measurement of a causal effect, but a more careful regression can reveal the true causal effect	为了总结我们的发现，我们已经展示了一个简单的回归如何可能对因果效应进行错误的测度，但一个更细致的回归也可以揭示真正的因果效应
@@ -451,7 +451,7 @@ This is a property of a projection matrix	这是投影矩阵的性质
 For the general properties of projection matrices see Section A.11	有关投影矩阵的一般性质，请参见第 A.11 节
 Note that in this case	请注意，在这种情况下
 We close this section by proving the claims in Theorem 3.3	我们通过证明定理 3.3 中的观点来结束本节
-See Appendix A.5 for definition and properties of the trace operator	迹算子的定义和属性见附录 A.5
+See Appendix A.5 for definition and properties of the trace operator	迹算子的定义和特征见附录 A.5
 Appendix A.11 shows that part 4 holds for any idempotent matrix	附录 A.11 表明第 4 部分适用于任何幂等矩阵
 Annihilator Matrix	零矩阵
 We can also use (3.23) to write an alternative expression for the residual vector	我们还可以使用 (3.23) 为残差向量写一个替代表达式
@@ -485,7 +485,7 @@ Frisch-Waugh-Lovell Theorem, including formalizing consumer theory	Frisch-Waugh-
 business cycle theory	商业周期理论
 Leverage Values	杠杆价值
 They appear frequently in the algebraic and statistical analysis of least squares regression, including leave-one-out regression, influential observations, robust covariance matrix estimation, and cross-validation	它们经常出现在最小二乘回归的代数和统计分析中，包括留一法回归、有影响观测、稳健协方差矩阵估计和交叉验证
-A few properties of the leverage values are now listed	现在列出了杠杆值的一些属性
+A few properties of the leverage values are now listed	现在列出了杠杆值的一些特征
 It is common to say that a regression design is balanced when the leverage values are all roughly equal to one another	通常说，当杠杆值都大致相等时，回归设计是平衡的
 An example of complete balance is when the regressors are all orthogonal dummy variables, each of which have equal occurrance of 0's and 1's	完全平衡的一个例子是，当回归变量都是正交虚拟变量时，每个变量都有相同的 0 和 1 出现
 A regression design is unbalanced if some leverage values are highly unequal from the others	如果某些杠杆值与其他杠杆值高度不相等，则回归设计是不平衡的
@@ -555,10 +555,10 @@ There are similarities and differences between the commands used in these packag
 Stata and R use a hard return	Stata 和 R 使用硬回馈
 The advantage of using built-in functions is that coding is simplified and you are much less likely to make a coding error	使用内置函数的好处是简化了编码，并且你不太可能出现编码错误
 Least Squares Regression	最小二乘回归
-In this chapter we investigate some finite-sample properties of the least squares estimator in the linear regression model	在本章中，我们研究线性回归模型中最小二乘估计量的一些有限样本属性
+In this chapter we investigate some finite-sample properties of the least squares estimator in the linear regression model	在本章中，我们研究线性回归模型中最小二乘估计量的一些有限样本特征
 In particular we calculate its finite-sample expectation and covariance matrix and propose standard errors for the coefficient estimators	特别是，我们计算其有限样本期望和协方差矩阵，并提出系数估计量的标准误差
 Random Sampling	随机抽样
-To derive the finitesample properties of the estimators we will need to additionally specify the dependence structure across the observations	为了导出估计量的有限样本属性，我们需要另外指定观测值之间的依赖结构
+To derive the finitesample properties of the estimators we will need to additionally specify the dependence structure across the observations	为了导出估计量的有限样本特征，我们需要另外指定观测值之间的依赖结构
 The simplest context is when the observations are mutually independent in which case we say that they are independent and identically distributed or i.i.d	最简单的情况是观测值相互独立，在这种情况下，我们说它们是独立同分布的或独立同分布的
 That is, if you randomly sample 1000 people from a large country such as the United States it seems reasonable to model their responses as mutually independent	也就是说，如果你从美国等大国随机抽取 1000 人样本，那么将他们的回答建模为相互独立似乎是合理的
 This assumption may be violated if individuals in the sample are connected in some way, for example if they are neighbors, members of the same village, classmates at a school, or even firms within a specific industry	如果样本中的个体以某种方式存在联系，例如，如果他们是邻居、同村成员、学校同学，甚至是特定行业内的公司，则可能会违反这一假设
@@ -691,7 +691,7 @@ Thus the more "collinear" are the regressors the worse the precision of the indi
 As a consequence the precision of individual estimates are reduced	结果，个体估计的精确度降低了
 Many early-generation textbooks overemphasized multicollinearity	许多早期教科书过分强调多重共线性
 Among the witty remarks of his chapter are the following	他的章节中有以下诙谐的言论
-Tests for the presence of micronumerosity require the judicious use of various fingers	测试是否存在微数缺测性需要机智地使用各种手法
+Tests for the presence of micronumerosity require the judicious use of various fingers	检验是否存在微数缺测性需要机智地使用各种手法
 Some researchers prefer a single finger, others use their toes, still others let their thumbs rule	一些研究人员更喜欢用一根手指，另一些人则用脚趾，还有一些人则用拇指
 A generally reliable guide may be obtained by counting the number of observations	通过计算观测结果的数量可以获得普遍可靠的指导
 Small sample sizes have the exact same implication	小样本量也具有完全相同的含义
@@ -701,79 +701,79 @@ It might be easiest to understand the idea of clusters by considering a concrete
 An extract of their data set is available on the textbook webpage in the file DDK2011	他们的数据集的摘录可以在教科书网页上的文件 DDK2011 中找到
 In 2005, 140 primary schools in Kenya received funding to hire an extra first grade teacher to reduce class sizes	2005年，肯尼亚140所小学获得资金聘请额外的一年级教师以缩小班级规模
 For their analysis the authors restricted attention to the 121 schools which initially had a single first-grade class	在他们的分析中，作者将注意力集中在最初只有一个一年级班级的 121 所学校
-and using cluster notation as	并使用群组符号作为
+and using cluster notation as	并使用群组符号记为
 The standard clustering assumption is that the clusters are known to the researcher and that the observations are independent across clusters	标准的群组假设是研究人员已知群组并且观测结果在群组之间是独立的
 In our example clusters are schools	在我们的示例中，群组是学校
 This is the same as assuming that the individual errors are conditionally mean zero	这与假设各个误差有条件均值为零相同
 In the regression (4.46) the conditional expectation is necessarily linear and satisfies (4.50) since the	在回归（4.46）中，条件期望必然是线性的并且满足（4.50），因为
 Given (4.50) we can calculate the expectation of the OLS estimator	给定 (4.50)，我们可以计算 OLS 估计量的期望
-The first equality holds by linearity, the second by Assumption 4.4, and the third by (4.50)	第一个等式由线性成立，第二个等式由假设 4.4 成立，第三个等式由 (4.50) 成立
+The first equality holds by linearity, the second by Assumption 4.4, and the third by (4.50)	第一个等式确保线性性成立，第二个等式依据假设 4.4 成立，第三个等式依据 (4.50) 成立
 This shows that OLS is unbiased under clustering if the conditional expectation is linear	这表明，如果条件期望是线性的，则 OLS 在群组下是无偏的
 This differs from the formula in the independent case due to the correlation between observations within clusters	由于群组内观测值之间的相关性，这与独立情况下的公式不同
 This is a substantial difference and should not be neglected	这是一个巨大的差异，不应被忽视
 Arellano (1987) proposed a cluster-robust covariance matrix estimator which is an extension of the White estimator	Arellano (1987) 提出了一种群组稳健协方差矩阵估计量，它是 White 估计量的扩展
-Given the expressions (4.51)-(4.52) a natural cluster covariance matrix estimator takes the form	给定表达式 (4.51)-(4.52)，自然群组协方差矩阵估计量采用以下形式
+Given the expressions (4.51)-(4.52) a natural cluster covariance matrix estimator takes the form	给定表达式 (4.51)-(4.52)，群组协方差矩阵的一个自然估计量采用以下形式
 We then have the robust covariance matrix estimator	然后我们就有了稳健的协方差矩阵估计量
 The label "CR" refers to "cluster-robust" and "CR3" refers to the analogous formula for the HC3 estimator	标签“CR”是指“群组稳健性”，“CR3”是指 HC3 估计量的类似公式
 This covariance matrix estimator is more cumbersome to implement, however, as the cluster-level prediction errors (4.57) cannot be calculated in a simple linear operation and requires a loop across clusters to calculate	然而，这种协方差矩阵估计量实现起来比较麻烦，因为群组级预测误差 (4.57) 无法通过简单的线性运算来计算，并且需要跨群组的循环来计算
-To illustrate in the context of the Kenyan schooling example we present the regression of student test scores on the school-level tracking dummy with two standard errors displayed	为了在肯尼亚学校教育示例的背景下进行说明，我们在学校级别的跟踪虚拟模型上展示了学生测试成绩的回归，并显示了两个标准误差
+To illustrate in the context of the Kenyan schooling example we present the regression of student test scores on the school-level tracking dummy with two standard errors displayed	为了在肯尼亚学校教育示例的背景下进行阐述，我们在学校级别的跟踪虚拟变量模型上展示了学生检验成绩的回归，并显示了两个标准误差
 The second [in square brackets] is the clustered standard error (4.55)-(4.56) where clustering is at the level of the school	第二个[方括号中]是群组标准误差 (4.55)-(4.56)，其中群组处于学校级别
 We can see that the cluster-robust standard errors are roughly three times the conventional robust standard errors	我们可以看到，群组稳健标准误大约是传统稳健标准误的三倍
 Consequently, confidence intervals for the coefficients are greatly affected by the choice	因此，系数的置信区间很大程度上受到选择的影响
 For illustration, we list here the commands needed to produce the regression results with clustered standard errors in Stata, R, and MATLAB	为了便于说明，我们在此列出了在 Stata、R 和 MATLAB 中生成具有群组标准误差的回归结果所需的命令
 You can see that clustered standard errors are simple to calculate in Stata	你可以看到，在 Stata 中计算群组标准误差很简单
-Here we see that programming clustered standard errors in MATLAB is less convenient than the other packages but still can be executed with just a few lines of code	在这里我们看到，在 MATLAB 中编程群组标准误差不如其他包方便，但仍然只需几行代码即可执行
+Here we see that programming clustered standard errors in MATLAB is less convenient than the other packages but still can be executed with just a few lines of code	在这里我们看到，在 MATLAB 中编程群组标准误差不如其他语言包方便，但仍然只需几行代码即可执行
 Application of these commands requires care and attention	这些命令的应用需要小心和注意
 Inference with Clustered Samples	使用群组样本进行推断
 In this section we give some cautionary remarks and general advice about cluster-robust inference in econometric practice	在本节中，我们对计量经济学实践中的群组稳健推断给出一些警告性评论和一般性建议
 There has been remarkably little theoretical research about the properties of cluster-robust methods - until quite recently - so these remarks may become dated rather quickly	直到最近，关于群组稳健性方法的特性的理论研究还非常少，因此这些言论可能很快就会过时
-In many respects cluster-robust inference should be viewed similarly to heteroskedaticity-robust inference where a "cluster" in the cluster-robust case is interpreted similarly to an "observation" in the heteroskedasticity-robust case	在许多方面，群组稳健推断应该被视为类似于异方差稳健推断，其中群组稳健情况中的“群组”被解释为类似于异方差稳健情况中的“观测”
+In many respects cluster-robust inference should be viewed similarly to heteroskedaticity-robust inference where a "cluster" in the cluster-robust case is interpreted similarly to an "observation" in the heteroskedasticity-robust case	在许多方面，群组稳健推断应该被视为类似于异方差稳健推断，其中群组稳健情形下的“群组”被解释为类似于异方差稳健情况中的“观测”
 Furthermore, most cluster-robust theory (for example, the work of Chris Hansen (2007)) assumes that the clusters are homogeneous including the assumption that the cluster sizes are all identical	此外，大多数群组稳健性理论（例如 Chris Hansen (2007) 的工作）都假设群组是同质的，包括群组大小都相同的假设
 When clusters are heterogeneous then cluster-robust inference is similar to heteroskedasticity-robust inference with highly heteroskedastic observations	当群组异质时，群组稳健推断类似于具有高度异方差观测的异方差稳健推断
 Thus when you read empirical papers with individual-level data but clustered at the "state" level you should be cautious and recognize that this is equivalent to inference with a small number of extremely heterogeneous observations	因此，当你阅读包含个体级别数据但聚集在“状态”级别的实证论文时，你应该谨慎并认识到这相当于使用少量极其异质的观测进行推断
-A further complication occurs when we are interested in treatment as in the tracking example given in the previous section	当我们对治疗感兴趣时，会出现进一步的并发症，如上一节给出的跟踪示例中所示
+A further complication occurs when we are interested in treatment as in the tracking example given in the previous section	当我们对处置感兴趣时，会出现进一步的难题，如上一节给出的跟踪示例中所示
 In general, reported standard errors will greatly understate the imprecision of parameter estimates	一般来说，报告的标准误差会大大低估参数估计的不精确性
-At What Level to Cluster?	在什么级别进行群组？
-A practical question which arises in the context of cluster-robust inference is "At what level should we cluster?" In some examples you could cluster at a very fine level, such as families or classrooms, or at higher levels of aggregation, such as neighborhoods, schools, towns, counties, or states	在群组稳健推断的背景下出现的一个实际问题是“我们应该在什么级别进行群组？”在某些示例中，你可以在非常精细的级别（例如家庭或教室）进行聚类，或者在更高的群组级别（例如社区、学校、城镇、县或州）进行聚类
-First, suppose cluster dependence is ignored or imposed at too fine a level (e.g. clustering by households instead of villages)	首先，假设群组依赖性被忽略或施加得太细（例如，按家庭而不是村庄进行群组）
-As correlation is typically positive, this suggests that standard errors will be too small giving rise to spurious indications of significance and precision	由于相关性通常为正，这表明标准误差将太小，从而导致显着性和精度的虚假指示
-Second, suppose cluster dependence is imposed at too aggregate a measure (e.g. clustering by states rather than villages)	其次，假设群组依赖性被强加在过于聚合的措施上（例如，按州而不是村庄进行群组）
+At What Level to Cluster?	在什么级别进行聚类？
+A practical question which arises in the context of cluster-robust inference is "At what level should we cluster?" In some examples you could cluster at a very fine level, such as families or classrooms, or at higher levels of aggregation, such as neighborhoods, schools, towns, counties, or states	在群组稳健推断的背景下出现的一个实际问题是“我们应该在什么级别进行聚类？”在某些示例中，你可以在非常精细的级别（例如家庭或教室）进行聚类，或者在更高的群组级别（例如社区、学校、城镇、县或州）进行聚类
+First, suppose cluster dependence is ignored or imposed at too fine a level (e.g. clustering by households instead of villages)	首先，假设群组依赖性被忽略或施加得太细（例如，按家庭而不是村庄进行聚类）
+As correlation is typically positive, this suggests that standard errors will be too small giving rise to spurious indications of significance and precision	由于相关性通常为正，这表明标准误差将太小，从而导致显著性和精度的虚假呈现
+Second, suppose cluster dependence is imposed at too aggregate a measure (e.g. clustering by states rather than villages)	其次，假设群组依赖性被强加在过于聚合的操作上（例如，按州而不是村庄进行聚类）
 This means that reported standard errors will be imprecise - more random - than if clustering had been less aggregate	这意味着，与群组聚合程度较低相比，报告的标准误差将不精确，更加随机
-These considerations show that there is a trade-off between bias and variance in the estimation of the covariance matrix by cluster-robust methods	这些考虑表明，在通过群组稳健性方法估计协方差矩阵时，在偏误和方差之间存在权衡
+These considerations show that there is a trade-off between bias and variance in the estimation of the covariance matrix by cluster-robust methods	这些考虑表明，在通过群组稳健性方法估计协方差矩阵时，在偏误和方差之间存在权衡关系
 In reality it is likely that both factors are present	事实上，这两个因素很可能都存在
-In any event a researcher should be aware of the number of clusters used in the reported calculations and should treat the number of clusters as the effective sample size for assessing inference	无论如何，研究人员应了解报告计算中使用的群组数量，并应将群组数量视为评估推论的有效样本量
-To illustrate the thought experiment consider the empirical example of Duflo, Dupas, and Kremer (2011)	为了说明思想实验，请考虑 Duflo、Dupas 和 Kremer (2011) 的实证例子
+In any event a researcher should be aware of the number of clusters used in the reported calculations and should treat the number of clusters as the effective sample size for assessing inference	无论如何，研究人员应了解报告计算中使用的群组数量，并应将群组数量视为评估推断的有效样本量
+To illustrate the thought experiment consider the empirical example of Duflo, Dupas, and Kremer (2011)	为了说明这个思想实验，请考虑 Duflo、Dupas 和 Kremer (2011) 的实证例子
 In this particular example clustering at the school level (as done by the authors) is indeed the prudent choice	在这个特定的例子中，学校层面的聚类（正如作者所做的那样）确实是谨慎的选择
 Our approach is to calculate the Cramér-Rao bound for a carefully crafted parametric model	我们的方法是计算精心设计的参数模型的 Cramér-Rao 界限
-This is based on an insight of Newey (1990, Appendix B) for the simpler context of a population expectation	这是基于 Newey（1990，附录 B）对人口预期的更简单背景的见解
+This is based on an insight of Newey (1990, Appendix B) for the simpler context of a population expectation	这是基于 Newey（1990，附录 B）对总体预期更简化的见解
 This assumption can be avoided through use of the Radon-Nikodym derivative	通过使用 Radon-Nikodym 导数可以避免这种假设
-Define the auxiliary joint density function	定义辅助关节密度函数
+Define the auxiliary joint density function	定义辅助联合密度函数
 The bound (4.61) implies	界限 (4.61) 意味着
 where the second inequality is (4.62)	其中第二个不等式是 (4.62)
 This is the variance lower bound	这是方差下界
 Normal Regression	正态回归
 This chapter introduces the normal regression model, which is a special case of the linear regression model	本章介绍正态回归模型，它是线性回归模型的特例
-It also provides a baseline for comparison with alternative inference methods, such as asymptotic approximations and the bootstrap	它还提供了与渐近近似和自举等替代推断方法进行比较的基线
+It also provides a baseline for comparison with alternative inference methods, such as asymptotic approximations and the bootstrap	它还提供了与渐近近似和自助法等替代推断方法进行比较的基础
 The normal regression model is a fully parametric setting where maximum likelihood estimation is appropriate	正态回归模型是一个完全参数化的设置，其中极大似然估计是合适的
 The method of maximum likelihood is a powerful statistical method for parametric models (such as the normal regression model) and is widely used in econometric practice	极大似然法是参数模型（如正态回归模型）的一种强大的统计方法，广泛应用于计量经济学实践中
-We start the chapter with a review of the definition and properties of the normal distribution	本章首先回顾正态分布的定义和属性
+We start the chapter with a review of the definition and properties of the normal distribution	本章首先回顾正态分布的定义和特征
 For detail and mathematical proofs see Chapter 5 of Probability and Statistics for Economists	有关详细信息和数学证明，请参阅《经济学家的概率与统计》第五章
 The Normal Distribution	正态分布
 Figure 5.1: Standard Normal Density and Distribution	图 5.1：标准正态密度和分布
 For convenience, we list the appropriate commands in MATLAB, R, and Stata to compute the cumulative distribution function of commonly used statistical distributions	为了方便起见，我们列出了 MATLAB、R 和 Stata 中的相应命令来计算常用统计分布的累积分布函数
 Here we list the appropriate commands to compute the inverse probabilities (quantiles) of the same distributions	这里我们列出了计算相同分布的逆概率（分位数）的适当命令
 Multivariate Normal Distribution	多元正态分布
-An important property of normal random vectors is that affine functions are multivariate normal	正态随机向量的一个重要属性是仿射函数是多元正态的
-Another useful property of the multivariate normal distribution is that uncorrelatedness is the same as independence	多元正态分布的另一个有用的属性是不相关性与独立性相同
+An important property of normal random vectors is that affine functions are multivariate normal	正态随机向量的一个重要特征是仿射函数是多元正态的
+Another useful property of the multivariate normal distribution is that uncorrelatedness is the same as independence	多元正态分布的另一个有用的特征是不相关性与独立性等价
 That is, if a vector is multivariate normal, subsets of variables are independent if and only if they are uncorrelated	也就是说，如果向量是多元正态向量，则变量子集当且仅当它们不相关时才是独立的
 Theorem 5.3 Properties of the Multivariate Normal Distribution	定理 5.3 多元正态分布的性质
 Joint Normality and Linear Regression	联合正态性和线性回归
-which are properties of a homoskedastic linear CEF	这是同方差线性 CEF 的属性
+which are properties of a homoskedastic linear CEF	这是同方差线性 CEF 的特征
 This result can also be deduced from Theorem 5.3.7	这个结果也可以从定理5.3.7推导出来
-This is a classical motivation for the linear regression model	这是线性回归模型的经典动机
+This is a classical motivation for the linear regression model	这是线性回归模型的一个经典缘由
 Normal Regression Model	正态回归模型
 The normal regression model is the linear regression model with an independent normal error	正态回归模型是具有独立正态误差的线性回归模型
-Normal regression is a parametric model where likelihood methods can be used for estimation, testing, and distribution theory	正态回归是一种参数模型，其中似然法可用于估计、测试和分布理论
+Normal regression is a parametric model where likelihood methods can be used for estimation, testing, and distribution theory	正态回归是一种参数模型，其中似然法可用于估计、检验和分布理论
 Let us now derive the likelihood of the normal regression model	现在让我们推导正态回归模型的似然度
 This is called the likelihood function when evaluated at the sample data	当对样本数据进行评估时，这称为似然函数
 For convenience it is typical to work with the natural logarithm	为了方便起见，通常使用自然对数
@@ -782,9 +782,9 @@ In most applications of maximum likelihood the MLE must be found by numerical me
 The first FOC (5.4) is proportional to the first-order conditions for the least squares minimization problem of Section 3.6	第一个 FOC (5.4) 与第 3.6 节的最小二乘最小化问题的一阶条件成比例
 Plugging the estimators into (5.2) we obtain the maximized log-likelihood	将估计量代入 (5.2)，我们获得最大对数似然
 The log-likelihood is typically reported as a measure of fit	对数似然通常被报告为拟合度的度量
-In this sense it is not surprising that the least squares estimator can be motivated as either the minimizer of a sample loss function or as the maximizer of a likelihood function	从这个意义上说，最小二乘估计量可以被激发为样本损失函数的最小化或似然函数的最大化，这并不奇怪
+In this sense it is not surprising that the least squares estimator can be motivated as either the minimizer of a sample loss function or as the maximizer of a likelihood function	从这个意义上说，最小二乘估计量可以被视作为样本损失函数的最小化或似然函数的最大化，这并不奇怪
 Distribution of OLS Coefficient Vector	OLS系数向量的分布
-In the normal linear regression model we can derive exact sampling distributions for the OLS/MLE estimator, residuals, and variance estimator	在正态线性回归模型中，我们可以导出 OLS/MLE 估计量、残差和方差估计量的精确采样分布
+In the normal linear regression model we can derive exact sampling distributions for the OLS/MLE estimator, residuals, and variance estimator	在正态线性回归模型中，我们可以导出 OLS/MLE 估计量、残差和方差估计量的精确抽样分布
 In this section we derive the distribution of the OLS coefficient estimator	在本节中，我们推导 OLS 系数估计量的分布
 Recall that the OLS estimator satisfies	回想一下，OLS 估计量满足
 This shows that under the assumption of normal errors the OLS estimator has an exact normal distribution	这表明在正态误差假设下，OLS 估计量具有精确的正态分布
@@ -798,8 +798,8 @@ Theorem 5.7 In the normal regression model,	定理5.7 在正态回归模型中�
 t-statistic	t统计量
 An alternative way of writing (5.7) is	(5.7) 的另一种写法是
 This is sometimes called a standardized statistic as the distribution is the standard normal	有时这被称为标准化统计量，因为分布是标准正态分布
-With algebraic re-scaling we can write the t-statistic as the ratio of the standardized statistic and the square root of the scaled variance estimator	通过代数重缩放，我们可以将 t 统计量写为标准化统计量与缩放方差估计量的平方根之比
-In this context, we say that the distribution of the t-ratio is pivotal, meaning that it does not depend on unknowns	在这种情况下，我们说 t 比的分布是关键的，这意味着它不依赖于未知数
+With algebraic re-scaling we can write the t-statistic as the ratio of the standardized statistic and the square root of the scaled variance estimator	通过代数重新度量化，我们可以将 t 统计量写为标准化统计量与度量化后方差估计量的平方根之比
+In this context, we say that the distribution of the t-ratio is pivotal, meaning that it does not depend on unknowns	在这种情况下，我们说 t 比率的分布是关键的，这意味着它不依赖于未知数
 This trick (scaling to eliminate dependence on unknowns) is known as studentization	这种技巧（通过缩放来消除对未知数的依赖）被称为学生化
 Confidence Intervals for Regression Coefficients	回归系数的置信区间
 There is not a unique method to construct confidence intervals	没有唯一的方法来构建置信区间
@@ -816,7 +816,7 @@ Likelihood Ratio Test	似然比检验
 In the previous section we described the t-test as the standard method to test a hypothesis on a single coefficient in a regression	在上一节中，我们将 t 检验描述为检验回归中单个系数的假设的标准方法
 We call (5.17) the null model	我们将（5.17）称为零模型
 We similarly calculate the maximized log-likelihood for the constrained model (5.17)	我们类似地计算约束模型的最大对数似然（5.17）
-In Stata, the command to test multiple coefficients takes the form 'test X1 X2' where X1 and X2 are the names of the variables whose coefficients are tested	在 Stata 中，测试多个系数的命令采用“test X1 X2”的形式，其中 X1 和 X2 是测试其系数的变量的名称
+In Stata, the command to test multiple coefficients takes the form 'test X1 X2' where X1 and X2 are the names of the variables whose coefficients are tested	在 Stata 中，检验多个系数的命令采用“test X1 X2”的形式，其中 X1 和 X2 是检验其系数的变量的名称
 Information Bound for Normal Regression	用于正态回归的信息
 This section requires a familiarity with the theory of the Cramér-Rao Lower Bound	本节需要熟悉 Cramér-Rao 下界理论
 See Chapter 10 of Probability and Statistics for Economists	请参阅《经济学家的概率与统计》第 10 章
@@ -915,7 +915,7 @@ Similarly, under the assumption of homoskedasticity the exact and asymptotic var
 The exact formula and estimators are useful when constructing test statistics and standard errors	在构建检验统计量和标准误差时，精确的公式和估计量非常有用
 That is why both sets of notation are useful	这就是为什么两组符号都很有用
 Alternative Covariance Matrix Estimators	替代协方差矩阵估计量
-We now discuss the consistency properties of these estimators	我们现在讨论这些估计量的一致性属性
+We now discuss the consistency properties of these estimators	我们现在讨论这些估计量的一致性特征
 The trick is the fact that the leverage values are asymptotically negligible:	诀窍在于杠杆值渐近可以忽略不计：
 Functions of Parameters	参数功能
 Theorem 7.9 Asymptotic Distribution of Functions of Parameters	定理7.9参数函数的渐近分布
@@ -991,15 +991,15 @@ While (8.8) is a general formula for CLS, in most cases the estimator can be fou
 It is not immediately obvious but (8.8) and (8.13) are algebraically identical	虽然不是很明显，但 (8.8) 和 (8.13) 在代数上是相同的
 Using (3.39) this equals	使用 (3.39) 这等于
 which is (8.13) as originally claimed	正如最初所声称的那样，它是（8.13）
-Finite Sample Properties	有限样本属性
-In this section we explore some of the properties of the CLS estimator in the linear regression model	在本节中，我们探讨线性回归模型中 CLS 估计量的一些属性
+Finite Sample Properties	有限样本特征
+In this section we explore some of the properties of the CLS estimator in the linear regression model	在本节中，我们探讨线性回归模型中 CLS 估计量的一些特征
 First, it is useful to write the estimator and the residuals as linear functions of the error vector	首先，将估计量和残差编写为误差向量的线性函数是有用的
 For a proof see Exercise 8.6	证明参见练习 8.6
 For a proof see Exercise 8.7	证明参见练习 8.7
 First, for simplicity take the case of conditional homoskedasticity	首先，为简单起见，以条件同方差为例
 For a proof see Exercise 8.8	证明参见练习 8.8
 We defer the remainder of the proof to Exercise 8.9	我们将剩下的证明推迟到练习 8.9
-We summarize the properties of the normal regression model	我们总结了正态回归模型的属性
+We summarize the properties of the normal regression model	我们总结了正态回归模型的特征
 An interesting relationship is that in the homoskedastic regression model	一个有趣的关系是在同方差回归模型中
 This also shows that the difference between the CLS and OLS variances matrices equals	这也表明 CLS 和 OLS 方差矩阵之间的差异等于
 the final equality meaning positive semi-definite	最终的等式意味着半正定
@@ -1076,7 +1076,7 @@ The first term is asymptotically normal (from 8.42))	第一项是渐近正态的
 No alternative rate would have produced this result	没有其他利率会产生这样的结果
 Consequently we find that the asymptotic distribution equals	因此我们发现渐近分布等于
 The asymptotic distribution (8.43) is an approximation of the sampling distribution of the restricted estimator under misspecification	渐近分布 (8.43) 是误设下受限估计量的采样分布的近似值
-However, (8.43) is more convenient for some purposes such as the analysis of the power of tests as we will explore in the next chapter	然而，（8.43）对于某些目的来说更方便，例如我们将在下一章中探讨的测试功效分析
+However, (8.43) is more convenient for some purposes such as the analysis of the power of tests as we will explore in the next chapter	然而，（8.43）对于某些目的来说更方便，例如我们将在下一章中探讨的检验功效分析
 Nonlinear Constraints	非线性约束
 Computationally there is no general closed-form solution so they must be found numerically	在计算上没有通用的封闭式解，因此必须通过数值方式找到它们
 See Chapter 12 of Probability and Statistics for Economists	请参阅《经济学家的概率与统计》第 12 章
@@ -1095,7 +1095,7 @@ In Chapter 5 we briefly introduced hypothesis testing in the context of the norm
 For more detail on the foundations see Chapter 13 of Probability and Statistics for Economists	有关基础的更多详细信息，请参阅《经济学家的概率与统计》第 13 章
 Hypotheses	假设
 In Chapter 8 we discussed estimation subject to restrictions, including linear restrictions (8.1), nonlinear restrictions (8.44), and inequality restrictions (8.49)	在第8章中，我们讨论了受约束的估计，包括线性约束（8.1）、非线性约束（8.44）和不等式约束（8.49）
-In this chapter we discuss tests of such restrictions	在本章中，我们将讨论此类约束的测试
+In this chapter we discuss tests of such restrictions	在本章中，我们将讨论此类约束的检验
 Hypothesis tests attempt to assess whether there is evidence contrary to a proposed restriction	假设检验试图评估是否有证据与提议的约束相反
 In this chapter we will focus exclusively on point hypotheses of the form (9.1) as they are the most common and relatively simple to handle	在本章中，我们将专门关注（9.1）形式的点假设，因为它们是最常见且相对容易处理的
 The hypothesis to be tested is called the null hypothesis	要检验的假设称为原假设
@@ -1112,8 +1112,8 @@ Figure 9.1(b) illustrates the division of the sample space into acceptance and r
 In this chapter we will summarize the main approaches to the design of test statistics	在本章中，我们将总结检验统计量设计的主要方法
 The most commonly used test statistic is the absolute value of the t-statistic	最常用的检验统计量是 t 统计量的绝对值
 Type I Error	I 类错误
-The probability of a Type I error is called the size of the test	发生 I 类错误的概率称为测试的大小
-A primary goal of test construction is to limit the incidence of Type I error by bounding the size of the test	测试构建的主要目标是通过约束测试的规模来约束 I 类错误的发生率
+The probability of a Type I error is called the size of the test	发生 I 类错误的概率称为检验的大小
+A primary goal of test construction is to limit the incidence of Type I error by bounding the size of the test	检验构建的主要目标是通过约束检验的规模来约束 I 类错误的发生率
 For the reasons discussed in Chapter 7 , in typical econometric models the exact sampling distributions of estimators and test statistics are unknown and hence we cannot explicitly calculate (9.4)	由于第 7 章中讨论的原因，在典型的计量经济学模型中，估计量和检验统计量的精确抽样分布是未知的，因此我们无法明确计算（9.4）
 This distribution does not depend on unknowns and is pivotal	这种分布不依赖于未知数并且是关键的
 We define the asymptotic size of the test as the asymptotic probability of a Type I error:	我们将检验的渐近大小定义为 I 类错误的渐近概率：
@@ -1123,21 +1123,21 @@ Theorem 9.1 shows that asymptotic critical values can be taken from the normal d
 In practical applications the difference is typically unimportant unless the sample size is quite small (in which case the asymptotic approximation should be questioned as well)	在实际应用中，除非样本量非常小，否则差异通常并不重要（在这种情况下，渐近近似也应该受到质疑）
 There seems to be an ambiguity	似乎有歧义
 Since linear regression coefficients typically do not have a priori sign restrictions, the standard convention is to use two-sided critical values	由于线性回归系数通常没有先验符号约束，因此标准惯例是使用两侧临界值
-This may seem contrary to the way testing is presented in statistical textbooks which often focus on one-sided alternative hypotheses	这似乎与统计教科书中呈现测试的方式相反，统计教科书通常侧重于片面的替代假设
+This may seem contrary to the way testing is presented in statistical textbooks which often focus on one-sided alternative hypotheses	这似乎与统计教科书中呈现检验的方式相反，统计教科书通常侧重于片面的替代假设
 The latter focus is primarily for pedagogy as the one-sided theoretical problem is cleaner and easier to understand	后者主要针对教育学，因为片面的理论问题更清晰、更容易理解
 Type II Error and Power	II 类错误和影响
-In the dominant approach to hypothesis testing the goal of test construction is to have high power subject to the constraint that the size of the test is lower than the pre-specified significance level	在假设检验的主要方法中，检验构建的目标是在检验规模低于预先指定的显着性水平的约束下获得高功效
+In the dominant approach to hypothesis testing the goal of test construction is to have high power subject to the constraint that the size of the test is lower than the pre-specified significance level	在假设检验的主要方法中，检验构建的目标是在检验规模低于预先指定的显著性水平的约束下获得高功效
 Table 9.1: Hypothesis Testing Decisions	表 9.1：假设检验决策
-Otherwise the test will not have meaningful power	否则测试将没有有意义的力量
+Otherwise the test will not have meaningful power	否则检验将没有有意义的力量
 It is important to consider the power of a test when interpreting hypothesis tests as an overly narrow focus on size can lead to poor decisions	在解释假设检验时，重要的是要考虑检验的功效，因为过于狭隘地关注规模可能会导致错误的决策
-Nothing is learned from such a test	从这样的测试中什么也学不到
+Nothing is learned from such a test	从这样的检验中什么也学不到
 Statistical Significance	统计学意义
 These choices are somewhat the by-product of traditional tables of critical values and statistical software	这些选择在某种程度上是传统临界值表和统计软件的副产品
 Let us return to the example about the union wage premium as measured in Table 4.1	让我们回到表 4.1 中衡量的工会工资溢价的例子
 In this case we find that membership for women is not statistically significant	在这种情况下，我们发现女性成员资格在统计上并不显着
-When a test accepts a null hypothesis (when a test is not statistically significant) a common misinterpretation is that this is evidence that the null hypothesis is true	当检验接受零假设（当检验不具有统计显着性时）时，常见的误解是，这是零假设为真的证据
+When a test accepts a null hypothesis (when a test is not statistically significant) a common misinterpretation is that this is evidence that the null hypothesis is true	当检验接受零假设（当检验不具有统计显著性时）时，常见的误解是，这是零假设为真的证据
 The test has failed to reject the hypothesis that the coefficient is zero but that does not mean that the coefficient is actually zero	该检验未能拒绝系数为零的假设，但这并不意味着系数实际上为零
-When a test rejects a null hypothesis (when a test is statistically significant) it is strong evidence against the hypothesis (because if the hypothesis were true then rejection is an unlikely event)	当检验拒绝零假设时（当检验具有统计显着性时），它是反对假设的有力证据（因为如果假设为真，则拒绝是不可能发生的事件）
+When a test rejects a null hypothesis (when a test is statistically significant) it is strong evidence against the hypothesis (because if the hypothesis were true then rejection is an unlikely event)	当检验拒绝零假设时（当检验具有统计显著性时），它是反对假设的有力证据（因为如果假设为真，则拒绝是不可能发生的事件）
 However, we can never conclude that the null hypothesis is indeed false as we cannot exclude the possibility that we are making a Type I error	然而，我们永远不能得出零假设确实是错误的结论，因为我们不能排除犯第一类错误的可能性
 Perhaps more importantly, there is an important distinction between statistical and economic significance	也许更重要的是，统计意义和经济意义之间存在重要区别
 This occurs frequently in applications with very large sample sizes where standard errors can be quite small	这种情况经常发生在样本量非常大且标准误差可能非常小的应用中
@@ -1149,18 +1149,18 @@ Furthermore, the asymptotic p-value has a very convenient asymptotic null distri
 The goal is essentially the same; it is wiser to report p-values whenever possible and avoid the use of asterisks	目标本质上是相同的；明智的做法是尽可能报告 p 值并避免使用星号
 The p-value is a simple statistic, easy to interpret, and contains more information than the other choices	p 值是一个简单的统计量，易于解释，并且比其他选择包含更多信息
 We now summarize the main features of hypothesis testing	我们现在总结假设检验的主要特征
-t-ratios and the Abuse of Testing	t 比率和滥用测试
+t-ratios and the Abuse of Testing	t 比率和滥用检验
 In particular, some applied papers report coefficient estimates and t-ratios and limit their discussion of the results to describing which variables are "significant" (meaning that their t-ratios exceed 2) and the signs of the coefficient estimates	特别是，一些应用论文报告了系数估计值和 t 比率，并将结果讨论限定为描述哪些变量是“显着的”（意味着它们的 t 比率超过 2）以及系数估计值的符号
 It is also a recipe for banishment of your work to lower tier economics journals	这也是导致你的作品被低级经济学期刊驱逐的原因之一
 Fundamentally, the common t-ratio is a test for the hypothesis that a coefficient equals zero	从根本上说，共同 t 比率是对系数等于 0 的假设的检验
 But if this is not the case it is distracting	但如果情况并非如此，那就会分散注意力
 One problem is that standard packages, such as Stata, by default report t-statistics and p-values for every estimated coefficient	一个问题是标准软件包（例如 Stata）默认报告每个估计系数的 t 统计量和 p 值
-Instead, a user should focus on tests of scientifically motivated hypotheses	相反，用户应该专注于对科学假设的测试
+Instead, a user should focus on tests of scientifically motivated hypotheses	相反，用户应该专注于对科学假设的检验
 In contrast, the statement "the t-ratio is highly significant" has little interpretive value	相比之下，“t 比率非常显着”这一说法几乎没有解释价值
 This is critical for good applied econometric practice	这对于良好的应用计量经济学实践至关重要
 For example, consider the question about the effect of marriage status on mean log wages	例如，考虑有关婚姻状况对平均对数工资的影响的问题
 These magnitudes are more informative than the results of the hypothesis tests	这些幅度比假设检验的结果提供更多信息
-Wald Tests	瓦尔德测试
+Wald Tests	瓦尔德检验
 The t-test is appropriate when the null hypothesis is a real-valued restriction	当原假设是实值约束时，t 检验适用
 Thus the inherent alternative is always two-sided	因此，固有的选择总是有两面性的
 To implement a test of zero restrictions in Stata an easy method is to use the command test X1 X2 where X1 and X2 are the names of the variables whose coefficients are hypothesized to equal zero	要在 Stata 中实现零约束检验，一种简单的方法是使用命令 test X1 X2，其中 X1 和 X2 是假设系数为零的变量的名称
@@ -1169,10 +1169,10 @@ Therefore examining both the joint Wald statistic and the individual t-statistic
 As a second example from the same regression, take the hypothesis that married status has no effect on mean wages for women	作为同一回归的第二个例子，假设婚姻状况对女性的平均工资没有影响
 The Wald statistic was proposed by Wald (1943)	Wald 统计量由 Wald (1943) 提出
 Homoskedastic Wald Tests	同方差 Wald 检验
-Criterion-Based Tests	基于标准的测试
-An alternative class of tests is based on the discrepancy between the criterion function minimized with and without the restriction	另一类测试是基于在有约束和没有约束的情况下最小化准则函数之间的差异
-Minimum Distance Tests	最短距离测试
-The minimum distance test is based on the minimum distance criterion (8.19)	最小距离测试基于最小距离标准（8.19）
+Criterion-Based Tests	基于标准的检验
+An alternative class of tests is based on the discrepancy between the criterion function minimized with and without the restriction	另一类检验是基于在有约束和没有约束的情况下最小化准则函数之间的差异
+Minimum Distance Tests	最短距离检验
+The minimum distance test is based on the minimum distance criterion (8.19)	最小距离检验基于最小距离标准（8.19）
 Substituting into (9.10) we find	代入(9.10)我们发现
 which is the Wald statistic (9.6)	这是 Wald 统计量 (9.6)
 For nonlinear hypotheses, however, the Wald and minimum distance statistics are different	然而，对于非线性假设，Wald 和最小距离统计量是不同的
@@ -1181,14 +1181,14 @@ Minimum Distance Tests Under Homoskedasticity	同方差下的最小距离检验
 This is the homoskedastic Wald statistic (9.7)	这是同方差 Wald 统计量 (9.7)
 Thus for testing linear hypotheses, homoskedastic minimum distance and Wald statistics agree	因此，对于检验线性假设，同方差最小距离和 Wald 统计是一致的
 For nonlinear hypotheses they disagree, but have the same null asymptotic distribution	对于非线性假设，它们不一致，但具有相同的零渐近分布
-F Tests	F 测试
+F Tests	F 检验
 An elegant feature about (9.12) or (9.13) is that they are directly computable from the standard output from two simple OLS regressions, as the sum of squared errors (or regression variance) is a typical printed output from statistical packages and is often reported in applied tables	(9.12) 或 (9.13) 的一个优雅特征是它们可以直接从两个简单 OLS 回归的标准输出计算，因为平方误差之和（或回归方差）是统计包的典型打印输出，并且经常报告在应用表中
 A word of warning: In many statistical packages when an OLS regression is estimated an "F-statistic" is automatically reported even though no hypothesis test was requested	警告：在许多统计软件包中，当估计 OLS 回归时，即使没有要求假设检验，也会自动报告“F 统计量”
 Hausman Tests	豪斯曼检验
 Thus the Hausman statistic is	因此豪斯曼统计量是
 which is precisely the Wald statistic	这正是 Wald 统计量
 Theorem 9.7 For general hypotheses the Hausman test statistic is	定理 9.7 对于一般假设，Hausman 检验统计量为
-Score Tests	分数测试
+Score Tests	分数检验
 Score tests are traditionally derived in likelihood analysis but can more generally be constructed from first-order conditions evaluated at restricted estimates	分数检验传统上是通过似然分析得出的，但更一般地可以根据在有限估计下评估的一阶条件构建
 We focus on the likelihood derivation	我们关注似然推导
 The idea is that if the restriction is true then the restricted estimators should be close to the maximum of the log-likelihood where the derivative is zero	这个想法是，如果约束为真，那么受约束的估计量应该接近导数为零的对数似然的最大值
@@ -1196,7 +1196,7 @@ The constrained MLE under linear hypotheses is constrained least squares	线性�
 We can calculate that the derivative and Hessian are	我们可以计算出导数和 Hessian 为
 This is not a concern for linear restrictions	这不是线性约束的问题
 More generally, score and score-like statistics can be constructed from first-order conditions evaluated at restricted parameter estimates	更一般地，分数和类分数统计可以根据在受限参数估计下评估的一阶条件来构造
-restricted residuals) then these are often described as score tests	此外，当使用协方差矩阵估计构建测试统计量（使用受限参数估计（例如受限残差）计算）时，这些通常被描述为分数测试
+restricted residuals) then these are often described as score tests	此外，当使用协方差矩阵估计构建检验统计量（使用受限参数估计（例如受限残差）计算）时，这些通常被描述为分数检验
 An example of the latter is the Wald-type statistic	后者的一个例子是 Wald 型统计量
 Problems with Tests of Nonlinear Hypotheses	非线性假设检验的问题
 This is an unfortunate feature of the Wald statistic	这是沃尔德统计数据的一个不幸的特征
@@ -1219,24 +1219,24 @@ From a random sample we can estimate any feature of interest using (typically) a
 We now describe some specific examples	我们现在描述一些具体的例子
 Suppose we are interested in the Type I error associated with an asymptotic 5% two-sided t-test	假设我们对与渐近 5% 双边 t 检验相关的 I 类错误感兴趣
 The typical purpose of a Monte Carlo simulation is to investigate the performance of a statistical procedure in realistic settings	蒙特卡罗模拟的典型目的是研究统计过程在现实环境中的性能
-In particular, it is simple to make inferences about rejection probabilities from statistical tests, such as the percentage estimate reported in (9.15)	特别是，从统计测试中推断拒绝概率很简单，例如（9.15）中报告的百分比估计
+In particular, it is simple to make inferences about rejection probabilities from statistical tests, such as the percentage estimate reported in (9.15)	特别是，从统计检验中推断拒绝概率很简单，例如（9.15）中报告的百分比估计
 In this case it is appropriate to conclude that your results "replicate" the previous study as there is no statistical evidence to reject the hypothesis that they are equivalent	在这种情况下，适当的做法是得出结论，你的结果“复现”了先前的研究，因为没有统计证据可以拒绝它们是等效的假设
 Most journals have policies requiring authors to make available their data sets and computer programs required for empirical results	大多数期刊都有政策要求作者提供实证结果所需的数据集和计算机程序
 This invites others to build on and use your results, leading to possible collaboration, citation, and/or advancement	这会邀请其他人以你的成果为基础并使用你的成果，从而实现可能的合作、引用和/或进步
 Confidence Intervals by Test Inversion	检验反演的置信区间
 There is a close relationship between hypothesis tests and confidence intervals	假设检验和置信区间之间存在密切关系
-Thus inverting a test with good Type I error probabilities yields a confidence interval with good coverage probabilities	因此，对具有良好 I 类错误概率的测试进行反演会产生具有良好覆盖概率的置信区间
+Thus inverting a test with good Type I error probabilities yields a confidence interval with good coverage probabilities	因此，对具有良好 I 类错误概率的检验进行反演会产生具有良好覆盖概率的置信区间
 For example, in the wage equation	例如，在工资方程中
-Multiple Tests and Bonferroni Corrections	多重测试和 Bonferroni 修正
+Multiple Tests and Bonferroni Corrections	多重检验和 Bonferroni 修正
 In most applications economists examine a large number of estimates, test statistics, and p-values	在大多数应用中，经济学家都会检查大量的估计值、检验统计数据和 p 值
-What does it mean (or does it mean anything) if one statistic appears to be "significant" after examining a large number of statistics? This is known as the problem of multiple testing or multiple comparisons	如果在检查大量统计数据后一项统计数据似乎“显着”，这意味着什么（或者有什么意义）？这称为多重测试或多重比较的问题
-Power and Test Consistency	功率和测试一致性
-The power of the test is	测试的功效为
-We call this property test consistency	我们将此属性称为一致性测试
+What does it mean (or does it mean anything) if one statistic appears to be "significant" after examining a large number of statistics? This is known as the problem of multiple testing or multiple comparisons	如果在检查大量统计数据后一项统计数据似乎“显着”，这意味着什么（或者有什么意义）？这称为多重检验或多重比较的问题
+Power and Test Consistency	功率和检验一致性
+The power of the test is	检验的功效为
+We call this property test consistency	我们将此特征称为一致性检验
 In general, t-tests and Wald tests are consistent against fixed alternatives	一般来说，t 检验和 Wald 检验与固定替代方案是一致的
 Again, this implies that Wald tests are consistent	这再次表明 Wald 检验是一致的
 Asymptotic Local Power	渐近局部幂
-Consistency is a good property for a test but is does not provided a tool to calculate test power	一致性对于测试来说是一个很好的属性，但没有提供计算测试功效的工具
+Consistency is a good property for a test but is does not provided a tool to calculate test power	一致性对于检验来说是一个很好的特征，但没有提供计算检验功效的工具
 To approximate the power function we need a distributional approximation	为了近似幂函数，我们需要分布近似
 The standard asymptotic method for power analysis uses what are called local alternatives	功效分析的标准渐近方法使用所谓的局部替代方法
 Instead, it should be interpreted as a technical device which allows the asymptotic distribution to be continuous in the alternative hypothesis	相反，它应该被解释为一种允许渐近分布在备择假设中连续的技术手段
@@ -1244,7 +1244,7 @@ where the second equality is (9.17)	其中第二个等式是 (9.17)
 Decreasing size induces a decrease in power, and conversely	尺寸减小会导致功率减小，反之亦然
 Figure 9.3: Asymptotic Local Power Function	图 9.3：渐近局部幂函数
 The difference between power functions can be measured either vertically or horizontally	幂函数之间的差异可以垂直或水平测量
-This is the difference in power across tests of differing size, holding fixed the parameter in the alternative	这是不同规模的测试之间功效的差异，在替代方案中保持固定参数
+This is the difference in power across tests of differing size, holding fixed the parameter in the alternative	这是不同规模的检验之间功效的差异，在替代方案中保持固定参数
 A horizontal comparison can also be illuminating	横向比较也可以具有启发性
 and thus the local power of a two-sided t test is	因此双边 t 检验的局部功效为
 Asymptotic Local Power, Vector Case	渐近局部幂，向量情况
@@ -1317,7 +1317,7 @@ Percentile Interval	百分位数区间
 The second most common use of bootstrap methods is for confidence intervals	引导方法的第二个最常见用途是置信区间
 It is based on the quantiles of the bootstrap distribution	它基于引导分布的分位数
 The percentile interval has the convenience that it does not require calculation of a standard error	百分位数区间的优点是不需要计算标准误差
-The percentile interval has the useful property that it is transformation-respecting	百分位数区间具有一个有用的属性，即它尊重变换
+The percentile interval has the useful property that it is transformation-respecting	百分位数区间具有一个有用的特征，即它尊重变换
 The bootstrap percentile intervals for the four estimators are reported in Table 13.2	表 13.2 报告了四个估计量的自举百分位数区间
 In Stata, percentile confidence intervals can be obtained by using the command estat bootstrap, percentile or the command estat bootstrap, all after an estimation command which calculates standard errors via the bootstrap	在 Stata 中，可以使用命令 estat bootstrap、percentile 或命令 estat bootstrap 获得百分位数置信区间，所有这些都在通过 bootstrap 计算标准误差的估计命令之后
 The Bootstrap Distribution	Bootstrap 分布
@@ -1396,7 +1396,7 @@ The construction of the BC interval is not intuitive	BC 区间的构造并不直
 Since the distribution is pivotal the result carries over to the bootstrap distribution	由于分布至关重要，因此结果会延续至引导分布
 From (10.26) we deduce that	从 (10.26) 我们推出
 This shows that the BC interval (10.25) has exact coverage under the assumption (10.21)	这表明 BC 区间 (10.25) 在假设 (10.21) 下具有精确的覆盖范围
-An important property of the BC percentile interval is that it is transformation-respecting (like the percentile interval)	BC 百分位数区间的一个重要属性是它尊重变换（与百分位数区间一样）
+An important property of the BC percentile interval is that it is transformation-respecting (like the percentile interval)	BC 百分位数区间的一个重要特征是它尊重变换（与百分位数区间一样）
 The bootstrap BC percentile intervals for the four estimators are reported in Table 13.2	表 13.2 报告了四个估计量的 Bootstrap BC 百分位数区间
 In Stata, BC percentile confidence intervals can be obtained by using the command estat bootstrap after an estimation command which calculates standard errors via the bootstrap	在 Stata 中，BC 百分位数置信区间可以通过在通过 bootstrap 计算标准误差的估计命令之后使用命令 estat bootstrap 来获得
 A further improvement on the BC interval was made by Efron (1987) to account for the skewness in the sampling distribution, which can be modeled by specifying that the variance of the estimator depends on the parameter	Efron (1987) 对 BC 区间进行了进一步改进，以考虑抽样分布中的偏度，可以通过指定估计量的方差取决于参数来建模
@@ -1409,10 +1409,10 @@ The bootstrap percentile-t confidence interval is defined as	自举百分位数-
 The form may appear unusual when compared with the percentile interval	与百分位间隔相比，该形式可能显得不寻常
 As we show below, this construction is important for the interval to have correct coverage when the distribution is not symmetric	如下所示，当分布不对称时，这种结构对于区间具有正确的覆盖范围非常重要
 The percentile-t has the following advantages	百分位数-t 具有以下优点
-Third, the percentile-t intervals correspond to the set of parameter values "not rejected" by one-sided t-tests using bootstrap critical values (bootstrap tests are presented in Section 10.21)	第三，百分位数 t 区间对应于使用引导临界值（引导测试在第 10.21 节中介绍）的单侧 t 测试“未拒绝”的一组参数值
+Third, the percentile-t intervals correspond to the set of parameter values "not rejected" by one-sided t-tests using bootstrap critical values (bootstrap tests are presented in Section 10.21)	第三，百分位数 t 区间对应于使用引导临界值（引导检验在第 10.21 节中介绍）的单侧 t 检验“未拒绝”的一组参数值
 The percentile-t interval has the following disadvantages	百分位数-t 区间具有以下缺点
 It is typical to calculate percentile-t intervals with t-ratios constructed with conventional asymptotic standard errors	通常使用传统渐近标准误差构建的 t 比率来计算百分位数 t 区间
-It will not possess the higher-order accuracy properties of the following section, but it will satisfy the conditions for first-order validity	它不会具有以下部分的高阶精度属性，但它将满足一阶有效性的条件
+It will not possess the higher-order accuracy properties of the following section, but it will satisfy the conditions for first-order validity	它不会具有以下部分的高阶精度特征，但它将满足一阶有效性的条件
 Furthermore, percentile-t intervals can be constructed using bootstrap standard errors	此外，可以使用 bootstrap 标准误差构建百分位数 t 区间
 We now describe the distribution theory for first-order validity of the percentile-t bootstrap	我们现在描述百分位-t bootstrap 的一阶有效性的分布理论
 This motivates considering the broader situation where the sample and bootstrap t-ratios have the same asymptotic distribution but not necessarily normal	这促使我们考虑更广泛的情况，即样本和自举 t 比率具有相同的渐近分布，但不一定是正态分布
@@ -1435,18 +1435,18 @@ Bootstrap Hypothesis Tests	自举假设检验
 This allows the bootstrap to incorporate the randomness in standard error estimation	这允许引导程序将随机性纳入标准误差估计中
 It is generally better to report p-values rather than critical values	通常报告 p 值比报告临界值更好
 the percentage of bootstrap t-statistics that are larger than the observed t-statistic	大于观察到的 t 统计量的 bootstrap t 统计量的百分比
-If desired, the bootstrap test can be implemented as a one-sided test	如果需要，引导测试可以作为单方面测试来实现
-Bootstrap tests can also be conducted with other statistics	引导测试也可以与其他统计数据一起进行
+If desired, the bootstrap test can be implemented as a one-sided test	如果需要，引导检验可以作为单方面检验来实现
+Bootstrap tests can also be conducted with other statistics	引导检验也可以与其他统计数据一起进行
 In the smooth function model the t-test (with correct standard errors) has the following performance	在平滑函数模型中，t 检验（具有正确的标准误差）具有以下性能
 This shows that the bootstrap test achieves a refinement relative to the asymptotic test	这表明自举检验相对于渐近检验实现了细化
 The reasoning is as follows	理由如下
-Wald-Type Bootstrap Tests	Wald 型引导测试
+Wald-Type Bootstrap Tests	Wald 型引导检验
 The asymptotic performance of the Wald test mimics that of the t-test	Wald 检验的渐近性能模仿 t 检验的渐近性能
 and thus achieves a refinement relative to the asymptotic Wald test	从而实现了相对于渐近 Wald 检验的改进
 The test will not achieve an asymptotic refinement but provides a simple method to test hypotheses when covariance matrix estimates are not available	该检验不会实现渐近细化，但提供了一种简单的方法来在协方差矩阵估计不可用时检验假设
-Criterion-Based Bootstrap Tests	基于标准的引导测试
+Criterion-Based Bootstrap Tests	基于标准的引导检验
 A criterion-based estimator takes the form	基于标准的估计量采用以下形式
-A bootstrap test uses the bootstrap algorithm to calculate the critical value	引导测试使用引导算法来计算临界值
+A bootstrap test uses the bootstrap algorithm to calculate the critical value	引导检验使用引导算法来计算临界值
 Parametric Bootstrap	参数引导程序
 Throughout this chapter we have described the most popular form of the bootstrap known as the nonparametric bootstrap	在本章中，我们描述了最流行的引导程序形式，称为非参数引导程序
 This is appropriate when there is a full parametric model for the distribution as in likelihood estimation	当存在完整的分布参数模型（如似然估计）时，这是合适的
@@ -1465,7 +1465,7 @@ The methods, however, necessarily require a starting value known as a "seed"	然
 The R package has a different implementation	R 包有不同的实现
 Therefore if you run a bootstrap program in R, exit, restart, and rerun, you will obtain a different set of random draws and therefore a different bootstrap result	因此，如果你在 R 中运行引导程序，退出，重新启动，然后重新运行，你将获得一组不同的随机抽取，从而获得不同的引导结果
 Packages allow users to set their own seed. (In Stata, the command is set seed \#	包允许用户设置自己的种子
-If this is the case, the results of a bootstrap calculation (standard error or test) will be identical across computer runs	如果是这种情况，引导计算的结果（标准误差或测试）在计算机运行中将是相同的
+If this is the case, the results of a bootstrap calculation (standard error or test) will be identical across computer runs	如果是这种情况，引导计算的结果（标准误差或检验）在计算机运行中将是相同的
 The fact that the bootstrap results can be fixed by setting the seed in the replication file has motivated many researchers to follow this choice	事实上，可以通过在复现文件中设置种子来修复引导结果，这一事实促使许多研究人员遵循这一选择
 They set the seed at the start of the replication file so that repeated executions result in the same numerical findings	他们将种子设置在复现文件的开头，以便重复执行会产生相同的数值结果
 Fixing seeds, however, should be done cautiously	然而，固定种子应谨慎进行
@@ -1492,13 +1492,13 @@ Thus the wild bootstrap replicates the appropriate first and second moments of t
 Since the wild bootstrap matches the first three moments, the percentile-t interval and one-sided t-tests can be shown to achieve asymptotic refinements	由于狂野引导与前三个矩匹配，因此可以证明百分位数 t 区间和单侧 t 检验可以实现渐近细化
 Limited simulation evidence for one-sided t-tests presented in Davidson and Flachaire (2008) suggests that the Rademacher distribution (used with the restricted wild bootstrap) has better performance and is their recommendation	Davidson 和 Flachaire (2008) 中提出的单边 t 检验的有限模拟证据表明，Rademacher 分布（与受限野生引导程序一起使用）具有更好的性能，并且是他们的推荐
 For hypothesis testing improved precision can be obtained by the restricted wild bootstrap	对于假设检验，可以通过约束野生引导来获得更高的精度
-Thus bootstrap tests are constructed the same as for the parametric bootstrap using a restricted parameter estimator	因此，引导程序测试的构造与使用受限参数估计量的参数引导程序相同
+Thus bootstrap tests are constructed the same as for the parametric bootstrap using a restricted parameter estimator	因此，引导程序检验的构造与使用受限参数估计量的参数引导程序相同
 Bootstrap for Clustered Observations	群组观测的引导程序
 Bootstrap methods can also be applied in to clustered samples though the methodological literature is relatively thin	尽管方法论文献相对较少，但 Bootstrap 方法也可以应用于群组样本
 Here we review methods discussed in Cameron, Gelbach and Miller (2008)	在这里，我们回顾一下 Cameron、Gelbach 和 Miller (2008) 中讨论的方法
 The wild cluster bootstrap fixes the clusters and regressors, and generates the bootstrap observa-	野生群组引导修复群组和自变量，并生成引导观测值
 For hypothesis testing, Cameron, Gelbach and Miller (2008) recommend the restricted wild cluster bootstrap	对于假设检验，Cameron、Gelbach 和 Miller (2008) 建议使用受限野生群组引导程序
-p-values are then calculated conventionally and used to assess the significance of the test statistic	然后按常规计算 p 值并用于评估检验统计量的显着性
+p-values are then calculated conventionally and used to assess the significance of the test statistic	然后按常规计算 p 值并用于评估检验统计量的显著性
 There are several reasons why conventional asymptotic approximations may work poorly with clustered observations	传统的渐近近似对于群组观测效果不佳的原因有多种
 If the number of treated clusters is small this is equivalent to estimation with a highly sparse dummy variable design in which case cluster-robust covariance matrix estimation can be unreliable	如果处理的群组的数量很小，这相当于使用高度稀疏的虚拟变量设计进行估计，在这种情况下，群组稳健的协方差矩阵估计可能不可靠
 In such cases inference should proceed cautiously	在这种情况下，应该谨慎进行推断
@@ -1569,7 +1569,7 @@ One important example is explored in detail in the following section	下一节�
 Generalized method of moments estimation of multivariate regression subject to restrictions will be explored in Section 13.18	受约束的多元回归矩估计的广义方法将在 13.18 节中探讨
 This is a particularly simple and straightforward way to estimate restricted multivariate regression models and is our generally preferred approach	这是估计受限多元回归模型的一种特别简单直接的方法，也是我们通常首选的方法
 Reduced Rank Regression	降阶回归
-One context where systems estimation is important is when it is desired to impose or test restrictions across equations	系统估计很重要的一种情况是当需要对方程施加或测试约束时
+One context where systems estimation is important is when it is desired to impose or test restrictions across equations	系统估计很重要的一种情况是当需要对方程施加或检验约束时
 The model was originally proposed by Anderson (1951) and extended by Johansen (1995)	该模型最初由 Anderson (1951) 提出，并由 Johansen (1995) 扩展
 This turns out to be algebraically cumbersome	事实证明，这在代数上是很麻烦的
 Johansen (1995) instead proposed the following straightforward concentration method	Johansen (1995) 相反提出了以下简单的浓缩方法
@@ -1583,7 +1583,7 @@ Another way to see the PCA construction is as follows	查看 PCA 构造的另一
 The sample principal components are obtained by replacing the unknowns by sample estimators	样本主成分是通过用样本估计量替换未知数来获得的
 To illustrate we use the Duflo, Dupas, and Kremer (2011) dataset	为了说明这一点，我们使用 Duflo、Dupas 和 Kremer (2011) 数据集
 Table 11.2: Principal Component Weight Vectors	表 11.2：主成分权重向量
-principal component is similar to a simple average of the seven test scores	主成分类似于七个测试分数的简单平均值
+principal component is similar to a simple average of the seven test scores	主成分类似于七个检验分数的简单平均值
 In Stata, principal components analysis can be implemented with the pca command	在Stata中，主成分分析可以通过pca命令实现
 The R commands by default do not normalize the observations	默认情况下，R 命令不会对观测值进行归一化
 Factor Models	因子模型
@@ -1809,7 +1809,7 @@ The estimator (12.42) is a better choice than the 2SLS formula for covariance ma
 For example, let's take the parameter estimates from the fifth column of Table 12.1, which are the 2SLS estimates with three endogenous regressors and four excluded instruments	例如，我们采用表 12.1 第五列中的参数估计值，它们是具有三个内生回归变量和四个排除工具的 2SLS 估计值
 The large standard error implies that the estimate (73 years of experience) is without precision and is thus uninformative	较大的标准误差意味着该估计（73 年的经验）不精确，因此缺乏信息
 Hypothesis Tests	假设检验
-Thus by examining the joint test in contrast to the individual tests is quite clear that experience has a non-zero effect	因此，通过检查联合测试与单独测试的对比，可以很清楚地看出，经验具有非零效应
+Thus by examining the joint test in contrast to the individual tests is quite clear that experience has a non-zero effect	因此，通过检查联合检验与单独检验的对比，可以很清楚地看出，经验具有非零效应
 Finite Sample Theory	有限样本理论
 In Chapter 5 we reviewed the rich exact distribution available for the linear regression model under the assumption of normal innovations	在第五章中，我们回顾了在正态创新假设下可用于线性回归模型的丰富的精确分布
 An excellent review of the theory, mostly developed in the 1970s and early 1980s, is provided by Peter Phillips (1983)	Peter Phillips (1983) 对主要在 20 世纪 70 年代和 1980 年代初发展起来的理论进行了精彩的回顾
@@ -1820,7 +1820,7 @@ A second important result is that under the assumption of normal errors most of 
 Thus if there is one over-identifying restriction 2 SLS has a finite expectation and if there are two over-identifying restrictions then the 2SLS estimator has a finite variance	因此，如果存在一个过度识别约束，则 2SLS 具有有限期望，如果存在两个过度识别约束，则 2SLS 估计量具有有限方差
 The LIML estimator has a more severe moment problem as it has no finite integer moments (Mariano, 1982) regardless of the number of over-identifying restrictions	LIML 估计量具有更严重的矩问题，因为它没有有限整数矩（Mariano，1982），无论过度识别约束的数量如何
 Fuller showed that his estimator has all moments finite under suitable conditions	富勒表明，他的估计量在适当的条件下具有有限的所有矩
-Hausman, Newey, Woutersen, Chao and Swanson (2012) propose an estimator they call HFUL which combines the ideas of JIVE and Fuller which has excellent finite sample properties	Hausman、Newey、Woutersen、Chao 和 Swanson（2012）提出了一种称为 HFUL 的估计量，它结合了 JIVE 和 Fuller 的思想，具有出色的有限样本属性
+Hausman, Newey, Woutersen, Chao and Swanson (2012) propose an estimator they call HFUL which combines the ideas of JIVE and Fuller which has excellent finite sample properties	Hausman、Newey、Woutersen、Chao 和 Swanson（2012）提出了一种称为 HFUL 的估计量，它结合了 JIVE 和 Fuller 的思想，具有出色的有限样本特征
 Bootstrap for 2SLS	2SLS 的引导程序
 We now show that the bootstrap estimator has the same asymptotic distribution as the sample estimator	我们现在证明自举估计量具有与样本估计量相同的渐近分布
 This was first shown by Hahn (1996)	Hahn (1996) 首先表明了这一点
@@ -1889,36 +1889,36 @@ Specifically, estimate the reduced form by least squares	具体来说，通过�
 Since in general we do not want to impose homoskedasticity these results suggest that the most appropriate test is the Wald statistic constructed with the robust heteroskedastic covariance matrix	由于一般来说我们不想强加同方差，因此这些结果表明最合适的检验是使用稳健的异方差协方差矩阵构建的 Wald 统计量
 There is an alternative (and traditional) way to derive a test for endogeneity	有另一种（传统的）方法来导出内生性检验
 This literature was developed under the assumption of conditional homoskedasticity (and it is important for these results) so we assume this condition for the development of the statistic	该文献是在条件同方差的假设下开发的（这对于这些结果很重要），因此我们假设这个条件来开发统计数据
-The general class of tests are called Durbin-Wu-Hausman tests, Wu-Hausman tests, or Hausman tests, depending on the author	一般的测试类别称为 Durbin-Wu-Hausman 测试、Wu-Hausman 测试或 Hausman 测试，具体取决于作者
+The general class of tests are called Durbin-Wu-Hausman tests, Wu-Hausman tests, or Hausman tests, depending on the author	一般的检验类别称为 Durbin-Wu-Hausman 检验、Wu-Hausman 检验或 Hausman 检验，具体取决于作者
 We illustrate using the Card proximity example using the two instruments public and private	我们使用公共和私有两种工具来说明卡邻近示例
 We now show the equality of the various statistics	我们现在展示各种统计数据的平等性
 Subset Endogeneity Tests	子集内生性检验
-In some cases we may only wish to test the endogeneity of a subset of the variables	在某些情况下，我们可能只想测试变量子集的内生性
+In some cases we may only wish to test the endogeneity of a subset of the variables	在某些情况下，我们可能只想检验变量子集的内生性
 Under homoskedasticity a straightfoward test can be constructed by the Durbin-Wu-Hausman principle	在同方差下，可以通过 Durbin-Wu-Hausman 原理构建直接检验
 In this model, the assumption of exogeneity with homogenous coefficients is rejected for education but the result for experience is unclear	在该模型中，教育方面拒绝具有同质系数的外生性假设，但实证结果尚不清楚
 A heteroskedasticity or cluster-robust test cannot be constructed easily by the Durbin-Wu-Hausman approach since the covariance matrix does not take a simple form	由于协方差矩阵不采用简单的形式，因此无法通过 Durbin-Wu-Hausman 方法轻松构建异方差性或群组稳健性检验
-OverIdentification Tests	过度识别测试
-Such tests are called overidentification tests	此类测试称为过度识别测试
+OverIdentification Tests	过度识别检验
+Such tests are called overidentification tests	此类检验称为过度识别检验
 In contrast, if the overidentification hypothesis is false then the two estimators will converge to different probability limits and it is unclear if either probability limit is interesting	相反，如果过度识别假设为假，则两个估计量将收敛到不同的概率极限，并且不清楚任一概率极限是否有趣
-An overidentification test addresses this question	过度识别测试解决了这个问题
+An overidentification test addresses this question	过度识别检验解决了这个问题
 Sargan's version is more typically reported	萨根的版本被更广泛地报道
 Hence the bottom line appears to be that to allow heteroskedasticity or clustering it is best to use a GMM approach	因此，底线似乎是为了允许异方差或群组，最好使用 GMM 方法
-In overidentified applications it is always prudent to report an overidentification test	在过度识别的应用程序中，报告过度识别测试始终是谨慎的做法
+In overidentified applications it is always prudent to report an overidentification test	在过度识别的应用程序中，报告过度识别检验始终是谨慎的做法
 In this case we should be concerned that the model is misspecified and interpreting the parameter estimates should be done cautiously	在这种情况下，我们应该担心模型误设，并且应该谨慎解释参数估计
-The results of an overidentification test should be integrated with other information before making a strong decision	在做出强有力的决定之前，过度识别测试的结果应与其他信息相结合
+The results of an overidentification test should be integrated with other information before making a strong decision	在做出强有力的决定之前，过度识别检验的结果应与其他信息相结合
 We illustrate the methods with the Card college proximity example	我们用卡学院邻近示例来说明这些方法
 We now prove Theorem 12.16	现在我们证明定理12.16
 The Sargan statistic test can be implemented in Stata using the command estat overid after ivregress 2sls or ivregres liml if a standard (non-robust) covariance matrix has been specified (that is, without the ', r' option), or otherwise by the command estat overid, forcenonrobust	如果指定了标准（非稳健）协方差矩阵（即，没有 ', r' 选项），则可以在 Stata 中使用命令 estat overid 在 ivregress 2sls 或 ivregres liml 后实现 Sargan 统计检验，否则通过命令estat overid，forcenonrobust
-Subset OverIdentification Tests	子集过度识别测试
-In some cases it may be reasonable to test only a subset of the moment conditions	在某些情况下，仅测试瞬间条件的子集可能是合理的
+Subset OverIdentification Tests	子集过度识别检验
+In some cases it may be reasonable to test only a subset of the moment conditions	在某些情况下，仅检验瞬间条件的子集可能是合理的
 Independently from Newey (1985), Eichenbaum, L	独立于 Newey (1985)，Eichenbaum、L. Hansen 和 Singleton (1988) 提出了一种基于 Sargan 统计差异的检验
 These tests have chi-square asymptotic distributions	这些检验具有卡方渐近分布
 In Stata, for example, this is simple to implement with a few lines of code	例如，在 Stata 中，只需几行代码即可轻松实现
 We illustrate using the Card college proximity example	我们使用卡学院邻近示例进行说明
-We can test this dispute using a overidentification subset test	我们可以使用过度识别子集测试来测试此争议
+We can test this dispute using a overidentification subset test	我们可以使用过度识别子集检验来检验此争议
 We now prove the results in Theorem 12.17	现在我们证明定理 12.17 中的结果
 We next establish the asymptotic distribution	接下来我们建立渐近分布
-Bootstrap Overidentification Tests	Bootstrap 过度识别测试
+Bootstrap Overidentification Tests	Bootstrap 过度识别检验
 In small to moderate sample sizes the overidentification tests are not well approximated by the asymptotic chi-square distributions	在小到中等样本量中，渐近卡方分布不能很好地近似过度识别检验
 The recentered bootstrap analog is	居中引导程序模拟是
 Local Average Treatment Effects	当地平均治疗效果
@@ -1945,7 +1945,7 @@ Thus identification hinges on the existence of correlation between the excluded 
 By the CLT we have the joint convergence	通过 CLT 我们有联合收敛
 This limiting distribution has several notable features	这种极限分布有几个显着的特征
 Thus under identification failure the IV estimator does not correct the centering (median bias) of least squares	因此，在识别失败的情况下，IV 估计量不会纠正最小二乘的中心（中值偏误）
-Inferences based on the normal distribution can be quite incorrect	基于正态分布的推论可能非常不正确
+Inferences based on the normal distribution can be quite incorrect	基于正态分布的推断可能非常不正确
 We can also examine the behavior of the t-statistic	我们还可以检查 t 统计量的行为
 Thus the t-statistic has the asymptotic distribution	因此 t 统计量具有渐近分布
 The limiting distribution is non-normal, meaning that inference using the normal distribution will be (considerably) incorrect	极限分布是非正态的，这意味着使用正态分布的推断将（相当）不正确
@@ -1982,21 +1982,21 @@ Effectively, LIML makes a bias-correction	LIML 有效地进行了偏误校正
 This suggests that LIML is more robust than 2SLS to weak and many instruments	这表明 LIML 对于弱仪器和多仪器来说比 2SLS 更稳健
 It appears likely that the consistency of LIML fails in the many instrument setting if the errors are heteroskedastic	如果误差是异方差的，则 LIML 的一致性在许多仪器设置中可能会失败
 In applications users should be aware of the potential consequences of the many instrument framework	在应用程序中，用户应该意识到许多工具框架的潜在后果
-Testing for Weak Instruments	弱仪器测试
+Testing for Weak Instruments	弱仪器检验
 In the previous sections we found that weak instruments results in non-standard asymptotic distributions for the 2SLS and LIML estimators	在前面的部分中，我们发现弱工具会导致 2SLS 和 LIML 估计量出现非标准渐近分布
 This question was addressed in an influential paper by Stock and Yogo (2005) as an extension of Staiger and Stock (1997)	Stock 和 Yogo (2005) 在一篇有影响力的论文中解决了这个问题，作为 Staiger 和 Stock (1997) 的延伸
 In the following section we describe their method for the case of multiple endogeneous regressors	在下一节中，我们将描述他们针对多个内生自变量的情况的方法
 Since the model is just-identified the 2SLS, LIML, and IV estimators are all equivalent	由于模型刚刚被识别，2SLS、LIML 和 IV 估计量都是等效的
-The question of primary interest is to determine conditions on the reduced form under which the IV estimator of the structural equation is well behaved, and secondly, what statistical tests can be used to learn if these conditions are satisfied	主要感兴趣的问题是确定结构方程的 IV 估计量表现良好的简化形式的条件，其次，可以使用哪些统计测试来了解这些条件是否得到满足
+The question of primary interest is to determine conditions on the reduced form under which the IV estimator of the structural equation is well behaved, and secondly, what statistical tests can be used to learn if these conditions are satisfied	主要感兴趣的问题是确定结构方程的 IV 估计量表现良好的简化形式的条件，其次，可以使用哪些统计检验来了解这些条件是否得到满足
 To break this impasse Stock and Yogo (2005) recommended a constructive alternative	为了打破这一僵局，Stock 和 Yogo（2005）推荐了一种建设性的替代方案
 Specifically, the Stock-Yogo recommendation can be summarized by two steps	具体来说，Stock-Yogo 推荐可以概括为两个步骤
 If there is more than one instrument then the rule-of-thumb changes.) We now describe the steps behind this reasoning in more detail	）我们现在更详细地描述这一推理背后的步骤
 We now describe this procedure	我们现在描述这个过程
-To implement the test we need to calculate an appropriate critical value	为了实施测试，我们需要计算适当的临界值
+To implement the test we need to calculate an appropriate critical value	为了实施检验，我们需要计算适当的临界值
 Equivalently, the recommended rule-of-thumb for the case of a single instrument is to estimate the reduced form and verify that the t-statistic for exclusion of the instrumental variable exceeds 3 in absolute value	同样，对于单一工具的情况，建议的经验法则是估计简化形式并验证排除工具变量的 t 统计量的绝对值是否超过 3
 We report a subset in Table 12.4	我们在表 12.4 中报告了一个子集
 The structural equation is estimated by either 2 SLS or LIML	结构方程通过 2 SLS 或 LIML 进行估计
-The Stock-Yogo test can be implemented in Stata using the command estat firststage after ivregress 2 sls or ivregres liml if a standard (non-robust) covariance matrix has been specified (that is, without the ', r' option)	如果指定了标准（非稳健）协方差矩阵（即，没有 ', r' 选项），则可以在 ivregress 2 sls 或 ivregres liml 之后使用命令 estat firststage 在 Stata 中实现 Stock-Yogo 测试
+The Stock-Yogo test can be implemented in Stata using the command estat firststage after ivregress 2 sls or ivregres liml if a standard (non-robust) covariance matrix has been specified (that is, without the ', r' option)	如果指定了标准（非稳健）协方差矩阵（即，没有 ', r' 选项），则可以在 ivregress 2 sls 或 ivregres liml 之后使用命令 estat firststage 在 Stata 中实现 Stock-Yogo 检验
 There are possible extensions to the Stock-Yogo procedure	Stock-Yogo 程序有可能扩展
 One modest extension is to use the information to convey the degree of confidence in the accuracy of a confidence interval	一种适度的扩展是使用该信息来传达对置信区间准确性的置信程度
 A more substantive extension, which we now discuss, reverses the steps	我们现在讨论的更具实质性的扩展颠倒了这些步骤
@@ -2011,7 +2011,7 @@ The structural equation and reduced form equations are	结构方程和简化形�
 As in the previous section we assume that the errors are conditionally homoskedastic	与上一节一样，我们假设误差是有条件同方差的
 This can be estimated from the reduced-form regression	这可以通过简化形式的回归来估计
 This means that for over-identified models LIML inference is less sensitive to weak instruments than 2SLS and may be the preferred estimation method	这意味着对于过度识别的模型，LIML 推断对弱工具的敏感度低于 2SLS，并且可能是首选的估计方法
-Robust versions of the test have been proposed by Kleibergen and Paap (2006)	Kleibergen 和 Paap (2006) 提出了该测试的稳健版本
+Robust versions of the test have been proposed by Kleibergen and Paap (2006)	Kleibergen 和 Paap (2006) 提出了该检验的稳健版本
 These can be implemented in Stata using the downloadable command ivreg2	这些可以使用可下载命令 ivreg2 在 Stata 中实现
 Example: Acemoglu, Johnson, and Robinson (2001)	示例：阿西莫格鲁、约翰逊和罗宾逊 (2001)
 One particularly well-cited instrumental variable regression is in Acemoglu, Johnson, and Robinson (2001) with additional details published in (2012)	Acemoglu、Johnson 和 Robinson (2001) 中引用了一种特别广泛引用的工具变量回归，并在 (2012) 中发表了更多详细信息
@@ -2166,11 +2166,11 @@ A important advantage of the GMM framework is the ability to incorporate cross-e
 This estimator depends on the weight matrix because it is over-identified	该估计量依赖于权重矩阵，因为它被过度识别
 Written as a vector system this is (13.24) and leads to the same restricted GMM estimators	将其写为矢量系统时，为 (13.24)，并导致相同的受限 GMM 估计量
 These are general formula for imposing restrictions	这些是施加约束的一般公式
-Distance Test	距离测试
+Distance Test	距离检验
 The idea was first put forward by Newey and West (1987a)	这个想法首先由 Newey 和 West (1987a) 提出
 The idea is to compare the unrestricted and restricted estimators by contrasting the criterion functions	这个想法是通过对比准则函数来比较无约束和受约束的估计量
-The distance test shares the useful feature of LR tests in that it is a natural by-product of the computation of alternative models	距离测试具有 LR 测试的有用特征，因为它是替代模型计算的自然副产品
-The test has the following large sample distribution	该测试具有以下大样本分布
+The distance test shares the useful feature of LR tests in that it is a natural by-product of the computation of alternative models	距离检验具有 LR 检验的有用特征，因为它是替代模型计算的自然副产品
+The test has the following large sample distribution	该检验具有以下大样本分布
 The proof is given in Section 13.28	第 13.28 节给出了证明
 The finding that the asymptotic distribution is chi-squared allows the calculation of asymptotic critical values and p-values	渐近分布是卡方的发现允许计算渐近临界值和 p 值
 We now discuss the choice of weight matrix	现在我们讨论权重矩阵的选择
@@ -2179,19 +2179,19 @@ Continuously-Updated GMM	持续更新的GMM
 They solve distinct first-order conditions and can be quite different in applications	它们解决不同的一阶条件，并且在应用中可能有很大不同
 Relative to traditional GMM the CU-GMM estimator has lower bias but thicker distributional tails	相对于传统 GMM，CU-GMM 估计量具有较低的偏误，但分布尾部较厚
 While it has received considerable theoretical attention it is not used commonly in applications	虽然它在理论上受到了相当多的关注，但在应用中并不常用
-OverIdentification Test	过度识别测试
+OverIdentification Test	过度识别检验
 Hansen (1982) generalized the test to cover the GMM estimator allowing for general heteroskedasticity	L. Hansen (1982) 将检验推广到了考虑到一般异方差性的 GMM 估计量
-Thus the model-the overidentifying restrictions - are testable	因此，该模型——过度识别的约束——是可测试的
+Thus the model-the overidentifying restrictions - are testable	因此，该模型——过度识别的约束——是可检验的
 In this sense an exclusion restriction can be seen as an overidentifying restriction	从这个意义上说，排除约束可以被视为过度识别约束
 This is important for the distribution theory	这对于分布理论很重要
 The proof of the theorem is left to Exercise 13.13	该定理的证明留给练习 13.13
 The degrees of freedom of the asymptotic distribution are the number of overidentifying restrictions	渐近分布的自由度是过度识别约束的数量
-In Stata the command estat overid afer ivregress gmm can be used to implement the overidentification test	在Stata中，命令estat overid afer ivregress gmm可用于实现过度识别测试
+In Stata the command estat overid afer ivregress gmm can be used to implement the overidentification test	在Stata中，命令estat overid afer ivregress gmm可用于实现过度识别检验
 In this section we describe how to construct analogous tests for the GMM estimator under general heteroskedasticity	在本节中，我们描述如何在一般异方差下构建 GMM 估计量的类似检验
-Recall, subset overidentification tests are used when it is desired to focus attention on a subset of instruments whose validity is questioned	回想一下，当需要将注意力集中在有效性受到质疑的工具子集上时，使用子集过度识别测试
+Recall, subset overidentification tests are used when it is desired to focus attention on a subset of instruments whose validity is questioned	回想一下，当需要将注意力集中在有效性受到质疑的工具子集上时，使用子集过度识别检验
 Endogeneity Test	内生性检验
 The GMM test is constructed as follows	GMM 检验的构造如下
-The distribution theory for the test is a special case of overidentification testing	该测试的分布理论是过度识别测试的一个特例
+The distribution theory for the test is a special case of overidentification testing	该检验的分布理论是过度识别检验的一个特例
 In Stata the command estat endogenous afer ivregress gmm can be used to implement the test for endogeneity	在Stata中，可以使用命令estat endogenous afer ivregress gmm来实现内生性检验
 Subset Endogeneity Test	子集内生性检验
 The distribution theory for the test is a special case of the theory of overidentification testing	检验的分布理论是过度识别检验理论的一个特例
@@ -2261,7 +2261,7 @@ Here are some examples of processes which are not stationary	以下是非平稳�
 From the examples we can see that stationarity means that the distribution is constant over time	从例子中我们可以看出，平稳性意味着分布随着时间的推移是恒定的
 These restrictions are associated with the concepts of ergodicity and mixing which we shall introduce in subsequent sections	这些约束与遍历性和混合的概念相关，我们将在后续章节中介绍这些概念
 Transformations of Stationary Processes	稳态过程的变换
-One of the important properties of strict stationarity is that it is preserved by transformation	严格平稳性的重要属性之一是它可以通过变换得以保留
+One of the important properties of strict stationarity is that it is preserved by transformation	严格平稳性的重要特征之一是它可以通过变换得以保留
 Convergent Series	收敛系列
 A transformation which includes the full past history is an infinite-order moving average	包含完整过去历史的变换是无限阶移动平均线
 Many time-series models involve representations and transformations of the form (14.3)	许多时间序列模型涉及形式（14.3）的表示和转换
@@ -2270,12 +2270,12 @@ Stationarity alone is not sufficient for the weak law of large numbers as there 
 What is a minimal assumption beyond stationarity so that the law of large numbers applies? This topic is called ergodicity	为了应用大数定律，除了平稳性之外的最小假设是什么？这个主题称为遍历性
 For a rigorous treatment see a standard textbook such as Walters (1982)	对于严格的处理，请参阅标准教科书，例如 Walters (1982)
 This definition is rather abstract and difficult to grasp but fortunately it is not needed by most economists	这个定义相当抽象且难以理解，但幸运的是大多数经济学家不需要它
-We will first describe the properties of ergodic series which are relevant for our needs and follow with the more rigorous technical definitions	我们将首先描述与我们的需求相关的遍历级数的属性，然后是更严格的技术定义
+We will first describe the properties of ergodic series which are relevant for our needs and follow with the more rigorous technical definitions	我们将首先描述与我们的需求相关的遍历级数的特征，然后是更严格的技术定义
 For proofs of the results see Section 14.47	有关结果的证明，请参阅第 14.47 节
 First, many standard time series processes can be shown to be ergodic	首先，许多标准时间序列过程可以被证明是遍历的
 Second, ergodicity, like stationarity, is preserved by transformation	其次，遍历性与平稳性一样，通过变换得以保留
 As an example, the infinite-order moving average transformation (14.3) is ergodic if the input is ergodic and the coefficients are absolutely convergent	例如，如果输入是遍历的且系数绝对收敛，则无限阶移动平均变换 (14.3) 是遍历的
-We now present a useful property	我们现在提出一个有用的属性
+We now present a useful property	我们现在提出一个有用的特征
 It is that the Cesàro sum of the autocovariances limits to zero	自协方差的 Cesàro 和极值为零
 The result (14.4) can be interpreted as that the autocovariances "on average" tend to zero	结果 (14.4) 可以解释为自协方差“平均”趋于零
 The reason why (14.4) is particularly useful is because it is sufficient for the WLLN as we discover later in Theorem 14.9	(14.4) 特别有用的原因是它对于 WLLN 来说是足够的，正如我们稍后在定理 14.9 中发现的那样
@@ -2305,11 +2305,11 @@ An unforecastable process is called a martingale difference sequence (MDS)	不�
 Thus a MDS is mean zero	因此 MDS 的平均值为零
 However, it is best to explicitly specify the information sets so there is no confusion	但是，最好明确指定信息集，以免造成混淆
 shock is a MDS as claimed	因此，i.i.d.正如所声称的那样，休克是一种MDS
-An important property of a square integrable MDS is that it is serially uncorrelated	平方可积 MDS 的一个重要属性是它是序列不相关的
+An important property of a square integrable MDS is that it is serially uncorrelated	平方可积 MDS 的一个重要特征是它是序列不相关的
 Thus the autocovariances and autocorrelations are zero	因此自协方差和自相关为零
 We have proved the following	我们已经证明了以下事实
 Another important special case is a homoskedastic martingale difference sequence	另一个重要的特例是同方差鞅差分序列
-A homoskedastic MDS should more properly be called a conditionally homoskedastic MDS because the property concerns the conditional distribution rather than the unconditional	同方差 MDS 应该更恰当地称为条件同方差 MDS，因为该属性涉及条件分布而不是无条件分布
+A homoskedastic MDS should more properly be called a conditionally homoskedastic MDS because the property concerns the conditional distribution rather than the unconditional	同方差 MDS 应该更恰当地称为条件同方差 MDS，因为该特征涉及条件分布而不是无条件分布
 A homoskedatic MDS is analogous to a conditionally homoskedastic regression error	同方差 MDS 类似于条件同方差回归误差
 sequence is a homoskedastic MDS and the latter is a MDS	序列是同方差MDS，后者是MDS
 The reverse is not the case	反之则不然
@@ -2338,8 +2338,8 @@ In (14.8) we found that in the scalar case	在(14.8)中我们发现在标量情�
 where the convergence holds by the Theorem of Cesàro Means if the limit in (14.16) is convergent	其中，如果 (14.16) 中的极限收敛，则塞萨罗均值定理收敛
 It turns out that these conditions are sufficient for the CLT	事实证明，这些条件对于 CLT 来说已经足够了
 Linear Projection	线性投影
-In Chapter 2 we extensively studied the properties of linear projection models	在第二章中，我们广泛研究了线性投影模型的属性
-The property (14.18) implies that the projection errors are serially uncorrelated	属性 (14.18) 意味着投影误差是序列不相关的
+In Chapter 2 we extensively studied the properties of linear projection models	在第二章中，我们广泛研究了线性投影模型的特征
+The property (14.18) implies that the projection errors are serially uncorrelated	特征 (14.18) 意味着投影误差是序列不相关的
 White Noise	白噪声
 This describes what is known as a white noise process	这描述了所谓的白噪声过程
 It is helpful to observe that a white noise process can be conditionally heteroskedastic as the conditional variance is unrestricted	观察白噪声过程可以是条件异方差的是有帮助的，因为条件方差不受约束
@@ -2379,7 +2379,7 @@ We can also express the AR(1) process using the lag operator notation:	我们还
 This suggests an alternative way of obtaining the representation (14.27)	这提出了另一种获得表示的方法（14.27）
 Substituted into (14.29) we obtain	代入 (14.29) 我们得到
 This illustrates another important concept	这说明了另一个重要的概念
-Invertibility turns out to be a useful property	可逆性被证明是一个有用的属性
+Invertibility turns out to be a useful property	可逆性被证明是一个有用的特征
 Unit Root and Explosive AR(1) Processes	单位根和爆炸 AR(1) 过程
 This is also called a unit root process, a martingale, or an integrated process	这也称为单位根过程、鞅或积分过程
 The stochastic behavior of a random walk is noticably different from a stationary AR(1) process	随机游走的随机行为与平稳 AR(1) 过程明显不同
@@ -2466,15 +2466,15 @@ Thus this estimator solves the two problems described above	因此，该估计�
 The assumption on the mixing coefficients is slightly stronger than in Theorem 14.32, due to the technical nature of the derivation	由于推导的技术性质，混合系数的假设比定理 14.32 中的假设稍强
 Testing the Hypothesis of No Serial Correlation	检验无序列相关的假设
 The test can be implemented by a Wald or F test	检验可以通过Wald检验或F检验来实现
-(The Newey-West estimator should not be used as there is no serial correlation under the null hypothesis.) Accept the hypothesis if the test statistic is smaller than a conventional critical value (or if the p-value exceeds the significance level) and reject the hypothesis otherwise	）如果检验统计量小于常规临界值（或者 p 值超过显着性水平），则接受假设并拒绝否则假设
+(The Newey-West estimator should not be used as there is no serial correlation under the null hypothesis.) Accept the hypothesis if the test statistic is smaller than a conventional critical value (or if the p-value exceeds the significance level) and reject the hypothesis otherwise	）如果检验统计量小于常规临界值（或者 p 值超过显著性水平），则接受假设并拒绝否则假设
 Thus include four lags for quarterly data or twelve lags for monthly data	因此，季度数据包含四个滞后，月度数据包含十二个滞后
-Testing for Omitted Serial Correlation	测试遗漏的串行相关性
+Testing for Omitted Serial Correlation	检验遗漏的串行相关性
 When using an AR(p) model it may be of interest to know if there is any remaining serial correlation	使用 AR(p) 模型时，可能有兴趣了解是否存在任何剩余的序列相关性
 One approach to obtain the correct asymptotic distribution is to use the generalized method of moments, treating (14.52)-(14.53) as a two-equation just-identified system	获得正确渐近分布的一种方法是使用广义矩方法，将 (14.52)-(14.53) 视为二方程刚辨识系统
 An easier solution is to re-write (14.52)-(14.53) as a higher-order autoregression so that we can use a standard test statistic	一个更简单的解决方案是将 (14.52)-(14.53) 重写为高阶自回归，以便我们可以使用标准检验统计量
 Otherwise we accept the hypothesis that the AR(p) model is correctly specified	否则我们接受 AR(p) 模型被正确指定的假设
-Another way of deriving the test is as follows	导出测试的另一种方法如下
-While this discussion is all good fun, it is unclear if there is good reason to use the test described in this section	虽然这个讨论很有趣，但尚不清楚是否有充分的理由使用本节中描述的测试
+Another way of deriving the test is as follows	导出检验的另一种方法如下
+While this discussion is all good fun, it is unclear if there is good reason to use the test described in this section	虽然这个讨论很有趣，但尚不清楚是否有充分的理由使用本节中描述的检验
 One is described in the following section	下一节将介绍其中之一
 Model Selection	选型
 By selecting the model with the smallest value of the AIC you select the model with the smallest estimated divergence - the highest estimated fit between the estimated and true densities	通过选择 AIC 值最小的模型，你可以选择估计差异最小的模型，即估计密度和真实密度之间的最高估计拟合度
@@ -2488,7 +2488,7 @@ The third example is the first difference of CPI inflation (first difference of 
 There are meaningful differences only for the lower order AR models	仅对于低阶 AR 模型存在有意义的差异
 Time Series Regression Models	时间序列回归模型
 Least squares regression methods can be used broadly with stationary time series	最小二乘回归方法可广泛用于平稳时间序列
-Furthermore, it is necessary to be aware of the serial correlation properties of the series involved, and to use the appropriate covariance matrix estimator when the dynamics have not been explicitly modeled	此外，有必要了解所涉及序列的序列相关属性，并在动态尚未明确建模时使用适当的协方差矩阵估计量
+Furthermore, it is necessary to be aware of the serial correlation properties of the series involved, and to use the appropriate covariance matrix estimator when the dynamics have not been explicitly modeled	此外，有必要了解所涉及序列的序列相关特征，并在动态尚未明确建模时使用适当的协方差矩阵估计量
 The coefficient vector is defined by projection and therefore equals	系数向量由投影定义，因此等于
 However, under the stronger assumption that the error is a MDS the asymptotic covariance matrix simplifies	然而，在误差是 MDS 的更强假设下，渐近协方差矩阵会简化
 This means we can apply the MDS CLT to obtain the asymptotic distribution	这意味着我们可以应用 MDS CLT 来获得渐近分布
@@ -2512,7 +2512,7 @@ Consequently these should not be interpreted outside of how the time index is de
 One traditional way of dealing with time trends is to "detrend" the data	处理时间趋势的一种传统方法是对数据进行“去趋势化”
 the coefficients are estimated by least squares	系数通过最小二乘法估计
 More intricate methods can be used but they have a similar flavor	可以使用更复杂的方法，但它们具有相似的味道
-To understand the properties of the detrending method we can apply an asymptotic approximation	为了理解去趋势方法的属性，我们可以应用渐近近似
+To understand the properties of the detrending method we can apply an asymptotic approximation	为了理解去趋势方法的特征，我们可以应用渐近近似
 The rates of convergence change but this does not affect anything of practical importance	收敛速度发生了变化，但这并不影响任何具有实际意义的事情
 Let us demonstrate that the least squares estimator of the coefficients in (14.57) is consistent	让我们证明 (14.57) 中系数的最小二乘估计是一致的
 We need to study the behavior of the sums in the design matrix	我们需要研究设计矩阵中总和的行为
@@ -2534,18 +2534,18 @@ The reason why we call this "Granger causality" rather than "causality" is becau
 An alternative label is "predictive causality"	另一个标签是“预测因果关系”
 Table 14.3: Phillips Curve Regressions	表 14.3：菲利普斯曲线回归
 The definition can alternatively be written in terms of conditional expectations rather than projections	该定义也可以用条件期望而不是预测来编写
-Granger causality can be tested in AR-DL models using a standard Wald or F test	可以使用标准 Wald 或 F 检验在 AR-DL 模型中测试 Granger 因果关系
+Granger causality can be tested in AR-DL models using a standard Wald or F test	可以使用标准 Wald 或 F 检验在 AR-DL 模型中检验 Granger 因果关系
 The test rejects the hypothesis (and thus finds evidence of Granger causality) if the statistic is larger than the critical value (if the p-value is small) and fails to reject the hypothesis (and thus finds no evidence of causality) if the statistic is smaller than the critical value	小于临界值
-This is statistically significant at any conventional level so we can conclude that the unemployment rate has a predictively causal impact on inflation	这在任何传统水平上都具有统计显着性，因此我们可以得出结论，失业率对通货膨胀具有预测性因果影响
+This is statistically significant at any conventional level so we can conclude that the unemployment rate has a predictively causal impact on inflation	这在任何传统水平上都具有统计显著性，因此我们可以得出结论，失业率对通货膨胀具有预测性因果影响
 Granger causality should not be interpreted structurally outside the context of an economic model	格兰杰因果关系不应在经济模型的背景下进行结构性解释
-The coefficients on the lagged stock price growth rates are small in magnitude but the first lag appears statistically significant	滞后股价增长率的系数幅度很小，但第一次滞后似乎具有统计显着性
+The coefficients on the lagged stock price growth rates are small in magnitude but the first lag appears statistically significant	滞后股价增长率的系数幅度很小，但第一次滞后似乎具有统计显著性
 Thus stock prices move in advance of actual economic activity but are not necessarily structurally causal	因此，股票价格的变动先于实际经济活动，但不一定具有结构性因果关系
-Testing for Serial Correlation in Regression Models	回归模型中的序列相关性测试
-Consider the problem of testing for omitted serial correlation in an AR-DL model such as	考虑在 AR-DL 模型中测试遗漏的序列相关性的问题，例如
+Testing for Serial Correlation in Regression Models	回归模型中的序列相关性检验
+Consider the problem of testing for omitted serial correlation in an AR-DL model such as	考虑在 AR-DL 模型中检验遗漏的序列相关性的问题，例如
 Therefore this approach is not recommended	因此不推荐这种方法
-The second approach is to combine equations (14.61)-(14.62) into a single model and execute the test as a restriction within this model	第二种方法是将方程（14.61）-（14.62）组合成单个模型，并作为该模型内的约束执行测试
+The second approach is to combine equations (14.61)-(14.62) into a single model and execute the test as a restriction within this model	第二种方法是将方程（14.61）-（14.62）组合成单个模型，并作为该模型内的约束执行检验
 This test has a conventional asymptotic distribution so is simple to implement	该检验具有传统的渐近分布，因此易于实现
-The basic message is that testing for omitted serial correlation can be implement in regression models by estimating and contrasting different dynamic specifications	基本信息是，通过估计和对比不同的动态设定，可以在回归模型中实现对遗漏序列相关性的测试
+The basic message is that testing for omitted serial correlation can be implement in regression models by estimating and contrasting different dynamic specifications	基本信息是，通过估计和对比不同的动态设定，可以在回归模型中实现对遗漏序列相关性的检验
 Bootstrap for Time Series	时间序列的 Bootstrap
 Recall that the bootstrap approximates the sampling distribution of estimators and test statistics by the empirical distribution of the observations	回想一下，引导程序通过观测的经验分布来近似估计量的抽样分布和检验统计量
 For dependent observations alternative methods should be used	对于相关观测，应使用替代方法
@@ -2589,7 +2589,7 @@ The above derivation assumed a single lag	上述推导假设有一个滞后
 Furthermore, there is nothing special about the two variable case	此外，两个变量的情况没有什么特别的
 The VAR model falls in the class of multivariate regression models studied in Chapter 11	VAR 模型属于第 11 章中研究的多元回归模型类别
 In the following several sections we take a step back and provide a rigorous foundation for vector autoregressions for stationary time series	在下面的几个部分中，我们退后一步，为平稳时间序列的向量自回归提供严格的基础
-The uncorrelatedness of the projection errors is a property of a multivariate white noise process	投影误差的不相关性是多元白噪声过程的一个属性
+The uncorrelatedness of the projection errors is a property of a multivariate white noise process	投影误差的不相关性是多元白噪声过程的一个特征
 Multivariate Wold Decomposition	多元世界分解
 We can write the moving average representation using the lag operator notation as	我们可以使用滞后运算符符号将移动平均表示形式写为
 The series in (15.4) is convergent	(15.4) 中的级数是收敛的
@@ -2990,8 +2990,8 @@ The random effects model is a special case of the fixed effects model	随机效�
 In this case the test should be implemented only on the coefficients on the time-varying regressors	在这种情况下，应仅对时变自变量的系数进行检验
 On the other hand if the test fails to reject this evidence says that the random effects hypothesis cannot be rejected	另一方面，如果检验未能拒绝该证据，则表明随机效应假设不能被拒绝
 It is tempting to use the Hausman test to select whether to use the fixed effects or random effects estimator	使用豪斯曼检验来选择是使用固定效应估计量还是随机效应估计量是很诱人的
-The bias arises because the result of the test is random and correlated with the estimators	出现偏误是因为测试结果是随机的并且与估计量相关
-Instead, the Hausman test can be used as a specification test	相反，豪斯曼测试可以用作设定测试
+The bias arises because the result of the test is random and correlated with the estimators	出现偏误是因为检验结果是随机的并且与估计量相关
+Instead, the Hausman test can be used as a specification test	相反，豪斯曼检验可以用作设定检验
 If you are planning to use the random effects estimator (and believe that the random effects assumptions are appropriate in your context) the Hausman test can be used to check this assumption and provide evidence to support your approach	如果你计划使用随机效应估计量（并且相信随机效应假设适合你的情况），则可以使用豪斯曼检验来检查此假设并提供证据来支持你的方法
 Random Effects or Fixed Effects?	随机效应还是固定效应？
 We have presented the random effects and fixed effects estimators of the regression coefficients	我们提出了回归系数的随机效应和固定效应估计量
@@ -3208,7 +3208,7 @@ The data file DS2004 is a slightly revised version of the author's AER replicati
 Table 18.3: Number of Car Thefts by City Block	表 18.3：按城市街区划分的汽车盗窃案数量
 The model (18.3) makes the strong assumption that the treatment effect is constant across the five treated months	模型 (18.3) 做出了强有力的假设，即治疗效果在五个治疗个月内保持不变
 Given the small sample size (37) of the treatment sample this is strikingly uniform evidence	鉴于治疗样本的样本量较小（37），这是惊人的一致证据
-We can formally test the homogeneity of the treatment effect by including four dummy variables for the interactions of four post-attack months with the treatment sample and then testing the exclusion of these variables	我们可以通过包含四个虚拟变量来正式测试治疗效果的同质性，这些虚拟变量用于攻击后四个月与治疗样本的相互作用，然后测试这些变量的排除
+We can formally test the homogeneity of the treatment effect by including four dummy variables for the interactions of four post-attack months with the treatment sample and then testing the exclusion of these variables	我们可以通过包含四个虚拟变量来正式检验治疗效果的同质性，这些虚拟变量用于攻击后四个月与治疗样本的相互作用，然后检验这些变量的排除
 Thus there is no reason in the data to be suspicious of the homogeneity assumption	因此，数据中没有理由怀疑同质性假设
 The goal was to estimate the causal effect of police presence as a deterrence for crime	目标是评估警察存在对犯罪威慑的因果效应
 Police presence greatly reduces the incidence of car theft	警察的存在大大减少了汽车盗窃的发生率
@@ -3224,7 +3224,7 @@ One generalization is to include interactions of a linear trend with a control v
 A broader generalization is to include unit-specific linear time trends	更广泛的概括是包括特定于单位的线性时间趋势
 Estimation of model (18.6) can be done one of three ways	模型（18.6）的估计可以通过三种方式之一来完成
 This is a generalized within transformation	这是一个概括性的内部转变
-Naïve tests will over-state significance	简单的测试会夸大其重要性
+Naïve tests will over-state significance	简单的检验会夸大其重要性
 Our discussion for simplicity has focused on the case of balanced panels	为了简单起见，我们的讨论集中在平衡面板的情况上
 The methods equally apply to unbalanced panels, using standard panel data estimation	这些方法同样适用于使用标准面板数据估计的不平衡面板
 Do Blue Laws Affect Liquor Sales?	蓝色法律会影响酒类销售吗？
@@ -3322,7 +3322,7 @@ This is true for both the NW and LL estimators	对于 NW 和 LL 估计量都是�
 The efficiency loss by using the other standard kernels, however, is small	然而，使用其他标准内核的效率损失很小
 Since the Gaussian kernel produces the smoothest estimates, which is important for estimation of marginal effects, our overall recommendation is the Gaussian kernel	由于高斯核产生最平滑的估计，这对于边际效应的估计很重要，因此我们总体推荐是高斯核
 Reference Bandwidth	参考带宽
-It is useful to have a reference bandwith which mimics the optimal bandwidth in a simplified setting and provides a baseline for further investigations	拥有一个参考带宽非常有用，它可以在简化的设置中模拟最优带宽，并为进一步研究提供基线
+It is useful to have a reference bandwith which mimics the optimal bandwidth in a simplified setting and provides a baseline for further investigations	拥有一个参考带宽非常有用，它可以在简化的设置中模拟最优带宽，并为进一步研究提供基础
 A reference approach can be used to develop a rule-of-thumb for regression estimation	参考方法可用于制定回归估计的经验法则
 We now describe their derivation	我们现在描述它们的推导
 Fan and Gijbels developed similar rules for higher-order odd local polynomial estimators but not for the local constant (Nadaraya-Watson) estimator	Fan 和 Gijbels 为高阶奇局部多项式估计量开发了类似的规则，但没有为局部常数 (Nadaraya-Watson) 估计量开发了类似的规则
@@ -3391,15 +3391,15 @@ Clustered Observations	群组观测
 Dependence within each cluster is unstructured	每个群组内的依赖性是非结构化的
 The natural method to obtain prediction errors is by delete-cluster regression	获得预测误差的自然方法是通过删除群组回归
 Figure 19.6: Confidence Band Construction	图 19.6：置信带构建
-Application to Testscores	测试成绩的应用
-We illustrate kernel regression with clustered observations by using the Duflo, Dupas, and Kremer (2011) investigation of the effect of student tracking on testscores	我们通过使用 Duflo、Dupas 和 Kremer（2011）对学生跟踪对测试分数的影响的调查，用群组观测来说明核回归
+Application to Testscores	检验成绩的应用
+We illustrate kernel regression with clustered observations by using the Duflo, Dupas, and Kremer (2011) investigation of the effect of student tracking on testscores	我们通过使用 Duflo、Dupas 和 Kremer（2011）对学生跟踪对检验分数的影响的调查，用群组观测来说明核回归
 We investigate the authors' specification of this control using local linear regression	我们使用局部线性回归研究了作者对该控制的设定
-We took the subsample of 1487 girls who experienced tracking and estimated the regression of testscores on percentile	我们对 1487 名经历过跟踪的女孩进行了子样本分析，并估计了百分位数测试分数的回归
+We took the subsample of 1487 girls who experienced tracking and estimated the regression of testscores on percentile	我们对 1487 名经历过跟踪的女孩进行了子样本分析，并估计了百分位数检验分数的回归
 We used local linear regression with a Gaussian kernel	我们使用带有高斯核的局部线性回归
 This means that the clustered CV criterion has difficulty discriminating between these bandwidth choices	这意味着群组 CV 准则很难区分这些带宽选择
-Students with initial testscores at the top of the initial distribution have higher final testscores on average than predicted by a linear specification	初始测试成绩位于初始分布顶部的学生的平均最终测试成绩高于线性设定的预测
+Students with initial testscores at the top of the initial distribution have higher final testscores on average than predicted by a linear specification	初始检验成绩位于初始分布顶部的学生的平均最终检验成绩高于线性设定的预测
 Multiple Regressors	多重自变量
-Figure 19.7: Testscore as a Function of Initial Percentile	图 19.7：测试分数作为初始百分位数的函数
+Figure 19.7: Testscore as a Function of Initial Percentile	图 19.7：检验分数作为初始百分位数的函数
 For the local-linear estimator, define	对于局部线性估计量，定义
 In multiple regressor kernel regression cross-validation remains a recommended method for bandwidth selection	在多重自变量核回归中，交叉验证仍然是带宽选择的推荐方法
 This means that numerical minimization needs to be done more efficiently than by a simple grid search	这意味着数值最小化需要比简单的网格搜索更有效地完成
@@ -3570,7 +3570,7 @@ NPIV Identification	NPIV鉴定
 This is considerably more challenging	这更具挑战性
 Specifying and understanding the needed restrictions is more subtle than in the linear case	指定和理解所需的约束比线性情况更微妙
 Newey and Powell (2003) defined this fundamental condition as completeness	Newey 和 Powell (2003) 将这一基本条件定义为完整性
-This is analogous to the linear IV model where identification is a property of the reduced form equations, not a property of the structural equation	这类似于线性 IV 模型，其中识别是简化形式方程的属性，而不是结构方程的属性
+This is analogous to the linear IV model where identification is a property of the reduced form equations, not a property of the structural equation	这类似于线性 IV 模型，其中识别是简化形式方程的特征，而不是结构方程的特征
 As we stated above, completeness may not be satisfied even if the reduced form relationship is strong	如上所述，即使简化形式关系很强，也可能无法满足完整性
 This is despite the fact that the reduced form equation is strong	尽管事实上简化形式方程是强的
 While identification fails for some conditional distributions, it does not fail for all	虽然某些条件分布的识别失败，但并非所有条件分布都失败
@@ -3594,13 +3594,13 @@ Example: Angrist and Lavy (1999)	示例：安格里斯特和拉维 (1999)
 To illustrate nonparametric instrumental variables in practice we follow Horowitz (2011) by extending the empirical work reported in Angrist and Lavy (1999)	为了说明实践中的非参数工具变量，我们遵循 Horowitz (2011)，扩展了 Angrist 和 Lavy (1999) 中报告的实证工作
 The variables enrollment and disadvantaged are treated as exogenous but classize is treated as endogenous because wealthier schools may be able to offer smaller class sizes	入学率和弱势群体变量被视为外生变量，但分类被视为内生变量，因为较富裕的学校可能能够提供较小的班级规模
 The authors suggest the following instrumental variable for classsize	作者建议使用以下用于班级规模的工具变量
-Their estimates show a negative and statistically significant impact of classsize on reading test scores	他们的估计显示班级规模对阅读测试成绩产生负面且具有统计显着性的影响
+Their estimates show a negative and statistically significant impact of classsize on reading test scores	他们的估计显示班级规模对阅读检验成绩产生负面且具有统计显著性的影响
 We are interested in a nonparametric version of their equation	我们对他们的方程的非参数版本感兴趣
 To keep the specification reasonably parsimonious yet flexible we use the following equation	为了保持设定合理简约但灵活，我们使用以下等式
 This is a cubic equation in classize and disadvantaged, with a single interaction term, and linear in enrollment and grade4	这是分类和弱势群体的三次方程，具有单个交互项，并且与入学和年级呈线性关系4
-Table 20.1: Nonparametric Instrumental Variable Regression for Reading Test Score	表 20.1：阅读测试成绩的非参数工具变量回归
+Table 20.1: Nonparametric Instrumental Variable Regression for Reading Test Score	表 20.1：阅读检验成绩的非参数工具变量回归
 To obtain a better interpretation of the results we display the estimated regression functions in Figure 20.8	为了更好地解释结果，我们在图 20.8 中显示了估计的回归函数
-Figure 20.8: Nonparametric Instrumental Variables Estimates of the Effect of Classize and Disadvantaged on Reading Test Scores	图 20.8：分类和劣势对阅读测试成绩影响的非参数工具变量估计
+Figure 20.8: Nonparametric Instrumental Variables Estimates of the Effect of Classize and Disadvantaged on Reading Test Scores	图 20.8：分类和劣势对阅读检验成绩影响的非参数工具变量估计
 In panel (a) we can see that increasing class size decreases the average test score	在面板（a）中，我们可以看到增加班级规模会降低平均考试成绩
 The estimated effect is remarkably close to linear	估计的效果非常接近线性
 In panel (b) we can see that increasing the percentage of disadvantaged students greatly decreases the average test score	在面板（b）中，我们可以看到，增加弱势学生的比例会大大降低平均考试成绩
@@ -3687,13 +3687,13 @@ A Simple RDD Estimator	一个简单的 RDD 估计量
 A simple RDD estimator can be implement by a standard regression using conventional software	简单的 RDD 估计量可以通过使用传统软件的标准回归来实现
 To illustrate, take the Head Start sample	为了说明这一点，请看 Head Start 示例
 The standard error for the effect is also larger, consistent with our expectation that the rectangular kernel estimator is less accurate	效果的标准误差也较大，这与我们的预期一致，即矩形核估计量不太准确
-Density Discontinuity Test	密度不连续性测试
+Density Discontinuity Test	密度不连续性检验
 Some care needs to be exercised in implementation, however, as conventional density estimators smooth over discontinuities and conventional density estimators are biased at boundary points (similarly to the bias of the Nadaraya-Watson estimator at boundary points)	然而，在实现过程中需要注意一些，因为传统的密度估计量会平滑不连续性，并且传统的密度估计量在边界点处有偏误（类似于 Nadaraya-Watson 估计量在边界点处的偏误）
 A simple visual check is the histogram of the running variable with narrow bins, carefully constructed so that no bin spans the cut-off	一个简单的目视检查是带有窄箱的运行变量的直方图，经过精心构建，以便没有箱跨越截止值
 If the histogram bins display no evidence of bunching at one side of the cut-off this is consistent with the hypothesis that the density is continuous at the cut-off; on the other hand if there is a noticable spike on either side this is inconsistent with the hypothesis of correct specification	如果直方图箱在截止点的一侧没有显示聚束的证据，则这与密度在截止点处连续的假设是一致的；另一方面，如果任一侧都有明显的尖峰，则这与正确规格的假设不一致
 In the Head Start example it is not credible that the running variable was manipulated by the individual counties because it was constructed from the 1960 census by a federal agency in 1965	在 Head Start 示例中，运行变量是由各个县操纵的，这是不可信的，因为它是由联邦机构在 1965 年根据 1960 年人口普查构建的
 In particular there is no visual evidence of bunching around the cut-off	特别是没有视觉证据表明在截止点周围聚集
-McCrary (2008) implements a formal test for continuity of the density at the cut-off	McCrary (2008) 对截止处的密度连续性进行了正式测试
+McCrary (2008) implements a formal test for continuity of the density at the cut-off	McCrary (2008) 对截止处的密度连续性进行了正式检验
 If the statistic is large this is evidence against the assumption of no manipulation, suggesting that the RDD design is not appropriate	如果统计数据很大，这就是反对无操纵假设的证据，表明 RDD 设计不合适
 Fuzzy Regression Discontinuity	模糊回归不连续性
 The sharp regression discontinuity requires that the cut-off perfectly separates treatment from nontreatment	急剧的回归不连续性要求截止点将治疗与未治疗完全分开
@@ -3722,7 +3722,7 @@ Some examples include the following	一些示例包括以下内容
 Not all nonlinear estimators are m-estimators	并非所有非线性估计量都是 m 估计量
 Examples include method of moments, GMM, and minimum distance	示例包括矩量法、GMM 和最小距离
 Identification and Estimation	识别与估算
-This is a property of the probability distribution, not of the estimator	这是概率分布的属性，而不是估计量的属性
+This is a property of the probability distribution, not of the estimator	这是概率分布的特征，而不是估计量的特征
 However, when discussing a specific estimator it is common to describe identification in terms of the criterion function	然而，在讨论特定估计量时，通常用准则函数来描述识别
 In nonlinear models it is difficult to provide general conditions under which a parameter is identified	在非线性模型中，很难提供识别参数的一般条件
 Identification needs to be examined on a model-by-model basis	识别需要逐个模型地进行检查
@@ -3749,7 +3749,7 @@ The following result is a simple generalization of Lipschitz-continuity	以下�
 We next present a set of flexible results	接下来我们将展示一组灵活的结果
 Second, one of the following holds	其次，下列条件之一成立
 See Theorem 18.6 of Probability and Statistics for Economists or Theorems 2 and 3 of Andrews (1994)	参见《经济学家的概率与统计》定理 18.6 或 Andrews (1994) 的定理 2 和定理 3
-As we will not be using this property in this textbook we will not discuss this further, but refer the interested reader to any textbook on empirical processes	由于我们不会在本教科书中使用这个属性，因此我们不会进一步讨论这一点，而是请感兴趣的读者参考任何有关实证过程的教科书
+As we will not be using this property in this textbook we will not discuss this further, but refer the interested reader to any textbook on empirical processes	由于我们不会在本教科书中使用这个特征，因此我们不会进一步讨论这一点，而是请感兴趣的读者参考任何有关实证过程的教科书
 There is no formal guidance	没有正式的指导
 This is unfortunately not uniformly done in practice	不幸的是，这在实践中并没有统一执行
 Proof of Theorem 22.1 The proof proceeds in two steps	定理22.1 的证明 证明分两步进行
@@ -3824,20 +3824,20 @@ Given the coefficient estimates the regression function can be plotted along wit
 The confidence bands are widest at the estimated tipping point	置信区间在估计的临界点处最宽
 The empirical results presented in this section are distinct from, yet similar to, those reported in Card, Mas, and Rothstein (2008)	本节中提出的实证结果与 Card、Mas 和 Rothstein (2008) 中报告的结果不同但相似
 This is an influential paper as it used the rigor of an economic model to give insight about segregation behavior, and used a rich detailed dataset to investigate the strong tipping point prediction	这是一篇有影响力的论文，因为它使用了严格的经济模型来深入了解隔离行为，并使用丰富的详细数据集来研究强临界点预测
-Testing for Nonlinear Components	非线性元件测试
+Testing for Nonlinear Components	非线性元件检验
 Identification can be tricky in nonlinear regression models	在非线性回归模型中识别可能很棘手
 The latter arises in the Regression Kink and threshold regression models	后者出现在回归扭结和阈值回归模型中
 For example, in the Card-Mas-Rothstein (2008) application this is the hypothesis of no tipping point which is the key issue explored in their paper	例如，在 Card-Mas-Rothstein（2008）的应用中，这是没有临界点的假设，这是他们论文中探讨的关键问题
 As an example consider the threshold regression (23.9)	作为一个例子，考虑阈值回归（23.9）
 To test the hypothesis a standard test is to reject for large values of the F statistic	为了检验假设，标准检验是拒绝较大的 F 统计值
 The F statistic can be written as	F 统计量可以写为
-Figure 23.4: Test for Threshold Regression in CMR Model	图 23.4：CMR 模型中的阈值回归测试
+Figure 23.4: Test for Threshold Regression in CMR Model	图 23.4：CMR 模型中的阈值回归检验
 This is extremely high by conventional standards	以传统标准来看，这是非常高的
 The asymptotic theory of the test has been worked out by Andrews and Ploberger (1994) and B	检验的渐近理论由 Andrews 和 Ploberger (1994) 以及 B. E. Hansen (1996) 制定
 What is important is that the bootstrap data satisfy the null hypothesis	重要的是引导数据满足原假设
 For clustered samples we need to make a minor modification	对于群组样本，我们需要进行较小的修改
 The modified algorithm uses the following steps	修改后的算法使用以下步骤
-To illustrate we apply this test to the threshold regression (23.9) estimated with the Card-Mas-Rothstein (2008) data	为了说明这一点，我们将此测试应用于使用 Card-Mas-Rothstein (2008) 数据估计的阈值回归 (23.9)
+To illustrate we apply this test to the threshold regression (23.9) estimated with the Card-Mas-Rothstein (2008) data	为了说明这一点，我们将此检验应用于使用 Card-Mas-Rothstein (2008) 数据估计的阈值回归 (23.9)
 Thus despite the visually strong evidence of a tipping effect from the previous section the statistical evidence of this effect is strong but not overwhelming	因此，尽管上一节中的倾斜效应在视觉上有强有力的证据，但这种效应的统计证据是强有力的，但不是压倒性的
 Stata has a built-in command nl for NLLS estimation	Stata 有一个内置命令 nl 用于 NLLS 估计
 It is prudent to try several starting values because the algorithm is not guaranteed to converge to the global minimum	尝试多个起始值是谨慎的做法，因为该算法不能保证收敛到全局最小值
@@ -3858,7 +3858,7 @@ When a distribution is symmetric then the median equals the mean but when the di
 Throughout this textbook we have primarily focused on conditional relationships	在这本教科书中，我们主要关注条件关系
 Similarly we define the conditional median as the median of a sub-population	类似地，我们将条件中位数定义为子总体的中位数
 These are the wages of a "typical" man and woman	这些是“典型”男人和女人的工资
-We now present analogous properties of the median	我们现在提出中位数的类似属性
+We now present analogous properties of the median	我们现在提出中位数的类似特征
 Both are symmetric and so treat positive and negative errors identically	两者都是对称的，因此对正误差和负误差的处理方式相同
 Figure 24.1: LAD Criterion	图 24.1：LAD 准则
 Least Absolute Deviations	最小绝对误差
@@ -3877,7 +3877,7 @@ Figure 24.2: Quantile Regressions	图 24.2：分位数回归
 These quantile regression functions provide a summary of the conditional distribution of wages given education	这些分位数回归函数提供了受教育程度工资条件分布的摘要
 We define the quantile regression model analogously to the median regression model:	我们定义与中值回归模型类似的分位数回归模型：
 Recall that the mean minimizes the squared error loss and the median minimizes the absolute error loss	回想一下，平均值使平方误差损失最小化，中位数使绝对误差损失最小化
-We now describe some properties of the quantile regression function	我们现在描述分位数回归函数的一些属性
+We now describe some properties of the quantile regression function	我们现在描述分位数回归函数的一些特征
 Figure 24.3: Quantile Loss Function	图 24.3：分位数损失函数
 This connects quantile regression with median and mean regression	这将分位数回归与中值和均值回归联系起来
 This equals the true conditional quantile coefficient when true function is linear	当真函数是线性时，这等于真条件分位数系数
@@ -3913,7 +3913,7 @@ This can be estimated as	这可以估计为
 In Stata, the clustered bootstrap can be accomplished by: bootstrap, reps(\#) cluster(id): qreg y x, followed by estat bootstrap	在Stata中，群组引导可以通过以下方式完成：bootstrap,reps(\#) cluster(id):qreg y x，然后是estat bootstrap
 We illustrate the application of clustered quantile regression using the Duflo, Dupas, and Kremer (2011) school tracking application. (See Section 4.21.) Recall, the question was whether or not tracking (separating students into classrooms based on an initial test) influenced average end-of-year scores	我们使用 Duflo、Dupas 和 Kremer (2011) 学校跟踪应用程序来说明群组分位数回归的应用
 Overall the evidence that tracking affects student performance is weak	总体而言，跟踪影响学生表现的证据很弱
-Table 24.2: Quantile Regressions of Student Testscores on Tracking	表 24.2：学生跟踪测试成绩的分位数回归
+Table 24.2: Quantile Regressions of Student Testscores on Tracking	表 24.2：学生跟踪检验成绩的分位数回归
 Quantile Crossings	分位数交叉
 This is only a problem in practical applications if estimated quantile functions actually cross	如果估计的分位数函数实际上交叉，这只是实际应用中的问题
 However when estimated quantile regression functions cross one another it can be prudent to address the issue	然而，当估计的分位数回归函数相互交叉时，可以谨慎地解决这一问题
@@ -4011,7 +4011,7 @@ Note: For ease of reading, the reported AME estimates have been multiplied by 10
 In Stata, model (26.7) can be estimated using cmclogit	在 Stata 中，可以使用 cmclogit 估计模型 (26.7)
 Independence of Irrelevant Alternatives	不相关替代方案的独立性
 The multinomial logit model has an undesirable restriction	多项 Logit 模型有一个不希望的局限
-This property is strongly tied to the multinomial logit model as the latter was derived axiomatically by Luce (1959) from an IIA assumption	该属性与多项 Logit 模型密切相关，因为后者是 Luce (1959) 根据 IIA 假设公理地推导出来的
+This property is strongly tied to the multinomial logit model as the latter was derived axiomatically by Luce (1959) from an IIA assumption	该特征与多项 Logit 模型密切相关，因为后者是 Luce (1959) 根据 IIA 假设公理地推导出来的
 To understand why IIA may be problematic it is helpful to think through specific examples	为了理解为什么 IIA 可能存在问题，思考具体的例子会有所帮助
 In this latter setting a low airplane ticket may make it highly unlikely that an individual will select train travel while unaffecting their likelihood of selecting car travel	在后一种情况下，低廉的机票可能使个体不太可能选择火车旅行，同时不影响他们选择汽车旅行的可能性
 A famous example of this problem is the following setting	此问题的一个著名示例是以下设置
@@ -4131,11 +4131,11 @@ The censoring process is depicted in Figure 27.1(b)	审查过程如图 27.1(b) �
 A common "remedy" to the censoring problem is deletion of the censored observations	审查问题的常见“补救措施”是删除审查的观测结果
 In Figure 27.1(a) and Figure 27.1(b) the truncated distribution is the continuous portion above 0 with the mass point at 0 omitted	在图27.1(a)和图27.1(b)中，截断分布是0以上的连续部分，省略了0处的质点
 The truncated distribution is obtained by deleting the censored observations so consists of just the open squares	截断分布是通过删除删失观测值获得的，因此仅包含空心方块
-Figure 27.2: Properties of Censored Distributions	图 27.2：截尾分布的属性
+Figure 27.2: Properties of Censored Distributions	图 27.2：截尾分布的特征
 The censored regression model (27.1) makes several strong assumptions: (1) linearity of the conditional mean; (2) independence of the error; (3) normal distribution	删失回归模型（27.1）做出了几个强有力的假设：（1）条件均值的线性； (2) 误差的独立性； (3)正态分布
 The normality assumption is also quite important, yet difficult to justify from first principles	正态性假设也相当重要，但很难从第一原理中证明其合理性
 Censored Regression Functions	删失回归函数
-We can calculate some properties of the conditional distribution of the censored random variable	我们可以计算删失随机变量的条件分布的一些属性
+We can calculate some properties of the conditional distribution of the censored random variable	我们可以计算删失随机变量的条件分布的一些特征
 The conditional mean of the uncensored, censored, and truncated distributions are	未经审查、审查和截断分布的条件平均值为
 To obtain (27.2) and (27.3) see Theorems 5.8.4 and 5.8.6 of Probability and Statistics for Economists and Exercise 27.1	要获得 (27.2) 和 (27.3)，请参阅《经济学家概率论与数理统计》的定理 5.8.4 和 5.8.6 以及练习 27.1
 with strict inequality if the censoring probability is positive	如果审查概率为正，则具有严格的不等式
@@ -4291,7 +4291,7 @@ which equals Mallows' measure of fit	这等于马洛斯的拟合度
 The proof is given in Section 28.32	第 28.32 节给出了证明
 Hold-Out Criterion	坚持标准
 Dividing the sample into two parts, one for estimation and the second for evaluation, creates a simple device for model evaluation and selection	将样本分为两部分，一部分用于估计，第二部分用于评估，创建了一个用于模型评估和选择的简单装置
-In the recent machine learning literature the data division is typically described as a training sample and a test sample	在最近的机器学习文献中，数据划分通常被描述为训练样本和测试样本
+In the recent machine learning literature the data division is typically described as a training sample and a test sample	在最近的机器学习文献中，数据划分通常被描述为训练样本和检验样本
 Such divisions are most suited for a context of an extremely large sample	这种划分最适合样本量极大的情况
 The method is intuitive, general, and flexible, and does not rely on technical assumptions	该方法直观、通用、灵活，不依赖于技术假设
 The hold-out method has two disadvantages	保留方法有两个缺点
@@ -4310,7 +4310,7 @@ Implementation of CV model selection is the same as for the other criteria	CV �
 The model with the smallest value of CV is the CVselected model	CV 值最小的模型是 CVselected 模型
 The CV method is also much broader in concept and potential application	CV 方法在概念和潜在应用方面也更广泛
 Computationally and conceptually it is straightforward to select models by minimizing such criterion	从计算和概念上讲，通过最小化此类标准来选择模型是很简单的
-However, the properties of applying CV to general criterion is not known	然而，将 CV 应用于一般标准的属性尚不清楚
+However, the properties of applying CV to general criterion is not known	然而，将 CV 应用于一般标准的特征尚不清楚
 Stata does not have a standard command to calculate the CV criterion for regression models	Stata 没有标准命令来计算回归模型的 CV 标准
 K-Fold Cross-Validation	K 折交叉验证
 There are two deficiencies with the CV criterion which can be alleviated by the closely related K-fold cross-validation criterion	CV 标准有两个缺陷，可以通过密切相关的 K 折交叉验证标准来缓解
@@ -4337,7 +4337,7 @@ There are two useful practical implications	有两个有用的实际意义
 Similar comments apply to BIC selection though the effective critical values are different	尽管有效临界值不同，但类似的评论也适用于 BIC 选择
 Hence BIC selection becomes stricter as sample sizes increase	因此，随着样本量的增加，BIC 选择变得更加严格
 Consistent Selection	一致的选择
-An important property of a model selection procedure is whether it selects a true model in large samples	模型选择过程的一个重要属性是它是否在大样本中选择真实模型
+An important property of a model selection procedure is whether it selects a true model in large samples	模型选择过程的一个重要特征是它是否在大样本中选择真实模型
 We call such a procedure consistent	我们称这样的过程为一致的
 To discuss this further we need to thoughtfully define what is a "true" model	为了进一步讨论这个问题，我们需要仔细地定义什么是“真实”模型
 The answer depends on the type of model	答案取决于模型的类型
@@ -4347,12 +4347,12 @@ The most common type of intersecting models are nested	最常见的相交模型�
 We say a method is consistent if it asymptotically selects a true model	如果一个方法渐进地选择了一个真实的模型，我们就说它是一致的
 This states that the model selection rule selects a true model with probability tending to 1 as the sample size diverges	这表明模型选择规则选择一个真实模型，随着样本量的变化，概率趋于 1
 A broad class of model selection methods satisfy this definition of consistency	一类广泛的模型选择方法满足一致性的定义
-This result covers AIC, BIC and testing-based selection	此结果涵盖 AIC、BIC 和基于测试的选择
+This result covers AIC, BIC and testing-based selection	此结果涵盖 AIC、BIC 和基于检验的选择
 Thus all are model selection consistent	因此，所有模型选择都是一致的
 A major limitation with this result is that the definition of model selection consistency is weak	该结果的一个主要不足是模型选择一致性的定义很弱
 If a selection rule asymptotically selects an over-parameterized model we say that it "over-selects"	如果选择规则渐进地选择过度参数化模型，我们就说它“过度选择”
 The definition states that over-selection occurs when two models are nested and the smaller model is true (so both models are true models but the smaller model is more parsimonious) if the larger model is asymptotically selected with positive probability	该定义指出，当两个模型嵌套并且较小的模型为真（因此两个模型都是真实模型，但较小的模型更简约）时，如果以正概率渐近选择较大的模型，就会发生过度选择
-This result includes both AIC and testing-based selection	此结果包括 AIC 和基于测试的选择
+This result includes both AIC and testing-based selection	此结果包括 AIC 和基于检验的选择
 Following this line of reasoning, it is useful to draw a distinction between true and parsimonious models	遵循这一推理思路，区分真实模型和简约模型是很有用的
 Of the methods we have reviewed, only BIC selection is consistent for parsimonious models, as we now show	正如我们现在所展示的，在我们回顾的方法中，只有 BIC 选择对于简约模型是一致的
 Thus consistent model selection is only one of several desirable statistical properties	因此，一致的模型选择只是几个理想的统计特性之一
@@ -4387,8 +4387,8 @@ We use the terms here as described in Hastie, Tibshirani, and Friedman (2008)	�
 Backward Stepwise Regression	向后逐步回归
 Forward Stepwise Regression	前向逐步回归
 There are combined algorithms which check both forward and backward movements at each step	有组合算法可以检查每一步的向前和向后运动
-There are also old-fashioned versions which use significance testing rather than selection criterion (this is generally not advised)	还有一些老式版本使用显着性检验而不是选择标准（通常不建议这样做）
-Stepwise regression based on old-fashioned significance testing can be implemented in Stata using the stepwise command	基于老式显着性检验的逐步回归可以在 Stata 中使用 stepwise 命令实现
+There are also old-fashioned versions which use significance testing rather than selection criterion (this is generally not advised)	还有一些老式版本使用显著性检验而不是选择标准（通常不建议这样做）
+Stepwise regression based on old-fashioned significance testing can be implemented in Stata using the stepwise command	基于老式显著性检验的逐步回归可以在 Stata 中使用 stepwise 命令实现
 Stepwise regression can be implemented in R using the lars command	可以使用 lars 命令在 R 中实现逐步回归
 The MSE of Model Selection Estimators	模型选择估计量的 MSE
 Model selection can lead to estimators with poor sampling performance	模型选择可能会导致估计量的采样性能较差
@@ -4430,7 +4430,7 @@ which is fully feasible as it does not depend on unknowns or tuning parameters	�
 Interpretation of the Stein Effect	斯坦因效应的解释
 The James-Stein Theorem appears to conflict with classical statistical theory	詹姆斯-斯坦定理似乎与经典统计理论相冲突
 Part of the answer is that classical theory has caveats	部分答案是经典理论有一些警告
-On the other hand, the James-Stein Theorem shows that if unbiasedness is not a critical property but instead MSE is important, then there are better estimators than the MLE	另一方面，詹姆斯-斯坦定理表明，如果无偏性不是关键属性，而是 MSE 很重要，那么就有比 MLE 更好的估计量
+On the other hand, the James-Stein Theorem shows that if unbiasedness is not a critical property but instead MSE is important, then there are better estimators than the MLE	另一方面，詹姆斯-斯坦定理表明，如果无偏性不是关键特征，而是 MSE 很重要，那么就有比 MLE 更好的估计量
 The James-Stein estimator is able to achieve reduced variance because it is a soft threshold function	James-Stein 估计量能够减少方差，因为它是一个软阈值函数
 This means that the user needs to choose the centering point wisely	这意味着用户需要明智地选择中心点
 Positive Part Estimator	正部分估计量
@@ -4505,7 +4505,7 @@ This has been been interpreted to mean that the model with the highest value of 
 There is another interpretation of Schwarz's result	对施瓦茨的结果还有另一种解释
 which is a simple exponential transformation of the BIC	这是 BIC 的简单指数变换
 These are known as BIC weights and produce the smoothed BIC estimator	这些称为 BIC 权重，并生成平滑的 BIC 估计量
-Some properties of the BIC weights are as follows	BIC 权重的一些属性如下
+Some properties of the BIC weights are as follows	BIC 权重的一些特征如下
 The Smoothed BIC (SBIC) estimator is	平滑 BIC (SBIC) 估计量为
 The SBIC estimator is a smoother function of the data than BIC selection as there are no discontinuous jumps across models	SBIC 估计量是比 BIC 选择更平滑的数据函数，因为模型之间不存在不连续跳跃
 An advantage of the smoothed BIC weights and estimator is that it can be used to combine models from different probability families	平滑 BIC 权重和估计量的优点是它可用于组合来自不同概率族的模型
@@ -4522,7 +4522,7 @@ The Smoothed AIC (SAIC) estimator is	平滑 AIC (SAIC) 估计量为
 The SAIC estimator is a smoother function of the data than AIC selection	SAIC 估计量是比 AIC 选择更平滑的数据函数
 Recall that both AIC selection and BIC selection are model selection consistent in the sense that as the sample size gets large the probability that the selected model is a true model is arbtrarily close to one	回想一下，AIC 选择和 BIC 选择都是模型选择一致的，因为随着样本量变大，所选模型是真实模型的概率任意接近 1
 Furthermore, BIC is consistent for parsimonious models and AIC asymptotically over-selects	此外，BIC 对于简约模型是一致的，而 AIC 渐近过度选择
-These properties extend to SBIC and SAIC	这些属性延伸至SBIC 和SAIC
+These properties extend to SBIC and SAIC	这些特征延伸至SBIC 和SAIC
 However, SAIC will asymptotically spread weight across both parsimonious true models and overparameterized true models, while SBIC asymptotically concentrates weight only on parsimonious true models	然而，SAIC 将渐近地将权重分散到简约真实模型和过度参数化真实模型上，而 SBIC 渐近地将权重仅集中在简约真实模型上
 An interesting property of the smoothed estimators is the possibility of asymptotically spreading weight across equal-fitting parsimonious models	平滑估计量的一个有趣的特性是可以在等拟合简约模型中渐近分布权重
 In large samples both SBIC and SAIC will be weighted averages of the two estimators rather than simply selecting one of the two	在大样本中，SBIC 和 SAIC 都将是两个估计量的加权平均值，而不是简单地选择两者之一
@@ -4612,7 +4612,7 @@ The p-norm satisfies the following additivity property	p-范数满足以下可�
 The following inequalities are useful	以下不等式很有用
 Applying Hölder's (29.1) we also have the inequality	应用 Hölder 的 (29.1) 我们也有不等式
 Ridge Regression	岭回归
-Ridge regression is a shrinkage-type estimator with similar but distinct properties from the JamesStein estimator (see Section 28.20)	岭回归是一种收缩型估计量，与 JamesStein 估计量具有相似但不同的属性（参见第 28.20 节）
+Ridge regression is a shrinkage-type estimator with similar but distinct properties from the JamesStein estimator (see Section 28.20)	岭回归是一种收缩型估计量，与 JamesStein 估计量具有相似但不同的特征（参见第 28.20 节）
 We discuss both in turn	我们依次讨论两者
 The second motivation is based on penalization	第二个动机是基于惩罚
 Minimization subject to a penalty has a dual representation as constrained minimization	受到惩罚的最小化具有作为约束最小化的双重表示
@@ -4693,7 +4693,7 @@ Approximate Sparsity	近似稀疏性
 The theory of the previous section used the strong assumption that the true regression is sparse: only a subset of the coefficients are non-zero, and the convergence rate depends on the cardinality of the nonzero coefficients	上一节的理论使用了真实回归是稀疏的强假设：只有系数的子集非零，并且收敛速度取决于非零系数的基数
 Assumption 29.2 Approximate Sparsity	假设 29.2 近似稀疏性
 Belloni, Chen, Chernozhukov, and Hansen (2012) show that convergence results similar to Theorem 29.3 hold under the approximate sparsity condition of Assumption 29.2	Belloni、Chen、Chernozhukov 和 Hansen (2012) 表明，在假设 29.2 的近似稀疏条件下，类似于定理 29.3 的收敛结果成立
-Their results show that exact sparsity is not required for Lasso estimation, rather what is needed is approximation properties similar to those used in series regression theory	他们的结果表明，Lasso 估计不需要精确的稀疏性，而需要的是类似于级数回归理论中使用的近似属性
+Their results show that exact sparsity is not required for Lasso estimation, rather what is needed is approximation properties similar to those used in series regression theory	他们的结果表明，Lasso 估计不需要精确的稀疏性，而需要的是类似于级数回归理论中使用的近似特征
 The approximate sparsity condition fails when the regressors cannot be easily ordered	当自变量无法轻松排序时，近似稀疏条件就会失败
 Elastic Net	弹性网
 The difference between Lasso and ridge regression is that the Lasso uses the 1-norm penalty while ridge uses the 2-norm penalty	Lasso 和 Ridge 回归之间的区别在于 Lasso 使用 1-范数惩罚，而 Ridge 使用 2-范数惩罚
@@ -4775,7 +4775,7 @@ Double Selection Lasso	双选套索
 Post-estimation inference is difficult with most machine learning estimators	对于大多数机器学习估计量来说，估计后推断很困难
 Belloni, Chernozhukov, and Hansen (2014b) proposed an alternative estimation and inference method which achives better coverage rates	Belloni、Chernozhukov 和 Hansen（2014b）提出了一种替代的估计和推断方法，可以实现更好的覆盖率
 The double-selection estimator as recommended by Belloni, Chernozhukov, and Hansen (2014b) is:	Belloni、Chernozhukov 和 Hansen (2014b) 推荐的双重选择估计量为：
-It should be emphasized that this distributional claim is asymptotic; finite sample inferences remain distorted from nominal levels	应该强调的是，这种分布主张是渐近的；有限样本的推论仍然偏离名义水平
+It should be emphasized that this distributional claim is asymptotic; finite sample inferences remain distorted from nominal levels	应该强调的是，这种分布主张是渐近的；有限样本的推断仍然偏离名义水平
 Furthermore, the result rests on the adequacy of the approximate sparsity assumption for both the structural equation (29.22) and the auxillary regression (29.23)	此外，结果取决于结构方程（29.22）和辅助回归（29.23）的近似稀疏性假设的充分性
 The primary advantage of the double-selection estimator is its simplicity and clear intuitive structure	双选估计量的主要优点是其简单性和清晰直观的结构
 In Stata, the double-selection Lasso estimator can be computed by the dsregress command or with the pdslasso add-on package	在 Stata 中，双重选择 Lasso 估计量可以通过 dsregress 命令或使用 pdslasso 附加包来计算
