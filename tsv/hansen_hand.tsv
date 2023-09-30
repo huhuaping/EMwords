@@ -800,61 +800,60 @@ An alternative way of writing (5.7) is	(5.7) 的另一种写法是
 This is sometimes called a standardized statistic as the distribution is the standard normal	有时这被称为标准化统计量，因为分布是标准正态分布
 With algebraic re-scaling we can write the t-statistic as the ratio of the standardized statistic and the square root of the scaled variance estimator	通过代数重新度量化，我们可以将 t 统计量写为标准化统计量与度量化后方差估计量的平方根之比
 In this context, we say that the distribution of the t-ratio is pivotal, meaning that it does not depend on unknowns	在这种情况下，我们说 t 比率的分布是关键的，这意味着它不依赖于未知数
-This trick (scaling to eliminate dependence on unknowns) is known as studentization	这种技巧（通过缩放来消除对未知数的依赖）被称为学生化
+This trick (scaling to eliminate dependence on unknowns) is known as studentization	这种技巧（通过度量化来消除对未知数的依赖）被称为学生化
 Confidence Intervals for Regression Coefficients	回归系数的置信区间
 There is not a unique method to construct confidence intervals	没有唯一的方法来构建置信区间
 The coverage probability of this confidence interval is	该置信区间的覆盖概率为
 This is a useful rule-of-thumb	这是一个有用的经验法则
 Confidence intervals are a simple yet effective tool to assess estimation uncertainty	置信区间是评估估计不确定性的简单而有效的工具
 Confidence Intervals for Error Variance	误差方差的置信区间
-Rewriting the inequalities we find	重写我们发现的不平等
+Rewriting the inequalities we find	重写不等式我们发现
 t Test	t检验
 In this section and the following we give a short introduction specific to the normal regression model	在本节和下文中，我们将针对正态回归模型进行简短介绍
 The main steps are to design a test statistic and to characterize its sampling distribution	主要步骤是设计检验统计量并表征其抽样分布
 These t-statistics test the hypotheses that each coefficient is zero	这些 t 统计量检验每个系数为零的假设
 Likelihood Ratio Test	似然比检验
-In the previous section we described the t-test as the standard method to test a hypothesis on a single coefficient in a regression	在上一节中，我们将 t 检验描述为检验回归中单个系数的假设的标准方法
+In the previous section we described the t-test as the standard method to test a hypothesis on a single coefficient in a regression	在上一节中，我们将 t 检验描述为检验回归中单个系数假设的标准方法
 We call (5.17) the null model	我们将（5.17）称为零模型
 We similarly calculate the maximized log-likelihood for the constrained model (5.17)	我们类似地计算约束模型的最大对数似然（5.17）
-In Stata, the command to test multiple coefficients takes the form 'test X1 X2' where X1 and X2 are the names of the variables whose coefficients are tested	在 Stata 中，检验多个系数的命令采用“test X1 X2”的形式，其中 X1 和 X2 是检验其系数的变量的名称
-Information Bound for Normal Regression	用于正态回归的信息
+In Stata, the command to test multiple coefficients takes the form `test X1 X2` where `X1` and `X2` are the names of the variables whose coefficients are tested	在 Stata 中，检验多个系数的命令采用 `test X1 X2` 的形式，其中 `X1` 和 `X2` 是检验其系数的变量的名称
+Information Bound for Normal Regression	正态回归的信息界限
 This section requires a familiarity with the theory of the Cramér-Rao Lower Bound	本节需要熟悉 Cramér-Rao 下界理论
 See Chapter 10 of Probability and Statistics for Economists	请参阅《经济学家的概率与统计》第 10 章
 The likelihood scores for the normal regression model are	正态回归模型的似然得分为
 It follows that the information matrix is	由此可见信息矩阵为
 Thus in contrast to the coefficient estimator, the variance estimator is not Cramér-Rao efficient	因此，与系数估计量相比，方差估计量不是 Cramér-Rao 有效的
-A Review of Large Sample Asymptotics	大样本渐近学综述
+A Review of Large Sample Asymptotics	大样本渐近评述
 The most widely-used tool in sampling theory is large sample asymptotics	抽样理论中最广泛使用的工具是大样本渐进
 If you have not previous studied asymptotic theory in detail you should study these chapters before proceeding	如果你之前没有详细研究过渐近理论，你应该在继续之前学习这些章节
-Modes of Convergence	融合模式
+Modes of Convergence	收敛模式
 The above definition treats random variables and random vectors simultaneously using the vector norm	上述定义使用向量范数同时处理随机变量和随机向量
-It is useful to know that for a random vector, (6.1) holds if and only if each element in the vector converges in probability to its limit	知道对于随机向量，当且仅当向量中的每个元素以概率收敛到其极限时，(6.1) 才成立
+It is useful to know that for a random vector, (6.1) holds if and only if each element in the vector converges in probability to its limit	对于一个随机向量，当且仅当向量中的每个元素以概率收敛到其极限时，(6.1) 才成立，知道这一点很有用
 Weak Law of Large Numbers	弱大数定律
 Theorem 6.1 Weak Law of Large Numbers (WLLN)	定理 6.1 弱大数定律 (WLLN)
 The result applies to any transformation of a random vector with a finite mean	结果适用于具有有限均值的随机向量的任何变换
-An estimator which converges in probability to the population value is called consistent	概率收敛于总体值的估计量称为一致估计量
+An estimator which converges in probability to the population value is called consistent	依概率收敛于总体值的估计量称为一致估计量
 Central Limit Theorem	中心极限定理
 Theorem 6.3 Multivariate Lindeberg-Lévy Central Limit Theorem (CLT)	定理 6.3 多元 Lindeberg-Lévy 中心极限定理 (CLT)
-The central limit theorem shows that the distribution of the sample mean is approximately normal in large samples	中心极限定理表明，大样本中样本均值的分布近似正态分布
-The following two generalizations allow for heterogeneous random variables	以下两个概括允许异构随机变量
+The central limit theorem shows that the distribution of the sample mean is approximately normal in large samples	中心极限定理表明，大样本中样本均值的分布是近似正态分布
+The following two generalizations allow for heterogeneous random variables	以下两个扩展允许异构的随机变量
 Continuous Mapping Theorem and Delta Method	连续映射定理和Delta方法
-Continuous functions are limit-preserving	连续函数是保极限的
-There are two forms of the continuous mapping theorem, for convergence in probability and convergence in distribution	连续映射定理有两种形式，概率收敛和分布收敛
+Continuous functions are limit-preserving	连续函数是保有极限的
+There are two forms of the continuous mapping theorem, for convergence in probability and convergence in distribution	连续映射定理有两种形式，依概率收敛和依分布收敛
 Theorem 6.6 Continuous Mapping Theorem (CMT)	定理 6.6 连续映射定理（CMT）
-Theorem 6.7 Continuous Mapping Theorem	定理 6.7 连续映射定理
 Theorem 6.8 Delta Method	定理 6.8 Delta 法
 Smooth Function Model	平滑函数模型
 The smooth function model includes a broad class of estimators including sample variances and the least squares estimator	平滑函数模型包括一大类估计量，其中包括样本方差和最小二乘估计量
-Stochastic Order Symbols	随机顺序符号
-It is convenient to have simple symbols for random variables and vectors which converge in probability to zero or are stochastically bounded	对于概率收敛到零或随机有界的随机变量和向量使用简单的符号是很方便的
-In this section we introduce some of the most common notation	在本节中，我们将介绍一些最常见的符号
+Stochastic Order Symbols	随机有序符号
+It is convenient to have simple symbols for random variables and vectors which converge in probability to zero or are stochastically bounded	对于依概率收敛到零或随机有界的随机变量和向量使用简单的符号是很方便的
+In this section we introduce some of the most common notation	在本节中，我们将介绍一些最通用的符号
 A random sequence with a bounded moment is stochastically bounded	具有有界矩的随机序列是随机有界的
-Convergence of Moments	矩的汇聚
+Convergence of Moments	矩收敛
 The following is a uniform stochastic bound	以下是均匀随机界限
 The higher the moments, the slower the rate of divergence	矩越高，发散速度越慢
 Asymptotic Theory for Least Squares	最小二乘法的渐近理论
 It turns out that the asymptotic theory of least squares estimation applies equally to the projection model and the linear CEF model	事实证明，最小二乘估计的渐近理论同样适用于投影模型和线性CEF模型
-Maintained assumptions in this chapter will be random sampling (Assumption 1.2) and finite second moments (Assumption 2.1)	本章中保留的假设是随机采样（假设 1.2）和有限二阶矩（假设 2.1）
+Maintained assumptions in this chapter will be random sampling (Assumption 1.2) and finite second moments (Assumption 2.1)	本章中保留的假设是随机抽样（假设 1.2）和有限二阶矩（假设 2.1）
 We restate these here for clarity	为了清楚起见，我们在此重申这些内容
 The distributional results will require a strengthening of these assumptions to finite fourth moments	分布结果需要将这些假设强化到有限四阶矩
 We discuss the specific conditions in Section 7.3	我们在 7.3 节中讨论具体条件
@@ -863,41 +862,41 @@ This derivation is based on three key components	这一推导基于三个关键�
 Second, by an application of the WLLN these sample moments converge in probability to their population expectations	其次，通过应用 WLLN，这些样本矩在概率上收敛到其总体期望
 To fully understand the application of the CMT we walk through it in detail	为了充分理解 CMT 的应用，我们详细介绍一下它
 This justifies the application of the CMT in (7.2)	这证明了 (7.2) 中 CMT 的应用是合理的
-For a slightly different demonstration of (7.2) recall that (4.6) implies that	对于（7.2）的稍微不同的证明，回想一下（4.6）意味着
+For a slightly different demonstration of (7.2) recall that (4.6) implies that	对于（7.2）稍微不同的证明，回顾一下（4.6）意味着
 The WLLN and (2.25) imply	WLLN 和 (2.25) 意味着
 To illustrate the effect of sample size on the least squares estimator consider the least squares regression	为了说明样本大小对最小二乘估计量的影响，请考虑最小二乘回归
 We use the sample of 24,344 white men from the March 2009 CPS	我们使用 2009 年 3 月 CPS 中的 24,344 名白人男性样本
-Figure 7.1: The Least-Squares Estimator as a Function of Sample Size	图 7.1：最小二乘估计量作为样本大小的函数
+Figure 7.1: The Least-Squares Estimator as a Function of Sample Size	图 7.1：最小二乘估计量是样本量的函数
 Asymptotic Normality	渐近正态性
 In this section we derive an approximation typically called the asymptotic distribution	在本节中，我们得出一个通常称为渐近分布的近似值
-The derivation starts by writing the estimator as a function of sample moments	推导首先将估计量编写为样本矩的函数
+The derivation starts by writing the estimator as a function of sample moments	从将估计量编写为样本矩的函数开始推导
 The steps are as follows	步骤如下
-We state the required conditions here	我们在这里说明所需的条件
+We state the required conditions here	在这里我们说明所需的条件
 By two applications of the Cauchy-Schwarz inequality (B.32), this is smaller than	通过柯西-施瓦茨不等式 (B.32) 的两次应用，这小于
 where the finiteness holds under Assumption 7.2.2 and 7.2.3	其中有限性在假设 7.2.2 和 7.2.3 下成立
 This is a more compact argument (often described as more elegant) but such manipulations should not be done without understanding the notation and the applicability of each step of the argument	这是一个更紧凑的论证（通常被描述为更优雅），但是在不理解论证的每个步骤的符号和适用性的情况下，不应进行此类操作
 Regardless, the finiteness of the covariance matrix means that we can apply the multivariate CLT (Theorem 6.3)	无论如何，协方差矩阵的有限性意味着我们可以应用多元 CLT（定理 6.3）
 Putting together (7.1), (7.5), and (7.7),	将(7.1)、(7.5)和(7.7)放在一起，
-The final equality follows from the property that linear combinations of normal vectors are also normal (Theorem 5.2)	最终的等式源自法向量的线性组合也是法向量的性质（定理 5.2）
+The final equality follows from the property that linear combinations of normal vectors are also normal (Theorem 5.2)	最终的等式源自正态向量的线性组合也是正态向量的性质（定理 5.2）
 We have derived the asymptotic normal approximation to the distribution of the least squares estimator	我们导出了最小二乘估计量分布的渐近正态近似
-Theorem 7.3 Asymptotic Normality of Least Squares Estimator	定理7.3最小二乘估计量的渐近正态性
+Theorem 7.3 Asymptotic Normality of Least Squares Estimator	定理7.3 最小二乘估计量的渐近正态性
 We will make use of both symbols and it will be advisable to adhere to this convention	我们将使用这两个符号，并且建议遵守此约定
 Condition (7.10) holds in the homoskedastic linear regression model but is somewhat broader	条件（7.10）在同方差线性回归模型中成立，但范围更广
 Another example is shown in Figure 7.2(b)	另一个例子如图7.2(b)所示
-Figure 7.2: Density of Normalized OLS Estimator	图 7.2：归一化 OLS 估计量的密度
-Joint Distribution	联合分配
-This finding that the correlation of the regressors is of opposite sign of the correlation of the coefficient estimates is sensitive to the assumption of homoskedasticity	自变量的相关性与系数估计的相关性具有相反符号这一发现对于同方差性假设很敏感
-If the errors are heteroskedastic then this relationship is not guaranteed	如果误差是异方差的，则无法保证这种关系
+Figure 7.2: Density of Normalized OLS Estimator	图 7.2：度量化 OLS 估计量的密度
+Joint Distribution	联合分布
+This finding that the correlation of the regressors is of opposite sign of the correlation of the coefficient estimates is sensitive to the assumption of homoskedasticity	自变量的相关性与系数估计的相关性具有相反符号，这一发现对同方差性的假设很敏感
+If the errors are heteroskedastic then this relationship is not guaranteed	如果误差是异方差性的，则无法保证这种关系
 This can be seen through a simple constructed example	这可以通过一个简单的构造示例看出
 Now suppose that the error is heteroskedastic	现在假设误差是异方差的
 We can see how the two estimators are positively associated	我们可以看到这两个估计量是如何正相关的
 What we found through this example is that in the presence of heteroskedasticity there is no simple relationship between the correlation of the regressors and the correlation of the parameter estimators	通过这个例子我们发现，在存在异方差的情况下，自变量的相关性和参数估计量的相关性之间不存在简单的关系
 We can extend the above analysis to study the covariance between coefficient sub-vectors	我们可以扩展上述分析来研究系数子向量之间的协方差
-which is a matrix generalization of the two-regressor case	这是二自变量情况的矩阵推广
+which is a matrix generalization of the two-regressor case	这是两个自变量情况的矩阵推广
 In general you can show that (Exercise 7.5)	一般来说，你可以证明（练习 7.5）
 Unfortunately, these expressions are not easily interpretable	不幸的是，这些表达方式并不容易解释
 Consistency of Error Variance Estimators	误差方差估计量的一致性
-Thus the squared residual equals the squared error plus a deviation	因此残差平方等于误差平方加上变差
+Thus the squared residual equals the squared error plus a deviation	因此残差平方等于误差平方加上一个变差
 So when we take the average of the squared residuals we obtain the average of the squared errors, plus two terms which are (hopefully) asymptotically negligible	因此，当我们取残差平方的平均值时，我们得到了平方误差的平均值，加上两项（希望）渐近可以忽略不计
 Homoskedastic Covariance Matrix Estimation	同方差协方差矩阵估计
 Heteroskedastic Covariance Matrix Estimation	异方差协方差矩阵估计
@@ -937,7 +936,7 @@ The last equality is the property that affine functions of normal variables are 
 Formally we add the following assumption	正式地，我们添加以下假设
 Confidence Intervals	置信区间
 It is useful to contrast the confidence interval (7.35) with (5.8) for the normal regression model	将正态回归模型的置信区间 (7.35) 与 (5.8) 进行对比很有用
-(A practical rule of thumb is that if the sample sizes are sufficiently small that it makes a difference then neither (5.8) nor (7.35) should be trusted.) Despite these differences the coincidence of the intervals means that inference on regression coefficients is generally robust to using either the exact normal sampling assumption or the asymptotic large sample approximation, at least in large samples	）尽管存在这些差异，间隔的重合意味着对回归系数的推断通常是至少在大样本中，对于使用精确的正态采样假设或渐近大样本近似具有稳健性
+(A practical rule of thumb is that if the sample sizes are sufficiently small that it makes a difference then neither (5.8) nor (7.35) should be trusted.) Despite these differences the coincidence of the intervals means that inference on regression coefficients is generally robust to using either the exact normal sampling assumption or the asymptotic large sample approximation, at least in large samples	）尽管存在这些差异，间隔的重合意味着对回归系数的推断通常是至少在大样本中，对于使用精确的正态抽样假设或渐近大样本近似具有稳健性
 This is done for all standard error methods even though it is only exact for homoskedastic standard errors and under normality	对于所有标准误差方法都这样做，即使它仅对于同方差标准误差且在正态性下是精确的
 This is a useful rule-of thumb	这是一个有用的经验法则
 Percentage return to experience (per year) for individuals with 10 years experience	拥有 10 年经验的个体的经验回报百分比（每年）
@@ -1075,7 +1074,7 @@ A difference arises for the constrained estimator	约束估计量会出现差异
 The first term is asymptotically normal (from 8.42))	第一项是渐近正态的（来自 8.42））
 No alternative rate would have produced this result	没有其他利率会产生这样的结果
 Consequently we find that the asymptotic distribution equals	因此我们发现渐近分布等于
-The asymptotic distribution (8.43) is an approximation of the sampling distribution of the restricted estimator under misspecification	渐近分布 (8.43) 是误设下受限估计量的采样分布的近似值
+The asymptotic distribution (8.43) is an approximation of the sampling distribution of the restricted estimator under misspecification	渐近分布 (8.43) 是误设下受限估计量的抽样分布的近似值
 However, (8.43) is more convenient for some purposes such as the analysis of the power of tests as we will explore in the next chapter	然而，（8.43）对于某些目的来说更方便，例如我们将在下一章中探讨的检验功效分析
 Nonlinear Constraints	非线性约束
 Computationally there is no general closed-form solution so they must be found numerically	在计算上没有通用的封闭式解，因此必须通过数值方式找到它们
@@ -1088,7 +1087,7 @@ Except in special cases the constrained estimators do not have simple algebraic 
 While this method works when there is a single non-negativity constraint, it does not immediately generalize to other contexts	虽然此方法在存在单个非负约束时有效，但它不会立即推广到其他上下文
 The computation problems (8.50) and (8.51) are examples of quadratic programming	计算问题 (8.50) 和 (8.51) 是二次规划的示例
 Quick computer algorithms are available in programming languages including MATLAB and R	快速计算机算法可用于编程语言，包括 MATLAB 和 R
-Inference on inequality-constrained estimators is unfortunately quite challenging	不幸的是，对不平等约束估计量的推断非常具有挑战性
+Inference on inequality-constrained estimators is unfortunately quite challenging	不幸的是，对不等式约束估计量的推断非常具有挑战性
 This can be shown with more effort, but requires a deeper treatment than appropriate for this textbook	这可以通过更多的努力来展示，但需要比这本教科书更深入的处理
 Hypothesis Testing	假设检验
 In Chapter 5 we briefly introduced hypothesis testing in the context of the normal regression model	在第五章中，我们简要介绍了正态回归模型中的假设检验
@@ -1250,16 +1249,16 @@ and thus the local power of a two-sided t test is	因此双边 t 检验的局部
 Asymptotic Local Power, Vector Case	渐近局部幂，向量情况
 In this section we extend the local power analysis of the previous section to the case of vector-valued alternatives	在本节中，我们将上一节的局部功效分析扩展到向量值替代方案的情况
 Applied to the Wald statistic we find	应用于 Wald 统计我们发现
-Resampling Methods	重采样方法
+Resampling Methods	重抽样方法
 So far in this textbook we have discussed two approaches to inference: exact and asymptotic	到目前为止，在本教科书中，我们已经讨论了两种推断方法：精确推断和渐近推断
 Asymptotic theory provides a more flexible distribution theory but is an approximation with uncertain accuracy	渐近理论提供了一种更灵活的分布理论，但它是一种精度不确定的近似
-In this chapter we introduce a set of alternative inference methods which are based around the concept of resampling - which means using sampling information extracted from the empirical distribution of the data	在本章中，我们介绍了一组基于重采样概念的替代推断方法，这意味着使用从数据的经验分布中提取的采样信息
-A consequence of the computation requirement is that most empirical researchers use asymptotic approximations for routine calculations while resampling approximations are used for final reporting	计算要求的结果是，大多数实证研究人员使用渐近近似进行常规计算，而重采样近似用于最终报告
-We will discuss two categories of resampling methods used in statistical and econometric practice: jackknife and bootstrap	我们将讨论统计和计量经济学实践中使用的两类重采样方法：折刀法和引导法
-Most of our attention will be given to the bootstrap as it is the most commonly used resampling method in econometric practice	我们的大部分注意力将集中在引导程序上，因为它是计量经济学实践中最常用的重采样方法
+In this chapter we introduce a set of alternative inference methods which are based around the concept of resampling - which means using sampling information extracted from the empirical distribution of the data	在本章中，我们介绍了一组基于重抽样概念的替代推断方法，这意味着使用从数据的经验分布中提取的抽样信息
+A consequence of the computation requirement is that most empirical researchers use asymptotic approximations for routine calculations while resampling approximations are used for final reporting	计算要求的结果是，大多数实证研究人员使用渐近近似进行常规计算，而重抽样近似用于最终报告
+We will discuss two categories of resampling methods used in statistical and econometric practice: jackknife and bootstrap	我们将讨论统计和计量经济学实践中使用的两类重抽样方法：折刀法和引导法
+Most of our attention will be given to the bootstrap as it is the most commonly used resampling method in econometric practice	我们的大部分注意力将集中在引导程序上，因为它是计量经济学实践中最常用的重抽样方法
 The jackknife is most commonly used for variance estimation	折刀法最常用于方差估计
 (There are other variants of bootstrap sampling, including parametric sampling and residual sampling.) The bootstrap is commonly used for variance estimation, confidence interval construction, and hypothesis testing	）引导抽样通常用于方差估计、置信区间构建和假设检验
-There is a third category of resampling methods known as sub-sampling which we will not cover in this textbook	第三类重采样方法称为二次采样，我们不会在本教科书中介绍
+There is a third category of resampling methods known as sub-sampling which we will not cover in this textbook	第三类重抽样方法称为二次抽样，我们不会在本教科书中介绍
 See the excellent monograph by Politis, Romano and Wolf (1999)	请参阅 Politis、Romano 和 Wolf (1999) 撰写的优秀专着
 Example	例子
 To motivate our discussion we focus on the application presented in Section 3.7, which is a bivariate regression applied to the CPS subsample of married Black female wage earners with 12 years potential work experience and displayed in Table 3.1	为了激发我们的讨论，我们重点关注第 3.7 节中提出的应用程序，这是一个二元回归，适用于具有 12 年潜在工作经验的已婚黑人女性工薪者的 CPS 子样本，并显示在表 3.1 中
@@ -1296,8 +1295,8 @@ The Bootstrap Algorithm	引导算法
 The bootstrap is a powerful approach to inference and is due to the pioneering work of Efron (1979)	Bootstrap 是一种强大的推断方法，归功于 Efron (1979) 的开创性工作
 There are several ways to describe or define the bootstrap and there are several forms of the bootstrap	有多种方法来描述或定义引导程序，并且引导程序有多种形式
 In subsequent sections we give more formal definitions of the bootstrap as well as theoretical justifications	在后续部分中，我们给出引导程序的更正式的定义以及理论依据
-sampling (sampling with replacement) from the original dataset	从原始数据集中采样（放回采样）
-To understand this it is useful to start with the concept of sampling with replacement from the dataset	为了理解这一点，从数据集中替换采样的概念开始是很有用的
+sampling (sampling with replacement) from the original dataset	从原始数据集中抽样（放回抽样）
+To understand this it is useful to start with the concept of sampling with replacement from the dataset	为了理解这一点，从数据集中替换抽样的概念开始是很有用的
 We call this the bootstrap sample	我们称之为引导样本
 Once again, the bootstrap sample is the constructed dataset with the 20 observations drawn randomly from the original sample	同样，引导样本是构建的数据集，其中包含从原始样本中随机抽取的 20 个观测值
 This is one draw from the bootstrap distribution of the estimates	这是从估计值的引导分布中得出的一项结论
@@ -1307,7 +1306,7 @@ This is a very simple statistic to calculate and is the most common use of the b
 A caveat (discussed in more detail in Section 10.15) is that in many cases it is better to use a trimmed estimator	需要注意的是（在第 10.15 节中更详细地讨论），在许多情况下最好使用修剪估计量
 Standard errors are conventionally reported to convey the precision of the estimator	通常报告标准误差来传达估计量的精度
 In general, bootstrap standard errors should be used as estimates of precision rather than as tools to construct confidence intervals	一般来说，引导标准误差应用作精度估计，而不是用作构建置信区间的工具
-They should be similar (up to simulation sampling error) but not precisely the same	它们应该相似（取决于模拟采样误差）但不完全相同
+They should be similar (up to simulation sampling error) but not precisely the same	它们应该相似（取决于模拟抽样误差）但不完全相同
 We also report four bootstrap confidence intervals which will be introduced in subsequent sections	我们还报告了四个引导置信区间，将在后续部分中介绍
 For these four estimators we can see that the bootstrap standard errors are quite similar to the asymptotic and jackknife standard errors	对于这四个估计量，我们可以看到引导标准误差与渐近标准误差和折刀标准误差非常相似
 Table 10.2: Comparison of Methods	表 10.2：方法比较
@@ -1389,7 +1388,7 @@ Without symmetry the coverage will be incorrect	如果不对称，覆盖范围�
 Intuitively, we expect that when the assumptions are approximately true then the percentile interval will have approximately correct coverage	直观上，我们期望当假设近似正确时，百分位数区间将具有近似正确的覆盖范围
 This argument has the following application	这个论点有以下应用
 Bias-Corrected Percentile Interval	偏误校正百分位数区间
-The accuracy of the percentile interval depends critically upon the assumption that the sampling distribution is approximately symmetrically distributed	百分位数间隔的准确性主要取决于采样分布近似对称分布的假设
+The accuracy of the percentile interval depends critically upon the assumption that the sampling distribution is approximately symmetrically distributed	百分位数间隔的准确性主要取决于抽样分布近似对称分布的假设
 Consequently it is difficult to expect the percentile method to generally have accurate coverage	因此，很难期望百分位数法通常具有准确的覆盖范围
 To reduce the bias problem Efron (1982) introduced the bias-corrected (BC) percentile interval	为了减少偏误问题，Efron (1982) 引入了偏误校正 (BC) 百分位数区间
 The construction of the BC interval is not intuitive	BC 区间的构造并不直观
@@ -1623,7 +1622,7 @@ We find that the right-hand-side of (11.26) equals	我们发现 (11.26) 的右�
 In Stata, estimation takes the following steps	在 Stata 中，估计采取以下步骤
 Third, the factors are treated as regressors in an estimated regression	第三，这些因素在估计回归中被视为自变量
 Multivariate Normal	多元正态
-Some interesting sampling results hold for matrix-valued normal variates	一些有趣的采样结果适用于矩阵值正态变量
+Some interesting sampling results hold for matrix-valued normal variates	一些有趣的抽样结果适用于矩阵值正态变量
 The Wishart is a multivariate generalization of the chi-square	Wishart 是卡方的多元推广
 The Wishart arises as the exact distribution of a sample covariance matrix in the normal sampling model	Wishart 是正态抽样模型中样本协方差矩阵的精确分布
 The following manipulation is useful	以下操作很有用
@@ -1641,7 +1640,7 @@ Endogeneity cannot happen if the coefficient is defined by linear projection	如
 Thus endogeneity requires that the coefficient be defined differently than projection	因此，内生性要求系数的定义与投影不同
 We will present three examples in the following section	我们将在下一节中展示三个示例
 Endogeneity implies that the least squares estimator is inconsistent for the structural parameter	内生性意味着最小二乘估计量对于结构参数是不一致的
-sampling, least squares is consistent for the projection coefficient	事实上，根据 i.i.d.采样，最小二乘对于投影系数是一致的
+sampling, least squares is consistent for the projection coefficient	事实上，根据 i.i.d.抽样，最小二乘对于投影系数是一致的
 The inconsistency of least squares is typically referred to as endogeneity bias or estimation bias due to endogeneity	最小二乘法的不一致通常被称为内生性偏误或内生性导致的估计偏误
 This is an imperfect label as the actual issue is inconsistency, not bias	这是一个不完美的标签，因为实际问题是不一致，而不是偏见
 We discuss those in later sections	我们将在后面的部分中讨论这些内容
@@ -2551,7 +2550,7 @@ Recall that the bootstrap approximates the sampling distribution of estimators a
 For dependent observations alternative methods should be used	对于相关观测，应使用替代方法
 Bootstrapping for time series is considerably more complicated than the cross section case	时间序列的引导比横截面情况复杂得多
 One of the challenges is that theoretical justifications are more difficult to establish than in the independent observation case	挑战之一是理论依据比独立观测案例更难建立
-In this section we describe the most popular methods to implement bootstrap resampling for time series data	在本节中，我们将描述对时间序列数据实现引导重采样的最流行的方法
+In this section we describe the most popular methods to implement bootstrap resampling for time series data	在本节中，我们将描述对时间序列数据实现引导重抽样的最流行的方法
 Recursive Bootstrap	递归引导程序
 Another limitation is that it is inappropriate for AR-DL models unless the conditioning variables are strictly exogenous	另一个局限是它不适合 AR-DL 模型，除非条件变量是严格外生的
 There are alternative versions of this basic method	这种基本方法还有其他版本
@@ -2657,7 +2656,7 @@ The method is as follows	方法如下
 Newey-West methods must be used for calculation of asymptotic standard errors since the regression errors are serially correlated	由于回归误差是序列相关的，因此必须使用 Newey-West 方法来计算渐近标准误差
 Jordà (2005) speculates that the local projection estimator will be less sensitive to misspecification since it is a straightforward linear estimator	Jordà (2005) 推测局部投影估计量对误设不太敏感，因为它是一个简单的线性估计量
 Without a formal theory it is difficult to know which estimator is more robust than the other	如果没有正式的理论，就很难知道哪个估计量比另一个更稳健
-An advantage of the local projection method is that it is a linear estimator of the impulse response and thus likely to have a better-behaved sampling distribution	局部投影方法的优点是它是脉冲响应的线性估计量，因此可能具有更好的采样分布
+An advantage of the local projection method is that it is a linear estimator of the impulse response and thus likely to have a better-behaved sampling distribution	局部投影方法的优点是它是脉冲响应的线性估计量，因此可能具有更好的抽样分布
 A disadvantage is that the method relies on a regression (15.12) that has serially correlated errors	缺点是该方法依赖于具有序列相关误差的回归（15.12）
 Local projection estimators tend to be less smooth and more erratic than those produced by the conventional estimator reflecting a possible lack of precision	与传统估计量产生的估计量相比，局部投影估计量往往不太平滑且更不稳定，这反映出可能缺乏精度
 Regression on Residuals	残差回归
@@ -2783,7 +2782,7 @@ Let's examine and contrast panels (a) and (b) of Figure 15.4	让我们检查并�
 The confidence intervals for the supply shock impulse responses are wider than those for the demand shocks indicating that the estimates of the impulse responses due to supply shocks are not precisely estimated	供给冲击脉冲响应的置信区间比需求冲击的置信区间宽，这表明对供给冲击引起的脉冲响应的估计并未精确估计
 The confidence intervals are very wide, however, indicating that these estimates are not precise	然而，置信区间非常宽，表明这些估计并不精确
 Figure 15.4: Response of Unemployment Rate	图 15.4：失业率的反应
-It is fascinating that the structural impulse response estimates shown here are nearly identical to those found by Blanchard and Quah (1989) despite the fact that we have used a considerably different sample period	令人着迷的是，这里显示的结构脉冲响应估计与 Blanchard 和 Quah (1989) 发现的几乎相同，尽管我们使用了相当不同的采样周期
+It is fascinating that the structural impulse response estimates shown here are nearly identical to those found by Blanchard and Quah (1989) despite the fact that we have used a considerably different sample period	令人着迷的是，这里显示的结构脉冲响应估计与 Blanchard 和 Quah (1989) 发现的几乎相同，尽管我们使用了相当不同的抽样周期
 External Instruments	外部仪器
 Structural VARs can also be identified and estimated using external instrumental variables	结构 VAR 也可以使用外部工具变量来识别和估计
 Identification rests on the validity of these assumptions	识别取决于这些假设的有效性
@@ -3066,7 +3065,7 @@ As an alternative to asymptotic inference the delete-cluster jackknife can be us
 As in the context of i.i.d. samples one advantage of the jackknife covariance matrix estimator is that it does not require the user to make a technical calculation of the asymptotic distribution	正如在 i.i.d. 的上下文中一样
 For the fixed effects 2SLS estimator usextivreg fe vce(jackknife)	对于固定效应 2SLS 估计量，请使用xtivreg fe vce(jackknife)
 Panel Bootstrap	面板引导程序
-Bootstrap methods can also be applied to panel data by a straightforward application of the pairs cluster bootstrap which samples entire individuals rather than single observations	引导方法还可以通过直接应用成对群组引导方法应用于面板数据，该引导方法对整个个体而不是单个观测结果进行采样
+Bootstrap methods can also be applied to panel data by a straightforward application of the pairs cluster bootstrap which samples entire individuals rather than single observations	引导方法还可以通过直接应用成对群组引导方法应用于面板数据，该引导方法对整个个体而不是单个观测结果进行抽样
 In the context of panel data we call this the panel nonparametric bootstrap	在面板数据中，我们将其称为面板非参数引导程序
 In Stata, to obtain bootstrap standard errors and confidence intervals use either xtreg, vce(bootstrap, reps (\#)) or areg, absorb(id) cluster(id) vce(bootstrap, reps(\#)) where id is the cluster variable and \# is the number of bootstrap replications	在 Stata 中，要获取 bootstrap 标准误差和置信区间，请使用 xtreg、vce(bootstrap,reps (\#)) 或 areg,absorb(id) cluster(id) vce(bootstrap,reps(\#))，其中 id 是cluster 变量，\# 是引导复制的数量
 For the fixed effects 2SLS estimator use xtivreg, fe vce(bootstrap, reps(\#))	对于固定效应 2SLS 估计量，请使用 xtivreg, fe vce(bootstrap,reps(\#))
@@ -4391,7 +4390,7 @@ There are also old-fashioned versions which use significance testing rather than
 Stepwise regression based on old-fashioned significance testing can be implemented in Stata using the stepwise command	基于老式显著性检验的逐步回归可以在 Stata 中使用 stepwise 命令实现
 Stepwise regression can be implemented in R using the lars command	可以使用 lars 命令在 R 中实现逐步回归
 The MSE of Model Selection Estimators	模型选择估计量的 MSE
-Model selection can lead to estimators with poor sampling performance	模型选择可能会导致估计量的采样性能较差
+Model selection can lead to estimators with poor sampling performance	模型选择可能会导致估计量的抽样性能较差
 In this section we show that the mean squared error of estimation is not necessarily improved, and can be considerably worsened, by model selection	在本节中，我们将表明，通过模型选择，估计的均方误差不一定会得到改善，而且可能会大大恶化
 To keep things simple consider an estimator with an exact normal distribution and known covariance matrix	为了简单起见，请考虑具有精确正态分布和已知协方差矩阵的估计量
 and the class of model selection estimators	以及模型选择估计量的类别
@@ -4548,7 +4547,7 @@ which is a quadratic function of the weight vector	这是权重向量的二次�
 Hansen and Racine (2012) call this the Jackknife Model Averaging (JMA) estimator	B. E. Hansen 和 Racine (2012) 将其称为 Jackknife 模型平均 (JMA) 估计量
 The algebraic properties of the solution are similar to Mallows	该解的代数性质与 Mallows 类似
 This result is similar to Andrews (1991c) generalization of Li (1987)'s result for model selection	这个结果类似于 Andrews (1991c) 对 Li (1987) 的模型选择结果的推广
-The implication of this theory is that JMA weight selection is computationally simple and has excellent sampling performance	该理论的含义是JMA权重选择计算简单并且具有优异的采样性能
+The implication of this theory is that JMA weight selection is computationally simple and has excellent sampling performance	该理论的含义是JMA权重选择计算简单并且具有优异的抽样性能
 Granger-Ramanathan Averaging	格兰杰-拉马纳森平均
 A method similar to JMA based on hold-out samples was proposed for forecast combination by Granger and Ramanathan (1984), and has emerged as a popular method in the modern machine learning literature	Granger 和 Ramanathan (1984) 提出了一种类似于 JMA 的基于保留样本的预测组合方法，该方法已成为现代机器学习文献中的流行方法
 Randomly split the sample into two parts: an estimation an an evaluation sample	将样本随机分为两部分：估计样本和评估样本
@@ -4629,7 +4628,7 @@ Therefore it is common to apply ridge regression after applying standardizing tr
 In Stata, ridge regression is available in the downloadable package lassopack	在 Stata 中，岭回归可在可下载包 lassopack 中找到
 Statistical Properties of Ridge Regression	岭回归的统计特性
 Under the assumptions of the linear regression model it is straightforward to calculate the exact bias and variance of the ridge regression estimator	在线性回归模型的假设下，可以直接计算岭回归估计量的精确偏误和方差
-Under random sampling its covariance matrix is	随机采样下其协方差矩阵为
+Under random sampling its covariance matrix is	随机抽样下其协方差矩阵为
 Under cluster or serial dependence the central component modifies in the standard way	在群组或串行依赖下，中心成分以标准方式进行修改
 We can measure estimation efficiency by the mean squared error (MSE) matrix	我们可以通过均方误差（MSE）矩阵来衡量估计效率
 Given that the ridge estimator is explicitly biased there are natural concerns about how to interpret standard errors calculated from these covariance matrix estimators	鉴于岭估计量明显有偏误，自然会担心如何解释从这些协方差矩阵估计量计算出的标准误差
@@ -4737,8 +4736,8 @@ Figure 29.5: Bagging and Selection	图 29.5：装袋和选择
 Bühlmann and Yu (2002) also calculate that most of this MSE reduction is due to a reduction in the variance of the bagged estimator	Bühlmann 和 Yu (2002) 还计算出 MSE 减少的大部分是由于袋装估计量方差的减少
 The most common application of bagging is to regression trees	bagging 最常见的应用是回归树
 This variance estimator is based on Efron (2014)	该方差估计量基于 Efron (2014)
-While Breiman's proposal and most applications of bagging are implemented using the nonparametric bootstrap, an alternative is to use subsampling	虽然 Breiman 的提议和大多数装袋应用都是使用非参数引导程序实现的，但另一种方法是使用子采样
-It turns out that it is somewhat easier to develop a distribution theory for bagging under subsampling, so a subsampling assumption is frequently employed in theoretical treatments	事实证明，在子采样下开发 bagging 的分布理论要容易一些，因此在理论处理中经常采用子采样假设
+While Breiman's proposal and most applications of bagging are implemented using the nonparametric bootstrap, an alternative is to use subsampling	虽然 Breiman 的提议和大多数装袋应用都是使用非参数引导程序实现的，但另一种方法是使用子抽样
+It turns out that it is somewhat easier to develop a distribution theory for bagging under subsampling, so a subsampling assumption is frequently employed in theoretical treatments	事实证明，在子抽样下开发 bagging 的分布理论要容易一些，因此在理论处理中经常采用子抽样假设
 Random Forests	随机森林
 Random forests, introduced by Breiman (2001), are a modification of bagged regression trees	Breiman (2001) 引入的随机森林是袋装回归树的改进
 Random forests are popular in machine learning applications and have effectively displaced simple regression trees	随机森林在机器学习应用中很流行，并且有效地取代了简单的回归树
@@ -4749,7 +4748,7 @@ The recommended defaults are taken from the description in Hastie, Tibshirani, a
 This reduces the variance of the bootstrap average	这减少了引导平均值的方差
 The infinitesimal jackknife (29.18) can be used for variance and standard error estimation, as discussed in Wager, Hastie, and Efron (2014)	无穷小折刀 (29.18) 可用于方差和标准误差估计，如 Wager、Hastie 和 Efron (2014) 中所述
 While random forests are popular in applications, a distributional theory has been slow to develop	虽然随机森林在应用中很流行，但分布式理论的发展却很缓慢
-Some of the more recent results have made progress by focusing on random forests generated by subsampling rather than bootstrap (see the discussion at the end of the previous section)	最近的一些结果通过关注子采样而不是引导生成的随机森林而取得了进展（请参阅上一节末尾的讨论）
+Some of the more recent results have made progress by focusing on random forests generated by subsampling rather than bootstrap (see the discussion at the end of the previous section)	最近的一些结果通过关注子抽样而不是引导生成的随机森林而取得了进展（请参阅上一节末尾的讨论）
 A variant proposed by Wager and Athey (2018) is to use honest trees (see the discussion at the end of Section 29.15) to remove the dependence between the sample splits and the sample means	Wager 和 Athey（2018）提出的一个变体是使用诚实树（参见第 29.15 节末尾的讨论）来消除样本分割和样本均值之间的依赖性
 Consistency and asymptotic normality has been established by Wager and Athey (2018)	Wager 和 Athey (2018) 建立了一致性和渐近正态性
 When combined with the honest tree construction, this ensures asymptotic normality of the estimator	当与诚实树结构相结合时，这确保了估计量的渐近正态性
@@ -4796,7 +4795,7 @@ The authors argue that this reduces the dependence between the estimation stages
 The estimation algorithm is as follows	估计算法如下
 They are asymptotically equivalent but DML2 is preferred	它们渐近等价，但首选 DML2
 Theorem 29.6 Under the assumptions of Theorem 29.5,	定理29.6 在定理29.5的假设下，
-The authors argue that the DML estimator has improved sampling performance due to an improved rate of convergence of certain error terms	作者认为，由于某些误差项的收敛速度有所提高，DML 估计量提高了采样性能
+The authors argue that the DML estimator has improved sampling performance due to an improved rate of convergence of certain error terms	作者认为，由于某些误差项的收敛速度有所提高，DML 估计量提高了抽样性能
 Under sample splitting, however, we have an improved rate of convergence	然而，在样本分割下，我们的收敛速度有所提高
 Consequently, it is unclear if the distributional impact of sample splitting is large or small	因此，尚不清楚样本分割的分布影响是大还是小
 The advantage of the DML estimator over the post-regularization estimator is that the sample splitting eliminates the dependence between the two estimation steps, thereby reducing post-model-selection bias	DML 估计量相对于后正则化估计量的优点在于样本分割消除了两个估计步骤之间的依赖性，从而减少了后模型选择偏误
