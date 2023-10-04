@@ -1,0 +1,136 @@
+# Glossary of abbreviations 
+
+- 2SLS - two-stage least squares
+- 3SLS - three-stage least squares
+- AFT - accelerated failure time
+- AIC - Akaike information criterion
+- AICC - Akaike information corrected criterion
+- AIPW - augmented inverse-probability weighting
+- AME - average marginal effect
+- AR - Anderson-Rubin
+- AR - autoregressive
+- ARMA - autoregressive moving average
+- ARUM - additive random-utility model
+- ATE - average treatment effect
+- ATET - average treatment effect on the treated
+- AUC - area under the curve
+- BC - bias-corrected
+- BCa - bias-corrected accelerated
+- BIC - Bayesian information criterion
+- BLP-Berry-Levinson-Pakes
+- CCE - common correlated estimator
+- c.d.f. - cumulative distribution function
+- CIF - cumulative incidence function
+- CL - conditional logit
+- CLR - conditional likelihood ratio
+- CQR - conditional quantile regression
+- CRE - correlated random effects
+- CV-cross-validation
+- DGP - data-generating process
+- DIC - deviance information criterion
+- DID - difference in differences
+- DV - dummy variable
+- DWH - Durbin-Wu-Hausman
+- ERM - extended regression model
+- ET - endogenous treatment
+- FAQ - frequently asked questions - FD - first difference
+- FDP - false discovery proportion
+- FDR - false discovery rate
+- FE - fixed effects
+- FGLS - feasible generalized least squares
+- FMM - finite-mixture model
+- FPC - finite-population correction
+- FRD - fuzzy regression discontinuity
+- FWER - familywise error rate
+- GAM - generalized additive models
+- GLM - generalized linear models
+- GLS - generalized least squares
+- GMM - generalized method of moments
+- GS2SLS - generalized spatial two-stage least squares
+- GSEM- generalized structural equation model
+- GUI- graphical user interface
+- HAC - heteroskedasticity- and autocorrelation-consistent
+- HRS - Health and Retirement Study
+- IIA - independence of irrelevant alternatives
+- i.i.d. — independent and identically distributed
+- IM - information matrix
+- IPW - inverse-probability weighting
+- IPW-RA - inverse probability with regression adjustment
+- ITT - intention to treat
+- IV - instrumental variables
+- JIVE - jackknife instrumental-variables estimator
+- LATE - local average treatment effect
+- LEF - linear exponential family
+- LIML - limited-information maximum likelihood
+- LM - Lagrange multiplier
+- LOOCV - leave-one-out cross-validation
+- LPM - linear probability model
+- LR - likelihood ratio
+- LS - least squares
+- LSDV - least-squares dummy variable
+- MA - moving average
+- MAR - missing at random - MCAR - missing completely at random
+- MCMC - Markov chain Monte Carlo
+- MD - minimum distance
+- ME - marginal effect
+- MEM - marginal effect at mean
+- MER - marginal effect at representative value
+- MG - mean group
+- MH - Metropolis-Hastings
+- ML - maximum likelihood
+- MLE - maximum likelihood estimator
+- MLT - multilevel treatment
+- MM - method of moments
+- MNAR - missing not at random
+- MNL - multinomial logit
+- MNP - multinomial probit
+- MSE - mean squared error
+- MSL - maximum simulated likelihood
+- MSS - model sum of squares
+- MTE - marginal treatment effect
+- NB - negative binomial
+- NB1 - negative binomial variance linear in mean
+- NB2 - negative binomial variance quadratic in mean
+- NL - nested logit
+- NLS - nonlinear least squares
+- NNM - nearest-neighbor matching
+- NR - Newton-Raphson
+- NSW - National Supported Work
+- OHIE - Oregon Health Insurance Experiment
+- OHP - Oregon Health Program
+- OLS - ordinary least squares
+- PA - population averaged
+- PFGLS - pooled feasible generalized least squares
+- PH - proportional hazards
+- PM - predictive mean
+- POM - potential-outcome mean
+- PSID - Panel Study of Income Dynamics
+- PSM - propensity-score matching - PSU - primary sampling unit
+- QCR - quantile count regression
+- QR - quantile regression
+- QTE - quantile treatment effect
+- RA - regression adjustment
+- RCT - randomized control trials
+- RD - regression discontinuity
+- RE - random effects
+- RIF - recentered influence function
+- RMSE - root mean squared error
+- ROC - receiver operator characteristics
+- RPL - random-parameters logit
+- RSS - residual sum of squares
+- SAR - spatial autoregressive
+- SARAR - autoregressive spatial autoregressive
+- SEM - structural equation model
+- SJ - Stata Journal
+- SRD - sharp regression discontinuity
+- STB - Stata Technical Bulletin
+- SUR - seemingly unrelated regressions
+- TE - treatment effect
+- TSS - total sum of squares
+- VCE - variance-covariance matrix of the estimator
+- WLS - weighted least squares
+- ZINB - zero-inflated negative binomial
+- ZIP - zero-inflated Poisson
+- ZTNB - zero-truncated negative binomial
+- ZTP - zero-truncated Poisson
+
