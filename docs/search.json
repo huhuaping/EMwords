@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "EMwords 计量术语中英文对照合辑",
+    "section": "",
+    "text": "（1）Hansen, Bruce. Econometrics. Princeton: Princeton University Press, 2022. 每个段落的第一句和最后一句\n\n[英]Today, we would say that econometrics is the unified study of economic models, mathematical statistics, and economic data [中]今天，我们会说计量经济学是对经济模型、数理统计和经济数据的统一研究\n\n\n\n\n大部分计量教材都会在附录部分提供一个主题（subject）索引或作者索引（Name）或缩写索引（Abbreviation）（包含在教材中对应的页码），或者三者的混合索引。但是我们这里更关注术语缩写索引。\n（1）Cameron, A. Colin, and P. K. Trivedi. Microeconometrics Using Stata. Volume I, Cross-Sectional and Panel Regression Models. 2nd ed. College Station, Texas: Stata Press, 2022.\n\n2SLS: two-stage least squares\n3SLS: three-stage least squares\nAFT: accelerated failure time\nAIC: Akaike information criterion\n\n\n\n\n\n\n\nNote\n\n\n\n说明：\n\n古扎拉蒂分别给出了主题（subject）索引或作者索引（Name）"
+  },
+  {
+    "objectID": "index.html#计量句式对照",
+    "href": "index.html#计量句式对照",
+    "title": "EMwords 计量术语中英文对照合辑",
+    "section": "",
+    "text": "（1）Hansen, Bruce. Econometrics. Princeton: Princeton University Press, 2022. 每个段落的第一句和最后一句\n\n[英]Today, we would say that econometrics is the unified study of economic models, mathematical statistics, and economic data [中]今天，我们会说计量经济学是对经济模型、数理统计和经济数据的统一研究"
+  },
+  {
+    "objectID": "index.html#计量术语缩写对照",
+    "href": "index.html#计量术语缩写对照",
+    "title": "EMwords 计量术语中英文对照合辑",
+    "section": "",
+    "text": "大部分计量教材都会在附录部分提供一个主题（subject）索引或作者索引（Name）或缩写索引（Abbreviation）（包含在教材中对应的页码），或者三者的混合索引。但是我们这里更关注术语缩写索引。\n（1）Cameron, A. Colin, and P. K. Trivedi. Microeconometrics Using Stata. Volume I, Cross-Sectional and Panel Regression Models. 2nd ed. College Station, Texas: Stata Press, 2022.\n\n2SLS: two-stage least squares\n3SLS: three-stage least squares\nAFT: accelerated failure time\nAIC: Akaike information criterion\n\n\n\n\n\n\n\nNote\n\n\n\n说明：\n\n古扎拉蒂分别给出了主题（subject）索引或作者索引（Name）"
+  }
+]

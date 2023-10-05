@@ -1,5 +1,20 @@
 project:
+  type: website
+  output-dir: docs
+  render: 
+    - index.qmd
+  
+
+website:
   title: "EMwords"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
 
-
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
 
