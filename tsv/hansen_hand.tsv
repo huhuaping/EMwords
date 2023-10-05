@@ -307,7 +307,7 @@ It is not a causal relation, but a natural feature of joint distributions	它不
 Limitations of the Best Linear Projection	最优线性投影的局限性
 Let's compare the linear projection and linear CEF models	让我们比较一下线性投影和线性 CEF 模型
 Furthermore, the linear projection may be a poor approximation to the CEF	此外，线性投影可能不是 CEF 的近似值
-We see in this example that a projection error need not be a CEF error and a linear projection can be a poor approximation to the CEF	我们在这个例子中看到，投影误差不一定是 CEF 误差，线性投影可能不是 CEF 的近似值
+We see in this example that a projection error need not be a CEF error and a linear projection can be a poor approximation to the CEF	我们在这个案例中看到，投影误差不一定是 CEF 误差，线性投影可能不是 CEF 的近似值
 Figure 2.7: Conditional Expectation and Two Linear Projections	图 2.7：条件期望和两个线性投影
 Another defect of linear projection is that it is sensitive to the marginal distribution of the regressors when the conditional mean is nonlinear	线性投影的另一个缺陷是当条件均值非线性时，它对自变量的边际分布很敏感
 The apparent difference is a by-product of linear approximations to a nonlinear expectation combined with different marginal distributions for the conditioning variables	明显的区别是非线性期望的线性近似与条件变量的不同边际分布相结合的副产品
@@ -330,7 +330,7 @@ Perhaps it would be more appropriate to label (2.53) as a structural effect (the
 Table 2.3: Example Distribution	表 2.3：示例分布
 He defined it as follows	他定义如下
 The ACE is the population average of the causal effect	ACE 是因果效应的总体平均值
-To illustrate, let's return to our example of Jennifer and George	为了说明，让我们回到詹妮弗和乔治的例子
+To illustrate, let's return to our example of Jennifer and George	为了说明，让我们回到詹妮弗和乔治的案例
 An econometrician who randomly samples 32 individuals and collects data on educational attainment and wages will find the wage distribution displayed in Table 2.3	一位计量经济学家随机抽样 32 个体并收集有关教育程度和工资的数据，会发现表 2.3 中显示的工资分布
 Because most Jennifer's go to College, and most George's do not, the regression line is tilted away from the average causal effect towards the two large points	因为大多数 Jennifer 上过大学，而大多数 George 没有上过大学，所以回归线从平均因果效应向两个大点倾斜
 Figure 2.8: Average Causal Effect vs Regression	图 2.8：平均因果效应与回归
@@ -676,7 +676,7 @@ It is unclear if there is a best practice to avoid this situation	目前尚不�
 If it is very large calculate the standard errors using several methods to see if variation occurs	如果非常大，请使用多种方法计算标准误差以查看是否发生变化
 Computation	计算
 Measures of Fit	拟合测度
-Empirical Example	实证例子
+Empirical Example	实证案例
 We again return to our wage equation but use a much larger sample of all individuals with at least 12 years of education	我们再次回到我们的工资方程，但使用了一个更大的样本，其中包括所有受过至少 12 年教育的个体
 For standard errors we use the unbiased HC2 formula	对于标准误差，我们使用无偏 HC2 公式
 These are useful summary measures of fit which aid readers	这些是有用的总结性测度，可以帮助读者
@@ -1100,39 +1100,39 @@ The hypothesis to be tested is called the null hypothesis	要检验的假设称�
 The complement of the null hypothesis (the collection of parameter values which do not satisfy the null hypothesis) is called the alternative hypothesis	原假设的补集（不满足原假设的参数值的集合）称为备择假设
 Figure 9.1(a) illustrates the division of the parameter space into null and alternative hypotheses	图 9.1(a) 说明了将参数空间划分为原假设和备择假设
 Figure 9.1: Hypothesis Testing	图 9.1：假设检验
-To be specific, take our example of wage determination and consider the question: Does union membership affect wages? We can turn this into a hypothesis test by specifying the null as the restriction that a coefficient on union membership is zero in a wage regression	具体来说，以我们的工资决定为例，并考虑以下问题：工会会员资格会影响工资吗？我们可以通过将零值指定为工资回归中工会成员系数为零的约束，将其转变为假设检验
+To be specific, take our example of wage determination and consider the question: Does union membership affect wages? We can turn this into a hypothesis test by specifying the null as the restriction that a coefficient on union membership is zero in a wage regression	具体来说，以我们的工资决定为例，并考虑以下问题：工会会员资格会影响工资吗？我们可以通过将原假设设定为工资回归中工会成员系数为零的约束，将其转变为假设检验
 Acceptance and Rejection	接受和拒绝
 A hypothesis test either accepts the null hypothesis or rejects the null hypothesis in favor of the alternative hypothesis	假设检验要么接受原假设，要么拒绝原假设并支持备择假设
-In the example given in the previous section the decision is either to accept the hypothesis that union membership does not affect wages, or to reject the hypothesis in favor of the alternative that union membership does affect wages	在上一节给出的示例中，决策要么接受工会成员身份不影响工资的假设，要么拒绝工会成员身份确实影响工资的假设
+In the example given in the previous section the decision is either to accept the hypothesis that union membership does not affect wages, or to reject the hypothesis in favor of the alternative that union membership does affect wages	在上一节给出的示例中，决策是要么接受工会成员身份不影响工资的原假设，要么拒绝原假设并支持备择假设，认为工会成员身份确实影响工资
 The decision is based on the data and so is a mapping from the sample space to the decision set	决策基于数据，因此也是基于样本空间到决策集的映射
-It is convenient to express this mapping as a real-valued function called a test statistic	可以方便地将这种映射表示为称为检验统计量的实值函数
+It is convenient to express this mapping as a real-valued function called a test statistic	可以方便地将这种映射表示为被称为检验统计量的实值函数
 Figure 9.1(b) illustrates the division of the sample space into acceptance and rejection regions	图 9.1(b) 说明了将样本空间划分为接受区域和拒绝区域
-In this chapter we will summarize the main approaches to the design of test statistics	在本章中，我们将总结检验统计量设计的主要方法
+In this chapter we will summarize the main approaches to the design of test statistics	在本章中，我们将总结设计检验统计量的主要方法
 The most commonly used test statistic is the absolute value of the t-statistic	最常用的检验统计量是 t 统计量的绝对值
 Type I Error	I 类错误
-The probability of a Type I error is called the size of the test	发生 I 类错误的概率称为检验的大小
-A primary goal of test construction is to limit the incidence of Type I error by bounding the size of the test	检验构建的主要目标是通过约束检验的规模来约束 I 类错误的发生率
+The probability of a Type I error is called the size of the test	发生 I 类错误的概率称为检验的尺度
+A primary goal of test construction is to limit the incidence of Type I error by bounding the size of the test	检验构建的主要目标是通过约束检验的尺度来约束 I 类错误的发生率
 For the reasons discussed in Chapter 7 , in typical econometric models the exact sampling distributions of estimators and test statistics are unknown and hence we cannot explicitly calculate (9.4)	由于第 7 章中讨论的原因，在典型的计量经济学模型中，估计量和检验统计量的精确抽样分布是未知的，因此我们无法明确计算（9.4）
 This distribution does not depend on unknowns and is pivotal	这种分布不依赖于未知数并且是关键的
-We define the asymptotic size of the test as the asymptotic probability of a Type I error:	我们将检验的渐近大小定义为 I 类错误的渐近概率：
+We define the asymptotic size of the test as the asymptotic probability of a Type I error:	我们将检验的渐近尺度定义为 I 类错误的渐近概率：
 t tests	t 检验
-We now formally state its asymptotic null distribution, which is a simple application of Theorem 7.11	我们现在正式陈述它的渐近零分布，这是定理 7.11 的简单应用
+We now formally state its asymptotic null distribution, which is a simple application of Theorem 7.11	我们现在正式声明它的渐近虚构分布，这是定理 7.11 的简单应用
 Theorem 9.1 shows that asymptotic critical values can be taken from the normal distribution	定理 9.1 表明渐近临界值可以从正态分布中获取
 In practical applications the difference is typically unimportant unless the sample size is quite small (in which case the asymptotic approximation should be questioned as well)	在实际应用中，除非样本量非常小，否则差异通常并不重要（在这种情况下，渐近近似也应该受到质疑）
 There seems to be an ambiguity	似乎有歧义
-Since linear regression coefficients typically do not have a priori sign restrictions, the standard convention is to use two-sided critical values	由于线性回归系数通常没有先验符号约束，因此标准惯例是使用两侧临界值
-This may seem contrary to the way testing is presented in statistical textbooks which often focus on one-sided alternative hypotheses	这似乎与统计教科书中呈现检验的方式相反，统计教科书通常侧重于片面的替代假设
-The latter focus is primarily for pedagogy as the one-sided theoretical problem is cleaner and easier to understand	后者主要针对教育学，因为片面的理论问题更清晰、更容易理解
-Type II Error and Power	II 类错误和影响
-In the dominant approach to hypothesis testing the goal of test construction is to have high power subject to the constraint that the size of the test is lower than the pre-specified significance level	在假设检验的主要方法中，检验构建的目标是在检验规模低于预先指定的显著性水平的约束下获得高功效
+Since linear regression coefficients typically do not have a priori sign restrictions, the standard convention is to use two-sided critical values	由于线性回归系数通常没有先验符号约束，因此标准惯例是使用双侧临界值
+This may seem contrary to the way testing is presented in statistical textbooks which often focus on one-sided alternative hypotheses	这似乎与统计教科书中呈现检验的方式相反，统计教科书通常侧重于单侧的备择假设
+The latter focus is primarily for pedagogy as the one-sided theoretical problem is cleaner and easier to understand	后者主要针对教育学，因为单侧的理论问题更清晰、更容易理解
+Type II Error and Power	II 类错误和功效
+In the dominant approach to hypothesis testing the goal of test construction is to have high power subject to the constraint that the size of the test is lower than the pre-specified significance level	在假设检验的主要方法中，检验构建的目标是在检验尺度低于预先指定的显著性水平的约束下获得高功效
 Table 9.1: Hypothesis Testing Decisions	表 9.1：假设检验决策
-Otherwise the test will not have meaningful power	否则检验将没有有意义的力量
-It is important to consider the power of a test when interpreting hypothesis tests as an overly narrow focus on size can lead to poor decisions	在解释假设检验时，重要的是要考虑检验的功效，因为过于狭隘地关注规模可能会导致错误的决策
+Otherwise the test will not have meaningful power	否则检验将没有功效
+It is important to consider the power of a test when interpreting hypothesis tests as an overly narrow focus on size can lead to poor decisions	在解释假设检验时，重要的是要考虑检验的功效，因为过于狭隘地关注尺度可能会导致糟糕的决策
 Nothing is learned from such a test	从这样的检验中什么也学不到
-Statistical Significance	统计学意义
+Statistical Significance	统计显著性
 These choices are somewhat the by-product of traditional tables of critical values and statistical software	这些选择在某种程度上是传统临界值表和统计软件的副产品
-Let us return to the example about the union wage premium as measured in Table 4.1	让我们回到表 4.1 中衡量的工会工资溢价的例子
-In this case we find that membership for women is not statistically significant	在这种情况下，我们发现女性成员资格在统计上并不显着
+Let us return to the example about the union wage premium as measured in Table 4.1	让我们回到表 4.1 中测度的工会工资溢价的案例
+In this case we find that membership for women is not statistically significant	在这种情况下，我们发现女性成员资格在统计上并不显著
 When a test accepts a null hypothesis (when a test is not statistically significant) a common misinterpretation is that this is evidence that the null hypothesis is true	当检验接受零假设（当检验不具有统计显著性时）时，常见的误解是，这是零假设为真的证据
 The test has failed to reject the hypothesis that the coefficient is zero but that does not mean that the coefficient is actually zero	该检验未能拒绝系数为零的假设，但这并不意味着系数实际上为零
 When a test rejects a null hypothesis (when a test is statistically significant) it is strong evidence against the hypothesis (because if the hypothesis were true then rejection is an unlikely event)	当检验拒绝零假设时（当检验具有统计显著性时），它是反对假设的有力证据（因为如果假设为真，则拒绝是不可能发生的事件）
@@ -1140,37 +1140,37 @@ However, we can never conclude that the null hypothesis is indeed false as we ca
 Perhaps more importantly, there is an important distinction between statistical and economic significance	也许更重要的是，统计意义和经济意义之间存在重要区别
 This occurs frequently in applications with very large sample sizes where standard errors can be quite small	这种情况经常发生在样本量非常大且标准误差可能非常小的应用中
 The solution is to focus whenever possible on confidence intervals and the economic meaning of the coefficients	解决方案是尽可能关注置信区间和系数的经济意义
-This is much more informative than the misleading statement "the effect is statistically positive"	这比“效果在统计上是积极的”这一误导性陈述提供了更多信息
+This is much more informative than the misleading statement "the effect is statistically positive"	这比“效果在统计上是正向的”这一误导性陈述提供了更多信息
 P-Values	P 值
 The answer is to report what is known as the asymptotic p-value	答案是报告所谓的渐近 p 值
-Furthermore, the asymptotic p-value has a very convenient asymptotic null distribution	此外，渐近 p 值具有非常方便的渐近零分布
+Furthermore, the asymptotic p-value has a very convenient asymptotic null distribution	此外，渐近 p 值具有非常方便的渐近虚构分布
 The goal is essentially the same; it is wiser to report p-values whenever possible and avoid the use of asterisks	目标本质上是相同的；明智的做法是尽可能报告 p 值并避免使用星号
 The p-value is a simple statistic, easy to interpret, and contains more information than the other choices	p 值是一个简单的统计量，易于解释，并且比其他选择包含更多信息
 We now summarize the main features of hypothesis testing	我们现在总结假设检验的主要特征
 t-ratios and the Abuse of Testing	t 比率和滥用检验
-In particular, some applied papers report coefficient estimates and t-ratios and limit their discussion of the results to describing which variables are "significant" (meaning that their t-ratios exceed 2) and the signs of the coefficient estimates	特别是，一些应用论文报告了系数估计值和 t 比率，并将结果讨论限定为描述哪些变量是“显着的”（意味着它们的 t 比率超过 2）以及系数估计值的符号
-It is also a recipe for banishment of your work to lower tier economics journals	这也是导致你的作品被低级经济学期刊驱逐的原因之一
+In particular, some applied papers report coefficient estimates and t-ratios and limit their discussion of the results to describing which variables are "significant" (meaning that their t-ratios exceed 2) and the signs of the coefficient estimates	特别是，一些应用论文报告了系数估计值和 t 比率，并将结果讨论限定为描述哪些变量是“显著的”（意味着它们的 t 比率超过 2）以及系数估计值的符号
+It is also a recipe for banishment of your work to lower tier economics journals	这也是导致你的文章被低级经济学期刊驱逐的原因之一
 Fundamentally, the common t-ratio is a test for the hypothesis that a coefficient equals zero	从根本上说，共同 t 比率是对系数等于 0 的假设的检验
 But if this is not the case it is distracting	但如果情况并非如此，那就会分散注意力
 One problem is that standard packages, such as Stata, by default report t-statistics and p-values for every estimated coefficient	一个问题是标准软件包（例如 Stata）默认报告每个估计系数的 t 统计量和 p 值
-Instead, a user should focus on tests of scientifically motivated hypotheses	相反，用户应该专注于对科学假设的检验
-In contrast, the statement "the t-ratio is highly significant" has little interpretive value	相比之下，“t 比率非常显着”这一说法几乎没有解释价值
+Instead, a user should focus on tests of scientifically motivated hypotheses	相反，用户应该专注于对科学驱动假设的检验
+In contrast, the statement "the t-ratio is highly significant" has little interpretive value	相比之下，“t 比率非常显著”这一说法几乎没有解释价值
 This is critical for good applied econometric practice	这对于良好的应用计量经济学实践至关重要
-For example, consider the question about the effect of marriage status on mean log wages	例如，考虑有关婚姻状况对平均对数工资的影响的问题
-These magnitudes are more informative than the results of the hypothesis tests	这些幅度比假设检验的结果提供更多信息
+For example, consider the question about the effect of marriage status on mean log wages	例如，考虑有关婚姻状况对平均对数工资影响的问题
+These magnitudes are more informative than the results of the hypothesis tests	这些数量比假设检验的结果提供更多信息
 Wald Tests	瓦尔德检验
-The t-test is appropriate when the null hypothesis is a real-valued restriction	当原假设是实值约束时，t 检验适用
-Thus the inherent alternative is always two-sided	因此，固有的选择总是有两面性的
+The t-test is appropriate when the null hypothesis is a real-valued restriction	当原假设是实值约束时，t 检验是适用的
+Thus the inherent alternative is always two-sided	因此，固有的选择总是双侧的
 To implement a test of zero restrictions in Stata an easy method is to use the command test X1 X2 where X1 and X2 are the names of the variables whose coefficients are hypothesized to equal zero	要在 Stata 中实现零约束检验，一种简单的方法是使用命令 test X1 X2，其中 X1 和 X2 是假设系数为零的变量的名称
 To illustrate, consider the empirical results presented in Table 4.1	为了说明这一点，请考虑表 4.1 中给出的实证结果
-Therefore examining both the joint Wald statistic and the individual t-statistics is useful for interpretation	因此，检查联合 Wald 统计量和个体 t 统计量对于解释很有用
-As a second example from the same regression, take the hypothesis that married status has no effect on mean wages for women	作为同一回归的第二个例子，假设婚姻状况对女性的平均工资没有影响
+Therefore examining both the joint Wald statistic and the individual t-statistics is useful for interpretation	因此，检查联合 Wald 统计量和个别 t 统计量对于解释很有用
+As a second example from the same regression, take the hypothesis that married status has no effect on mean wages for women	作为同一回归的第二个案例，假设婚姻状况对女性的平均工资没有影响
 The Wald statistic was proposed by Wald (1943)	Wald 统计量由 Wald (1943) 提出
 Homoskedastic Wald Tests	同方差 Wald 检验
-Criterion-Based Tests	基于标准的检验
+Criterion-Based Tests	基于准则的检验
 An alternative class of tests is based on the discrepancy between the criterion function minimized with and without the restriction	另一类检验是基于在有约束和没有约束的情况下最小化准则函数之间的差异
-Minimum Distance Tests	最短距离检验
-The minimum distance test is based on the minimum distance criterion (8.19)	最小距离检验基于最小距离标准（8.19）
+Minimum Distance Tests	最小距离检验
+The minimum distance test is based on the minimum distance criterion (8.19)	最小距离检验基于最小距离准则（8.19）
 Substituting into (9.10) we find	代入(9.10)我们发现
 which is the Wald statistic (9.6)	这是 Wald 统计量 (9.6)
 For nonlinear hypotheses, however, the Wald and minimum distance statistics are different	然而，对于非线性假设，Wald 和最小距离统计量是不同的
@@ -1178,45 +1178,44 @@ We now demonstrate Theorem 9.4	我们现在证明定理 9.4
 Minimum Distance Tests Under Homoskedasticity	同方差下的最小距离检验
 This is the homoskedastic Wald statistic (9.7)	这是同方差 Wald 统计量 (9.7)
 Thus for testing linear hypotheses, homoskedastic minimum distance and Wald statistics agree	因此，对于检验线性假设，同方差最小距离和 Wald 统计是一致的
-For nonlinear hypotheses they disagree, but have the same null asymptotic distribution	对于非线性假设，它们不一致，但具有相同的零渐近分布
+For nonlinear hypotheses they disagree, but have the same null asymptotic distribution	对于非线性假设，它们不一致，但具有相同的虚构渐近分布
 F Tests	F 检验
-An elegant feature about (9.12) or (9.13) is that they are directly computable from the standard output from two simple OLS regressions, as the sum of squared errors (or regression variance) is a typical printed output from statistical packages and is often reported in applied tables	(9.12) 或 (9.13) 的一个优雅特征是它们可以直接从两个简单 OLS 回归的标准输出计算，因为平方误差之和（或回归方差）是统计包的典型打印输出，并且经常报告在应用表中
+An elegant feature about (9.12) or (9.13) is that they are directly computable from the standard output from two simple OLS regressions, as the sum of squared errors (or regression variance) is a typical printed output from statistical packages and is often reported in applied tables	(9.12) 或 (9.13) 的一个优雅特征是它们可以直接从两个简单 OLS 回归的标准输出计算得出，因为平方误差之和（或回归方差）是统计包的典型打印输出，并且经常在应用表中报告
 A word of warning: In many statistical packages when an OLS regression is estimated an "F-statistic" is automatically reported even though no hypothesis test was requested	警告：在许多统计软件包中，当估计 OLS 回归时，即使没有要求假设检验，也会自动报告“F 统计量”
 Hausman Tests	豪斯曼检验
 Thus the Hausman statistic is	因此豪斯曼统计量是
 which is precisely the Wald statistic	这正是 Wald 统计量
 Theorem 9.7 For general hypotheses the Hausman test statistic is	定理 9.7 对于一般假设，Hausman 检验统计量为
-Score Tests	分数检验
-Score tests are traditionally derived in likelihood analysis but can more generally be constructed from first-order conditions evaluated at restricted estimates	分数检验传统上是通过似然分析得出的，但更一般地可以根据在有限估计下评估的一阶条件构建
+Score Tests	得分检验
+Score tests are traditionally derived in likelihood analysis but can more generally be constructed from first-order conditions evaluated at restricted estimates	得分检验传统上是通过似然分析得出的，但更一般地可以根据在受限估计下评估的一阶条件进行构建
 We focus on the likelihood derivation	我们关注似然推导
-The idea is that if the restriction is true then the restricted estimators should be close to the maximum of the log-likelihood where the derivative is zero	这个想法是，如果约束为真，那么受约束的估计量应该接近导数为零的对数似然的最大值
+The idea is that if the restriction is true then the restricted estimators should be close to the maximum of the log-likelihood where the derivative is zero	这个想法是，如果约束为真，那么受约束的估计量应该接近导数为零的对数似然最大值
 The constrained MLE under linear hypotheses is constrained least squares	线性假设下的约束 MLE 是约束最小二乘
 We can calculate that the derivative and Hessian are	我们可以计算出导数和 Hessian 为
 This is not a concern for linear restrictions	这不是线性约束的问题
-More generally, score and score-like statistics can be constructed from first-order conditions evaluated at restricted parameter estimates	更一般地，分数和类分数统计可以根据在受限参数估计下评估的一阶条件来构造
-restricted residuals) then these are often described as score tests	此外，当使用协方差矩阵估计构建检验统计量（使用受限参数估计（例如受限残差）计算）时，这些通常被描述为分数检验
+More generally, score and score-like statistics can be constructed from first-order conditions evaluated at restricted parameter estimates	更一般地，得分和得分类统计量可以根据在受限参数估计下评估的一阶条件来构造
 An example of the latter is the Wald-type statistic	后者的一个例子是 Wald 型统计量
 Problems with Tests of Nonlinear Hypotheses	非线性假设检验的问题
-This is an unfortunate feature of the Wald statistic	这是沃尔德统计数据的一个不幸的特征
+This is an unfortunate feature of the Wald statistic	这是沃尔德统计数据的一个令人遗憾的特性
 Through repetition, features of this distribution can be calculated	通过重复，可以计算出该分布的特征
-While this is clear in this particular example, in other examples natural choices are not obvious and the best choices may be counter-intuitive	虽然这一点在这个特定示例中很明显，但在其他示例中，自然选择并不明显，并且最优选择可能是反直觉的
+While this is clear in this particular example, in other examples natural choices are not obvious and the best choices may be counter-intuitive	虽然这一点在这个特定示例中很明显，但在其他示例中，自然的选择并不明显，并且最优选择可能是反直觉的
 This point can be illustrated through an example based on Gregory and Veall (1985)	这一点可以通过 Gregory 和 Veall (1985) 的例子来说明
 Rejection frequencies from 50,000 simulated random samples	50,000 个模拟随机样本的拒绝频率
-An alternative statistic can be constructed through reformulating the null hypothesis as	可以通过将零假设重新表述为来构建替代统计量
+An alternative statistic can be constructed through reformulating the null hypothesis as	一个替代统计量的构建，可以通过将零假设重新表述为
 A t-statistic based on this formulation of the hypothesis is	基于该假设表述的 t 统计量为
 The common message from both examples is that Wald statistics are sensitive to the algebraic formulation of the null hypothesis	这两个例子的共同信息是 Wald 统计量对原假设的代数表述很敏感
 Whenever possible, the Wald statistic should not be used to test nonlinear hypotheses	只要有可能，Wald 统计量就不应用于检验非线性假设
 Theoretical investigations of these issues include Park and Phillips (1988) and Dufour (1997)	对这些问题的理论研究包括 Park 和 Phillips (1988) 以及 Dufour (1997)
 Monte Carlo Simulation	蒙特卡罗模拟
 In this section we describe the method in more detail	在本节中，我们将更详细地描述该方法
-The name Monte Carlo derives from the Mediterranean gambling resort where games of chance are played	蒙特卡洛这个名字源自地中海赌博胜地，那里进行机会游戏
+The name Monte Carlo derives from the Mediterranean gambling resort where games of chance are played	蒙特卡洛这个名字源自进行概率游戏的地中海赌博胜地
 The method of Monte Carlo is simple to describe	蒙特卡罗方法描述起来很简单
 Then the following experiment is conducted by computer simulation:	然后通过计算机模拟进行如下实验：
 We will discuss this choice later	我们稍后会讨论这个选择
 From a random sample we can estimate any feature of interest using (typically) a method of moments estimator	从随机样本中，我们可以使用（通常）矩估计量的方法来估计任何感兴趣的特征
-We now describe some specific examples	我们现在描述一些具体的例子
-Suppose we are interested in the Type I error associated with an asymptotic 5% two-sided t-test	假设我们对与渐近 5% 双边 t 检验相关的 I 类错误感兴趣
-The typical purpose of a Monte Carlo simulation is to investigate the performance of a statistical procedure in realistic settings	蒙特卡罗模拟的典型目的是研究统计过程在现实环境中的性能
+We now describe some specific examples	我们现在描述一些具体的案例
+Suppose we are interested in the Type I error associated with an asymptotic 5% two-sided t-test	假设我们对与渐近 5% 双侧 t 检验关联的 I 类错误感兴趣
+The typical purpose of a Monte Carlo simulation is to investigate the performance of a statistical procedure in realistic settings	蒙特卡罗模拟的典型目的是研究统计过程在现实环境中的表现
 In particular, it is simple to make inferences about rejection probabilities from statistical tests, such as the percentage estimate reported in (9.15)	特别是，从统计检验中推断拒绝概率很简单，例如（9.15）中报告的百分比估计
 In this case it is appropriate to conclude that your results "replicate" the previous study as there is no statistical evidence to reject the hypothesis that they are equivalent	在这种情况下，适当的做法是得出结论，你的结果“复现”了先前的研究，因为没有统计证据可以拒绝它们是等效的假设
 Most journals have policies requiring authors to make available their data sets and computer programs required for empirical results	大多数期刊都有政策要求作者提供实证结果所需的数据集和计算机程序
@@ -1226,281 +1225,281 @@ There is a close relationship between hypothesis tests and confidence intervals	
 Thus inverting a test with good Type I error probabilities yields a confidence interval with good coverage probabilities	因此，对具有良好 I 类错误概率的检验进行反演会产生具有良好覆盖概率的置信区间
 For example, in the wage equation	例如，在工资方程中
 Multiple Tests and Bonferroni Corrections	多重检验和 Bonferroni 修正
-In most applications economists examine a large number of estimates, test statistics, and p-values	在大多数应用中，经济学家都会检查大量的估计值、检验统计数据和 p 值
-What does it mean (or does it mean anything) if one statistic appears to be "significant" after examining a large number of statistics? This is known as the problem of multiple testing or multiple comparisons	如果在检查大量统计数据后一项统计数据似乎“显着”，这意味着什么（或者有什么意义）？这称为多重检验或多重比较的问题
-Power and Test Consistency	功率和检验一致性
+In most applications economists examine a large number of estimates, test statistics, and p-values	在大多数应用中，经济学家都会检查大量的估计值、检验统计量和 p 值
+What does it mean (or does it mean anything) if one statistic appears to be "significant" after examining a large number of statistics? This is known as the problem of multiple testing or multiple comparisons	如果在检查大量统计量后一项统计量似乎“显著”，这意味着什么（或者有什么意义）？这称为多重检验或多重比较的问题
+Power and Test Consistency	功效和检验一致性
 The power of the test is	检验的功效为
-We call this property test consistency	我们将此特征称为一致性检验
+We call this property test consistency	我们将此特征称为检验一致性
 In general, t-tests and Wald tests are consistent against fixed alternatives	一般来说，t 检验和 Wald 检验与固定替代方案是一致的
 Again, this implies that Wald tests are consistent	这再次表明 Wald 检验是一致的
-Asymptotic Local Power	渐近局部幂
+Asymptotic Local Power	渐近局部功效
 Consistency is a good property for a test but is does not provided a tool to calculate test power	一致性对于检验来说是一个很好的特征，但没有提供计算检验功效的工具
-To approximate the power function we need a distributional approximation	为了近似幂函数，我们需要分布近似
+To approximate the power function we need a distributional approximation	为了逼近功效函数，我们需要分布近似
 The standard asymptotic method for power analysis uses what are called local alternatives	功效分析的标准渐近方法使用所谓的局部替代方法
 Instead, it should be interpreted as a technical device which allows the asymptotic distribution to be continuous in the alternative hypothesis	相反，它应该被解释为一种允许渐近分布在备择假设中连续的技术手段
 where the second equality is (9.17)	其中第二个等式是 (9.17)
-Decreasing size induces a decrease in power, and conversely	尺寸减小会导致功率减小，反之亦然
-Figure 9.3: Asymptotic Local Power Function	图 9.3：渐近局部幂函数
-The difference between power functions can be measured either vertically or horizontally	幂函数之间的差异可以垂直或水平测量
-This is the difference in power across tests of differing size, holding fixed the parameter in the alternative	这是不同规模的检验之间功效的差异，在替代方案中保持固定参数
+Decreasing size induces a decrease in power, and conversely	尺度减小会导致功效减小，反之亦然
+Figure 9.3: Asymptotic Local Power Function	图 9.3：渐近局部功效函数
+The difference between power functions can be measured either vertically or horizontally	功效函数之间的差异可以垂直或水平测量
+This is the difference in power across tests of differing size, holding fixed the parameter in the alternative	这是不同规模的检验之间功效的差异，给定替代方案中参数保持不变
 A horizontal comparison can also be illuminating	横向比较也可以具有启发性
-and thus the local power of a two-sided t test is	因此双边 t 检验的局部功效为
-Asymptotic Local Power, Vector Case	渐近局部幂，向量情况
-In this section we extend the local power analysis of the previous section to the case of vector-valued alternatives	在本节中，我们将上一节的局部功效分析扩展到向量值替代方案的情况
+and thus the local power of a two-sided t test is	因此双侧 t 检验的局部功效为
+Asymptotic Local Power, Vector Case	渐近局部功效，向量情形
+In this section we extend the local power analysis of the previous section to the case of vector-valued alternatives	在本节中，我们将上一节的局部功效分析扩展到向量值替代方案的情形
 Applied to the Wald statistic we find	应用于 Wald 统计我们发现
 Resampling Methods	重抽样方法
 So far in this textbook we have discussed two approaches to inference: exact and asymptotic	到目前为止，在本教科书中，我们已经讨论了两种推断方法：精确推断和渐近推断
 Asymptotic theory provides a more flexible distribution theory but is an approximation with uncertain accuracy	渐近理论提供了一种更灵活的分布理论，但它是一种精度不确定的近似
-In this chapter we introduce a set of alternative inference methods which are based around the concept of resampling - which means using sampling information extracted from the empirical distribution of the data	在本章中，我们介绍了一组基于重抽样概念的替代推断方法，这意味着使用从数据的经验分布中提取的抽样信息
+In this chapter we introduce a set of alternative inference methods which are based around the concept of resampling - which means using sampling information extracted from the empirical distribution of the data	在本章中，我们介绍了一组基于重抽样概念的替代推断方法，这意味着使用从数据的经验分布中提取抽样信息
 A consequence of the computation requirement is that most empirical researchers use asymptotic approximations for routine calculations while resampling approximations are used for final reporting	计算要求的结果是，大多数实证研究人员使用渐近近似进行常规计算，而重抽样近似用于最终报告
-We will discuss two categories of resampling methods used in statistical and econometric practice: jackknife and bootstrap	我们将讨论统计和计量经济学实践中使用的两类重抽样方法：折刀法和引导法
-Most of our attention will be given to the bootstrap as it is the most commonly used resampling method in econometric practice	我们的大部分注意力将集中在引导程序上，因为它是计量经济学实践中最常用的重抽样方法
+We will discuss two categories of resampling methods used in statistical and econometric practice: jackknife and bootstrap	我们将讨论统计和计量经济学实践中使用的两类重抽样方法：折刀法和自助法
+Most of our attention will be given to the bootstrap as it is the most commonly used resampling method in econometric practice	我们的大部分注意力将集中在自助法上，因为它是计量经济学实践中最常用的重抽样方法
 The jackknife is most commonly used for variance estimation	折刀法最常用于方差估计
-(There are other variants of bootstrap sampling, including parametric sampling and residual sampling.) The bootstrap is commonly used for variance estimation, confidence interval construction, and hypothesis testing	）引导抽样通常用于方差估计、置信区间构建和假设检验
-There is a third category of resampling methods known as sub-sampling which we will not cover in this textbook	第三类重抽样方法称为二次抽样，我们不会在本教科书中介绍
-See the excellent monograph by Politis, Romano and Wolf (1999)	请参阅 Politis、Romano 和 Wolf (1999) 撰写的优秀专着
-Example	例子
-To motivate our discussion we focus on the application presented in Section 3.7, which is a bivariate regression applied to the CPS subsample of married Black female wage earners with 12 years potential work experience and displayed in Table 3.1	为了激发我们的讨论，我们重点关注第 3.7 节中提出的应用程序，这是一个二元回归，适用于具有 12 年潜在工作经验的已婚黑人女性工薪者的 CPS 子样本，并显示在表 3.1 中
+(There are other variants of bootstrap sampling, including parametric sampling and residual sampling.) The bootstrap is commonly used for variance estimation, confidence interval construction, and hypothesis testing	）自助抽样通常用于方差估计、置信区间构建和假设检验
+There is a third category of resampling methods known as sub-sampling which we will not cover in this textbook	第三类重抽样方法称为子抽样，我们不会在本教科书中介绍
+See the excellent monograph by Politis, Romano and Wolf (1999)	请参阅 Politis、Romano 和 Wolf (1999) 撰写的优秀专著
+Example	案例
+To motivate our discussion we focus on the application presented in Section 3.7, which is a bivariate regression applied to the CPS subsample of married Black female wage earners with 12 years potential work experience and displayed in Table 3.1	为了激发讨论，我们重点关注第 3.7 节中提出的应用，这是一个二元回归，适用于具有 12 年潜在工作经验的已婚黑人女性工薪者的 CPS 子样本，并显示在表 3.1 中
 The estimates as reported in (4.44) are	(4.44) 中报告的估计是
 We focus on four estimates constructed from this regression	我们重点关注根据该回归构建的四个估计值
-We are interested in calculating standard errors and confidence intervals for the four estimates described above	我们有兴趣计算上述四个估计的标准误差和置信区间
+We are interested in calculating standard errors and confidence intervals for the four estimates described above	我们有兴趣计算上述四个估计值的标准误差和置信区间
 Jackknife Estimation of Variance	方差的折刀估计
-The jackknife estimates moments of estimators using the distribution of the leave-one-out estimators	Jackknife 使用留一估计量的分布来估计估计量的矩
-The idea was expanded further in the monographs of Efron (1982) and Shao and Tu (1995)	这个想法在 Efron (1982) 以及 Shao 和 Tu (1995) 的专着中得到了进一步扩展
+The jackknife estimates moments of estimators using the distribution of the leave-one-out estimators	Jackknife 使用留一法估计量的分布来估算估计量的矩
+The idea was expanded further in the monographs of Efron (1982) and Shao and Tu (1995)	这个想法在 Efron (1982) 以及 Shao 和 Tu (1995) 的专著中得到了进一步扩展
 The main attractions of the jackknife estimator are that it can be used when an explicit asymptotic variance formula is not available and that it can be used as a check on the reliability of an asymptotic formula	Jackknife 估计量的主要吸引力在于，它可以在显式渐近方差公式不可用时使用，并且可以用作渐近公式可靠性的检查
-The formula (10.1) is not immediately intuitive so may benefit from some motivation	公式（10.1）并不直观，因此可能会受益于一些动机
-The sample mean of the leave-one-out estimators is	留一估计量的样本均值是
+The formula (10.1) is not immediately intuitive so may benefit from some motivation	公式（10.1）并不直观，因此可能会受益于某些动机
+The sample mean of the leave-one-out estimators is	留一法估计量的样本均值是
 The jackknife estimate of variance (10.1) is then	方差的折刀估计 (10.1) 则为
 We next examine the case of least squares regression coefficient estimator	接下来我们研究最小二乘回归系数估计量的情况
-This is further confirmation that the jackknife is making a reasonable calculation	这进一步证实了折刀的计算是合理的
+This is further confirmation that the jackknife is making a reasonable calculation	这进一步证实了折刀法的计算是合理的
 The second equality is (10.4)	第二个等式是(10.4)
 This argument extends directly to any "smooth function" estimator	这个论点直接扩展到任何“平滑函数”估计量
 We illustrate by reporting the asymptotic and jackknife standard errors for the four parameter estimates given earlier	我们通过报告前面给出的四个参数估计的渐近和折刀标准误差来进行说明
 For comparison the asymptotic standard errors are reported in the final row	为了进行比较，最后一行报告了渐近标准误差
 For all estimates the jackknife and asymptotic standard errors are quite similar	对于所有估计，折刀误差和渐近标准误差都非常相似
 The take-away from our presentation is that the jackknife is a simple and flexible method for variance and standard error calculation	我们的演示的要点是，折刀法是一种简单而灵活的方差和标准误差计算方法
-They can also be used as a double-check on the reasonableness of asymptotic delta-method calculations	它们还可以用作渐近 delta 方法计算合理性的双重检查
+They can also be used as a double-check on the reasonableness of asymptotic delta-method calculations	它们还可以用作渐近 delta 方法计算合理性的一种双重检查
 In Stata, jackknife standard errors for coefficient estimates in many models are obtained by the vce(jackknife) option	在 Stata 中，许多模型中系数估计的折刀标准误差是通过 vce(jackknife) 选项获得的
-For nonlinear functions of the coefficients or other estimators the jackkn ife command can be combined with any other command to obtain jackknife standard errors	对于系数或其他估计量的非线性函数，jackkn ife 命令可以与任何其他命令组合以获得 jackknife 标准误差
+For nonlinear functions of the coefficients or other estimators the jackknife command can be combined with any other command to obtain jackknife standard errors	对于系数或其他估计量的非线性函数，jackknife 命令可以与任何其他命令组合以获得 jackknife 标准误差
 To illustrate, below we list the Stata commands which calculate the jackknife standard errors listed above	为了说明这一点，下面我们列出了计算上面列出的折刀标准误差的 Stata 命令
-Table 10.1: Leave-one-out Estimators and Jackknife Standard Errors	表 10.1：留一估计量和折刀标准误
-Jackknife for Clustered Observations	用于群组观测的刀刀
-Using the same approximations as the previous section we can show that the delete-cluster jackknife estimator is asymptotically equivalent to the cluster-robust covariance matrix estimator (4.59) calculated with the delete-cluster prediction errors	使用与上一节相同的近似，我们可以证明删除群组折刀估计量渐近等效于使用删除群组预测误差计算的群组稳健协方差矩阵估计量（4.59）
-This verifies that the delete-cluster jackknife is the appropriate jackknife approach for clustered dependence	这验证了删除群组刀刀法是适用于群组依赖的刀刀法方法
+Table 10.1: Leave-one-out Estimators and Jackknife Standard Errors	表 10.1：留一法估计量和折刀标准误
+Jackknife for Clustered Observations	群组观测的折刀法
+Using the same approximations as the previous section we can show that the delete-cluster jackknife estimator is asymptotically equivalent to the cluster-robust covariance matrix estimator (4.59) calculated with the delete-cluster prediction errors	使用与上一节相同的近似，我们可以证明删除群组的折刀估计量渐近等效于使用删除群组预测误差计算的群组稳健协方差矩阵估计量（4.59）
+This verifies that the delete-cluster jackknife is the appropriate jackknife approach for clustered dependence	这验证了删除群组折刀法是适用于群组相依的折刀方法
 This shows that the jackknife estimator is appropriate for covariance matrix estimation	这表明折刀估计量适合协方差矩阵估计
-As in the context of i.i.d. samples, one advantage of the jackknife covariance matrix estimators is that they do not require the user to make a technical calculation of the asymptotic distribution	正如在 i.i.d. 的上下文中一样
-In Stata, jackknife standard errors for coefficient estimates with clustered observations are obtained by using the options cluster (id) vce(jackkn ife) where id denotes the cluster variable	在 Stata 中，通过使用选项 cluster (id) vce(jackkn ife) 获得群组观测值的系数估计的杰克刀标准误差，其中 id 表示群组变量
-The Bootstrap Algorithm	引导算法
+As in the context of i.i.d. samples	正如在 i.i.d. 样本的情形中一样
+In Stata, jackknife standard errors for coefficient estimates with clustered observations are obtained by using the options cluster (id) vce(jackknife) where id denotes the cluster variable	在 Stata 中，通过使用选项 cluster (id) vce(jackknife) 获得群组观测的系数估计的折刀标准误差，其中 id 表示群组变量
+The Bootstrap Algorithm	自助算法
 The bootstrap is a powerful approach to inference and is due to the pioneering work of Efron (1979)	Bootstrap 是一种强大的推断方法，归功于 Efron (1979) 的开创性工作
-There are several ways to describe or define the bootstrap and there are several forms of the bootstrap	有多种方法来描述或定义引导程序，并且引导程序有多种形式
-In subsequent sections we give more formal definitions of the bootstrap as well as theoretical justifications	在后续部分中，我们给出引导程序的更正式的定义以及理论依据
+There are several ways to describe or define the bootstrap and there are several forms of the bootstrap	有多种方法来描述或定义自助法，并且自助法有多种形式
+In subsequent sections we give more formal definitions of the bootstrap as well as theoretical justifications	在后续部分中，我们给出自助法的更正式的定义以及理论依据
 sampling (sampling with replacement) from the original dataset	从原始数据集中抽样（放回抽样）
 To understand this it is useful to start with the concept of sampling with replacement from the dataset	为了理解这一点，从数据集中替换抽样的概念开始是很有用的
-We call this the bootstrap sample	我们称之为引导样本
-Once again, the bootstrap sample is the constructed dataset with the 20 observations drawn randomly from the original sample	同样，引导样本是构建的数据集，其中包含从原始样本中随机抽取的 20 个观测值
-This is one draw from the bootstrap distribution of the estimates	这是从估计值的引导分布中得出的一项结论
-Bootstrap Variance and Standard Errors	自举方差和标准误差
-Given the bootstrap draws we can estimate features of the bootstrap distribution	给定引导程序绘制，我们可以估计引导程序分布的特征
-This is a very simple statistic to calculate and is the most common use of the bootstrap in applied econometric practice	这是一个计算起来非常简单的统计数据，也是应用计量经济学实践中引导程序最常见的用途
+We call this the bootstrap sample	我们称之为自助样本
+Once again, the bootstrap sample is the constructed dataset with the 20 observations drawn randomly from the original sample	同样，自助样本是构建的数据集，其中包含从原始样本中随机抽取的 20 个观测值
+This is one draw from the bootstrap distribution of the estimates	这是从估计值的自助分布中得出的一项结论
+Bootstrap Variance and Standard Errors	自助方差和标准误差
+Given the bootstrap draws we can estimate features of the bootstrap distribution	给定自助抽取，我们可以估计自助法分布的特征
+This is a very simple statistic to calculate and is the most common use of the bootstrap in applied econometric practice	这是一个计算起来非常简单的统计量，也是应用计量经济学实践中自助法最常见的用途
 A caveat (discussed in more detail in Section 10.15) is that in many cases it is better to use a trimmed estimator	需要注意的是（在第 10.15 节中更详细地讨论），在许多情况下最好使用修剪估计量
-Standard errors are conventionally reported to convey the precision of the estimator	通常报告标准误差来传达估计量的精度
-In general, bootstrap standard errors should be used as estimates of precision rather than as tools to construct confidence intervals	一般来说，引导标准误差应用作精度估计，而不是用作构建置信区间的工具
+Standard errors are conventionally reported to convey the precision of the estimator	报告的标准误差通常是用来表达估计量的精度
+In general, bootstrap standard errors should be used as estimates of precision rather than as tools to construct confidence intervals	一般来说，自助标准误差应该用作精度估计，而不是用作构建置信区间的工具
 They should be similar (up to simulation sampling error) but not precisely the same	它们应该相似（取决于模拟抽样误差）但不完全相同
-We also report four bootstrap confidence intervals which will be introduced in subsequent sections	我们还报告了四个引导置信区间，将在后续部分中介绍
-For these four estimators we can see that the bootstrap standard errors are quite similar to the asymptotic and jackknife standard errors	对于这四个估计量，我们可以看到引导标准误差与渐近标准误差和折刀标准误差非常相似
+We also report four bootstrap confidence intervals which will be introduced in subsequent sections	我们还报告了四个自助置信区间，将在后续部分中介绍
+For these four estimators we can see that the bootstrap standard errors are quite similar to the asymptotic and jackknife standard errors	对于这四个估计量，我们可以看到自助标准误差与渐近标准误差和折刀标准误差非常相似
 Table 10.2: Comparison of Methods	表 10.2：方法比较
-In Stata, bootstrap standard errors for coefficient estimates in many models are obtained by the vce(bootstrap, reps(\#)) option, where \# is the number of bootstrap replications	在 Stata 中，许多模型中系数估计的引导标准误差是通过 vce(bootstrap,reps(\#)) 选项获得的，其中 \# 是引导复制的数量
-Synonyms for bootstrap are bstrap and bs	bootstrap 的同义词是 bstrap 和 bs
-Percentile Interval	百分位数区间
-The second most common use of bootstrap methods is for confidence intervals	引导方法的第二个最常见用途是置信区间
-It is based on the quantiles of the bootstrap distribution	它基于引导分布的分位数
-The percentile interval has the convenience that it does not require calculation of a standard error	百分位数区间的优点是不需要计算标准误差
-The percentile interval has the useful property that it is transformation-respecting	百分位数区间具有一个有用的特征，即它尊重变换
-The bootstrap percentile intervals for the four estimators are reported in Table 13.2	表 13.2 报告了四个估计量的自举百分位数区间
-In Stata, percentile confidence intervals can be obtained by using the command estat bootstrap, percentile or the command estat bootstrap, all after an estimation command which calculates standard errors via the bootstrap	在 Stata 中，可以使用命令 estat bootstrap、percentile 或命令 estat bootstrap 获得百分位数置信区间，所有这些都在通过 bootstrap 计算标准误差的估计命令之后
+In Stata, bootstrap standard errors for coefficient estimates in many models are obtained by the vce(bootstrap, reps(\#)) option, where \# is the number of bootstrap replications	在 Stata 中，许多模型中系数估计的自助标准误差是通过 vce(bootstrap,reps(\#)) 选项获得的，其中 \# 是自助复制的数量
+Synonyms for bootstrap are bstrap and bs	bootstrap 的同义命令是 bstrap 和 bs
+Percentile Interval	百分数区间
+The second most common use of bootstrap methods is for confidence intervals	自助方法的第二个最常见用途是置信区间
+It is based on the quantiles of the bootstrap distribution	它基于自助分布的分位数
+The percentile interval has the convenience that it does not require calculation of a standard error	百分数区间的优点是不需要计算标准误差
+The percentile interval has the useful property that it is transformation-respecting	百分数区间具有一个有用的特征，即它遵从变换
+The bootstrap percentile intervals for the four estimators are reported in Table 13.2	表 13.2 报告了四个估计量的自助百分数区间
+In Stata, percentile confidence intervals can be obtained by using the command estat bootstrap, percentile or the command estat bootstrap, all after an estimation command which calculates standard errors via the bootstrap	在 Stata 中，可以使用命令 estat bootstrap,percentile 或命令 estat bootstrap, all 获得百分数置信区间，所有这些都在通过 bootstrap 计算标准误差的估计命令之后
 The Bootstrap Distribution	Bootstrap 分布
-For applications it is often sufficient if one understands the bootstrap as an algorithm	对于应用程序来说，如果将引导程序理解为一种算法，通常就足够了
+For applications it is often sufficient if one understands the bootstrap as an algorithm	对于应用来说，如果将自助法理解为一种算法，通常就足够了
 For this it is useful to introduce some additional notation	为此，引入一些附加符号很有用
 The key is that the distribution of any estimator or statistic is determined by the distribution of the data	关键是任何估计量或统计量的分布都是由数据的分布决定的
-This is what the bootstrap does	这就是引导程序的作用
-For example, we want to know its variance to calculate a standard error or its quantiles to calculate a percentile interval	例如，我们想知道其方差以计算标准误差或其分位数以计算百分位数间隔
-The bootstrap simultaneously circumvents these two barriers by two clever ideas	引导程序通过两个巧妙的想法同时规避了这两个障碍
+This is what the bootstrap does	这就是自助法的作用
+For example, we want to know its variance to calculate a standard error or its quantiles to calculate a percentile interval	例如，我们想知道其方差以计算标准误差或知道其分位数以计算百分数区间
+The bootstrap simultaneously circumvents these two barriers by two clever ideas	自助法通过两个巧妙的想法同时规避了这两个障碍
 Only by considering these steps together do we obtain a feasible method	只有综合考虑这些步骤，我们才能得到可行的方法
-We now carefully explain the connection with the bootstrap algorithm as previously described	我们现在仔细解释与前面描述的引导算法的连接
-Third, observe that the distribution of these bootstrap estimators is the bootstrap distribution (10.9)	第三，观察这些自举估计量的分布是自举分布（10.9）
-In the next several sections we develop an asymptotic distribution theory for the bootstrap distribution based on extending asymptotic theory to the case of conditional distributions	在接下来的几节中，我们基于将渐近理论扩展到条件分布的情况，开发了自举分布的渐近分布理论
-The Distribution of the Bootstrap Observations	Bootstrap 观测值的分布
+We now carefully explain the connection with the bootstrap algorithm as previously described	我们现在仔细解释与前面描述的自助算法的联系
+Third, observe that the distribution of these bootstrap estimators is the bootstrap distribution (10.9)	第三，观察到这些自助估计量的分布是自助分布（10.9）
+In the next several sections we develop an asymptotic distribution theory for the bootstrap distribution based on extending asymptotic theory to the case of conditional distributions	在接下来的几节中，我们基于将渐近理论扩展到条件分布的情况，开发了自助分布的渐近分布理论
+The Distribution of the Bootstrap Observations	Bootstrap 观测的分布
 Notationally, the starred distribution and expectation are conditional given the data	从符号上讲，加星号的分布和期望是条件给定数据
-Thus even if the original data come from a continuous distribution, the bootstrap data distribution is discrete	因此，即使原始数据来自连续分布，引导数据分布也是离散的
+Thus even if the original data come from a continuous distribution, the bootstrap data distribution is discrete	因此，即使原始数据来自连续分布，自助数据分布也是离散的
 The Distribution of the Bootstrap Sample Mean	Bootstrap 样本均值的分布
-The bootstrap sample mean is	自举样本均值是
+The bootstrap sample mean is	自助样本均值是
 We can calculate its (conditional) mean and variance	我们可以计算它的（条件）均值和方差
-The (conditional) variance of the bootstrap sample mean is	自举样本均值的（条件）方差为
+The (conditional) variance of the bootstrap sample mean is	自助样本均值的（条件）方差为
 The moments (10.14) are exact, not approximations	矩 (10.14) 是精确的，而不是近似值
-Bootstrap Asymptotics	自举渐进
-Indeed, this is the case, but we have to be a bit careful since the bootstrap mean has a conditional distribution (given the data) so we need to define convergence in probability for conditional distributions	确实如此，但我们必须小心一点，因为引导均值具有条件分布（给定数据），因此我们需要定义条件分布的概率收敛
-Note that there are two uses of probability - both unconditional and conditional	请注意，概率有两种用途：无条件概率和有条件概率
-Our label "convergence in bootstrap probability" is a bit unusual	我们的标签“引导概率收敛”有点不寻常
+Bootstrap Asymptotics	自助渐进
+Indeed, this is the case, but we have to be a bit careful since the bootstrap mean has a conditional distribution (given the data) so we need to define convergence in probability for conditional distributions	确实如此，但我们必须小心一点，因为自助均值具有条件分布（给定数据），因此我们需要定义条件概率收敛
+Note that there are two uses of probability - both unconditional and conditional	请注意，概率有两种用法：无条件概率和有条件概率
+Our label "convergence in bootstrap probability" is a bit unusual	我们的称谓“自助概率收敛”有点不寻常
 We do not use this concept in this chapter as it is an unnecessary complication	我们在本章中不使用这个概念，因为它是不必要的复杂化
 The following may seem obvious but it is useful to state for clarity	以下内容可能看起来很明显，但为了清楚起见，进行说明很有用
-Given Definition 10.1, we can establish a law of large numbers for the bootstrap sample mean	给定定义 10.1，我们可以为引导样本均值建立大数定律
+Given Definition 10.1, we can establish a law of large numbers for the bootstrap sample mean	给定定义 10.1，我们可以为自助样本均值建立大数定律
 The proof (presented in Section 10.31) is somewhat different from the classical case as it is based on the Marcinkiewicz WLLN (Theorem 10.20, presented in Section 10.31)	该证明（第 10.31 节中介绍）与经典案例有些不同，因为它基于 Marcinkiewicz WLLN（定理 10.20，第 10.31 节中介绍）
-Notice that the conditions for the bootstrap WLLN are the same for the conventional WLLN	请注意，引导 WLLN 的条件与传统 WLLN 的条件相同
-Theorem 10.3 Bootstrap Continuous Mapping Theorem	定理10.3 Bootstrap连续映射定理
-We next would like to show that the bootstrap sample mean is asymptotically normally distributed, but for that we need a definition of convergence for conditional distributions	接下来我们想证明自举样本均值是渐近正态分布的，但为此我们需要条件分布收敛的定义
-We now state a CLT for the bootstrap sample mean, with a proof given in Section 10.31	现在，我们声明引导样本均值的 CLT，并在第 10.31 节中给出证明
+Notice that the conditions for the bootstrap WLLN are the same for the conventional WLLN	请注意，自助 WLLN 的条件与传统 WLLN 的条件相同
+Theorem 10.3 Bootstrap Continuous Mapping Theorem	定理10.3 Bootstrap 连续映射定理
+We next would like to show that the bootstrap sample mean is asymptotically normally distributed, but for that we need a definition of convergence for conditional distributions	接下来我们想证明自助样本均值是渐近正态分布的，但为此我们需要条件分布收敛的定义
+We now state a CLT for the bootstrap sample mean, with a proof given in Section 10.31	现在，我们声明自助样本均值的 CLT，并在第 10.31 节中给出证明
 Theorem 10.4 Bootstrap CLT	定理 10.4 Bootstrap CLT
-We next state the distributional form of the continuous mapping theorem for bootstrap distributions and the Bootstrap Delta Method	接下来我们阐述引导分布的连续映射定理的分布形式和引导 Delta 方法
+We next state the distributional form of the continuous mapping theorem for bootstrap distributions and the Bootstrap Delta Method	接下来我们阐述自助分布的连续映射定理的分布形式和自助 Delta 方法
 Theorem 10.6 Bootstrap Delta Method:	定理10.6 Bootstrap Delta方法：
 For a proof, see Exercise 10.7	证明请参见练习 10.7
 We state an analog of Theorem 6.10, which presented the asymptotic distribution for general smooth functions of sample means, which covers most econometric estimators	我们对定理 6.10 进行了模拟，该定理提出了样本均值的一般平滑函数的渐近分布，涵盖了大多数计量经济学估计量
 For a proof, see Exercise 10.8	证明请参见练习 10.8
-For some bootstrap applications we use bootstrap estimates of variance	对于某些引导程序应用程序，我们使用引导程序方差估计
+For some bootstrap applications we use bootstrap estimates of variance	对于某些自助法应用，我们使用自助法方差估计
 For a proof, see Exercise 10.9	证明请参见练习 10.9
 Consistency of the Bootstrap Estimate of Variance	Bootstrap 方差估计的一致性
-To do so it is useful to focus on a normalized version of the estimator so that the asymptotic variance is not degenerate	为此，关注估计量的归一化版本很有用，这样渐近方差就不会退化
+To do so it is useful to focus on a normalized version of the estimator so that the asymptotic variance is not degenerate	为此，关注估计量的正态化版本很有用，这样渐近方差就不会退化
 This condition is reasonably straightforward to verify for the case of a scalar sample mean with a finite variance	对于具有有限方差的标量样本均值的情况，验证此条件相当简单
 Now consider the smooth function model of Theorem 10.7	现在考虑定理 10.7 的平滑函数模型
 We can establish the following result	我们可以得出以下结果
-This shows that the bootstrap estimate of variance is consistent for a reasonably broad class of estimators	这表明方差的引导估计对于相当广泛的估计量类别是一致的
-Trimmed Estimator of Bootstrap Variance	Bootstrap 方差的修剪估计量
-In these cases it is preferred to use a trimmed estimator of bootstrap variance	在这些情况下，最好使用自举方差的修剪估计量
-The trimmed bootstrap estimator of variance is	方差的修剪自举估计量为
+This shows that the bootstrap estimate of variance is consistent for a reasonably broad class of estimators	这表明方差的自助估计对于相当广泛的估计量类别是一致的
+Trimmed Estimator of Bootstrap Variance	自助方差的修剪估计量
+In these cases it is preferred to use a trimmed estimator of bootstrap variance	在这些情况下，最好使用自助方差的修剪估计量
+The trimmed bootstrap estimator of variance is	自助方差的修剪估计量为
 This is shown in the following result, whose proof is presented in Section 10.31	这显示在下面的结果中，其证明在第 10.31 节中给出
-This justifies bootstrap standard errors as consistent estimators for the asymptotic distribution	这证明了引导标准误差作为渐近分布的一致估计量是合理的
+This justifies bootstrap standard errors as consistent estimators for the asymptotic distribution	这证明了自助标准误差作为渐近分布的一致估计量是合理的
 An important caveat is that these results critically rely on the trimmed variance estimator	一个重要的警告是，这些结果严重依赖于修剪方差估计量
-Unreliability of Untrimmed Bootstrap Standard Errors	未修剪的引导标准误差的不可靠性
-In the previous section we presented a trimmed bootstrap variance estimator which should be used to form bootstrap standard errors for nonlinear estimators	在上一节中，我们提出了一个修剪后的引导方差估计量，该估计量应用于形成非线性估计量的引导标准误差
+Unreliability of Untrimmed Bootstrap Standard Errors	未修剪的自助标准误差的不可靠性
+In the previous section we presented a trimmed bootstrap variance estimator which should be used to form bootstrap standard errors for nonlinear estimators	在上一节中，我们提出了一个修剪后的自助方差估计量，该估计量应用于形成非线性估计量的自助标准误差
 Otherwise, the untrimmed estimator is potentially unreliable	否则，未修剪的估计量可能不可靠
-This is an unfortunate situation, because reporting of bootstrap standard errors is commonplace in contemporary applied econometric practice, and standard applications (including Stata) use the untrimmed estimator	这是一种不幸的情况，因为引导标准误差的报告在当代应用计量经济学实践中很常见，并且标准应用程序（包括 Stata）使用未修剪的估计量
+This is an unfortunate situation, because reporting of bootstrap standard errors is commonplace in contemporary applied econometric practice, and standard applications (including Stata) use the untrimmed estimator	这是一种不幸的情况，因为自助标准误差的报告在当代应用计量经济学实践中很常见，并且标准应用程序（包括 Stata）使用未修剪的估计量
 To illustrate the seriousness of the problem we use the simple wage regression (7.31) which we repeat here	为了说明问题的严重性，我们使用简单的工资回归（7.31），我们在这里重复一下
-When there is an enormous discrepancy like this between the asymptotic and bootstrap standard error, and between bootstrap runs, it is a signal that there may be moment failure and consequently bootstrap standard errors are unreliable	当渐近标准误差和自举标准误差之间以及自举运行之间存在如此巨大的差异时，这是一个信号，表明可能存在瞬间故障，因此自举标准误差是不可靠的
-One message from this application is that when different methods produce very different standard errors we should be cautious about trusting any single method	该应用程序发出的一条消息是，当不同的方法产生截然不同的标准误差时，我们应该谨慎信任任何单一方法
+When there is an enormous discrepancy like this between the asymptotic and bootstrap standard error, and between bootstrap runs, it is a signal that there may be moment failure and consequently bootstrap standard errors are unreliable	当渐近标准误差和自助标准误差之间以及自助运行之间存在如此巨大的差异时，这是一个信号，表明可能存在矩无效，因此自助标准误差是不可靠的
+One message from this application is that when different methods produce very different standard errors we should be cautious about trusting any single method	该应用给出的一条消息是，当不同的方法产生截然不同的标准误差时，我们应该谨慎信任任何单一方法
 Trimmed versions are preferred, especially for nonlinear functions of estimated coefficients	修剪版本是首选，特别是对于估计系数的非线性函数
-Table 10.3: Experience Level Which Maximizes Expected log Wages	表 10.3：使预期日志工资最大化的经验水平
-Consistency of the Percentile Interval	百分位数区间的一致性
-Recall the percentile interval (10.8)	回想一下百分位数区间 (10.8)
+Table 10.3: Experience Level Which Maximizes Expected log Wages	表 10.3：使期望对数工资最大化的经验水平
+Consistency of the Percentile Interval	百分数区间的一致性
+Recall the percentile interval (10.8)	回想一下百分数区间 (10.8)
 The assumptions (10.18)-(10.19) hold for the smooth function model of Theorem 10.7, so this result incorporates many applications	假设(10.18)-(10.19)对于定理10.7的光滑函数模型成立，因此该结果具有许多应用
 The convergence holds by (10.18) and (10.20)	(10.18) 和 (10.20) 收敛成立
-It is also worthwhile to investigate a finite sample justification for the percentile interval based on a heuristic analogy due to Efron	基于 Efron 的启发式类比，研究百分位区间的有限样本合理性也是值得的
+It is also worthwhile to investigate a finite sample justification for the percentile interval based on a heuristic analogy due to Efron	基于 Efron 的启发式类比，研究百分数区间的有限样本合理性也是值得的
 Without symmetry the coverage will be incorrect	如果不对称，覆盖范围将不正确
-Intuitively, we expect that when the assumptions are approximately true then the percentile interval will have approximately correct coverage	直观上，我们期望当假设近似正确时，百分位数区间将具有近似正确的覆盖范围
+Intuitively, we expect that when the assumptions are approximately true then the percentile interval will have approximately correct coverage	直观上，我们期望当假设近似正确时，百分数区间将具有近似正确的覆盖范围
 This argument has the following application	这个论点有以下应用
-Bias-Corrected Percentile Interval	偏误校正百分位数区间
-The accuracy of the percentile interval depends critically upon the assumption that the sampling distribution is approximately symmetrically distributed	百分位数间隔的准确性主要取决于抽样分布近似对称分布的假设
-Consequently it is difficult to expect the percentile method to generally have accurate coverage	因此，很难期望百分位数法通常具有准确的覆盖范围
-To reduce the bias problem Efron (1982) introduced the bias-corrected (BC) percentile interval	为了减少偏误问题，Efron (1982) 引入了偏误校正 (BC) 百分位数区间
+Bias-Corrected Percentile Interval	偏误校正百分数区间
+The accuracy of the percentile interval depends critically upon the assumption that the sampling distribution is approximately symmetrically distributed	百分数区间的准确性主要取决于抽样分布近似对称分布的假设
+Consequently it is difficult to expect the percentile method to generally have accurate coverage	因此，很难期望百分数法常常具有准确的覆盖范围
+To reduce the bias problem Efron (1982) introduced the bias-corrected (BC) percentile interval	为了减少偏误问题，Efron (1982) 引入了偏误校正 (BC) 百分数区间
 The construction of the BC interval is not intuitive	BC 区间的构造并不直观
-Since the distribution is pivotal the result carries over to the bootstrap distribution	由于分布至关重要，因此结果会延续至引导分布
+Since the distribution is pivotal the result carries over to the bootstrap distribution	由于分布至关重要，因此结果会延后到自助分布
 From (10.26) we deduce that	从 (10.26) 我们推出
 This shows that the BC interval (10.25) has exact coverage under the assumption (10.21)	这表明 BC 区间 (10.25) 在假设 (10.21) 下具有精确的覆盖范围
-An important property of the BC percentile interval is that it is transformation-respecting (like the percentile interval)	BC 百分位数区间的一个重要特征是它尊重变换（与百分位数区间一样）
-The bootstrap BC percentile intervals for the four estimators are reported in Table 13.2	表 13.2 报告了四个估计量的 Bootstrap BC 百分位数区间
-In Stata, BC percentile confidence intervals can be obtained by using the command estat bootstrap after an estimation command which calculates standard errors via the bootstrap	在 Stata 中，BC 百分位数置信区间可以通过在通过 bootstrap 计算标准误差的估计命令之后使用命令 estat bootstrap 来获得
-A further improvement on the BC interval was made by Efron (1987) to account for the skewness in the sampling distribution, which can be modeled by specifying that the variance of the estimator depends on the parameter	Efron (1987) 对 BC 区间进行了进一步改进，以考虑抽样分布中的偏度，可以通过指定估计量的方差取决于参数来建模
-The construction is a generalization of that for the BC intervals	该构造是 BC 区间构造的概括
+An important property of the BC percentile interval is that it is transformation-respecting (like the percentile interval)	BC 百分数区间的一个重要特征是它遵从变换（与百分数区间一样）
+The bootstrap BC percentile intervals for the four estimators are reported in Table 13.2	表 13.2 报告了四个估计量的 Bootstrap BC 百分数区间
+In Stata, BC percentile confidence intervals can be obtained by using the command estat bootstrap after an estimation command which calculates standard errors via the bootstrap	在 Stata 中，BC 百分数置信区间可以通过在通过 bootstrap 计算标准误差的估计命令之后使用命令 estat bootstrap 来获得
+A further improvement on the BC interval was made by Efron (1987) to account for the skewness in the sampling distribution, which can be modeled by specifying that the variance of the estimator depends on the parameter	Efron (1987) 对 BC 区间进行了进一步改进，以考虑抽样分布中的偏度，可以通过指定依赖于参数估计量的方差来建模
+The construction is a generalization of that for the BC intervals	这是 BC 区间构造的一般化
 From (10.29) we deduce that	从 (10.29) 我们推出
-Percentile-t Interval	百分位数t区间
-In many cases we can obtain improvement in accuracy by bootstrapping a studentized statistic such as a t-ratio	在许多情况下，我们可以通过引导学生化统计数据（例如 t 比）来提高准确性
-The bootstrap t-ratio is	自举 t 比为
-The bootstrap percentile-t confidence interval is defined as	自举百分位数-t 置信区间定义为
-The form may appear unusual when compared with the percentile interval	与百分位间隔相比，该形式可能显得不寻常
+Percentile-t Interval	百分数t区间
+In many cases we can obtain improvement in accuracy by bootstrapping a studentized statistic such as a t-ratio	在许多情况下，我们可以通过自助学生化统计量（例如t比率）来提高准确性
+The bootstrap t-ratio is	自助法t比率为
+The bootstrap percentile-t confidence interval is defined as	自助百分数-t 置信区间定义为
+The form may appear unusual when compared with the percentile interval	与百分数区间相比，该形式可能显得不寻常
 As we show below, this construction is important for the interval to have correct coverage when the distribution is not symmetric	如下所示，当分布不对称时，这种结构对于区间具有正确的覆盖范围非常重要
-The percentile-t has the following advantages	百分位数-t 具有以下优点
-Third, the percentile-t intervals correspond to the set of parameter values "not rejected" by one-sided t-tests using bootstrap critical values (bootstrap tests are presented in Section 10.21)	第三，百分位数 t 区间对应于使用引导临界值（引导检验在第 10.21 节中介绍）的单侧 t 检验“未拒绝”的一组参数值
-The percentile-t interval has the following disadvantages	百分位数-t 区间具有以下缺点
-It is typical to calculate percentile-t intervals with t-ratios constructed with conventional asymptotic standard errors	通常使用传统渐近标准误差构建的 t 比率来计算百分位数 t 区间
-It will not possess the higher-order accuracy properties of the following section, but it will satisfy the conditions for first-order validity	它不会具有以下部分的高阶精度特征，但它将满足一阶有效性的条件
-Furthermore, percentile-t intervals can be constructed using bootstrap standard errors	此外，可以使用 bootstrap 标准误差构建百分位数 t 区间
-We now describe the distribution theory for first-order validity of the percentile-t bootstrap	我们现在描述百分位-t bootstrap 的一阶有效性的分布理论
-This motivates considering the broader situation where the sample and bootstrap t-ratios have the same asymptotic distribution but not necessarily normal	这促使我们考虑更广泛的情况，即样本和自举 t 比率具有相同的渐近分布，但不一定是正态分布
-Thus the percentile-t is asymptotically valid	因此百分位数-t 是渐近有效的
-The bootstrap percentile-t intervals for the four estimators are reported in Table 13.2	表 13.2 报告了四个估计量的 bootstrap 百分位数 t 区间
-Percentile-t Asymptotic Refinement	百分位-t渐近细化
-This section uses the theory of Edgeworth and Cornish-Fisher expansions introduced in Chapter 9.8-9.10 of Probability and Statistics for Economists	本节使用《经济学家的概率与统计》第 9.8-9.10 章中介绍的埃奇沃斯和康沃尔-费舍尔展开理论
-If you are interested in the following refinement theory it is advisable to start by reading these sections of Probability and Statistics for Economists	如果你对以下精化理论感兴趣，建议你首先阅读《经济学家的概率与统计》的这些部分
-The percentile-t interval can be viewed as the intersection of two one-sided confidence intervals	百分位数-t 区间可以视为两个单侧置信区间的交集
-We now show that the percentile-t interval has improved accuracy	我们现在表明百分位数-t 区间提高了准确性
-Thus the coverage of the percentile-t interval is	因此百分位数-t 区间的覆盖范围是
-This is an improved rate of convergence relative to the one-sided asymptotic confidence interval	相对于单边渐进置信区间，这是一种改进的收敛速度
+The percentile-t has the following advantages	百分数t具有以下优点
+Third, the percentile-t intervals correspond to the set of parameter values "not rejected" by one-sided t-tests using bootstrap critical values (bootstrap tests are presented in Section 10.21)	第三，百分数 t 区间对应于使用自助临界值（自助检验在第 10.21 节中介绍）的单侧t检验“不拒绝”的一组参数值
+The percentile-t interval has the following disadvantages	百分数t区间具有以下缺点
+It is typical to calculate percentile-t intervals with t-ratios constructed with conventional asymptotic standard errors	通常使用传统渐近标准误差构建的t比率来计算百分数t区间
+It will not possess the higher-order accuracy properties of the following section, but it will satisfy the conditions for first-order validity	它不会具有以下部分的高阶精度特征，但它将满足一阶有效性条件
+Furthermore, percentile-t intervals can be constructed using bootstrap standard errors	此外，可以使用 自助标准误差构建百分数t区间
+We now describe the distribution theory for first-order validity of the percentile-t bootstrap	我们现在阐述百分数t自助法一阶有效性的分布理论
+This motivates considering the broader situation where the sample and bootstrap t-ratios have the same asymptotic distribution but not necessarily normal	这促使我们考虑更广泛的情况，即样本和自助法t比率具有相同的渐近分布，但不一定是正态分布
+Thus the percentile-t is asymptotically valid	因此百分数t 是渐近有效的
+The bootstrap percentile-t intervals for the four estimators are reported in Table 13.2	表 13.2 报告了四个估计量的自助法百分数t区间
+Percentile-t Asymptotic Refinement	百分数t渐近改进
+This section uses the theory of Edgeworth and Cornish-Fisher expansions introduced in Chapter 9.8-9.10 of Probability and Statistics for Economists	本节使用《经济学家的概率与统计》第 9.8-9.10 章中介绍的埃奇沃斯和康沃尔-费舍尔展开式
+If you are interested in the following refinement theory it is advisable to start by reading these sections of Probability and Statistics for Economists	如果你对以下改进理论感兴趣，建议你首先阅读《经济学家的概率与统计》的这些部分
+The percentile-t interval can be viewed as the intersection of two one-sided confidence intervals	百分数t 区间可以视为两个单侧置信区间的交集
+We now show that the percentile-t interval has improved accuracy	我们现在说明百分数t区间提高了准确性
+Thus the coverage of the percentile-t interval is	因此百分数t区间的覆盖范围是
+This is an improved rate of convergence relative to the one-sided asymptotic confidence interval	相对于单侧渐进置信区间，这是一种改进的收敛速度
 The following definition of the accuracy of a confidence interval is useful	以下置信区间准确性的定义很有用
-Examining our results we find that one-sided asymptotic confidence intervals are first-order accurate but percentile-t intervals are second-order accurate	检查我们的结果，我们发现单边渐近置信区间是一阶准确的，但百分位数 t 区间是二阶准确的
-Here, we have shown that the percentile-t interval achieves an asymptotic refinement	在这里，我们证明了百分位数-t 区间实现了渐近细化
-This also has the practical finite-sample implication that the accuracy of the percentile-t interval in practice depends on the accuracy of the standard errors used to construct the t-ratio	这也具有实际的有限样本含义，即实践中百分位数 t 区间的准确性取决于用于构建 t 比率的标准误差的准确性
-We do not go through the details, but normal-approximation bootstrap intervals, percentile bootstrap intervals, and bias-corrected percentile bootstrap intervals are all first-order accurate and do not achieve an asymptotic refinement	我们不详细介绍，但正态逼近自举区间、百分位自举区间和偏误校正百分位自举区间都是一阶精确的，并且没有实现渐近细化
+Examining our results we find that one-sided asymptotic confidence intervals are first-order accurate but percentile-t intervals are second-order accurate	检查我们的结果，我们发现单侧渐近置信区间是一阶准确的，但百分数t区间是二阶准确的
+Here, we have shown that the percentile-t interval achieves an asymptotic refinement	在这里，我们证明了百分数t区间实现了渐近改进
+This also has the practical finite-sample implication that the accuracy of the percentile-t interval in practice depends on the accuracy of the standard errors used to construct the t-ratio	这也具有实际的有限样本含义，即实践中百分数t区间的准确性取决于用于构建t比率的标准误差的准确性
+We do not go through the details, but normal-approximation bootstrap intervals, percentile bootstrap intervals, and bias-corrected percentile bootstrap intervals are all first-order accurate and do not achieve an asymptotic refinement	我们不详细介绍，但正态逼近自助区间、百分数自助区间和偏误校正百分数自助区间都是一阶精确的，并且没有实现渐近改进
 See Section 3.10.4 of Hall (1992)	参见 Hall (1992) 第 3.10.4 节
-Bootstrap Hypothesis Tests	自举假设检验
-This allows the bootstrap to incorporate the randomness in standard error estimation	这允许引导程序将随机性纳入标准误差估计中
+Bootstrap Hypothesis Tests	自助假设检验
+This allows the bootstrap to incorporate the randomness in standard error estimation	这允许自助法将随机性纳入标准误差估计中
 It is generally better to report p-values rather than critical values	通常报告 p 值比报告临界值更好
-the percentage of bootstrap t-statistics that are larger than the observed t-statistic	大于观察到的 t 统计量的 bootstrap t 统计量的百分比
-If desired, the bootstrap test can be implemented as a one-sided test	如果需要，引导检验可以作为单方面检验来实现
-Bootstrap tests can also be conducted with other statistics	引导检验也可以与其他统计数据一起进行
-In the smooth function model the t-test (with correct standard errors) has the following performance	在平滑函数模型中，t 检验（具有正确的标准误差）具有以下性能
-This shows that the bootstrap test achieves a refinement relative to the asymptotic test	这表明自举检验相对于渐近检验实现了细化
+the percentage of bootstrap t-statistics that are larger than the observed t-statistic	大于观察到的 t 统计量的自助法 t 统计量的百分比
+If desired, the bootstrap test can be implemented as a one-sided test	如果需要，自助检验可以作为单侧检验来实施
+Bootstrap tests can also be conducted with other statistics	自助检验也可以与其他统计量一起进行
+In the smooth function model the t-test (with correct standard errors) has the following performance	在平滑函数模型中，t 检验（具有正确的标准误差）具有以下表现
+This shows that the bootstrap test achieves a refinement relative to the asymptotic test	这表明自助检验相对于渐近检验实现了改进
 The reasoning is as follows	理由如下
-Wald-Type Bootstrap Tests	Wald 型引导检验
-The asymptotic performance of the Wald test mimics that of the t-test	Wald 检验的渐近性能模仿 t 检验的渐近性能
+Wald-Type Bootstrap Tests	Wald 型自助检验
+The asymptotic performance of the Wald test mimics that of the t-test	Wald 检验的渐近表现仿似 t 检验的渐近表现
 and thus achieves a refinement relative to the asymptotic Wald test	从而实现了相对于渐近 Wald 检验的改进
-The test will not achieve an asymptotic refinement but provides a simple method to test hypotheses when covariance matrix estimates are not available	该检验不会实现渐近细化，但提供了一种简单的方法来在协方差矩阵估计不可用时检验假设
-Criterion-Based Bootstrap Tests	基于标准的引导检验
-A criterion-based estimator takes the form	基于标准的估计量采用以下形式
-A bootstrap test uses the bootstrap algorithm to calculate the critical value	引导检验使用引导算法来计算临界值
-Parametric Bootstrap	参数引导程序
-Throughout this chapter we have described the most popular form of the bootstrap known as the nonparametric bootstrap	在本章中，我们描述了最流行的引导程序形式，称为非参数引导程序
+The test will not achieve an asymptotic refinement but provides a simple method to test hypotheses when covariance matrix estimates are not available	该检验不会实现渐近改进，但在协方差矩阵估计不可用时，提供了一种简单的方法来检验假设
+Criterion-Based Bootstrap Tests	基于准则的自助检验
+A criterion-based estimator takes the form	基于准则的估计量采用以下形式
+A bootstrap test uses the bootstrap algorithm to calculate the critical value	自助检验使用自助算法来计算临界值
+Parametric Bootstrap	参数自助法
+Throughout this chapter we have described the most popular form of the bootstrap known as the nonparametric bootstrap	在本章中，我们描述了最流行的自助法形式，称为非参数自助法
 This is appropriate when there is a full parametric model for the distribution as in likelihood estimation	当存在完整的分布参数模型（如似然估计）时，这是合适的
-Everything which has been discussed in the chapter can be applied using this bootstrap algorithm	本章中讨论的所有内容都可以使用此引导算法来应用
-The primary advantage of the parametric bootstrap (relative to the nonparametric bootstrap) is that it will be more accurate when the parametric model is correct	参数引导程序（相对于非参数引导程序）的主要优点是，当参数模型正确时，它会更准确
-The primary disadvantage of the parametric bootstrap is that it can be inaccurate when the parametric model is incorrect	参数引导程序的主要缺点是当参数模型不正确时它可能不准确
-How Many Bootstrap Replications?	有多少引导复制？
-How many bootstrap replications should be used? There is no universally correct answer as there is a trade-off between accuracy and computation cost	应使用多少个引导复制？没有普遍正确的答案，因为准确性和计算成本之间需要权衡
+Everything which has been discussed in the chapter can be applied using this bootstrap algorithm	本章中讨论的所有内容都可以使用此自助算法来应用
+The primary advantage of the parametric bootstrap (relative to the nonparametric bootstrap) is that it will be more accurate when the parametric model is correct	参数自助法（相对于非参数自助法）的主要优点是，当参数模型正确时，它会更准确
+The primary disadvantage of the parametric bootstrap is that it can be inaccurate when the parametric model is incorrect	参数自助法的主要缺点是当参数模型不正确时它可能不准确
+How Many Bootstrap Replications?	有多少自助复制？
+How many bootstrap replications should be used? There is no universally correct answer as there is a trade-off between accuracy and computation cost	应使用多少个自助复制？没有普遍正确的答案，因为需要权衡准确性和计算成本
 Improved accuracy can be obtained but only at a higher computational cost	可以获得更高的准确性，但需要更高的计算成本
-In most empirical research, most calculations are quick and investigatory, not requiring full accuracy	在大多数实证研究中，大多数计算都是快速且调查性的，不需要完全准确
-Setting the Bootstrap Seed	设置引导种子
+In most empirical research, most calculations are quick and investigatory, not requiring full accuracy	在大多数实证研究中，大多数计算都是快速且审查性的，不需要完全准确
+Setting the Bootstrap Seed	设置自助种子
 Computers do not generate true random numbers but rather pseudo-random numbers generated by a deterministic algorithm	计算机不会生成真正的随机数，而是由确定性算法生成的伪随机数
-The algorithms generate sequences which are indistinguishable from random sequences so this is not a worry for bootstrap applications	该算法生成的序列与随机序列无法区分，因此引导应用程序不必担心这一点
+The algorithms generate sequences which are indistinguishable from random sequences so this is not a worry for bootstrap applications	该算法生成的序列与随机序列无法区分，因此自助法应用不必担心这一点
 The methods, however, necessarily require a starting value known as a "seed"	然而，这些方法必然需要称为“种子”的起始值
-"do" file) twice sequentially without restarting the package, the seed is not reset so a different set of pseudo-random numbers will be generated and the results from the two runs will be different	如果你连续运行引导程序（例如“do”文件）两次而不重新启动程序包，则种子不会重置，因此将生成一组不同的伪随机数，并且两次运行的结果将不同
+the seed is not reset so a different set of pseudo-random numbers will be generated and the results from the two runs will be different	种子不会重置，因此将生成一组不同的伪随机数，并且两次运行的结果将不同
 The R package has a different implementation	R 包有不同的实现
-Therefore if you run a bootstrap program in R, exit, restart, and rerun, you will obtain a different set of random draws and therefore a different bootstrap result	因此，如果你在 R 中运行引导程序，退出，重新启动，然后重新运行，你将获得一组不同的随机抽取，从而获得不同的引导结果
-Packages allow users to set their own seed. (In Stata, the command is set seed \#	包允许用户设置自己的种子
-If this is the case, the results of a bootstrap calculation (standard error or test) will be identical across computer runs	如果是这种情况，引导计算的结果（标准误差或检验）在计算机运行中将是相同的
-The fact that the bootstrap results can be fixed by setting the seed in the replication file has motivated many researchers to follow this choice	事实上，可以通过在复现文件中设置种子来修复引导结果，这一事实促使许多研究人员遵循这一选择
+Therefore if you run a bootstrap program in R, exit, restart, and rerun, you will obtain a different set of random draws and therefore a different bootstrap result	因此，如果你在 R 中运行自助法，退出，重新启动，然后重新运行，你将获得一组不同的随机抽取，从而获得不同的自助结果
+Packages allow users to set their own seed	软件包允许用户设置自己的种子
+If this is the case, the results of a bootstrap calculation (standard error or test) will be identical across computer runs	如果是这种情况，自助计算的结果（标准误差或检验）在计算机运行中将是相同的
+The fact that the bootstrap results can be fixed by setting the seed in the replication file has motivated many researchers to follow this choice	事实上，可以通过在复现文件中设置种子来固定自助结果，这一事实促使许多研究人员遵循这一选择
 They set the seed at the start of the replication file so that repeated executions result in the same numerical findings	他们将种子设置在复现文件的开头，以便重复执行会产生相同的数值结果
 Fixing seeds, however, should be done cautiously	然而，固定种子应谨慎进行
 Stata does not have this option	Stata没有这个选项
-These considerations lead to a recommended hybrid approach	这些考虑因素导致了推荐的混合方法
-Bootstrap Regression	引导回归
-The bootstrap can be used to calculate standard errors and confidence intervals for smooth functions of the coefficient estimates	自举程序可用于计算系数估计的平滑函数的标准误差和置信区间
-This is often called the pairs bootstrap	这通常称为配对引导程序
-Given this bootstrap sample, we calculate the regression estimator	给定这个引导样本，我们计算回归估计量
-The bootstrap standard errors are the standard deviations across the draws and confidence intervals are constructed from the empirical quantiles across the draws	引导标准误差是各次抽签的标准误差，置信区间是根据各次抽签的经验分位数构建的
-The bootstrap observations satisfy the projection equation	自举观测值满足投影方程
-This is because each bootstrap pair corresponds to an actual observation	这是因为每个引导对都对应于一个实际观测
-Bootstrap Regression Asymptotic Theory	自举回归渐近理论
-Since the bootstrap observations satisfy the model (10.33), we see by standard calculations that	由于自举观测值满足模型 (10.33)，我们通过标准计算看到：
-and by the bootstrap CLT	并通过引导 CLT
-Combining with the bootstrap CMT and delta method we establish the asymptotic distribution of the bootstrap regression estimator	结合bootstrap CMT和delta方法我们建立了bootstrap回归估计量的渐近分布
-This means that we should be cautious about interpreting reported bootstrap standard errors especially for nonlinear functions such as ratios	这意味着我们应该谨慎解释报告的引导标准误差，尤其是对于比率等非线性函数
-Wild Bootstrap	狂野引导
+These considerations lead to a recommended hybrid approach	这些考虑因素导致了一种推荐的混合方法
+Bootstrap Regression	自助回归
+The bootstrap can be used to calculate standard errors and confidence intervals for smooth functions of the coefficient estimates	自助程序可用于计算系数估计的平滑函数的标准误差和置信区间
+This is often called the pairs bootstrap	这通常称为配对自助法
+Given this bootstrap sample, we calculate the regression estimator	给定这个自助样本，我们计算回归估计量
+The bootstrap standard errors are the standard deviations across the draws and confidence intervals are constructed from the empirical quantiles across the draws	自助标准误差是各次抽签的标准误差，置信区间是根据各次抽签的经验分位数构建的
+The bootstrap observations satisfy the projection equation	自助观测值满足投影方程
+This is because each bootstrap pair corresponds to an actual observation	这是因为每个自助对都对应于一个实际观测
+Bootstrap Regression Asymptotic Theory	自助回归渐近理论
+Since the bootstrap observations satisfy the model (10.33), we see by standard calculations that	由于自助观测值满足模型 (10.33)，我们通过标准计算看到：
+and by the bootstrap CLT	并通过自助 CLT
+Combining with the bootstrap CMT and delta method we establish the asymptotic distribution of the bootstrap regression estimator	结合自助 CMT 和delta方法我们建立了自助回归估计量的渐近分布
+This means that we should be cautious about interpreting reported bootstrap standard errors especially for nonlinear functions such as ratios	这意味着我们应该谨慎解释报告的自助标准误差，尤其是对于比率等非线性函数
+Wild Bootstrap	原始自助法
 Take the linear regression model	采取线性回归模型
 What is special about this model is the conditional mean restriction	该模型的特殊之处在于条件均值约束
-To improve precision it seems reasonable to impose the conditional mean restriction on the bootstrap distribution	为了提高精度，对引导分布施加条件均值约束似乎是合理的
-A method which imposes the conditional mean restriction while allowing general heteroskedasticity is the wild bootstrap	一种施加条件均值约束同时允许一般异方差的方法是野引导法
-Thus the wild bootstrap replicates the appropriate first and second moments of the distribution	因此，狂野引导复制了分布的适当的一阶矩和二阶矩
-Since the wild bootstrap matches the first three moments, the percentile-t interval and one-sided t-tests can be shown to achieve asymptotic refinements	由于狂野引导与前三个矩匹配，因此可以证明百分位数 t 区间和单侧 t 检验可以实现渐近细化
-Limited simulation evidence for one-sided t-tests presented in Davidson and Flachaire (2008) suggests that the Rademacher distribution (used with the restricted wild bootstrap) has better performance and is their recommendation	Davidson 和 Flachaire (2008) 中提出的单边 t 检验的有限模拟证据表明，Rademacher 分布（与受限野生引导程序一起使用）具有更好的性能，并且是他们的推荐
-For hypothesis testing improved precision can be obtained by the restricted wild bootstrap	对于假设检验，可以通过约束野生引导来获得更高的精度
-Thus bootstrap tests are constructed the same as for the parametric bootstrap using a restricted parameter estimator	因此，引导程序检验的构造与使用受限参数估计量的参数引导程序相同
-Bootstrap for Clustered Observations	群组观测的引导程序
+To improve precision it seems reasonable to impose the conditional mean restriction on the bootstrap distribution	为了提高精度，对自助分布施加条件均值约束似乎是合理的
+A method which imposes the conditional mean restriction while allowing general heteroskedasticity is the wild bootstrap	一种施加条件均值约束同时允许一般异方差的方法是原始自助法
+Thus the wild bootstrap replicates the appropriate first and second moments of the distribution	因此，原始自助复制了分布的适当的一阶矩和二阶矩
+Since the wild bootstrap matches the first three moments, the percentile-t interval and one-sided t-tests can be shown to achieve asymptotic refinements	由于原始自助与前三个矩匹配，因此可以证明百分数 t 区间和单侧 t 检验可以实现渐近改进
+Limited simulation evidence for one-sided t-tests presented in Davidson and Flachaire (2008) suggests that the Rademacher distribution (used with the restricted wild bootstrap) has better performance and is their recommendation	Davidson 和 Flachaire (2008) 中提出的单侧 t 检验的有限模拟证据表明，Rademacher 分布（与受限原始自助法一起使用）具有更好的表现，并且是他们的推荐方法
+For hypothesis testing improved precision can be obtained by the restricted wild bootstrap	对于假设检验，可以通过约束原始自助来获得更高的精度
+Thus bootstrap tests are constructed the same as for the parametric bootstrap using a restricted parameter estimator	因此，自助法检验的构造与使用受限参数估计量的参数自助法相同
+Bootstrap for Clustered Observations	群组观测自助法
 Bootstrap methods can also be applied in to clustered samples though the methodological literature is relatively thin	尽管方法论文献相对较少，但 Bootstrap 方法也可以应用于群组样本
 Here we review methods discussed in Cameron, Gelbach and Miller (2008)	在这里，我们回顾一下 Cameron、Gelbach 和 Miller (2008) 中讨论的方法
-The wild cluster bootstrap fixes the clusters and regressors, and generates the bootstrap observa-	野生群组引导修复群组和自变量，并生成引导观测值
-For hypothesis testing, Cameron, Gelbach and Miller (2008) recommend the restricted wild cluster bootstrap	对于假设检验，Cameron、Gelbach 和 Miller (2008) 建议使用受限野生群组引导程序
+The wild cluster bootstrap fixes the clusters and regressors, and generates the bootstrap observa-	原始群组自助固定群组和自变量，并生成自助观测值
+For hypothesis testing, Cameron, Gelbach and Miller (2008) recommend the restricted wild cluster bootstrap	对于假设检验，Cameron、Gelbach 和 Miller (2008) 建议使用受限原始群组自助法
 p-values are then calculated conventionally and used to assess the significance of the test statistic	然后按常规计算 p 值并用于评估检验统计量的显著性
 There are several reasons why conventional asymptotic approximations may work poorly with clustered observations	传统的渐近近似对于群组观测效果不佳的原因有多种
 If the number of treated clusters is small this is equivalent to estimation with a highly sparse dummy variable design in which case cluster-robust covariance matrix estimation can be unreliable	如果处理的群组的数量很小，这相当于使用高度稀疏的虚拟变量设计进行估计，在这种情况下，群组稳健的协方差矩阵估计可能不可靠
 In such cases inference should proceed cautiously	在这种情况下，应该谨慎进行推断
-In this example the asymptotic, jackknife, and cluster bootstrap standard errors are identical, which reflects the good balance of this particular regression design	在此示例中，渐近、折刀和群组引导标准误差是相同的，这反映了该特定回归设计的良好平衡
+In this example the asymptotic, jackknife, and cluster bootstrap standard errors are identical, which reflects the good balance of this particular regression design	在此示例中，渐近、折刀和群组自助标准误差是相同的，这反映了该特定回归设计的良好平衡
 Table 10.4: Comparison of Methods for Estimate of Effect of Tracking	表 10.4：跟踪效果估计方法的比较
 Some of the asymptotic results are facilitated by the following convergence result	以下收敛结果促进了一些渐近结果
 This argument can be extended to vector-valued means and estimates	这个论点可以扩展到向量值均值和估计
@@ -1643,8 +1642,8 @@ sampling, least squares is consistent for the projection coefficient	事实上�
 The inconsistency of least squares is typically referred to as endogeneity bias or estimation bias due to endogeneity	最小二乘法的不一致通常被称为内生性偏误或内生性导致的估计偏误
 This is an imperfect label as the actual issue is inconsistency, not bias	这是一个不完美的标签，因为实际问题是不一致，而不是偏见
 We discuss those in later sections	我们将在后面的部分中讨论这些内容
-Examples	例子
-The concept of endogeneity may be easiest to understand by example	通过例子可能最容易理解内生性的概念
+Examples	案例
+The concept of endogeneity may be easiest to understand by example	通过案例可能最容易理解内生性的概念
 Example: Measurement error in the regressor	示例：自变量中的测量误差
 This is an example of a latent variable model, where "latent" refers to an unobserved structural variable	这是潜在变量模型的示例，其中“潜在”指的是未观察到的结构变量
 We can calculate the form of the projection coefficient (which is consistently estimated by least squares)	我们可以计算出投影系数的形式（一致地通过最小二乘估计）
@@ -1667,12 +1666,12 @@ The assumptions regarding the regressors and regression error are	关于自变�
 Instruments	仪器
 One type of information which is commonly used in economic applications are what we call instruments	经济应用中常用的一类信息就是我们所说的工具
 There are three components to the definition as given	给出的定义包含三个组成部分
-Let's take the three examples given above	我们以上面给出的三个例子为例
+Let's take the three examples given above	我们以上面给出的三个案例为例
 Measurement error in the regressor	自变量中的测量误差
 Variables which affect supply but not demand are typically related to production costs	影响供给但不影响需求的变量通常与生产成本有关
 An appropriate instrument for price in a supply equation is a variable which influences demand but not supply	供给方程中合适的价格工具是影响需求但不影响供给的变量
 Such a variable affects the equilibrium values of price and quantity but only affects price through quantity	这种变量影响价格和数量的均衡值，但仅通过数量影响价格
-We will discuss an example in the next section	我们将在下一节中讨论一个例子
+We will discuss an example in the next section	我们将在下一节中讨论一个案例
 Example: College Proximity	示例：大学邻近度
 In a influential paper David Card (1995) suggested if a potential student lives close to a college this reduces the cost of attendence and thereby raises the likelihood that the student will attend college	David Card（1995）在一篇有影响力的论文中提出，如果潜在学生住在大学附近，就可以降低就读成本，从而提高学生上大学的可能性
 We use the simplest model reported in Card's paper to illustrate the concepts of instrumental variables throughout the chapter	我们使用卡德论文中报告的最简单的模型来说明本章中工具变量的概念
@@ -1725,7 +1724,7 @@ we can write the 2SLS estimator more compactly as	我们可以将 2SLS 估计量
 This is the source of the "two-stage" name as it can be computed as follows	这是“两阶段”名称的来源，因为它可以按如下方式计算
 A fourth representation of 2SLS can be obtained using the FWL Theorem	2SLS 的第四种表示可以使用 FWL 定理获得
 A fifth representation can be obtained by a further projection	第五表示可以通过进一步的投影来获得
-Returning to Card's college proximity example suppose that we treat experience as exogeneous but that instead of using the single instrument college (grew up near a 4-year college) we use the two instruments (public, private) (grew up near a public/private 4-year college, respectively)	回到卡德的大学邻近度例子，假设我们将经验视为外生的，但我们不使用单一工具大学（在四年制大学附近长大），而是使用两种工具（公立、私立）（在公立/私立大学附近长大）分别为四年制大学）
+Returning to Card's college proximity example suppose that we treat experience as exogeneous but that instead of using the single instrument college (grew up near a 4-year college) we use the two instruments (public, private) (grew up near a public/private 4-year college, respectively)	回到卡德的大学邻近度案例，假设我们将经验视为外生的，但我们不使用单一工具大学（在四年制大学附近长大），而是使用两种工具（公立、私立）（在公立/私立大学附近长大）分别为四年制大学）
 This indicates that the key impact of proximity on education is via public colleges rather than private colleges	这表明邻近性对教育的主要影响是通过公立大学而不是私立大学
 The 2SLS estimates obtained using these two instruments are presented in the fourth column of Table 12.1	表 12.1 的第四列列出了使用这两种工具获得的 2SLS 估计值
 This is roughly twice as large as the estimate obtained by least squares in the first column	这大约是第一列中通过最小二乘法获得的估计值的两倍
@@ -1819,31 +1818,31 @@ Thus if there is one over-identifying restriction 2 SLS has a finite expectation
 The LIML estimator has a more severe moment problem as it has no finite integer moments (Mariano, 1982) regardless of the number of over-identifying restrictions	LIML 估计量具有更严重的矩问题，因为它没有有限整数矩（Mariano，1982），无论过度识别约束的数量如何
 Fuller showed that his estimator has all moments finite under suitable conditions	富勒表明，他的估计量在适当的条件下具有有限的所有矩
 Hausman, Newey, Woutersen, Chao and Swanson (2012) propose an estimator they call HFUL which combines the ideas of JIVE and Fuller which has excellent finite sample properties	Hausman、Newey、Woutersen、Chao 和 Swanson（2012）提出了一种称为 HFUL 的估计量，它结合了 JIVE 和 Fuller 的思想，具有出色的有限样本特征
-Bootstrap for 2SLS	2SLS 的引导程序
-We now show that the bootstrap estimator has the same asymptotic distribution as the sample estimator	我们现在证明自举估计量具有与样本估计量相同的渐近分布
+Bootstrap for 2SLS	2SLS 的自助法
+We now show that the bootstrap estimator has the same asymptotic distribution as the sample estimator	我们现在证明自助估计量具有与样本估计量相同的渐近分布
 This was first shown by Hahn (1996)	Hahn (1996) 首先表明了这一点
 The true value in the bootstrap universe is obtained by replacing the population moments by the sample moments, which equals the 2SLS estimator	Bootstrap宇宙中的真实值是通过用样本矩替换总体矩得到的，它等于2SLS估计量
 This is generally not equal to zero in the over-identified case	在过度识别的情况下，这通常不等于零
 This an an important complication	这是一个重要的并发症
-Using (12.43) we can normalize the bootstrap estimator as	使用（12.43）我们可以将自举估计量归一化为
+Using (12.43) we can normalize the bootstrap estimator as	使用（12.43）我们可以将自助估计量归一化为
 This implies (12.47) is equal to	这意味着 (12.47) 等于
-By standard calculations we can also show that bootstrap t-ratios are asymptotically normal	通过标准计算，我们还可以证明自举 t 比率是渐近正态的
-This shows that percentile-type and percentile-t confidence intervals are asymptotically valid	这表明百分位数类型和百分位数 t 置信区间是渐近有效的
-Consequently, unadjusted bootstrap methods will not achieve an asymptotic refinement	因此，未经调整的引导方法将无法实现渐近细化
+By standard calculations we can also show that bootstrap t-ratios are asymptotically normal	通过标准计算，我们还可以证明自助 t 比率是渐近正态的
+This shows that percentile-type and percentile-t confidence intervals are asymptotically valid	这表明百分数类型和百分数 t 置信区间是渐近有效的
+Consequently, unadjusted bootstrap methods will not achieve an asymptotic refinement	因此，未经调整的自助方法将无法实现渐近改进
 An alternative suggested by Hall and Horowitz (1996) is to recenter the bootstrap 2SLS estimator so that it satisfies the correct orthogonality condition	Hall 和 Horowitz (1996) 提出的另一种选择是使 bootstrap 2SLS 估计量居中，使其满足正确的正交条件
-This recentered estimator, however, is not the standard implementation of the bootstrap for 2SLS as used in empirical practice	然而，这个重新定位的估计量并不是实证实践中使用的 2SLS 引导程序的标准实现
+This recentered estimator, however, is not the standard implementation of the bootstrap for 2SLS as used in empirical practice	然而，这个重新定位的估计量并不是实证实践中使用的 2SLS 自助法的标准实现
 The Peril of Bootstrap 2SLS Standard Errors	Bootstrap 2SLS 标准误差的危险
 It is tempting to use the bootstrap algorithm to estimate variance matrices and standard errors for the 2SLS estimator	使用 bootstrap 算法来估计 2SLS 估计量的方差矩阵和标准误差是很诱人的
-In finite samples the 2SLS estimator may not have a finite second moment, meaning that bootstrap variance estimates are unstable and unreliable	在有限样本中，2SLS 估计量可能没有有限的二阶矩，这意味着自举方差估计不稳定且不可靠
+In finite samples the 2SLS estimator may not have a finite second moment, meaning that bootstrap variance estimates are unstable and unreliable	在有限样本中，2SLS 估计量可能没有有限的二阶矩，这意味着自助方差估计不稳定且不可靠
 However this is not the most common application of IV methods in econometric practice and thus should be viewed as the exception rather than the norm	然而，这并不是 IV 方法在计量经济学实践中最常见的应用，因此应被视为例外而不是常态
 To understand what is going on consider the simplest case of a just-identified model with a single endogenous regressor and no included exogenous regressors	要了解发生的情况，请考虑刚刚识别的模型的最简单情况，该模型具有单个内生回归变量且不包含外生回归变量
 This means that the ratio can take arbitrarily large values	这意味着该比率可以取任意大的值
-The coefficient estimate is reported in Table 12.3, along with asymptotic, jackknife, and two bootstrap standard errors each calculated with 10,000 bootstrap replications	表 12.3 报告了系数估计值，以及渐近误差、折刀误差和两个自举标准误差，每个标准误差均通过 10,000 次自举重复计算得出
+The coefficient estimate is reported in Table 12.3, along with asymptotic, jackknife, and two bootstrap standard errors each calculated with 10,000 bootstrap replications	表 12.3 报告了系数估计值，以及渐近误差、折刀误差和两个自助标准误差，每个标准误差均通过 10,000 次自助重复计算得出
 Table 12.3: Instrumental Variable Return to Education for Black Men	表 12.3：黑人男性教育回报工具变量
-The bootstrap standard errors are an order of magnitude larger than the asymptotic standard errors, and vary substantially across the bootstrap runs despite using 10,000 bootstrap replications	引导程序标准误差比渐近标准误差大一个数量级，并且尽管使用了 10,000 次引导程序复制，但在引导程序运行过程中差异很大
-This indicates moment failure and unreliability of the bootstrap standard errors	这表明引导程序标准误差的瞬时故障和不可靠性
-This is a strong message that bootstrap standard errors should not be computed for IV estimators	这是一个强烈的信息，即不应为 IV 估计量计算自举标准误差
-Instead, report percentile-type confidence intervals	相反，报告百分位数类型的置信区间
+The bootstrap standard errors are an order of magnitude larger than the asymptotic standard errors, and vary substantially across the bootstrap runs despite using 10,000 bootstrap replications	自助法标准误差比渐近标准误差大一个数量级，并且尽管使用了 10,000 次自助法复制，但在自助法运行过程中差异很大
+This indicates moment failure and unreliability of the bootstrap standard errors	这表明自助法标准误差的瞬时故障和不可靠性
+This is a strong message that bootstrap standard errors should not be computed for IV estimators	这是一个强烈的信息，即不应为 IV 估计量计算自助标准误差
+Instead, report percentile-type confidence intervals	相反，报告百分数类型的置信区间
 Clustered Dependence	群组依赖
 Generated Regressors	生成的自变量
 The "two-stage" form of the 2SLS estimator is an example of what is called "estimation with generated regressors"	2SLS 估计量的“两阶段”形式是所谓“使用生成的自变量进行估计”的示例
@@ -1851,7 +1850,7 @@ Unless this is incorporated into our inference methods, covariance matrix estima
 The econometric theory of generated regressors was developed by Pagan (1984) for linear models and extended to nonlinear models and more general two-step estimators by Pagan (1986)	生成自变量的计量经济学理论是由 Pagan (1984) 针对线性模型开发的，并由 Pagan (1986) 扩展到非线性模型和更一般的两步估计量
 observations because the generated regressors are themselves estimates	观测，因为生成的自变量本身就是估计值
 This framework includes 2SLS as well as other common estimators	该框架包括 2SLS 以及其他常见估计量
-The examples which motivated Pagan (1984) and Murphy and Topel (1985) emerged from the macroeconomics literature, in particular the work of Barro (1977) which examined the impact of inflation expectations and expectation errors on economic output	Pagan (1984) 以及 Murphy 和 Topel (1985) 的例子来自宏观经济学文献，特别是 Barro (1977) 的著作，该著作研究了通货膨胀预期和预期误差对经济产出的影响
+The examples which motivated Pagan (1984) and Murphy and Topel (1985) emerged from the macroeconomics literature, in particular the work of Barro (1977) which examined the impact of inflation expectations and expectation errors on economic output	Pagan (1984) 以及 Murphy 和 Topel (1985) 的案例来自宏观经济学文献，特别是 Barro (1977) 的著作，该著作研究了通货膨胀预期和预期误差对经济产出的影响
 The generated regressor framework includes all of these examples	生成的自变量框架包括所有这些示例
 Conventional variance estimators do not address this second component and thus will be biased	传统的方差估计量不考虑第二个组成部分，因此会有偏误
 This is a dramatic simplification	这是一个戏剧性的简化
@@ -1918,7 +1917,7 @@ We now prove the results in Theorem 12.17	现在我们证明定理 12.17 中的�
 We next establish the asymptotic distribution	接下来我们建立渐近分布
 Bootstrap Overidentification Tests	Bootstrap 过度识别检验
 In small to moderate sample sizes the overidentification tests are not well approximated by the asymptotic chi-square distributions	在小到中等样本量中，渐近卡方分布不能很好地近似过度识别检验
-The recentered bootstrap analog is	居中引导程序模拟是
+The recentered bootstrap analog is	居中自助法模拟是
 Local Average Treatment Effects	当地平均治疗效果
 In a pair of influential papers, Imbens and Angrist (1994) and Angrist, Imbens and Rubin (1996) proposed an new interpretation of the instrumental variables estimator using the potential outcomes model introduced in Section 2.30	在两篇有影响力的论文中，Imbens 和 Angrist (1994) 以及 Angrist、Imbens 和 Rubin (1996) 使用第 2.30 节中介绍的潜在结果模型提出了工具变量估计量的新解释
 We would like to learn about the distribution of the causal effects, or at least features of the distribution	我们想了解因果效应的分布，或者至少是分布的特征
@@ -1941,7 +1940,7 @@ Recall the reduced form equation	回忆一下简化形式的方程
 The consequences of identification failure for inference are quite severe	推断识别失败的后果是相当严重的
 Thus identification hinges on the existence of correlation between the excluded exogenous variable and the included endogenous variable	因此，识别取决于排除的外生变量和纳入的内生变量之间是否存在相关性
 By the CLT we have the joint convergence	通过 CLT 我们有联合收敛
-This limiting distribution has several notable features	这种极限分布有几个显着的特征
+This limiting distribution has several notable features	这种极限分布有几个显著的特征
 Thus under identification failure the IV estimator does not correct the centering (median bias) of least squares	因此，在识别失败的情况下，IV 估计量不会纠正最小二乘的中心（中值偏误）
 Inferences based on the normal distribution can be quite incorrect	基于正态分布的推断可能非常不正确
 We can also examine the behavior of the t-statistic	我们还可以检查 t 统计量的行为
@@ -2000,7 +1999,7 @@ One modest extension is to use the information to convey the degree of confidenc
 A more substantive extension, which we now discuss, reverses the steps	我们现在讨论的更具实质性的扩展颠倒了这些步骤
 We now describe the steps in detail	我们现在详细描述这些步骤
 This can be solved as	这可以解决为
-In principle the procedure could be extended using simulation or bootstrap methods but this has not been done to my knowledge	原则上可以使用模拟或引导方法来扩展该过程，但据我所知尚未这样做
+In principle the procedure could be extended using simulation or bootstrap methods but this has not been done to my knowledge	原则上可以使用模拟或自助方法来扩展该过程，但据我所知尚未这样做
 To illustrate the Stock-Yogo and extended procedures let us return to the Card proximity example	为了说明 Stock-Yogo 和扩展程序，让我们回到卡邻近示例
 Now consider the extended procedure	现在考虑扩展过程
 The weak instrument methods described here are important for applied econometrics as they discipline researchers to assess the quality of their reduced form relationships before reporting structural estimates	这里描述的弱工具方法对于应用计量经济学很重要，因为它们要求研究人员在报告结构估计之前评估其简化形式关系的质量
@@ -2071,7 +2070,7 @@ Method of Moments Estimators	矩估计法
 Define the sample analog of (13.5)	定义 (13.5) 的样本模拟
 In other cases the solution must be found numerically	在其他情况下，必须以数字方式找到解决方案
 We now show how most of the estimators discussed so far in the textbook can be written as method of moments estimators	我们现在展示如何将教科书中迄今为止讨论的大多数估计量编写为矩估计量方法
-A common feature of these examples is that the estimator can be written as the solution to a set of estimating equations (13.3)	这些例子的一个共同特征是估计量可以写成一组估计方程（13.3）的解
+A common feature of these examples is that the estimator can be written as the solution to a set of estimating equations (13.3)	这些案例的一个共同特征是估计量可以写成一组估计方程（13.3）的解
 This provides a common framework which enables a convenient development of a unified distribution theory	这提供了一个通用框架，可以方便地开发统一的分布理论
 Overidentified Moment Equations	过度识别的力矩方程
 Thus the method of moments estimator is not defined for the overidentified case	因此，没有为过度识别的情况定义矩估计量的方法
@@ -2201,13 +2200,13 @@ The proof of this result is omitted as it uses more advanced techniques	由于�
 The asymptotic covariance matrices can be estimated by sample counterparts of the population matrices	渐近协方差矩阵可以通过总体矩阵的样本对应物来估计
 For the case of the iterated efficient weight matrix,	对于迭代有效权重矩阵的情况，
 All of the methods discussed in this chapter - Wald tests, constrained estimation, distance tests, overidentification tests, endogeneity tests - apply similarly to the nonlinear GMM estimator	本章讨论的所有方法 - Wald 检验、约束估计、距离检验、过度识别检验、内生性检验 - 类似地适用于非线性 GMM 估计量
-Bootstrap for GMM	GMM 引导程序
+Bootstrap for GMM	GMM 自助法
 The bootstrap for 2SLS (Section 12.23) can be used for GMM estimation	2SLS 的 bootstrap（第 12.23 节）可用于 GMM 估计
 For variance and standard error estimation the same cautions apply as for 2SLS	对于方差和标准误差估计，同样的注意事项适用于 2SLS
-Instead, use the bootstrap for percentile and percentile-t confidence intervals	相反，请使用引导程序来确定百分位数和百分位数-t 置信区间
-When the model is overidentified, as discussed for 2SLS, bootstrap GMM inference will not achieve an asymptotic refinement unless the bootstrap estimator is recentered to satisfy the orthogonality condition	当模型被过度识别时，如 2SLS 所讨论的，自举 GMM 推断将无法实现渐近细化，除非自举估计量重新居中以满足正交性条件
+Instead, use the bootstrap for percentile and percentile-t confidence intervals	相反，请使用自助法来确定百分数和百分数-t 置信区间
+When the model is overidentified, as discussed for 2SLS, bootstrap GMM inference will not achieve an asymptotic refinement unless the bootstrap estimator is recentered to satisfy the orthogonality condition	当模型被过度识别时，如 2SLS 所讨论的，自助 GMM 推断将无法实现渐近改进，除非自助估计量重新居中以满足正交性条件
 We now describe the recentering recommended by Hall and Horowitz (1996)	我们现在描述 Hall 和 Horowitz (1996) 建议的重新定位
-For nonlinear GMM (Section 13.25) the bootstrap criterion function is modified	对于非线性 GMM（第 13.25 节），修改了引导准则函数
+For nonlinear GMM (Section 13.25) the bootstrap criterion function is modified	对于非线性 GMM（第 13.25 节），修改了自助准则函数
 The bootstrap can be used to calculate the p-value of the GMM overidentification test	bootstrap 可用于计算 GMM 过度识别检验的 p 值
 Conditional Moment Equation Models	条件矩方程模型
 In many contexts, an economic model implies conditional moment restriction of the form	在许多情况下，经济模型意味着以下形式的条件矩约束
@@ -2256,7 +2255,7 @@ Therefore if we label a process as "stationary" you should interpret it as meani
 It is difficult, however, to know whether or not a given time series is stationary simply by examining a time series plot	然而，仅通过检查时间序列图很难知道给定时间序列是否平稳
 Here are some examples of strictly stationary scalar processes	以下是严格平稳标量过程的一些示例
 Here are some examples of processes which are not stationary	以下是非平稳过程的一些示例
-From the examples we can see that stationarity means that the distribution is constant over time	从例子中我们可以看出，平稳性意味着分布随着时间的推移是恒定的
+From the examples we can see that stationarity means that the distribution is constant over time	从案例中我们可以看出，平稳性意味着分布随着时间的推移是恒定的
 These restrictions are associated with the concepts of ergodicity and mixing which we shall introduce in subsequent sections	这些约束与遍历性和混合的概念相关，我们将在后续章节中介绍这些概念
 Transformations of Stationary Processes	稳态过程的变换
 One of the important properties of strict stationarity is that it is preserved by transformation	严格平稳性的重要特征之一是它可以通过变换得以保留
@@ -2482,7 +2481,7 @@ The AIC of an estimated regression model can be displayed in Stata by using the 
 Illustrations	说明
 rates are positively correlated from quarter to quarter, but only mildly so, and most of the correlation is captured by the first lag	每个季度的利率都呈正相关，但只是轻微的正相关，并且大部分相关性是由第一滞后捕获的
 Here, we report heteroskedasticity-robust standard errors	在这里，我们报告异方差稳健的标准误差
-The third example is the first difference of CPI inflation (first difference of growth rate of cpiaucsl)	第三个例子是CPI通胀一阶差分（cpiaucsl增长率一阶差分）
+The third example is the first difference of CPI inflation (first difference of growth rate of cpiaucsl)	第三个案例是CPI通胀一阶差分（cpiaucsl增长率一阶差分）
 There are meaningful differences only for the lower order AR models	仅对于低阶 AR 模型存在有意义的差异
 Time Series Regression Models	时间序列回归模型
 Least squares regression methods can be used broadly with stationary time series	最小二乘回归方法可广泛用于平稳时间序列
@@ -2545,25 +2544,25 @@ The second approach is to combine equations (14.61)-(14.62) into a single model 
 This test has a conventional asymptotic distribution so is simple to implement	该检验具有传统的渐近分布，因此易于实现
 The basic message is that testing for omitted serial correlation can be implement in regression models by estimating and contrasting different dynamic specifications	基本信息是，通过估计和对比不同的动态设定，可以在回归模型中实现对遗漏序列相关性的检验
 Bootstrap for Time Series	时间序列的 Bootstrap
-Recall that the bootstrap approximates the sampling distribution of estimators and test statistics by the empirical distribution of the observations	回想一下，引导程序通过观测的经验分布来近似估计量的抽样分布和检验统计量
+Recall that the bootstrap approximates the sampling distribution of estimators and test statistics by the empirical distribution of the observations	回想一下，自助法通过观测的经验分布来近似估计量的抽样分布和检验统计量
 For dependent observations alternative methods should be used	对于相关观测，应使用替代方法
-Bootstrapping for time series is considerably more complicated than the cross section case	时间序列的引导比横截面情况复杂得多
+Bootstrapping for time series is considerably more complicated than the cross section case	时间序列的自助比横截面情况复杂得多
 One of the challenges is that theoretical justifications are more difficult to establish than in the independent observation case	挑战之一是理论依据比独立观测案例更难建立
-In this section we describe the most popular methods to implement bootstrap resampling for time series data	在本节中，我们将描述对时间序列数据实现引导重抽样的最流行的方法
-Recursive Bootstrap	递归引导程序
+In this section we describe the most popular methods to implement bootstrap resampling for time series data	在本节中，我们将描述对时间序列数据实现自助重抽样的最流行的方法
+Recursive Bootstrap	递归自助法
 Another limitation is that it is inappropriate for AR-DL models unless the conditioning variables are strictly exogenous	另一个局限是它不适合 AR-DL 模型，除非条件变量是严格外生的
 There are alternative versions of this basic method	这种基本方法还有其他版本
 This can improve precision when sample sizes are small but otherwise is not recommended	当样本量较小时，这可以提高精度，但在其他情况下不建议这样做
-Pairwise Bootstrap	成对引导
+Pairwise Bootstrap	成对自助
 This method may be useful when we are interested in the distribution of nonlinear functions of the coefficient estimates and therefore desire an improvement on the Delta Method approximation	当我们对系数估计的非线性函数的分布感兴趣并因此希望对 Delta 方法近似进行改进时，此方法可能很有用
-Fixed Design Residual Bootstrap	固定设计残差自举
-This construction is similar to the pairwise bootstrap but imposes an i.i.d. error	这种结构类似于成对引导，但强加了独立同分布
-Fixed Design Wild Bootstrap	固定设计狂野引导程序
-This construction is similar to the pairwise and fixed design bootstrap combined with the wild bootstrap	这种结构类似于成对固定设计引导程序与狂野引导程序的结合
+Fixed Design Residual Bootstrap	固定设计残差自助
+This construction is similar to the pairwise bootstrap but imposes an i.i.d. error	这种结构类似于成对自助，但强加了独立同分布
+Fixed Design Wild Bootstrap	固定设计狂原始自助法
+This construction is similar to the pairwise and fixed design bootstrap combined with the wild bootstrap	这种结构类似于成对固定设计自助法与狂原始自助法的结合
 This imposes the conditional mean assumption on the error but allows heteroskedasticity	这对误差施加了条件均值假设，但允许异方差
-Block Bootstrap	块引导程序
+Block Bootstrap	块自助法
 This construction allows for arbitrary stationary serial correlation, heteroskedasticity, and modelmisspecification	这种结构允许任意平稳序列相关、异方差和模型误设
-Thus the block bootstrap is a natural generalization of the nonparametric bootstrap	因此，块引导程序是非参数引导程序的自然推广
+Thus the block bootstrap is a natural generalization of the nonparametric bootstrap	因此，块自助法是非参数自助法的自然推广
 The second equality is Markov's inequality (B.36) and the following is the triangle inequality (B.1)	第二个不等式是马尔可夫不等式（B.36），接下来是三角不等式（B.1）
 Proof of Theorem 14.4 See Theorem 14.14	定理 14.4 的证明 参见定理 14.14
 Proof of Theorem 14.5 Strict stationarity follows from Theorem 14.2	定理 14.5 的证明 严格平稳性由定理 14.2 得出
@@ -2645,10 +2644,10 @@ Within a VAR(p) model the impulse responses are determined by the VAR coefficien
 This is the the most commonly used method for impulse response estimation and it is the method implemented in standard packages	这是脉冲响应估计最常用的方法，并且是在标准包中实现的方法
 These can be used to form asymptotic confidence intervals for the impulse responses	这些可用于形成脉冲响应的渐近置信区间
 The asymptotic approximations, however, can be poor	然而，渐近近似可能很差
-Consequently, asymptotic approximations are less popular than bootstrap approximations	因此，渐近逼近不如自举逼近受欢迎
+Consequently, asymptotic approximations are less popular than bootstrap approximations	因此，渐近逼近不如自助逼近受欢迎
 A disadvantage of this estimator is that it is a highly nonlinear function of the VAR coefficient estimators	该估计量的缺点是它是 VAR 系数估计量的高度非线性函数
 Impulse response functions can be calculated and displayed in Stata using the irf command	可以使用 irf 命令在 Stata 中计算并显示脉冲响应函数
-Better options such as the bias-corrected percentile confidence interval are not provided as options	未提供更好的选项（例如偏误校正百分位数置信区间）
+Better options such as the bias-corrected percentile confidence interval are not provided as options	未提供更好的选项（例如偏误校正百分数置信区间）
 Local Projection Estimator	局部投影估计量
 Jordà (2005) observed that the impulse response can be estimated by a least squares predictive regression	Jordà (2005) 观察到脉冲响应可以通过最小二乘预测回归来估计
 The method is as follows	方法如下
@@ -2681,9 +2680,9 @@ The cumulative orthogonalized impulse response function (COIRF) is	累积正交�
 Orthogonalized Impulse Response Estimation	正交脉冲响应估计
 We first estimate the VAR(p) model by least squares	我们首先通过最小二乘法估计 VAR(p) 模型
 As discussed earlier, the asymptotic approximations can be quite poor	如前所述，渐近近似可能非常差
-Consequently bootstrap approximations are more widely used than asymptotic methods	因此，自举近似比渐近方法使用更广泛
+Consequently bootstrap approximations are more widely used than asymptotic methods	因此，自助近似比渐近方法使用更广泛
 Orthogonalized impulse response functions can be displayed in Stata using the irf command	正交脉冲响应函数可以使用 irf 命令在 Stata 中显示
-The bootstrap confidence intervals are calculated using the normal approximation bootstrap confidence interval	自举置信区间是使用正态近似自举置信区间计算的
+The bootstrap confidence intervals are calculated using the normal approximation bootstrap confidence interval	自助置信区间是使用正态近似自助置信区间计算的
 To illustrate we use the three-variable system from Section 15.13	为了说明这一点，我们使用 15.13 节中的三变量系统
 We use the estimated VAR(6) and calculate the orthogonalized impulse response functions using the standard VAR estimator	我们使用估计的 VAR(6) 并使用标准 VAR 估计量计算正交脉冲响应函数
 Forecast Error Decomposition	预测误差分解
@@ -2734,7 +2733,7 @@ This is a system of quadratic equations in the free parameters	这是自由参�
 The latter is appropriate when the model is correctly specified (including normality) but otherwise an unclear choice	当模型被正确指定（包括正态性）但否则选择不明确时，后者是合适的
 Given the parameter estimates the structural impulse response function is	给定参数估计，结构脉冲响应函数为
 The structural impulse responses are nonlinear functions of the VAR coefficient and covariance matrix estimators so by the delta method are asymptotically normal	结构脉冲响应是 VAR 系数和协方差矩阵估计量的非线性函数，因此通过 Delta 方法是渐近正态的
-As for orthogonalized impulse responses the asymptotic normal approximation is unlikely to be a good approximation so bootstrap methods are an attractive alternative	对于正交化脉冲响应，渐近正态近似不太可能是一个好的近似，因此自举方法是一个有吸引力的替代方案
+As for orthogonalized impulse responses the asymptotic normal approximation is unlikely to be a good approximation so bootstrap methods are an attractive alternative	对于正交化脉冲响应，渐近正态近似不太可能是一个好的近似，因此自助方法是一个有吸引力的替代方案
 Structural VARs should be interpreted similarly to instrumental variable estimators	结构 VAR 的解释应类似于工具变量估计量
 Their interpretation relies on valid exclusion restrictions which can only be justified by external information	他们的解释依赖于有效的排除约束，而这些约束只能通过外部信息来证明
 We replicate a simplified version of Blanchard-Perotti (2002)	我们复现了 Blanchard-Perotti (2002) 的简化版本
@@ -2752,7 +2751,7 @@ Take the equations one at a time and ask if they can be estimated by instrumenta
 Once an equation has been verified as identified then its shock is identified and can be used as an instrument since it is uncorrelated with the shocks in the other equations	一旦方程被验证为确定的，那么它的冲击就被确定并且可以用作工具，因为它与其他方程中的冲击不相关
 In this example take the equations as ordered	在此示例中，按顺序取方程
 We deduce that the system is identified	我们推断系统已被识别
-Consider another example based on Keating (1992)	考虑另一个基于 Keating (1992) 的例子
+Consider another example based on Keating (1992)	考虑另一个基于 Keating (1992) 的案例
 where the four shocks are "aggregate supply", "money supply", "money demand", and "I-S"	其中四种冲击是“总供给”、“货币供给”、“货币需求”和“I-S”
 This structure can be based on the following assumptions: An elastic short-run aggregate supply curve (prices do not respond within a quarter); a simple monetary supply policy (the fed funds rate only responds within quarter to the money supply); money demand only responds to nominal output (log price plus log real output) and fed funds rate within a quarter; and unrestricted I-S curve	这种结构可以基于以下假设： 有弹性的短期总供给曲线（价格在一个季度内不会做出反应）；简单的货币供应政策（联邦基金利率仅在季度内对货币供应量做出反应）；货币需求仅对季度内名义产出（对数价格加对数实际产出）和联邦基金利率做出反应；和不受约束的 I-S 曲线
 To analyze conditions for identification we start by checking the order condition	为了分析识别条件，我们首先检查订单条件
@@ -2807,11 +2806,11 @@ A third is modeling dynamic relationships and effects	第三是对动态关系�
 There are two broad categories of panel data sets in economic applications: micro panels and macro panels	经济应用中的面板数据集有两大类：微观面板和宏观面板
 7-20) and a moderate number of time periods (20-60 years)	宏观面板通常是国家或地区宏观经济变量，其特征是适度数量的个体（例如 7-20 人）和适度数量的时间段（20-60 年）
 Panel data was once relatively esoteric in applied economic practice	面板数据曾经在应用经济实践中相对深奥
-Now, it is a dominant feature of applied research	现在，它已成为应用研究的一个显着特征
+Now, it is a dominant feature of applied research	现在，它已成为应用研究的一个显著特征
 A typical maintained assumption for micro panels (which we follow in this chapter) is that the individuals are mutually independent while the observations for a given individual are correlated across time periods	微型面板的一个典型的假设（我们在本章中遵循）是个体相互独立，而对给定个体的观测在不同时间段内是相关的
 countries) is much less compelling	类似的假设经常用于宏观面板，尽管个体（例如国家）之间的独立性假设不那么令人信服
 The application of panel data methods in econometrics started with the pioneering work of Mundlak (1961) and Balestra and Nerlove (1966)	面板数据方法在计量经济学中的应用始于 Mundlak (1961) 以及 Balestra 和 Nerlove (1966) 的开创性工作
-Several excellent monographs and textbooks have been written on panel econometrics, including Arellano (2003), Hsiao (2003), Wooldridge (2010), and Baltagi (2013)	关于面板计量经济学，已经撰写了几本优秀的专着和教科书，包括 Arellano (2003)、Hsiao (2003)、Wooldridge (2010) 和 Baltagi (2013)
+Several excellent monographs and textbooks have been written on panel econometrics, including Arellano (2003), Hsiao (2003), Wooldridge (2010), and Baltagi (2013)	关于面板计量经济学，已经撰写了几本优秀的专著和教科书，包括 Arellano (2003)、Hsiao (2003)、Wooldridge (2010) 和 Baltagi (2013)
 This chapter will summarize some of the main themes but for a more in-depth treatment see these references	本章将总结一些主要主题，但要进行更深入的处理，请参阅这些参考资料
 One challenge arising in panel data applications is that the computational methods can require meticulous attention to detail	面板数据应用中出现的一项挑战是计算方法可能需要对细节一丝不苟
 For most panel data applications in economics Stata is the standard package	对于经济学中的大多数面板数据应用，Stata 是标准软件包
@@ -3063,10 +3062,10 @@ Jackknife Covariance Matrix Estimation	折刀协方差矩阵估计
 As an alternative to asymptotic inference the delete-cluster jackknife can be used for covariance matrix calculation	作为渐近推断的替代方法，删除群组折刀可用于协方差矩阵计算
 As in the context of i.i.d. samples one advantage of the jackknife covariance matrix estimator is that it does not require the user to make a technical calculation of the asymptotic distribution	正如在 i.i.d. 的上下文中一样
 For the fixed effects 2SLS estimator usextivreg fe vce(jackknife)	对于固定效应 2SLS 估计量，请使用xtivreg fe vce(jackknife)
-Panel Bootstrap	面板引导程序
-Bootstrap methods can also be applied to panel data by a straightforward application of the pairs cluster bootstrap which samples entire individuals rather than single observations	引导方法还可以通过直接应用成对群组引导方法应用于面板数据，该引导方法对整个个体而不是单个观测结果进行抽样
-In the context of panel data we call this the panel nonparametric bootstrap	在面板数据中，我们将其称为面板非参数引导程序
-In Stata, to obtain bootstrap standard errors and confidence intervals use either xtreg, vce(bootstrap, reps (\#)) or areg, absorb(id) cluster(id) vce(bootstrap, reps(\#)) where id is the cluster variable and \# is the number of bootstrap replications	在 Stata 中，要获取 bootstrap 标准误差和置信区间，请使用 xtreg、vce(bootstrap,reps (\#)) 或 areg,absorb(id) cluster(id) vce(bootstrap,reps(\#))，其中 id 是cluster 变量，\# 是引导复制的数量
+Panel Bootstrap	面板自助法
+Bootstrap methods can also be applied to panel data by a straightforward application of the pairs cluster bootstrap which samples entire individuals rather than single observations	自助方法还可以通过直接应用成对群组自助方法应用于面板数据，该自助方法对整个个体而不是单个观测结果进行抽样
+In the context of panel data we call this the panel nonparametric bootstrap	在面板数据中，我们将其称为面板非参数自助法
+In Stata, to obtain bootstrap standard errors and confidence intervals use either xtreg, vce(bootstrap, reps (\#)) or areg, absorb(id) cluster(id) vce(bootstrap, reps(\#)) where id is the cluster variable and \# is the number of bootstrap replications	在 Stata 中，要获取 bootstrap 标准误差和置信区间，请使用 xtreg、vce(bootstrap,reps (\#)) 或 areg,absorb(id) cluster(id) vce(bootstrap,reps(\#))，其中 id 是cluster 变量，\# 是自助复制的数量
 For the fixed effects 2SLS estimator use xtivreg, fe vce(bootstrap, reps(\#))	对于固定效应 2SLS 估计量，请使用 xtivreg, fe vce(bootstrap,reps(\#))
 Dynamic Panel Models	动态面板模型
 The models so far considered in this chapter have been static with no dynamic relationships	到目前为止，本章考虑的模型都是静态的，没有动态关系
@@ -3193,7 +3192,7 @@ The Card-Krueger data set only contains observations from two states but the aut
 They divided New Jersey into three regions (North, Central, and South) and eastern Pennsylvania into two regions ( 1 for northeast Philadelphia suburbs and 2 for the remainder)	他们将新泽西州分为三个区域（北部、中部和南部），将宾夕法尼亚州东部分为两个区域（1 个区域用于费城东北部郊区，2 个区域用于其余区域）
 We can also observe that both of the Pennsylvania regions had employment decreases though with different magnitudes	我们还可以观察到，宾夕法尼亚州的两个地区的就业人数均出现下降，但幅度不同
 A more serious problem arises if the control effect is heterogeneous	如果控制效果是异质的，则会出现更严重的问题
-It is not statistically significant, meaning that we cannot reject the hypothesis that the control effect is homogeneous	它在统计上不显着，这意味着我们不能拒绝控制效应是同质的假设
+It is not statistically significant, meaning that we cannot reject the hypothesis that the control effect is homogeneous	它在统计上不显著，这意味着我们不能拒绝控制效应是同质的假设
 In contrast, if the control effect were heterogeneous then the difference-in-difference estimation strategy is misspecified	相反，如果控制效果是异质的，那么双重差分估计策略就会被错误设定
 Therefore if a test for equal control effects rejects the hypothesis of homogeneous control effects this should be taken as evidence against interpretation of the difference-in-difference parameter as a treatment effect	因此，如果相等控制效应的检验拒绝同质控制效应的假设，则应将其视为反对将双重差分参数解释为治疗效应的证据
 Table 18.2: Average Employment at Fast Food Restaurants	表 18.2：快餐店的平均就业人数
@@ -3271,7 +3270,7 @@ For a more detailed analysis and recommendations for inference see Conley and Ta
 Nonparametric Regression	非参数回归
 We now turn to nonparametric estimation of the conditional expectation function (CEF)	我们现在转向条件期望函数（CEF）的非参数估计
 In Chapter 20 of this textbook we explore estimation by series methods	在本教科书的第 20 章中，我们探讨了级数方法的估计
-There are many excellent monographs written on nonparametric regression estimation, including Härdle (1990), Fan and Gijbels (1996), Pagan and Ullah (1999), and Li and Racine (2007)	关于非参数回归估计有许多优秀的专着，包括 Härdle (1990)、Fan 和 Gijbels (1996)、Pagan 和 Ullah (1999) 以及 Li 和 Racine (2007)
+There are many excellent monographs written on nonparametric regression estimation, including Härdle (1990), Fan and Gijbels (1996), Pagan and Ullah (1999), and Li and Racine (2007)	关于非参数回归估计有许多优秀的专著，包括 Härdle (1990)、Fan 和 Gijbels (1996)、Pagan 和 Ullah (1999) 以及 Li 和 Racine (2007)
 We discuss clustered observations in Section 19.20	我们在 19.20 节中讨论群组观测
 Binned Means Estimator	分箱均值估计量
 Figure 19.1: Nadaraya-Watson and Local Linear Regression	图 19.1：Nadaraya-Watson 和局部线性回归
@@ -3392,12 +3391,12 @@ Figure 19.6: Confidence Band Construction	图 19.6：置信带构建
 Application to Testscores	检验成绩的应用
 We illustrate kernel regression with clustered observations by using the Duflo, Dupas, and Kremer (2011) investigation of the effect of student tracking on testscores	我们通过使用 Duflo、Dupas 和 Kremer（2011）对学生跟踪对检验分数的影响的调查，用群组观测来说明核回归
 We investigate the authors' specification of this control using local linear regression	我们使用局部线性回归研究了作者对该控制的设定
-We took the subsample of 1487 girls who experienced tracking and estimated the regression of testscores on percentile	我们对 1487 名经历过跟踪的女孩进行了子样本分析，并估计了百分位数检验分数的回归
+We took the subsample of 1487 girls who experienced tracking and estimated the regression of testscores on percentile	我们对 1487 名经历过跟踪的女孩进行了子样本分析，并估计了百分数检验分数的回归
 We used local linear regression with a Gaussian kernel	我们使用带有高斯核的局部线性回归
 This means that the clustered CV criterion has difficulty discriminating between these bandwidth choices	这意味着群组 CV 准则很难区分这些带宽选择
 Students with initial testscores at the top of the initial distribution have higher final testscores on average than predicted by a linear specification	初始检验成绩位于初始分布顶部的学生的平均最终检验成绩高于线性设定的预测
 Multiple Regressors	多重自变量
-Figure 19.7: Testscore as a Function of Initial Percentile	图 19.7：检验分数作为初始百分位数的函数
+Figure 19.7: Testscore as a Function of Initial Percentile	图 19.7：检验分数作为初始百分数的函数
 For the local-linear estimator, define	对于局部线性估计量，定义
 In multiple regressor kernel regression cross-validation remains a recommended method for bandwidth selection	在多重自变量核回归中，交叉验证仍然是带宽选择的推荐方法
 This means that numerical minimization needs to be done more efficiently than by a simple grid search	这意味着数值最小化需要比简单的网格搜索更有效地完成
@@ -3426,7 +3425,7 @@ Once again, the theory is advanced so the above two paragraphs should not be tak
 The good news is that the estimation method is straightforward	好消息是估计方法很简单
 The l poly command automatically displays the estimated CEF along with 95% confidence bands with standard errors computed using (19.18)	l poly 命令自动显示估计的 CEF 以及 95% 置信带以及使用 (19.18) 计算的标准误差
 The Stata command npregress estimates local linear (the default) or Nadaraya-Watson regression	Stata 命令 npregress 估计局部线性（默认）或 Nadaraya-Watson 回归
-A display of the estimated CEF and 95% confidence bands at specific points (computed using the percentile bootstrap) may be obtained with the postestimation command margins	可以使用后估计命令裕度来显示特定点处的估计 CEF 和 95% 置信带（使用百分位数引导程序计算）
+A display of the estimated CEF and 95% confidence bands at specific points (computed using the percentile bootstrap) may be obtained with the postestimation command margins	可以使用后估计命令裕度来显示特定点处的估计 CEF 和 95% 置信带（使用百分数自助法计算）
 There are several R packages which implement kernel regression	有几个 R 包可以实现内核回归
 There are options which allow local linear and local polynomial estimation, alternative kernels, and alternative bandwidth selection methods	有一些选项允许局部线性和局部多项式估计、替代内核和替代带宽选择方法
 Inserted into (19.29) we find that (19.29) equals	代入(19.29)我们发现(19.29)等于
@@ -3523,7 +3522,7 @@ The asymptotic bias is similar to that found in kernel regression	渐近偏误�
 If we are estimating the regression function then the bias is the error in approximating the regression function; if we are estimating the regression derivative then the bias is the error in the derivative in the approximation error for the regression function	如果我们估计回归函数，那么偏误就是逼近回归函数的误差；如果我们估计回归导数，那么偏误就是回归函数近似误差中导数的误差
 Regression Estimation	回归估计
 There are several important features about the asymptotic distribution (20.27)	渐近分布 (20.27) 有几个重要特征
-This means that the precision of the series regression estimator is considerably degraded at the edge of the support	这意味着系列回归估计量的精度在支持边缘处显着降低
+This means that the precision of the series regression estimator is considerably degraded at the edge of the support	这意味着系列回归估计量的精度在支持边缘处显著降低
 This means that the estimator itself is inefficient	这意味着估计量本身效率低下
 It shows that the asymptotic distribution is normal but has a non-trivial finite sample bias	它表明渐近分布是正态分布，但具有非平凡的有限样本偏误
 Residuals and Regression Fit	残差和回归拟合
@@ -3760,13 +3759,13 @@ The second inequality is (22.7) and the final inequality is (22.6)	第二个不�
 Nonlinear Least Squares	非线性最小二乘法
 In nonlinear regression the ordinary least squares estimator does not apply	在非线性回归中，普通最小二乘估计量不适用
 NLLS is an m-estimator which requires numerical optimization	NLLS 是一个需要数值优化的 m 估计量
-We illustrate nonlinear regression with three examples	我们用三个例子来说明非线性回归
-Our first example is the Box-Cox regression model	我们的第一个例子是 Box-Cox 回归模型
+We illustrate nonlinear regression with three examples	我们用三个案例来说明非线性回归
+Our first example is the Box-Cox regression model	我们的第一个案例是 Box-Cox 回归模型
 The Box-Cox regression model is	Box-Cox 回归模型为
-Our second example is a Constant Elasticity of Substitution (CES) production function, which was introduced by Arrow, Chenery, Minhas, and Solow (1961) as a generalization of the popular Cobb-Douglass production function	我们的第二个例子是恒定替代弹性 (CES) 生产函数，它是由 Arrow、Chenery、Minhas 和 Solow (1961) 提出的，作为流行的柯布-道格拉斯生产函数的推广
+Our second example is a Constant Elasticity of Substitution (CES) production function, which was introduced by Arrow, Chenery, Minhas, and Solow (1961) as a generalization of the popular Cobb-Douglass production function	我们的第二个案例是恒定替代弹性 (CES) 生产函数，它是由 Arrow、Chenery、Minhas 和 Solow (1961) 提出的，作为流行的柯布-道格拉斯生产函数的推广
 We illustrate CES production function estimation with a modification of Papageorgiou, Saam, and Schulte (2017)	我们通过对 Papageorgiou、Saam 和 Schulte (2017) 的修改来说明 CES 生产函数估计
 The data file PPS2017 is an extract of the authors' dataset	数据文件 PPS2017 是作者数据集的摘录
-Our third example is the regression kink model	我们的第三个例子是回归扭结模型
+Our third example is the regression kink model	我们的第三个案例是回归扭结模型
 We illustrate the regression kink model with an application from B	我们使用 B. E. Hansen (2017) 的应用来说明回归扭结模型，该模型是 Reinhart 和 Rogoff (2010) 的形式化
 In correctly-specified nonlinear regression models the parameter is point identified if there is a unique true parameter	在正确指定的非线性回归模型中，如果存在唯一的真实参数，则参数被点识别
 Figure 23.1: Nonlinear Regression Models	图 23.1：非线性回归模型
@@ -3774,7 +3773,7 @@ is the expected squared error	是期望的平方误差
 Hence identification of the pseudo-true value under mis-specification is typically assumed rather than deduced	因此，误设下的伪真值的识别通常是假设的，而不是推断的
 This is called the Nonlinear Least Squares (NLLS) estimator	这称为非线性最小二乘 (NLLS) 估计量
 Figure 23.2: Average of Squared Errors Functions	图 23.2：平方误差函数的平均值
-We illustrate with two of our examples	我们用两个例子来说明
+We illustrate with two of our examples	我们用两个案例来说明
 You can see that the function appears to be close to quadratic near the minimum but becomes increasingly non-quadratic away from the minimum	你可以看到，该函数在最小值附近似乎接近二次函数，但在远离最小值时变得越来越非二次函数
 The parameter estimates and standard errors for the three models are presented in Table 23.1	三个模型的参数估计值和标准误差如表 23.1 所示
 The standard errors for the Box-Cox and Regression Kink models were calculated using the heteroskedasticity-robust formula, and those for the CES production function were calculated by the cluster-robust formula, clustering by country	Box-Cox 和 Regression Kink 模型的标准误差是使用异方差稳健公式计算的，CES 生产函数的标准误差是通过群组稳健公式计算的，按国家进行聚类
@@ -3826,13 +3825,13 @@ Testing for Nonlinear Components	非线性元件检验
 Identification can be tricky in nonlinear regression models	在非线性回归模型中识别可能很棘手
 The latter arises in the Regression Kink and threshold regression models	后者出现在回归扭结和阈值回归模型中
 For example, in the Card-Mas-Rothstein (2008) application this is the hypothesis of no tipping point which is the key issue explored in their paper	例如，在 Card-Mas-Rothstein（2008）的应用中，这是没有临界点的假设，这是他们论文中探讨的关键问题
-As an example consider the threshold regression (23.9)	作为一个例子，考虑阈值回归（23.9）
+As an example consider the threshold regression (23.9)	作为一个案例，考虑阈值回归（23.9）
 To test the hypothesis a standard test is to reject for large values of the F statistic	为了检验假设，标准检验是拒绝较大的 F 统计值
 The F statistic can be written as	F 统计量可以写为
 Figure 23.4: Test for Threshold Regression in CMR Model	图 23.4：CMR 模型中的阈值回归检验
 This is extremely high by conventional standards	以传统标准来看，这是非常高的
 The asymptotic theory of the test has been worked out by Andrews and Ploberger (1994) and B	检验的渐近理论由 Andrews 和 Ploberger (1994) 以及 B. E. Hansen (1996) 制定
-What is important is that the bootstrap data satisfy the null hypothesis	重要的是引导数据满足原假设
+What is important is that the bootstrap data satisfy the null hypothesis	重要的是自助数据满足原假设
 For clustered samples we need to make a minor modification	对于群组样本，我们需要进行较小的修改
 The modified algorithm uses the following steps	修改后的算法使用以下步骤
 To illustrate we apply this test to the threshold regression (23.9) estimated with the Card-Mas-Rothstein (2008) data	为了说明这一点，我们将此检验应用于使用 Card-Mas-Rothstein (2008) 数据估计的阈值回归 (23.9)
@@ -3850,7 +3849,7 @@ under Assumption 23.2.5	根据假设 23.2.5
 Condition 5 is implied by Assumption 23.2.6	条件 5 由假设 23.2.6 隐含
 Quantile Regression	分位数回归
 This chapter introduces median regression (least absolute deviations) and quantile regression	本章介绍中位数回归（最小绝对误差）和分位数回归
-An excellent monograph on the subject is Koenker (2005)	Koenker (2005) 是关于该主题的优秀专着
+An excellent monograph on the subject is Koenker (2005)	Koenker (2005) 是关于该主题的优秀专著
 Median Regression	中值回归
 When a distribution is symmetric then the median equals the mean but when the distribution is asymmetric they differ	当分布对称时，中位数等于平均值，但当分布不对称时，中位数不同
 Throughout this textbook we have primarily focused on conditional relationships	在这本教科书中，我们主要关注条件关系
@@ -3900,15 +3899,15 @@ These conditions are rather abstract but mild	这些条件相当抽象但温和
 We now provide the asymptotic distribution	我们现在提供渐近分布
 Theorem 24.4 Asymptotic Distribution of Quantile Regression Estimator	定理24.4分位数回归估计量的渐近分布
 Combined with (24.19) we have three levels of asymptotic covariance matrices	结合（24.19），我们得到了三级渐近协方差矩阵
-The most common method for estimation of quantile regression covariance matrices, standard errors, and confidence intervals is the bootstrap	估计分位数回归协方差矩阵、标准误差和置信区间的最常用方法是引导程序
+The most common method for estimation of quantile regression covariance matrices, standard errors, and confidence intervals is the bootstrap	估计分位数回归协方差矩阵、标准误差和置信区间的最常用方法是自助法
 This requires changing the default settings in common programs such as Stata	这需要更改Stata等常用程序中的默认设置
 In Stata, quantile regression is implemented using qreg	在Stata中，分位数回归是使用qreg实现的
 The bootstrap command followed by estat bootstrap produces BC percentile confidence intervals	bootstrap 命令后跟 estat bootstrap 会生成 BC 百分位置信区间
 In R, quantile regression is implemented by the function rq in the quantreg package	在 R 中，分位数回归是通过 quantreg 包中的函数 rq 实现的
-At present, the quantreg package does not include bootstrap percentile confidence intervals	目前，quantreg 包不包括 bootstrap 百分位数置信区间
+At present, the quantreg package does not include bootstrap percentile confidence intervals	目前，quantreg 包不包括 bootstrap 百分数置信区间
 Under clustered dependence the asymptotic covariance matrix changes	在群组依赖下，渐近协方差矩阵会发生变化
 This can be estimated as	这可以估计为
-In Stata, the clustered bootstrap can be accomplished by: bootstrap, reps(\#) cluster(id): qreg y x, followed by estat bootstrap	在Stata中，群组引导可以通过以下方式完成：bootstrap,reps(\#) cluster(id):qreg y x，然后是estat bootstrap
+In Stata, the clustered bootstrap can be accomplished by: bootstrap, reps(\#) cluster(id): qreg y x, followed by estat bootstrap	在Stata中，群组自助可以通过以下方式完成：bootstrap,reps(\#) cluster(id):qreg y x，然后是estat bootstrap
 We illustrate the application of clustered quantile regression using the Duflo, Dupas, and Kremer (2011) school tracking application. (See Section 4.21.) Recall, the question was whether or not tracking (separating students into classrooms based on an initial test) influenced average end-of-year scores	我们使用 Duflo、Dupas 和 Kremer (2011) 学校跟踪应用程序来说明群组分位数回归的应用
 Overall the evidence that tracking affects student performance is weak	总体而言，跟踪影响学生表现的证据很弱
 Table 24.2: Quantile Regressions of Student Testscores on Tracking	表 24.2：学生跟踪检验成绩的分位数回归
@@ -4010,10 +4009,10 @@ In Stata, model (26.7) can be estimated using cmclogit	在 Stata 中，可以使
 Independence of Irrelevant Alternatives	不相关替代方案的独立性
 The multinomial logit model has an undesirable restriction	多项 Logit 模型有一个不希望的局限
 This property is strongly tied to the multinomial logit model as the latter was derived axiomatically by Luce (1959) from an IIA assumption	该特征与多项 Logit 模型密切相关，因为后者是 Luce (1959) 根据 IIA 假设公理地推导出来的
-To understand why IIA may be problematic it is helpful to think through specific examples	为了理解为什么 IIA 可能存在问题，思考具体的例子会有所帮助
+To understand why IIA may be problematic it is helpful to think through specific examples	为了理解为什么 IIA 可能存在问题，思考具体的案例会有所帮助
 In this latter setting a low airplane ticket may make it highly unlikely that an individual will select train travel while unaffecting their likelihood of selecting car travel	在后一种情况下，低廉的机票可能使个体不太可能选择火车旅行，同时不影响他们选择汽车旅行的可能性
 A famous example of this problem is the following setting	此问题的一个著名示例是以下设置
-This example is known as the "red bus/blue bus puzzle"	这个例子被称为“红色巴士/蓝色巴士谜题”
+This example is known as the "red bus/blue bus puzzle"	这个案例被称为“红色巴士/蓝色巴士谜题”
 The source of the problem is that the IIA structure and multinomial logit model exclude differentiated substitutability among the alternatives	问题的根源在于IIA结构和多项logit模型排除了替代方案之间有区别的可替代性
 red bus and blue bus) are close substitutes	当替代品的子集（例如红色巴士和蓝色巴士）是相近替代品时，这是不合适的
 Part of the problem is due to the restrictive correlation pattern imposed on the errors by the generalized extreme value distribution	部分问题是由于广义极值分布对误差施加的约束性相关模式造成的
@@ -4093,7 +4092,7 @@ To explore this concept further, suppose the true CEF is nonparametric	为了进
 This is a broad justification for Poisson regression in count data applications if suitable attention is paid to the functional form for the included regressors	如果对所包含的自变量的函数形式给予适当的关注，那么这就是计数数据应用中泊松回归的广泛理由
 Since the model is an approximation, however, the conventional covariance matrix estimator will be inconsistent	然而，由于该模型是近似值，因此传统的协方差矩阵估计量将不一致
 Consequently it is advised to use the robust formula for covariance matrix and standard error estimation	因此，建议使用协方差矩阵和标准误差估计的稳健公式
-For more detail see the excellent monograph on count data models by Cameron and Trivedi (1998)	有关更多详细信息，请参阅 Cameron 和 Trivedi (1998) 撰写的关于计数数据模型的优秀专着
+For more detail see the excellent monograph on count data models by Cameron and Trivedi (1998)	有关更多详细信息，请参阅 Cameron 和 Trivedi (1998) 撰写的关于计数数据模型的优秀专著
 In Stata, Poisson and Negative Binomial regression can be estimated by poisson and nbreg	在Stata中，泊松和负二项回归可以通过泊松和nbreg来估计
 Generalizations to allow truncation, fixed effects, and random effects are also available	还可以进行允许截断、固定效应和随机效应的概括
 BLP Demand Model	BLP需求模型
@@ -4174,7 +4173,7 @@ CLAD can be estimated in Stata with the add-on package clad	CLAD 可以在 Stata
 In R, CLAD and CQR can be estimated with the crq command in the package quantreg	在 R 中，可以使用 quantreg 包中的 crq 命令来估计 CLAD 和 CQR
 Illustrating Censored Regression	说明审查回归
 To illustrate the methods we revisit of the applications reported in Section 20.6, where we used a linear spline to estimate the impact of income on non-governmental transfers for a sample of 8684 Phillipino households	为了说明方法，我们重新审视第 20.6 节中报告的应用程序，其中我们使用线性样条来估计 8684 个菲律宾家庭样本的收入对非政府转移的影响
-This proportion is sufficiently high that we should expect significant censoring bias if censoring is ignored	这个比例足够高，如果忽略审查，我们应该预期会出现显着的审查偏误
+This proportion is sufficiently high that we should expect significant censoring bias if censoring is ignored	这个比例足够高，如果忽略审查，我们应该预期会出现显著的审查偏误
 We display the estimated regression as a function of income (with remaining regressors set at sample means) in Figure 27.3(b)	我们将估计的回归显示为收入的函数（其余自变量设置为样本均值），如图 27.3(b) 所示
 Overall, the CLAD estimates are the preferred choice because they are robust to both censoring and non-normality	总体而言，CLAD 估计是首选，因为它们对于审查和非正态性都很稳健
 Sample Selection Bias	样本选择偏误
@@ -4211,7 +4210,7 @@ The advantage of expansions based on (27.9) is interpretability: The regression 
 Das, Newey, and Vella (2003) provide a detailed asymptotic theory for this class of estimators focusing on those based on (27.9)	Das、Newey 和 Vella (2003) 为此类估计量提供了详细的渐近理论，重点关注基于 (27.9) 的估计量
 They provide conditions under which the models are identified, the estimators consistent, and asymptotically normally distributed	它们提供了模型被识别、估计量一致且渐近正态分布的条件
 These nonparametric selection estimators are two-step estimators with generated regressors (see Section 12.26)	这些非参数选择估计量是带有生成自变量的两步估计量（参见第 12.26 节）
-The latter should be implemented as an explicit two-step estimator so that the first-step estimation is treated by the bootstrap distribution	后者应作为显式两步估计量实现，以便通过引导分布处理第一步估计
+The latter should be implemented as an explicit two-step estimator so that the first-step estimation is treated by the bootstrap distribution	后者应作为显式两步估计量实现，以便通过自助分布处理第一步估计
 A panel censored regression (panel Tobit) equation is	面板删失回归（面板 Tobit）方程为
 A random effects estimator can be derived under the assumption of joint normality of the errors	可以在误差联合正态性的假设下导出随机效应估计量
 The disadvantages are those typically associated with random effects estimators	缺点通常与随机效应估计量相关
@@ -4226,7 +4225,7 @@ Model averaging is a generalization of model selection	模型平均是模型选�
 Models and estimators are averaged using data-dependent weights	模型和估计量使用数据相关权重进行平均
 James-Stein shrinkage modifies classical estimators by shrinking towards a reasonable target	James-Stein 收缩通过收缩到合理的目标来修改经典估计量
 Shrinking reduces mean squared error	收缩可减少均方误差
-Two excellent monographs on model selection and averaging are Burnham and Anderson (1998) and Claeskens and Hjort (2008)	Burnham 和 Anderson (1998) 以及 Claeskens 和 Hjort (2008) 是关于模型选择和平均的两本优秀专着
+Two excellent monographs on model selection and averaging are Burnham and Anderson (1998) and Claeskens and Hjort (2008)	Burnham 和 Anderson (1998) 以及 Claeskens 和 Hjort (2008) 是关于模型选择和平均的两本优秀专著
 See also Wasserman (2006) and Efron (2010)	另请参见 Wasserman (2006) 和 Efron (2010)
 In the course of an applied project an economist will routinely estimate multiple models	在应用项目的过程中，经济学家通常会估计多个模型
 The question arises: Which model is best? Which should be used in practice? How can we select the best choice? This is the question of model selection	问题出现了：哪种模型最好？实际中应该使用哪个？我们怎样才能做出最好的选择呢？这就是模型选择的问题
@@ -4684,7 +4683,7 @@ The model is the high-dimensional projection framework:	该模型是高维投影
 Assumption 29.1 Restricted Eigenvalue Condition (REC)	假设29.1 受约束特征值条件（REC）
 We provide a rate for the Lasso estimator under the assumption of normal errors	我们在正常误差假设下提供了 Lasso 估计量的速率
 Instead, the assumption of sparsity enables the Lasso estimator to achieve a much improved rate of convergence	相反，稀疏性的假设使 Lasso 估计量能够实现大大提高的收敛速度
-Other papers in the statistics literature (see the monograph of Bühlmann and van de Geer (2011)) use instead the assumption of sub-Gaussian tails, which is weaker than normality	统计文献中的其他论文（参见 Bühlmann 和 van de Geer (2011) 的专着）使用亚高斯尾部假设，该假设比正态性弱
+Other papers in the statistics literature (see the monograph of Bühlmann and van de Geer (2011)) use instead the assumption of sub-Gaussian tails, which is weaker than normality	统计文献中的其他论文（参见 Bühlmann 和 van de Geer (2011) 的专著）使用亚高斯尾部假设，该假设比正态性弱
 A theory which allows for non-normal heteroskedastic errors has been developed by Belloni, Chen, Chernozhukov, and Hansen (2012)	Belloni、Chen、Chernozhukov 和 Hansen (2012) 提出了一种允许非正态异方差误差的理论
 Fortunately there are alternatives to the sparsity assumption as we discuss in the following section	幸运的是，正如我们在下一节中讨论的那样，稀疏性假设还有其他选择
 Approximate Sparsity	近似稀疏性
@@ -4725,7 +4724,7 @@ The sampling distribution of regression trees is difficult to derive, in part be
 While reducing estimation efficiency (the sample is effectively halved) the estimated conditional mean will not be distorted by the correlation between the estimated splits and means	在降低估计效率（样本实际上减半）的同时，估计的条件均值不会因估计的分割和均值之间的相关性而失真
 Regression trees algorithms are implemented in the R package rpart	回归树算法在 R 包 rpart 中实现
 Bagging	套袋
-Bagging (bootstrap aggregating) was introduced by Breiman (1996) as a method to reduce the variance of a predictor	Breiman (1996) 引入 Bagging（引导聚合）作为减少预测变量方差的方法
+Bagging (bootstrap aggregating) was introduced by Breiman (1996) as a method to reduce the variance of a predictor	Breiman (1996) 引入 Bagging（自助聚合）作为减少预测变量方差的方法
 The average of the bootstrap estimates is the bagging estimator of the CEF	Bootstrap 估计的平均值是 CEF 的 bagging 估计量
 Bagging is believed to be useful when the CEF estimator has low bias but high variance	当 CEF 估计量具有低偏误但高方差时，Bagging 被认为是有用的
 Bagging is believed to be less useful for estimators with high bias, as bagging may exaggerate the bias	据信，Bagging 对于具有高偏误的估计量来说不太有用，因为 bagging 可能会夸大偏误
@@ -4735,19 +4734,19 @@ Figure 29.5: Bagging and Selection	图 29.5：装袋和选择
 Bühlmann and Yu (2002) also calculate that most of this MSE reduction is due to a reduction in the variance of the bagged estimator	Bühlmann 和 Yu (2002) 还计算出 MSE 减少的大部分是由于袋装估计量方差的减少
 The most common application of bagging is to regression trees	bagging 最常见的应用是回归树
 This variance estimator is based on Efron (2014)	该方差估计量基于 Efron (2014)
-While Breiman's proposal and most applications of bagging are implemented using the nonparametric bootstrap, an alternative is to use subsampling	虽然 Breiman 的提议和大多数装袋应用都是使用非参数引导程序实现的，但另一种方法是使用子抽样
+While Breiman's proposal and most applications of bagging are implemented using the nonparametric bootstrap, an alternative is to use subsampling	虽然 Breiman 的提议和大多数装袋应用都是使用非参数自助法实现的，但另一种方法是使用子抽样
 It turns out that it is somewhat easier to develop a distribution theory for bagging under subsampling, so a subsampling assumption is frequently employed in theoretical treatments	事实证明，在子抽样下开发 bagging 的分布理论要容易一些，因此在理论处理中经常采用子抽样假设
 Random Forests	随机森林
 Random forests, introduced by Breiman (2001), are a modification of bagged regression trees	Breiman (2001) 引入的随机森林是袋装回归树的改进
 Random forests are popular in machine learning applications and have effectively displaced simple regression trees	随机森林在机器学习应用中很流行，并且有效地取代了简单的回归树
 Consider the procedure of applying bagging to regression trees	考虑将装袋应用于回归树的过程
-This decorrelation reduces the variance of the bootstrap average, thereby reducing its MSE	这种去相关减少了自举平均值的方差，从而降低了其 MSE
+This decorrelation reduces the variance of the bootstrap average, thereby reducing its MSE	这种去相关减少了自助平均值的方差，从而降低了其 MSE
 The basic random forest algorithm is as follows	基本的随机森林算法如下
 The recommended defaults are taken from the description in Hastie, Tibshirani, and Friedman (2008)	推荐的默认值取自 Hastie、Tibshirani 和 Friedman (2008) 中的描述
-This reduces the variance of the bootstrap average	这减少了引导平均值的方差
+This reduces the variance of the bootstrap average	这减少了自助平均值的方差
 The infinitesimal jackknife (29.18) can be used for variance and standard error estimation, as discussed in Wager, Hastie, and Efron (2014)	无穷小折刀 (29.18) 可用于方差和标准误差估计，如 Wager、Hastie 和 Efron (2014) 中所述
 While random forests are popular in applications, a distributional theory has been slow to develop	虽然随机森林在应用中很流行，但分布式理论的发展却很缓慢
-Some of the more recent results have made progress by focusing on random forests generated by subsampling rather than bootstrap (see the discussion at the end of the previous section)	最近的一些结果通过关注子抽样而不是引导生成的随机森林而取得了进展（请参阅上一节末尾的讨论）
+Some of the more recent results have made progress by focusing on random forests generated by subsampling rather than bootstrap (see the discussion at the end of the previous section)	最近的一些结果通过关注子抽样而不是自助生成的随机森林而取得了进展（请参阅上一节末尾的讨论）
 A variant proposed by Wager and Athey (2018) is to use honest trees (see the discussion at the end of Section 29.15) to remove the dependence between the sample splits and the sample means	Wager 和 Athey（2018）提出的一个变体是使用诚实树（参见第 29.15 节末尾的讨论）来消除样本分割和样本均值之间的依赖性
 Consistency and asymptotic normality has been established by Wager and Athey (2018)	Wager 和 Athey (2018) 建立了一致性和渐近正态性
 When combined with the honest tree construction, this ensures asymptotic normality of the estimator	当与诚实树结构相结合时，这确保了估计量的渐近正态性
