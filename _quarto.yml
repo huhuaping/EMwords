@@ -3,14 +3,19 @@ project:
   output-dir: docs
   render: 
     - index.qmd
+    - intro.qmd
   
-
+execute:
+  freeze: auto
+  
 website:
   title: "EMwords"
   navbar:
     left:
       - href: index.qmd
         text: Home
+      - href: intro.qmd
+        text: Intro
 
 format:
   html:
