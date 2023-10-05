@@ -1,0 +1,6 @@
+.Rproj.user/**
+.Rproj.user
+text/hansen/*
+.Rhistory
+
+/.quarto/

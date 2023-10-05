@@ -1,0 +1,30 @@
+
+# EMwords 计量术语中英文对照合辑
+
+## 计量句式对照
+
+（1）Hansen, Bruce. Econometrics. Princeton: Princeton University Press, 2022. 每个段落的第一句和最后一句
+ 
+- [英]Today, we would say that econometrics is the unified study of economic models, mathematical statistics, and economic data [中]今天，我们会说计量经济学是对经济模型、数理统计和经济数据的统一研究
+
+
+## 计量术语缩写对照
+
+大部分计量教材都会在附录部分提供一个主题（subject）索引或作者索引（Name）或缩写索引（Abbreviation）（包含在教材中对应的页码），或者三者的混合索引。但是我们这里更关注术语缩写索引。
+
+（1）Cameron, A. Colin, and P. K. Trivedi. Microeconometrics Using Stata. Volume I, Cross-Sectional and Panel Regression Models. 2nd ed. College Station, Texas: Stata Press, 2022.
+
+- 2SLS: two-stage least squares
+- 3SLS: three-stage least squares
+- AFT: accelerated failure time
+- AIC: Akaike information criterion
+
+
+::: {.callout-note}
+
+**说明**：
+
+- 古扎拉蒂分别给出了主题（subject）索引或作者索引（Name）
+
+
+:::
