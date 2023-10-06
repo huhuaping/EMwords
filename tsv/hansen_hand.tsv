@@ -105,7 +105,7 @@ Key concepts in matrix algebra and a set of useful inequalities are reviewed in 
 They are intended to be reference material and some of the results are not used in this textbook	它们旨在作为参考资料，其中一些结论未在本教科书中使用
 Conditional Expectation and Projection	条件预期和投影
 The most commonly applied econometric tool is least squares estimation, also known as regression	最常用的计量经济学工具是最小二乘估计，也称为回归
-Least squares is a tool to estimate the conditional mean of one variable (the dependent variable) given another set of variables (the regressors, conditioning variables, or covariates)	最小二乘法是一种用于在给定另一组变量（回归变量、条件变量或协变量）的情况下估计一个变量（因变量）条件均值的方法
+Least squares is a tool to estimate the conditional mean of one variable (the dependent variable) given another set of variables (the regressors, conditioning variables, or covariates)	最小二乘法是一种用于在给定另一组变量（自变量、条件变量或协变量）的情况下估计一个变量（因变量）条件均值的方法
 In this chapter we abstract from estimation and focus on the probabilistic foundation of the conditional expectation model and its projection approximation	在本章中，我们从估计问题中提升上来，重点讨论条件期望模型的概率基础及其投影渐近
 For a background in intermediate probability theory see Chapters 1-5 of Probability and Statistics for Economists	有关中级概率论的背景知识，请参阅《经济学家的概率与统计》第 1-5 章
 The Distribution of Wages	工资分布
@@ -120,7 +120,7 @@ For this reason, wage regressions typically use log wages as a dependent variabl
 Conditional Expectation	条件期望
 We saw in Figure 2.1(b) the density of log wages	我们在图 2.1(b) 中看到了对数工资的密度
 We can see that the two wage densities take similar shapes but the density for men is somewhat shifted to the right	我们可以看到这两种工资密度具有相似的形状，但男性的密度稍微向右移动
-We call these expectations "conditional" as they are conditioning on a fixed value of the variable gender	我们将这些期望称为“有条件的”，因为它们以性别的某种固定取值为条件
+We call these expectations "conditional" as they are conditioning on a fixed value of the variable gender	我们将这些期望称为“条件的”，因为它们以性别的某种固定取值为条件
 It is important to mention at this point that we in no way attribute causality or interpretation to the difference in the conditional expectation of log wages between men and women	需要提到的重要一点的是，我们绝不会将因果关系或解释归因于男女之间对数工资的条件期望的差异
 There are multiple potential explanations	有多种可能的解释
 As the two densities in Figure 2.2(a) appear similar, a hasty inference might be that there is not a meaningful difference between the wage distributions of men and women	由于图 2.2(a) 中的两个密度看起来相似，认为男性和女性的工资分布之间没有显著的差异是一种草率的推测
@@ -160,7 +160,7 @@ We can see that the distribution of wages shifts to the right and becomes more d
 This definition (2.6) is appropriate when the conditional density (2.5) is well defined	当条件密度（2.5）定义明确时，这个定义（2.6）是合理的
 Law of Iterated Expectations	迭代期望定理
 An extremely useful tool from probability theory is the law of iterated expectations	概率论中一个非常有用的工具是迭代期望定理
-This states that the expectation of the conditional expectation is the unconditional expectation	这表明有条件期望的期望是无条件期望
+This states that the expectation of the conditional expectation is the unconditional expectation	这表明条件期望的期望是无条件期望
 Going back to our investigation of average log wages for men and women, the simple law states that	回到我们对男性和女性平均对数工资的考察，简单的定理表明：
 The general law of iterated expectations allows two sets of conditioning variables	广义迭代期望定理允许两组条件变量
 Theorem 2.2 Law of Iterated Expectations	定理 2.2 迭代期望定理
@@ -487,10 +487,10 @@ Leverage Values	杠杆价值
 They appear frequently in the algebraic and statistical analysis of least squares regression, including leave-one-out regression, influential observations, robust covariance matrix estimation, and cross-validation	它们经常出现在最小二乘回归的代数和统计分析中，包括留一法回归、有影响观测、稳健协方差矩阵估计和交叉验证
 A few properties of the leverage values are now listed	现在列出了杠杆值的一些特征
 It is common to say that a regression design is balanced when the leverage values are all roughly equal to one another	通常说，当杠杆值都大致相等时，回归设计是平衡的
-An example of complete balance is when the regressors are all orthogonal dummy variables, each of which have equal occurrance of 0's and 1's	完全平衡的一个例子是，当回归变量都是正交虚拟变量时，每个变量都有相同的 0 和 1 出现
+An example of complete balance is when the regressors are all orthogonal dummy variables, each of which have equal occurrance of 0's and 1's	完全平衡的一个例子是，当自变量都是正交虚拟变量时，每个变量都有相同的 0 和 1 出现
 A regression design is unbalanced if some leverage values are highly unequal from the others	如果某些杠杆值与其他杠杆值高度不相等，则回归设计是不平衡的
 An example where this occurs is when there is a dummy regressor which takes the value 1 for only one observation in the sample	发生这种情况的一个示例是，当有一个虚拟自变量仅对样本中的一个观测值取值为 1 时
-The maximal leverage value (3.41) will change depending on the choice of regressors	最大杠杆值 (3.41) 将根据回归变量的选择而变化
+The maximal leverage value (3.41) will change depending on the choice of regressors	最大杠杆值 (3.41) 将根据自变量的选择而变化
 Some inference procedures (such as robust covariance matrix estimation and cross-validation) are sensitive to high leverage values	一些推断过程（例如稳健的协方差矩阵估计和交叉验证）对高杠杆值很敏感
 We will return to these issues later	我们稍后会回到这些问题
 We now prove Theorem 3.6	我们现在证明定理 3.6
@@ -537,7 +537,7 @@ If any of these warnings or error messages appear, the correct response is to st
 It is the researcher's job to understand the underlying cause and enact a suitable remedy	研究人员的工作是了解根本原因并制定合适的补救措施
 There is also a possibility that the statistical package will not detect and report the matrix singularity	统计包也有可能不会检测和报告矩阵奇异性
 It is therefore recommended that you perform a numerical check for matrix singularity when using explicit matrix operations in MATLAB	因此，建议你在 MATLAB 中使用显式矩阵运算时对矩阵奇异性进行数值检查
-Ill-conditioned regressors have the potential problem that the numerical results (the reported coefficient estimates) will be inaccurate	病态回归变量存在数值结果（报告的系数估计）不准确的潜在问题
+Ill-conditioned regressors have the potential problem that the numerical results (the reported coefficient estimates) will be inaccurate	病态自变量存在数值结果（报告的系数估计）不准确的潜在问题
 Nevertheless, we should try and avoid ill-conditioned regressions whenever possible	然而，我们应该尽可能避免病态回归
 There are strategies which can reduce or even eliminate ill-conditioning	有一些策略可以减少甚至消除不良条件
 This is often sufficient for applications	这对于应用程序来说通常是足够的
@@ -558,7 +558,7 @@ Least Squares Regression	最小二乘回归
 In this chapter we investigate some finite-sample properties of the least squares estimator in the linear regression model	在本章中，我们研究线性回归模型中最小二乘估计量的一些有限样本特征
 In particular we calculate its finite-sample expectation and covariance matrix and propose standard errors for the coefficient estimators	特别是，我们计算其有限样本期望和协方差矩阵，并提出系数估计量的标准误差
 Random Sampling	随机抽样
-To derive the finitesample properties of the estimators we will need to additionally specify the dependence structure across the observations	为了导出估计量的有限样本特征，我们需要另外指定观测值之间的依赖结构
+To derive the finitesample properties of the estimators we will need to additionally specify the dependence structure across the observations	为了导出估计量的有限样本特征，我们需要另外设定观测值之间的依赖结构
 The simplest context is when the observations are mutually independent in which case we say that they are independent and identically distributed or i.i.d	最简单的情况是观测值相互独立，在这种情况下，我们说它们是独立同分布的或独立同分布的
 That is, if you randomly sample 1000 people from a large country such as the United States it seems reasonable to model their responses as mutually independent	也就是说，如果你从美国等大国随机抽取 1000 人样本，那么将他们的回答建模为相互独立似乎是合理的
 This assumption may be violated if individuals in the sample are connected in some way, for example if they are neighbors, members of the same village, classmates at a school, or even firms within a specific industry	如果样本中的个体以某种方式存在联系，例如，如果他们是邻居、同村成员、学校同学，甚至是特定行业内的公司，则可能会违反这一假设
@@ -704,7 +704,7 @@ For their analysis the authors restricted attention to the 121 schools which ini
 and using cluster notation as	并使用群组符号记为
 The standard clustering assumption is that the clusters are known to the researcher and that the observations are independent across clusters	标准的群组假设是研究人员已知群组并且观测结果在群组之间是独立的
 In our example clusters are schools	在我们的示例中，群组是学校
-This is the same as assuming that the individual errors are conditionally mean zero	这与假设各个误差有条件均值为零相同
+This is the same as assuming that the individual errors are conditionally mean zero	这与假设各个误差条件均值为零相同
 In the regression (4.46) the conditional expectation is necessarily linear and satisfies (4.50) since the	在回归（4.46）中，条件期望必然是线性的并且满足（4.50），因为
 Given (4.50) we can calculate the expectation of the OLS estimator	给定 (4.50)，我们可以计算 OLS 估计量的期望
 The first equality holds by linearity, the second by Assumption 4.4, and the third by (4.50)	第一个等式确保线性性成立，第二个等式依据假设 4.4 成立，第三个等式依据 (4.50) 成立
@@ -1338,7 +1338,7 @@ The (conditional) variance of the bootstrap sample mean is	自助样本均值的
 The moments (10.14) are exact, not approximations	矩 (10.14) 是精确的，而不是近似值
 Bootstrap Asymptotics	自助渐进
 Indeed, this is the case, but we have to be a bit careful since the bootstrap mean has a conditional distribution (given the data) so we need to define convergence in probability for conditional distributions	确实如此，但我们必须小心一点，因为自助均值具有条件分布（给定数据），因此我们需要定义条件概率收敛
-Note that there are two uses of probability - both unconditional and conditional	请注意，概率有两种用法：无条件概率和有条件概率
+Note that there are two uses of probability - both unconditional and conditional	请注意，概率有两种用法：无条件概率和条件概率
 Our label "convergence in bootstrap probability" is a bit unusual	我们的称谓“自助概率收敛”有点不寻常
 We do not use this concept in this chapter as it is an unnecessary complication	我们在本章中不使用这个概念，因为它是不必要的复杂化
 The following may seem obvious but it is useful to state for clarity	以下内容可能看起来很明显，但为了清楚起见，进行说明很有用
@@ -1501,78 +1501,78 @@ If the number of treated clusters is small this is equivalent to estimation with
 In such cases inference should proceed cautiously	在这种情况下，应该谨慎进行推断
 In this example the asymptotic, jackknife, and cluster bootstrap standard errors are identical, which reflects the good balance of this particular regression design	在此示例中，渐近、折刀和群组自助标准误差是相同的，这反映了该特定回归设计的良好平衡
 Table 10.4: Comparison of Methods for Estimate of Effect of Tracking	表 10.4：跟踪效果估计方法的比较
-Some of the asymptotic results are facilitated by the following convergence result	以下收敛结果促进了一些渐近结果
+Some of the asymptotic results are facilitated by the following convergence result	以下收敛结果促成了一些渐近结果
 This argument can be extended to vector-valued means and estimates	这个论点可以扩展到向量值均值和估计
-The vector case follows by element-by-element expansion	向量情况遵循逐元素扩展
+The vector case follows by element-by-element expansion	向量情形遵循元素扩展
 Now take the second term in (10.37)	现在取 (10.37) 中的第二项
 Multivariate Regression	多元回归
 Multivariate regression is a system of regression equations	多元回归是一个回归方程组
-Multivariate regression is used as reduced form models for instrumental variable estimation (Chaper 12), vector autoregressions (Chapter 15), demand systems (demand for multiple goods), and other contexts	多元回归用作工具变量估计（第 12 章）、向量自回归（第 15 章）、需求系统（多种商品的需求）和其他背景的简化形式模型
+Multivariate regression is used as reduced form models for instrumental variable estimation (Chaper 12), vector autoregressions (Chapter 15), demand systems (demand for multiple goods), and other contexts	多元回归用作工具变量估计（第 12 章）、向量自回归（第 15 章）、需求系统（多种商品的需求）和其他背景的精简形式模型
 Multivariate regression is also called by the name systems of regression equations	多元回归也称为回归方程系统
-Closely related is the method of Seemingly Unrelated Regressions (SUR) introduced in Section 11.7	密切相关的是第 11.7 节中介绍的看似无关回归 (SUR) 方法
+Closely related is the method of Seemingly Unrelated Regressions (SUR) introduced in Section 11.7	密切相关的是第 11.7 节中介绍的似无关回归 (SUR) 方法
 Most of the tools of single equation regression generalize to multivariate regression	大多数单方程回归工具都可以推广到多元回归
-A major difference is a new set of notation to handle matrix estimators	主要区别是处理矩阵估计量的一组新符号
+A major difference is a new set of notation to handle matrix estimators	主要区别是一组新符号以处理矩阵估计量
 Regression Systems	回归系统
-Another convenient implication of common regressors is that we have the simplification	常见自变量的另一个方便的含义是我们可以简化
+Another convenient implication of common regressors is that we have the simplification	共用自变量的另一个便利之处在于我们可以简化过程
 The equations (11.1) can be estimated by least squares	方程(11.1)可以通过最小二乘法来估计
 We can alternatively write this estimator using the systems notation	我们也可以使用系统符号来编写这个估计量
 To see this, observe that	要看到这一点，请查看
-In the case of common regressors, the least squares coefficients can be written as	对于常见自变量，最小二乘系数可以写为
-In Stata, multivariate regression can be implemented using the mvreg command	在Stata中，可以使用mvreg命令实现多元回归
+In the case of common regressors, the least squares coefficients can be written as	对于共用自变量，最小二乘系数可以写为
+In Stata, multivariate regression can be implemented using the mvreg command	在Stata中，可以使用 mvreg 命令实现多元回归
 Expectation and Variance of Systems Least Squares	系统最小二乘法的期望和方差
 We can center the estimator as	我们可以将估计量集中为
-Consequently, systems least squares is unbiased under correct specification	因此，系统最小二乘法在正确的设定下是无偏的
+Consequently, systems least squares is unbiased under correct specification	因此，系统最小二乘法在正确设定下是无偏的
 Also, by independence across observations,	此外，通过观测的独立性，
-If the errors are conditionally homoskedastic	如果误差是有条件同方差的
+If the errors are conditionally homoskedastic	如果误差是条件同方差的
 then the covariance matrix simplifies to	那么协方差矩阵简化为
-If both simplifications (common regressors and conditional homoskedasticity) hold then we have the considerable simplication	如果两种简化（常见自变量和条件同方差）都成立，那么我们就有相当大的简化
+If both simplifications (common regressors and conditional homoskedasticity) hold then we have the considerable simplication	如果两种简化（共用自变量和条件同方差）都成立，那么我们就有相当大的简化
 For an asymptotic distribution it is sufficient to consider the equation-by-equation projection model in which case	对于渐近分布，考虑逐个方程的投影模型就足够了，在这种情况下
 Second, consider the asymptotic distribution	其次，考虑渐近分布
 Applied to the centered and normalized estimator we obtain the asymptotic distribution	应用于中心化和标准化的估计量，我们得到渐近分布
 For a proof, see Exercise 11.4	证明请参见练习 11.4
-If both the regressors are common and the errors are conditionally homoskedastic (11.8) then we have the simplification	如果两个自变量都是常见的并且误差是有条件同方差的 (11.8)，那么我们可以进行简化
+If both the regressors are common and the errors are conditionally homoskedastic (11.8) then we have the simplification	如果两个自变量都是共用的并且误差是条件同方差的 (11.8)，那么我们可以进行简化
 For a proof, see Exercise 11.7	证明请参见练习 11.7
 We can thereby construct standard errors, confidence intervals, and hypothesis tests	因此，我们可以构建标准误差、置信区间和假设检验
 Covariance Matrix Estimation	协方差矩阵估计
-Under conditional homoskedasticity (11.8) an appropriate estimator is	在条件同方差 (11.8) 下，适当的估计量是
-When the regressors are common then these estimators equal	当自变量很常见时，这些估计量就等于
+Under conditional homoskedasticity (11.8) an appropriate estimator is	在条件同方差 (11.8) 下，合理的估计量是
+When the regressors are common then these estimators equal	当自变量共用时，这些估计量就等于
 For a proof, see Exercise 11.8	证明请参见练习 11.8
-Seemingly Unrelated Regression	看似无关的回归
+Seemingly Unrelated Regression	似无关回归
 Consider the systems regression model under the conditional expectation and homoskedasticity assumptions	考虑条件期望和同方差假设下的系统回归模型
 Since the errors are correlated across equations we consider estimation by Generalized Least Squares (GLS)	由于误差在方程之间是相关的，我们考虑通过广义最小二乘法 (GLS) 进行估计
-This is the Seemingly Unrelated Regression (SUR) estimator as introduced by Zellner (1962)	这是 Zellner (1962) 引入的看似无关回归 (SUR) 估计量
+This is the Seemingly Unrelated Regression (SUR) estimator as introduced by Zellner (1962)	这是 Zellner (1962) 引入的似无关回归 (SUR) 估计量
 This can be iterated until convergence	这可以迭代直到收敛
 Under conditional homoskedasticity (11.8) we can derive its asymptotic distribution	在条件同方差（11.8）下我们可以推导出它的渐近分布
 For a proof, see Exercise 11.11	证明请参见练习 11.11
 Under these assumptions, SUR is more efficient than least squares	在这些假设下，SUR 比最小二乘法更有效
 For a proof, see Exercise 11.12	证明请参见练习 11.12
 For a proof, see Exercise 11.13	证明请参见练习 11.13
-In Stata, the seemingly unrelated regressions estimator is implemented using the sureg command	在Stata中，看似无关的回归估计量是使用sureg命令实现的
-Equivalence of SUR and Least Squares	SUR 和最小二乘法的等价
-A model where regressors are not common across equations is nested within a model with the union of all regressors included in all equations	自变量在方程中不常见的模型嵌套在模型中，并且所有方程中都包含所有自变量的并集
+In Stata, the seemingly unrelated regressions estimator is implemented using the sureg command	在Stata中，似无关回归估计量是使用 sureg 命令实现的
+Equivalence of SUR and Least Squares	SUR 和最小二乘法等价性
+A model where regressors are not common across equations is nested within a model with the union of all regressors included in all equations	在方程中不共用的自变量嵌套在模型中，并且所有方程中都包含所有自变量的并集
 Thus the above result shows that the SUR estimator reduces to least squares in the absence of restrictions, but SUR can differ from least squares otherwise	因此，上述结果表明，在没有约束的情况下，SUR 估计量可简化为最小二乘，但在其他情况下，SUR 可能与最小二乘不同
 Maximum Likelihood Estimator	极大似然估计量
-Take the linear model under the assumption that the error is independent of the regressors and multivariate normally distributed	假设误差独立于回归变量且呈多元正态分布，采用线性模型
+Take the linear model under the assumption that the error is independent of the regressors and multivariate normally distributed	假设误差独立于自变量且呈多元正态分布，采用线性模型
 In this case we can consider the maximum likelihood estimator (MLE) of the coefficients	在这种情况下，我们可以考虑系数的极大似然估计（MLE）
 The log-likelihood function for the sample is	样本的对数似然函数为
-Notice that each equation refers to the other	请注意，每个方程都引用另一个方程
-Thus the iterated SUR estimator is identical to MLE under normality	因此，迭代 SUR 估计量与正态状态下的 MLE 相同
-Recall that the SUR estimator simplifies to OLS when the regressors are common across equations	回想一下，当自变量在方程中通用时，SUR 估计量会简化为 OLS
+Notice that each equation refers to the other	请注意，每个方程都牵涉到其他方程
+Thus the iterated SUR estimator is identical to MLE under normality	因此，迭代 SUR 估计量与正态情况下的 MLE 相同
+Recall that the SUR estimator simplifies to OLS when the regressors are common across equations	回想一下，当自变量在方程中共用时，SUR 估计量会简化为 OLS
 In many multivariate regression applications it is desired to impose restrictions on the coefficients	在许多多元回归应用中，需要对系数施加约束
 Estimation subject to restrictions can be done by minimum distance, maximum likelihood, or the generalized method of moments	受到约束的估计可以通过最小距离、极大似然或广义矩法来完成
 Minimum distance is a straightforward application of the methods of Chapter 8 to the estimators presented in this chapter, as such methods apply to any asymptotically normal estimator	最小距离是第 8 章方法对本章介绍的估计量的直接应用，因为此类方法适用于任何渐近正态估计量
 Imposing restrictions on maximum likelihood is also straightforward	对极大似然施加约束也很简单
 One important example is explored in detail in the following section	下一节将详细探讨一个重要的示例
-Generalized method of moments estimation of multivariate regression subject to restrictions will be explored in Section 13.18	受约束的多元回归矩估计的广义方法将在 13.18 节中探讨
+Generalized method of moments estimation of multivariate regression subject to restrictions will be explored in Section 13.18	受约束多元回归矩估计的广义方法将在 13.18 节中探讨
 This is a particularly simple and straightforward way to estimate restricted multivariate regression models and is our generally preferred approach	这是估计受限多元回归模型的一种特别简单直接的方法，也是我们通常首选的方法
-Reduced Rank Regression	降阶回归
+Reduced Rank Regression	降秩回归
 One context where systems estimation is important is when it is desired to impose or test restrictions across equations	系统估计很重要的一种情况是当需要对方程施加或检验约束时
 The model was originally proposed by Anderson (1951) and extended by Johansen (1995)	该模型最初由 Anderson (1951) 提出，并由 Johansen (1995) 扩展
 This turns out to be algebraically cumbersome	事实证明，这在代数上是很麻烦的
-Johansen (1995) instead proposed the following straightforward concentration method	Johansen (1995) 相反提出了以下简单的浓缩方法
+Johansen (1995) instead proposed the following straightforward concentration method	Johansen (1995) 相反提出了以下直观的精简方法
 We now describe these steps in detail	我们现在详细描述这些步骤
 The third equality uses Theorem A.1.8	第三个等式使用定理A.1.8
-An R package for reduced rank regression is "RRR"	用于降阶回归的 R 包是“RRR”
+An R package for reduced rank regression is "RRR"	用于降秩回归的 R 包是“RRR”
 I am unaware of a Stata command	我不知道 Stata 命令
 Principal Component Analysis	主成分分析
 Principal component analysis (PCA) addresses this issue by ordering linear combinations by their contribution to variance	主成分分析 (PCA) 通过按线性组合对方差的贡献对线性组合进行排序来解决此问题
@@ -1580,8 +1580,8 @@ Another way to see the PCA construction is as follows	查看 PCA 构造的另一
 The sample principal components are obtained by replacing the unknowns by sample estimators	样本主成分是通过用样本估计量替换未知数来获得的
 To illustrate we use the Duflo, Dupas, and Kremer (2011) dataset	为了说明这一点，我们使用 Duflo、Dupas 和 Kremer (2011) 数据集
 Table 11.2: Principal Component Weight Vectors	表 11.2：主成分权重向量
-principal component is similar to a simple average of the seven test scores	主成分类似于七个检验分数的简单平均值
-In Stata, principal components analysis can be implemented with the pca command	在Stata中，主成分分析可以通过pca命令实现
+principal component is similar to a simple average of the seven test scores	主成分类似于七个检验得分的简单平均值
+In Stata, principal components analysis can be implemented with the pca command	在Stata中，主成分分析可以通过 pca 命令实现
 The R commands by default do not normalize the observations	默认情况下，R 命令不会对观测值进行归一化
 Factor Models	因子模型
 Closely related to principal components are factor models	与主成分密切相关的是因子模型
@@ -1590,13 +1590,13 @@ The former is the portion of the variance which is explained by the factor model
 A detailed description and analysis can be found in Anderson (2003, Chapter 14)	详细的描述和分析可以在Anderson (2003, Chapter 14) 中找到
 The form of the log-likelihood is intriguing	对数似然的形式很有趣
 It is therefore not reliant on the normality assumption	因此，它不依赖于正态性假设
-Thus based on estimation precision this is our recommended choice	因此，根据估计精度，这是我们推荐的选择
-Consequently it is unwise to attribute meaning to the individual factor loading estimates	因此，将意义赋予单个因子载荷估计是不明智的
+Thus based on estimation precision this is our recommended choice	因此，基于估计精度，这是我们推荐的选择
+Consequently it is unwise to attribute meaning to the individual factor loading estimates	因此，将含义赋予单个因子载荷估计是不明智的
 Approximate Factor Models	近似因子模型
-In this context the Gaussian MLE of the previous section is misspecified	在这种情况下，上一节的高斯 MLE 被错误指定
-Chamberlain and Rothschild (and the literature which followed) proposed estimation by least squares	张伯伦和罗斯柴尔德（以及随后的文献）提出了最小二乘估计
+In this context the Gaussian MLE of the previous section is misspecified	在这种情况下，上一节的高斯 MLE 被错误设定
+Chamberlain and Rothschild (and the literature which followed) proposed estimation by least squares	Chamberlain 和 Rothschild（以及随后的文献）提出了最小二乘估计
 We first describe the estimation method	我们首先描述估计方法
-We use a concentration argument to find the solution	我们使用浓度论证来找到解决方案
+We use a concentration argument to find the solution	我们使用聚合度来找到解决方案
 which is the desired normalization	这是所需的标准化
 We have proven the following result	我们证明了以下结果
 This is computationally stable even in high dimensions	即使在高维度下，这在计算上也是稳定的
@@ -1604,90 +1604,90 @@ Consequently many authors call this estimator the "principalcomponent method"	�
 This inconsistency should not be viewed as surprising	这种不一致不应被视为令人惊讶
 Since the number of estimated pararameters is proportional to sample size we should not expect estimator consistency	由于估计参数的数量与样本大小成正比，我们不应该期望估计量的一致性
 To make this precise we add the following assumption	为了使这一点更加精确，我们添加以下假设
-Assumption 11.1.1 bounds the covariance matrix of the idiosyncratic errors	假设 11.1.1 约束了特殊误差的协方差矩阵
+Assumption 11.1.1 bounds the covariance matrix of the idiosyncratic errors	假设 11.1.1 约束特殊误差的协方差矩阵
 Conceptually, Assumption 11.1.2 requires additional variables to add information about the unobserved factors	从概念上讲，假设 11.1.2 需要额外的变量来添加有关不可观察因素的信息
 The conditions and proofs are technical so are not reviewed here	条件和证明是技术性的，因此这里不进行讨论
 Now consider the estimated factors	现在考虑估计因素
 where for simplicity we ignore estimation error	为简单起见，我们忽略估计误差
-Factor Models with Additional Regressors	具有附加自变量的因子模型
+Factor Models with Additional Regressors	具有额外自变量的因子模型
 Estimation iterates between these two steps	估计在这两个步骤之间迭代
 Then apply the above two steps and iterate under convergence	然后应用上述两个步骤并在收敛下迭代
 Factor-Augmented Regression	因子增强回归
 In the previous sections we considered factor models which decompose a set of variables into common factors and idiosyncratic errors	在前面的部分中，我们考虑了将一组变量分解为公共因子和特殊误差的因子模型
-In this section we consider factor-augmented regression, which uses such common factors as regressors for dimension reduction	在本节中，我们考虑因子增强回归，它使用常见因子作为自变量来降维
+In this section we consider factor-augmented regression, which uses such common factors as regressors for dimension reduction	在本节中，我们考虑因子增强回归，它使用公共因子作为自变量来降维
 Now let's investigate its asymptotic behavior	现在让我们研究它的渐近行为
 We find that the right-hand-side of (11.26) equals	我们发现 (11.26) 的右边等于
 In Stata, estimation takes the following steps	在 Stata 中，估计采取以下步骤
-Third, the factors are treated as regressors in an estimated regression	第三，这些因素在估计回归中被视为自变量
+Third, the factors are treated as regressors in an estimated regression	第三，这些因子在估计回归中被视为自变量
 Multivariate Normal	多元正态
 Some interesting sampling results hold for matrix-valued normal variates	一些有趣的抽样结果适用于矩阵值正态变量
 The Wishart is a multivariate generalization of the chi-square	Wishart 是卡方的多元推广
 The Wishart arises as the exact distribution of a sample covariance matrix in the normal sampling model	Wishart 是正态抽样模型中样本协方差矩阵的精确分布
 The following manipulation is useful	以下操作很有用
-This establishes the stated result	这确定了所陈述的结果
-Since the two chi-square variables are independent, this is the stated result	由于两个卡方变量是独立的，因此这是规定的结果
+This establishes the stated result	这确立了所陈述的结果
+Since the two chi-square variables are independent, this is the stated result	由于两个卡方变量是独立的，因此这正是所声明过的结果
 Instrumental Variables	工具变量
 The concepts of endogeneity and instrumental variable are fundamental to econometrics, and mark a substantial departure from other branches of statistics	内生性和工具变量的概念是计量经济学的基础，并且标志着与统计学其他分支的重大区别
 The ideas of endogeneity arise naturally in economics from models of simultaneous equations, most notably the classic supply/demand model of price determination	内生性的思想在经济学中自然地从联立方程模型中产生，最著名的是价格决定的经典供需模型
-The identification problem in simultaneous equations dates back to Philip Wright (1915) and Working (1927)	联立方程中的辨识问题可以追溯到 Philip Wright (1915) 和 Work (1927)
+The identification problem in simultaneous equations dates back to Philip Wright (1915) and Working (1927)	联立方程中的识别问题可以追溯到 Philip Wright (1915) 和 Work (1927)
 An excellent review of the history of instrumental variables is Stock and Trebbi (2003)	Stock 和 Trebbi (2003) 对工具变量的历史进行了精彩的回顾
 Overview	概述
 We say that there is endogeneity in the linear model	我们说线性模型存在内生性
 This is a core problem in econometrics and largely differentiates the field from statistics	这是计量经济学的核心问题，并且在很大程度上将该领域与统计学区分开来
-Endogeneity cannot happen if the coefficient is defined by linear projection	如果系数由线性投影定义，则不会发生内生性
+Endogeneity cannot happen if the coefficient is defined by linear projection	如果系数由线性投影定义，则不会产生内生性
 Thus endogeneity requires that the coefficient be defined differently than projection	因此，内生性要求系数的定义与投影不同
 We will present three examples in the following section	我们将在下一节中展示三个示例
 Endogeneity implies that the least squares estimator is inconsistent for the structural parameter	内生性意味着最小二乘估计量对于结构参数是不一致的
-sampling, least squares is consistent for the projection coefficient	事实上，根据 i.i.d.抽样，最小二乘对于投影系数是一致的
+least squares is consistent for the projection coefficient	最小二乘对于投影系数是一致的
 The inconsistency of least squares is typically referred to as endogeneity bias or estimation bias due to endogeneity	最小二乘法的不一致通常被称为内生性偏误或内生性导致的估计偏误
-This is an imperfect label as the actual issue is inconsistency, not bias	这是一个不完美的标签，因为实际问题是不一致，而不是偏见
+This is an imperfect label as the actual issue is inconsistency, not bias	这是一个不完美的标签，因为实际问题是不一致，而不是偏误
 We discuss those in later sections	我们将在后面的部分中讨论这些内容
 Examples	案例
 The concept of endogeneity may be easiest to understand by example	通过案例可能最容易理解内生性的概念
-Example: Measurement error in the regressor	示例：自变量中的测量误差
+Example: Measurement error in the regressor	案例：自变量中的测量误差
 This is an example of a latent variable model, where "latent" refers to an unobserved structural variable	这是潜在变量模型的示例，其中“潜在”指的是未观察到的结构变量
 We can calculate the form of the projection coefficient (which is consistently estimated by least squares)	我们可以计算出投影系数的形式（一致地通过最小二乘估计）
 This is called measurement error bias or attenuation bias	这称为测量误差偏误或衰减偏误
 To illustrate, Figure 12.1(a) displays the impact of measurement error on the regression line	为了说明这一点，图 12.1(a) 显示了测量误差对回归线的影响
 This is the attenuation bias due to measurement error	这是由于测量误差引起的衰减偏误
 Figure 12.1: Examples of Endogeneity	图 12.1：内生性示例
-Generally, when both the dependent variable and a regressor are simultaneously determined then the regressor should be treated as endogenous	一般来说，当同时确定因变量和回归变量时，则应将回归变量视为内生变量
+Generally, when both the dependent variable and a regressor are simultaneously determined then the regressor should be treated as endogenous	一般来说，当同时确定因变量和自变量时，则应将自变量视为内生变量
 This is endogeneity bias due to simultaneity	这是由于同时性而产生的内生性偏误
 Example: Choice Variables as Regressors	示例：选择变量作为自变量
 Thus least squares (which is estimating the projection coefficient) will tend to over-estimate the causal effect of education on wages	因此，最小二乘法（估计投影系数）往往会高估教育对工资的因果影响
-Generally, when both the dependent variable and a regressor are choice variables made by the same agent, the variables should be treated as endogenous	一般来说，当因变量和回归变量都是同一主体做出的选择变量时，这些变量应被视为内生变量
+Generally, when both the dependent variable and a regressor are choice variables made by the same agent, the variables should be treated as endogenous	一般来说，当因变量和自变量都是同一主体做出的选择变量时，这些变量应被视为内生变量
 The plotted regression line has a larger slope, as it adds the endogeneity bias due to the fact that education is a choice variable	绘制的回归线具有较大的斜率，因为由于教育是一个选择变量，它增加了内生性偏误
-Endogenous Regressors	内生回归因子
-We have defined endogeneity as the context where a regressor is correlated with the equation error	我们将内生性定义为自变量与方程误差相关的背景
+Endogenous Regressors	内生自变量
+We have defined endogeneity as the context where a regressor is correlated with the equation error	我们将内生性定义为自变量与方程误差相关的情形
 In most applications only a subset of the regressors are treated as endogenous	在大多数应用中，只有一部分自变量被视为内生的
 An alternative notation is as follows	另一种表示法如下
 This is especially useful so that the notation clarifies which variables are endogenous and which exogenous	这特别有用，因为符号可以阐明哪些变量是内生的，哪些是外生的
 The assumptions regarding the regressors and regression error are	关于自变量和回归误差的假设是
-Instruments	仪器
+Instruments	工具
 One type of information which is commonly used in economic applications are what we call instruments	经济应用中常用的一类信息就是我们所说的工具
 There are three components to the definition as given	给出的定义包含三个组成部分
 Let's take the three examples given above	我们以上面给出的三个案例为例
 Measurement error in the regressor	自变量中的测量误差
 Variables which affect supply but not demand are typically related to production costs	影响供给但不影响需求的变量通常与生产成本有关
-An appropriate instrument for price in a supply equation is a variable which influences demand but not supply	供给方程中合适的价格工具是影响需求但不影响供给的变量
+An appropriate instrument for price in a supply equation is a variable which influences demand but not supply	供给方程中价格的合适工具是影响需求但不影响供给的变量
 Such a variable affects the equilibrium values of price and quantity but only affects price through quantity	这种变量影响价格和数量的均衡值，但仅通过数量影响价格
 We will discuss an example in the next section	我们将在下一节中讨论一个案例
-Example: College Proximity	示例：大学邻近度
+Example: College Proximity	示例：大学邻近
 In a influential paper David Card (1995) suggested if a potential student lives close to a college this reduces the cost of attendence and thereby raises the likelihood that the student will attend college	David Card（1995）在一篇有影响力的论文中提出，如果潜在学生住在大学附近，就可以降低就读成本，从而提高学生上大学的可能性
-We use the simplest model reported in Card's paper to illustrate the concepts of instrumental variables throughout the chapter	我们使用卡德论文中报告的最简单的模型来说明本章中工具变量的概念
-Card used data from the National Longitudinal Survey of Young Men (NLSYM) for 1976	卡德使用了 1976 年全国青年纵向调查 (NLSYM) 的数据
+We use the simplest model reported in Card's paper to illustrate the concepts of instrumental variables throughout the chapter	我们使用 Card 论文中报告的最简单的模型来说明本章中工具变量的概念
+Card used data from the National Longitudinal Survey of Young Men (NLSYM) for 1976	Card 使用了 1976 年全国青年纵向调查 (NLSYM) 的数据
 Table 12.1: Instrumental Variable Wage Regressions	表 12.1：工具变量工资回归
 As discussed in the previous sections it is reasonable to view years of education as a choice made by an individual and thus is likely endogenous for the structural return to education	正如前面几节所讨论的，将受教育年限视为个体做出的选择是合理的，因此教育的结构性回报可能是内生的
-However, the sign of the bias is uncertain because there are multiple regressors and there are other potential sources of endogeneity	然而，偏误的符号是不确定的，因为存在多个回归变量并且存在其他潜在的内生性来源
-To instrument for the endogeneity of education, Card suggested that a reasonable instrument is a dummy variable indicating if the individual grew up near a college	为了衡量教育的内生性，卡德建议合理的工具是一个虚拟变量，表明个体是否在大学附近长大
-college Grew up in same county as a 4-year college	大学 在同一县长大，读四年制大学
-public Grew up in same county as a 4-year public college	公立 在同一县长大，就读 4 年制公立大学
-private Grew up in same county as a 4-year private college	私立 在同一县长大，就读四年制私立大学
-Reduced Form	简化形式
+However, the sign of the bias is uncertain because there are multiple regressors and there are other potential sources of endogeneity	然而，偏误的符号是不确定的，因为存在多个自变量并且存在其他潜在的内生性来源
+To instrument for the endogeneity of education, Card suggested that a reasonable instrument is a dummy variable indicating if the individual grew up near a college	为了衡量教育的内生性， Card 建议合理的工具是一个虚拟变量，表明个体是否在大学附近长大
+college Grew up in same county as a 4-year college	college 在同一县长大，读四年制大学
+public Grew up in same county as a 4-year public college	public 在同一县长大，就读 4 年制公立大学
+private Grew up in same county as a 4-year private college	private 在同一县长大，就读四年制私立大学
+Reduced Form	精简形式
 This is a multivariate regression as introduced in Chapter 11	这是第 11 章中介绍的多元回归
 The projection coefficient (12.11) is well defined and unique under (12.6)	投影系数 (12.11) 在 (12.6) 下定义明确且唯一
-Together, the reduced form equations for the system are	总而言之，系统的简化形式方程为
-The reduced form equations are projections so the coefficients may be estimated by least squares (see Chapter 11)	简化形式的方程是投影，因此可以通过最小二乘法来估计系数（参见第 11 章）
+Together, the reduced form equations for the system are	总而言之，系统的精简形式方程为
+The reduced form equations are projections so the coefficients may be estimated by least squares (see Chapter 11)	精简形式的方程是投影，因此可以通过最小二乘法来估计系数（参见第 11 章）
 A parameter is identified if it is a unique function of the probability distribution of the observables	如果参数是可观测量概率分布的唯一函数，则该参数被识别
 If (12.22) fails then (12.16) has fewer equations than coefficients so there is not a unique solution	如果 (12.22) 失败，则 (12.16) 的方程数少于系数，因此不存在唯一解
 which was listed in (12.7) as a condition of Definition 12.1. (Indeed, this is why it was listed as part of the definition.) We can also see that (12.22) and (12.23) are equivalent ways of expressing the same requirement	作为定义 12.1 的条件列在 (12.7) 中
@@ -1695,36 +1695,36 @@ The condition (12.22)-(12.23) is called the relevance condition	条件(12.22)-(1
 Instrumental Variables Estimator	工具变量估计量
 We see that this equals the IV estimator (12.24)	我们看到这等于 IV 估计量 (12.24)
 Thus the ILS and IV estimators are identical	因此 ILS 和 IV 估计量是相同的
-To illustrate IV regression we estimate the reduced form equations, treating education as endogenous and using college as an instrumental variable	为了说明 IV 回归，我们估计了简化形式的方程，将教育视为内生的，并使用大学作为工具变量
-Of particular interest is the equation for the endogenous regressor education, and the coefficients for the excluded instruments - in this case college	特别令人感兴趣的是内生回归教育的方程，以及排除工具（在本例中为大学）的系数
-This seems to be a reasonable magnitude	这似乎是一个合理的幅度
-Card (1995) also points out that if education is endogenous then so is our measure of experience as it is calculated by subtracting education from age	卡德（1995）还指出，如果教育是内生的，那么我们对经验的衡量也是内生的，因为它是通过年龄减去教育程度来计算的
+To illustrate IV regression we estimate the reduced form equations, treating education as endogenous and using college as an instrumental variable	为了说明 IV 回归，我们估计了精简形式的方程，将 education 视为内生的，并使用 college 作为工具变量
+Of particular interest is the equation for the endogenous regressor education, and the coefficients for the excluded instruments - in this case college	特别令人感兴趣的是内生自变量 education 的方程，以及排除工具（在本例中为 college ）的系数
+This seems to be a reasonable magnitude	这似乎是一个合理的量
+Card (1995) also points out that if education is endogenous then so is our measure of experience as it is calculated by subtracting education from age	Card（1995）还指出，如果教育是内生的，那么我们对经验的衡量也是内生的，因为它是通过年龄减去教育程度来计算的
 Indeed, this is the correct approach	确实，这才是正确的做法
 Following this recommendation we now have three endogenous regressors and three instruments	根据这一建议，我们现在有了三个内生自变量和三个工具
 Hence Assumption (12.22) is not violated	因此不违反假设（12.22）
-The estimate of the returns to schooling is not affected by this change in the instrument set, but the estimated return to experience profile flattens (the quadratic effect diminishes)	学校教育回报的估计不受工具集变化的影响，但经验回报的估计曲线趋于平缓（二次效应减弱）
-The IV estimator may be calculated in Stata using the ivregress 2 sls command	IV 估计量可以在 Stata 中使用 ivregress 2 sls 命令计算
-Demeaned Representation	离差代表
-The orthogonality (12.25) implies the two-equation system	正交性 (12.25) 意味着二元方程组
-Thus the demeaning equations for least squares carry over to the IV estimator	因此，最小二乘的贬义方程会延续到 IV 估计量
+The estimate of the returns to schooling is not affected by this change in the instrument set, but the estimated return to experience profile flattens (the quadratic effect diminishes)	学校教育对回报的估计不受工具集变化的影响，但经验对回报的估计趋于平缓（二次效应减弱）
+The IV estimator may be calculated in Stata using the `ivregress 2sls` command	IV 估计量可以在 Stata 中使用 `ivregress 2sls` 命令计算
+Demeaned Representation	离均表达
+The orthogonality (12.25) implies the two-equation system	正交性 (12.25) 意味着双方程系统
+Thus the demeaning equations for least squares carry over to the IV estimator	因此，最小二乘的离均方程会延后到 IV 估计量
 Wald Estimator	瓦尔德估计量
-In many cases including the Card proximity example the excluded instrument is a binary (dummy) variable	在许多情况下，包括卡邻近示例，排除的工具是二进制（虚拟）变量
-Subtracting and dividing we obtain an expression for the slope coefficient	减去并除以得到斜率系数的表达式
+In many cases including the Card proximity example the excluded instrument is a binary (dummy) variable	在许多情况下，包括 Card 邻近示例，排除的工具是二分类（虚拟）变量
+Subtracting and dividing we obtain an expression for the slope coefficient	减去并相除，我们得到斜率系数的表达式
 This is the "Wald estimator" of Wald (1940)	这就是 Wald (1940) 的“Wald 估计量”
 Equation (12.28) shows that the slope coefficient can be estimated by the ratio of differences in means	方程（12.28）表明斜率系数可以通过均值差之比来估计
 as defined in (12.28)	如（12.28）中所定义
 Thus the Wald estimator equals the IV estimator	因此 Wald 估计量等于 IV 估计量
-We can illustrate using the Card proximity example	我们可以使用卡邻近示例进行说明
+We can illustrate using the Card proximity example	我们可以使用 Card 邻近示例进行说明
 Two-Stage Least Squares	两阶段最小二乘法
 This is called the two-stage-least squares (2SLS) estimator	这称为两阶段最小二乘 (2SLS) 估计量
-It was originally proposed by Theil (1953) and Basmann (1957) and is a standard estimator for linear equations with instruments	它最初由 Theil (1953) 和 Basmann (1957) 提出，是仪器线性方程的标准估计量
+It was originally proposed by Theil (1953) and Basmann (1957) and is a standard estimator for linear equations with instruments	它最初由 Theil (1953) 和 Basmann (1957) 提出，是工具线性方程的标准估计量
 This shows that the 2SLS estimator as defined in (12.29) is a generalization of the IV estimator defined in (12.24)	这表明（12.29）中定义的 2SLS 估计量是（12.24）中定义的 IV 估计量的推广
 There are several alternative representations of the 2SLS estimator which we now describe	我们现在描述的 2SLS 估计量有几种替代表示形式
 we can write the 2SLS estimator more compactly as	我们可以将 2SLS 估计量写得更紧凑：
 This is the source of the "two-stage" name as it can be computed as follows	这是“两阶段”名称的来源，因为它可以按如下方式计算
 A fourth representation of 2SLS can be obtained using the FWL Theorem	2SLS 的第四种表示可以使用 FWL 定理获得
-A fifth representation can be obtained by a further projection	第五表示可以通过进一步的投影来获得
-Returning to Card's college proximity example suppose that we treat experience as exogeneous but that instead of using the single instrument college (grew up near a 4-year college) we use the two instruments (public, private) (grew up near a public/private 4-year college, respectively)	回到卡德的大学邻近度案例，假设我们将经验视为外生的，但我们不使用单一工具大学（在四年制大学附近长大），而是使用两种工具（公立、私立）（在公立/私立大学附近长大）分别为四年制大学）
+A fifth representation can be obtained by a further projection	第五种表示可以通过进一步的投影来获得
+Returning to Card's college proximity example suppose that we treat experience as exogeneous but that instead of using the single instrument `college` (grew up near a 4-year college) we use the two instruments (`public`, `private`) (grew up near a public/private 4-year college, respectively)	回到 Card 的大学邻近度案例，假设我们将经验视为外生的，但我们不使用单一工具 `college`（在四年制大学附近长大），而是使用两种工具（`public`、`private`）（分别在四年制大学公立/私立大学附近长大）
 This indicates that the key impact of proximity on education is via public colleges rather than private colleges	这表明邻近性对教育的主要影响是通过公立大学而不是私立大学
 The 2SLS estimates obtained using these two instruments are presented in the fourth column of Table 12.1	表 12.1 的第四列列出了使用这两种工具获得的 2SLS 估计值
 This is roughly twice as large as the estimate obtained by least squares in the first column	这大约是第一列中通过最小二乘法获得的估计值的两倍
@@ -1784,7 +1784,7 @@ Determinants of 2 SLS Variance	2 SLS 方差的决定因素
 It is instructive to examine the asymptotic variance of the 2SLS estimator to understand the factors which determine the precision (or lack thereof) of the estimator	检查 2SLS 估计量的渐近方差有助于了解决定估计量精度（或缺乏精度）的因素
 We can also use this expression to examine the impact of increasing the instrument set	我们还可以使用这个表达式来检查增加工具集的影响
 Thus the 2SLS estimator with the full instrument set has a smaller asymptotic variance than the estimator with the smaller instrument set	因此，具有完整工具集的 2SLS 估计量比具有较小工具集的估计量具有更小的渐近方差
-What we have shown is that the asymptotic variance of the 2SLS estimator is decreasing as the number of instruments increases	我们已经证明，2SLS 估计量的渐近方差随着仪器数量的增加而减小
+What we have shown is that the asymptotic variance of the 2SLS estimator is decreasing as the number of instruments increases	我们已经证明，2SLS 估计量的渐近方差随着工具数量的增加而减小
 From the viewpoint of asymptotic efficiency this means that it is better to use more instruments (when they are available and are all known to be valid instruments)	从渐近效率的角度来看，这意味着最好使用更多的工具（当它们可用并且都已知是有效的工具时）
 Unfortunately there is a catch	不幸的是，有一个问题
 Thus the choice of instruments in practice induces a trade-off between bias and variance	因此，实践中工具的选择会导致偏误和方差之间的权衡
@@ -1803,7 +1803,7 @@ which means that LIML and 2SLS have the same asymptotic distribution	这意味�
 This holds under the same assumptions as for 2SLS	这在与 2SLS 相同的假设下成立
 Consequently, one method to obtain an asymptotically valid covariance estimator for LIML is to use the 2SLS formula	因此，获得 LIML 渐近有效协方差估计量的一种方法是使用 2SLS 公式
 The estimator (12.42) is a better choice than the 2SLS formula for covariance matrix estimation as it takes advantage of the LIML estimator structure	对于协方差矩阵估计，估计量 (12.42) 是比 2SLS 公式更好的选择，因为它利用了 LIML 估计量结构
-For example, let's take the parameter estimates from the fifth column of Table 12.1, which are the 2SLS estimates with three endogenous regressors and four excluded instruments	例如，我们采用表 12.1 第五列中的参数估计值，它们是具有三个内生回归变量和四个排除工具的 2SLS 估计值
+For example, let's take the parameter estimates from the fifth column of Table 12.1, which are the 2SLS estimates with three endogenous regressors and four excluded instruments	例如，我们采用表 12.1 第五列中的参数估计值，它们是具有三个内生自变量和四个排除工具的 2SLS 估计值
 The large standard error implies that the estimate (73 years of experience) is without precision and is thus uninformative	较大的标准误差意味着该估计（73 年的经验）不精确，因此缺乏信息
 Hypothesis Tests	假设检验
 Thus by examining the joint test in contrast to the individual tests is quite clear that experience has a non-zero effect	因此，通过检查联合检验与单独检验的对比，可以很清楚地看出，经验具有非零效应
@@ -1835,7 +1835,7 @@ The Peril of Bootstrap 2SLS Standard Errors	Bootstrap 2SLS 标准误差的危险
 It is tempting to use the bootstrap algorithm to estimate variance matrices and standard errors for the 2SLS estimator	使用 bootstrap 算法来估计 2SLS 估计量的方差矩阵和标准误差是很诱人的
 In finite samples the 2SLS estimator may not have a finite second moment, meaning that bootstrap variance estimates are unstable and unreliable	在有限样本中，2SLS 估计量可能没有有限的二阶矩，这意味着自助方差估计不稳定且不可靠
 However this is not the most common application of IV methods in econometric practice and thus should be viewed as the exception rather than the norm	然而，这并不是 IV 方法在计量经济学实践中最常见的应用，因此应被视为例外而不是常态
-To understand what is going on consider the simplest case of a just-identified model with a single endogenous regressor and no included exogenous regressors	要了解发生的情况，请考虑刚刚识别的模型的最简单情况，该模型具有单个内生回归变量且不包含外生回归变量
+To understand what is going on consider the simplest case of a just-identified model with a single endogenous regressor and no included exogenous regressors	要了解发生的情况，请考虑刚刚识别的模型的最简单情况，该模型具有单个内生自变量且不包含外生自变量
 This means that the ratio can take arbitrarily large values	这意味着该比率可以取任意大的值
 The coefficient estimate is reported in Table 12.3, along with asymptotic, jackknife, and two bootstrap standard errors each calculated with 10,000 bootstrap replications	表 12.3 报告了系数估计值，以及渐近误差、折刀误差和两个自助标准误差，每个标准误差均通过 10,000 次自助重复计算得出
 Table 12.3: Instrumental Variable Return to Education for Black Men	表 12.3：黑人男性教育回报工具变量
@@ -1872,7 +1872,7 @@ In this case we have the covariance matrix estimators	在这种情况下，我�
 Control Function Regression	控制函数回归
 In this section we present an alternative way of computing the 2SLS estimator by least squares	在本节中，我们提出了一种通过最小二乘法计算 2SLS 估计量的替代方法
 It is useful in nonlinear contexts, and also in the linear model to construct tests for endogeneity	它在非线性环境中非常有用，在线性模型中构建内生性检验也很有用
-The structural and reduced form equations for the standard IV model are	标准 IV 模型的结构方程和简化形式方程为
+The structural and reduced form equations for the standard IV model are	标准 IV 模型的结构方程和精简形式方程为
 Substituting this into the structural form equation we find	将其代入我们发现的结构形式方程
 or in matrix notation as	或用矩阵表示法表示为
 This turns out to be an alternative algebraic expression for the 2SLS estimator	事实证明，这是 2SLS 估计量的替代代数表达式
@@ -1923,12 +1923,12 @@ In a pair of influential papers, Imbens and Angrist (1994) and Angrist, Imbens a
 We would like to learn about the distribution of the causal effects, or at least features of the distribution	我们想了解因果效应的分布，或者至少是分布的特征
 We can summarize the possibilites with the following chart which is based on labels developed by Angrist, Imbens and Rubin (1996)	我们可以用下面的图表总结可能性，该图表基于 Angrist、Imbens 和 Rubin (1996) 开发的标签
 Once again, identification requires that there are no Deniers	再次强调，认同要求没有否认者
-Imbens and Angrist call this the local average treatment effect (LATE) as it is the average treatment effect for the sub-population whose endogenous regressor is affected by the instrument	Imbens 和 Angrist 将其称为局部平均治疗效果 (LATE)，因为它是内源自变量受仪器影响的子群体的平均治疗效果
+Imbens and Angrist call this the local average treatment effect (LATE) as it is the average treatment effect for the sub-population whose endogenous regressor is affected by the instrument	Imbens 和 Angrist 将其称为局部平均治疗效果 (LATE)，因为它是内源自变量受工具影响的子群体的平均治疗效果
 Examining the definition, the LATE is the average causal effect of college attendence on wages for the sub-sample of individuals who choose to attend college if (and only if) they live close to one	检查这个定义，LATE 是当（且仅当）住得接近大学时选择上大学的个体子样本的大学入学率对工资的平均因果效应
 Interestingly, we show below that	有趣的是，我们在下面展示了
 That is, LATE equals the Wald expression (12.27) for the slope coefficient in the IV regression model	也就是说，LATE 等于 IV 回归模型中斜率系数的 Wald 表达式 (12.27)
 The equality (12.68) occurs under the following conditions	等式 (12.68) 在以下条件下出现
-Thus LATE can vary by the choice of instrument	因此，LATE 可能因仪器的选择而异
+Thus LATE can vary by the choice of instrument	因此，LATE 可能因工具的选择而异
 This occurs when causal effects are heterogeneous	当因果效应不同时就会发生这种情况
 One implication of the LATE framework is that IV estimates should be interpreted as causal effects only for the population of compliers	LATE 框架的含义之一是 IV 估计值应被解释为仅对遵守者群体的因果影响
 The estimates should not be applied to other students	这些估计不应应用于其他学生
@@ -1936,7 +1936,7 @@ Formally, the analysis of this section examined the case of a binary instrument 
 A benefit is that with a larger set of instruments it is plausible that the set of compliers in the population is expanded	一个好处是，通过使用更多的工具，人口中的合规者群体可能会扩大
 We close this section by showing (12.68) under Assumption 12.3	我们通过在假设 12.3 下显示 (12.68) 来结束本节
 Identification Failure	识别失败
-Recall the reduced form equation	回忆一下简化形式的方程
+Recall the reduced form equation	回忆一下精简形式的方程
 The consequences of identification failure for inference are quite severe	推断识别失败的后果是相当严重的
 Thus identification hinges on the existence of correlation between the excluded exogenous variable and the included endogenous variable	因此，识别取决于排除的外生变量和纳入的内生变量之间是否存在相关性
 By the CLT we have the joint convergence	通过 CLT 我们有联合收敛
@@ -1947,11 +1947,11 @@ We can also examine the behavior of the t-statistic	我们还可以检查 t 统�
 Thus the t-statistic has the asymptotic distribution	因此 t 统计量具有渐近分布
 The limiting distribution is non-normal, meaning that inference using the normal distribution will be (considerably) incorrect	极限分布是非正态的，这意味着使用正态分布的推断将（相当）不正确
 In this situations users may incorrectly interpret estimates as precise despite the fact that they are highly imprecise	在这种情况下，用户可能会错误地将估计值解释为精确的，尽管它们非常不精确
-Weak Instruments	弱仪器
+Weak Instruments	弱工具
 In the previous section we examined the extreme consequences of full identification failure	在上一节中，我们研究了完全识别失败的极端后果
 We show that the estimators are inconsistent and the 2SLS and LIML estimators remain random in large samples	我们表明估计量不一致，并且 2SLS 和 LIML 估计量在大样本中保持随机性
 The theory was extended to nonlinear GMM estimation by Stock and Wright (2000)	Stock 和 Wright (2000)将该理论扩展到非线性 GMM 估计
-The technical device introduced by Staiger and Stock (1997) is to assume that the reduced form parameter is local-to-zero, specifically	Staiger和Stock（1997）引入的技术装置是假设简化形式参数是局部到零的，具体来说
+The technical device introduced by Staiger and Stock (1997) is to assume that the reduced form parameter is local-to-zero, specifically	Staiger和Stock（1997）引入的技术装置是假设精简形式参数是局部到零的，具体来说
 We now derive the asymptotic distribution of the least squares, 2SLS, and LIML estimators under the local-to-unity assumption (12.71)	现在，我们在局部统一假设 (12.71) 下导出最小二乘、2SLS 和 LIML 估计量的渐近分布
 The least squares estimator satisfies	最小二乘估计满足
 To examine the 2SLS estimator, by the central limit theorem	通过中心极限定理检查 2SLS 估计量
@@ -1961,11 +1961,11 @@ Now consider the LIML estimator	现在考虑 LIML 估计量
 This allows us to calculate that by the continuous mapping theorem	这使我们能够通过连续映射定理来计算
 Theorem 12.18 Under (12.71),	定理 12.18 根据 (12.71)，
 All three estimators are inconsistent	所有三个估计量都不一致
-Many Instruments	许多仪器
+Many Instruments	许多工具
 Consequently the impact of "weak" and "many" instruments is similar	因此，“弱”和“多”工具的影响是相似的
-Again for simplicity we assume that there are no included exogenous regressors so that the model is	再次为了简单起见，我们假设不包含外生回归变量，因此模型是
+Again for simplicity we assume that there are no included exogenous regressors so that the model is	再次为了简单起见，我们假设不包含外生自变量，因此模型是
 In addition we assume that the conditional fourth moments are bounded	此外，我们假设条件四阶矩是有界的
-The idea that there are "many instruments" is formalized by the assumption that the number of instruments is increasing proportionately with the sample size	存在“许多仪器”的想法是通过仪器数量随样本大小成比例增加的假设而形式化的
+The idea that there are "many instruments" is formalized by the assumption that the number of instruments is increasing proportionately with the sample size	存在“许多工具”的想法是通过工具数量随样本大小成比例增加的假设而形式化的
 Combined with (12.77) and the WLLN we find	结合 (12.77) 和 WLLN 我们发现
 Now consider the 2SLS estimator	现在考虑 2SLS 估计量
 In the expression on the right-side of (12.79) several of the components have been examined in (12.77) and (12.78)	在 (12.79) 右侧的表达式中，已经在 (12.77) 和 (12.78) 中检查了几个成分
@@ -1974,23 +1974,23 @@ The third equality holds because the remaining cross-products have zero expectat
 Returning to the 2SLS estimator (12.79) and combining (12.77), (12.78), and (12.81), we find	返回 2SLS 估计量 (12.79) 并结合 (12.77)、(12.78) 和 (12.81)，我们发现
 We state these results formally	我们正式公布这些结果
 This result is quite insightful	这个结果是相当有见地的
-The theorem also shows that unlike 2SLS the LIML estimator is consistent under the many instruments assumption	该定理还表明，与 2SLS 不同，LIML 估计量在多种仪器假设下是一致的
+The theorem also shows that unlike 2SLS the LIML estimator is consistent under the many instruments assumption	该定理还表明，与 2SLS 不同，LIML 估计量在多种工具假设下是一致的
 Effectively, LIML makes a bias-correction	LIML 有效地进行了偏误校正
-This suggests that LIML is more robust than 2SLS to weak and many instruments	这表明 LIML 对于弱仪器和多仪器来说比 2SLS 更稳健
-It appears likely that the consistency of LIML fails in the many instrument setting if the errors are heteroskedastic	如果误差是异方差的，则 LIML 的一致性在许多仪器设置中可能会失败
+This suggests that LIML is more robust than 2SLS to weak and many instruments	这表明 LIML 对于弱工具和多工具来说比 2SLS 更稳健
+It appears likely that the consistency of LIML fails in the many instrument setting if the errors are heteroskedastic	如果误差是异方差的，则 LIML 的一致性在许多工具设置中可能会失败
 In applications users should be aware of the potential consequences of the many instrument framework	在应用程序中，用户应该意识到许多工具框架的潜在后果
-Testing for Weak Instruments	弱仪器检验
+Testing for Weak Instruments	弱工具检验
 In the previous sections we found that weak instruments results in non-standard asymptotic distributions for the 2SLS and LIML estimators	在前面的部分中，我们发现弱工具会导致 2SLS 和 LIML 估计量出现非标准渐近分布
 This question was addressed in an influential paper by Stock and Yogo (2005) as an extension of Staiger and Stock (1997)	Stock 和 Yogo (2005) 在一篇有影响力的论文中解决了这个问题，作为 Staiger 和 Stock (1997) 的延伸
 In the following section we describe their method for the case of multiple endogeneous regressors	在下一节中，我们将描述他们针对多个内生自变量的情况的方法
 Since the model is just-identified the 2SLS, LIML, and IV estimators are all equivalent	由于模型刚刚被识别，2SLS、LIML 和 IV 估计量都是等效的
-The question of primary interest is to determine conditions on the reduced form under which the IV estimator of the structural equation is well behaved, and secondly, what statistical tests can be used to learn if these conditions are satisfied	主要感兴趣的问题是确定结构方程的 IV 估计量表现良好的简化形式的条件，其次，可以使用哪些统计检验来了解这些条件是否得到满足
+The question of primary interest is to determine conditions on the reduced form under which the IV estimator of the structural equation is well behaved, and secondly, what statistical tests can be used to learn if these conditions are satisfied	主要感兴趣的问题是确定结构方程的 IV 估计量表现良好的精简形式的条件，其次，可以使用哪些统计检验来了解这些条件是否得到满足
 To break this impasse Stock and Yogo (2005) recommended a constructive alternative	为了打破这一僵局，Stock 和 Yogo（2005）推荐了一种建设性的替代方案
 Specifically, the Stock-Yogo recommendation can be summarized by two steps	具体来说，Stock-Yogo 推荐可以概括为两个步骤
 If there is more than one instrument then the rule-of-thumb changes.) We now describe the steps behind this reasoning in more detail	）我们现在更详细地描述这一推理背后的步骤
 We now describe this procedure	我们现在描述这个过程
 To implement the test we need to calculate an appropriate critical value	为了实施检验，我们需要计算适当的临界值
-Equivalently, the recommended rule-of-thumb for the case of a single instrument is to estimate the reduced form and verify that the t-statistic for exclusion of the instrumental variable exceeds 3 in absolute value	同样，对于单一工具的情况，建议的经验法则是估计简化形式并验证排除工具变量的 t 统计量的绝对值是否超过 3
+Equivalently, the recommended rule-of-thumb for the case of a single instrument is to estimate the reduced form and verify that the t-statistic for exclusion of the instrumental variable exceeds 3 in absolute value	同样，对于单一工具的情况，建议的经验法则是估计精简形式并验证排除工具变量的 t 统计量的绝对值是否超过 3
 We report a subset in Table 12.4	我们在表 12.4 中报告了一个子集
 The structural equation is estimated by either 2 SLS or LIML	结构方程通过 2 SLS 或 LIML 进行估计
 The Stock-Yogo test can be implemented in Stata using the command estat firststage after ivregress 2 sls or ivregres liml if a standard (non-robust) covariance matrix has been specified (that is, without the ', r' option)	如果指定了标准（非稳健）协方差矩阵（即，没有 ', r' 选项），则可以在 ivregress 2 sls 或 ivregres liml 之后使用命令 estat firststage 在 Stata 中实现 Stock-Yogo 检验
@@ -2002,11 +2002,11 @@ This can be solved as	这可以解决为
 In principle the procedure could be extended using simulation or bootstrap methods but this has not been done to my knowledge	原则上可以使用模拟或自助方法来扩展该过程，但据我所知尚未这样做
 To illustrate the Stock-Yogo and extended procedures let us return to the Card proximity example	为了说明 Stock-Yogo 和扩展程序，让我们回到卡邻近示例
 Now consider the extended procedure	现在考虑扩展过程
-The weak instrument methods described here are important for applied econometrics as they discipline researchers to assess the quality of their reduced form relationships before reporting structural estimates	这里描述的弱工具方法对于应用计量经济学很重要，因为它们要求研究人员在报告结构估计之前评估其简化形式关系的质量
+The weak instrument methods described here are important for applied econometrics as they discipline researchers to assess the quality of their reduced form relationships before reporting structural estimates	这里描述的弱工具方法对于应用计量经济学很重要，因为它们要求研究人员在报告结构估计之前评估其精简形式关系的质量
 This is an active area of research so the recommended methods may change in the years ahead	这是一个活跃的研究领域，因此推荐的方法在未来几年可能会发生变化
-The structural equation and reduced form equations are	结构方程和简化形式方程为
-As in the previous section we assume that the errors are conditionally homoskedastic	与上一节一样，我们假设误差是有条件同方差的
-This can be estimated from the reduced-form regression	这可以通过简化形式的回归来估计
+The structural equation and reduced form equations are	结构方程和精简形式方程为
+As in the previous section we assume that the errors are conditionally homoskedastic	与上一节一样，我们假设误差是条件同方差的
+This can be estimated from the reduced-form regression	这可以通过精简形式的回归来估计
 This means that for over-identified models LIML inference is less sensitive to weak instruments than 2SLS and may be the preferred estimation method	这意味着对于过度识别的模型，LIML 推断对弱工具的敏感度低于 2SLS，并且可能是首选的估计方法
 Robust versions of the test have been proposed by Kleibergen and Paap (2006)	Kleibergen 和 Paap (2006) 提出了该检验的稳健版本
 These can be implemented in Stata using the downloadable command ivreg2	这些可以使用可下载命令 ivreg2 在 Stata 中实现
@@ -2045,12 +2045,12 @@ We can use the Stock-Yogo tools to explore the instrument strength and the impli
 We first take equation (12.89)	我们首先取方程(12.89)
 Since we cannot reject that the instruments are weak this indicates that we cannot interpret the 2SLS estimates and test statistics in (12.89) as reliable	由于我们不能否认这些工具很弱，这表明我们无法将 (12.89) 中的 2SLS 估计和检验统计数据解释为可靠
 Second, take (12.90) with the expanded regressor and instrument set	其次，使用扩展的自变量和工具集取 (12.90)
-Rather, they should be viewed as evidence of unreliability due to weak instruments	相反，它们应该被视为由于仪器薄弱而导致不可靠的证据
+Rather, they should be viewed as evidence of unreliability due to weak instruments	相反，它们应该被视为由于工具薄弱而导致不可靠的证据
 When instruments are weak one constructive suggestion is to use LIML estimation rather than 2SLS	当工具较弱时，一项建设性建议是使用 LIML 估计而不是 2SLS
 The regression also includes nine year-of-birth and eight region-of-residence dummy variables	该回归还包括九个出生年份和八个居住地区虚拟变量
-The reduced form coefficients in (12.91) on the quarter-of-birth dummies are instructive	(12.91) 中四分之一出生假人的简化形式系数具有指导意义
+The reduced form coefficients in (12.91) on the quarter-of-birth dummies are instructive	(12.91) 中四分之一出生假人的精简形式系数具有指导意义
 These estimates indicate a slightly larger (10%) causal impact of education on wages but with a larger standard error	这些估计表明，教育对工资的因果影响稍大（10%），但标准误差较大
-While the original Angrist-Krueger estimates suffer due to weak instruments their paper is a very creative and thoughtful application of the natural experiment methodology	虽然安格斯特-克鲁格最初的估计因仪器薄弱而受到影响，但他们的论文是对自然实验方法的非常有创意和深思熟虑的应用
+While the original Angrist-Krueger estimates suffer due to weak instruments their paper is a very creative and thoughtful application of the natural experiment methodology	虽然安格斯特-克鲁格最初的估计因工具薄弱而受到影响，但他们的论文是对自然实验方法的非常有创意和深思熟虑的应用
 Their crafting of this natural experiment regression is clever and demonstrates a style of analysis which can successfully underlie an effective instrumental variables empirical analysis	他们对这种自然实验回归的精心设计非常聪明，并展示了一种可以成功地成为有效工具变量实证分析基础的分析风格
 We now present Stata code for some of the empirical work reported in this chapter	我们现在为本章中报告的一些实证工作提供 Stata 代码
 Stata do File for Card Example	Stata 做卡片文件示例
@@ -2132,7 +2132,7 @@ An appropriate cluster-robust covariance matrix estimator is	适当的群组稳�
 To implement a cluster-robust weight matrix use the 2SLS estimator for first step	要实现群组稳健权重矩阵，第一步使用 2SLS 估计量
 Iterating the residuals and covariance matrix until convergence we obtain the iterated GMM estimator	迭代残差和协方差矩阵直到收敛，我们得到迭代的 GMM 估计量
 In Stata, using the ivregress gmm command with the cluster option implements the two-step GMM estimator using the cluster-robust weight matrix and cluster-robust covariance matrix estimator	在 Stata 中，使用带 cluster 选项的 ivregress gmm 命令可使用群组稳健权重矩阵和群组稳健协方差矩阵估计量实现两步 GMM 估计量
-Alternatively, you can use the wmatrix and vce options to separately specify the weight matrix and covariance matrix estimation methods	或者，你可以使用 wmatrix 和 vce 选项分别指定权重矩阵和协方差矩阵估计方法
+Alternatively, you can use the wmatrix and vce options to separately specify the weight matrix and covariance matrix estimation methods	或者，你可以使用 wmatrix 和 vce 选项分别设定权重矩阵和协方差矩阵估计方法
 Wald Test	瓦尔德检验
 For a proof see Exercise 13.5	证明参见练习 13.5
 In Stata, the commands test and testparm can be used after ivregress gmm to implement Wald tests of linear hypotheses	在Stata中，可以在ivregress gmm之后使用命令test和testparm来实现线性假设的Wald检验
@@ -2212,7 +2212,7 @@ Conditional Moment Equation Models	条件矩方程模型
 In many contexts, an economic model implies conditional moment restriction of the form	在许多情况下，经济模型意味着以下形式的条件矩约束
 It turns out that this conditional moment restriction is more powerful than the unconditional moment equation model discussed throughout this chapter	事实证明，这种条件矩约束比本章讨论的无条件矩方程模型更强大
 Given a conditional moment restriction an unconditional moment restriction can always be constructed	给定条件矩约束，总是可以构造无条件矩约束
-This is equivalent to the problem of selection of the best instruments	这相当于选择最优仪器的问题
+This is equivalent to the problem of selection of the best instruments	这相当于选择最优工具的问题
 One study of this problem is Donald and Newey (2001)	Donald 和 Newey (2001) 对此问题进行了一项研究
 Another approach is to construct the optimal instrument which minimizes the asymptotic variance	另一种方法是构建最小化渐近方差的最优工具
 This is the same as the GLS estimator; namely that improved efficiency can be obtained if the observations are weighted inversely to the conditional variance of the errors	这与 GLS 估计量相同；也就是说，如果观测值的加权与误差的条件方差成反比，则可以获得更高的效率
@@ -2297,7 +2297,7 @@ In this textbook we have avoided measure-theoretic terminology to keep the prese
 Second, it is important to be precise about which variables are contained in the information set	其次，准确了解信息集中包含哪些变量非常重要
 Third, the conditional expectations (14.10) follow the law of iterated expectations and the conditioning theorem, thus	第三，条件期望（14.10）遵循迭代期望定理和条件定理，因此
 Martingale Difference Sequences	鞅差分序列
-An important concept in economics is unforecastability, meaning that the conditional expectation is the unconditional expectation	经济学中的一个重要概念是不可预测性，即有条件期望就是无条件期望
+An important concept in economics is unforecastability, meaning that the conditional expectation is the unconditional expectation	经济学中的一个重要概念是不可预测性，即条件期望就是无条件期望
 An unforecastable process is called a martingale difference sequence (MDS)	不可预测的过程称为鞅差分序列 (MDS)
 Thus a MDS is mean zero	因此 MDS 的平均值为零
 However, it is best to explicitly specify the information sets so there is no confusion	但是，最好明确指定信息集，以免造成混淆
@@ -2469,7 +2469,7 @@ Testing for Omitted Serial Correlation	检验遗漏的串行相关性
 When using an AR(p) model it may be of interest to know if there is any remaining serial correlation	使用 AR(p) 模型时，可能有兴趣了解是否存在任何剩余的序列相关性
 One approach to obtain the correct asymptotic distribution is to use the generalized method of moments, treating (14.52)-(14.53) as a two-equation just-identified system	获得正确渐近分布的一种方法是使用广义矩方法，将 (14.52)-(14.53) 视为二方程刚辨识系统
 An easier solution is to re-write (14.52)-(14.53) as a higher-order autoregression so that we can use a standard test statistic	一个更简单的解决方案是将 (14.52)-(14.53) 重写为高阶自回归，以便我们可以使用标准检验统计量
-Otherwise we accept the hypothesis that the AR(p) model is correctly specified	否则我们接受 AR(p) 模型被正确指定的假设
+Otherwise we accept the hypothesis that the AR(p) model is correctly specified	否则我们接受 AR(p) 模型被正确设定的假设
 Another way of deriving the test is as follows	导出检验的另一种方法如下
 While this discussion is all good fun, it is unclear if there is good reason to use the test described in this section	虽然这个讨论很有趣，但尚不清楚是否有充分的理由使用本节中描述的检验
 One is described in the following section	下一节将介绍其中之一
@@ -2580,7 +2580,7 @@ Multivariate Time Series	多元时间序列
 VARs were introduced to econometrics by Sims (1980)	Sims (1980) 将 VAR 引入计量经济学
 Some excellent textbooks and review articles on multivariate time series include Hamilton (1994), Watson (1994), Canova (1995), Lütkepohl (2005), Ramey (2016), Stock and Watson (2016), and Kilian and Lütkepohl (2017)	关于多元时间序列的一些优秀教科书和评论文章包括 Hamilton (1994)、Watson (1994)、Canova (1995)、Lütkepohl (2005)、Ramey (2016)、Stock 和 Watson (2016) 以及 Kilian 和 Lütkepohl (2017)
 Multiple Equation Time Series Models	多方程时间序列模型
-These two equations specify that each variable is a linear function of its own lag and the lag of the other variable	这两个方程指定每个变量都是其自身滞后和另一个变量滞后的线性函数
+These two equations specify that each variable is a linear function of its own lag and the lag of the other variable	这两个方程设定每个变量都是其自身滞后和另一个变量滞后的线性函数
 Thus a multivariate autoregression is a set of autoregressive distributed lag models	因此，多元自回归是一组自回归分布式滞后模型
 The above derivation assumed a single lag	上述推导假设有一个滞后
 Furthermore, there is nothing special about the two variable case	此外，两个变量的情况没有什么特别的
@@ -2730,7 +2730,7 @@ We just described six restrictions while nine are required for identification	�
 In general, either of the two simpler structures are simpler to compute and interpret	一般来说，这两种更简单的结构都更容易计算和解释
 Taking the variance of the variables on each side of (15.21) we find	取 (15.21) 两侧变量的方差，我们发现
 This is a system of quadratic equations in the free parameters	这是自由参数的二次方程组
-The latter is appropriate when the model is correctly specified (including normality) but otherwise an unclear choice	当模型被正确指定（包括正态性）但否则选择不明确时，后者是合适的
+The latter is appropriate when the model is correctly specified (including normality) but otherwise an unclear choice	当模型被正确设定（包括正态性）但否则选择不明确时，后者是合适的
 Given the parameter estimates the structural impulse response function is	给定参数估计，结构脉冲响应函数为
 The structural impulse responses are nonlinear functions of the VAR coefficient and covariance matrix estimators so by the delta method are asymptotically normal	结构脉冲响应是 VAR 系数和协方差矩阵估计量的非线性函数，因此通过 Delta 方法是渐近正态的
 As for orthogonalized impulse responses the asymptotic normal approximation is unlikely to be a good approximation so bootstrap methods are an attractive alternative	对于正交化脉冲响应，渐近正态近似不太可能是一个好的近似，因此自助方法是一个有吸引力的替代方案
@@ -2773,7 +2773,7 @@ This means that for serious applied work programming needs to be done outside of
 Blanchard and Quah (1989) Illustration	布兰查德和夸 (1989) 说明
 As we described in the previous section, Blanchard and Quah (1989) estimated a bivariate VAR in GDP growth and the unemployment rate assuming that the the structural shocks are aggregate supply and aggregate demand imposing that that the long-run response of GDP with respect to aggregate demand is zero	正如我们在上一节中所描述的，Blanchard 和 Quah（1989）估计了 GDP 增长和失业率的双变量 VAR，假设结构性冲击是总供给和总需求，并假设 GDP 对总需求为零
 Blanchard and Quah used a careful detrending method; instead we including a linear time trend in the estimated VAR	布兰查德和夸赫使用了一种谨慎的去趋势方法；相反，我们在估计的 VAR 中包含了线性时间趋势
-The fitted reduced form model coefficients satisfy	拟合的简化形式模型系数满足
+The fitted reduced form model coefficients satisfy	拟合的精简形式模型系数满足
 and the residual covariance matrix is	残差协方差矩阵为
 The estimated impulse responses have similar hump shapes with a peak around four quarters, and are similar to those found by Blanchard and Quah (1989)	估计的脉冲响应具有类似的驼峰形状，峰值在四分之四左右，并且与 Blanchard 和 Quah (1989) 发现的相似
 Let's examine and contrast panels (a) and (b) of Figure 15.4	让我们检查并对比图 15.4 的面板 (a) 和 (b)
@@ -2781,7 +2781,7 @@ The confidence intervals for the supply shock impulse responses are wider than t
 The confidence intervals are very wide, however, indicating that these estimates are not precise	然而，置信区间非常宽，表明这些估计并不精确
 Figure 15.4: Response of Unemployment Rate	图 15.4：失业率的反应
 It is fascinating that the structural impulse response estimates shown here are nearly identical to those found by Blanchard and Quah (1989) despite the fact that we have used a considerably different sample period	令人着迷的是，这里显示的结构脉冲响应估计与 Blanchard 和 Quah (1989) 发现的几乎相同，尽管我们使用了相当不同的抽样周期
-External Instruments	外部仪器
+External Instruments	外部工具
 Structural VARs can also be identified and estimated using external instrumental variables	结构 VAR 也可以使用外部工具变量来识别和估计
 Identification rests on the validity of these assumptions	识别取决于这些假设的有效性
 Figure 15.5: Forecast Error Decomposition, Percent due to Supply Shock	图 15.5：预测误差分解，由于供应冲击造成的百分比
@@ -3028,8 +3028,8 @@ The 2SLS estimator is a function of the within transformed variables	2SLS 估计
 Thus for identification of the fixed effects instrumental variables model we need	因此，为了识别固定效应工具变量模型，我们需要
 Condition (17.70) is the same as the condition for identification in fixed effects regression - the instruments must have full variation after the within transformation	条件 (17.70) 与固定效应回归中的识别条件相同 - 工具在内部变换后必须具有完全变异
 Condition (17.71) is analogous to the relevance condition for identification of instrumental variable regression in the cross-section context but applies to the within-transformed instruments and regressors	条件 (17.71) 类似于在横截面上下文中识别工具变量回归的相关条件，但适用于内部转换的工具和自变量
-Condition (17.71) shows that to examine instrument validity in the context of fixed effects 2SLS it is important to estimate the reduced form equation using fixed effects (within) regression	条件 (17.71) 表明，要检查固定效应 2SLS 背景下的工具有效性，重要的是使用固定效应（内）回归来估计简化形式方程
-However, since the correlation structure of the reduced form equation is in general unknown it is appropriate to use a cluster-robust covariance matrix, clustered at the level of the individual	然而，由于简化形式方程的相关结构通常是未知的，因此适合使用在个体水平上聚类的群组稳健协方差矩阵
+Condition (17.71) shows that to examine instrument validity in the context of fixed effects 2SLS it is important to estimate the reduced form equation using fixed effects (within) regression	条件 (17.71) 表明，要检查固定效应 2SLS 背景下的工具有效性，重要的是使用固定效应（内）回归来估计精简形式方程
+However, since the correlation structure of the reduced form equation is in general unknown it is appropriate to use a cluster-robust covariance matrix, clustered at the level of the individual	然而，由于精简形式方程的相关结构通常是未知的，因此适合使用在个体水平上聚类的群组稳健协方差矩阵
 Asymptotic Distribution of Fixed Effects 2SLS Estimator	固定效应 2SLS 估计量的渐近分布
 In this section we present an asymptotic distribution theory for the fixed effects estimator	在本节中，我们提出固定效应估计量的渐近分布理论
 We provide a formal theory for the case of balanced panels and discuss an extension to the unbalanced case	我们为平衡面板的情况提供了正式的理论，并讨论了对不平衡情况的扩展
@@ -3054,7 +3054,7 @@ Hausman-Taylor Model	豪斯曼泰勒模型
 Hausman and Taylor (1981) consider a generalization of the previous model	Hausman 和 Taylor (1981) 考虑了先前模型的推广
 Write the model in matrix notation as	将模型用矩阵表示法写为
 It is recommended to use cluster-robust covariance matrix estimation clustered at the individual level	建议使用在个体级别聚类的群组稳健协方差矩阵估计
-When the model is over-identified the equation can also be estimated by GMM with a cluster-robust weight matrix using the same equations and instruments	当模型被过度识别时，也可以使用相同的方程和仪器，通过具有群组稳健权重矩阵的 GMM 来估计方程
+When the model is over-identified the equation can also be estimated by GMM with a cluster-robust weight matrix using the same equations and instruments	当模型被过度识别时，也可以使用相同的方程和工具，通过具有群组稳健权重矩阵的 GMM 来估计方程
 The 2SLS estimator described above corresponds with the Hausman and Taylor (1981) estimator in the just-identified case with a balanced panel	上述 2SLS 估计量与刚刚确定的平衡面板情况下的 Hausman 和 Taylor (1981) 估计量相对应
 Otherwise, the estimator can be implemented using the instrumental variable method described above	否则，可以使用上述工具变量方法来实现估计量
 The Hausman-Taylor estimator was refined by Amemiya and MaCurdy (1986) and Breusch, Mizon and Schmidt (1989) who proposed more efficient versions using additional instruments which are valid under stronger orthogonality conditions	Hausman-Taylor 估计量由 Amemiya 和 MaCurdy (1986) 以及 Breusch、Mizon 和 Schmidt (1989) 进行了改进，他们提出了使用附加工具的更有效版本，这些工具在更强的正交性条件下有效
@@ -3102,11 +3102,11 @@ Blundell and Bond (1998) pointed out that the Anderson-Hsiao and Arellano-Bond e
 Assuming stationarity so that (17.83) holds,	假设平稳性使得 (17.83) 成立，
 An alternative estimator which has improved performance is discussed in Section 17.42	第 17.42 节讨论了一种具有改进性能的替代估计量
 Dynamic Panels with Predetermined Regressors	具有预定自变量的动态面板
-The assumption that regressors are strictly exogenous is restrictive	回归变量严格是外生的假设是有约束性的
+The assumption that regressors are strictly exogenous is restrictive	自变量严格是外生的假设是有约束性的
 Dynamic panel methods can be modified to handle predetermined regressors by using their lags as instruments	可以修改动态面板方法，通过使用滞后量作为工具来处理预定的自变量
 One way of interpreting a regression model with predetermined regressors is that the model is a projection on the complete past history of the regressors	解释具有预定自变量的回归模型的一种方法是，该模型是对自变量的完整过去历史的投影
 Consider the differenced equation (17.87)	考虑差分方程 (17.87)
-To understand how the model is identified we examine the reduced form equation for the regressor	为了了解模型是如何识别的，我们检查自变量的简化形式方程
+To understand how the model is identified we examine the reduced form equation for the regressor	为了了解模型是如何识别的，我们检查自变量的精简形式方程
 This indicates that the model will be weakly identified when the predetermined regressors are highly persistent	这表明当预定的自变量高度持久时，模型将被弱识别
 The method generalizes to handle multiple lags of the predetermined regressors	该方法概括为处理预定自变量的多个滞后
 In first differences the model is	一阶差分模型是
@@ -3116,7 +3116,7 @@ The major disadvantage of treating a regressor as predetermined is that it subst
 In Stata the xtabond command by default treats independent regressors as strictly exogenous	在 Stata 中，xtabond 命令默认将独立自变量视为严格外生的
 By default all regressor lags are used as instruments, but the number can be limited if specified	默认情况下，所有自变量滞后都用作工具，但如果指定，可以限制数量
 Blundell-Bond Estimator	布伦德尔债券估计量
-Consider the levels AR(1) model with no regressors (17.82)	考虑没有回归变量的水平 AR(1) 模型 (17.82)
+Consider the levels AR(1) model with no regressors (17.82)	考虑没有自变量的水平 AR(1) 模型 (17.82)
 Blundell and Bond (1998) show that a sufficient condition for (17.100) is	Blundell 和 Bond (1998) 表明 (17.100) 的充分条件是
 Condition (17.101) is implied by stationarity but is somewhat weaker	条件 (17.101) 隐含着平稳性，但稍弱
 To see that (17.101) implies (17.100), by applying recursion to (17.87) we find that	为了看出 (17.101) 蕴涵 (17.100)，通过对 (17.87) 应用递归，我们发现
@@ -3126,7 +3126,7 @@ Using (17.100) and (17.102) Blundell and Bond propose the following moment condi
 The Blundell-Bond estimator is found by applying GMM to this equation	Blundell-Bond 估计量是通过将 GMM 应用于该方程来找到的
 The Blundell-Bond one-step GMM estimator is	Blundell-Bond 一步 GMM 估计量为
 The Blundell-Bond two-step GMM estimator is	Blundell-Bond 两步 GMM 估计量为
-The explanation is that the orthogonality condition (17.103) does not suffer the weak instrument problem in these cases	解释是，在这些情况下，正交条件 (17.103) 不会遇到弱仪器问题
+The explanation is that the orthogonality condition (17.103) does not suffer the weak instrument problem in these cases	解释是，在这些情况下，正交条件 (17.103) 不会遇到弱工具问题
 The advantage of the Blundell-Bond estimator is that the added orthogonality condition (17.103) greatly improves performance relative to the Arellano-Bond estimator when the latter is weakly identified	Blundell-Bond 估计量的优点在于，当后者弱识别时，相对于 Arellano-Bond 估计量，添加的正交条件 (17.103) 大大提高了性能
 A disadvantage of the Blundell-Bond estimator is that their orthogonality condition is justified by a stationarity condition (17.101) and violation of the latter may induce estimation bias	Blundell-Bond 估计量的缺点是其正交性条件由平稳性条件 (17.101) 证明是合理的，违反后者可能会导致估计偏误
 The advantages and disadvantages of the one-step versus two-step Blundell-Bond estimators are the same as described for the Arellano-Bond estimator as described in Section 17.39	一步与两步 Blundell-Bond 估计量的优点和缺点与第 17.39 节中描述的 Arellano-Bond 估计量相同
@@ -3175,7 +3175,7 @@ Theorem 18.1 Suppose the following conditions hold:	定理 18.1 假设以下条�
 Condition 1 states that the outcome equals the specified linear regression model which is additively separable in the observables, individual effect, and time effect	条件 1 表明结果等于指定的线性回归模型，该模型在可观察量、个体效应和时间效应中可加性分离
 Condition 2 states that the two-way within transformed regressors have a non-singular design matrix	条件 2 表明变换自变量内的双向具有非奇异设计矩阵
 Condition 3 is the standard exogeneity asumption for regressors in a fixed-effects model	条件 3 是固定效应模型中自变量的标准外生性假设
-Condition 4 states that the treatment variable is conditionally independent of the idiosyncratic error	条件 4 表明治疗变量有条件地独立于特殊误差
+Condition 4 states that the treatment variable is conditionally independent of the idiosyncratic error	条件 4 表明治疗变量条件地独立于特殊误差
 This is the conditional independence assumption for fixed effects regression	这是固定效应回归的条件独立假设
 To show Theorem 18.1 apply the two-way within transformation (17.65) to (18.5)	为了证明定理 18.1，应用 (17.65) 到 (18.5) 内的双向变换
 Without this assumption it would not be possible to claim that the diff-in-diff regression identifies the causal effect of the treatment	如果没有这个假设，就不可能声称差异回归确定了治疗的因果效应
@@ -3184,7 +3184,7 @@ In the case of the Card-Krueger application the authors argue that the policy wa
 It thus seems credible that employment decisions at that time were not determined in anticipation of the upcoming minimum wage increase	因此，当时的就业决定并不是根据即将到来的最低工资上涨而做出的，这似乎是可信的
 The authors do not discuss, however, whether or not there were other coincident events in the New Jersey or Pennsylvania economies during 1992 which could have affected employment differentially in the two states	然而，作者没有讨论 1992 年新泽西州或宾夕法尼亚州经济中是否发生了其他同时发生的事件，这些事件可能对两个州的就业产生不同的影响
 This seems to be the greatest weakness in their identification argument	这似乎是他们的认同论证中最大的弱点
-Identification (the conditions for Theorem 18.1) also requires that the regression model is correctly specified	辨识（定理 18.1 的条件）还要求正确指定回归模型
+Identification (the conditions for Theorem 18.1) also requires that the regression model is correctly specified	辨识（定理 18.1 的条件）还要求正确设定回归模型
 This is not the case in applications with more than two states or time periods and thus model specification needs to be carefully considered in such cases	在具有两个以上状态或时间段的应用中，情况并非如此，因此在这种情况下需要仔细考虑模型设定
 Multiple Units	多个单位
 The basic difference-in-difference model has two aggregate units (e.g. states) and two time periods	基本的双重差分模型具有两个聚合单位（例如状态）和两个时间段
@@ -3234,7 +3234,7 @@ OnHours and OffHours are the number of allowable Sunday on-premises and off-prem
 The standard errors are clustered by state	标准误按州进行聚类
 The estimates indicate that increased on-premise sale hours lead to a small increase in liquor sales	估计表明，店内销售时间的增加导致酒类销量小幅增长
 The negative effect of the unemployment rate means that liquor sales are pro-cyclical	失业率的负面影响意味着白酒销售是顺周期的
-The authors were concerned whether their dynamic and trend specifications were correctly specified so tried some alternative specifications and interactions	作者担心他们的动态和趋势设定是否正确指定，因此尝试了一些替代设定和交互
+The authors were concerned whether their dynamic and trend specifications were correctly specified so tried some alternative specifications and interactions	作者担心他们的动态和趋势设定是否正确设定，因此尝试了一些替代设定和交互
 This suggests that it may be incorrect to treat the trends as common across states	这表明将这些趋势视为各州的共同趋势可能是不正确的
 If we augment the basic model to include state-specific linear trends the estimates are as follows	如果我们扩展基本模型以包括特定于州的线性趋势，则估计如下
 The estimated coefficient for OnHours drops to zero and becomes insignificant	OnHours 的估计系数降至零并且变得微不足道
@@ -3327,7 +3327,7 @@ This motivates using (19.9) as a ROT bandwidth for both the LL and NW estimators
 To illustrate, take the data shown in Figure 19.1	为了说明这一点，请采用图 19.1 中所示的数据
 Estimation at a Boundary	边界处的估计
 To understand the problem it may be helpful to examine Figure 19.3	为了理解这个问题，查看图 19.3 可能会有所帮助
-Since the expectation is correctly specified there is no estimation bias	由于期望被正确指定，因此不存在估计偏误
+Since the expectation is correctly specified there is no estimation bias	由于期望被正确设定，因此不存在估计偏误
 To calculate the asymptotic smoothing bias we can revisit the proof of Theorem 19.1.1 which calculated the asymptotic bias at interior points	为了计算渐近平滑偏误，我们可以重新审视定理 19.1.1 的证明，该定理计算了内点处的渐近偏误
 Figure 19.3: Boundary Bias	图 19.3：边界偏误
 Similarly we can evaluate the performance of the LL estimator	类似地，我们可以评估 LL 估计量的性能
@@ -3565,11 +3565,11 @@ Notice that this is lower triangular and full rank	请注意，这是下三角�
 For state-of-the-art inference methods see Chen and Pouzo (2015) and Chen and Christensen (2018)	对于最先进的推断方法，请参阅 Chen 和 Pouzo (2015) 以及 Chen 和 Christensen (2018)
 NPIV Identification	NPIV鉴定
 This is considerably more challenging	这更具挑战性
-Specifying and understanding the needed restrictions is more subtle than in the linear case	指定和理解所需的约束比线性情况更微妙
+Specifying and understanding the needed restrictions is more subtle than in the linear case	设定和理解所需的约束比线性情况更微妙
 Newey and Powell (2003) defined this fundamental condition as completeness	Newey 和 Powell (2003) 将这一基本条件定义为完整性
-This is analogous to the linear IV model where identification is a property of the reduced form equations, not a property of the structural equation	这类似于线性 IV 模型，其中识别是简化形式方程的特征，而不是结构方程的特征
-As we stated above, completeness may not be satisfied even if the reduced form relationship is strong	如上所述，即使简化形式关系很强，也可能无法满足完整性
-This is despite the fact that the reduced form equation is strong	尽管事实上简化形式方程是强的
+This is analogous to the linear IV model where identification is a property of the reduced form equations, not a property of the structural equation	这类似于线性 IV 模型，其中识别是精简形式方程的特征，而不是结构方程的特征
+As we stated above, completeness may not be satisfied even if the reduced form relationship is strong	如上所述，即使精简形式关系很强，也可能无法满足完整性
+This is despite the fact that the reduced form equation is strong	尽管事实上精简形式方程是强的
 While identification fails for some conditional distributions, it does not fail for all	虽然某些条件分布的识别失败，但并非所有条件分布都失败
 Andrews (2017) provides classes of distributions which satisfy the completeness condition and shows that these distribution classes are quite general	Andrews (2017) 提供了满足完整性条件的分布类，并表明这些分布类非常通用
 What does this mean in practice? If completeness fails then the structural equation is not identified and cannot be consistently estimated	这在实践中意味着什么？如果完整性失败，则结构方程无法识别并且无法一致地估计
@@ -3705,7 +3705,7 @@ Estimation of FRD	FRD的估计
 This estimator bears a striking resemblance to the Wald expression (12.27) for the structural coefficient and estimator (12.28) in an IV regression with a binary instrument	该估计量与二值工具 IV 回归中的结构系数和估计量 (12.28) 的 Wald 表达式 (12.27) 非常相似
 The estimator (21.7) requires four LL regressions	估计量 (21.7) 需要四个 LL 回归
 Identification rests on its precision	识别取决于其精度
-A small discontinuity will lead to a weak instruments problem	一个小的不连续性将导致仪器故障问题
+A small discontinuity will lead to a weak instruments problem	一个小的不连续性将导致弱工具问题
 Standard errors can be calculated similar to IV regression	标准误差的计算方法与 IV 回归类似
 The estimate of the conditional ATE is the ratio of these two estimated discontinuities	条件 ATE 的估计是这两个估计的不连续性的比率
 M-Estimators	M-估计量
@@ -3767,7 +3767,7 @@ We illustrate CES production function estimation with a modification of Papageor
 The data file PPS2017 is an extract of the authors' dataset	数据文件 PPS2017 是作者数据集的摘录
 Our third example is the regression kink model	我们的第三个案例是回归扭结模型
 We illustrate the regression kink model with an application from B	我们使用 B. E. Hansen (2017) 的应用来说明回归扭结模型，该模型是 Reinhart 和 Rogoff (2010) 的形式化
-In correctly-specified nonlinear regression models the parameter is point identified if there is a unique true parameter	在正确指定的非线性回归模型中，如果存在唯一的真实参数，则参数被点识别
+In correctly-specified nonlinear regression models the parameter is point identified if there is a unique true parameter	在正确设定的非线性回归模型中，如果存在唯一的真实参数，则参数被点识别
 Figure 23.1: Nonlinear Regression Models	图 23.1：非线性回归模型
 is the expected squared error	是期望的平方误差
 Hence identification of the pseudo-true value under mis-specification is typically assumed rather than deduced	因此，误设下的伪真值的识别通常是假设的，而不是推断的
@@ -3785,7 +3785,7 @@ We first consider the consistency of the NLLS estimator	我们首先考虑 NLLS 
 Assumptions 1-4 are fairly standard	假设 1-4 是相当标准的
 Theorem 23.1 Consistency of NLLS Estimator	定理23.1 NLLS估计量的一致性
 We next discuss the asymptotic distribution for differentiable models	接下来我们讨论可微模型的渐近分布
-Assumption 1 imposes that the model is correctly specified	假设 1 强制指定模型是正确的
+Assumption 1 imposes that the model is correctly specified	假设 1 强制设定模型是正确的
 This is important as otherwise the sampling distribution will be asymmetric	这很重要，否则抽样分布将不对称
 Thus, asymptotically, the distribution of NLLS is identical to a linear regression	因此，NLLS 的分布渐近与线性回归相同
 The asymptotic distribution simplifies under conditional homoskedasticity	渐近分布在条件同方差下得到简化
@@ -3917,7 +3917,7 @@ However when estimated quantile regression functions cross one another it can be
 To illustrate examine Figure 24.5(a)	为了说明这一点，请查看图 24.5(a)
 This is the quantile regression crossing phenomenon	这就是分位数回归交叉现象
 When quantile regressions cross one another there are several possible remedies	当分位数回归相互交叉时，有几种可能的补救措施
-First, you could re-specify the model	首先，你可以重新指定模型
+First, you could re-specify the model	首先，你可以重新设定模型
 Figure 24.5: Quantile Crossings	图 24.5：分位数交叉
 While the logarithmic/exponential transformation works well for a wage regression, it is not a generic solution	虽然对数/指数变换对于工资回归效果很好，但它不是一个通用的解决方案
 A second approach is to reassess the empirical task	第二种方法是重新评估实证任务
@@ -3953,7 +3953,7 @@ There have been several proposals to deal with this issue but none are particula
 Given this assumption we can write the quantile regression model as	考虑到这个假设，我们可以将分位数回归模型写为
 Canay's estimator takes the following steps. 1	Canay 的估计量采取以下步骤
 In general the topic of panel quantile regression is a potentially important topic for further econometric research	一般来说，面板分位数回归主题是进一步计量经济学研究的潜在重要主题
-As we studied in Chapter 12, in many structural economic models some regressors are potentially endogenous, meaning jointly dependent with the regression error	正如我们在第 12 章中所研究的，在许多结构经济模型中，一些回归变量可能是内生的，这意味着与回归误差共同相关
+As we studied in Chapter 12, in many structural economic models some regressors are potentially endogenous, meaning jointly dependent with the regression error	正如我们在第 12 章中所研究的，在许多结构经济模型中，一些自变量可能是内生的，这意味着与回归误差共同相关
 Similar methods can be applied in quantile regression though the techniques are computationally more difficult, the theory less well developed, and applications limited	类似的方法可以应用于分位数回归，尽管这些技术在计算上更加困难，理论不够完善并且应用有限
 The method of IV quantile regression was articulated by Chernozhukov and C	IV 分位数回归方法由 Chernozhukov 和 C. Hansen (2005) 阐述，欲了解更多详细信息，请参阅该方法
 Proof of Theorem 24.3: The quantile regression estimator is an m-estimator, so we appeal to Theorem 22.3, which holds under five conditions	定理 24.3 的证明：分位数回归估计量是一个 m 估计量，因此我们求助于定理 22.3，它在五个条件下成立
@@ -3997,7 +3997,7 @@ Conditional Logit	条件逻辑
 A choice model which allows for regressors which differ across alternatives was developed by McFadden in the 1970s, which he called the Conditional Logit model	McFadden 在 20 世纪 70 年代开发了一种选择模型，该模型允许不同替代方案之间存在不同的自变量，他将其称为条件 Logit 模型
 An example will help illustrate the setting	一个例子将有助于说明该设置
 As a concrete example consider the dataset Koppelman on the textbook webpage	作为一个具体示例，请考虑教科书网页上的数据集 Koppelman
-Available regressors include the cost of each alternative, the in-vehicle travel time (intime) of each alternative, household income, and an indicator if one of the trip endpoints is an urban center	可用的回归变量包括每个替代方案的成本、每个替代方案的车内出行时间 (intime)、家庭收入以及行程终点之一是否为城市中心的指标
+Available regressors include the cost of each alternative, the in-vehicle travel time (intime) of each alternative, household income, and an indicator if one of the trip endpoints is an urban center	可用的自变量包括每个替代方案的成本、每个替代方案的车内出行时间 (intime)、家庭收入以及行程终点之一是否为城市中心的指标
 To understand the difference between the multinomial logit and the conditional logit models, (26.1) describes how the utility of a specific alternative (e.g. married or divorced) is affected by a variable such as age	为了理解多项 Logit 模型和条件 Logit 模型之间的差异，（26.1）描述了特定替代方案（例如结婚或离婚）的效用如何受到年龄等变量的影响
 These variables have common meanings across alternatives so the restriction that the coefficients are common appears reasonable	这些变量在各个替代方案中具有共同的含义，因此系数共同的约束似乎是合理的
 Using the Koppelman dataset we estimate a conditional logit model	使用 Koppelman 数据集，我们估计条件 Logit 模型
@@ -4087,7 +4087,7 @@ Count data models are typically employed in contexts where the counts are small 
 This is why the model is called Poisson regression	这就是该模型被称为泊松回归的原因
 Since the second derivative is globally negative definite the log-likelihood function is globally concave	由于二阶导数是全局负定的，因此对数似然函数是全局凹的
 Hence numerical optimization to find the MLE is computationally straightforward	因此，寻找 MLE 的数值优化在计算上是很简单的
-In general there is no reason to expect the Poisson model to be correctly specified	一般来说，没有理由期望泊松模型能够被正确指定
+In general there is no reason to expect the Poisson model to be correctly specified	一般来说，没有理由期望泊松模型能够被正确设定
 To explore this concept further, suppose the true CEF is nonparametric	为了进一步探讨这个概念，假设真实的 CEF 是非参数的
 This is a broad justification for Poisson regression in count data applications if suitable attention is paid to the functional form for the included regressors	如果对所包含的自变量的函数形式给予适当的关注，那么这就是计数数据应用中泊松回归的广泛理由
 Since the model is an approximation, however, the conventional covariance matrix estimator will be inconsistent	然而，由于该模型是近似值，因此传统的协方差矩阵估计量将不一致
@@ -4102,7 +4102,7 @@ The context is market-level observations	背景是市场层面的观测
 Observations typically include the price and sale quantities of each good, a set of characteristics of each good, and possibly information on demographic characteristics of the market population	观测通常包括每种商品的价格和销售数量、每种商品的一组特征，以及可能的有关市场人口的人口特征的信息
 The model is derived from a conditional logit specification of individual behavior	该模型源自个体行为的条件 Logit 设定
 The trade-off is the need to take a stand on the number of individuals in the market	权衡是需要对市场上的个体数量采取立场
-There is considerable attention in the literature given to the choice and construction of instruments	文献中对仪器的选择和构造给予了相当多的关注
+There is considerable attention in the literature given to the choice and construction of instruments	文献中对工具的选择和构造给予了相当多的关注
 We mentioned earlier that observations may include demographic information	我们之前提到，观测结果可能包括人口统计信息
 These random variables are then treated jointly with the random coefficients with no effective change in the estimation method	然后将这些随机变量与随机系数一起处理，而估计方法没有发生有效改变
 To estimate a BLP model in Stata there is an add-on command blp	为了在 Stata 中估计 BLP 模型，有一个附加命令 blp
@@ -4759,7 +4759,7 @@ This selects the model averaging weights by minimizing a cross-validation criter
 Unfortunately, the theoretical literature concerning ensembling is thin	不幸的是，有关集成的理论文献很少
 Much of the advice concerning specific methods is based on empirical performance	关于具体方法的许多建议都是基于实证表现
 Lasso IV	套索四号
-Belloni, Chen, Chernozhukov, and Hansen (2012) propose Lasso for estimation of the reduced form of an instrumental variables regression	Belloni、Chen、Chernozhukov 和 Hansen（2012）提出 Lasso 来估计工具变量回归的简化形式
+Belloni, Chen, Chernozhukov, and Hansen (2012) propose Lasso for estimation of the reduced form of an instrumental variables regression	Belloni、Chen、Chernozhukov 和 Hansen（2012）提出 Lasso 来估计工具变量回归的精简形式
 The model is linear IV	该模型是线性 IV
 The paper discusses alternative formulations	本文讨论了替代方案
 We can reverse the procedure	我们可以逆转这个过程
