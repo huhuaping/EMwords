@@ -1582,7 +1582,7 @@ To illustrate we use the Duflo, Dupas, and Kremer (2011) dataset	为了说明这
 Table 11.2: Principal Component Weight Vectors	表 11.2：主成分权重向量
 principal component is similar to a simple average of the seven test scores	主成分类似于七个检验得分的简单平均值
 In Stata, principal components analysis can be implemented with the pca command	在Stata中，主成分分析可以通过 pca 命令实现
-The R commands by default do not normalize the observations	默认情况下，R 命令不会对观测值进行归一化
+The R commands by default do not normalize the observations	默认情况下，R 命令不会对观测值进行标准化
 Factor Models	因子模型
 Closely related to principal components are factor models	与主成分密切相关的是因子模型
 In the next few sections we focus on methods which are popular among economists	在接下来的几节中，我们将重点讨论经济学家中流行的方法
@@ -1728,36 +1728,36 @@ Returning to Card's college proximity example suppose that we treat experience a
 This indicates that the key impact of proximity on education is via public colleges rather than private colleges	这表明邻近性对教育的主要影响是通过公立大学而不是私立大学
 The 2SLS estimates obtained using these two instruments are presented in the fourth column of Table 12.1	表 12.1 的第四列列出了使用这两种工具获得的 2SLS 估计值
 This is roughly twice as large as the estimate obtained by least squares in the first column	这大约是第一列中通过最小二乘法获得的估计值的两倍
-You might wonder if we could use all three instruments - college, public, and private	你可能想知道我们是否可以使用所有三种工具——大学、公立和私立
+You might wonder if we could use all three instruments - `college`, `public`, and `private`	你可能想知道我们是否可以使用所有三个工具——`college`、`public`和`private`
 Since the instruments are linearly related the three together would violate the full-rank condition (12.6)	由于这些工具是线性相关的，因此这三个工具一起将违反满秩条件（12.6）
-The 2SLS estimator may be calculated in Stata using the ivregress 2 sls command	2SLS 估计量可以在 Stata 中使用 ivregress 2 sls 命令计算
+The 2SLS estimator may be calculated in Stata using the `ivregress 2sls` command	2SLS 估计量可以在 Stata 中使用 `ivregress 2sls` 命令计算
 Limited Information Maximum Likelihood	有限信息极大似然
 An alternative method to estimate the parameters of the structural equation is by maximum likelihood	估计结构方程参数的另一种方法是通过极大似然法
 The estimator is known as limited information maximum likelihood (LIML)	该估计量称为有限信息极大似然 (LIML)
-We do not describe the FIML estimator as it is not commonly used in applied econometrics	我们不描述 FIML 估计量，因为它在应用计量经济学中并不常用
-While the LIML estimator is less widely used among economists than 2SLS it has received a resurgence of attention from econometric theorists	虽然 LIML 估计量在经济学家中的使用不如 2SLS 广泛，但它已重新受到计量经济学理论家的关注
+We do not describe the FIML estimator as it is not commonly used in applied econometrics	我们不阐述 FIML 估计量，因为它在应用计量经济学中并不常用
+While the LIML estimator is less widely used among economists than 2SLS it has received a resurgence of attention from econometric theorists	虽然 LIML 估计量在经济学家中的使用不如 2SLS 广泛，但它已重新受到计量经济理论家的关注
 The minimization (12.34) is sometimes called the "least variance ratio" problem	最小化 (12.34) 有时称为“最小方差比”问题
 Previous econometrics textbooks did not present a derivation of the LIML estimator as the original derivation by Anderson and Rubin (1949) is lengthy and not particularly insightful	以前的计量经济学教科书没有提供 LIML 估计量的推导，因为 Anderson 和 Rubin (1949) 的原始推导很长而且不是特别有洞察力
-In contrast the derivation given here based on reduced rank regression is simple	相比之下，这里基于降序回归给出的推导很简单
+In contrast the derivation given here based on reduced rank regression is simple	相比之下，这里基于降秩回归给出的推导很简单
 There is an alternative (and traditional) expression for the LIML estimator	LIML 估计量有一个替代（和传统）表达式
-We defer the derivation of (12.37) until the end of this section	我们将 (12.37) 的推导推迟到本节末尾
+We defer the derivation of (12.37) until the end of this section	我们将 (12.37) 的推导延后到本节末尾
 It also helps reveal the algebraic connection between LIML, least squares, and 2SLS	它还有助于揭示 LIML、最小二乘法和 2SLS 之间的代数联系
 Expressing LIML using this IV formula is useful for variance estimation	使用此 IV 公式表达 LIML 对于方差估计非常有用
 The LIML estimator has the same asymptotic distribution as 2SLS	LIML 估计量具有与 2SLS 相同的渐近分布
-(We review these cases in the following sections.) However, on the other hand LIML has wider finite sample dispersion	）然而，另一方面，LIML 具有更广泛的有限样本离散度
+However, on the other hand LIML has wider finite sample dispersion	然而，另一方面，LIML 具有更广泛的有限样本离散度
 We now derive the expression (12.37)	现在我们推导出表达式（12.37）
-Equation (12.37) is the same as the two equation system	方程(12.37)与二元方程组相同
+Equation (12.37) is the same as the two equation system	方程(12.37)与双方程系统相同
 The first equation is (12.35)	第一个方程是（12.35）
 which is (12.38) when rearranged	重新排列后为 (12.38)
 We have thus shown that (12.37) is equivalent to (12.35) and (12.38) and is thus a valid expression for the LIML estimator	因此，我们证明 (12.37) 等价于 (12.35) 和 (12.38)，因此是 LIML 估计量的有效表达式
-Returning to the Card college proximity example we now present the LIML estimates of the equation with the two instruments (public, private)	回到卡学院邻近示例，我们现在使用两种工具（公共、私人）呈现方程的 LIML 估计
+Returning to the Card college proximity example we now present the LIML estimates of the equation with the two instruments (`public`, `private`)	回到 Card 大学邻近示例，我们现在使用两种工具（`public`、`private`）展示方程的 LIML 估计
 They are quite similar to the 2SLS estimates	它们与 2SLS 估计非常相似
-The LIML estimator may be calculated in Stata using the ivregress liml command	LIML 估计量可以在 Stata 中使用 ivregress liml 命令进行计算
+The LIML estimator may be calculated in Stata using the `ivregress liml` command	LIML 估计量可以在 Stata 中使用 `ivregress liml` 命令进行计算
 Split-Sample IV and JIVE	分割样本 IV 和 JIVE
-This correlation and bias disappears asymptotically but it can be important in applications	这种相关性和偏误逐渐消失，但在应用中可能很重要
+This correlation and bias disappears asymptotically but it can be important in applications	这种相关性和偏误渐近消失，但在应用中可能很重要
 A limitation of SSIV is that the results will be sensitive to the sample spliting	SSIV 的局限性在于结果对样本分割很敏感
 This was called the jackknife instrumental variables (JIVE1) estimator by Angrist, Imbens, and Krueger (1999)	Angrist、Imbens 和 Krueger (1999) 将其称为折刀工具变量 (JIVE1) 估计量
-It first appeared in Phillips and Hale (1977)	它首次出现在《菲利普斯与黑尔》（Phillips and Hale，1977）中
+It first appeared in Phillips and Hale (1977)	它首次出现在 Phillips 和 Hale （1977）中
 Angrist, Imbens, and Krueger (1999) pointed out that a somewhat simpler adjustment also removes the correlation and bias	Angrist、Imbens 和 Krueger (1999) 指出，稍微简单一些的调整也可以消除相关性和偏误
 Thus the estimators do not require significantly more computation than 2SLS	因此，估计量不需要比 2SLS 更多的计算量
 An asymptotic distribution theory for JIVE1 and JIVE2 was developed by Chao, Swanson, Hausman, Newey, and Woutersen (2012)	JIVE1 和 JIVE2 的渐近分布理论由 Chao、Swanson、Hausman、Newey 和 Woutersen (2012) 开发
@@ -1780,7 +1780,7 @@ As in the case of least squares estimation the asymptotic variance simplifies un
 The derivation of the asymptotic distribution builds on the proof of consistency	渐近分布的推导建立在一致性证明的基础上
 under Assumptions 12.2.1 and 12.2.2	根据假设 12.2.1 和 12.2.2
 using Assumptions 12.2.3	使用假设 12.2.3
-Determinants of 2 SLS Variance	2 SLS 方差的决定因素
+Determinants of 2SLS Variance	2SLS 方差的决定因素
 It is instructive to examine the asymptotic variance of the 2SLS estimator to understand the factors which determine the precision (or lack thereof) of the estimator	检查 2SLS 估计量的渐近方差有助于了解决定估计量精度（或缺乏精度）的因素
 We can also use this expression to examine the impact of increasing the instrument set	我们还可以使用这个表达式来检查增加工具集的影响
 Thus the 2SLS estimator with the full instrument set has a smaller asymptotic variance than the estimator with the smaller instrument set	因此，具有完整工具集的 2SLS 估计量比具有较小工具集的估计量具有更小的渐近方差
@@ -1791,7 +1791,7 @@ Thus the choice of instruments in practice induces a trade-off between bias and 
 The homoskedastic covariance matrix can be estimated by	同方差协方差矩阵可以通过以下方式估计
 Confidence intervals, t-tests, and Wald tests may all be constructed from the coefficient and covariance matrix estimates exactly as for least squares regression	置信区间、t 检验和 Wald 检验都可以按照与最小二乘回归完全相同的系数和协方差矩阵估计来构建
 In Stata the ivregress command by default calculates the covariance matrix estimator using the homoskedastic covariance matrix	在 Stata 中，ivregress 命令默认使用同方差协方差矩阵计算协方差矩阵估计量
-We defer this to Exercise 12.6	我们将其推迟到练习 12.6
+We defer this to Exercise 12.6	我们将其推后到练习 12.6
 This means that standard errors reported by the regression (12.41) will be incorrect	这意味着回归报告的标准误差 (12.41) 将不正确
 This problem is avoided if the 2SLS estimator is constructed directly and the standard errors calculated with the correct formula rather than taking the "two-step" shortcut	如果直接构造 2SLS 估计量并使用正确的公式计算标准误差而不是采取“两步”捷径，则可以避免此问题
 LIML Asymptotic Distribution	LIML 渐近分布
@@ -1804,43 +1804,43 @@ This holds under the same assumptions as for 2SLS	这在与 2SLS 相同的假设
 Consequently, one method to obtain an asymptotically valid covariance estimator for LIML is to use the 2SLS formula	因此，获得 LIML 渐近有效协方差估计量的一种方法是使用 2SLS 公式
 The estimator (12.42) is a better choice than the 2SLS formula for covariance matrix estimation as it takes advantage of the LIML estimator structure	对于协方差矩阵估计，估计量 (12.42) 是比 2SLS 公式更好的选择，因为它利用了 LIML 估计量结构
 For example, let's take the parameter estimates from the fifth column of Table 12.1, which are the 2SLS estimates with three endogenous regressors and four excluded instruments	例如，我们采用表 12.1 第五列中的参数估计值，它们是具有三个内生自变量和四个排除工具的 2SLS 估计值
-The large standard error implies that the estimate (73 years of experience) is without precision and is thus uninformative	较大的标准误差意味着该估计（73 年的经验）不精确，因此缺乏信息
+The large standard error implies that the estimate (73 years of experience) is without precision and is thus uninformative	较大的标准误差意味着该估计（73 年的经验）不精确，因此是不会增加洞见的
 Hypothesis Tests	假设检验
 Thus by examining the joint test in contrast to the individual tests is quite clear that experience has a non-zero effect	因此，通过检查联合检验与单独检验的对比，可以很清楚地看出，经验具有非零效应
 Finite Sample Theory	有限样本理论
-In Chapter 5 we reviewed the rich exact distribution available for the linear regression model under the assumption of normal innovations	在第五章中，我们回顾了在正态创新假设下可用于线性回归模型的丰富的精确分布
+In Chapter 5 we reviewed the rich exact distribution available for the linear regression model under the assumption of normal innovations	在第五章中，我们回顾了在正态新息假设下可用于线性回归模型充分的精确分布
 An excellent review of the theory, mostly developed in the 1970s and early 1980s, is provided by Peter Phillips (1983)	Peter Phillips (1983) 对主要在 20 世纪 70 年代和 1980 年代初发展起来的理论进行了精彩的回顾
 Formulae for the exact distributions have been derived but are unfortunately functions of model parameters and hence are not directly useful for finite sample inference	精确分布的公式已经导出，但不幸的是，它们是模型参数的函数，因此不能直接用于有限样本推断
-One important implication of this literature is that even in this optimal context of exact normal innovations the finite sample distributions of the IV estimators are non-normal and the finite sample distributions of test statistics are not chi-squared	该文献的一个重要含义是，即使在精确正态创新的最优背景下，IV 估计量的有限样本分布也是非正态的，并且检验统计量的有限样本分布也不是卡方的
+One important implication of this literature is that even in this optimal context of exact normal innovations the finite sample distributions of the IV estimators are non-normal and the finite sample distributions of test statistics are not chi-squared	该文献的一个重要意涵是，即使在精确正态新息的最好情形下，IV 估计量的有限样本分布也是非正态的，并且检验统计量的有限样本分布也不是卡方的
 The normal and chi-squared approximations hold asymptotically but there is no reason to expect these approximations to be accurate in finite samples	正态近似和卡方近似渐近成立，但没有理由期望这些近似在有限样本中是准确的
-A second important result is that under the assumption of normal errors most of the estimators do not have finite moments in any finite sample	第二个重要结果是，在正态误差的假设下，大多数估计量在任何有限样本中都不具有有限矩
-Thus if there is one over-identifying restriction 2 SLS has a finite expectation and if there are two over-identifying restrictions then the 2SLS estimator has a finite variance	因此，如果存在一个过度识别约束，则 2SLS 具有有限期望，如果存在两个过度识别约束，则 2SLS 估计量具有有限方差
+A second important result is that under the assumption of normal errors most of the estimators do not have finite moments in any finite sample	第二个重要结论是，在正态误差的假设下，大多数估计量在任何有限样本中都不具备有限矩
+Thus if there is one over-identifying restriction 2 SLS has a finite expectation and if there are two over-identifying restrictions then the 2SLS estimator has a finite variance	因此，如果存在一个过度识别约束，则 2SLS 具备有限期望，如果存在两个过度识别约束，则 2SLS 估计量具备有限方差
 The LIML estimator has a more severe moment problem as it has no finite integer moments (Mariano, 1982) regardless of the number of over-identifying restrictions	LIML 估计量具有更严重的矩问题，因为它没有有限整数矩（Mariano，1982），无论过度识别约束的数量如何
-Fuller showed that his estimator has all moments finite under suitable conditions	富勒表明，他的估计量在适当的条件下具有有限的所有矩
+Fuller showed that his estimator has all moments finite under suitable conditions	Fuller 表明，他的估计量在适当的条件下具备有限的所有矩
 Hausman, Newey, Woutersen, Chao and Swanson (2012) propose an estimator they call HFUL which combines the ideas of JIVE and Fuller which has excellent finite sample properties	Hausman、Newey、Woutersen、Chao 和 Swanson（2012）提出了一种称为 HFUL 的估计量，它结合了 JIVE 和 Fuller 的思想，具有出色的有限样本特征
-Bootstrap for 2SLS	2SLS 的自助法
+Bootstrap for 2SLS	2SLS 自助法
 We now show that the bootstrap estimator has the same asymptotic distribution as the sample estimator	我们现在证明自助估计量具有与样本估计量相同的渐近分布
 This was first shown by Hahn (1996)	Hahn (1996) 首先表明了这一点
-The true value in the bootstrap universe is obtained by replacing the population moments by the sample moments, which equals the 2SLS estimator	Bootstrap宇宙中的真实值是通过用样本矩替换总体矩得到的，它等于2SLS估计量
+The true value in the bootstrap universe is obtained by replacing the population moments by the sample moments, which equals the 2SLS estimator	Bootstrap 世界中的真实值是通过用样本矩替换总体矩得到的，它等于2SLS估计量
 This is generally not equal to zero in the over-identified case	在过度识别的情况下，这通常不等于零
 This an an important complication	这是一个重要的并发症
-Using (12.43) we can normalize the bootstrap estimator as	使用（12.43）我们可以将自助估计量归一化为
+Using (12.43) we can normalize the bootstrap estimator as	使用（12.43）我们可以将自助估计量标准化为
 This implies (12.47) is equal to	这意味着 (12.47) 等于
 By standard calculations we can also show that bootstrap t-ratios are asymptotically normal	通过标准计算，我们还可以证明自助 t 比率是渐近正态的
 This shows that percentile-type and percentile-t confidence intervals are asymptotically valid	这表明百分数类型和百分数 t 置信区间是渐近有效的
 Consequently, unadjusted bootstrap methods will not achieve an asymptotic refinement	因此，未经调整的自助方法将无法实现渐近改进
 An alternative suggested by Hall and Horowitz (1996) is to recenter the bootstrap 2SLS estimator so that it satisfies the correct orthogonality condition	Hall 和 Horowitz (1996) 提出的另一种选择是使 bootstrap 2SLS 估计量居中，使其满足正确的正交条件
-This recentered estimator, however, is not the standard implementation of the bootstrap for 2SLS as used in empirical practice	然而，这个重新定位的估计量并不是实证实践中使用的 2SLS 自助法的标准实现
+This recentered estimator, however, is not the standard implementation of the bootstrap for 2SLS as used in empirical practice	然而，这个居中后的估计量并不是实证实践中使用的 2SLS 自助法的标准操作
 The Peril of Bootstrap 2SLS Standard Errors	Bootstrap 2SLS 标准误差的危险
 It is tempting to use the bootstrap algorithm to estimate variance matrices and standard errors for the 2SLS estimator	使用 bootstrap 算法来估计 2SLS 估计量的方差矩阵和标准误差是很诱人的
 In finite samples the 2SLS estimator may not have a finite second moment, meaning that bootstrap variance estimates are unstable and unreliable	在有限样本中，2SLS 估计量可能没有有限的二阶矩，这意味着自助方差估计不稳定且不可靠
 However this is not the most common application of IV methods in econometric practice and thus should be viewed as the exception rather than the norm	然而，这并不是 IV 方法在计量经济学实践中最常见的应用，因此应被视为例外而不是常态
-To understand what is going on consider the simplest case of a just-identified model with a single endogenous regressor and no included exogenous regressors	要了解发生的情况，请考虑刚刚识别的模型的最简单情况，该模型具有单个内生自变量且不包含外生自变量
+To understand what is going on consider the simplest case of a just-identified model with a single endogenous regressor and no included exogenous regressors	要了解发生的情况，请考虑恰好识别模型的最简单情况，该模型具有单个内生自变量且不包含外生自变量
 This means that the ratio can take arbitrarily large values	这意味着该比率可以取任意大的值
 The coefficient estimate is reported in Table 12.3, along with asymptotic, jackknife, and two bootstrap standard errors each calculated with 10,000 bootstrap replications	表 12.3 报告了系数估计值，以及渐近误差、折刀误差和两个自助标准误差，每个标准误差均通过 10,000 次自助重复计算得出
-Table 12.3: Instrumental Variable Return to Education for Black Men	表 12.3：黑人男性教育回报工具变量
-The bootstrap standard errors are an order of magnitude larger than the asymptotic standard errors, and vary substantially across the bootstrap runs despite using 10,000 bootstrap replications	自助法标准误差比渐近标准误差大一个数量级，并且尽管使用了 10,000 次自助法复制，但在自助法运行过程中差异很大
-This indicates moment failure and unreliability of the bootstrap standard errors	这表明自助法标准误差的瞬时故障和不可靠性
+Table 12.3: Instrumental Variable Return to Education for Black Men	表 12.3：黑人男性的教育回报工具变量
+The bootstrap standard errors are an order of magnitude larger than the asymptotic standard errors, and vary substantially across the bootstrap runs despite using 10,000 bootstrap replications	自助标准误差比渐近标准误差大一个数量级，并且尽管使用了 10,000 次自助法复制，但在自助法运行过程中差异很大
+This indicates moment failure and unreliability of the bootstrap standard errors	这表明自助标准误差的矩失效和不可靠性
 This is a strong message that bootstrap standard errors should not be computed for IV estimators	这是一个强烈的信息，即不应为 IV 估计量计算自助标准误差
 Instead, report percentile-type confidence intervals	相反，报告百分数类型的置信区间
 Clustered Dependence	群组依赖
@@ -1848,21 +1848,21 @@ Generated Regressors	生成的自变量
 The "two-stage" form of the 2SLS estimator is an example of what is called "estimation with generated regressors"	2SLS 估计量的“两阶段”形式是所谓“使用生成的自变量进行估计”的示例
 Unless this is incorporated into our inference methods, covariance matrix estimates and standard errors will be incorrect	除非将其纳入我们的推断方法，否则协方差矩阵估计和标准误差将是不正确的
 The econometric theory of generated regressors was developed by Pagan (1984) for linear models and extended to nonlinear models and more general two-step estimators by Pagan (1986)	生成自变量的计量经济学理论是由 Pagan (1984) 针对线性模型开发的，并由 Pagan (1986) 扩展到非线性模型和更一般的两步估计量
-observations because the generated regressors are themselves estimates	观测，因为生成的自变量本身就是估计值
+because the generated regressors are themselves estimates	因为生成的自变量本身就是估计值
 This framework includes 2SLS as well as other common estimators	该框架包括 2SLS 以及其他常见估计量
 The examples which motivated Pagan (1984) and Murphy and Topel (1985) emerged from the macroeconomics literature, in particular the work of Barro (1977) which examined the impact of inflation expectations and expectation errors on economic output	Pagan (1984) 以及 Murphy 和 Topel (1985) 的案例来自宏观经济学文献，特别是 Barro (1977) 的著作，该著作研究了通货膨胀预期和预期误差对经济产出的影响
 The generated regressor framework includes all of these examples	生成的自变量框架包括所有这些示例
 Conventional variance estimators do not address this second component and thus will be biased	传统的方差估计量不考虑第二个组成部分，因此会有偏误
-This is a dramatic simplification	这是一个戏剧性的简化
-Often this is of major interest in applications	这通常是应用程序中最感兴趣的
+This is a dramatic simplification	这是一个急剧的简化
+Often this is of major interest in applications	这通常是应用中最感兴趣的
 However, in one important set of examples it is straightforward to work out the asymptotic distribution	然而，在一组重要的示例中，计算渐近分布是很简单的
 This class of estimators includes 2SLS and the expectation model described above	此类估计量包括 2SLS 和上述期望模型
 Under conditional homoskedasticity the covariance matrix simplifies to	在条件同方差下，协方差矩阵简化为
 Under the assumption of conditional homoskedasticity this can be simplified as usual	在条件同方差的假设下，这可以像平常一样简化
-We now summarize the results of this section	我们现在总结本节的结果
-With this one modification asymptotic inference using the generated regressors is conventional	通过这一修改，使用生成的自变量进行渐近推断是传统的
+We now summarize the results of this section	我们现在总结本节的结论
+With this one modification asymptotic inference using the generated regressors is conventional	通过这一修改，使用生成的自变量进行渐近推断是惯常的
 Regression with Expectation Errors	带有期望误差的回归
-In this section we examine a generated regressor model which includes expectation errors in the regression	在本节中，我们检查生成的回归模型，其中包括回归中的期望误差
+In this section we examine a generated regressor model which includes expectation errors in the regression	在本节中，我们检查生成自变量的模型，其中包括回归的期望误差
 This does not change the results described here	这不会改变此处描述的结果
 The model is estimated as follows	该模型估计如下
 We now examine the asymptotic distributions of these estimators	我们现在检查这些估计量的渐近分布
@@ -1871,10 +1871,10 @@ The asymptotic covariance matrix is estimated by	渐近协方差矩阵估计为
 In this case we have the covariance matrix estimators	在这种情况下，我们有协方差矩阵估计量
 Control Function Regression	控制函数回归
 In this section we present an alternative way of computing the 2SLS estimator by least squares	在本节中，我们提出了一种通过最小二乘法计算 2SLS 估计量的替代方法
-It is useful in nonlinear contexts, and also in the linear model to construct tests for endogeneity	它在非线性环境中非常有用，在线性模型中构建内生性检验也很有用
-The structural and reduced form equations for the standard IV model are	标准 IV 模型的结构方程和精简形式方程为
-Substituting this into the structural form equation we find	将其代入我们发现的结构形式方程
-or in matrix notation as	或用矩阵表示法表示为
+It is useful in nonlinear contexts, and also in the linear model to construct tests for endogeneity	它在非线性情境中非常有用，在线性模型中构建内生性检验也很有用
+The structural and reduced form equations for the standard IV model are	标准 IV 模型的结构方程和精简方程为
+Substituting this into the structural form equation we find	将其代入我们发现的结构方程
+or in matrix notation as	或用矩阵记法表示为
 This turns out to be an alternative algebraic expression for the 2SLS estimator	事实证明，这是 2SLS 估计量的替代代数表达式
 which is (12.31) as claimed	正如所声称的那样，这是（12.31）
 This is the model in Section 12.27	这是第 12.27 节中的模型
@@ -1882,21 +1882,21 @@ Under conditional homoskedasticity we have the important simplifications	在条�
 Under the assumption of conditional homoskedasticity we have the estimator	在条件同方差的假设下，我们有估计量
 Endogeneity Tests	内生性检验
 Recall the control function regression (12.59)	回想一下控制函数回归（12.59）
-Specifically, estimate the reduced form by least squares	具体来说，通过最小二乘估计简化形式
+Specifically, estimate the reduced form by least squares	具体来说，通过最小二乘估计精简形式
 Since in general we do not want to impose homoskedasticity these results suggest that the most appropriate test is the Wald statistic constructed with the robust heteroskedastic covariance matrix	由于一般来说我们不想强加同方差，因此这些结果表明最合适的检验是使用稳健的异方差协方差矩阵构建的 Wald 统计量
-There is an alternative (and traditional) way to derive a test for endogeneity	有另一种（传统的）方法来导出内生性检验
-This literature was developed under the assumption of conditional homoskedasticity (and it is important for these results) so we assume this condition for the development of the statistic	该文献是在条件同方差的假设下开发的（这对于这些结果很重要），因此我们假设这个条件来开发统计数据
+There is an alternative (and traditional) way to derive a test for endogeneity	有另一种（传统的）方法来推导出内生性检验
+This literature was developed under the assumption of conditional homoskedasticity (and it is important for these results) so we assume this condition for the development of the statistic	该文献是在条件同方差的假设下开发的（这对于这些结果很重要），因此我们假定这个条件用以开发统计量
 The general class of tests are called Durbin-Wu-Hausman tests, Wu-Hausman tests, or Hausman tests, depending on the author	一般的检验类别称为 Durbin-Wu-Hausman 检验、Wu-Hausman 检验或 Hausman 检验，具体取决于作者
-We illustrate using the Card proximity example using the two instruments public and private	我们使用公共和私有两种工具来说明卡邻近示例
-We now show the equality of the various statistics	我们现在展示各种统计数据的等价性
+We illustrate using the Card proximity example using the two instruments `public` and `private`	我们使用`public` 和 `private`两个工具来说明 Card 邻近案例
+We now show the equality of the various statistics	我们现在展示各种统计量的等价性
 Subset Endogeneity Tests	子集内生性检验
 In some cases we may only wish to test the endogeneity of a subset of the variables	在某些情况下，我们可能只想检验变量子集的内生性
 Under homoskedasticity a straightfoward test can be constructed by the Durbin-Wu-Hausman principle	在同方差下，可以通过 Durbin-Wu-Hausman 原理构建直接检验
-In this model, the assumption of exogeneity with homogenous coefficients is rejected for education but the result for experience is unclear	在该模型中，教育方面拒绝具有同质系数的外生性假设，但实证结果尚不清楚
-A heteroskedasticity or cluster-robust test cannot be constructed easily by the Durbin-Wu-Hausman approach since the covariance matrix does not take a simple form	由于协方差矩阵不采用简单的形式，因此无法通过 Durbin-Wu-Hausman 方法轻松构建异方差性或群组稳健性检验
+In this model, the assumption of exogeneity with homogenous coefficients is rejected for education but the result for experience is unclear	在该模型中，对于教育变量是拒绝具有同质系数的外生性假设，但实证结果尚不清楚
+A heteroskedasticity or cluster-robust test cannot be constructed easily by the Durbin-Wu-Hausman approach since the covariance matrix does not take a simple form	由于协方差矩阵没有采用简单的形式，因此无法通过 Durbin-Wu-Hausman 方法轻松构建异方差性或群组稳健性检验
 OverIdentification Tests	过度识别检验
 Such tests are called overidentification tests	此类检验称为过度识别检验
-In contrast, if the overidentification hypothesis is false then the two estimators will converge to different probability limits and it is unclear if either probability limit is interesting	相反，如果过度识别假设为假，则两个估计量将收敛到不同的概率极限，并且不清楚任一概率极限是否有趣
+In contrast, if the overidentification hypothesis is false then the two estimators will converge to different probability limits and it is unclear if either probability limit is interesting	相反，如果过度识别假设为假，则两个估计量将收敛到不同的概率极限，并且不清楚任一概率极限是否是感兴趣的
 An overidentification test addresses this question	过度识别检验解决了这个问题
 Sargan's version is more typically reported	萨根的版本被更广泛地报道
 Hence the bottom line appears to be that to allow heteroskedasticity or clustering it is best to use a GMM approach	因此，底线似乎是为了允许异方差或群组，最好使用 GMM 方法
@@ -2314,7 +2314,7 @@ One way to think about the difference between MDS and i.i.d. shocks is in terms 
 A MDS is unforecastable in the mean but other moments may be forecastable	MDS 总体上是不可预测的，但其他时候可能是可以预测的
 A good reference for this class of models is Campbell, Lo, and MacKinlay (1997)	Campbell、Lo 和 MacKinlay (1997) 是此类模型的一个很好的参考
 CLT for Martingale Differences	马丁格尔差异的 CLT
-We are interested in an asymptotic approximation for the distribution of the normalized sample mean	我们对归一化样本均值分布的渐近近似感兴趣
+We are interested in an asymptotic approximation for the distribution of the normalized sample mean	我们对标准化样本均值分布的渐近近似感兴趣
 assumption has been replaced by the assumption of a strictly stationarity and ergodic MDS	唯一的区别是 i.i.d.假设已被严格平稳性和遍历 MDS 的假设所取代
 To illustrate the role of the MDS assumption we give a sketch of the proof in Section 14.47	为了说明 MDS 假设的作用，我们在第 14.47 节中给出了证明的草图
 Mixing	混合
@@ -3280,7 +3280,7 @@ This estimator, while less abrupt than the Binned Means estimator, is still quit
 Kernel Regression	核回归
 Appropriate weight functions are called kernel functions	适当的权重函数称为核函数
 Essentially, a kernel function is a bounded probability density function which is symmetric about zero	本质上，核函数是关于零对称的有界概率密度函数
-Some of the mathematical expressions are simplified if we restrict attention to kernels whose variance is normalized to unity	如果我们将注意力集中在方差归一化为单位的核上，一些数学表达式就会被简化
+Some of the mathematical expressions are simplified if we restrict attention to kernels whose variance is normalized to unity	如果我们将注意力集中在方差标准化为单位的核上，一些数学表达式就会被简化
 There are a large number of functions which satisfy Definition 19.1, and many are programmed as options in statistical packages	有大量函数满足定义 19.1，并且许多函数被编程为统计包中的选项
 For more discussion on kernel functions see Chapter 17 of Probability and Statistics for Economists	有关核函数的更多讨论，请参阅《经济学家的概率与统计》第 17 章
 The estimator (19.2) is known as the Nadaraya-Watson estimator, the kernel regression estimator, or the local constant estimator, and was introduced independently by Nadaraya (1964) and Watson (1964)	估计量 (19.2) 被称为 Nadaraya-Watson 估计量、核回归估计量或局部常数估计量，由 Nadaraya (1964) 和 Watson (1964) 独立引入
@@ -3501,7 +3501,7 @@ It turns out, however, that the projection error can be easily deduced from (20.
 Definition 20.1 The projection approximation error is	定义20.1 投影近似误差为
 The available theory of the approximation of functions goes beyond the results described here	可用的函数逼近理论超出了此处描述的结果
 Regressor Bounds	自变量界
-Figure 20.4: Normalized Regressor Length	图 20.4：归一化自变量长度
+Figure 20.4: Normalized Regressor Length	图 20.4：标准化自变量长度
 Matrix Convergence	矩阵收敛
 One of the challenges which arise when developing a theory for the least squares estimator is how to describe the large-sample behavior of the sample design matrix	开发最小二乘估计理论时出现的挑战之一是如何描述样本设计矩阵的大样本行为
 It turns out to be convenient if we first rotate the regressor vector so that the elements are orthogonal in expectation	如果我们首先旋转回归向量以使元素在期望中正交，结果会很方便
