@@ -10,7 +10,7 @@ require(here)
 require(googleLanguageR)
 
 # ==== read file ====
-file_path <- here("text/index/abbrev-Cameron-Stata-a.qmd")
+file_path <- "text/index/abbrev-Cameron-Stata-a.qmd"
 #file_path <- chpt_path
 tbl_tex <- readLines(file_path) %>%
   as_tibble() %>%
@@ -248,25 +248,16 @@ tbl_tidy <- tbl_trans %>%
   )
 
 # ==== write out qmd file ====
-file_base <- basename(path = file_path)
-file_out <- here(
-  paste0(
-    "trans/",
-    str_replace(file_base, "\\.qmd$","-chn\\.qmd")
-  )
-)
+file_base <- file_path
+file_out <- str_replace(file_base, "\\.qmd$","-chn\\.qmd")
+
 # write out all modified text
 writeLines(unlist(tbl_tidy$text_tidy), file_out)
 
 # ==== export out final table ====
 
-file_base <- basename(path = file_path)
-file_out <- here(
-  paste0(
-    "trans/",
-    str_replace(file_base, "\\.qmd$","-chn\\.rds")
-  )
-)
+file_out <- str_replace(file_base, "\\.qmd$","-chn\\.rds")
+
 
 # write table
 write_rds(tbl_tidy, file_out)

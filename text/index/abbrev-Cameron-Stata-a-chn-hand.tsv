@@ -1,0 +1,137 @@
+Glossary of abbreviations	# 缩写词表
+2SLS: two-stage least squares	2SLS：两阶段最小二乘法
+3SLS: three-stage least squares	3SLS：三阶段最小二乘法
+AFT: accelerated failure time	AFT：加速故障时间
+AIC: Akaike information criterion	AIC：赤池信息准则
+AICC: Akaike information corrected criterion	AICC：赤池信息修正标准
+AIPW: augmented inverse-probability weighting	AIPW：增强逆概率加权
+AME: average marginal effect	AME：平均边际效应
+AR: Anderson-Rubin	AR：安德森-鲁宾
+AR: autoregressive	AR：自回归
+ARMA: autoregressive moving average	ARMA：自回归移动平均线
+ARUM: additive random-utility model	ARUM：加性随机效用模型
+ATE: average treatment effect	ATE：平均治疗效果
+ATET: average treatment effect on the treated	ATET：治疗对象的平均治疗效果
+AUC: area under the curve	AUC：曲线下面积
+BC: bias-corrected	BC：偏差校正
+BCa: bias-corrected accelerated	BCa：偏差校正加速
+BIC: Bayesian information criterion	BIC：贝叶斯信息准则
+BLP: Berry-Levinson-Pakes	BLP：贝里-莱文森-帕克斯
+CCE: common correlated estimator	CCE：通用相关估计量
+c.d.f.: cumulative distribution function	c.d.f.：累积分布函数
+CIF: cumulative incidence function	CIF：累积发生函数
+CL: conditional logit	CL：条件逻辑
+CLR: conditional likelihood ratio	CLR：条件似然比
+CQR: conditional quantile regression	CQR：条件分位数回归
+CRE: correlated random effects	CRE：相关随机效应
+CV: cross-validation	CV：交叉验证
+DGP: data-generating process	DGP：数据生成过程
+DIC: deviance information criterion	DIC：偏差信息标准
+DID: difference in differences	DID：差异中的差异
+DV: dummy variable	DV：虚拟变量
+DWH: Durbin-Wu-Hausman	DWH：杜宾-吴-豪斯曼
+ERM: extended regression model	ERM：扩展回归模型
+ET: endogenous treatment	ET：内源性治疗
+FAQ: frequently asked questions	FAQ：常见问题解答
+FD: first difference	FD：一阶差分
+FDP: false discovery proportion	FDP：错误发现比例
+FDR: false discovery rate	FDR：错误发现率
+FE: fixed effects	FE：固定效应
+FGLS: feasible generalized least squares	FGLS：可行广义最小二乘法
+FMM: finite-mixture model	FMM：有限混合模型
+FPC: finite-population correction	FPC：有限总体校正
+FRD: fuzzy regression discontinuity	FRD：模糊回归不连续性
+FWER: family wise error rate	FWER：家庭明智错误率
+GAM: generalized additive models	GAM：广义加性模型
+GLM: generalized linear models	GLM：广义线性模型
+GLS: generalized least squares	GLS：广义最小二乘法
+GMM: generalized method of moments	GMM：广义矩法
+GS2SLS: generalized spatial two-stage least squares	GS2SLS：广义空间两阶段最小二乘法
+GSEM: generalized structural equation model	GSEM：广义结构方程模型
+GUI: graphical user interface	GUI：图形用户界面
+HAC: heteroskedasticity and autocorrelation consistent	HAC：异方差和自相关一致
+HRS: Health and Retirement Study	HRS：健康与退休研究
+IIA: independence of irrelevant alternatives	IIA：不相关替代方案的独立性
+i.i.d.: independent and identically distributed	i.i.d.：独立同分布
+IM: information matrix	IM：信息矩阵
+IPW: inverse-probability weighting	IPW：逆概率加权
+IPW-RA: inverse probability with regression adjustment	IPW-RA：带有回归调整的逆概率
+ITT: intention to treat	ITT：意向治疗
+IV: instrumental variables	IV：工具变量
+JIVE: jackknife instrumental variables estimator	JIVE：折刀工具变量估计器
+LATE: local average treatment effect	LATE：局部平均治疗效果
+LEF: linear exponential family	LEF：线性指数族
+LIML: limited-information maximum likelihood	LIML：有限信息最大似然
+LM: Lagrange multiplier	LM：拉格朗日乘子
+LOOCV: leave-one-out cross validation	LOOCV：留一法交叉验证
+LPM: linear probability model	LPM：线性概率模型
+LR: likelihood ratio	LR：似然比
+LS: least squares	LS：最小二乘法
+LSDV: least squares dummy variable	LSDV：最小二乘虚拟变量
+MA: moving average	MA：移动平均线
+MAR: missing at random	MAR：随机失踪
+MCAR: missing completely at random	MCAR：完全随机缺失
+MCMC: Markov chain Monte Carlo	MCMC：马尔可夫链蒙特卡罗
+MD: minimum distance	MD：最小距离
+ME: marginal effect	ME：边际效应
+MEM: marginal effect at mean	MEM：均值边际效应
+MER: marginal effect at representative value	MER：代表值的边际效应
+MG: mean group	MG：平均组
+MH: Metropolis-Hastings	MH：大都会-黑斯廷斯
+ML: maximum likelihood	ML：最大似然
+MLE: maximum likelihood estimator	MLE：最大似然估计器
+MLT: multilevel treatment	MLT：多层次治疗
+MM: method of moments	MM：矩量法
+MNAR: missing not at random	MNAR：不是随机缺失的
+MNL: multi-nomial logit	MNL：多项式 Logit
+MNP: multi-nomial probit	MNP：多项式概率
+MSE: mean squared error	MSE：均方误差
+MSL: maximum simulated likelihood	MSL：最大模拟似然
+MSS: model sum of squares	MSS：模型平方和
+MTE: marginal treatment effect	MTE：边际治疗效果
+NB: negative binomial	注意：负二项式
+NB1: negative binomial variance linear in mean	NB1：负二项式方差均值呈线性
+NB2: negative binomial variance quadratic in mean	NB2：负二项式方差均值的二次方
+NL: nested logit	NL：嵌套逻辑
+NLS: nonlinear least squares	NLS：非线性最小二乘法
+NNM: nearest neighbor matching	NNM：最近邻匹配
+NR: Newton-Raphson	NR：牛顿-拉夫森
+NSW: National Supported Work	新南威尔士州：国家支持工作
+OHIE: Oregon Health Insurance Experiment	俄亥俄州：俄勒冈州健康保险实验
+OHP: Oregon Health Program	OHP：俄勒冈州健康计划
+OLS: ordinary least squares	OLS：普通最小二乘法
+PA: population averaged	PA：人口平均数
+PFGLS: pooled feasible generalized least squares	PFGLS：合并可行广义最小二乘法
+PH: proportional hazards	PH：比例风险
+PM: predictive mean	PM：预测平均值
+POM: potential outcome mean	POM：潜在结果平均值
+PSID: Panel Study of Income Dynamics	PSID：收入动态面板研究
+PSM: propensity score matching	PSM：倾向得分匹配
+PSU: primary sampling unit	PSU：初级抽样单位
+QCR: quantile count regression	QCR：分位数计数回归
+QR: quantile regression	QR：分位数回归
+QTE: quantile treatment effect	QTE：分位数治疗效果
+RA: regression adjustment	RA：回归调整
+RCT: randomized control trials	RCT：随机对照试验
+RD: regression discontinuity	RD：回归不连续性
+RE: random effects	回复：随机效应
+RIF: recentered influence function	RIF：集中影响函数
+RMSE: root mean squared error	RMSE：均方根误差
+ROC: receiver operator characteristics	ROC：接收方操作员特征
+RPL: random parameters logit	RPL：随机参数logit
+RSS: residual sum of squares	RSS：残差平方和
+SAR: spatial autoregressive	SAR：空间自回归
+SARAR: autoregressive spatial autoregressive	SARAR：自回归 空间自回归
+SEM: structural equation model	SEM：结构方程模型
+SJ: Stata Journal	SJ：Stata 期刊
+SRD: sharp regression discontinuity	SRD：急剧回归不连续性
+STB: Stata Technical Bulletin	STB：Stata 技术公告
+SUR: seemingly unrelated regressions	SUR：看似无关的回归
+TE: treatment effect	TE：治疗效果
+TSS: total sum of squares	TSS：总平方和
+VCE: variance-covariance matrix of the estimator	VCE：估计器的方差-协方差矩阵
+WLS: weighted least squares	WLS：加权最小二乘法
+ZINB: zero-inflated negative binomial	ZINB：零膨胀负二项式
+ZIP: zero-inflated Poisson	ZIP：零膨胀泊松
+ZTNB: zero-truncated negative binomial	ZTNB：零截断负二项式
+ZTP: zero-truncated Poisson	ZTP：零截断泊松
