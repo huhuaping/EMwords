@@ -294,7 +294,7 @@ Regression to the Mean	回归到均值
 The term regression originated in an influential paper by Francis Galton (1886) where he examined the joint distribution of the stature (height) of parents and children	回归一词起源于弗朗西斯·高尔顿（Francis Galton）（1886 年）的一篇有影响力的论文，他在该论文中研究了父母和孩子的身高（身高）的联合分布
 Galton called this phenomenon regression to the mean, and the label regression has stuck to this day to describe most conditional relationships	高尔顿将这种现象称为均值回归，而回归一词至今仍被用于描述大多数条件关系
 To be more precise, take the simple linear projection	更准确地说，采用简单的线性投影
-This means that on average, a child's height is more mediocre (closer to the population average) than the parent's	这意味着平均而言，孩子的身高比父母的身高更平均化（接近人口平均水平）
+This means that on average, a child's height is more mediocre (closer to the population average) than the parent's	这意味着平均而言，孩子的身高比父母的身高更平均化（接近总体平均水平）
 Another way of seeing this is to examine the conditions for convergence in the context of equation (2.49)	另一种看待这一点的方法是在方程（2.49）的情形下检查收敛条件
 The regression fallacy arises in related empirical situations	回归谬误出现在有关实证情形下
 Of course, there was no discovery - regression to the mean is a necessary feature of stable distributions	当然，没有任何发现——回归均值是稳定分布的必要特征
@@ -1898,46 +1898,44 @@ OverIdentification Tests	过度识别检验
 Such tests are called overidentification tests	此类检验称为过度识别检验
 In contrast, if the overidentification hypothesis is false then the two estimators will converge to different probability limits and it is unclear if either probability limit is interesting	相反，如果过度识别假设为假，则两个估计量将收敛到不同的概率极限，并且不清楚任一概率极限是否是感兴趣的
 An overidentification test addresses this question	过度识别检验解决了这个问题
-Sargan's version is more typically reported	萨根的版本被更广泛地报道
-Hence the bottom line appears to be that to allow heteroskedasticity or clustering it is best to use a GMM approach	因此，底线似乎是为了允许异方差或群组，最好使用 GMM 方法
-In overidentified applications it is always prudent to report an overidentification test	在过度识别的应用程序中，报告过度识别检验始终是谨慎的做法
+Sargan's version is more typically reported	Sargan 的版本更通常地被报告出来
+Hence the bottom line appears to be that to allow heteroskedasticity or clustering it is best to use a GMM approach	因此，底线似乎是允许异方差或群组，最好使用 GMM 方法
+In overidentified applications it is always prudent to report an overidentification test	在过度识别的应用中，报告过度识别检验始终是谨慎的做法
 In this case we should be concerned that the model is misspecified and interpreting the parameter estimates should be done cautiously	在这种情况下，我们应该担心模型误设，并且应该谨慎解释参数估计
-The results of an overidentification test should be integrated with other information before making a strong decision	在做出强有力的决定之前，过度识别检验的结果应与其他信息相结合
-We illustrate the methods with the Card college proximity example	我们用卡学院邻近示例来说明这些方法
+The results of an overidentification test should be integrated with other information before making a strong decision	在做出坚决的决定之前，过度识别检验的结果应与其他信息相结合
+We illustrate the methods with the Card college proximity example	我们用 Card 大学临近案例来说明这些方法
 We now prove Theorem 12.16	现在我们证明定理12.16
-The Sargan statistic test can be implemented in Stata using the command estat overid after ivregress 2sls or ivregres liml if a standard (non-robust) covariance matrix has been specified (that is, without the ', r' option), or otherwise by the command estat overid, forcenonrobust	如果指定了标准（非稳健）协方差矩阵（即，没有 ', r' 选项），则可以在 Stata 中使用命令 estat overid 在 ivregress 2sls 或 ivregres liml 后实现 Sargan 统计检验，否则通过命令estat overid，forcenonrobust
+The Sargan statistic test can be implemented in Stata using the command estat overid after ivregress 2sls or ivregres liml if a standard (non-robust) covariance matrix has been specified (that is, without the ', r' option), or otherwise by the command estat overid, forcenonrobust	如果指定了标准（非稳健）协方差矩阵（即，没有 ', r' 选项），为实现 Sargan 统计检验，则可以在 Stata 中在 ivregress 2sls 或 ivregres liml 后，使用命令 estat overid ，或者使用命令 estat overid，forcenonrobust
 Subset OverIdentification Tests	子集过度识别检验
-In some cases it may be reasonable to test only a subset of the moment conditions	在某些情况下，仅检验瞬间条件的子集可能是合理的
-Independently from Newey (1985), Eichenbaum, L	独立于 Newey (1985)，Eichenbaum、L. Hansen 和 Singleton (1988) 提出了一种基于 Sargan 统计差异的检验
+In some cases it may be reasonable to test only a subset of the moment conditions	在某些情况下，仅检验矩条件的一个子集可能是合理的
 These tests have chi-square asymptotic distributions	这些检验具有卡方渐近分布
 In Stata, for example, this is simple to implement with a few lines of code	例如，在 Stata 中，只需几行代码即可轻松实现
-We illustrate using the Card college proximity example	我们使用卡学院邻近示例进行说明
+We illustrate using the Card college proximity example	我们使用 Card 大学临近示例进行说明
 We can test this dispute using a overidentification subset test	我们可以使用过度识别子集检验来检验此争议
 We now prove the results in Theorem 12.17	现在我们证明定理 12.17 中的结果
 We next establish the asymptotic distribution	接下来我们建立渐近分布
 Bootstrap Overidentification Tests	Bootstrap 过度识别检验
-In small to moderate sample sizes the overidentification tests are not well approximated by the asymptotic chi-square distributions	在小到中等样本量中，渐近卡方分布不能很好地近似过度识别检验
-The recentered bootstrap analog is	居中自助法模拟是
-Local Average Treatment Effects	当地平均治疗效果
+In small to moderate sample sizes the overidentification tests are not well approximated by the asymptotic chi-square distributions	在小到中等样本量中，过度识别检验不能很好通过渐近卡方分布近似得出
+Local Average Treatment Effects	局部平均处置效应
 In a pair of influential papers, Imbens and Angrist (1994) and Angrist, Imbens and Rubin (1996) proposed an new interpretation of the instrumental variables estimator using the potential outcomes model introduced in Section 2.30	在两篇有影响力的论文中，Imbens 和 Angrist (1994) 以及 Angrist、Imbens 和 Rubin (1996) 使用第 2.30 节中介绍的潜在结果模型提出了工具变量估计量的新解释
 We would like to learn about the distribution of the causal effects, or at least features of the distribution	我们想了解因果效应的分布，或者至少是分布的特征
-We can summarize the possibilites with the following chart which is based on labels developed by Angrist, Imbens and Rubin (1996)	我们可以用下面的图表总结可能性，该图表基于 Angrist、Imbens 和 Rubin (1996) 开发的标签
-Once again, identification requires that there are no Deniers	再次强调，认同要求没有否认者
-Imbens and Angrist call this the local average treatment effect (LATE) as it is the average treatment effect for the sub-population whose endogenous regressor is affected by the instrument	Imbens 和 Angrist 将其称为局部平均治疗效果 (LATE)，因为它是内源自变量受工具影响的子群体的平均治疗效果
-Examining the definition, the LATE is the average causal effect of college attendence on wages for the sub-sample of individuals who choose to attend college if (and only if) they live close to one	检查这个定义，LATE 是当（且仅当）住得接近大学时选择上大学的个体子样本的大学入学率对工资的平均因果效应
+We can summarize the possibilites with the following chart which is based on labels developed by Angrist, Imbens and Rubin (1996)	我们可以用下面的图表总结可能性，该图表基于 Angrist、Imbens 和 Rubin (1996) 开发的记号
+Once again, identification requires that there are no Deniers	再次强调，识别要求没有否认者
+Imbens and Angrist call this the local average treatment effect (LATE) as it is the average treatment effect for the sub-population whose endogenous regressor is affected by the instrument	Imbens 和 Angrist 将其称为局部平均处置效应 (LATE)，因为它是内生自变量受工具影响的子群体的平均处置效应
+Examining the definition, the LATE is the average causal effect of college attendence on wages for the sub-sample of individuals who choose to attend college if (and only if) they live close to one	检视这个定义，LATE 是当（且仅当）住得接近大学时选择上大学的个体的子样本，其大学入学率对工资的平均因果效应
 Interestingly, we show below that	有趣的是，我们在下面展示了
 That is, LATE equals the Wald expression (12.27) for the slope coefficient in the IV regression model	也就是说，LATE 等于 IV 回归模型中斜率系数的 Wald 表达式 (12.27)
-The equality (12.68) occurs under the following conditions	等式 (12.68) 在以下条件下出现
+The equality (12.68) occurs under the following conditions	等式 (12.68) 在以下条件下存在
 Thus LATE can vary by the choice of instrument	因此，LATE 可能因工具的选择而异
 This occurs when causal effects are heterogeneous	当因果效应不同时就会发生这种情况
 One implication of the LATE framework is that IV estimates should be interpreted as causal effects only for the population of compliers	LATE 框架的含义之一是 IV 估计值应被解释为仅对遵守者群体的因果影响
 The estimates should not be applied to other students	这些估计不应应用于其他学生
 Formally, the analysis of this section examined the case of a binary instrument and endogenous regressor	正式而言，本节的分析检查了二值工具和内生自变量的情况
-A benefit is that with a larger set of instruments it is plausible that the set of compliers in the population is expanded	一个好处是，通过使用更多的工具，人口中的合规者群体可能会扩大
+A benefit is that with a larger set of instruments it is plausible that the set of compliers in the population is expanded	一个好处是，通过使用更多的工具，总体中的遵守者群体可能会扩大
 We close this section by showing (12.68) under Assumption 12.3	我们通过在假设 12.3 下显示 (12.68) 来结束本节
 Identification Failure	识别失败
 Recall the reduced form equation	回忆一下精简形式的方程
-The consequences of identification failure for inference are quite severe	推断识别失败的后果是相当严重的
+The consequences of identification failure for inference are quite severe	识别失败进行推断，后果是相当严重的
 Thus identification hinges on the existence of correlation between the excluded exogenous variable and the included endogenous variable	因此，识别取决于排除的外生变量和纳入的内生变量之间是否存在相关性
 By the CLT we have the joint convergence	通过 CLT 我们有联合收敛
 This limiting distribution has several notable features	这种极限分布有几个显著的特征
@@ -1951,139 +1949,137 @@ Weak Instruments	弱工具
 In the previous section we examined the extreme consequences of full identification failure	在上一节中，我们研究了完全识别失败的极端后果
 We show that the estimators are inconsistent and the 2SLS and LIML estimators remain random in large samples	我们表明估计量不一致，并且 2SLS 和 LIML 估计量在大样本中保持随机性
 The theory was extended to nonlinear GMM estimation by Stock and Wright (2000)	Stock 和 Wright (2000)将该理论扩展到非线性 GMM 估计
-The technical device introduced by Staiger and Stock (1997) is to assume that the reduced form parameter is local-to-zero, specifically	Staiger和Stock（1997）引入的技术装置是假设精简形式参数是局部到零的，具体来说
+The technical device introduced by Staiger and Stock (1997) is to assume that the reduced form parameter is local-to-zero, specifically	Staiger和Stock（1997）引入的技术工具是假设精简参数是局部趋于零的，具体来说
 We now derive the asymptotic distribution of the least squares, 2SLS, and LIML estimators under the local-to-unity assumption (12.71)	现在，我们在局部统一假设 (12.71) 下导出最小二乘、2SLS 和 LIML 估计量的渐近分布
 The least squares estimator satisfies	最小二乘估计满足
 To examine the 2SLS estimator, by the central limit theorem	通过中心极限定理检查 2SLS 估计量
 We find that the 2SLS estimator has the asymptotic distribution	我们发现 2SLS 估计量具有渐近分布
-This corresponds to the classic "strong identification" context	这对应于经典的“强识别”背景
+This corresponds to the classic "strong identification" context	这对应于经典的“强识别”情形
 Now consider the LIML estimator	现在考虑 LIML 估计量
 This allows us to calculate that by the continuous mapping theorem	这使我们能够通过连续映射定理来计算
 Theorem 12.18 Under (12.71),	定理 12.18 根据 (12.71)，
 All three estimators are inconsistent	所有三个估计量都不一致
-Many Instruments	许多工具
-Consequently the impact of "weak" and "many" instruments is similar	因此，“弱”和“多”工具的影响是相似的
+Many Instruments	富余工具
+Consequently the impact of "weak" and "many" instruments is similar	因此，“弱的”和“富余的”工具的影响是相似的
 Again for simplicity we assume that there are no included exogenous regressors so that the model is	再次为了简单起见，我们假设不包含外生自变量，因此模型是
 In addition we assume that the conditional fourth moments are bounded	此外，我们假设条件四阶矩是有界的
-The idea that there are "many instruments" is formalized by the assumption that the number of instruments is increasing proportionately with the sample size	存在“许多工具”的想法是通过工具数量随样本大小成比例增加的假设而形式化的
+The idea that there are "many instruments" is formalized by the assumption that the number of instruments is increasing proportionately with the sample size	“富余工具”的想法形成借助了工具数量随样本大小成比例增加的假设
 Combined with (12.77) and the WLLN we find	结合 (12.77) 和 WLLN 我们发现
 Now consider the 2SLS estimator	现在考虑 2SLS 估计量
-In the expression on the right-side of (12.79) several of the components have been examined in (12.77) and (12.78)	在 (12.79) 右侧的表达式中，已经在 (12.77) 和 (12.78) 中检查了几个成分
-Second, we calculate its variance which is a more cumbersome exercise	其次，我们计算它的方差，这是一个更麻烦的练习
+In the expression on the right-side of (12.79) several of the components have been examined in (12.77) and (12.78)	在 (12.79) 右侧的表达式中，(12.77) 和 (12.78) 中几个成分已经检查过了
+Second, we calculate its variance which is a more cumbersome exercise	其次，我们计算它的方差，这是一个更繁琐的练习
 The third equality holds because the remaining cross-products have zero expectation as the observations are independent and the errors have zero mean	第三个等式成立，因为剩余的叉积具有零期望，因为观测是独立的并且误差具有零均值
-Returning to the 2SLS estimator (12.79) and combining (12.77), (12.78), and (12.81), we find	返回 2SLS 估计量 (12.79) 并结合 (12.77)、(12.78) 和 (12.81)，我们发现
-We state these results formally	我们正式公布这些结果
-This result is quite insightful	这个结果是相当有见地的
+Returning to the 2SLS estimator (12.79) and combining (12.77), (12.78), and (12.81), we find	回到 2SLS 估计量 (12.79) 并结合 (12.77)、(12.78) 和 (12.81)，我们发现
+We state these results formally	我们正式指出这些结论
+This result is quite insightful	这个结论是相当有见地的
 The theorem also shows that unlike 2SLS the LIML estimator is consistent under the many instruments assumption	该定理还表明，与 2SLS 不同，LIML 估计量在多种工具假设下是一致的
 Effectively, LIML makes a bias-correction	LIML 有效地进行了偏误校正
-This suggests that LIML is more robust than 2SLS to weak and many instruments	这表明 LIML 对于弱工具和多工具来说比 2SLS 更稳健
-It appears likely that the consistency of LIML fails in the many instrument setting if the errors are heteroskedastic	如果误差是异方差的，则 LIML 的一致性在许多工具设置中可能会失败
-In applications users should be aware of the potential consequences of the many instrument framework	在应用程序中，用户应该意识到许多工具框架的潜在后果
+This suggests that LIML is more robust than 2SLS to weak and many instruments	这表明 相对于弱工具和富余工具来说 LIML 比 2SLS 更稳健
+It appears likely that the consistency of LIML fails in the many instrument setting if the errors are heteroskedastic	如果误差是异方差的，则 LIML 的一致性在富余工具情景中可能会失效
+In applications users should be aware of the potential consequences of the many instrument framework	在应用中，用户应该意识到富余工具框架的潜在后果
 Testing for Weak Instruments	弱工具检验
 In the previous sections we found that weak instruments results in non-standard asymptotic distributions for the 2SLS and LIML estimators	在前面的部分中，我们发现弱工具会导致 2SLS 和 LIML 估计量出现非标准渐近分布
-This question was addressed in an influential paper by Stock and Yogo (2005) as an extension of Staiger and Stock (1997)	Stock 和 Yogo (2005) 在一篇有影响力的论文中解决了这个问题，作为 Staiger 和 Stock (1997) 的延伸
-In the following section we describe their method for the case of multiple endogeneous regressors	在下一节中，我们将描述他们针对多个内生自变量的情况的方法
-Since the model is just-identified the 2SLS, LIML, and IV estimators are all equivalent	由于模型刚刚被识别，2SLS、LIML 和 IV 估计量都是等效的
-The question of primary interest is to determine conditions on the reduced form under which the IV estimator of the structural equation is well behaved, and secondly, what statistical tests can be used to learn if these conditions are satisfied	主要感兴趣的问题是确定结构方程的 IV 估计量表现良好的精简形式的条件，其次，可以使用哪些统计检验来了解这些条件是否得到满足
+This question was addressed in an influential paper by Stock and Yogo (2005) as an extension of Staiger and Stock (1997)	作为 Staiger 和 Stock (1997) 的扩展，Stock 和 Yogo (2005) 在一篇有影响力的论文中解决了这个问题
+In the following section we describe their method for the case of multiple endogeneous regressors	在下一节中，我们将阐述他们针对多个内生自变量情况的方法
+Since the model is just-identified the 2SLS, LIML, and IV estimators are all equivalent	由于模型恰巧被识别，2SLS、LIML 和 IV 估计量都是等效的
+The question of primary interest is to determine conditions on the reduced form under which the IV estimator of the structural equation is well behaved, and secondly, what statistical tests can be used to learn if these conditions are satisfied	主要感兴趣的问题是确定在何种精简形式条件下结构方程的 IV 估计量表现良好，其次，可以使用哪些统计检验来掌握这些条件是否得到满足
 To break this impasse Stock and Yogo (2005) recommended a constructive alternative	为了打破这一僵局，Stock 和 Yogo（2005）推荐了一种建设性的替代方案
-Specifically, the Stock-Yogo recommendation can be summarized by two steps	具体来说，Stock-Yogo 推荐可以概括为两个步骤
-If there is more than one instrument then the rule-of-thumb changes.) We now describe the steps behind this reasoning in more detail	）我们现在更详细地描述这一推理背后的步骤
+Specifically, the Stock-Yogo recommendation can be summarized by two steps	具体来说，Stock-Yogo 的建议可以概括为两个步骤
+We now describe the steps behind this reasoning in more detail	我们现在更详细地描述这一推理背后的步骤
 We now describe this procedure	我们现在描述这个过程
-To implement the test we need to calculate an appropriate critical value	为了实施检验，我们需要计算适当的临界值
+To implement the test we need to calculate an appropriate critical value	为了实施检验，我们需要计算合适的临界值
 Equivalently, the recommended rule-of-thumb for the case of a single instrument is to estimate the reduced form and verify that the t-statistic for exclusion of the instrumental variable exceeds 3 in absolute value	同样，对于单一工具的情况，建议的经验法则是估计精简形式并验证排除工具变量的 t 统计量的绝对值是否超过 3
 We report a subset in Table 12.4	我们在表 12.4 中报告了一个子集
-The structural equation is estimated by either 2 SLS or LIML	结构方程通过 2 SLS 或 LIML 进行估计
-The Stock-Yogo test can be implemented in Stata using the command estat firststage after ivregress 2 sls or ivregres liml if a standard (non-robust) covariance matrix has been specified (that is, without the ', r' option)	如果指定了标准（非稳健）协方差矩阵（即，没有 ', r' 选项），则可以在 ivregress 2 sls 或 ivregres liml 之后使用命令 estat firststage 在 Stata 中实现 Stock-Yogo 检验
+The structural equation is estimated by either 2SLS or LIML	结构方程通过 2SLS 或 LIML 进行估计
+The Stock-Yogo test can be implemented in Stata using the command estat firststage after ivregress 2sls or ivregres liml if a standard (non-robust) covariance matrix has been specified (that is, without the ', r' option)	如果指定了标准（非稳健）协方差矩阵（即，没有 ', r' 选项），Stata 中实现 Stock-Yogo 检验则可以在 ivregress 2sls 或 ivregres liml 之后使用命令 estat firststage 
 There are possible extensions to the Stock-Yogo procedure	Stock-Yogo 程序有可能扩展
-One modest extension is to use the information to convey the degree of confidence in the accuracy of a confidence interval	一种适度的扩展是使用该信息来传达对置信区间准确性的置信程度
-A more substantive extension, which we now discuss, reverses the steps	我们现在讨论的更具实质性的扩展颠倒了这些步骤
+One modest extension is to use the information to convey the degree of confidence in the accuracy of a confidence interval	一种适度的扩展是使用该信息来揭示置信区间准确性的置信度
+A more substantive extension, which we now discuss, reverses the steps	我们现在讨论的更具实质性的扩展，它颠倒了这些步骤
 We now describe the steps in detail	我们现在详细描述这些步骤
-This can be solved as	这可以解决为
-In principle the procedure could be extended using simulation or bootstrap methods but this has not been done to my knowledge	原则上可以使用模拟或自助方法来扩展该过程，但据我所知尚未这样做
-To illustrate the Stock-Yogo and extended procedures let us return to the Card proximity example	为了说明 Stock-Yogo 和扩展程序，让我们回到卡邻近示例
+This can be solved as	这可以解出为
+In principle the procedure could be extended using simulation or bootstrap methods but this has not been done to my knowledge	原则上可以使用模拟或自助方法来扩展该过程，但据我所知尚无此做法
+To illustrate the Stock-Yogo and extended procedures let us return to the Card proximity example	为了说明 Stock-Yogo 和扩展过程，让我们回到 Card 邻近案例
 Now consider the extended procedure	现在考虑扩展过程
-The weak instrument methods described here are important for applied econometrics as they discipline researchers to assess the quality of their reduced form relationships before reporting structural estimates	这里描述的弱工具方法对于应用计量经济学很重要，因为它们要求研究人员在报告结构估计之前评估其精简形式关系的质量
+The weak instrument methods described here are important for applied econometrics as they discipline researchers to assess the quality of their reduced form relationships before reporting structural estimates	这里描述的弱工具方法对于应用计量经济学很重要，因为它们要求研究人员在报告结构化估计之前评估其精简形式关系的质量
 This is an active area of research so the recommended methods may change in the years ahead	这是一个活跃的研究领域，因此推荐的方法在未来几年可能会发生变化
-The structural equation and reduced form equations are	结构方程和精简形式方程为
+The structural equation and reduced form equations are	结构方程和精简方程为
 As in the previous section we assume that the errors are conditionally homoskedastic	与上一节一样，我们假设误差是条件同方差的
 This can be estimated from the reduced-form regression	这可以通过精简形式的回归来估计
 This means that for over-identified models LIML inference is less sensitive to weak instruments than 2SLS and may be the preferred estimation method	这意味着对于过度识别的模型，LIML 推断对弱工具的敏感度低于 2SLS，并且可能是首选的估计方法
 Robust versions of the test have been proposed by Kleibergen and Paap (2006)	Kleibergen 和 Paap (2006) 提出了该检验的稳健版本
-These can be implemented in Stata using the downloadable command ivreg2	这些可以使用可下载命令 ivreg2 在 Stata 中实现
+These can be implemented in Stata using the downloadable command ivreg2	这些可以使用可在 Stata 可下载的命令 ivreg2 中实现
 Example: Acemoglu, Johnson, and Robinson (2001)	示例：阿西莫格鲁、约翰逊和罗宾逊 (2001)
-One particularly well-cited instrumental variable regression is in Acemoglu, Johnson, and Robinson (2001) with additional details published in (2012)	Acemoglu、Johnson 和 Robinson (2001) 中引用了一种特别广泛引用的工具变量回归，并在 (2012) 中发表了更多详细信息
+One particularly well-cited instrumental variable regression is in Acemoglu, Johnson, and Robinson (2001) with additional details published in (2012)	Acemoglu、Johnson 和 Robinson (2001) 中引用了一种特别广泛引用的工具变量回归，并在 (2012) 中发布了更多额外细节
 Their data is in the file AJR2001 on the textbook website	他们的数据位于教科书网站上的文件 AJR2001 中
-The authors' premise is that modern political institutions have been influenced by colonization	作者的前提是现代政治制度受到了殖民化的影响
-To start the investigation they report an OLS regression of log GDP per capita in 1995 on a measure of political institutions they call risk which is a measure of legal protection against expropriation	为了开始调查，他们报告了 1995 年人均 GDP 对数的 OLS 回归，该回归是针对他们称之为风险的政治制度的衡量标准，这是针对征用的法律保护的衡量标准
-The authors argue that the risk is endogenous since economic output influences political institutions and because the variable risk is undoubtedly measured with error	作者认为，风险是内生的，因为经济产出影响政治制度，而且可变风险的测量无疑是有误差的
+The authors' premise is that modern political institutions have been influenced by colonization	作者的预设是现代政治制度受到了殖民化的影响
+To start the investigation they report an OLS regression of log GDP per capita in 1995 on a measure of political institutions they call risk which is a measure of legal protection against expropriation	为了开始调查，他们报告了 1995 年人均 GDP 对数关于政治制度测度的 OLS 回归，他们称之为风险，是一种面对征用的法律保护的测度
+The authors argue that the risk is endogenous since economic output influences political institutions and because the variable risk is undoubtedly measured with error	作者认为，风险是内生的，因为经济产出影响政治制度，而风险变量的测度无疑是有误差的
 These issues induce least-square bias in different directions and thus the overall bias effect is unclear	这些问题会引起不同方向的最小二乘偏误，因此总体偏误效应尚不清楚
 To correct for endogeneity bias the authors argue the need for an instrumental variable which does not directly affect economic performance yet is associated with political institutions	为了纠正内生性偏误，作者认为需要一个不直接影响经济表现但与政治制度相关的工具变量
 This estimate is much higher than the OLS estimate from (12.86)	该估计值远高于 OLS 估计值 (12.86)
-The estimate is consistent with a near doubling of GDP due to a 1-unit difference in the risk index	由于风险指数相差 1 个单位，这一估计与 GDP 几乎翻倍是一致的
+The estimate is consistent with a near doubling of GDP due to a 1-unit difference in the risk index	这与由于风险指数1个单位的差值引起GDP 几乎翻倍的估计是一致的
 These are simple regressions involving just one right-hand-side variable	这些是仅涉及一个右侧变量的简单回归
-We conclude that the least squares and 2SLS estimates are statistically different and reject the hypothesis that the variable risk is exogenous for the GDP structural equation	我们得出结论，最小二乘法和 2SLS 估计值在统计上是不同的，并拒绝变量风险对于 GDP 结构方程是外生的假设
-This paper is a creative and careful use of instrumental variables	本文是对工具变量的创造性和谨慎的运用
-Putting these pieces together is the art of the project	将这些部分组合在一起是该项目的艺术
-Example: Angrist and Krueger (1991)	示例：安格里斯特和克鲁格 (1991)
+We conclude that the least squares and 2SLS estimates are statistically different and reject the hypothesis that the variable risk is exogenous for the GDP structural equation	我们得出结论，最小二乘法和 2SLS 估计值在统计上是不同的，并拒绝风险变量对于 GDP 结构方程是外生的假设
+This paper is a creative and careful use of instrumental variables	这篇文章是对工具变量的创性性的和谨慎的运用
+Putting these pieces together is the art of the project	将这些部分组合在一起是这个项目的技艺所在
+Example: Angrist and Krueger (1991)	案例：安格里斯特和克鲁格 (1991)
 Another influential instrument variable regression is Angrist and Krueger (1991)	另一个有影响力的工具变量回归是 Angrist 和 Krueger (1991)
 A subset of their data in the file AK1991 on the textbook website	他们的数据子集位于教科书网站上的文件 AK1991 中
-Their creative suggestion was to focus on compulsory school attendance policies and their interaction with birthdates	他们的创造性建议是关注义务教育入学政策及其与出生日期的相互作用
-Angrist and Krueger argue that compulsory schooling has a causal effect on wages - youth who would have chosen to drop out of school stay in school for more years - and thus have more education which causally impacts their earnings as adults	安格里斯特和克鲁格认为，义务教育对工资有因果影响——那些选择辍学的年轻人会在学校呆更长的时间——因此接受更多的教育，这会影响他们成年后的收入
-Angrist and Krueger observe that these policies have differential impact on youth who are born early or late in the school year	安格里斯特和克鲁格观察到，这些政策对学年早或晚出生的青少年有不同的影响
+Their creative suggestion was to focus on compulsory school attendance policies and their interaction with birthdates	他们的创新性建议是关注义务教育入学政策及其与出生日期的交互作用
+Angrist and Krueger argue that compulsory schooling has a causal effect on wages - youth who would have chosen to drop out of school stay in school for more years - and thus have more education which causally impacts their earnings as adults	Angrist 和 Krueger认为，义务教育对工资有因果影响——那些选择辍学的年轻人会在学校呆更长的时间——因此接受更多的教育，这会影响他们成年后的收入
+Angrist and Krueger observe that these policies have differential impact on youth who are born early or late in the school year	Angrist 和 Krueger观察到，这些政策对早出生或晚出生于上学年份的青少年有不同的影响
 These considerations together suggest that birthdate is a valid instrumental variable for education in a causal wage equation	这些考虑因素共同表明，出生日期是因果工资方程中教育的有效工具变量
 Typical wage datasets include age but not birthdates	典型的工资数据集包括年龄，但不包括出生日期
 They use this variable to construct 2SLS estimates of the return to education	他们使用这个变量来构建教育回报的 2SLS 估计
-Their paper carefully documents that educational attainment varies by quarter of birth (as predicted by the above discussion), and reports a large set of least squares and 2SLS estimates	他们的论文仔细记录了教育程度随出生季度的变化而变化（如上述讨论所预测），并报告了大量的最小二乘法和 2SLS 估计值
-The instrumental variables are the 30 interactions of three quarter-of-birth times ten year-of-birth dummy variables	工具变量是四分之三出生时间乘以十个出生年份虚拟变量的 30 次交互作用
-Angrist and Krueger observe that the effect of compulsory education laws are likely to vary across states, so expand the instrument set to include interactions with state-of-birth	安格里斯特和克鲁格观察到，义务教育法的影响可能因州而异，因此扩大工具集以包括与出生州的相互作用
-This equation also adds fifty state-of-birth dummy variables as regressors	该方程还添加了 50 个出生状态虚拟变量作为自变量
+Their paper carefully documents that educational attainment varies by quarter of birth (as predicted by the above discussion), and reports a large set of least squares and 2SLS estimates	他们的论文仔细记录了教育程度随出生季度的变化（如上述讨论所预测），并报告了大量的最小二乘法和 2SLS 估计值
+The instrumental variables are the 30 interactions of three quarter-of-birth times ten year-of-birth dummy variables	工具变量是 3 个出生日期虚拟变量乘以 10 个出生年份虚拟变量的 30 个交互项
+Angrist and Krueger observe that the effect of compulsory education laws are likely to vary across states, so expand the instrument set to include interactions with state-of-birth	Angrist 和 Krueger 观察到，义务教育法的影响可能因州而异，因此扩大工具集以包括与出生州的相互项
+This equation also adds fifty state-of-birth dummy variables as regressors	该方程还添加了 50 个出生州虚拟变量作为自变量
 The instrumental variables are the 180 interactions of quarter-of-birth times year-of-birth dummy variables, plus quarter-of-birth times state-of-birth interactions	工具变量是出生季度与出生年份虚拟变量的 180 个交互作用，加上出生季度与出生状态的交互作用
 This equation shows a similar estimated causal effect of education on wages as in (12.89)	该方程显示了与（12.89）中类似的教育对工资的估计因果效应
 More notably, the standard error is smaller in (12.90) suggesting improved precision by the expanded instrumental variable set	更值得注意的是，(12.90) 中的标准误差较小，表明扩展的工具变量集提高了精度
-However, these estimates seem excellent candidates for weak instruments and many instruments	然而，这些估计似乎对于弱工具和许多工具来说都是极好的候选者
+However, these estimates seem excellent candidates for weak instruments and many instruments	然而，这些估计似乎对于弱工具和富余工具来说都是极好的备选
 We can use the Stock-Yogo tools to explore the instrument strength and the implications for the Angrist-Krueger estimates	我们可以使用 Stock-Yogo 工具来探索工具强度以及对 Angrist-Krueger 估计的影响
 We first take equation (12.89)	我们首先取方程(12.89)
-Since we cannot reject that the instruments are weak this indicates that we cannot interpret the 2SLS estimates and test statistics in (12.89) as reliable	由于我们不能否认这些工具很弱，这表明我们无法将 (12.89) 中的 2SLS 估计和检验统计数据解释为可靠
-Second, take (12.90) with the expanded regressor and instrument set	其次，使用扩展的自变量和工具集取 (12.90)
-Rather, they should be viewed as evidence of unreliability due to weak instruments	相反，它们应该被视为由于工具薄弱而导致不可靠的证据
-When instruments are weak one constructive suggestion is to use LIML estimation rather than 2SLS	当工具较弱时，一项建设性建议是使用 LIML 估计而不是 2SLS
-The regression also includes nine year-of-birth and eight region-of-residence dummy variables	该回归还包括九个出生年份和八个居住地区虚拟变量
-The reduced form coefficients in (12.91) on the quarter-of-birth dummies are instructive	(12.91) 中四分之一出生假人的精简形式系数具有指导意义
+Since we cannot reject that the instruments are weak this indicates that we cannot interpret the 2SLS estimates and test statistics in (12.89) as reliable	由于我们不能否认这些工具很弱，这表明我们无法将 (12.89) 中的 2SLS 估计和检验统计量解释为可靠
+Second, take (12.90) with the expanded regressor and instrument set	其次，使用扩展的自变量和工具集获得 (12.90)
+Rather, they should be viewed as evidence of unreliability due to weak instruments	相反，它们应该被视为由于弱工具而导致不可靠的证据
+When instruments are weak one constructive suggestion is to use LIML estimation rather than 2SLS	当工具较弱时，一个建设性建议是使用 LIML 估计而不是 2SLS
+The regression also includes nine year-of-birth and eight region-of-residence dummy variables	该回归还包括 9 个出生年份和 8 个居住地区虚拟变量
+The reduced form coefficients in (12.91) on the quarter-of-birth dummies are instructive	(12.91) 中出生季度虚拟变量的精简形式系数具有启示意义
 These estimates indicate a slightly larger (10%) causal impact of education on wages but with a larger standard error	这些估计表明，教育对工资的因果影响稍大（10%），但标准误差较大
-While the original Angrist-Krueger estimates suffer due to weak instruments their paper is a very creative and thoughtful application of the natural experiment methodology	虽然安格斯特-克鲁格最初的估计因工具薄弱而受到影响，但他们的论文是对自然实验方法的非常有创意和深思熟虑的应用
-Their crafting of this natural experiment regression is clever and demonstrates a style of analysis which can successfully underlie an effective instrumental variables empirical analysis	他们对这种自然实验回归的精心设计非常聪明，并展示了一种可以成功地成为有效工具变量实证分析基础的分析风格
+While the original Angrist-Krueger estimates suffer due to weak instruments their paper is a very creative and thoughtful application of the natural experiment methodology	虽然 Angrist-Krueger 最初的估计因弱工具而受到影响，但他们的论文是对自然实验方法的非常有创意和深思熟虑的应用
+Their crafting of this natural experiment regression is clever and demonstrates a style of analysis which can successfully underlie an effective instrumental variables empirical analysis	他们对这种自然实验回归的精心设计非常聪明，并展示了一种可以成功地构成有效工具变量的实证分析风格
 We now present Stata code for some of the empirical work reported in this chapter	我们现在为本章中报告的一些实证工作提供 Stata 代码
-Stata do File for Card Example	Stata 做卡片文件示例
-ivregress 2 sls lwage76 exp exp2 black reg76r smsa76r (ed76=nearc4), r	ivregress 2 sls lwage76 exp exp2 黑色 reg76r smsa76r (ed76=nearc4), r
-Stata do File for Acemoglu-Johnson-Robinson Example	Stata 为 Acemoglu-Johnson-Robinson 示例创建文件
-ivregress 2sls loggdp (risk=logmort0)	ivregress 2sls loggdp（风险=logmort0）
-Generalized Method of Moments	广义矩量法
-One of the most popular estimation methods in applied econometrics is the Generalized Method of Moments (GMM)	应用计量经济学中最流行的估计方法之一是广义矩量法（GMM）
+Stata do File for Card Example	Card 案例的Stata do 文件
+Stata do File for Acemoglu-Johnson-Robinson Example	Card Acemoglu-Johnson-Robinson 案例的Stata do 文件
+Generalized Method of Moments	广义矩法
+One of the most popular estimation methods in applied econometrics is the Generalized Method of Moments (GMM)	应用计量经济学中最流行的估计方法之一是广义矩法（GMM）
 In this chapter we focus primarily on linear models	在本章中，我们主要关注线性模型
-The GMM label and methods were introduced to econometrics in a seminal paper by Lars Hansen (1982)	Lars Hansen (1982) 在一篇开创性论文中将 GMM 标签和方法引入计量经济学
-For a review of the latter see Godambe (1991)	对于后者的回顾参见 Godambe (1991)
+The GMM label and methods were introduced to econometrics in a seminal paper by Lars Hansen (1982)	Lars Hansen (1982) 在一篇开创性论文中将 GMM 记号和方法引入计量经济学
+For a review of the latter see Godambe (1991)	对于后者的评述参见 Godambe (1991)
 Moment Equation Models	矩方程模型
-All of the models that have been introduced so far can be written as moment equation models where the population parameters solve a system of moment equations	到目前为止介绍的所有模型都可以写成矩方程模型，其中总体参数求解矩方程组
+All of the models that have been introduced so far can be written as moment equation models where the population parameters solve a system of moment equations	到目前为止介绍的所有模型都可以写成矩方程模型，其中总体参数求解一个矩方程系统
 Moment equation models are broader than the models so far considered and understanding their common structure opens up straightforward techniques to handle new econometric models	矩方程模型比迄今为止考虑的模型更广泛，理解它们的共同结构为处理新的计量经济模型提供了直接的技术
-Moment equation models take the following form	力矩方程模型采用以下形式
+Moment equation models take the following form	矩方程模型采用以下形式
 Method of Moments Estimators	矩估计法
-Define the sample analog of (13.5)	定义 (13.5) 的样本模拟
-In other cases the solution must be found numerically	在其他情况下，必须以数字方式找到解决方案
+Define the sample analog of (13.5)	定义 (13.5) 的样本类同
+In other cases the solution must be found numerically	在其他情况下，必须以数值方式找到解决方案
 We now show how most of the estimators discussed so far in the textbook can be written as method of moments estimators	我们现在展示如何将教科书中迄今为止讨论的大多数估计量编写为矩估计量方法
 A common feature of these examples is that the estimator can be written as the solution to a set of estimating equations (13.3)	这些案例的一个共同特征是估计量可以写成一组估计方程（13.3）的解
 This provides a common framework which enables a convenient development of a unified distribution theory	这提供了一个通用框架，可以方便地开发统一的分布理论
-Overidentified Moment Equations	过度识别的力矩方程
-Thus the method of moments estimator is not defined for the overidentified case	因此，没有为过度识别的情况定义矩估计量的方法
-More generally we know that when errors are non-homogeneous it can be more efficient to estimate by weighted least squares	更一般地说，我们知道，当误差非均匀时，通过加权最小二乘法进行估计会更有效
+Overidentified Moment Equations	过度识别的矩方程
+Thus the method of moments estimator is not defined for the overidentified case	因此，矩估计量方法没有为过度识别的情况进行定义
+More generally we know that when errors are non-homogeneous it can be more efficient to estimate by weighted least squares	更一般地说，我们知道，当误差为非同质化时，通过加权最小二乘法进行估计会更有效
 This solution is known as the generalized method of moments (GMM)	该解决方案称为广义矩法 (GMM)
 The estimator is typically defined as follows	估计量通常定义如下
 Definition 13.1 The Generalized Method of Moments (GMM) estimator is	定义 13.1 广义矩量法 (GMM) 估计量是
-This implies that all of our results for GMM apply to any method of moments estimator	这意味着我们所有的 GMM 结果都适用于任何矩估计方法
+This implies that all of our results for GMM apply to any method of moments estimator	这意味着我们所有的 GMM 结果都适用于任何矩估计量方法
 The method and theory of the generalized method of moments was developed in an influential paper by Lars Hansen (1982)	Lars Hansen (1982) 在一篇有影响力的论文中发展了广义矩方法和理论
-This paper introduced the method, its asymptotic distribution, the form of the efficient weight matrix, and tests for overidentification	介绍了该方法、其渐近分布、有效权重矩阵的形式以及过度识别的检验
-Linear Moment Models	线性力矩模型
+This paper introduced the method, its asymptotic distribution, the form of the efficient weight matrix, and tests for overidentification	这篇文章介绍了该方法、其渐近分布、有效权重矩阵的形式以及过度识别的检验
+Linear Moment Models	线性矩模型
 One of the great advantages of the moment equation framework is that it allows both linear and nonlinear models	矩方程框架的一大优点是它允许线性和非线性模型
-The estimates which have nonlinear moment equations include the sample variance, SUR, and generated regressors	具有非线性矩方程的估计包括样本方差、SUR 和生成的自变量
+The estimates which have nonlinear moment equations include the sample variance, SUR, and generated regressors	具有非线性矩方程的估计包括样本方差、SUR 和生成型自变量
 In particular, we focus on the overidentified IV model with moment equations	我们特别关注带有矩方程的过度识别 IV 模型
 GMM Estimator	GMM估计量
 Given (13.5) the sample moment equations are (13.4)	给定（13.5），样本矩方程为（13.4）
@@ -2093,14 +2089,14 @@ The GMM estimator (13.6) resembles the 2SLS estimator (12.29)	GMM 估计量 (13.
 This means that the 2SLS estimator is a one-step GMM estimator for the linear model	这意味着 2SLS 估计量是线性模型的一步 GMM 估计量
 Distribution of GMM Estimator	GMM估计量的分布
 Theorem 13.3 Asymptotic Distribution of GMM Estimator	定理13.3 GMM估计量的渐近分布
-The GMM estimator is asymptotically normal with a "sandwich form" asymptotic variance	GMM 估计量是渐近正态的，具有“三明治形式”渐近方差
-Since rescaling the weight matrix does not affect the estimator this is ignored in implementation	由于重新缩放权重矩阵不会影响估计量，因此在实现中会忽略这一点
-Efficient GMM	高效的GMM
+The GMM estimator is asymptotically normal with a "sandwich form" asymptotic variance	GMM 估计量是渐近正态的，具有“sandwich形式”渐近方差
+Since rescaling the weight matrix does not affect the estimator this is ignored in implementation	由于重新标量化权重矩阵不会影响估计量，因此在实现中会忽略这一点
+Efficient GMM	有效 GMM
 The proof is left to Exercise 13.4	证明留给练习 13.4
 Its asymptotic distribution takes a simpler form than in Theorem 13.3	它的渐近分布采用比定理 13.3 更简单的形式
 This is the asymptotic variance of the efficient GMM estimator	这是有效 GMM 估计量的渐近方差
-Theorem 13.4 Asymptotic Distribution of GMM with Efficient Weight Ma-\\	定理13.4具有有效权Ma-\\的GMM渐近分布
-Theorem 13.5 Efficient GMM	定理 13.5 高效 GMM
+Theorem 13.4 Asymptotic Distribution of GMM with Efficient Weight	定理13.4 具有有效权重的GMM渐近分布
+Theorem 13.5 Efficient GMM	定理 13.5 有效 GMM
 For a proof see Exercise 13.4	证明参见练习 13.4
 This means that the smallest possible GMM covariance matrix (in the positive definite sense) is achieved by the efficient GMM weight matrix	这意味着最小可能的 GMM 协方差矩阵（在正定意义上）是通过有效的 GMM 权重矩阵实现的
 By "efficient" we mean that this estimator has the smallest asymptotic variance in the class of GMM estimators with this set of moment conditions	“有效”是指该估计量在具有这组矩条件的 GMM 估计量类别中具有最小的渐近方差
@@ -2158,7 +2154,7 @@ Thus one convenient method to implement efficient minimum distance is GMM	因此
 The general multivariate regression (projection) model is	一般的多元回归（投影）模型是
 the multivariate least squares estimator	多元最小二乘估计量
 Thus the unconstrained GMM estimator of the multivariate regression model is least squares	因此，多元回归模型的无约束 GMM 估计量是最小二乘法
-The estimator does not depend on the weight matrix since the model is just-identified	由于模型刚刚被识别，因此估计量不依赖于权重矩阵
+The estimator does not depend on the weight matrix since the model is just-identified	由于模型恰巧被识别，因此估计量不依赖于权重矩阵
 A important advantage of the GMM framework is the ability to incorporate cross-equation constraints	GMM 框架的一个重要优点是能够合并交叉方程约束
 This estimator depends on the weight matrix because it is over-identified	该估计量依赖于权重矩阵，因为它被过度识别
 Written as a vector system this is (13.24) and leads to the same restricted GMM estimators	将其写为矢量系统时，为 (13.24)，并导致相同的受限 GMM 估计量
@@ -2371,7 +2367,7 @@ Figure 14.4: AR(1) Processes	图 14.4：AR(1) 流程
 Our first goal is to obtain conditions under which (14.25) is stationary	我们的第一个目标是获得 (14.25) 平稳的条件
 Now suppose we continue this recursion into the infinite past	现在假设我们继续这种递归到无限的过去
 The limit is provided by the following well-known result	该极限由以下众所周知的结果提供
-One way to calculate the moments is as follows	计算力矩的一种方法如下
+One way to calculate the moments is as follows	计算矩的一种方法如下
 We can also express the AR(1) process using the lag operator notation:	我们还可以使用滞后算子符号来表达 AR(1) 过程：
 This suggests an alternative way of obtaining the representation (14.27)	这提出了另一种获得表示的方法（14.27）
 Substituted into (14.29) we obtain	代入 (14.29) 我们得到
@@ -2401,7 +2397,7 @@ There are two methods which we now describe	我们现在描述两种方法
 The first uses a simple recursion	第一个使用简单的递归
 This recursion is conveniently calculated by the following simulation	通过以下模拟可以方便地计算该递归
 A second method uses the vector representation (14.33) of the AR(p) model with coefficient matrix (14.40)	第二种方法使用带有系数矩阵 (14.40) 的 AR(p) 模型的向量表示 (14.33)
-As mentioned at the beginning of the section it is often desirable to scale the IRF so that it is the response to a one-deviation shock	正如本节开头提到的，通常需要缩放 IRF，以便它能够响应单误差冲击
+As mentioned at the beginning of the section it is often desirable to scale the IRF so that it is the response to a one-deviation shock	正如本节开头提到的，通常需要标量化 IRF，以便它能够响应单误差冲击
 ARMA and ARIMA Processes	ARMA 和 ARIMA 过程
 The autoregressive-moving-average process, denoted ARMA(p,q), is	自回归移动平均过程表示为 ARMA(p,q)，为
 Mixing Properties of Linear Processes	线性过程的混合特性
@@ -2597,7 +2593,7 @@ Impulse Response	脉冲响应
 Recall the multivariate Wold representation	回想一下多元 Wold 表示
 Here we have defined the impulse response in terms of the linear projection operator	这里我们根据线性投影算子定义了脉冲响应
 In a linear vector autoregression the impulse response function is symmetric in negative and positive innovations	在线性向量自回归中，脉冲响应函数在负创新和正创新中是对称的
-The impulse response functions can be scaled as desired	脉冲响应函数可以根据需要缩放
+The impulse response functions can be scaled as desired	脉冲响应函数可以根据需要标量化
 In this latter case impulse response functions can be interpreted as responses due to a "typical" sized (one standard deviation) innovation	在后一种情况下，脉冲响应函数可以解释为由于“典型”大小（一个标准误差）创新而产生的响应
 Closely related to the IRF is the cumulative impulse response function (CIRF) defined as	与 IRF 密切相关的是累积脉冲响应函数 (CIRF)，定义为
 This is the full (summed) effect of the innovation over all time	这是历年来创新的全部（总和）效果
@@ -2945,7 +2941,7 @@ We can also interpret the fixed effects estimator through the generalized method
 Take the fixed effects model after applying the within transformation (17.21)	采用应用内变换（17.21）后的固定效应模型
 Thus the 2SLS estimator simplifies to	因此 2SLS 估计量简化为
 This shows that if we treat each time period as a separate equation with its separate moment equation so that the system is over-identified, and then estimate by GMM using the 2SLS weight matrix, the resulting GMM estimator equals the simple fixed effects estimator	这表明，如果我们将每个时间段视为具有单独矩方程的单独方程，从而使系统过度识别，然后使用 2SLS 权重矩阵通过 GMM 进行估计，则得到的 GMM 估计量等于简单固定效应估计量
-There is no change by adding the additional moment conditions	添加附加力矩条件不会带来任何变化
+There is no change by adding the additional moment conditions	添加附加矩条件不会带来任何变化
 The 2SLS estimator is the appropriate GMM estimator when the equation error is serially uncorrelated and homoskedastic	当方程误差序列不相关且同方差时，2SLS 估计量是合适的 GMM 估计量
 Notationally, this GMM estimator has been written for a balanced panel	值得注意的是，这个 GMM 估计量是为平衡面板编写的
 Otherwise no changes need to be made	否则无需进行任何更改
@@ -3170,15 +3166,15 @@ Equation (18.3) is the basic difference-in-difference model	方程（18.3）是�
 The equation (18.3) can also be generalized by changing the trend specification and by using a continuous treatment variable	方程（18.3）也可以通过改变趋势设定和使用连续处理变量来推广
 Many empirical studies report estimates both of the basic model and regressions with controls	许多实证研究报告估计了基本模型和控制回归
 A restaurant with longer hours will tend to have more employees	营业时间较长的餐厅往往会拥有更多的员工
-The estimated treatment effect is not meaningfully changed	估计的治疗效果没有发生有意义的改变
+The estimated treatment effect is not meaningfully changed	估计的处置效应没有发生有意义的改变
 Theorem 18.1 Suppose the following conditions hold:	定理 18.1 假设以下条件成立：
 Condition 1 states that the outcome equals the specified linear regression model which is additively separable in the observables, individual effect, and time effect	条件 1 表明结果等于指定的线性回归模型，该模型在可观察量、个体效应和时间效应中可加性分离
 Condition 2 states that the two-way within transformed regressors have a non-singular design matrix	条件 2 表明变换自变量内的双向具有非奇异设计矩阵
 Condition 3 is the standard exogeneity asumption for regressors in a fixed-effects model	条件 3 是固定效应模型中自变量的标准外生性假设
-Condition 4 states that the treatment variable is conditionally independent of the idiosyncratic error	条件 4 表明治疗变量条件地独立于特殊误差
+Condition 4 states that the treatment variable is conditionally independent of the idiosyncratic error	条件 4 表明处置变量条件地独立于特殊误差
 This is the conditional independence assumption for fixed effects regression	这是固定效应回归的条件独立假设
 To show Theorem 18.1 apply the two-way within transformation (17.65) to (18.5)	为了证明定理 18.1，应用 (17.65) 到 (18.5) 内的双向变换
-Without this assumption it would not be possible to claim that the diff-in-diff regression identifies the causal effect of the treatment	如果没有这个假设，就不可能声称差异回归确定了治疗的因果效应
+Without this assumption it would not be possible to claim that the diff-in-diff regression identifies the causal effect of the treatment	如果没有这个假设，就不可能声称差异回归确定了处置的因果效应
 This means that the policy (treatment) was not enacted in response to knowledge about the response variable in either period and it means that the outcome (employment) did not change in the first period in anticipation of the upcoming policy change	这意味着政策（处理）不是根据对任一时期的响应变量的了解而制定的，也意味着在第一个时期的结果（就业）没有因预期即将到来的政策变化而改变
 In the case of the Card-Krueger application the authors argue that the policy was exogeneous because it was adopted two years before taking effect	就卡德-克鲁格申请而言，作者认为该政策是外生的，因为它是在生效前两年通过的
 It thus seems credible that employment decisions at that time were not determined in anticipation of the upcoming minimum wage increase	因此，当时的就业决定并不是根据即将到来的最低工资上涨而做出的，这似乎是可信的
@@ -3194,7 +3190,7 @@ We can also observe that both of the Pennsylvania regions had employment decreas
 A more serious problem arises if the control effect is heterogeneous	如果控制效果是异质的，则会出现更严重的问题
 It is not statistically significant, meaning that we cannot reject the hypothesis that the control effect is homogeneous	它在统计上不显著，这意味着我们不能拒绝控制效应是同质的假设
 In contrast, if the control effect were heterogeneous then the difference-in-difference estimation strategy is misspecified	相反，如果控制效果是异质的，那么双重差分估计策略就会被错误设定
-Therefore if a test for equal control effects rejects the hypothesis of homogeneous control effects this should be taken as evidence against interpretation of the difference-in-difference parameter as a treatment effect	因此，如果相等控制效应的检验拒绝同质控制效应的假设，则应将其视为反对将双重差分参数解释为治疗效应的证据
+Therefore if a test for equal control effects rejects the hypothesis of homogeneous control effects this should be taken as evidence against interpretation of the difference-in-difference parameter as a treatment effect	因此，如果相等控制效应的检验拒绝同质控制效应的假设，则应将其视为反对将双重差分参数解释为处置效应的证据
 Table 18.2: Average Employment at Fast Food Restaurants	表 18.2：快餐店的平均就业人数
 Do Police Reduce Crime?	警察能减少犯罪吗？
 DiTella and Schargrodsky (2004) use a difference-in-difference approach to study the question of whether the street presence of police officers reduces car theft	DiTella 和 Schargrodsky (2004) 使用双重差分法来研究警察在街上的存在是否会减少汽车盗窃的问题
@@ -3203,9 +3199,9 @@ In July 1994 there was a horrific terrorist attack on the main Jewish center in 
 Their sample has 37 blocks with Jewish institutions (the treatment sample) and 839 blocks without an institution (the control sample)	他们的样本有 37 个有犹太机构的街区（处理样本）和 839 个没有机构的街区（对照样本）
 The data file DS2004 is a slightly revised version of the author's AER replication file and is posted on the textbook webpage	数据文件DS2004是作者的AER复现文件的稍微修改版本，并发布在教科书网页上
 Table 18.3: Number of Car Thefts by City Block	表 18.3：按城市街区划分的汽车盗窃案数量
-The model (18.3) makes the strong assumption that the treatment effect is constant across the five treated months	模型 (18.3) 做出了强有力的假设，即治疗效果在五个治疗个月内保持不变
-Given the small sample size (37) of the treatment sample this is strikingly uniform evidence	鉴于治疗样本的样本量较小（37），这是惊人的一致证据
-We can formally test the homogeneity of the treatment effect by including four dummy variables for the interactions of four post-attack months with the treatment sample and then testing the exclusion of these variables	我们可以通过包含四个虚拟变量来正式检验治疗效果的同质性，这些虚拟变量用于攻击后四个月与治疗样本的相互作用，然后检验这些变量的排除
+The model (18.3) makes the strong assumption that the treatment effect is constant across the five treated months	模型 (18.3) 做出了强有力的假设，即处置效应在五个处置个月内保持不变
+Given the small sample size (37) of the treatment sample this is strikingly uniform evidence	鉴于处置样本的样本量较小（37），这是惊人的一致证据
+We can formally test the homogeneity of the treatment effect by including four dummy variables for the interactions of four post-attack months with the treatment sample and then testing the exclusion of these variables	我们可以通过包含四个虚拟变量来正式检验处置效应的同质性，这些虚拟变量用于攻击后四个月与处置样本的相互作用，然后检验这些变量的排除
 Thus there is no reason in the data to be suspicious of the homogeneity assumption	因此，数据中没有理由怀疑同质性假设
 The goal was to estimate the causal effect of police presence as a deterrence for crime	目标是评估警察存在对犯罪威慑的因果效应
 Police presence greatly reduces the incidence of car theft	警察的存在大大减少了汽车盗窃的发生率
@@ -3216,7 +3212,7 @@ Trend Specification	趋势设定
 Some applications (including the two introduced earlier in this chapter) apply to a short period of time such as one year in which case we may not expect the variables to be trended	一些应用程序（包括本章前面介绍的两种）适用于较短的时间段，例如一年，在这种情况下，我们可能不会期望变量具有趋势
 It is reasonable to expect that trends may differ across units and are not fully captured by observed controls	可以合理地预期，不同单位的趋势可能有所不同，并且观察到的控制不能完全捕获趋势
 One way to think about this is in terms of overidentification	思考这个问题的一种方法是过度识别
-In addition to considering heterogeneous treatment effects it is reasonable to consider heterogeneous trends	除了考虑异质治疗效果之外，考虑异质趋势也是合理的
+In addition to considering heterogeneous treatment effects it is reasonable to consider heterogeneous trends	除了考虑异质处置效应之外，考虑异质趋势也是合理的
 One generalization is to include interactions of a linear trend with a control variable	一种概括是包括线性趋势与控制变量的相互作用
 A broader generalization is to include unit-specific linear time trends	更广泛的概括是包括特定于单位的线性时间趋势
 Estimation of model (18.6) can be done one of three ways	模型（18.6）的估计可以通过三种方式之一来完成
@@ -3226,7 +3222,7 @@ Our discussion for simplicity has focused on the case of balanced panels	为了�
 The methods equally apply to unbalanced panels, using standard panel data estimation	这些方法同样适用于使用标准面板数据估计的不平衡面板
 Do Blue Laws Affect Liquor Sales?	蓝色法律会影响酒类销售吗？
 Historically many U.S. states prohibited or limited the sale of alcoholic beverages on Sundays	历史上，美国许多州都禁止或限制周日销售酒精饮料
-The fact that different states changed their laws during different years allows for a difference-in-difference methodology to identify the treatment effect	不同州在不同年份改变法律的事实允许采用双重差分方法来确定治疗效果
+The fact that different states changed their laws during different years allows for a difference-in-difference methodology to identify the treatment effect	不同州在不同年份改变法律的事实允许采用双重差分方法来确定处置效应
 The paper focuses on distilled liquor sales though wine and beer sales are also included in their data	该论文重点关注蒸馏酒销售，尽管葡萄酒和啤酒销售也包含在其数据中
 states for the years 1970-2007, unbalanced	这些数据是 1970-2007 年美国 47 个州的州级数据，不平衡
 The authors carefully gathered information on the allowable hours that alcohol can be sold on a Sunday	作者仔细收集了有关周日允许出售酒类的时间的信息
@@ -3241,7 +3237,7 @@ The estimated coefficient for OnHours drops to zero and becomes insignificant	On
 Figure 18.1: Liquor Sales by State	图 18.1：按州划分的酒类销售情况
 indicating that the effects are better identified	表明效果得到了更好的识别
 That explains why the coefficient estimates change when the trend specification changes	这就解释了为什么当趋势设定改变时系数估计值也会改变
-Bernheim, Meer and Novarro (2016) is an excellent example of meticulous empirical work with careful attention to detail and isolating a treatment strategy	Bernheim、Meer 和 Novarro（2016）是细致的实证工作的一个很好的例子，仔细关注细节并隔离治疗策略
+Bernheim, Meer and Novarro (2016) is an excellent example of meticulous empirical work with careful attention to detail and isolating a treatment strategy	Bernheim、Meer 和 Novarro（2016）是细致的实证工作的一个很好的例子，仔细关注细节并隔离处置策略
 It is also a good example of how attention to trend specification can affect results	这也是一个很好的例子，说明了对趋势设定的关注如何影响结果
 Check Your Code: Does Abortion Impact Crime?	检查你的代码：堕胎会影响犯罪吗？
 In a highly-discussed paper, Donohue and Levitt (2001) used a difference-in-difference approach to develop an unusual theory	在一篇备受讨论的论文中，Donohue 和 Levitt (2001) 使用双重差分方法发展了一种不同寻常的理论
@@ -3625,8 +3621,8 @@ By the Triangle Inequality, the definition (20.10), the Schwarz Inequality, and 
 The coefficients satisfy the relationship	系数满足关系
 which is (20.55), as required	根据要求，即 (20.55)
 Regression Discontinuity	回归不连续性
-One of the core goals in applied econometrics is estimation of treatment effects	应用计量经济学的核心目标之一是估计治疗效果
-When it applies there are simple techniques for estimation of the causal effect of treatment	当它应用时，有一些简单的技术可以估计治疗的因果效应
+One of the core goals in applied econometrics is estimation of treatment effects	应用计量经济学的核心目标之一是估计处置效应
+When it applies there are simple techniques for estimation of the causal effect of treatment	当它应用时，有一些简单的技术可以估计处置的因果效应
 The first use of regression discontinuity is attributed to Thistlethwaite and Campbell (1960)	Thistlethwaite 和 Campbell (1960) 首次使用了断点回归
 The core model is sharp regression discontinuity where treatment is a discontinuous deterministic rule of an observable	核心模型是尖锐回归不连续性，其中处理是可观察量的不连续确定性规则
 We start by reviewing sharp regression discontinuity and then cover fuzzy regression discontinuity	我们首先回顾尖锐回归不连续性，然后介绍模糊回归不连续性
@@ -3643,7 +3639,7 @@ It is due to Hahn, Todd, and Van der Klaauw (2001)	这是 Hahn、Todd 和 Van de
 There is no reason to expect a discontinuity in either function	没有理由预期这两个函数会出现不连续性
 The intuition for the theorem can be seen in Figure 21.1(a)	该定理的直觉如图 21.1(a) 所示
 The plot in Figure 21.1 (a) was designed to mimic what we might expect in the Head Start application	图 21.1 (a) 中的图旨在模拟我们在 Head Start 应用程序中的预期
-Thus a limitation of the RDD approach is that it estimates a narrowly-defined treatment effect	因此，RDD 方法的局限性在于它估计的治疗效果范围狭窄
+Thus a limitation of the RDD approach is that it estimates a narrowly-defined treatment effect	因此，RDD 方法的局限性在于它估计的处置效应范围狭窄
 Thus a nonparametric treatment is essential to preclude falsely labeling nonlinearity as a discontinuity	因此，非参数处理对于防止将非线性错误地标记为不连续性至关重要
 The previous two chapters have studied nonparametric kernel and series regression	前两章研究了非参数核和级数回归
 Figure 21.1: Sharp Regression Discontinuity Design	图 21.1：急剧回归不连续性设计
@@ -3693,7 +3689,7 @@ In particular there is no visual evidence of bunching around the cut-off	特别�
 McCrary (2008) implements a formal test for continuity of the density at the cut-off	McCrary (2008) 对截止处的密度连续性进行了正式检验
 If the statistic is large this is evidence against the assumption of no manipulation, suggesting that the RDD design is not appropriate	如果统计数据很大，这就是反对无操纵假设的证据，表明 RDD 设计不合适
 Fuzzy Regression Discontinuity	模糊回归不连续性
-The sharp regression discontinuity requires that the cut-off perfectly separates treatment from nontreatment	急剧的回归不连续性要求截止点将治疗与未治疗完全分开
+The sharp regression discontinuity requires that the cut-off perfectly separates treatment from nontreatment	急剧的回归不连续性要求截止点将处置与未处置完全分开
 This is called fuzzy regression discontinuity (FRD)	这称为模糊回归不连续性 (FRD)
 This siutation is illustrated in Figure 21.3(a)	这种情况如图 21.3(a) 所示
 Figure 21.3: Fuzzy Regression Discontinuity Design	图 21.3：模糊回归不连续性设计
@@ -3928,7 +3924,7 @@ A final approach is rearrangement	最后一种方法是重新排列
 The R package quantreg includes the option rearrange to implement their procedure	R 包 quantreg 包含选项重新排列来实现其过程
 Of these four approaches, my recommendation is to start with a careful and thoughtful re-specification of the model	在这四种方法中，我的建议是从仔细且深思熟虑地重新设定模型开始
 Quantile Causal Effects	分位数因果效应
-One question which frequently arises in the study of quantile regression is "Can we interpret the quantile regression causally?" We can partially answer this question in the treatment response framework by providing conditions under which the quantile regression derivatives equal quantile treatment effects	在分位数回归研究中经常出现的一个问题是“我们可以因果地解释分位数回归吗？”我们可以通过提供分位数回归导数等于分位数治疗效果的条件，在治疗反应框架中部分回答这个问题
+One question which frequently arises in the study of quantile regression is "Can we interpret the quantile regression causally?" We can partially answer this question in the treatment response framework by providing conditions under which the quantile regression derivatives equal quantile treatment effects	在分位数回归研究中经常出现的一个问题是“我们可以因果地解释分位数回归吗？”我们可以通过提供分位数回归导数等于分位数处置效应的条件，在处置反应框架中部分回答这个问题
 In general this is heterogeneous	一般来说，这是异质的
 From observational data we can estimate the quantile regression function	根据观测数据，我们可以估计分位数回归函数
 Assumption 24.1 Conditions for Quantile Causal Effect	假设 24.1 分位数因果效应的条件
@@ -3961,7 +3957,7 @@ The right side has finite expectation under the assumptions	右边在假设下�
 The inequality holds by assumption; we now establish the equality	假设不等式成立；我们现在建立等式
 Thus the latter is the unique minimizer	因此后者是唯一的最小化
 Condition 5 holds by assumption	条件 5 通过假设成立
-Proof of Theorem 24.5: By the definition of the quantile treatment effect, monotonicity of causal effect (Assumption 24.1.2), definition of the causal effect, monotonicity of the treatment response (Assumption 24.1.3), and the definition of the quantile regression function, we find that	定理24.5的证明：通过分位数治疗效果的定义、因果效应的单调性（假设24.1.2）、因果效应的定义、治疗反应的单调性（假设24.1.3）以及分位数回归的定义函数，我们发现
+Proof of Theorem 24.5: By the definition of the quantile treatment effect, monotonicity of causal effect (Assumption 24.1.2), definition of the causal effect, monotonicity of the treatment response (Assumption 24.1.3), and the definition of the quantile regression function, we find that	定理24.5的证明：通过分位数处置效应的定义、因果效应的单调性（假设24.1.2）、因果效应的定义、处置反应的单调性（假设24.1.3）以及分位数回归的定义函数，我们发现
 Multiple Choice	多项选择
 This chapter surveys multinomial models	本章研究多项模型
 This includes multinomial response, multinomial logit, conditional logit, nested logit, mixed logit, multinomial probit, ordered response, count data, and the BLP demand model	这包括多项式响应、多项式 Logit、条件 Logit、嵌套 Logit、混合 Logit、多项式 Probit、有序响应、计数数据和 BLP 需求模型
@@ -4099,7 +4095,7 @@ BLP Demand Model	BLP需求模型
 A major development in the 1990s was the extension of conditional logit to models of aggregate market demand	20 世纪 90 年代的一项重大发展是将条件 Logit 扩展到市场总需求模型
 To discuss implementation we use as examples the applications in Berry, Levinsohn, and Pakes (1995) and Nevo (2001)	为了讨论实现，我们使用 Berry、Levinsohn 和 Pakes (1995) 以及 Nevo (2001) 中的应用程序作为示例
 The context is market-level observations	背景是市场层面的观测
-Observations typically include the price and sale quantities of each good, a set of characteristics of each good, and possibly information on demographic characteristics of the market population	观测通常包括每种商品的价格和销售数量、每种商品的一组特征，以及可能的有关市场人口的人口特征的信息
+Observations typically include the price and sale quantities of each good, a set of characteristics of each good, and possibly information on demographic characteristics of the market population	观测通常包括每种商品的价格和销售数量、每种商品的一组特征，以及可能的有关市场总体的人口特征的信息
 The model is derived from a conditional logit specification of individual behavior	该模型源自个体行为的条件 Logit 设定
 The trade-off is the need to take a stand on the number of individuals in the market	权衡是需要对市场上的个体数量采取立场
 There is considerable attention in the literature given to the choice and construction of instruments	文献中对工具的选择和构造给予了相当多的关注
@@ -4656,8 +4652,8 @@ It is constructive to contrast this behavior with ridge regression and selection
 Panel (a) displays the selection and ridge transformations, and panel (b) displays the Lasso transformation	面板 (a) 显示选择和山脊变换，面板 (b) 显示套索变换
 The Lasso and ridge estimators are continuous functions while the selection estimator is a discontinuous function	Lasso 和岭估计量是连续函数，而选择估计量是不连续函数
 Consequently, we expect the Lasso to have reduced variance relative to selection estimators, permitting overall lower MSE	因此，我们预计 Lasso 相对于选择估计量的方差会减少，从而总体上降低 MSE
-As for ridge regression, Lasso is not invariant to the scaling of the regressors	对于岭回归，Lasso 对于自变量的缩放并不是不变的
-It is conventional to scale all the variables to have mean zero and unit variance	通常将所有变量缩放至均值为零和单位方差
+As for ridge regression, Lasso is not invariant to the scaling of the regressors	对于岭回归，Lasso 对于自变量的标量化并不是不变的
+It is conventional to scale all the variables to have mean zero and unit variance	通常将所有变量标量化至均值为零和单位方差
 Lasso is also not invariant to rotations of the regressors	套索对于自变量的旋转也不是不变的
 This is troubling as typically there is no default specification	这很令人不安，因为通常没有默认设定
 Applications of Lasso estimation in economics are growing	Lasso 估计在经济学中的应用正在不断增长
