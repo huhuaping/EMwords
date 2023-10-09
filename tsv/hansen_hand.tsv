@@ -44,7 +44,7 @@ There are five major types of economic data sets: cross-sectional, time series, 
 They are distinguished by the dependence structure across observations	它们的区别在于观测之间的依赖结构
 Cross-sectional data sets have one observation per individual	横截面数据集中每个个体都有一个观测结果
 Most of this text is devoted to the study of cross-section data	本书的大部分内容都致力于研究横截面数据
-Time series data are indexed by time	时间序列数据按时间标引
+Time series data are indexed by time	时间序列数据按时间索引
 An exception is financial data where data are available at a high frequency (daily, hourly, or by transaction) so sample sizes can be quite large	一个例外是财务数据，其中数据的可用频率很高（每天、每小时或按交易），因此样本量可能非常大
 Panel data combines elements of cross-section and time series	面板数据结合了横截面和时间序列的元素
 An important issue in econometric panel data is the treatment of error components	计量经济学面板数据中的一个重要问题是误差成分的处理
@@ -1839,7 +1839,7 @@ Clustered Dependence	群组依赖
 Generated Regressors	生成的自变量
 The "two-stage" form of the 2SLS estimator is an example of what is called "estimation with generated regressors"	2SLS 估计量的“两阶段”形式是所谓“使用生成的自变量进行估计”的示例
 Unless this is incorporated into our inference methods, covariance matrix estimates and standard errors will be incorrect	除非将其纳入我们的推断方法，否则协方差矩阵估计和标准误差将是不正确的
-The econometric theory of generated regressors was developed by Pagan (1984) for linear models and extended to nonlinear models and more general two-step estimators by Pagan (1986)	生成自变量的计量经济学理论是由 Pagan (1984) 针对线性模型开发的，并由 Pagan (1986) 扩展到非线性模型和更一般的两步估计量
+The econometric theory of generated regressors was developed by Pagan (1984) for linear models and extended to nonlinear models and more general two-step estimators by Pagan (1986)	生成型自变量的计量经济学理论是由 Pagan (1984) 针对线性模型开发的，并由 Pagan (1986) 扩展到非线性模型和更一般的两步估计量
 because the generated regressors are themselves estimates	因为生成的自变量本身就是估计值
 This framework includes 2SLS as well as other common estimators	该框架包括 2SLS 以及其他常见估计量
 The examples which motivated Pagan (1984) and Murphy and Topel (1985) emerged from the macroeconomics literature, in particular the work of Barro (1977) which examined the impact of inflation expectations and expectation errors on economic output	Pagan (1984) 以及 Murphy 和 Topel (1985) 的案例来自宏观经济学文献，特别是 Barro (1977) 的著作，该著作研究了通货膨胀预期和预期误差对经济产出的影响
@@ -1854,7 +1854,7 @@ Under the assumption of conditional homoskedasticity this can be simplified as u
 We now summarize the results of this section	我们现在总结本节的结论
 With this one modification asymptotic inference using the generated regressors is conventional	通过这一修改，使用生成的自变量进行渐近推断是惯常的
 Regression with Expectation Errors	带有期望误差的回归
-In this section we examine a generated regressor model which includes expectation errors in the regression	在本节中，我们检查生成自变量的模型，其中包括回归的期望误差
+In this section we examine a generated regressor model which includes expectation errors in the regression	在本节中，我们检查生成型自变量的模型，其中包括回归的期望误差
 This does not change the results described here	这不会改变此处描述的结果
 The model is estimated as follows	该模型估计如下
 We now examine the asymptotic distributions of these estimators	我们现在检查这些估计量的渐近分布
@@ -2599,18 +2599,18 @@ In contrast, if the VAR(p) is an approximation then the MDS assumption is not ap
 In this case the asymptotic distribution can be derived under mixing conditions	在这种情况下，可以在混合条件下导出渐近分布
 This theorem does not require that the true process is a VAR	该定理不要求真实过程是 VAR
 The theorem shows that the coefficient estimators are asymptotically normal with a covariance matrix which takes a "long-run" sandwich form	该定理表明，系数估计量对于采用“长期” sandwich 形式的协方差矩阵是渐近正态的
-Estimators adjusted for degree-of-freedom can also be used though there is no established finite-sample justification	尽管没有确定的有限样本合理性，但也可以使用针对自由度进行调整的估计量
+Estimators adjusted for degree-of-freedom can also be used though there is no established finite-sample justification	尽管没有证实的有限样本合理性，但也可以使用进行自由度调整的估计量
 The heteroskedasticity-robust estimator equals	异方差稳健估计量等于
 Traditional textbooks have only used the homoskedastic variance estimation formula (15.9) and consequently existing software follows the same convention	传统教科书仅使用同方差估计公式（15.9），因此现有软件遵循相同的约定
 The Newey-West estimator (15.11) is not commonly used for VAR models	Newey-West 估计量 (15.11) 并不常用于 VAR 模型
-Asymptotic approximations tend to be much less accurate under time series dependence than for independent observations	与独立观测相比，渐近近似在时间序列依赖性下往往不太准确
+Asymptotic approximations tend to be much less accurate under time series dependence than for independent observations	与独立观测相比，渐近近似在时间序列相依性下往往不太准确
 Selection of Lag Length in an VAR	VAR 中滞后长度的选择
-The log determinant is the criterion from the multivariate normal likelihood	对数行列式是多元正态似然的标准
+The log determinant is the criterion from the multivariate normal likelihood	对数行列式是源自多元正态似然的准则
 In Stata the AIC for a set of estimated VAR models can be compared using the varsoc command	在 Stata 中，可以使用 varsoc 命令比较一组估计 VAR 模型的 AIC
 This does not affect the ranking of the models but makes the differences between models appear misleadingly small	这不会影响模型的排名，但会使模型之间的差异显得很小，从而产生误导
-We estimate a three-variable system which is a simplified version of a model often used to study the impact of monetary policy	我们估计一个三变量系统，这是经常用于研究货币政策影响的模型的简化版本
+We estimate a three-variable system which is a simplified version of a model often used to study the impact of monetary policy	我们估计一个三变量系统，这是经常用于研究货币政策影响模型的简化版本
 The coefficient estimates and (homoskedastic) standard errors for the VAR(6) are reported in Table 15.1	表 15.1 报告了 VAR(6) 的系数估计值和（同方差）标准误差
-Examining the coefficients in the table we can see that GDP displays a moderate degree of serial correlation and shows a large response to the federal funds rate, especially at lags 2 and 3	检查表中的系数，我们可以看到 GDP 显示出中等程度的序列相关性，并对联邦基金利率显示出较大的响应，尤其是在滞后 2 和 3 时
+Examining the coefficients in the table we can see that GDP displays a moderate degree of serial correlation and shows a large response to the federal funds rate, especially at lags 2 and 3	检查表中的系数，我们可以看到 GDP 显示出中等程度的序列相关性，并对联邦基金利率显示出较大的响应，尤其是在滞后 2 阶和 3 阶时
 Because of this difficulty it is typical to focus on other representations of the coefficient estimates such as impulse responses which we discuss in the upcoming sections	由于这一困难，通常将重点放在系数估计的其他表达式上，例如我们将在接下来的部分中讨论的脉冲响应
 Predictive Regressions	预测回归
 In some contexts (including prediction) it is useful to consider models where the dependent variable is dated multiple periods ahead of the right-hand-side variables	在某些情况下（包括预测），考虑因变量的日期早于右侧变量多个周期的模型是有用的
@@ -2618,16 +2618,16 @@ There are several implications of this theorem	这个定理有几个含义
 The predictive regression (15.12) can be estimated by least squares	预测回归（15.12）可以通过最小二乘法来估计
 For a distributional theory we can apply Theorem 15.11	对于分布理论，我们可以应用定理 15.11
 Impulse Response Estimation	脉冲响应估计
-Reporting of impulse response estimates is one of the most common applications of vector autoregressive modeling	脉冲响应估计报告是向量自回归建模最常见的应用之一
+Reporting of impulse response estimates is one of the most common applications of vector autoregressive modeling	报告脉冲响应估计是向量自回归建模最常见的应用之一
 In this section we review the most common estimator based on the estimated VAR parameters	在本节中，我们将回顾基于估计 VAR 参数的最常见估计量
 Within a VAR(p) model the impulse responses are determined by the VAR coefficients	在 VAR(p) 模型中，脉冲响应由 VAR 系数确定
 This is the the most commonly used method for impulse response estimation and it is the method implemented in standard packages	这是脉冲响应估计最常用的方法，并且是在标准包中实现的方法
 These can be used to form asymptotic confidence intervals for the impulse responses	这些可用于形成脉冲响应的渐近置信区间
-The asymptotic approximations, however, can be poor	然而，渐近近似可能很差
+The asymptotic approximations, however, can be poor	然而，渐近近似可能很糟糕
 Consequently, asymptotic approximations are less popular than bootstrap approximations	因此，渐近逼近不如自助逼近受欢迎
 A disadvantage of this estimator is that it is a highly nonlinear function of the VAR coefficient estimators	该估计量的缺点是它是 VAR 系数估计量的高度非线性函数
-Impulse response functions can be calculated and displayed in Stata using the irf command	可以使用 irf 命令在 Stata 中计算并显示脉冲响应函数
-Better options such as the bias-corrected percentile confidence interval are not provided as options	未提供更好的选项（例如偏误校正百分数置信区间）
+Impulse response functions can be calculated and displayed in Stata using the irf command	在 Stata 中可以使用 irf 命令计算并显示脉冲响应函数
+Better options such as the bias-corrected percentile confidence interval are not provided as options	诸如偏误校正百分数置信区间这样更好的选项没有被提供
 Local Projection Estimator	局部投影估计量
 Jordà (2005) observed that the impulse response can be estimated by a least squares predictive regression	Jordà (2005) 观察到脉冲响应可以通过最小二乘预测回归来估计
 The method is as follows	方法如下
@@ -2639,15 +2639,15 @@ A disadvantage is that the method relies on a regression (15.12) that has serial
 Local projection estimators tend to be less smooth and more erratic than those produced by the conventional estimator reflecting a possible lack of precision	与传统估计量产生的估计量相比，局部投影估计量往往不太平滑且更不稳定，这反映出可能缺乏精度
 Regression on Residuals	残差回归
 This idea originated with Durbin (1960)	这个想法起源于 Durbin (1960)
-This is a two-step estimator with generated regressors. (See Section 12.26.) The impulse response estimators are consistent and asymptotically normal but with a non-standard covariance matrix due to the two-step estimation	这是一个带有生成自变量的两步估计量
+This is a two-step estimator with generated regressors.	这是一个带有生成型自变量的两步估计量
 Conventional, robust, and Newey-West standard errors do not account for this without modification	如果不进行修改，传统的、稳健的和 Newey-West 标准误差无法解释这一点
 Chang and Sakata (2007) proposed a simplified version of the Durbin regression	Chang 和 Sakata (2007) 提出了 Durbin 回归的简化版本
-Similar to the Durbin regression the Chang-Sakata estimator is a two-step estimator with a generated regressor	与 Durbin 回归类似，Chang-Sakata 估计量是带有生成自变量的两步估计量
+Similar to the Durbin regression the Chang-Sakata estimator is a two-step estimator with a generated regressor	与 Durbin 回归类似，Chang-Sakata 估计量是带有生成型自变量的两步估计量
 Chang and Sakata (2007) also point out the following implication of the FWL theorem	Chang 和 Sakata (2007) 还指出了 FWL 定理的以下含义
 Thus the Chang-Sakata estimator is similar to a local projection estimator	因此，Chang-Sakata 估计量类似于局部投影估计量
 Orthogonalized Shocks	正交冲击
 We can use the impulse response function to examine how the innnovations impact the time-paths of the variables	我们可以使用脉冲响应函数来检查新息如何影响变量的时间路径
-The natural solution is to orthogonalize the innovations so that they are uncorrelated and then view the orthogonalized errors as the fundamental "shocks"	自然的解决方案是对新息进行正交化，使它们不相关，然后将正交化误差视为根本的“冲击”
+The natural solution is to orthogonalize the innovations so that they are uncorrelated and then view the orthogonalized errors as the fundamental "shocks"	自然的解决方案是对新息进行正交化，使它们不相关，然后将正交化误差视为基础的“冲击”
 with non-negative diagonal elements	具有非负对角线元素
 Equivalently, the innovations are related to the orthogonalized shocks by the equations	同样，新息与方程的正交冲击有关
 When using the Cholesky decomposition the recursive structure is determined by the ordering of the variables in the system	当使用 Cholesky 分解时，递归结构由系统中变量的顺序确定
@@ -2661,28 +2661,28 @@ Orthogonalized Impulse Response Estimation	正交脉冲响应估计
 We first estimate the VAR(p) model by least squares	我们首先通过最小二乘法估计 VAR(p) 模型
 As discussed earlier, the asymptotic approximations can be quite poor	如前所述，渐近近似可能非常差
 Consequently bootstrap approximations are more widely used than asymptotic methods	因此，自助近似比渐近方法使用更广泛
-Orthogonalized impulse response functions can be displayed in Stata using the irf command	正交脉冲响应函数可以使用 irf 命令在 Stata 中显示
+Orthogonalized impulse response functions can be displayed in Stata using the irf command	在 Stata 中正交脉冲响应函数可以使用 irf 命令显示
 The bootstrap confidence intervals are calculated using the normal approximation bootstrap confidence interval	自助置信区间是使用正态近似自助置信区间计算的
 To illustrate we use the three-variable system from Section 15.13	为了说明这一点，我们使用 15.13 节中的三变量系统
 We use the estimated VAR(6) and calculate the orthogonalized impulse response functions using the standard VAR estimator	我们使用估计的 VAR(6) 并使用标准 VAR 估计量计算正交脉冲响应函数
 Forecast Error Decomposition	预测误差分解
 An alternative tool to investigate an estimated VAR is the forecast error decomposition which decomposes multi-step forecast error variances by the component shocks	研究估计 VAR 的另一种工具是预测误差分解，它通过成分冲击分解多步预测误差方差
 The forecast error decomposition indicates which shocks contribute towards the fluctuations of each variable in the system	预测误差分解表明哪些冲击导致系统中每个变量的波动
-Figure 15.1: Response of GDP Growth to Orthogonalized Fed Funds Shock	图 15.1：GDP 增长对正交联邦基金冲击的反应
+Figure 15.1: Response of GDP Growth to Orthogonalized Fed Funds Shock	图 15.1：GDP 增长对正交化联邦基金冲击的反应
 It is defined as follows	它的定义如下
 The variance of this forecast error is	该预测误差的方差为
 A forecast error decomposition requires orthogonalized innovations	预测误差分解需要正交新息
-The forecast error decomposition can be calculated and displayed in Stata using the irf command	可以使用 irf 命令在 Stata 中计算并显示预测误差分解
+The forecast error decomposition can be calculated and displayed in Stata using the irf command	在 Stata 中可以使用 irf 命令计算并显示预测误差分解
 Identification of Recursive VARs	递归 VAR 的识别
 As we have discussed, a common method to orthogonalize the VAR errors is the lower triangular Cholesky decomposition which implies a recursive structure	正如我们所讨论的，正交化 VAR 误差的常用方法是下三角 Cholesky 分解，它意味着递归结构
-The ordering must be selected by the user; there is no data-dependent choice	订购必须由用户选择；不存在依赖于数据的选择
-In order for impulse responses and forecast error decompositions to be interpreted causally the orthogonalization must be identified by the user based on a structural economic argument	为了对脉冲响应和预测误差分解进行因果解释，用户必须根据结构性经济论证来识别正交化
+The ordering must be selected by the user; there is no data-dependent choice	顺序必须由用户选择；不存在依赖于数据的选择
+In order for impulse responses and forecast error decompositions to be interpreted causally the orthogonalization must be identified by the user based on a structural economic argument	为了对脉冲响应和预测误差分解进行因果解释，用户必须根据结构性经济论据来识别正交化
 One approach is to order first the variables which are believed to be contemporaneously affected by the fewest number of shocks	一种方法是首先对被认为同时受到最少冲击影响的变量进行排序
 By listing the federal funds rate last the model allows monetary policy to respond within a period to contemporeneous information about output and prices	通过将联邦基金利率列在最后，该模型允许货币政策在一段时间内对有关产出和价格的同期信息做出反应
 In general, this line of reasoning suggests that production measures should be listed first, goods prices second, and financial prices last	总的来说，这种推理表明应该首先列出生产指标，其次列出商品价格，最后列出金融价格
 In any situation it is best to be explicit about your choice and reasoning	在任何情况下，最好明确你的选择和推理
-Returning to the empirical illustration it is fairly conventional to order the fed funds rate last	回到实证例证，将联邦基金利率放在最后是相当传统的
-This is the ordering used in our example	这是我们示例中使用的顺序
+Returning to the empirical illustration it is fairly conventional to order the fed funds rate last	回到实证例证，将联邦基金利率放在最后是相当保守的
+This is the ordering used in our example	这是我们案例中使用的顺序
 In contrast, suppose that the aggregate supply curve is perfectly elastic in the short run	相反，假设总供给曲线在短期内是完全弹性的
 If the choice between perfectly elastic and perfectly inelastic aggregate supply is not credible then the supply and demand shocks cannot be separately identified based on ordering alone	如果完全弹性和完全非弹性总供给之间的选择不可信，则不能仅根据排序来单独识别供给和需求冲击
 The remaining impulse responses (responses to GDP and inflation shocks), however, will differ across these two orderings	然而，其余的脉冲响应（对 GDP 和通胀冲击的响应）在这两种排序中会有所不同
@@ -2690,131 +2690,129 @@ Oil Price Shocks	油价冲击
 To further illustrate the identification of impulse response functions by recursive structural assumptions we repeat here some of the analysis from Kilian (2009)	为了进一步说明通过递归结构假设来识别脉冲响应函数，我们在这里重复 Kilian (2009) 的一些分析
 The goal is to determine how oil prices respond to economic shocks and how the responses differ by the type of shock	目标是确定油价如何应对经济冲击以及不同冲击类型的反应有何不同
 This data set is posted on the textbook webpage as Kilian2009	该数据集在教科书网页上发布为 Kilian2009
-Kilian argues that these three variables are determined by three economic shocks: oil supply, aggregate demand, and oil demand	基利安认为，这三个变量是由三种经济冲击决定的：石油供应、总需求和石油需求
-Kilian also argues that oil demand shocks are primarily due to the precautionary demand for oil driven by uncertainty about future oil supply shortfalls	基利安还认为，石油需求冲击主要是由于未来石油供应短缺的不确定性所驱动的预防性石油需求
+Kilian argues that these three variables are determined by three economic shocks: oil supply, aggregate demand, and oil demand	Kilian 认为，这三个变量是由三种经济冲击决定的：石油供应、总需求和石油需求
+Kilian also argues that oil demand shocks are primarily due to the precautionary demand for oil driven by uncertainty about future oil supply shortfalls	Kilian 还认为，石油需求冲击主要是由于未来石油供应短缺的不确定性所驱动的预防性石油需求
 To identify the shocks Kilian makes the following exclusion restrictions	为了确定冲击，Kilian 做出了以下排除约束
 Crude oil prices, however, are allowed to respond simultaneously to all three shocks	然而，原油价格可以同时对这三种冲击做出反应
 Kilian's identification strategy is similar to that described in the previous section for the simple aggregate demand/aggregate supply model	Kilian 的识别策略与上一节中描述的简单总需求/总供给模型类似
 While much economic activity is pre-planned and hence sluggish to respond, some economic activity (recreational driving, for example) may immediately respond to price changes	虽然许多经济活动是预先计划的，因此反应缓慢，但某些经济活动（例如休闲驾驶）可能会立即对价格变化做出反应
-Kilian estimates the three-variable VAR using 24 lags and calculates the orthogonalized impulse response functions using the ordering implied by these assumptions	Kilian 使用 24 个滞后估计三变量 VAR，并使用这些假设隐含的顺序计算正交脉冲响应函数
+Kilian estimates the three-variable VAR using 24 lags and calculates the orthogonalized impulse response functions using the ordering implied by these assumptions	Kilian 使用 24 阶滞后估计三变量 VAR，并使用这些假设隐含的顺序来计算正交脉冲响应函数
 Notice that both figures have been displayed using the same y-axis scalings so that the figures are comparable	请注意，两个数字均使用相同的 y 轴比例显示，因此这些数字具有可比性
-What is noticeable about the figures is how differently crude oil prices respond to the two shocks	这些数据值得注意的是原油价格对这两种冲击的反应有何不同
+What is noticeable about the figures is how differently crude oil prices respond to the two shocks	这些图中值得注意的是原油价格对这两种冲击的反应有何不同
 Presumaby, this is because economic activity relies on crude oil and output growth is positively serially correlated	据推测，这是因为经济活动依赖原油且产出增长呈正序列相关
-The Kilian (2009) paper is an excellent example of how recursive orderings can be used to identify an orthogonalized VAR through a careful discussion of the causal system and the use of monthly observations	Kilian (2009) 的论文是一个很好的例子，它展示了如何通过仔细讨论因果系统和使用每月观测结果，使用递归排序来识别正交化 VAR
-Structural VARs	结构性VAR
-Figure 15.2: Response of Oil Prices to Orthogonalized Shocks	图 15.2：油价对正交冲击的反应
+The Kilian (2009) paper is an excellent example of how recursive orderings can be used to identify an orthogonalized VAR through a careful discussion of the causal system and the use of monthly observations	Kilian (2009) 的论文是一个很好的例子，它展示了如何通过仔细讨论因果系统和借助月度观测结果，使用递归排序来识别正交化 VAR
+Structural VARs	结构化 VAR
+Figure 15.2: Response of Oil Prices to Orthogonalized Shocks	图 15.2：油价对正交冲击的响应
 In this section we review SVARs based on short-run restrictions	在本节中，我们根据短期约束回顾 SVAR
-The system as written is under-identified	所写的系统未得到充分识别
-We will illustrate by using a simplified version of the model employed by Blanchard and Perotti (2002) who were interested in decomposing the effects of government spending and taxes on GDP	我们将使用 Blanchard 和 Perotti (2002) 使用的模型的简化版本进行说明，他们对分解政府支出和税收对 GDP 的影响感兴趣
+The system as written is under-identified	这里所写的系统未得到充分识别
+We will illustrate by using a simplified version of the model employed by Blanchard and Perotti (2002) who were interested in decomposing the effects of government spending and taxes on GDP	我们将使用 Blanchard 和 Perotti (2002) 模型的简化版本进行说明，他们对分解政府支出和税收对 GDP 的影响感兴趣
 We just described six restrictions while nine are required for identification	我们刚刚描述了六项约束，而识别则需要九项约束
 In general, either of the two simpler structures are simpler to compute and interpret	一般来说，这两种更简单的结构都更容易计算和解释
-Taking the variance of the variables on each side of (15.21) we find	取 (15.21) 两侧变量的方差，我们发现
+Taking the variance of the variables on each side of (15.21) we find	对 (15.21) 两侧变量取方差，我们发现
 This is a system of quadratic equations in the free parameters	这是自由参数的二次方程组
-The latter is appropriate when the model is correctly specified (including normality) but otherwise an unclear choice	当模型被正确设定（包括正态性）但否则选择不明确时，后者是合适的
+The latter is appropriate when the model is correctly specified (including normality) but otherwise an unclear choice	当模型被正确设定（包括正态性），后者是合适的，但反之则不是一个明确的选择
 Given the parameter estimates the structural impulse response function is	给定参数估计，结构脉冲响应函数为
 The structural impulse responses are nonlinear functions of the VAR coefficient and covariance matrix estimators so by the delta method are asymptotically normal	结构脉冲响应是 VAR 系数和协方差矩阵估计量的非线性函数，因此通过 Delta 方法是渐近正态的
-As for orthogonalized impulse responses the asymptotic normal approximation is unlikely to be a good approximation so bootstrap methods are an attractive alternative	对于正交化脉冲响应，渐近正态近似不太可能是一个好的近似，因此自助方法是一个有吸引力的替代方案
-Structural VARs should be interpreted similarly to instrumental variable estimators	结构 VAR 的解释应类似于工具变量估计量
-Their interpretation relies on valid exclusion restrictions which can only be justified by external information	他们的解释依赖于有效的排除约束，而这些约束只能通过外部信息来证明
+As for orthogonalized impulse responses the asymptotic normal approximation is unlikely to be a good approximation so bootstrap methods are an attractive alternative	对于正交化脉冲响应，渐近正态近似不大可能是一个好的近似，因此自助方法是一个有吸引力的替代方案
+Structural VARs should be interpreted similarly to instrumental variable estimators	结构化 VAR 应类似地解释为工具变量估计量
+Their interpretation relies on valid exclusion restrictions which can only be justified by external information	他们的解释依赖于有效的排除约束，而这些约束只能通过外部信息来证实
 We replicate a simplified version of Blanchard-Perotti (2002)	我们复现了 Blanchard-Perotti (2002) 的简化版本
 The estimated impulse responses are similar to those reported by Blanchard-Perotti	估计的脉冲响应与 Blanchard-Perotti 报告的类似
 Figure 15.3: Response of GDP to Government Spending and Tax Shocks	图 15.3：GDP 对政府支出和税收冲击的反应
 Increased spending has a positive effect on GDP while increased taxes has a negative effect	增加支出对GDP有积极影响，而增加税收则有消极影响
-Structural vector autoregressions can be estimated in Stata using the svar command	结构向量自回归可以在 Stata 中使用 svar 命令进行估计
-The same limitations for standard error and confidence interval construction in Stata hold for structural impulse responses as for non-structural impulse responses	Stata 中的标准误差和置信区间构造对于结构脉冲响应和非结构脉冲响应具有相同的局限
-Identification of Structural VARs	结构性 VAR 的识别
-It is easy to write down restrictions which satisfy the order condition but do not produce an identified system	很容易写下满足订单条件但不产生识别系统的约束
+Structural vector autoregressions can be estimated in Stata using the svar command	在 Stata 中结构向量自回归可以使用 svar 命令进行估计
+The same limitations for standard error and confidence interval construction in Stata hold for structural impulse responses as for non-structural impulse responses	Stata 中的标准误差和置信区间构造对于结构脉冲响应和非结构脉冲响应具有相同的局限性
+Identification of Structural VARs	结构化 VAR 的识别
+It is easy to write down restrictions which satisfy the order condition but do not produce an identified system	很容易写下满足阶条件但不会形成可识别系统的约束
 It is difficult to see if the system is identified simply by looking at the restrictions (except in the recursive case, which is relatively straightforward to identify)	仅仅通过查看约束很难看出系统是否被识别（除了递归情况，它相对容易识别）
-We can identify the equations sequentially, one at a time, or in blocks, using the metaphor of instrumental variables	我们可以使用工具变量的比喻，按顺序、一次一个或分块地识别方程
+We can identify the equations sequentially, one at a time, or in blocks, using the metaphor of instrumental variables	我们可以使用工具变量的比拟，按顺序、一次一个或分块地识别方程
 The general technique is as follows	一般技术如下
 Take the equations one at a time and ask if they can be estimated by instrumental variables using the excluded variables as instruments	一次提出一个方程，并询问是否可以使用排除的变量作为工具，通过工具变量来估计它们
 Once an equation has been verified as identified then its shock is identified and can be used as an instrument since it is uncorrelated with the shocks in the other equations	一旦方程被验证为确定的，那么它的冲击就被确定并且可以用作工具，因为它与其他方程中的冲击不相关
 In this example take the equations as ordered	在此示例中，按顺序取方程
-We deduce that the system is identified	我们推断系统已被识别
+We deduce that the system is identified	我们推断系统是可识别的
 Consider another example based on Keating (1992)	考虑另一个基于 Keating (1992) 的案例
 where the four shocks are "aggregate supply", "money supply", "money demand", and "I-S"	其中四种冲击是“总供给”、“货币供给”、“货币需求”和“I-S”
 This structure can be based on the following assumptions: An elastic short-run aggregate supply curve (prices do not respond within a quarter); a simple monetary supply policy (the fed funds rate only responds within quarter to the money supply); money demand only responds to nominal output (log price plus log real output) and fed funds rate within a quarter; and unrestricted I-S curve	这种结构可以基于以下假设： 有弹性的短期总供给曲线（价格在一个季度内不会做出反应）；简单的货币供应政策（联邦基金利率仅在季度内对货币供应量做出反应）；货币需求仅对季度内名义产出（对数价格加对数实际产出）和联邦基金利率做出反应；和不受约束的 I-S 曲线
-To analyze conditions for identification we start by checking the order condition	为了分析识别条件，我们首先检查订单条件
-Thus the order condition is exactly satisfied	因此订单条件完全满足
+To analyze conditions for identification we start by checking the order condition	为了分析识别条件，我们首先检查阶条件
+Thus the order condition is exactly satisfied	因此阶条件完全满足
 We check the equations for identification	我们检查方程进行识别
 Regardless, the point of this exercise is to determine specific conditions for identification and articulate them in your analysis	无论如何，此练习的目的是确定识别的具体条件并在分析中阐明它们
 Long-Run Restrictions	长期约束
-One important class of such structural VARs are those based on long-run restrictions	此类结构性 VAR 的一个重要类别是基于长期约束的 VAR
-These can provide a compelling case for identification	这些可以为识别提供令人信服的案例
-An influential example of a structural VAR based on a long-run restriction is Blanchard and Quah (1989)	Blanchard 和 Quah (1989) 是基于长期约束的结构 VAR 的一个有影响力的例子
-This can be used as an identifying restriction	这可以用作识别约束
+One important class of such structural VARs are those based on long-run restrictions	此类结构化 VAR 的一个重要类别是基于长期约束的 VAR
+These can provide a compelling case for identification	这些可以为识别提供令人信服的示例
+An influential example of a structural VAR based on a long-run restriction is Blanchard and Quah (1989)	Blanchard 和 Quah (1989) 是基于长期约束结构化 VAR 的一个有影响力的例子
+This can be used as an identifying restriction	这可以用作一个识别性约束
 The long-run structural impulse response is the cumulative sum of all impulse responses	长期结构脉冲响应是所有脉冲响应的累积和
-Another way of thinking about this is that Blanchard-Quah label "aggregate supply" as the long-run component of GDP and label "aggregate demand" as the transitory component of GDP	另一种思考方式是，布兰查德-夸赫将“总供给”标记为GDP的长期组成部分，将“总需求”标记为GDP的暂时组成部分
+Another way of thinking about this is that Blanchard-Quah label "aggregate supply" as the long-run component of GDP and label "aggregate demand" as the transitory component of GDP	另一种思考方式是，Blanchard-Quah 将“总供给”称为GDP的长期组成部分，将“总需求”标记为GDP的暂时组成部分
 Notice that by construction the long-run impulse response is	请注意，通过构造，长期脉冲响应是
-Long-run structural vector autoregressions can be estimated in Stata using the svar command using the lreq option	可以使用 svar 命令和 lreq 选项在 Stata 中估计长期结构向量自回归
-The same limitations for such intervals constructed in Stata hold for structural impulse response functions as the other cases discussed	与讨论的其他情况一样，在 Stata 中构建的此类区间的约束也适用于结构脉冲响应函数
-Unfortunately, a limitation of the Stata svar command is that it does not display cumulative structural impulse response functions	不幸的是，Stata svar 命令的一个局限是它不显示累积结构脉冲响应函数
+Long-run structural vector autoregressions can be estimated in Stata using the svar command using the lreq option	在 Stata 中可以使用 svar 命令和 lreq 选项估计长期结构向量自回归
+The same limitations for such intervals constructed in Stata hold for structural impulse response functions as the other cases discussed	与讨论的其他情况一样，在 Stata 中构建的此类区间的约束也适用于结构化脉冲响应函数
+Unfortunately, a limitation of the Stata svar command is that it does not display cumulative structural impulse response functions	不幸的是，Stata svar 命令的一个缺陷是它不显示累积结构脉冲响应函数
 This means that for serious applied work programming needs to be done outside of Stata	这意味着对于严肃的应用工作来说，编程需要在 Stata 之外完成
-Blanchard and Quah (1989) Illustration	布兰查德和夸 (1989) 说明
+Blanchard and Quah (1989) Illustration	Blanchard 和 Quah (1989) 说明
 As we described in the previous section, Blanchard and Quah (1989) estimated a bivariate VAR in GDP growth and the unemployment rate assuming that the the structural shocks are aggregate supply and aggregate demand imposing that that the long-run response of GDP with respect to aggregate demand is zero	正如我们在上一节中所描述的，Blanchard 和 Quah（1989）估计了 GDP 增长和失业率的双变量 VAR，假设结构性冲击是总供给和总需求，并假设 GDP 对总需求为零
-Blanchard and Quah used a careful detrending method; instead we including a linear time trend in the estimated VAR	布兰查德和夸赫使用了一种谨慎的去趋势方法；相反，我们在估计的 VAR 中包含了线性时间趋势
-The fitted reduced form model coefficients satisfy	拟合的精简形式模型系数满足
+Blanchard and Quah used a careful detrending method; instead we including a linear time trend in the estimated VAR	Blanchard 和 Quah 使用了一种谨慎的去趋势方法；相反，我们在估计的 VAR 中包含了线性时间趋势
+The fitted reduced form model coefficients satisfy	拟合的精简模型系数满足
 and the residual covariance matrix is	残差协方差矩阵为
-The estimated impulse responses have similar hump shapes with a peak around four quarters, and are similar to those found by Blanchard and Quah (1989)	估计的脉冲响应具有类似的驼峰形状，峰值在四分之四左右，并且与 Blanchard 和 Quah (1989) 发现的相似
+The estimated impulse responses have similar hump shapes with a peak around four quarters, and are similar to those found by Blanchard and Quah (1989)	估计的脉冲响应具有类似的驼峰形状，峰值在四个季度左右，并且与 Blanchard 和 Quah (1989) 的发现相似
 Let's examine and contrast panels (a) and (b) of Figure 15.4	让我们检查并对比图 15.4 的面板 (a) 和 (b)
-The confidence intervals for the supply shock impulse responses are wider than those for the demand shocks indicating that the estimates of the impulse responses due to supply shocks are not precisely estimated	供给冲击脉冲响应的置信区间比需求冲击的置信区间宽，这表明对供给冲击引起的脉冲响应的估计并未精确估计
+The confidence intervals for the supply shock impulse responses are wider than those for the demand shocks indicating that the estimates of the impulse responses due to supply shocks are not precisely estimated	供给冲击脉冲响应的置信区间比需求冲击的置信区间宽，这表明对供给冲击引起的脉冲响应的估计没有被精确估计
 The confidence intervals are very wide, however, indicating that these estimates are not precise	然而，置信区间非常宽，表明这些估计并不精确
-Figure 15.4: Response of Unemployment Rate	图 15.4：失业率的反应
+Figure 15.4: Response of Unemployment Rate	图 15.4：失业率的响应
 It is fascinating that the structural impulse response estimates shown here are nearly identical to those found by Blanchard and Quah (1989) despite the fact that we have used a considerably different sample period	令人着迷的是，这里显示的结构脉冲响应估计与 Blanchard 和 Quah (1989) 发现的几乎相同，尽管我们使用了相当不同的抽样周期
 External Instruments	外部工具
 Structural VARs can also be identified and estimated using external instrumental variables	结构 VAR 也可以使用外部工具变量来识别和估计
 Identification rests on the validity of these assumptions	识别取决于这些假设的有效性
-Figure 15.5: Forecast Error Decomposition, Percent due to Supply Shock	图 15.5：预测误差分解，由于供应冲击造成的百分比
+Figure 15.5: Forecast Error Decomposition, Percent due to Supply Shock	图 15.5：预测误差分解，由供应冲击引发的百分比
 Bootstrap confidence intervals are appropriate	Bootstrap 置信区间是合适的
 The structure (15.26)-(15.28) is convenient as four coefficients can be identified	结构(15.26)-(15.28)很方便，因为可以识别四个系数
 For more details see Stock and Watson (2012) and Mertens and Ravn (2013)	有关更多详细信息，请参阅 Stock 和 Watson (2012) 以及 Mertens 和 Ravn (2013)
-Dynamic Factor Models	动态因素模型
+Dynamic Factor Models	动态因子模型
 Dynamic factor models are increasingly popular in applied time series, in particular for forecasting	动态因子模型在应用时间序列中越来越受欢迎，特别是在预测方面
-In Sections 11.13-11.16 we introduced the standard multi-factor model (11.23):	在第 11.13-11.16 节中，我们介绍了标准多因素模型 (11.23)：
-In the time-series case it is natural to augment the model to allow for dynamic relationships	在时间序列的情况下，很自然地增强模型以允许动态关系
+In Sections 11.13-11.16 we introduced the standard multi-factor model (11.23):	在第 11.13-11.16 节中，我们介绍了标准多因子模型 (11.23)：
+In the time-series case it is natural to augment the model to allow for dynamic relationships	在时间序列的情况下，很自然地扩增模型以允许动态关系
 Hence we will focus on the standard model (15.32)-(15.33)-(15.34)	因此，我们将重点关注标准模型 (15.32)-(15.33)-(15.34)
-To estimate the explicit dynamic model (15.32)-(15.33)-(15.34) state-space methods are convenient	估计显式动态模型 (15.32)-(15.33)-(15.34) 状态空间方法很方便
+To estimate the explicit dynamic model (15.32)-(15.33)-(15.34) state-space methods are convenient	为估计显式动态模型 (15.32)-(15.33)-(15.34) 状态空间方法很方便
 For details and references see Stock and Watson (2016)	有关详细信息和参考文献，请参阅 Stock 和 Watson (2016)
 The dynamic factor model (15.32)-(15.33)-(15.34) can be estimated in Stata using df actor	动态因子模型 (15.32)-(15.33)-(15.34) 可以在 Stata 中使用 df actor 进行估计
-Proof of Theorem 15.12 The first part of the theorem is established by back-substitution	定理证明 15.12 定理的第一部分是通过回代建立的
-We then substitute out the first lag	然后我们替换掉第一个滞后
+Proof of Theorem 15.12 The first part of the theorem is established by back-substitution	定理证明 15.12 定理的第一部分是通过回替建立的
+We then substitute out the first lag	然后我们替换掉第一阶滞后
 Panel Data	面板数据
 Economists traditionally use the term panel data to refer to data structures consisting of observations on individuals for multiple time periods	经济学家传统上使用术语面板数据来指代由多个时间段的个体观测组成的数据结构
-More broadly, panel data methods can be applied to any context with cluster-type dependence	更广泛地说，面板数据方法可以应用于具有群组类型依赖性的任何上下文
+More broadly, panel data methods can be applied to any context with cluster-type dependence	更广泛地说，面板数据方法可以应用于具有群组类型依赖性的任何情景
 There are several distinct advantages of panel data relative to cross-section data	相对于横截面数据，面板数据有几个明显的优点
-A third is modeling dynamic relationships and effects	第三是对动态关系和效果进行建模
+A third is modeling dynamic relationships and effects	第三是对动态关系和效应进行建模
 There are two broad categories of panel data sets in economic applications: micro panels and macro panels	经济应用中的面板数据集有两大类：微观面板和宏观面板
 7-20) and a moderate number of time periods (20-60 years)	宏观面板通常是国家或地区宏观经济变量，其特征是适度数量的个体（例如 7-20 人）和适度数量的时间段（20-60 年）
-Panel data was once relatively esoteric in applied economic practice	面板数据曾经在应用经济实践中相对深奥
+Panel data was once relatively esoteric in applied economic practice	面板数据在应用经济实践中曾经相对难以领略
 Now, it is a dominant feature of applied research	现在，它已成为应用研究的一个显著特征
-A typical maintained assumption for micro panels (which we follow in this chapter) is that the individuals are mutually independent while the observations for a given individual are correlated across time periods	微型面板的一个典型的假设（我们在本章中遵循）是个体相互独立，而对给定个体的观测在不同时间段内是相关的
-countries) is much less compelling	类似的假设经常用于宏观面板，尽管个体（例如国家）之间的独立性假设不那么令人信服
+A typical maintained assumption for micro panels (which we follow in this chapter) is that the individuals are mutually independent while the observations for a given individual are correlated across time periods	微型面板的一个典型假设（我们在本章中遵循）是个体相互独立，而对给定个体的观测在不同时间段内是相关的
 The application of panel data methods in econometrics started with the pioneering work of Mundlak (1961) and Balestra and Nerlove (1966)	面板数据方法在计量经济学中的应用始于 Mundlak (1961) 以及 Balestra 和 Nerlove (1966) 的开创性工作
 Several excellent monographs and textbooks have been written on panel econometrics, including Arellano (2003), Hsiao (2003), Wooldridge (2010), and Baltagi (2013)	关于面板计量经济学，已经撰写了几本优秀的专著和教科书，包括 Arellano (2003)、Hsiao (2003)、Wooldridge (2010) 和 Baltagi (2013)
-This chapter will summarize some of the main themes but for a more in-depth treatment see these references	本章将总结一些主要主题，但要进行更深入的处理，请参阅这些参考资料
+This chapter will summarize some of the main themes but for a more in-depth treatment see these references	本章将总结一些主要议题，但要进行更深入的处理，请参阅这些参考资料
 One challenge arising in panel data applications is that the computational methods can require meticulous attention to detail	面板数据应用中出现的一项挑战是计算方法可能需要对细节一丝不苟
 For most panel data applications in economics Stata is the standard package	对于经济学中的大多数面板数据应用，Stata 是标准软件包
-Time Indexing and Unbalanced Panels	时间标引和不平衡面板
+Time Indexing and Unbalanced Panels	时间索引和非平衡面板
 Panel data sets can involve data at any time series frequency though the typical application involves annual data	尽管典型应用涉及年度数据，但面板数据集可以涉及任何时间序列频率的数据
-When observations are available on all individuals for the same time periods we say that the panel is balanced	当在同一时间段内对所有个体进行观测时，我们说该小组是平衡的
-When different time periods are available for the individuals in the sample we say that the panel is unbalanced	当样本中的个体有不同的时间段时，我们说该小组不平衡
+When observations are available on all individuals for the same time periods we say that the panel is balanced	当在同一时间段内对所有个体进行观测时，我们说该面板是平衡的
+When different time periods are available for the individuals in the sample we say that the panel is unbalanced	当样本中的个体有不同的时间段时，我们说该面板非平衡
 It does not pose a problem for applications but does make the notation cumbersome and also complicates computer programming	它不会给应用程序带来问题，但确实使符号变得麻烦并且使计算机编程变得复杂
 To illustrate, consider the data set Invest 1993 on the textbook webpage	为了说明这一点，请考虑教科书网页上的数据集 Invest 1993
-You can see that the years vary considerably across the firms so this is an unbalanced panel	你可以看到，各个年份之间的差异很大所以这是一个不平衡的小组
-The observed time periods for a given individual are typically contiguous (for example, in Table 17.1, firm \#32 is observed for each year from 1970 through 1977) but in some cases are non-continguous (if, for example, 1973 was missing for firm \#32)	给定个体的观察时间段通常是连续的（例如，在表 17.1 中，从 1970 年到 1977 年，每年观察到公司 \#32），但在某些情况下是不连续的（例如，如果缺少 1973 年）对于公司\#32）
+You can see that the years vary considerably across the firms so this is an unbalanced panel	你可以看到，各个年份之间的差异很大所以这是一个非平衡的面板
+The observed time periods for a given individual are typically contiguous (for example, in Table 17.1, firm \#32 is observed for each year from 1970 through 1977) but in some cases are non-continguous (if, for example, 1973 was missing for firm \#32)	给定个体的观察时间段通常是连续的（例如，在表 17.1 中，从 1970 年到 1977 年，每年观察到公司 \#32），但在某些情况下是不连续的（例如，如果对于公司\#32缺少 1973 年）
 Table 17.1: Observations from Investment Data Set	表 17.1：投资数据集的观测结果
-Notation	符号
-It will be useful to cluster the observations at the level of the individual	在个体层面上对观测结果进行聚类是很有用的
-We will also sometimes use matrix notation for the full sample	有时我们还会对完整样本使用矩阵表示法
-Pooled Regression	汇总回归
-The simplest model in panel regresion is pooled regresssion	面板回归中最简单的模型是合并回归
+It will be useful to cluster the observations at the level of the individual	在个体层面上对观测进行聚类是很有用的
+We will also sometimes use matrix notation for the full sample	有时我们还会对全体样本使用矩阵表示法
+Pooled Regression	池回归
+The simplest model in panel regresion is pooled regresssion	面板回归中最简单的模型是池回归
 As in (4.55) this can be multiplied by a degree-of-freedom adjustment	如 (4.55) 中所示，这可以乘以自由度调整
-The pooled regression estimator with cluster-robust standard errors can be obtained using the Stata command regress cluster(id) where id indicates the individual	可以使用 Stata 命令 regress cluster(id) 获得具有群组稳健标准误差的汇总回归估计量，其中 id 表示个体
-Since strict mean independence is a strong and undesirable restriction it is typically preferred to adopt one of the alternative estimators described in the following sections	由于严格均值独立性是一种强烈且不受欢迎的约束，因此通常优选采用以下各节中描述的替代估计量之一
-To illustrate the pooled regression estimator consider the data set Invest1993 described earlier	为了说明合并回归估计量，请考虑前面描述的 Invest1993 数据集
+The pooled regression estimator with cluster-robust standard errors can be obtained using the Stata command regress cluster(id) where id indicates the individual	可以使用 Stata 命令 regress cluster(id) 获得具有群组稳健标准误差的池回归估计量，其中 id 表示个体
+Since strict mean independence is a strong and undesirable restriction it is typically preferred to adopt one of the alternative estimators described in the following sections	由于严格均值独立性是一种严格且不受欢迎的约束，因此通常优选采用以下各节中描述的替代估计量之一
+To illustrate the pooled regression estimator consider the data set Invest1993 described earlier	为了说明池回归估计量，请考虑前面描述的 Invest1993 数据集
 One-Way Error Component Model	单向误差成分模型
-Table 17.2: Estimates of Investment Equation	表 17.2：投资方程估算
-Cluster-robust standard errors in parenthesis	括号中的群组稳健标准误差
+Table 17.2: Estimates of Investment Equation	表 17.2：投资方程估计
+Cluster-robust standard errors in parenthesis	括号中为群组稳健标准误差
 This is known as a oneway error component model	这称为单向误差成分模型
 The one-way error component regression model is	单向误差成分回归模型为
 To illustrate why an error-component structure such as (17.4) might be appropriate, examine Table 17.1	为了说明为什么像 (17.4) 这样的误差成分结构可能是合适的，请检查表 17.1
@@ -2824,134 +2822,133 @@ The random effects model is equivalent to an equi-correlation model	随机效应
 Thus random effects and equi-correlation are identical	因此，随机效应和等相关是相同的
 The random effects regression model is	随机效应回归模型为
 We now describe some statistical properties of the estimator under Assumption 17.1	我们现在描述假设 17.1 下估计量的一些统计特性
-Using the algebra of the Gauss-Markov Theorem we deduce that	使用高斯-马尔可夫定理的代数我们推导出
+Using the algebra of the Gauss-Markov Theorem we deduce that	使用高斯-马尔可夫定理代数我们推导出
 Under the assumption that the random effects model is a useful approximation but not literally true then we may consider a cluster-robust covariance matrix estimator such as	假设随机效应模型是一个有用的近似值，但实际上并不正确，那么我们可以考虑使用群组稳健的协方差矩阵估计量，例如
 In the next section we consider a less restrictive specification	在下一节中，我们将考虑约束较少的设定
 Fixed Effect Model	固定效应模型
 Consider the one-way error component regression model	考虑单向误差成分回归模型
 To illustrate, consider the entries in Table 17.1	为了说明这一点，请考虑表 17.1 中的条目
-It is not reasonable to infer too much from these limited observations, but the relevance is that such correlation violates strict mean independence	从这些有限的观测中推断太多是不合理的，但相关性在于这种相关性违反了严格的均值独立性
-Figure 17.1: Scatter Plot and Pooled Regression Line	图 17.1：散点图和合并回归线
+It is not reasonable to infer too much from these limited observations, but the relevance is that such correlation violates strict mean independence	从这些有限的观测中推断太多是不合理的，但意义在于这种相关性违反了严格的均值独立性
+Figure 17.1: Scatter Plot and Pooled Regression Line	图 17.1：散点图和池回归线
 Strict exogeneity (17.17) is typically inappropriate in dynamic models	严格的外生性（17.17）通常不适用于动态模型
-Within Transformation	转型之内
-One such transformation is the within transformation	其中一种转变就是内在转变
-In this section we describe this transformation in detail	在本节中，我们将详细描述这种转变
+Within Transformation	组内变换
+One such transformation is the within transformation	其中一种变换就是内在变换
+In this section we describe this transformation in detail	在本节中，我们将详细描述这种变换
 Define the mean of a variable for a given individual as	将给定个体的变量平均值定义为
 We call this the individual-specific mean since it is the mean of a given individual	我们将其称为个体特定均值，因为它是给定个体的均值
 Contrarywise, some authors call this the time-average or time-mean since it is the average over the time periods	相反，一些作者将其称为时间平均或时间平均值，因为它是一段时间内的平均值
 Subtracting the individual-specific mean from the variable we obtain the deviations	从变量中减去个体特定平均值，我们得到离差
-This is known as the within transformation	这称为内部变换
-What is important is that the demeaning has occured at the individual level	重要的是这种侮辱发生在个体层面
+This is known as the within transformation	这称为组内变换
+What is important is that the demeaning has occured at the individual level	重要的是这种离差化发生在个体层面
 Some algebra may also be useful	一些代数也可能有用
 Similarly for the regressors we define the individual-specific means and demeaned values:	同样，对于自变量，我们定义了个体特定的平均值和离差：
 We illustrate demeaning in Table 17.1	我们在表 17.1 中说明了离差化
-We can also define the full-sample within operator	我们还可以定义运算符内的完整样本
+We can also define the full-sample within operator	我们还可以定义全体样本组内算子
 Now apply these operations to equation (17.15)	现在将这些运算应用到方程（17.15）中
 We can alternatively write this in vector notation	我们也可以用向量表示法来写它
 Equation (17.22) is a vector version of (17.21)	方程（17.22）是（17.21）的向量版本
-The equation (17.21) is a linear equation in the transformed (demeaned) variables	方程（17.21）是变换（贬值）变量的线性方程
+The equation (17.21) is a linear equation in the transformed (demeaned) variables	方程（17.21）是变换（离差）变量的线性方程
 This means that the the endogeneity bias described in the previous section will be eliminated	这意味着上一节中描述的内生性偏误将被消除
-Another consequence, however, is that all time-invariant regressors are also eliminated	然而，另一个结果是所有时不变自变量也被消除
+Another consequence, however, is that all time-invariant regressors are also eliminated	然而，另一个结果是所有时常自变量也被消除
 The two have observationally equivalent effects and cannot be separately identified	两者在观察上具有相同的效果，无法单独识别
-The within transformation can greatly reduce the variance of the regressors	内变换可以大大减少自变量的方差
-It is not typically needed to directly program the within transformation, but if it is desired the following Stata commands easily do so	通常不需要直接对内部变换进行编程，但如果需要，可以使用以下 Stata 命令轻松实现
+The within transformation can greatly reduce the variance of the regressors	组内变换可以大大减少自变量的方差
+It is not typically needed to directly program the within transformation, but if it is desired the following Stata commands easily do so	通常不需要直接对组内变换进行编程，但如果需要，可以使用以下 Stata 命令轻松实现
 Fixed Effects Estimator	固定效应估计量
 Consider least squares applied to the demeaned equation (17.21) or equivalently (17.22)	考虑将最小二乘应用于离差方程（17.21）或等效方程（17.22）
-It is called the within estimator because it is based on the variation of the data within each individual	它被称为内部估计量，因为它基于每个个体内数据的变化
+It is called the within estimator because it is based on the variation of the data within each individual	它被称为组内估计量，因为它基于每个个体内数据的变化
 The fixed effects residuals are	固定效应残差为
 Let us describe some of the statistical properties of the estimator under strict mean independence (17.18)	让我们描述严格均值独立性下估计量的一些统计特性（17.18）
 This expression simplifies when the idiosyncratic errors are homoskedastic and serially uncorrelated:	当特异误差同方差且序列不相关时，该表达式得到简化：
 Differenced Estimator	差分估计量
-The within transformation is not the only transformation which eliminates the individual-specific effect	内部转变并不是唯一消除个体特异性效应的转变
+The within transformation is not the only transformation which eliminates the individual-specific effect	组内变换并不是唯一消除个体特异性效应的变换
 Another important transformation which does the same is first-differencing	另一个具有相同作用的重要变换是一阶差分
 Least squares applied to the differenced equation (17.29) is	应用于差分方程 (17.29) 的最小二乘为
 We can reduce estimation variance by using GLS	我们可以通过使用 GLS 来减少估计方差
-What we have shown is that under i.i.d. errors, GLS applied to the first-differenced equation precisely equals the fixed effects estimator	我们所展示的是在 i.i.d. 下
 This argument extends to any other transformation which eliminates the fixed effect	这个论点扩展到消除固定效应的任何其他变换
-This shows that the fixed effects estimator is Gauss-Markov efficient in the class of estimators which eliminate the fixed effect, under these assumptions	这表明，在这些假设下，固定效应估计量在消除固定效应的估计量类别中是高斯-马尔可夫有效的
+This shows that the fixed effects estimator is Gauss-Markov efficient in the class of estimators which eliminate the fixed effect, under these assumptions	这表明，在这些假设下，固定效应估计量在消除固定效应的估计量类中是高斯-马尔可夫有效的
 Dummy Variables Regression	虚拟变量回归
 It turns out that this is algebraically equivalent to the within estimator	事实证明，这在代数上等价于组内估计量
 To see this start with the error-component model without a regressor:	要了解这一点，请从没有自变量的误差成分模型开始：
 The least squares residuals are	最小二乘残差为
 as shown in (17.19)	如(17.19)所示
-Thus the least squares residuals from the simple error-component model are the within transformed variables	因此，简单误差成分模型的最小二乘残差是内变换变量
+Thus the least squares residuals from the simple error-component model are the within transformed variables	因此，简单误差成分模型的最小二乘残差是组内变换变量
 Now consider the error-component model with regressors, which can be written as	现在考虑带有自变量的误差成分模型，可以写为
 We call this the dummy variable estimator of the fixed effects model	我们将其称为固定效应模型的虚拟变量估计量
 This is sufficiently important that we state this result as a theorem	这非常重要，我们将这个结果表述为定理
 The two estimators have the same residuals	两个估计量具有相同的残差
-This may be the most important practical application of the Frisch-Waugh-Lovell Theorem	这可能是弗里施-沃-洛弗尔定理最重要的实际应用
+This may be the most important practical application of the Frisch-Waugh-Lovell Theorem	这可能是 Frisch-Waugh-Lovell 定理最重要的实际应用
 This is important because in some cases one approach is more convenient than the other and it is important to know that the two methods are algebraically equivalent	这很重要，因为在某些情况下，一种方法比另一种方法更方便，并且了解这两种方法在代数上是等效的很重要
-The dummy variable formulation may add insight about how the fixed effects estimator achieves invariance to the fixed effects	虚拟变量公式可以增加关于固定效应估计量如何实现固定效应不变性的见解
+The dummy variable formulation may add insight about how the fixed effects estimator achieves invariance to the fixed effects	虚拟变量公式可以增加关于固定效应估计量如何实现固定效应不变性的洞见
 Fixed Effects Covariance Matrix Estimation	固定效应协方差矩阵估计
 Notice that the assumptions (17.18), (17.25), and (17.26) are identical to (17.5)-(17.7) of Assumption 17.1	请注意，假设 (17.18)、(17.25) 和 (17.26) 与假设 17.1 的 (17.5)-(17.7) 相同
-These estimators are convenient because they are simple to apply and allow for unbalanced panels	这些估算器很方便，因为它们易于应用并且允许不平衡面板
+These estimators are convenient because they are simple to apply and allow for unbalanced panels	这些估计量很方便，因为它们易于应用并且允许非平衡面板
 Hence the choice between (17.38), (17.39), and (17.40) can be substantial	因此，(17.38)、(17.39) 和 (17.40) 之间的选择可能很大
 which is the idealized estimator with the true errors rather than the residuals	这是具有真实误差而不是残差的理想化估计量
-This (crude) analysis suggests that for the cluster robust covariance estimator for fixed effects regression the adjustment recommended by C	此（粗略）分析表明，对于固定效应回归的群组稳健协方差估计量，C. Hansen (17.39) 建议的调整是最合适的
+This (crude) analysis suggests that for the cluster robust covariance estimator for fixed effects regression the adjustment recommended by C. Hansen	此（粗略）分析表明，对于固定效应回归的群组稳健协方差估计量，C. Hansen 建议的调整是最合适的
 The main argument for the latter is that it produces the largest standard errors and is thus the most conservative choice	后者的主要论点是它产生最大的标准误差，因此是最保守的选择
 In current practice the estimators (17.38) and (17.40) are the most commonly used covariance matrix estimators for fixed effects estimation	在当前实践中，估计量 (17.38) 和 (17.40) 是固定效应估计中最常用的协方差矩阵估计量
-The point estimates are similar to the random effects estimates, though the coefficients on debt and cash flow increase in magnitude	点估计与随机效应估计相似，尽管债务和现金流量的系数增加了
+The point estimates are similar to the random effects estimates, though the coefficients on debt and cash flow increase in magnitude	点估计与随机效应估计相似，尽管债务和现金流的系数增加了
 Fixed Effects Estimation in Stata	Stata 中的固定效应估计
 The first method is dummy variable regression	第一种方法是虚拟变量回归
-(Other statistics can be reported as well.) The second method is to manually create the within transformed variables as described in Section 17.8, and then use regress	）第二种方法是手动创建内部变换变量，如第 17.8 节所述，然后使用回归
-The fourth method is areg absorb (id)	第四种方法是aregsorb(id)
+The second method is to manually create the within transformed variables as described in Section 17.8, and then use regress	）第二种方法是手动创建组内变换变量，如第 17.8 节所述，然后使用回归
+The fourth method is areg absorb (id)	第四种方法是 aregsorb (id)
 An important difference between the Stata xtreg and areg commands is that they implement different cluster-robust covariance matrix estimators: (17.38) in the case of xtreg and (17.40) in the case of areg	Stata xtreg 和 areg 命令之间的一个重要区别是，它们实现了不同的群组稳健协方差矩阵估计量：对于 xtreg 为 (17.38)，对于 areg 为 (17.40)
 As discussed in the previous section the adjustment used by areg is ad hoc and not well-justified but produces the largest and hence most conservative standard errors	正如上一节中所讨论的，areg 使用的调整是临时的且没有充分理由，但会产生最大且因此最保守的标准误差
 In current econometric practice both xtreg and areg are used, though areg appears to be the more popular choice	在当前的计量经济学实践中，xtreg 和 areg 都被使用，尽管 areg 似乎是更流行的选择
-Between Estimator	估计量之间
-The between estimator is calculated from the individual-mean equation (17.20)	间估计量是根据个体均值方程 (17.20) 计算的
+Between Estimator	组间估计量
+The between estimator is calculated from the individual-mean equation (17.20)	组间估计量是根据个体均值方程 (17.20) 计算的
 Estimation can be done at the level of individuals or at the level of observations	估计可以在个体层面或观测层面进行
 Least squares applied to (17.41) at the level of observations is	在观测级别应用于 (17.41) 的最小二乘为
 is the variance of the error in (17.41)	是 (17.41) 中误差的方差
-Consequently there seems little direct use for the between estimator in linear panel data applications	因此，线性面板数据应用中似乎很少直接使用间估计量
+Consequently there seems little direct use for the between estimator in linear panel data applications	因此，线性面板数据应用中似乎很少直接使用组间估计量
 It is possible for (17.43) to be negative	(17.43) 可能为负数
-Feasible GLS	可行的GLS
+Feasible GLS	可行 GLS
 The random effects estimator can be written as	随机效应估计量可以写为
-It is instructive to study these transformations	研究这些转变是有启发性的
+It is instructive to study these transformations	研究这些变换是有启发性的
 Therefore the transformation used by the GLS estimator is	因此 GLS 估计量使用的变换是
 which is a partial within transformation	这是变换中的一部分
 The feasible random effects estimator is (17.45) using (17.49) and (17.50)	可行的随机效应估计量是使用（17.49）和（17.50）的（17.45）
 What this shows is the following	这表明了以下内容
 Thus when the variance estimates suggest that the individual effect is relatively large the random effect estimator is close to the fixed effects estimator	因此，当方差估计表明个体效应相对较大时，随机效应估计量接近固定效应估计量
 Intercept in Fixed Effects Regression	固定效应回归中的截距
-The fixed effect estimator does not apply to any regressor which is time-invariant for all individuals	固定效应估计量不适用于对所有个体都是时不变的任何自变量
+The fixed effect estimator does not apply to any regressor which is time-invariant for all individuals	固定效应估计量不适用于任何自变量对所有个体都是时常
 This is the estimator reported by xtreg	这是 xtreg 报告的估计量
 Estimation of Fixed Effects	固定效应的估计
 Alternatively, using (17.34) this is	或者，使用 (17.34) 这是
 If an intercept has been estimated (as discussed in the previous section) it should be subtracted from (17.51)	如果已估计截距（如上一节所述），则应从 (17.51) 中减去该截距
-The fixed effects (17.52) may be obtained in Stata after ivreg, fe using the predict u command or after areg using the predict d command	固定效应 (17.52) 可以在 Stata 中在 ivreg、fe 之后使用 Predict u 命令获得，或者在 areg 之后使用 Predict d 命令获得
+The fixed effects (17.52) may be obtained in Stata after ivreg, fe using the predict u command or after areg using the predict d command	在 Stata 中固定效应 (17.52) 可以在 ivreg、fe 之后使用 Predict u 命令获得，或者在 areg 之后使用 Predict d 命令获得
 GMM Interpretation of Fixed Effects	固定效应的 GMM 解释
 We can also interpret the fixed effects estimator through the generalized method of moments	我们还可以通过广义矩方法来解释固定效应估计量
-Take the fixed effects model after applying the within transformation (17.21)	采用应用内变换（17.21）后的固定效应模型
+Take the fixed effects model after applying the within transformation (17.21)	采用组内变换（17.21）后的固定效应模型
 Thus the 2SLS estimator simplifies to	因此 2SLS 估计量简化为
-This shows that if we treat each time period as a separate equation with its separate moment equation so that the system is over-identified, and then estimate by GMM using the 2SLS weight matrix, the resulting GMM estimator equals the simple fixed effects estimator	这表明，如果我们将每个时间段视为具有单独矩方程的单独方程，从而使系统过度识别，然后使用 2SLS 权重矩阵通过 GMM 进行估计，则得到的 GMM 估计量等于简单固定效应估计量
+This shows that if we treat each time period as a separate equation with its separate moment equation so that the system is over-identified, and then estimate by GMM using the 2SLS weight matrix, the resulting GMM estimator equals the simple fixed effects estimator	这表明，如果我们将每个时间段视为具有单独矩方程的单独方程，从而使系统过度识别，然后使用 2SLS 权重矩阵进行 GMM 估计，则得到的 GMM 估计量等于简单固定效应估计量
 There is no change by adding the additional moment conditions	添加附加矩条件不会带来任何变化
 The 2SLS estimator is the appropriate GMM estimator when the equation error is serially uncorrelated and homoskedastic	当方程误差序列不相关且同方差时，2SLS 估计量是合适的 GMM 估计量
 Notationally, this GMM estimator has been written for a balanced panel	值得注意的是，这个 GMM 估计量是为平衡面板编写的
 Otherwise no changes need to be made	否则无需进行任何更改
 Identification in the Fixed Effects Model	固定效应模型中的识别
 Equation (17.54) is the identification condition for the fixed effects estimator	方程（17.54）是固定效应估计量的识别条件
-The regressors cannot contain any variable which does not have time-variation at the individual level nor a set of regressors whose time-variation at the individual level is collinear	自变量不能包含任何在个体水平上不具有时间变化的变量，也不能包含在个体水平上的时间变化是共线的一组自变量
+The regressors cannot contain any variable which does not have time-variation at the individual level nor a set of regressors whose time-variation at the individual level is collinear	自变量不能包含任何在个体水平上不具有时间变化的变量，也不能包含在个体水平上的时间变化是共线性的一组自变量
 Asymptotic Distribution of Fixed Effects Estimator	固定效应估计量的渐近分布
 In this section we present an asymptotic distribution theory for the fixed effects estimator in balanced panels	在本节中，我们提出平衡面板中固定效应估计量的渐近分布理论
-Unbalanced panels are considered in the following section	下一节将考虑不平衡面板
+Unbalanced panels are considered in the following section	下一节将考虑非平衡面板
 We use the following assumptions	我们使用以下假设
 We now discuss the assumptions	我们现在讨论假设
-Assumption 17.2.4 is the identification condition discussed in the previous section	假设17.2.4是上一节讨论的辨识条件
+Assumption 17.2.4 is the identification condition discussed in the previous section	假设 17.2.4 是上一节讨论的识别条件
 Assumptions 17.2.5 and 17.2.6 are needed for the central limit theorem	中心极限定理需要假设 17.2.5 和 17.2.6
-We now prove Theorem 17.2	现在我们证明定理17.2
+We now prove Theorem 17.2	现在我们证明定理 17.2
 Assumption 17.2.3 implies	假设 17.2.3 意味着
 so they are mean zero	所以它们的均值为零
-Asymptotic Distribution for Unbalanced Panels	不平衡面板的渐近分布
-In this section we extend the theory of the previous section to cover unbalanced panels under random selection	在本节中，我们将上一节的理论扩展到随机选择下的不平衡面板
-Think of an unbalanced panel as a shortened version of an idealized balanced panel where the shortening is due to "missing" observations due to random selection	将不平衡面板视为理想化平衡面板的缩短版本，其中缩短是由于随机选择导致的“缺失”观测结果造成的
+Asymptotic Distribution for Unbalanced Panels	非平衡面板的渐近分布
+In this section we extend the theory of the previous section to cover unbalanced panels under random selection	在本节中，我们将上一节的理论扩展到随机选择下的非平衡面板
+Think of an unbalanced panel as a shortened version of an idealized balanced panel where the shortening is due to "missing" observations due to random selection	将非平衡面板视为理想化平衡面板的缩短版本，其中缩短是由于随机选择导致的“缺失”观测结果造成的
 Then we can describe the estimators algebraically as follows	然后我们可以用代数方式描述估计量如下
-Consequently, they do not appear in matrix products and sums	因此，它们不会出现在矩阵乘积和和中
+Consequently, they do not appear in matrix products and sums	因此，它们不会出现在矩阵乘积和求和中
 This is the easiest approach but the most unsatisfactory	这是最简单的方法，但也是最不令人满意的
 The disadvantage is that we must use a conditional mean restriction rather than uncorrelatedness to identify the coefficients	缺点是我们必须使用条件均值约束而不是不相关性来识别系数
 The specific assumptions we impose are as follows	我们施加的具体假设如下
 Given the above development it is straightforward to establish asymptotic normality	鉴于上述发展，建立渐近正态性是很简单的
-Together we obtain the stated result	我们共同获得了所陈述的结果
+Together we obtain the stated result	我们一起获得了所陈述的结果
 Heteroskedasticity-Robust Covariance Matrix Estimation	异方差-稳健协方差矩阵估计
 We have introduced two covariance matrix estimators for the fixed effects estimator	我们为固定效应估计量引入了两个协方差矩阵估计量
 Assume that (17.18) and (17.26) hold but not necessarily (17.25)	假设(17.18)和(17.26)成立，但不一定(17.25)成立
@@ -2959,16 +2956,16 @@ We can see this by a simple bias calculation	我们可以通过简单的偏误�
 Using (17.26) and (17.55)	使用 (17.26) 和 (17.55)
 These leads to the practical recommendation that areg should be used with the cluster(id) option	这些导致实际建议 areg 应与 cluster(id) 选项一起使用
 At present the corrected estimator (17.58) has not been programmed as a Stata option	目前，校正估计量 (17.58) 尚未被编程为 Stata 选项
-Heteroskedasticity-Robust Estimation - Unbalanced Case	异方差-稳健估计-不平衡情况
+Heteroskedasticity-Robust Estimation - Unbalanced Case	异方差-稳健估计-非平衡情形
 A limitation with the bias-corrected robust covariance matrix estimator of Stock and Watson (2008) is that it was only derived for balanced panels	Stock 和 Watson (2008) 的偏误校正稳健协方差矩阵估计量的一个局限性是它仅针对平衡面板得出
-In this section we generalize their estimator to cover unbalanced panels	在本节中，我们将其估计量概括为涵盖不平衡面板
-Hausman Test for Random vs Fixed Effects	随机效应与固定效应的豪斯曼检验
+In this section we generalize their estimator to cover unbalanced panels	在本节中，我们将其估计量概括为涵盖非平衡面板
+Hausman Test for Random vs Fixed Effects	随机效应与固定效应的 Hausman 检验
 The random effects model is a special case of the fixed effects model	随机效应模型是固定效应模型的特例
 In this case the test should be implemented only on the coefficients on the time-varying regressors	在这种情况下，应仅对时变自变量的系数进行检验
 On the other hand if the test fails to reject this evidence says that the random effects hypothesis cannot be rejected	另一方面，如果检验未能拒绝该证据，则表明随机效应假设不能被拒绝
-It is tempting to use the Hausman test to select whether to use the fixed effects or random effects estimator	使用豪斯曼检验来选择是使用固定效应估计量还是随机效应估计量是很诱人的
+It is tempting to use the Hausman test to select whether to use the fixed effects or random effects estimator	使用 Hausman 检验来选择是使用固定效应估计量还是随机效应估计量是很诱人的
 The bias arises because the result of the test is random and correlated with the estimators	出现偏误是因为检验结果是随机的并且与估计量相关
-Instead, the Hausman test can be used as a specification test	相反，豪斯曼检验可以用作设定检验
+Instead, the Hausman test can be used as a specification test	相反， Hausman 检验可以用作设定检验
 If you are planning to use the random effects estimator (and believe that the random effects assumptions are appropriate in your context) the Hausman test can be used to check this assumption and provide evidence to support your approach	如果你计划使用随机效应估计量（并且相信随机效应假设适合你的情况），则可以使用豪斯曼检验来检查此假设并提供证据来支持你的方法
 Random Effects or Fixed Effects?	随机效应还是固定效应？
 We have presented the random effects and fixed effects estimators of the regression coefficients	我们提出了回归系数的随机效应和固定效应估计量
@@ -2978,23 +2975,23 @@ In general we expect that economic agents will experience common shocks during t
 Therefore it is often desirable to include time effects in a panel regression model	因此，通常需要在面板回归模型中包含时间效应
 The simplest specification is a linear time trend	最简单的设定是线性时间趋势
 For a introduction to time trends see Section 14.42	有关时间趋势的介绍，请参阅第 14.42 节
-In some cases the time trends may be individual-specific	在某些情况下，时间趋势可能因人而异
+In some cases the time trends may be individual-specific	在某些情况下，时间趋势可能因个体而异
 Two-Way Error Components	双向误差成分
-In the previous section we discussed inclusion of time trends and individual-specific time trends	在上一节中，我们讨论了时间趋势和个体特定时间趋势的包含
-In this section we consider the most flexible specification where the trend is allowed to take any arbitrary shape but will require that it is common rather than individual-specific	在本节中，我们考虑最灵活的设定，其中允许趋势采取任意形状，但要求它是常见的而不是特定于个体的
+In the previous section we discussed inclusion of time trends and individual-specific time trends	在上一节中，我们讨论了包含时间趋势和个体特定的时间趋势
+In this section we consider the most flexible specification where the trend is allowed to take any arbitrary shape but will require that it is common rather than individual-specific	在本节中，我们考虑最灵活的设定，其中允许趋势采取任意形态，但要求它是共同的而不是特定于个体的
 The model we consider is the two-way error component model	我们考虑的模型是双向误差成分模型
 The two-way model (17.63) can be handled either using random effects or fixed effects	双向模型 (17.63) 可以使用随机效应或固定效应来处理
-When the panel is unbalanced a similar but cumbersome expression for (17.64) can be derived	当面板不平衡时，可以导出类似但繁琐的 (17.64) 表达式
+When the panel is unbalanced a similar but cumbersome expression for (17.64) can be derived	当面板非平衡时，可以导出类似但繁琐的 (17.64) 表达式
 More typically (17.63) is handled using fixed effects	更典型的是（17.63）是使用固定效应来处理的
-For the case of balanced panels the two-way within transformation is	对于平衡面板的情况，变换中的双向是
+For the case of balanced panels the two-way within transformation is	对于平衡面板的情况，双向组内变换是
 so the individual and time effects are eliminated	这样就消除了个体和时间的影响
-The two-way within transformation applied to (17.63) yields	应用于 (17.63) 的双向内变换得到
-The two-way within estimator is least squares applied to (17.66)	双向内估计量是应用于 (17.66) 的最小二乘法
-For the unbalanced case there are two computational approaches to implement the estimator	对于不平衡的情况，有两种计算方法来实现估计量
+The two-way within transformation applied to (17.63) yields	应用于 (17.63) 的双向组内变换得到
+The two-way within estimator is least squares applied to (17.66)	双向组内估计量是应用于 (17.66) 的最小二乘法
+For the unbalanced case there are two computational approaches to implement the estimator	对于非平衡的情况，有两种计算方法来实现估计量
 This is the dummy variable representation of the two-way error components model	这是双向误差成分模型的虚拟变量表达式
 As the number of time periods is typically modest this is a computationally attractive approach	由于时间段的数量通常是适度的，因此这是一种在计算上有吸引力的方法
 The second computational approach is to eliminate the time effects by residual regression	第二种计算方法是通过残差回归消除时间影响
-What is important about this two-step procedure is that the second step is not a within transformation across the time index but rather standard regression	这个两步过程的重要之处在于，第二步不是跨时间标引的内部变换，而是标准回归
+What is important about this two-step procedure is that the second step is not a within transformation across the time index but rather standard regression	这个两步过程的重要之处在于，第二步不是跨时间索引的组内变换，而是标准回归
 Coefficients are only identified for regressors which have variation both across individuals and across time	仅针对在个体和时间上都有变化的自变量来确定系数
 If the test rejects the hypothesis of zero coefficients then this indicates that the time effects are relevant in the regression model	如果检验拒绝零系数的假设，则表明时间效应在回归模型中相关
 In this example the coefficient estimates and standard errors are not greatly affected by the inclusion of the year dummy variables	在此示例中，包含年份虚拟变量不会对系数估计值和标准误差产生太大影响
@@ -3004,15 +3001,15 @@ This estimator can be obtained using the Stata command xtivreg fe	该估计量�
 It can also be obtained using the Stata command ivregress after making the within transformations	也可以在进行内变换后使用 Stata 命令 ivregress 获得
 The presentation above focused for clarity on the one-way fixed effects model	为了清楚起见，上述演示重点关注单向固定效应模型
 Identification with Instrumental Variables	工具变量的识别
-The 2SLS estimator is a function of the within transformed variables	2SLS 估计量是内部变换变量的函数
+The 2SLS estimator is a function of the within transformed variables	2SLS 估计量是组内变换变量的函数
 Thus for identification of the fixed effects instrumental variables model we need	因此，为了识别固定效应工具变量模型，我们需要
-Condition (17.70) is the same as the condition for identification in fixed effects regression - the instruments must have full variation after the within transformation	条件 (17.70) 与固定效应回归中的识别条件相同 - 工具在内部变换后必须具有完全变异
-Condition (17.71) is analogous to the relevance condition for identification of instrumental variable regression in the cross-section context but applies to the within-transformed instruments and regressors	条件 (17.71) 类似于在横截面上下文中识别工具变量回归的相关条件，但适用于内部变换的工具和自变量
+Condition (17.70) is the same as the condition for identification in fixed effects regression - the instruments must have full variation after the within transformation	条件 (17.70) 与固定效应回归中的识别条件相同 - 工具在组内变换后必须具有完全变异
+Condition (17.71) is analogous to the relevance condition for identification of instrumental variable regression in the cross-section context but applies to the within-transformed instruments and regressors	条件 (17.71) 类似于在横截面背景中识别工具变量回归的相关条件，但适用于组内变换的工具和自变量
 Condition (17.71) shows that to examine instrument validity in the context of fixed effects 2SLS it is important to estimate the reduced form equation using fixed effects (within) regression	条件 (17.71) 表明，要检查固定效应 2SLS 背景下的工具有效性，重要的是使用固定效应（内）回归来估计精简形式方程
 However, since the correlation structure of the reduced form equation is in general unknown it is appropriate to use a cluster-robust covariance matrix, clustered at the level of the individual	然而，由于精简形式方程的相关结构通常是未知的，因此适合使用在个体水平上聚类的群组稳健协方差矩阵
 Asymptotic Distribution of Fixed Effects 2SLS Estimator	固定效应 2SLS 估计量的渐近分布
 In this section we present an asymptotic distribution theory for the fixed effects estimator	在本节中，我们提出固定效应估计量的渐近分布理论
-We provide a formal theory for the case of balanced panels and discuss an extension to the unbalanced case	我们为平衡面板的情况提供了正式的理论，并讨论了对不平衡情况的扩展
+We provide a formal theory for the case of balanced panels and discuss an extension to the unbalanced case	我们为平衡面板的情况提供了正式的理论，并讨论了对非平衡情况的扩展
 We use the following assumptions for balanced panels	我们对平衡面板使用以下假设
 The identification conditions are Assumptions 17.4.4 and 17.4.5, which were discussed in the previous section	识别条件是假设 17.4.4 和 17.4.5，这在上一节中已经讨论过
 The theorem is stated for balanced panels	该定理是针对平衡面板提出的
@@ -3022,10 +3019,10 @@ To obtain a cluster-robust covariance matrix use option vce (robust) orvce (clus
 Linear GMM	线性高斯模
 Consider the just-identified 2SLS estimator	考虑刚刚确定的 2SLS 估计量
 The population orthogonality conditions hold in the overidentified case as well	总体正交条件在过度识别的情况下也成立
-Estimation with Time-Invariant Regressors	使用时不变自变量进行估计
-One of the disappointments with the fixed effects estimator is that it cannot estimate the effect of regressors which are time-invariant	固定效应估计量的令人失望的地方之一是它无法估计时不变自变量的影响
-In contrast, the random effects estimator allows for time-invariant regressors but does so only by assuming strict exogeneity which is stronger than typically desired in economic applications	相比之下，随机效应估计量允许时不变自变量，但只有通过假设严格的外生性才能做到这一点，该外生性比经济应用中通常期望的更强
-It turns out that we can consider an intermediate case which maintains the fixed effects assumptions for the time-varying regressors but uses stronger assumptions on the time-invariant regressors	事实证明，我们可以考虑一种中间情况，它保持时变自变量的固定效应假设，但对时不变自变量使用更强的假设
+Estimation with Time-Invariant Regressors	使用时常自变量进行估计
+One of the disappointments with the fixed effects estimator is that it cannot estimate the effect of regressors which are time-invariant	固定效应估计量的令人失望的地方之一是它无法估计时常自变量的影响
+In contrast, the random effects estimator allows for time-invariant regressors but does so only by assuming strict exogeneity which is stronger than typically desired in economic applications	相比之下，随机效应估计量允许时常自变量，但只有通过假设严格的外生性才能做到这一点，该外生性比经济应用中通常期望的更强
+It turns out that we can consider an intermediate case which maintains the fixed effects assumptions for the time-varying regressors but uses stronger assumptions on the time-invariant regressors	事实证明，我们可以考虑一种中间情况，它保持时变自变量的固定效应假设，但对时常自变量使用更强的假设
 Consider the linear regression model	考虑线性回归模型
 At the level of the individual this can be written as	在个体层面，这可以写成
 This instrumental variables estimator is algebraically equal to a simple two-step estimator	该工具变量估计量在代数上等于简单的两步估计量
@@ -3040,7 +3037,7 @@ Otherwise, the estimator can be implemented using the instrumental variable meth
 The Hausman-Taylor estimator was refined by Amemiya and MaCurdy (1986) and Breusch, Mizon and Schmidt (1989) who proposed more efficient versions using additional instruments which are valid under stronger orthogonality conditions	Hausman-Taylor 估计量由 Amemiya 和 MaCurdy (1986) 以及 Breusch、Mizon 和 Schmidt (1989) 进行了改进，他们提出了使用附加工具的更有效版本，这些工具在更强的正交性条件下有效
 Jackknife Covariance Matrix Estimation	折刀协方差矩阵估计
 As an alternative to asymptotic inference the delete-cluster jackknife can be used for covariance matrix calculation	作为渐近推断的替代方法，删除群组折刀可用于协方差矩阵计算
-As in the context of i.i.d. samples one advantage of the jackknife covariance matrix estimator is that it does not require the user to make a technical calculation of the asymptotic distribution	正如在 i.i.d. 的上下文中一样
+As in the context of i.i.d. samples one advantage of the jackknife covariance matrix estimator is that it does not require the user to make a technical calculation of the asymptotic distribution	正如在 i.i.d. 的背景中一样
 For the fixed effects 2SLS estimator usextivreg fe vce(jackknife)	对于固定效应 2SLS 估计量，请使用xtivreg fe vce(jackknife)
 Panel Bootstrap	面板自助法
 Bootstrap methods can also be applied to panel data by a straightforward application of the pairs cluster bootstrap which samples entire individuals rather than single observations	自助方法还可以通过直接应用成对群组自助方法应用于面板数据，该自助方法对整个个体而不是单个观测结果进行抽样
@@ -3054,7 +3051,7 @@ For many illustrations we will focus on the AR(1) model	对于许多说明，我
 The dynamics should be interpreted individual-by-individual	动态应该逐个解释
 Thus in applications it will often be useful to include time effects to eliminate spurious serial correlation	因此，在应用中，包含时间效应以消除虚假串行相关性通常很有用
 The Bias of Fixed Effects Estimation	固定效应估计的偏误
-To estimate the panel autoregression (17.81) it may appear natural to use the fixed effects (within) estimator	为了估计面板自回归 (17.81)，使用固定效应（内部）估计量似乎很自然
+To estimate the panel autoregression (17.81) it may appear natural to use the fixed effects (within) estimator	为了估计面板自回归 (17.81)，使用固定效应（组内）估计量似乎很自然
 We describe the basic problem in this section focusing on the AR(1) model (17.82)	我们在本节中重点描述 AR(1) 模型 (17.82) 的基本问题
 Applying the within operator to (17.82) we obtain	将 inside 运算符应用到 (17.82) 我们得到
 Because of the lagged dependent variable and differencing there is effectively one observation per individual	由于滞后因变量和差异，每个体实际上只有一个观测结果
@@ -3200,15 +3197,15 @@ In addition to considering heterogeneous treatment effects it is reasonable to c
 One generalization is to include interactions of a linear trend with a control variable	一种概括是包括线性趋势与控制变量的相互作用
 A broader generalization is to include unit-specific linear time trends	更广泛的概括是包括特定于单位的线性时间趋势
 Estimation of model (18.6) can be done one of three ways	模型（18.6）的估计可以通过三种方式之一来完成
-This is a generalized within transformation	这是一个概括性的内部转变
+This is a generalized within transformation	这是一个概括性的组内变换
 Naïve tests will over-state significance	简单的检验会夸大其重要性
 Our discussion for simplicity has focused on the case of balanced panels	为了简单起见，我们的讨论集中在平衡面板的情况上
-The methods equally apply to unbalanced panels, using standard panel data estimation	这些方法同样适用于使用标准面板数据估计的不平衡面板
+The methods equally apply to unbalanced panels, using standard panel data estimation	这些方法同样适用于使用标准面板数据估计的非平衡面板
 Do Blue Laws Affect Liquor Sales?	蓝色法律会影响酒类销售吗？
 Historically many U.S. states prohibited or limited the sale of alcoholic beverages on Sundays	历史上，美国许多州都禁止或限制周日销售酒精饮料
 The fact that different states changed their laws during different years allows for a difference-in-difference methodology to identify the treatment effect	不同州在不同年份改变法律的事实允许采用双重差分方法来确定处置效应
 The paper focuses on distilled liquor sales though wine and beer sales are also included in their data	该论文重点关注蒸馏酒销售，尽管葡萄酒和啤酒销售也包含在其数据中
-states for the years 1970-2007, unbalanced	这些数据是 1970-2007 年美国 47 个州的州级数据，不平衡
+states for the years 1970-2007, unbalanced	这些数据是 1970-2007 年美国 47 个州的州级数据，非平衡
 The authors carefully gathered information on the allowable hours that alcohol can be sold on a Sunday	作者仔细收集了有关周日允许出售酒类的时间的信息
 OnHours and OffHours are the number of allowable Sunday on-premises and off-premises sale hours	OnHours 和 OffHours 是允许的周日场内和场外销售时间数
 The standard errors are clustered by state	标准误按州进行聚类
@@ -3527,7 +3524,7 @@ Partially Linear Model	部分线性模型
 Panel Fixed Effects	面板固定效果
 The one-way error components nonparametric regression model is	单向误差成分非参数回归模型为
 The fixed effects estimator is the same as in linear panel data regression	固定效应估计量与线性面板数据回归中的相同
-The coefficient is estimated by least squares on the within transformed variables	通过内部变换变量的最小二乘估计系数
+The coefficient is estimated by least squares on the within transformed variables	通过组内变换变量的最小二乘估计系数
 This includes all powers and cross-products	这包括所有权力和叉积
 The inclusion of cross-products greatly increases the number of coefficients relative to the univariate case	相对于单变量情况，包含叉积大大增加了系数的数量
 Consequently series applications with multiple regressors typically require large sample sizes	因此，具有多个自变量的系列应用通常需要大样本量
@@ -4189,7 +4186,7 @@ The advantage of expansions based on (27.10) is that it will be first-order accu
 The advantage of expansions based on (27.9) is interpretability: The regression is expressed as a function of the propensity score	基于（27.9）的扩展的优点是可解释性：回归被表示为倾向得分的函数
 Das, Newey, and Vella (2003) provide a detailed asymptotic theory for this class of estimators focusing on those based on (27.9)	Das、Newey 和 Vella (2003) 为此类估计量提供了详细的渐近理论，重点关注基于 (27.9) 的估计量
 They provide conditions under which the models are identified, the estimators consistent, and asymptotically normally distributed	它们提供了模型被识别、估计量一致且渐近正态分布的条件
-These nonparametric selection estimators are two-step estimators with generated regressors (see Section 12.26)	这些非参数选择估计量是带有生成自变量的两步估计量（参见第 12.26 节）
+These nonparametric selection estimators are two-step estimators with generated regressors (see Section 12.26)	这些非参数选择估计量是带有生成型自变量的两步估计量（参见第 12.26 节）
 The latter should be implemented as an explicit two-step estimator so that the first-step estimation is treated by the bootstrap distribution	后者应作为显式两步估计量实现，以便通过自助分布处理第一步估计
 A panel censored regression (panel Tobit) equation is	面板删失回归（面板 Tobit）方程为
 A random effects estimator can be derived under the assumption of joint normality of the errors	可以在误差联合正态性的假设下导出随机效应估计量
@@ -4247,7 +4244,7 @@ One of the interesting features of these results are that they are exact - there
 If homoskedasticity fails then the AIC loses its validity	如果同方差性失败，则 AIC 就会失去有效性
 The AIC may be obtained in Stata by using the command estimates stats after an estimated model	AIC 可以在 Stata 中通过使用估计模型后的估计统计命令来获得
 Akaike Information Criterion for Likelihood	似然性的 Akaike 信息准则
-For the general likelihood context Akaike proposed the criterion (28.7)	对于一般似然上下文，Akaike 提出了标准（28.7）
+For the general likelihood context Akaike proposed the criterion (28.7)	对于一般似然背景，Akaike 提出了标准（28.7）
 This specializes to (28.4) for the case of a normal linear regression model	这专门针对正态线性回归模型的情况（28.4）
 As for regression, AIC selection is performed by estimating a set of models, calculating AIC for each, and selecting the model with the smallest AIC	对于回归，AIC 选择是通过估计一组模型、计算每个模型的 AIC，并选择 AIC 最小的模型来执行的
 The advantages of the AIC are that it is simple to calculate, easy to implement, and straightforward to interpret	AIC的优点是计算简单、易于实现、解释简单
