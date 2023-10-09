@@ -199,7 +199,7 @@ The regression error has a conditional mean of zero, so its unconditional error 
 That is, the unconditional error variance is the average conditional variance	也就是说，无条件误差方差是平均条件方差
 Given the conditional variance we can define a rescaled error	给定条件方差，我们可以定义重新调整的误差
 Notice that (2.11) can be rewritten as	注意 (2.11) 可以重写为
-This is an alternative (mean-variance) representation of the CEF equation	这是 CEF 方程的另一种（均值方差）表示
+This is an alternative (mean-variance) representation of the CEF equation	这是 CEF 方程的另一种（均值方差）表达式
 Conditional dispersion (variance) can be a fruitful subject for investigation	条件离散（方差）可能是一个富有成果的研究课题
 The perverse consequences of a narrow-minded focus on the mean is parodied in a classic joke:	在一个经典笑话中讽刺了狭隘地关注平均值引起有悖常理的后果：
 An economist was standing with one foot in a bucket of boiling water and the other foot in a bucket of ice	一位经济学家一只脚站在一桶开水里，另一只脚站在一桶冰里
@@ -310,7 +310,7 @@ Furthermore, the linear projection may be a poor approximation to the CEF	此外
 We see in this example that a projection error need not be a CEF error and a linear projection can be a poor approximation to the CEF	我们在这个案例中看到，投影误差不一定是 CEF 误差，线性投影可能不是 CEF 的近似值
 Figure 2.7: Conditional Expectation and Two Linear Projections	图 2.7：条件期望和两个线性投影
 Another defect of linear projection is that it is sensitive to the marginal distribution of the regressors when the conditional mean is nonlinear	线性投影的另一个缺陷是当条件均值非线性时，它对自变量的边际分布很敏感
-The apparent difference is a by-product of linear approximations to a nonlinear expectation combined with different marginal distributions for the conditioning variables	明显的区别是非线性期望的线性近似与条件变量的不同边际分布相结合的副产品
+The apparent difference is a by-product of linear approximations to a nonlinear expectation combined with different marginal distributions for the conditioning variables	明显的区别是非线性期望的线性近似与条件变量的不同边际分布相结合的副产物
 Random Coefficient Model	随机系数模型
 A model which is notationally similar to but conceptually distinct from the linear CEF model is the linear random coefficient model	一个在记号上与线性 CEF 模型相似但在概念上不同的模型是线性随机系数模型
 It is interesting, however, to discover that the linear random coefficient model implies a linear CEF	然而，有趣的是线性随机系数模型意味着线性 CEF
@@ -435,7 +435,7 @@ Demeaned Regressors	离差自变量
 In this case (3.16) can be written as the equation system	在这种情况下（3.16）可以写成方程组
 Subtracting from the second we obtain	从第二个做减法，我们得到
 Thus the OLS estimator for the slope coefficients is OLS with demeaned data and no intercept	因此，斜率系数的 OLS 估计量是具有离差数据且没有截距的 OLS
-The representation (3.18) is known as the demeaned formula for the least squares estimator	表示 (3.18) 被称为最小二乘估计量的离差公式
+The representation (3.18) is known as the demeaned formula for the least squares estimator	表达式 (3.18) 被称为最小二乘估计量的离差公式
 Model in Matrix Notation	矩阵形式模型
 For many purposes, including computation, it is convenient to write the model and statistics in matrix notation	对于许多目的，包括计算，用矩阵形式编写模型和统计数据很方便
 Sample sums can be written in matrix notation	样本总和可以用矩阵形式编写
@@ -1130,7 +1130,7 @@ Otherwise the test will not have meaningful power	否则检验将没有功效
 It is important to consider the power of a test when interpreting hypothesis tests as an overly narrow focus on size can lead to poor decisions	在解释假设检验时，重要的是要考虑检验的功效，因为过于狭隘地关注尺度可能会导致糟糕的决策
 Nothing is learned from such a test	从这样的检验中什么也学不到
 Statistical Significance	统计显著性
-These choices are somewhat the by-product of traditional tables of critical values and statistical software	这些选择在某种程度上是传统临界值表和统计软件的副产品
+These choices are somewhat the by-product of traditional tables of critical values and statistical software	这些选择在某种程度上是传统临界值表和统计软件的副产物
 Let us return to the example about the union wage premium as measured in Table 4.1	让我们回到表 4.1 中测度的工会工资溢价的案例
 In this case we find that membership for women is not statistically significant	在这种情况下，我们发现女性成员资格在统计上并不显著
 When a test accepts a null hypothesis (when a test is not statistically significant) a common misinterpretation is that this is evidence that the null hypothesis is true	当检验接受零假设（当检验不具有统计显著性时）时，常见的误解是，这是零假设为真的证据
@@ -1351,11 +1351,8 @@ We now state a CLT for the bootstrap sample mean, with a proof given in Section 
 Theorem 10.4 Bootstrap CLT	定理 10.4 Bootstrap CLT
 We next state the distributional form of the continuous mapping theorem for bootstrap distributions and the Bootstrap Delta Method	接下来我们阐述自助分布的连续映射定理的分布形式和自助 Delta 方法
 Theorem 10.6 Bootstrap Delta Method:	定理10.6 Bootstrap Delta方法：
-For a proof, see Exercise 10.7	证明请参见练习 10.7
 We state an analog of Theorem 6.10, which presented the asymptotic distribution for general smooth functions of sample means, which covers most econometric estimators	我们对定理 6.10 进行了模拟，该定理提出了样本均值的一般平滑函数的渐近分布，涵盖了大多数计量经济学估计量
-For a proof, see Exercise 10.8	证明请参见练习 10.8
 For some bootstrap applications we use bootstrap estimates of variance	对于某些自助法应用，我们使用自助法方差估计
-For a proof, see Exercise 10.9	证明请参见练习 10.9
 Consistency of the Bootstrap Estimate of Variance	Bootstrap 方差估计的一致性
 To do so it is useful to focus on a normalized version of the estimator so that the asymptotic variance is not degenerate	为此，关注估计量的正态化版本很有用，这样渐近方差就不会退化
 This condition is reasonably straightforward to verify for the case of a scalar sample mean with a finite variance	对于具有有限方差的标量样本均值的情况，验证此条件相当简单
@@ -1529,23 +1526,18 @@ If both simplifications (common regressors and conditional homoskedasticity) hol
 For an asymptotic distribution it is sufficient to consider the equation-by-equation projection model in which case	对于渐近分布，考虑逐个方程的投影模型就足够了，在这种情况下
 Second, consider the asymptotic distribution	其次，考虑渐近分布
 Applied to the centered and normalized estimator we obtain the asymptotic distribution	应用于中心化和标准化的估计量，我们得到渐近分布
-For a proof, see Exercise 11.4	证明请参见练习 11.4
 If both the regressors are common and the errors are conditionally homoskedastic (11.8) then we have the simplification	如果两个自变量都是共用的并且误差是条件同方差的 (11.8)，那么我们可以进行简化
-For a proof, see Exercise 11.7	证明请参见练习 11.7
 We can thereby construct standard errors, confidence intervals, and hypothesis tests	因此，我们可以构建标准误差、置信区间和假设检验
 Covariance Matrix Estimation	协方差矩阵估计
 Under conditional homoskedasticity (11.8) an appropriate estimator is	在条件同方差 (11.8) 下，合理的估计量是
 When the regressors are common then these estimators equal	当自变量共用时，这些估计量就等于
-For a proof, see Exercise 11.8	证明请参见练习 11.8
 Seemingly Unrelated Regression	似无关回归
 Consider the systems regression model under the conditional expectation and homoskedasticity assumptions	考虑条件期望和同方差假设下的系统回归模型
 Since the errors are correlated across equations we consider estimation by Generalized Least Squares (GLS)	由于误差在方程之间是相关的，我们考虑通过广义最小二乘法 (GLS) 进行估计
 This is the Seemingly Unrelated Regression (SUR) estimator as introduced by Zellner (1962)	这是 Zellner (1962) 引入的似无关回归 (SUR) 估计量
 This can be iterated until convergence	这可以迭代直到收敛
 Under conditional homoskedasticity (11.8) we can derive its asymptotic distribution	在条件同方差（11.8）下我们可以推导出它的渐近分布
-For a proof, see Exercise 11.11	证明请参见练习 11.11
 Under these assumptions, SUR is more efficient than least squares	在这些假设下，SUR 比最小二乘法更有效
-For a proof, see Exercise 11.12	证明请参见练习 11.12
 For a proof, see Exercise 11.13	证明请参见练习 11.13
 In Stata, the seemingly unrelated regressions estimator is implemented using the sureg command	在Stata中，似无关回归估计量是使用 sureg 命令实现的
 Equivalence of SUR and Least Squares	SUR 和最小二乘法等价性
@@ -1704,7 +1696,7 @@ Following this recommendation we now have three endogenous regressors and three 
 Hence Assumption (12.22) is not violated	因此不违反假设（12.22）
 The estimate of the returns to schooling is not affected by this change in the instrument set, but the estimated return to experience profile flattens (the quadratic effect diminishes)	学校教育对回报的估计不受工具集变化的影响，但经验对回报的估计趋于平缓（二次效应减弱）
 The IV estimator may be calculated in Stata using the `ivregress 2sls` command	IV 估计量可以在 Stata 中使用 `ivregress 2sls` 命令计算
-Demeaned Representation	离均表达
+Demeaned Representation	离均表达式
 The orthogonality (12.25) implies the two-equation system	正交性 (12.25) 意味着双方程系统
 Thus the demeaning equations for least squares carry over to the IV estimator	因此，最小二乘的离均方程会延后到 IV 估计量
 Wald Estimator	瓦尔德估计量
@@ -1719,11 +1711,11 @@ Two-Stage Least Squares	两阶段最小二乘法
 This is called the two-stage-least squares (2SLS) estimator	这称为两阶段最小二乘 (2SLS) 估计量
 It was originally proposed by Theil (1953) and Basmann (1957) and is a standard estimator for linear equations with instruments	它最初由 Theil (1953) 和 Basmann (1957) 提出，是工具线性方程的标准估计量
 This shows that the 2SLS estimator as defined in (12.29) is a generalization of the IV estimator defined in (12.24)	这表明（12.29）中定义的 2SLS 估计量是（12.24）中定义的 IV 估计量的推广
-There are several alternative representations of the 2SLS estimator which we now describe	我们现在描述的 2SLS 估计量有几种替代表示形式
+There are several alternative representations of the 2SLS estimator which we now describe	我们现在描述的 2SLS 估计量有几种替代表达式
 we can write the 2SLS estimator more compactly as	我们可以将 2SLS 估计量写得更紧凑：
 This is the source of the "two-stage" name as it can be computed as follows	这是“两阶段”名称的来源，因为它可以按如下方式计算
-A fourth representation of 2SLS can be obtained using the FWL Theorem	2SLS 的第四种表示可以使用 FWL 定理获得
-A fifth representation can be obtained by a further projection	第五种表示可以通过进一步的投影来获得
+A fourth representation of 2SLS can be obtained using the FWL Theorem	2SLS 的第四种表达式可以使用 FWL 定理获得
+A fifth representation can be obtained by a further projection	第五种表达式可以通过进一步的投影来获得
 Returning to Card's college proximity example suppose that we treat experience as exogeneous but that instead of using the single instrument `college` (grew up near a 4-year college) we use the two instruments (`public`, `private`) (grew up near a public/private 4-year college, respectively)	回到 Card 的大学邻近度案例，假设我们将经验视为外生的，但我们不使用单一工具 `college`（在四年制大学附近长大），而是使用两种工具（`public`、`private`）（分别在四年制大学公立/私立大学附近长大）
 This indicates that the key impact of proximity on education is via public colleges rather than private colleges	这表明邻近性对教育的主要影响是通过公立大学而不是私立大学
 The 2SLS estimates obtained using these two instruments are presented in the fourth column of Table 12.1	表 12.1 的第四列列出了使用这两种工具获得的 2SLS 估计值
@@ -1981,7 +1973,7 @@ Testing for Weak Instruments	弱工具检验
 In the previous sections we found that weak instruments results in non-standard asymptotic distributions for the 2SLS and LIML estimators	在前面的部分中，我们发现弱工具会导致 2SLS 和 LIML 估计量出现非标准渐近分布
 This question was addressed in an influential paper by Stock and Yogo (2005) as an extension of Staiger and Stock (1997)	作为 Staiger 和 Stock (1997) 的扩展，Stock 和 Yogo (2005) 在一篇有影响力的论文中解决了这个问题
 In the following section we describe their method for the case of multiple endogeneous regressors	在下一节中，我们将阐述他们针对多个内生自变量情况的方法
-Since the model is just-identified the 2SLS, LIML, and IV estimators are all equivalent	由于模型恰巧被识别，2SLS、LIML 和 IV 估计量都是等效的
+Since the model is just-identified the 2SLS, LIML, and IV estimators are all equivalent	由于模型恰好被识别，2SLS、LIML 和 IV 估计量都是等效的
 The question of primary interest is to determine conditions on the reduced form under which the IV estimator of the structural equation is well behaved, and secondly, what statistical tests can be used to learn if these conditions are satisfied	主要感兴趣的问题是确定在何种精简形式条件下结构方程的 IV 估计量表现良好，其次，可以使用哪些统计检验来掌握这些条件是否得到满足
 To break this impasse Stock and Yogo (2005) recommended a constructive alternative	为了打破这一僵局，Stock 和 Yogo（2005）推荐了一种建设性的替代方案
 Specifically, the Stock-Yogo recommendation can be summarized by two steps	具体来说，Stock-Yogo 的建议可以概括为两个步骤
@@ -2101,108 +2093,106 @@ For a proof see Exercise 13.4	证明参见练习 13.4
 This means that the smallest possible GMM covariance matrix (in the positive definite sense) is achieved by the efficient GMM weight matrix	这意味着最小可能的 GMM 协方差矩阵（在正定意义上）是通过有效的 GMM 权重矩阵实现的
 By "efficient" we mean that this estimator has the smallest asymptotic variance in the class of GMM estimators with this set of moment conditions	“有效”是指该估计量在具有这组矩条件的 GMM 估计量类别中具有最小的渐近方差
 Since the GMM estimator has this asymptotic variance it is semiparametrically efficient	由于 GMM 估计量具有渐进方差，因此它是半参数有效的
-The results in this section show that in the linear model no estimator has better asymptotic efficiency than the efficient linear GMM estimator	本节的结果表明，在线性模型中，没有估计量比高效线性 GMM 估计量具有更好的渐近效率
+The results in this section show that in the linear model no estimator has better asymptotic efficiency than the efficient linear GMM estimator	本节的结果表明，在线性模型中，没有估计量比有效线性 GMM 估计量具有更好的渐近效率
 No estimator can do better (in this first-order asymptotic sense) without imposing additional assumptions	如果不施加额外的假设，任何估计量都无法做得更好（在这种一阶渐近意义上）
-Efficient GMM versus 2SLS	高效 GMM 与 2SLS
-This shows that the 2SLS weight matrix is the efficient weight matrix under conditional homoskedasticity	这表明2SLS权重矩阵是条件同方差下的有效权重矩阵
+Efficient GMM versus 2SLS	有效 GMM 与 2SLS
+This shows that the 2SLS weight matrix is the efficient weight matrix under conditional homoskedasticity	这表明 2SLS 权重矩阵是条件同方差下的有效权重矩阵
 This shows that 2SLS is efficient under homoskedasticity	这表明 2SLS 在同方差下是有效的
-However, this result also shows that in the general case where the error is conditionally heteroskedastic, 2SLS is inefficient relative to efficient GMM	然而，这个结果也表明，在误差是条件异方差的一般情况下，2SLS 相对于高效 GMM 来说效率较低
+However, this result also shows that in the general case where the error is conditionally heteroskedastic, 2SLS is inefficient relative to efficient GMM	然而，这个结果也表明，在误差是条件异方差的一般情况下，2SLS 相对于有效 GMM 来说效率较低
 Estimation of the Efficient Weight Matrix	有效权重矩阵的估计
-The estimator (13.8) is an uncentered covariance matrix estimator while the estimator (13.9) is a centered version	估计量（13.8）是无中心协方差矩阵估计量，而估计量（13.9）是中心版本
+The estimator (13.8) is an uncentered covariance matrix estimator while the estimator (13.9) is a centered version	估计量（13.8）是无中心化协方差矩阵估计量，而估计量（13.9）是中心化版本
 The choice of weight matrix may also impact covariance matrix estimation as discussed in Section 13.12	权重矩阵的选择也可能影响协方差矩阵估计，如第 13.12 节所述
 This also means that the two-step GMM estimator satisfies the conditions for Theorem 13.4	这也意味着两步 GMM 估计量满足定理 13.4 的条件
 This shows that the two-step GMM estimator is asymptotically efficient	这表明两步 GMM 估计量是渐近有效的
 The two-step GMM estimator of the IV regression equation can be computed in Stata using the ivregress gmm command	IV 回归方程的两步 GMM 估计量可以在 Stata 中使用 ivregress gmm 命令进行计算
-The centered version (13.9) may be selected using the center option	可以使用 center 选项选择居中版本 (13.9)
-Iterated GMM	迭代GMM
-The asymptotic distribution of the two-step GMM estimator does not depend on the choice of the preliminary one-step estimator	两步 GMM 估计量的渐近分布不依赖于初步一步估计量的选择
-The result is called the iterated GMM estimator and is a common implementation of efficient GMM	结果称为迭代 GMM 估计量，是高效 GMM 的常见实现
+The centered version (13.9) may be selected using the `center` option	可以使用 `center` 选项选择中心化版本 (13.9)
+Iterated GMM	迭代 GMM
+The asymptotic distribution of the two-step GMM estimator does not depend on the choice of the preliminary one-step estimator	两步 GMM 估计量的渐近分布不依赖于前期一步估计量的选择
+The result is called the iterated GMM estimator and is a common implementation of efficient GMM	结果称为迭代 GMM 估计量，是有效 GMM 的常见操作
 Standard errors and test statistics, however, will be affected by the choice	然而，标准误差和检验统计量将受到选择的影响
 The iterated GMM estimator of the IV regression equation can be computed in Stata using the ivregress gmm command using the igmm option	IV 回归方程的迭代 GMM 估计量可以在 Stata 中使用 ivregress gmm 命令和 igmm 选项来计算
-For the efficient iterated GMM estimator the covariance matrix estimator is	对于高效迭代 GMM 估计量，协方差矩阵估计量为
+For the efficient iterated GMM estimator the covariance matrix estimator is	对于有效迭代 GMM 估计量，协方差矩阵估计量为
 In Stata, the default covariance matrix estimation method is determined by the choice of weight matrix	在Stata中，默认的协方差矩阵估计方法是由权重矩阵的选择决定的
-Thus if the centered estimator (13.9) is used for the weight matrix it is also used for the covariance matrix estimator	因此，如果中心估计量 (13.9) 用于权重矩阵，那么它也可用于协方差矩阵估计量
+Thus if the centered estimator (13.9) is used for the weight matrix it is also used for the covariance matrix estimator	因此，如果中心化估计量 (13.9) 用于权重矩阵，那么它也可用于协方差矩阵估计量
 The methods extend naturally to GMM but with the additional complication of potentially altering weight matrix calculation	这些方法自然地扩展到 GMM，但可能会改变权重矩阵计算，从而带来额外的复杂性
 The cluster-robust estimator (13.12) is appropriate for the one-step or two-step GMM estimator	群组稳健估计量 (13.12) 适用于一步或两步 GMM 估计量
-An appropriate cluster-robust covariance matrix estimator is	适当的群组稳健协方差矩阵估计量是
+An appropriate cluster-robust covariance matrix estimator is	合适的群组稳健协方差矩阵估计量是
 To implement a cluster-robust weight matrix use the 2SLS estimator for first step	要实现群组稳健权重矩阵，第一步使用 2SLS 估计量
 Iterating the residuals and covariance matrix until convergence we obtain the iterated GMM estimator	迭代残差和协方差矩阵直到收敛，我们得到迭代的 GMM 估计量
-In Stata, using the ivregress gmm command with the cluster option implements the two-step GMM estimator using the cluster-robust weight matrix and cluster-robust covariance matrix estimator	在 Stata 中，使用带 cluster 选项的 ivregress gmm 命令可使用群组稳健权重矩阵和群组稳健协方差矩阵估计量实现两步 GMM 估计量
+In Stata, using the ivregress gmm command with the cluster option implements the two-step GMM estimator using the cluster-robust weight matrix and cluster-robust covariance matrix estimator	在 Stata 中，使用带 cluster 选项的 ivregress gmm 命令，通过使用群组稳健权重矩阵和群组稳健协方差矩阵估计量，可实现两步 GMM 估计量
 Alternatively, you can use the wmatrix and vce options to separately specify the weight matrix and covariance matrix estimation methods	或者，你可以使用 wmatrix 和 vce 选项分别设定权重矩阵和协方差矩阵估计方法
 Wald Test	瓦尔德检验
 For a proof see Exercise 13.5	证明参见练习 13.5
-In Stata, the commands test and testparm can be used after ivregress gmm to implement Wald tests of linear hypotheses	在Stata中，可以在ivregress gmm之后使用命令test和testparm来实现线性假设的Wald检验
-The commands nlcom and testnl can be used after ivregress gmm to implement Wald tests of nonlinear hypotheses	ivregress gmm 之后可以使用命令 nlcom 和 testnl 来实现非线性假设的 Wald 检验
+In Stata, the commands test and testparm can be used after ivregress gmm to implement Wald tests of linear hypotheses	在Stata中，可以在 ivregress gmm 之后使用命令 test 和 testparm 来实现线性假设的瓦尔德检验
+The commands nlcom and testnl can be used after ivregress gmm to implement Wald tests of nonlinear hypotheses	ivregress gmm 之后可以使用命令 nlcom 和 testnl 来实现非线性假设的瓦尔德检验
 Restricted GMM	受限GMM
 It is often desirable to impose restrictions on the coefficients	通常需要对系数施加约束
 In the following section we consider nonlinear constraints	在下一节中，我们考虑非线性约束
-The constrained GMM estimator minimizes the GMM criterion subject to the constraint	受约束的 GMM 估计量最小化受约束的 GMM 准则
+The constrained GMM estimator minimizes the GMM criterion subject to the constraint	受约束的 GMM 估计量最小化约束化的 GMM 准则
 This is the parameter vector which makes the estimating equations as close to zero as possible with respect to the weighted quadratic distance while imposing the restriction on the parameters	这是参数向量，它使估计方程相对于加权二次距离尽可能接近于零，同时对参数施加约束
 We derive the asymptotic distribution under the assumption that the restriction is true	我们在约束成立的假设下推导出渐近分布
 For a proof, see Exercise 13.8	证明请参见练习 13.8
 which is the same formula (8.25) as efficient minimum distance. (For details, see Exercise 13.7.) We find that the asymptotic covariance matrix simplifies considerably	这与有效最小距离的公式（8.25）相同
-For a proof, see Exercise 13.9	证明请参见练习 13.9
 The asymptotic covariance matrix (13.20) can be estimated by	渐近协方差矩阵 (13.20) 可以通过以下方式估计
-This is a natural estimator as it is the appropriate implementation of iterated GMM	这是一个自然估计量，因为它是迭代 GMM 的适当实现
+This is a natural estimator as it is the appropriate implementation of iterated GMM	这是一个自然估计量，因为它是迭代 GMM 的合理实现
 Nonlinear Restricted GMM	非线性受限GMM
 In this section we introduce GMM estimation subject to nonlinear constraints	在本节中，我们介绍受非线性约束的 GMM 估计
 Fortunately there are excellent nonlinear constrained optimization solvers implemented in standard software packages	幸运的是，在标准软件包中实现了出色的非线性约束优化求解器
 The asymptotic covariance matrix (13.18) in the general case is estimated similarly	一般情况下的渐近协方差矩阵 (13.18) 的估计方式类似
-Constrained Regression	约束回归
+Constrained Regression	受约束回归
 the efficient minimum distance estimator	有效的最小距离估计量
 Thus one convenient method to implement efficient minimum distance is GMM	因此，一种实现有效最小距离的便捷方法是 GMM
 The general multivariate regression (projection) model is	一般的多元回归（投影）模型是
 the multivariate least squares estimator	多元最小二乘估计量
 Thus the unconstrained GMM estimator of the multivariate regression model is least squares	因此，多元回归模型的无约束 GMM 估计量是最小二乘法
-The estimator does not depend on the weight matrix since the model is just-identified	由于模型恰巧被识别，因此估计量不依赖于权重矩阵
-A important advantage of the GMM framework is the ability to incorporate cross-equation constraints	GMM 框架的一个重要优点是能够合并交叉方程约束
-This estimator depends on the weight matrix because it is over-identified	该估计量依赖于权重矩阵，因为它被过度识别
-Written as a vector system this is (13.24) and leads to the same restricted GMM estimators	将其写为矢量系统时，为 (13.24)，并导致相同的受限 GMM 估计量
+The estimator does not depend on the weight matrix since the model is just-identified	由于模型恰好被识别，因此估计量不依赖于权重矩阵
+A important advantage of the GMM framework is the ability to incorporate cross-equation constraints	GMM 框架的一个重要优点是能够整合交叉方程约束
+This estimator depends on the weight matrix because it is over-identified	该估计量依赖于权重矩阵，因为它是过度识别的
+Written as a vector system this is (13.24) and leads to the same restricted GMM estimators	将其写为向量系统时，为 (13.24)，并引出相同的受限 GMM 估计量
 These are general formula for imposing restrictions	这些是施加约束的一般公式
 Distance Test	距离检验
 The idea was first put forward by Newey and West (1987a)	这个想法首先由 Newey 和 West (1987a) 提出
 The idea is to compare the unrestricted and restricted estimators by contrasting the criterion functions	这个想法是通过对比准则函数来比较无约束和受约束的估计量
-The distance test shares the useful feature of LR tests in that it is a natural by-product of the computation of alternative models	距离检验具有 LR 检验的有用特征，因为它是替代模型计算的自然副产品
+The distance test shares the useful feature of LR tests in that it is a natural by-product of the computation of alternative models	距离检验具有 LR 检验的有用特征，因为它是替代模型计算的自然副产物
 The test has the following large sample distribution	该检验具有以下大样本分布
 The proof is given in Section 13.28	第 13.28 节给出了证明
-The finding that the asymptotic distribution is chi-squared allows the calculation of asymptotic critical values and p-values	渐近分布是卡方的发现允许计算渐近临界值和 p 值
+The finding that the asymptotic distribution is chi-squared allows the calculation of asymptotic critical values and p-values	渐近分布是卡方的发现允许计算出渐近临界值和 p 值
 We now discuss the choice of weight matrix	现在我们讨论权重矩阵的选择
 In this case we have the following result	在这种情况下，我们得到以下结果
 Continuously-Updated GMM	持续更新的GMM
-They solve distinct first-order conditions and can be quite different in applications	它们解决不同的一阶条件，并且在应用中可能有很大不同
-Relative to traditional GMM the CU-GMM estimator has lower bias but thicker distributional tails	相对于传统 GMM，CU-GMM 估计量具有较低的偏误，但分布尾部较厚
+They solve distinct first-order conditions and can be quite different in applications	它们求解不同的一阶条件，并且在应用中可能有很大不同
+Relative to traditional GMM the CU-GMM estimator has lower bias but thicker distributional tails	相对于传统 GMM，CU-GMM 估计量具有较低的偏误，但具有肥尾分布
 While it has received considerable theoretical attention it is not used commonly in applications	虽然它在理论上受到了相当多的关注，但在应用中并不常用
 OverIdentification Test	过度识别检验
-Hansen (1982) generalized the test to cover the GMM estimator allowing for general heteroskedasticity	L. Hansen (1982) 将检验推广到了考虑到一般异方差性的 GMM 估计量
+Hansen (1982) generalized the test to cover the GMM estimator allowing for general heteroskedasticity	Hansen (1982) 将检验推广到了考虑了一般异方差性的 GMM 估计量
 Thus the model-the overidentifying restrictions - are testable	因此，该模型——过度识别的约束——是可检验的
 In this sense an exclusion restriction can be seen as an overidentifying restriction	从这个意义上说，排除约束可以被视为过度识别约束
 This is important for the distribution theory	这对于分布理论很重要
 The proof of the theorem is left to Exercise 13.13	该定理的证明留给练习 13.13
 The degrees of freedom of the asymptotic distribution are the number of overidentifying restrictions	渐近分布的自由度是过度识别约束的数量
-In Stata the command estat overid afer ivregress gmm can be used to implement the overidentification test	在Stata中，命令estat overid afer ivregress gmm可用于实现过度识别检验
-In this section we describe how to construct analogous tests for the GMM estimator under general heteroskedasticity	在本节中，我们描述如何在一般异方差下构建 GMM 估计量的类似检验
-Recall, subset overidentification tests are used when it is desired to focus attention on a subset of instruments whose validity is questioned	回想一下，当需要将注意力集中在有效性受到质疑的工具子集上时，使用子集过度识别检验
+In Stata the command estat overid afer ivregress gmm can be used to implement the overidentification test	在Stata中，在 ivregress gmm 后加上 estat overid 命令  可用于实现过度识别检验
+In this section we describe how to construct analogous tests for the GMM estimator under general heteroskedasticity	在本节中，我们描述如何在广义异方差下构建 GMM 估计量的类似检验
+Recall, subset overidentification tests are used when it is desired to focus attention on a subset of instruments whose validity is questioned	回想一下，当需要将注意力集中在有效性受到质疑的工具子集上时，可使用子集过度识别检验
 Endogeneity Test	内生性检验
 The GMM test is constructed as follows	GMM 检验的构造如下
 The distribution theory for the test is a special case of overidentification testing	该检验的分布理论是过度识别检验的一个特例
-In Stata the command estat endogenous afer ivregress gmm can be used to implement the test for endogeneity	在Stata中，可以使用命令estat endogenous afer ivregress gmm来实现内生性检验
+In Stata the command estat endogenous afer ivregress gmm can be used to implement the test for endogeneity	在Stata中，可以在 ivregress gmm 后使用命令estat endogenous  来实现内生性检验
 Subset Endogeneity Test	子集内生性检验
-The distribution theory for the test is a special case of the theory of overidentification testing	检验的分布理论是过度识别检验理论的一个特例
-Nonlinear GMM	非线性GMM
+Nonlinear GMM	非线性 GMM
 The efficient GMM estimator can be constructed by setting	有效的 GMM 估计量可以通过设置来构建
 As in the case of the linear model the weight matrix can be iterated until convergence to obtain the iterated GMM estimator	与线性模型的情况一样，可以迭代权重矩阵直到收敛以获得迭代的 GMM 估计量
-Proposition 13.1 Distribution of Nonlinear GMM Estimator	命题13.1非线性GMM估计量的分布
-The proof of this result is omitted as it uses more advanced techniques	由于使用了更先进的技术，因此省略了该结果的证明
+Proposition 13.1 Distribution of Nonlinear GMM Estimator	命题13.1 非线性 GMM 估计量的分布
+The proof of this result is omitted as it uses more advanced techniques	由于使用了更高阶的技术，因此省略了该结果的证明
 The asymptotic covariance matrices can be estimated by sample counterparts of the population matrices	渐近协方差矩阵可以通过总体矩阵的样本对应物来估计
 For the case of the iterated efficient weight matrix,	对于迭代有效权重矩阵的情况，
-All of the methods discussed in this chapter - Wald tests, constrained estimation, distance tests, overidentification tests, endogeneity tests - apply similarly to the nonlinear GMM estimator	本章讨论的所有方法 - Wald 检验、约束估计、距离检验、过度识别检验、内生性检验 - 类似地适用于非线性 GMM 估计量
+All of the methods discussed in this chapter - Wald tests, constrained estimation, distance tests, overidentification tests, endogeneity tests - apply similarly to the nonlinear GMM estimator	本章讨论的所有方法 - Wald 检验、受约束估计、距离检验、过度识别检验、内生性检验 - 类似地适用于非线性 GMM 估计量
 Bootstrap for GMM	GMM 自助法
-The bootstrap for 2SLS (Section 12.23) can be used for GMM estimation	2SLS 的 bootstrap（第 12.23 节）可用于 GMM 估计
+The bootstrap for 2SLS (Section 12.23) can be used for GMM estimation	2SLS 的 自助法（第 12.23 节）可用于 GMM 估计
 For variance and standard error estimation the same cautions apply as for 2SLS	对于方差和标准误差估计，同样的注意事项适用于 2SLS
 Instead, use the bootstrap for percentile and percentile-t confidence intervals	相反，请使用自助法来确定百分数和百分数-t 置信区间
-When the model is overidentified, as discussed for 2SLS, bootstrap GMM inference will not achieve an asymptotic refinement unless the bootstrap estimator is recentered to satisfy the orthogonality condition	当模型被过度识别时，如 2SLS 所讨论的，自助 GMM 推断将无法实现渐近改进，除非自助估计量重新居中以满足正交性条件
-We now describe the recentering recommended by Hall and Horowitz (1996)	我们现在描述 Hall 和 Horowitz (1996) 建议的重新定位
-For nonlinear GMM (Section 13.25) the bootstrap criterion function is modified	对于非线性 GMM（第 13.25 节），修改了自助准则函数
+When the model is overidentified, as discussed for 2SLS, bootstrap GMM inference will not achieve an asymptotic refinement unless the bootstrap estimator is recentered to satisfy the orthogonality condition	当模型过度识别时，如 2SLS 所讨论的，自助 GMM 推断将无法实现渐近改进，除非自助估计量重新中心化以满足正交性条件
+We now describe the recentering recommended by Hall and Horowitz (1996)	我们现在描述 Hall 和 Horowitz (1996) 建议的重新中心化
+For nonlinear GMM (Section 13.25) the bootstrap criterion function is modified	对于非线性 GMM（第 13.25 节），自助准则函数被修订了
 The bootstrap can be used to calculate the p-value of the GMM overidentification test	bootstrap 可用于计算 GMM 过度识别检验的 p 值
 Conditional Moment Equation Models	条件矩方程模型
 In many contexts, an economic model implies conditional moment restriction of the form	在许多情况下，经济模型意味着以下形式的条件矩约束
@@ -2214,7 +2204,7 @@ Another approach is to construct the optimal instrument which minimizes the asym
 This is the same as the GLS estimator; namely that improved efficiency can be obtained if the observations are weighted inversely to the conditional variance of the errors	这与 GLS 估计量相同；也就是说，如果观测值的加权与误差的条件方差成反比，则可以获得更高的效率
 Putting together (13.25), (13.26), (13.27) and (13.28),	将(13.25)、(13.26)、(13.27)和(13.28)放在一起，
 Time Series	时间序列
-This chapter is primarily focused on univariate time series models, though we describe the concepts for the multivariate case when the added generality does not add extra complication	本章主要关注单变量时间序列模型，尽管我们描述了多变量情况的概念，但增加的通用性不会增加额外的复杂性
+This chapter is primarily focused on univariate time series models, though we describe the concepts for the multivariate case when the added generality does not add extra complication	本章主要关注单变量时间序列模型，尽管我们描述了多变量情况的概念，但增加一般化不会增大额外的复杂性
 Most economic time series are recorded at discrete intervals such as annual, quarterly, monthly, weekly, or daily	大多数经济时间序列都是以离散的时间间隔记录的，例如每年、每季度、每月、每周或每天
 Many of the issues which distinguish time series from cross-section econometrics concern the modeling of these dependence relationships	许多区分时间序列与横截面计量经济学的问题都涉及这些依赖关系的建模
 There are many excellent textbooks for time series analysis	关于时间序列分析有很多优秀的教科书
@@ -2226,10 +2216,10 @@ Figure 14.1: GDP, Exchange Rate, Interest Rate, Oil Price	图14.1：GDP、汇率
 Many of the plots are smooth, meaning that the neighboring values (in calendar time) are similar to one another and hence are serially correlated	许多图都是平滑的，这意味着相邻值（以日历时间表示）彼此相似，因此是序列相关的
 At least one plot (real GDP) displays an upward trend	至少有一个图（实际 GDP）显示出上升趋势
 Figure 14.2: Unemployment Rate, Consumption Growth Rate, Inflation Rate, and S\&P 500 Return	图 14.2：失业率、消费增长率、通货膨胀率和标准普尔 500 指数回报
-Differences and Growth Rates	差异和增长率
-It is common to transform series by taking logarithms, differences, and/or growth rates	通过取对数、差值和/或增长率来变换序列是很常见的
-The most credible is that this is the suitable transformation for the desired analysis	最可信的是，这是适合所需分析的转换
-Many aggregate series such as real GDP are transformed by taking natural logarithms	许多总量序列（例如实际 GDP）是通过取自然对数进行转换的
+Differences and Growth Rates	差分和增长率
+It is common to transform series by taking logarithms, differences, and/or growth rates	通过取对数、差分和/或增长率来变换序列是很常见的
+The most credible is that this is the suitable transformation for the desired analysis	最可信的是，这是所需分析的合适变换
+Many aggregate series such as real GDP are transformed by taking natural logarithms	许多总量序列（例如实际 GDP）是通过取自然对数进行变换的
 This flattens the apparent exponential growth and makes fluctuations proportionate	这使得表面上的指数增长趋于平缓，并使波动成比例
 Higher-order differences can be defined similarly but are not used in practice	高阶差分可以类似地定义，但在实践中不使用
 There are several methods to calculate growth rates	有多种计算增长率的方法
@@ -2240,38 +2230,38 @@ Growth rates are closely related to logarithmic transformations	增长率与对�
 For analysis using growth rates I recommend the one-period growth rates (14.1) or differenced logarithms rather than the annualized growth rates (14.2)	对于使用增长率进行分析，我建议使用一期增长率（14.1）或差分对数，而不是年化增长率（14.2）
 Differenced logarithms are the most common choice and are recommended for models which combine log-levels and growth rates for then the models are linear in all variables	差分对数是最常见的选择，建议用于结合对数水平和增长率的模型，这样模型在所有变量中都是线性的
 Stationarity	平稳性
-Recall that cross-sectional observations are conventionally treated as random draws from an underlying population	回想一下，横截面观测通常被视为从基础总体中随机抽取
-This may only hold after a suitable transformation such as growth rates (as discussed in the previous section)	这可能仅在适当的转换（例如增长率）之后成立（如上一节所述）
+Recall that cross-sectional observations are conventionally treated as random draws from an underlying population	回想一下，横截面观测通常被视为从背后总体中随机抽取
+This may only hold after a suitable transformation such as growth rates (as discussed in the previous section)	这可能仅在适当的变换（例如增长率）之后成立（如上一节所述）
 The most commonly assumed form of constancy is stationarity	最常见的恒常性假设形式是平稳性
 The first is sufficient for construction of linear models	第一个足以构建线性模型
-Their constancy as stated in the above definition means that these features of the distribution are stable over time	上述定义中所述的恒定性意味着这些分布特征随着时间的推移是稳定的
+Their constancy as stated in the above definition means that these features of the distribution are stable over time	上述定义中所述的恒常性意味着这些分布特征随着时间的推移是稳定的
 The second definition of stationarity concerns the entire joint distribution	平稳性的第二个定义涉及整个联合分布
 For formal statistical theory we generally require the stronger assumption of strict stationarity	对于正式的统计理论，我们通常需要严格平稳性的更强假设
-Therefore if we label a process as "stationary" you should interpret it as meaning "strictly stationary"	因此，如果我们将一个过程标记为“静止”，你应该将其解释为“严格静止”
+Therefore if we label a process as "stationary" you should interpret it as meaning "strictly stationary"	因此，如果我们将一个过程记为“平稳”，你应该将其解释为“严格平稳”
 It is difficult, however, to know whether or not a given time series is stationary simply by examining a time series plot	然而，仅通过检查时间序列图很难知道给定时间序列是否平稳
 Here are some examples of strictly stationary scalar processes	以下是严格平稳标量过程的一些示例
 Here are some examples of processes which are not stationary	以下是非平稳过程的一些示例
 From the examples we can see that stationarity means that the distribution is constant over time	从案例中我们可以看出，平稳性意味着分布随着时间的推移是恒定的
-These restrictions are associated with the concepts of ergodicity and mixing which we shall introduce in subsequent sections	这些约束与遍历性和混合的概念相关，我们将在后续章节中介绍这些概念
-Transformations of Stationary Processes	稳态过程的变换
+These restrictions are associated with the concepts of ergodicity and mixing which we shall introduce in subsequent sections	这些约束与遍历性和混杂的概念相关，我们将在后续章节中介绍这些概念
+Transformations of Stationary Processes	平稳过程的变换
 One of the important properties of strict stationarity is that it is preserved by transformation	严格平稳性的重要特征之一是它可以通过变换得以保留
-Convergent Series	收敛系列
+Convergent Series	收敛序列
 A transformation which includes the full past history is an infinite-order moving average	包含完整过去历史的变换是无限阶移动平均线
-Many time-series models involve representations and transformations of the form (14.3)	许多时间序列模型涉及形式（14.3）的表示和转换
+Many time-series models involve representations and transformations of the form (14.3)	许多时间序列模型涉及形式（14.3）的表达式和变换
 Ergodicity	遍历性
-Stationarity alone is not sufficient for the weak law of large numbers as there are strictly stationary processes with no time series variation	对于弱大数定律来说，仅仅平稳性是不够的，因为存在没有时间序列变化的严格平稳过程
-What is a minimal assumption beyond stationarity so that the law of large numbers applies? This topic is called ergodicity	为了应用大数定律，除了平稳性之外的最小假设是什么？这个主题称为遍历性
+Stationarity alone is not sufficient for the weak law of large numbers as there are strictly stationary processes with no time series variation	对于弱大数定律来说，仅仅平稳性是不够的，因为存在没有时序变化的严格平稳过程
+What is a minimal assumption beyond stationarity so that the law of large numbers applies? This topic is called ergodicity	为了应用大数定律，除了平稳性之外的最小假设是什么？这个话题称为遍历性
 For a rigorous treatment see a standard textbook such as Walters (1982)	对于严格的处理，请参阅标准教科书，例如 Walters (1982)
 This definition is rather abstract and difficult to grasp but fortunately it is not needed by most economists	这个定义相当抽象且难以理解，但幸运的是大多数经济学家不需要它
-We will first describe the properties of ergodic series which are relevant for our needs and follow with the more rigorous technical definitions	我们将首先描述与我们的需求相关的遍历级数的特征，然后是更严格的技术定义
+We will first describe the properties of ergodic series which are relevant for our needs and follow with the more rigorous technical definitions	我们将首先描述与我们的需要有关的遍历序列的特征，然后是更严格的技术定义
 For proofs of the results see Section 14.47	有关结果的证明，请参阅第 14.47 节
 First, many standard time series processes can be shown to be ergodic	首先，许多标准时间序列过程可以被证明是遍历的
-Second, ergodicity, like stationarity, is preserved by transformation	其次，遍历性与平稳性一样，通过变换得以保留
+Second, ergodicity, like stationarity, is preserved by transformation	其次，遍历性与平稳性一样，可以通过变换得以保留
 As an example, the infinite-order moving average transformation (14.3) is ergodic if the input is ergodic and the coefficients are absolutely convergent	例如，如果输入是遍历的且系数绝对收敛，则无限阶移动平均变换 (14.3) 是遍历的
-We now present a useful property	我们现在提出一个有用的特征
+We now present a useful property	我们现在提出一个有用的特性
 It is that the Cesàro sum of the autocovariances limits to zero	自协方差的 Cesàro 和极值为零
 The result (14.4) can be interpreted as that the autocovariances "on average" tend to zero	结果 (14.4) 可以解释为自协方差“平均”趋于零
-The reason why (14.4) is particularly useful is because it is sufficient for the WLLN as we discover later in Theorem 14.9	(14.4) 特别有用的原因是它对于 WLLN 来说是足够的，正如我们稍后在定理 14.9 中发现的那样
+The reason why (14.4) is particularly useful is because it is sufficient for the WLLN as we discover later in Theorem 14.9	(14.4) 特别有用的原因是它对于 WLLN 来说是充分的，正如我们稍后在定理 14.9 中发现的那样
 We now give the formal definition of ergodicity for interested readers	现在我们为感兴趣的读者给出遍历性的正式定义
 As the concepts will not be used again most readers can safely skip this discussion	由于这些概念不会再次使用，大多数读者可以安全地跳过此讨论
 An important technical result is that ergodicity is equivalent to the following property	一个重要的技术成果是遍历性等价于以下性质
@@ -2283,7 +2273,7 @@ Theorem 14.9 Ergodic Theorem	定理14.9 遍历定理
 The ergodic theorem shows that ergodicity is sufficient for consistent estimation	遍历定理表明遍历性足以进行一致估计
 A proof which relaxes this assumption is provided in Section 14.47	第 14.47 节提供了放宽这一假设的证明
 This is a rather intruiging expression	这是一个比较耐人寻味的表达方式
-Conditioning on Information Sets	以信息集为条件
+Conditioning on Information Sets	条件信息集
 In the past few sections we have introduced the concept of the infinite histories	在过去的几节中，我们介绍了无限历史的概念
 We now consider conditional expectations given infinite histories	我们现在考虑给定无限历史的条件期望
 When outcomes are infinite histories then events are collections of such histories and a probability law is a rule which assigns numbers to collections of infinite histories	当结果是无限历史时，事件就是这些历史的集合，而概率定律就是为无限历史的集合分配数字的规则
@@ -2297,7 +2287,6 @@ An important concept in economics is unforecastability, meaning that the conditi
 An unforecastable process is called a martingale difference sequence (MDS)	不可预测的过程称为鞅差分序列 (MDS)
 Thus a MDS is mean zero	因此 MDS 的平均值为零
 However, it is best to explicitly specify the information sets so there is no confusion	但是，最好明确指定信息集，以免造成混淆
-shock is a MDS as claimed	因此，i.i.d.正如所声称的那样，休克是一种MDS
 An important property of a square integrable MDS is that it is serially uncorrelated	平方可积 MDS 的一个重要特征是它是序列不相关的
 Thus the autocovariances and autocorrelations are zero	因此自协方差和自相关为零
 We have proved the following	我们已经证明了以下事实
@@ -2306,193 +2295,192 @@ A homoskedastic MDS should more properly be called a conditionally homoskedastic
 A homoskedatic MDS is analogous to a conditionally homoskedastic regression error	同方差 MDS 类似于条件同方差回归误差
 sequence is a homoskedastic MDS and the latter is a MDS	序列是同方差MDS，后者是MDS
 The reverse is not the case	反之则不然
-One way to think about the difference between MDS and i.i.d. shocks is in terms of forecastability	思考 MDS 和 i.i.d 之间差异的一种方法是：冲击是在可预测性方面
+One way to think about the difference between MDS and i.i.d. shocks is in terms of forecastability	思考 MDS 和 i.i.d 冲击之间差异的一条路径是：可预测性
 A MDS is unforecastable in the mean but other moments may be forecastable	MDS 总体上是不可预测的，但其他时候可能是可以预测的
 A good reference for this class of models is Campbell, Lo, and MacKinlay (1997)	Campbell、Lo 和 MacKinlay (1997) 是此类模型的一个很好的参考
-CLT for Martingale Differences	马丁格尔差异的 CLT
+CLT for Martingale Differences	鞅差分的 CLT
 We are interested in an asymptotic approximation for the distribution of the normalized sample mean	我们对标准化样本均值分布的渐近近似感兴趣
-assumption has been replaced by the assumption of a strictly stationarity and ergodic MDS	唯一的区别是 i.i.d.假设已被严格平稳性和遍历 MDS 的假设所取代
-To illustrate the role of the MDS assumption we give a sketch of the proof in Section 14.47	为了说明 MDS 假设的作用，我们在第 14.47 节中给出了证明的草图
+i.i.d. assumption has been replaced by the assumption of a strictly stationarity and ergodic MDS	i.i.d.假设已被严格平稳性和遍历 MDS 的假设所取代
+To illustrate the role of the MDS assumption we give a sketch of the proof in Section 14.47	为了说明 MDS 假设的作用，我们在第 14.47 节中给出了粗略的证明
 Mixing	混合
 For many results, including a CLT for correlated (non-MDS) series, we need a stronger restriction on the dependence between observations than ergodicity	对于许多结果，包括相关（非 MDS）序列的 CLT，我们需要对观测值之间的依赖性比遍历性进行更强的约束
 This means that as the time separation increases between the information sets, the degree of dependence decreases, eventually reaching independence	这意味着随着信息集之间的时间间隔增加，依赖程度降低，最终达到独立
-From the Theorem of Cesàro Means (Theorem A.4 of Probability and Statistics for Economists), strong mixing implies (14.5) which is equivalent to ergodicity	根据塞萨罗均值定理（经济学家概率与统计定理 A.4），强混合意味着 (14.5) 相当于遍历性
+From the Theorem of Cesàro Means (Theorem A.4 of Probability and Statistics for Economists), strong mixing implies (14.5) which is equivalent to ergodicity	根据 Cesàro 均值定理（经济学家概率与统计定理 A.4），强混合意味着 (14.5) 相当于遍历性
 Thus a mixing process is ergodic	因此混合过程是遍历的
 An intuition concerning mixing can be colorfully illustrated by the following example due to Halmos (1956)	Halmos (1956) 的以下示例可以生动地说明有关混合的直觉
 If so, this is a mixing process	如果是这样，这就是一个混合过程
-There are alternative measures of dependence beyond (14.13) and many have been proposed	除了（14.13）之外，还有其他替代的依赖度量，并且已经提出了许多替代度量
-One reason why mixing is useful for applications is that it is preserved by transformations	混合对应用程序有用的原因之一是它通过转换得以保留
+There are alternative measures of dependence beyond (14.13) and many have been proposed	除了（14.13）之外，还有其他替代的依赖度量，并且不少都被提及到了
+One reason why mixing is useful for applications is that it is preserved by transformations	混合对应用有用的原因之一是它通过变换可得以保留
 A limitation of the above result is that it is confined to a finite number of lags unlike the transformation results for stationarity and ergodicity	上述结果的局限性在于，与平稳性和遍历性的变换结果不同，它仅限于有限数量的滞后
 Mixing can be a useful tool because of the following inequalities	由于以下不等式，混合可能是一个有用的工具
 The proof is given in Section 14.47	第 14.47 节给出了证明
 Our next result follows fairly directly from the definition of mixing	我们的下一个结果相当直接地来自混合的定义
 CLT for Correlated Observations	相关观测的 CLT
 In (14.8) we found that in the scalar case	在(14.8)中我们发现在标量情况下
-where the convergence holds by the Theorem of Cesàro Means if the limit in (14.16) is convergent	其中，如果 (14.16) 中的极限收敛，则塞萨罗均值定理收敛
+where the convergence holds by the Theorem of Cesàro Means if the limit in (14.16) is convergent	其中，如果 (14.16) 中的极限收敛，则 Cesàro 均值定理下收敛成立
 It turns out that these conditions are sufficient for the CLT	事实证明，这些条件对于 CLT 来说已经足够了
 Linear Projection	线性投影
 In Chapter 2 we extensively studied the properties of linear projection models	在第二章中，我们广泛研究了线性投影模型的特征
 The property (14.18) implies that the projection errors are serially uncorrelated	特征 (14.18) 意味着投影误差是序列不相关的
 White Noise	白噪声
 This describes what is known as a white noise process	这描述了所谓的白噪声过程
-It is helpful to observe that a white noise process can be conditionally heteroskedastic as the conditional variance is unrestricted	观察白噪声过程可以是条件异方差的是有帮助的，因为条件方差不受约束
-The Wold Decomposition	世界分解
+It is helpful to observe that a white noise process can be conditionally heteroskedastic as the conditional variance is unrestricted	观察到白噪声过程可以是条件异方差的是有帮助的，因为条件方差是没有约束的
+The Wold Decomposition	Wold 分解
 Since any covariance stationary process can be written in this format this justifies linear models as approximations	由于任何协方差平稳过程都可以用这种形式编写，这证明了线性模型作为近似值是合理的
-This series is strictly stationary, mean zero, and variance one	该序列是严格平稳的，均值为零，方差为一
-In practical applied time series analysis, deterministic components are typically excluded by assumption	在实际应用的时间序列分析中，确定性成分通常被假设排除
+This series is strictly stationary, mean zero, and variance one	该序列是严格平稳的，均值为0，方差为1
+In practical applied time series analysis, deterministic components are typically excluded by assumption	在实际的应用时间序列分析中，确定性成分通常被假定排除
 In this case the Wold decomposition has a simpler form	在这种情况下，Wold 分解具有更简单的形式
 A limitation of the Wold decomposition is the restriction to linearity	Wold 分解的一个局限性是对线性的约束
 While it shows that there is a valid linear approximation, it may be that a nonlinear model provides a better approximation	虽然它表明存在有效的线性近似，但非线性模型可能提供更好的近似
 Lag Operator	滞后算子
-An algebraic construct which is useful for the analysis of time series models is the lag operator	对于分析时间序列模型有用的代数构造是滞后算子
+An algebraic construct which is useful for the analysis of time series models is the lag operator	一个对分析时间序列模型有用的代数构造是滞后算子
 Using the lag operator the Wold decomposition can be written in the format	使用滞后算子，Wold 分解可以写成以下形式
-Autoregressive Wold Representation	自回归 Wold 表示
-It turns out that to obtain a unique and convergent representation we need a strengthening of the conditions	事实证明，为了获得独特且收敛的表示，我们需要加强条件
+Autoregressive Wold Representation	自回归 Wold 表达式
+It turns out that to obtain a unique and convergent representation we need a strengthening of the conditions	事实证明，为了获得独特且收敛的表达式，我们需要加强条件
 Linear Models	线性模型
-In the previous two sections we showed that any non-deterministic covariance stationary time series has the projection representation	在前两节中，我们表明任何非确定性协方差平稳时间序列都具有投影表示
-and under a restriction on the projection coefficients satisfies the autoregressive representation	并且在投影系数的约束下满足自回归表示
-These representations help us understand that linear models can be used as approximations for stationary time series	这些表示帮助我们理解线性模型可以用作平稳时间序列的近似值
+In the previous two sections we showed that any non-deterministic covariance stationary time series has the projection representation	在前两节中，我们表明任何非确定性协方差平稳时间序列都具有投影表达式
+and under a restriction on the projection coefficients satisfies the autoregressive representation	并且在投影系数的约束下满足自回归表达式
+These representations help us understand that linear models can be used as approximations for stationary time series	这些表达式帮助我们理解线性模型可以用作平稳时间序列的近似值
 For the next several sections we reverse the analysis	在接下来的几节中，我们将进行反向分析
 In particular, it allows for conditional heteroskedasticity	特别是，它允许条件异方差
-Moving Average Processes	移动平均流程
-The first-order moving average process, denoted MA(1), is	一阶移动平均过程，表示为 MA(1)，为
-Thus the MA(1) process has a non-zero first autocorrelation with the remainder zero	因此，MA(1) 过程具有非零第一自相关且余数为零
+Moving Average Processes	移动平均过程
+The first-order moving average process, denoted MA(1)	一阶移动平均过程，表示为 MA(1)
+Thus the MA(1) process has a non-zero first autocorrelation with the remainder zero	因此，MA(1) 过程具有非零一阶自相关且余数为零
 The serial correlation is limited in that observations separated by multiple periods are mutually independent	序列相关性是有限的，因为由多个周期分隔的观测值是相互独立的
 Infinite-Order Moving Average Process	无限阶移动平均过程
 Figure 14.3: White Noise and MA(8)	图 14.3：白噪声和 MA(8)
 First-Order Autoregressive Process	一阶自回归过程
 The first-order autoregressive process, denoted AR(1), is	一阶自回归过程，表示为 AR(1)，为
 The AR(1) model is probably the single most important model in econometric time series analysis	AR(1) 模型可能是计量经济时间序列分析中最重要的模型
-Figure 14.4: AR(1) Processes	图 14.4：AR(1) 流程
+Figure 14.4: AR(1) Processes	图 14.4：AR(1) 过程
 Our first goal is to obtain conditions under which (14.25) is stationary	我们的第一个目标是获得 (14.25) 平稳的条件
 Now suppose we continue this recursion into the infinite past	现在假设我们继续这种递归到无限的过去
-The limit is provided by the following well-known result	该极限由以下众所周知的结果提供
+The limit is provided by the following well-known result	该极限由以下众所周知的结论提供
 One way to calculate the moments is as follows	计算矩的一种方法如下
 We can also express the AR(1) process using the lag operator notation:	我们还可以使用滞后算子符号来表达 AR(1) 过程：
-This suggests an alternative way of obtaining the representation (14.27)	这提出了另一种获得表示的方法（14.27）
+This suggests an alternative way of obtaining the representation (14.27)	这提出了另一种获得表达式的方法（14.27）
 Substituted into (14.29) we obtain	代入 (14.29) 我们得到
 This illustrates another important concept	这说明了另一个重要的概念
 Invertibility turns out to be a useful property	可逆性被证明是一个有用的特征
-Unit Root and Explosive AR(1) Processes	单位根和爆炸 AR(1) 过程
+Unit Root and Explosive AR(1) Processes	单位根和膨胀 AR(1) 过程
 This is also called a unit root process, a martingale, or an integrated process	这也称为单位根过程、鞅或积分过程
 The stochastic behavior of a random walk is noticably different from a stationary AR(1) process	随机游走的随机行为与平稳 AR(1) 过程明显不同
-The difference is that a random walk will take a very large number of time periods to "revert"	不同之处在于随机游走将需要大量的时间段才能“恢复”
+The difference is that a random walk will take a very large number of time periods to "revert"	不同之处在于随机游走将需要大量的时间周期才能“恢复”
 Figure 14.5: Random Walk Processes	图 14.5：随机游走过程
-While aggregate time series such as the GDP process displayed in Figure 14.1 (a) exhibit a similar exponential growth pattern, the exponential growth can typically be removed by taking logarithms	虽然聚合时间序列（例如图 14.1（a）中显示的 GDP 过程）表现出类似的指数增长模式，但指数增长通常可以通过取对数来消除
+While aggregate time series such as the GDP process displayed in Figure 14.1 (a) exhibit a similar exponential growth pattern, the exponential growth can typically be removed by taking logarithms	虽然加总时间序列（例如图 14.1（a）中显示的 GDP 过程）表现出类似的指数增长模式，但指数增长通常可以通过取对数来消除
 Second-Order Autoregressive Process	二阶自回归过程
 The dynamic patterns of an AR(2) process are more complicated than an AR(1) process	AR(2)过程的动态模式比AR(1)过程更复杂
-As a motivating example consider the multiplier-accelerator model of Samuelson (1939)	作为一个激励性的例子，请考虑 Samuelson (1939) 的乘数-加速器模型
+As a motivating example consider the multiplier-accelerator model of Samuelson (1939)	作为一个启发性的例子，请考虑 Samuelson (1939) 的乘数-加速器模型
 Using the lag operator we can write (14.31) as	使用滞后运算符，我们可以将 (14.31) 写为
-Take the Samuelson multiplier-accelerator model (14.32)	采用萨缪尔森乘数加速器模型 (14.32)
+Take the Samuelson multiplier-accelerator model (14.32)	采用 Samuelson 乘数加速器模型 (14.32)
 For this reason the dynamic patterns of an AR(2) can be much more complicated than those of an AR(1)	因此，AR(2) 的动态模式可能比 AR(1) 的动态模式复杂得多
-Again, take the Samuelson multiplier-accelerator model (14.32)	再次采用萨缪尔森乘数加速器模型 (14.32)
-Figure 14.7: AR(2) Processes	图 14.7：AR(2) 流程
+Again, take the Samuelson multiplier-accelerator model (14.32)	再次采用 Samuelson 乘数加速器模型 (14.32)
+Figure 14.7: AR(2) Processes	图 14.7：AR(2) 过程
 These coefficients produce complex factors so the process displays oscillations	这些系数会产生复杂的因素，因此过程会出现振荡
-AR(p) Processes	AR(p) 流程
-We have the following characterization of the moving average coefficients	我们对移动平均系数有以下描述
+AR(p) Processes	AR(p) 过程
+We have the following characterization of the moving average coefficients	我们获得移动平均系数有以下特征
 Impulse Response Function	脉冲响应函数
-The coefficients of the moving average representation	移动平均表示的系数
-are known among economists as the impulse response function (IRF)	经济学家将其称为脉冲响应函数 (IRF)
+The coefficients of the moving average representation	移动平均表达式的系数
+They are known among economists as the impulse response function (IRF)	经济学家将其称为脉冲响应函数 (IRF)
 There are two methods which we now describe	我们现在描述两种方法
-The first uses a simple recursion	第一个使用简单的递归
+The first uses a simple recursion	第一种方法使用简单的递归
 This recursion is conveniently calculated by the following simulation	通过以下模拟可以方便地计算该递归
-A second method uses the vector representation (14.33) of the AR(p) model with coefficient matrix (14.40)	第二种方法使用带有系数矩阵 (14.40) 的 AR(p) 模型的向量表示 (14.33)
-As mentioned at the beginning of the section it is often desirable to scale the IRF so that it is the response to a one-deviation shock	正如本节开头提到的，通常需要标量化 IRF，以便它能够响应单误差冲击
+A second method uses the vector representation (14.33) of the AR(p) model with coefficient matrix (14.40)	第二种方法使用带有系数矩阵 (14.40) 的 AR(p) 模型的向量表达式 (14.33)
+As mentioned at the beginning of the section it is often desirable to scale the IRF so that it is the response to a one-deviation shock	正如本节开头提到的，通常需要标量化 IRF，以便它能够响应单一误差冲击
 ARMA and ARIMA Processes	ARMA 和 ARIMA 过程
 The autoregressive-moving-average process, denoted ARMA(p,q), is	自回归移动平均过程表示为 ARMA(p,q)，为
 Mixing Properties of Linear Processes	线性过程的混合特性
 There is a considerable probability literature investigating the mixing properties of time series processes	有大量概率文献研究时间序列过程的混合特性
 In fact, a simple AR(1) is not necessarily mixing	事实上，简单的AR(1)不一定是混合
 A useful characterization was provided by Pham and Tran (1985)	Pham 和 Tran (1985) 提供了有用的表征
-This rules out Andrews' counter-example	这排除了安德鲁斯的反例
-The primary message from this section is that linear processes, including autoregressive and ARMA processes, are mixing if the innovations satisfy suitable conditions	本节的主要信息是，如果创新满足适当的条件，则线性过程（包括自回归和 ARMA 过程）就会混合
+This rules out Andrews' counter-example	这排除了 Andrews 的反例
+The primary message from this section is that linear processes, including autoregressive and ARMA processes, are mixing if the innovations satisfy suitable conditions	本节的主要信息是，如果新息满足适当的条件，则线性过程（包括自回归和 ARMA 过程）就会混合
 The mixing coefficients decay at rates related to the decay rates of the moving average coefficients	混合系数以与移动平均系数的衰减率相关的速率衰减
 The parameters of a model are identified if the parameters are uniquely determined by the probability distribution of the observations	如果模型的参数是由观测值的概率分布唯一确定的，则可以识别模型的参数
 In contrast, AR models are generally identified	相比之下，AR模型普遍被识别
 Let us start with the MA(1) model	让我们从 MA(1) 模型开始
 It has first-order autocorrelation	具有一阶自相关性
 The standard solution is to select the parameter which produces an invertible moving average polynomial	标准解决方案是选择产生可逆移动平均多项式的参数
-This may be sensible when there is reason to believe that shocks have their primary impact in the contemporaneous period and secondary (lesser) impact in the second period	当有理由相信冲击在同期产生主要影响并在第二个时期产生次要（较小）影响时，这可能是明智的
+This may be sensible when there is reason to believe that shocks have their primary impact in the contemporaneous period and secondary (lesser) impact in the second period	当有理由相信冲击在同期产生主要影响并在第二个时期产生次要（较小）影响时，这可能是合理的
 Now consider the MA(2) model	现在考虑 MA(2) 模型
 The moving average polynomial can be factored as	移动平均多项式可以分解为
 This analysis extends to the MA(q) model	该分析扩展到 MA(q) 模型
 The factors of the MA polynomial can be replaced by their inverses and consequently the coefficients are not identified	MA 多项式的因子可以用其倒数代替，因此无法识别系数
 The standard solution is to confine attention to MA(q) models with invertible roots	标准解决方案是将注意力集中在具有可逆根的 MA(q) 模型上
-This solution corresponds to the Wold decomposition, as it is defined in terms of the projection errors which correspond to the invertible representation	该解对应于 Wold 分解，因为它是根据对应于可逆表示的投影误差来定义的
+This solution corresponds to the Wold decomposition, as it is defined in terms of the projection errors which correspond to the invertible representation	该解对应于 Wold 分解，因为它是根据对应于可逆表达式的投影误差来定义的
 A deeper identification failure occurs in ARMA models	ARMA 模型中出现了更深层次的识别失败
-Written in lag operator notation	用滞后运算符符号写成
+Written in lag operator notation	用滞后运算符记号写成
 This extends to higher order ARMA models	这扩展到更高阶的 ARMA 模型
-Thus all these models are identical and hence the coefficients are not identified	因此，所有这些模型都是相同的，因此系数未被识别
-The problem is called "cancelling roots" due to the fact that it arises when there are two identical lag polynomial factors in the AR and MA polynomials	该问题称为“消根”，因为当 AR 和 MA 多项式中存在两个相同的滞后多项式因子时就会出现该问题
-The standard solution in the ARMA literature is to assume that there are no cancelling roots	ARMA 文献中的标准解决方案是假设不存在抵消根
+Thus all these models are identical and hence the coefficients are not identified	因此，所有这些模型都是相同的，因而系数不能被识别
+The problem is called "cancelling roots" due to the fact that it arises when there are two identical lag polynomial factors in the AR and MA polynomials	该问题称为“消根”问题，因为当 AR 和 MA 多项式中存在两个相同的滞后多项式因子时就会出现该问题
+The standard solution in the ARMA literature is to assume that there are no cancelling roots	ARMA 文献中的标准解决方案是假设不存在消根问题
 One recommendation is to be careful when using ARMA models and be aware that highly parameterized models may not have unique coefficients	一项建议是在使用 ARMA 模型时要小心，并注意高度参数化的模型可能没有唯一的系数
 This is a linear projection model	这是一个线性投影模型
-We conclude that any approximating AR(p) is identified	我们得出结论，任何近似 AR(p) 都已被识别
+We conclude that any approximating AR(p) is identified	我们得出结论，任何近似 AR(p) 都可以被识别
 Estimation of Autoregressive Models	自回归模型的估计
 The least squares estimator is	最小二乘估计量为
-This shows that under very mild conditions the coefficients of an AR(p) model can be consistently estimated by least squares	这表明在非常温和的条件下，AR(p) 模型的系数可以通过最小二乘法一致地估计
+This shows that under very mild conditions the coefficients of an AR(p) model can be consistently estimated by least squares	这表明在非常放松的条件下，AR(p) 模型的系数可以通过最小二乘法一致地估计
 It holds for any stationary process with the coefficient defined by projection	它适用于具有由投影定义的系数的任何平稳过程
 Asymptotic Distribution of Least Squares Estimator	最小二乘估计的渐近分布
 In this section we derive the asymptotic distribution under the assumption of correct specification	在本节中，我们在正确设定的假设下推导渐近分布
 This is identical in form to the asymptotic distribution of least squares in cross-section regression	这在形式上与横截面回归中最小二乘的渐近分布相同
-In particular, the asymptotic covariance matrix is estimated just as in the cross-section case	特别是，渐近协方差矩阵的估计就像在横截面情况下一样
+In particular, the asymptotic covariance matrix is estimated just as in the cross-section case	特别是，渐近协方差矩阵的估计就如同在横截面情况下一样
 Distribution Under Homoskedasticity	同方差下的分布
 In cross-section regression we found that the covariance matrix simplifies under the assumption of conditional homoskedasticity	在横截面回归中，我们发现协方差矩阵在条件同方差的假设下得到简化
 and the asymptotic distribution simplifies	并且渐近分布得到简化
-These results show that under correct specification (a MDS error) the format of the asymptotic distribution of the least squares estimator exactly parallels the cross-section case	这些结果表明，在正确的设定（MDS 误差）下，最小二乘估计量的渐近分布形式与横截面情况完全平行
-This means that we can expect (from advanced statistical theory) asymptotic inference to be less accurate than indicated by nominal levels	这意味着我们可以预期（根据高级统计理论）渐近推断的准确度低于标称水平所示的准确度
+These results show that under correct specification (a MDS error) the format of the asymptotic distribution of the least squares estimator exactly parallels the cross-section case	这些结果表明，在正确的设定（MDS 误差）下，最小二乘估计量的渐近分布形式与横截面情况完全相似
+This means that we can expect (from advanced statistical theory) asymptotic inference to be less accurate than indicated by nominal levels	这意味着我们可以预期（根据高级统计理论）渐近推断的准确度低于名义水平所示的准确度
 In the context of cross-section data we argued that the homoskedasticity assumption was dubious except for occassional theoretical insight	在横截面数据的背景下，我们认为除了偶尔的理论见解外，同方差假设是可疑的
 Therefore in applications it is better to use the heteroskedasticityrobust distributional theory when possible	因此在应用中最好尽可能使用异方差稳健分布理论
-Unfortunately, many existing time series textbooks report the distribution theory from (14.31)	不幸的是，许多现有的时间序列教科书都报道了（14.31）中的分布理论
-Asymptotic Distribution Under General Dependence	一般依赖下的渐近分布
+Unfortunately, many existing time series textbooks report the distribution theory from (14.31)	不幸的是，许多现有的时间序列教科书都报告出（14.31）中的分布理论
+Asymptotic Distribution Under General Dependence	广义相依下的渐近分布
 This result is substantially different from the cross-section case	这个结果与横截面情况有很大不同
 Under the assumption of correct specification covariance matrix estimation is identical to the crosssection case	在正确设定的假设下，协方差矩阵估计与横截面情况相同
 The heteroskedasticity-robust asymptotic covariance matrix estimator is	异方差稳健渐近协方差矩阵估计量为
 Degree-of-freedom adjustments may be made as in the cross-section case though a theoretical justification has not been developed	尽管尚未开发出理论依据，但可以像横截面情况一样进行自由度调整
 This means that for stationary autoregressions, inference can proceed using conventional regression methods	这意味着对于平稳自回归，可以使用传统的回归方法进行推断
-Covariance Matrix Estimation Under General Dependence	一般依赖下的协方差矩阵估计
-The appropriate class of estimators are called Heteroskedasticity and Autocorrelation Consistent (HAC) or Heteroskedasticity and Autocorrelation Robust (HAR) covariance matrix estimators	适当类别的估计量称为异方差和自相关一致 (HAC) 或异方差和自相关稳健 (HAR) 协方差矩阵估计量
-Hansen (1982) for the generalized method of moments	该估计量由 L. Hansen 和 Hodrick (1980) 在多周期预测的背景下提出，并由 L. Hansen (1982) 在广义矩方法中提出
+Covariance Matrix Estimation Under General Dependence	广义相依下的协方差矩阵估计
+The appropriate class of estimators are called Heteroskedasticity and Autocorrelation Consistent (HAC) or Heteroskedasticity and Autocorrelation Robust (HAR) covariance matrix estimators	一类合适的估计量称为异方差和自相关一致 (HAC) 或异方差和自相关稳健 (HAR) 协方差矩阵估计量
 These two deficiencies can be resolved if we amend (14.49) by a weighted sum of autocovariances	如果我们通过自协方差的加权和来修正（14.49），这两个缺陷就可以得到解决
 This is a weighted sum of the autocovariances	这是自协方差的加权和
 Thus this estimator solves the two problems described above	因此，该估计量解决了上述两个问题
-The assumption on the mixing coefficients is slightly stronger than in Theorem 14.32, due to the technical nature of the derivation	由于推导的技术性质，混合系数的假设比定理 14.32 中的假设稍强
-Testing the Hypothesis of No Serial Correlation	检验无序列相关的假设
-The test can be implemented by a Wald or F test	检验可以通过Wald检验或F检验来实现
-(The Newey-West estimator should not be used as there is no serial correlation under the null hypothesis.) Accept the hypothesis if the test statistic is smaller than a conventional critical value (or if the p-value exceeds the significance level) and reject the hypothesis otherwise	）如果检验统计量小于常规临界值（或者 p 值超过显著性水平），则接受假设并拒绝否则假设
-Thus include four lags for quarterly data or twelve lags for monthly data	因此，季度数据包含四个滞后，月度数据包含十二个滞后
-Testing for Omitted Serial Correlation	检验遗漏的串行相关性
+The assumption on the mixing coefficients is slightly stronger than in Theorem 14.32, due to the technical nature of the derivation	由于求导的技术特性，混合系数的假设比定理 14.32 中的假设稍强
+Testing the Hypothesis of No Serial Correlation	检验无序列相关假设
+The test can be implemented by a Wald or F test	检验可以通过 Wald 检验或 F 检验来实现
+Accept the hypothesis if the test statistic is smaller than a conventional critical value (or if the p-value exceeds the significance level) and reject the hypothesis otherwise	如果检验统计量小于常规临界值（或者 p 值超过显著性水平），则拒绝原假设，反之亦然
+Thus include four lags for quarterly data or twelve lags for monthly data	因此，包含4期个季度滞后数据，12个月度滞后数据
+Testing for Omitted Serial Correlation	检验遗漏的序列相关性
 When using an AR(p) model it may be of interest to know if there is any remaining serial correlation	使用 AR(p) 模型时，可能有兴趣了解是否存在任何剩余的序列相关性
-One approach to obtain the correct asymptotic distribution is to use the generalized method of moments, treating (14.52)-(14.53) as a two-equation just-identified system	获得正确渐近分布的一种方法是使用广义矩方法，将 (14.52)-(14.53) 视为二方程刚辨识系统
+One approach to obtain the correct asymptotic distribution is to use the generalized method of moments, treating (14.52)-(14.53) as a two-equation just-identified system	获得正确渐近分布的一种方法是使用广义矩方法，将 (14.52)-(14.53) 视为恰好识别的双方程系统
 An easier solution is to re-write (14.52)-(14.53) as a higher-order autoregression so that we can use a standard test statistic	一个更简单的解决方案是将 (14.52)-(14.53) 重写为高阶自回归，以便我们可以使用标准检验统计量
 Otherwise we accept the hypothesis that the AR(p) model is correctly specified	否则我们接受 AR(p) 模型被正确设定的假设
 Another way of deriving the test is as follows	导出检验的另一种方法如下
-While this discussion is all good fun, it is unclear if there is good reason to use the test described in this section	虽然这个讨论很有趣，但尚不清楚是否有充分的理由使用本节中描述的检验
+While this discussion is all good fun, it is unclear if there is good reason to use the test described in this section	虽然这个讨论很有趣，但尚不清楚是否有充分的理由使用本节中论述的检验
 One is described in the following section	下一节将介绍其中之一
-Model Selection	选型
+Model Selection	模型选择
 By selecting the model with the smallest value of the AIC you select the model with the smallest estimated divergence - the highest estimated fit between the estimated and true densities	通过选择 AIC 值最小的模型，你可以选择估计差异最小的模型，即估计密度和真实密度之间的最高估计拟合度
 The AIC is also a monotonic transformation of an estimator of the one-step-ahead forecast mean squared error	AIC 也是一步超前预测均方误差估计量的单调变换
 Thus selecting the model with the smallest value of the AIC you are selecting the model with the smallest estimated forecast error	因此，选择 AIC 值最小的模型，你就选择了估计预测误差最小的模型
-The AIC of an estimated regression model can be displayed in Stata by using the estimates stats command	可以使用estimates stats命令在Stata中显示估计回归模型的AIC
+The AIC of an estimated regression model can be displayed in Stata by using the estimates stats command	可以在Stata中使用 estimates stats 命令显示估计回归模型的AIC
 Illustrations	说明
-rates are positively correlated from quarter to quarter, but only mildly so, and most of the correlation is captured by the first lag	每个季度的利率都呈正相关，但只是轻微的正相关，并且大部分相关性是由第一滞后捕获的
+rates are positively correlated from quarter to quarter, but only mildly so, and most of the correlation is captured by the first lag	每个季度的利率都呈正相关，但只是轻微的正相关，并且大部分相关性是由一阶滞后捕获的
 Here, we report heteroskedasticity-robust standard errors	在这里，我们报告异方差稳健的标准误差
 The third example is the first difference of CPI inflation (first difference of growth rate of cpiaucsl)	第三个案例是CPI通胀一阶差分（cpiaucsl增长率一阶差分）
 There are meaningful differences only for the lower order AR models	仅对于低阶 AR 模型存在有意义的差异
 Time Series Regression Models	时间序列回归模型
 Least squares regression methods can be used broadly with stationary time series	最小二乘回归方法可广泛用于平稳时间序列
-Furthermore, it is necessary to be aware of the serial correlation properties of the series involved, and to use the appropriate covariance matrix estimator when the dynamics have not been explicitly modeled	此外，有必要了解所涉及序列的序列相关特征，并在动态尚未明确建模时使用适当的协方差矩阵估计量
+Furthermore, it is necessary to be aware of the serial correlation properties of the series involved, and to use the appropriate covariance matrix estimator when the dynamics have not been explicitly modeled	此外，有必要了解所涉及序列的序列相关特征，并在动态性尚未明确建模时使用合适的协方差矩阵估计量
 The coefficient vector is defined by projection and therefore equals	系数向量由投影定义，因此等于
 However, under the stronger assumption that the error is a MDS the asymptotic covariance matrix simplifies	然而，在误差是 MDS 的更强假设下，渐近协方差矩阵会简化
 This means we can apply the MDS CLT to obtain the asymptotic distribution	这意味着我们可以应用 MDS CLT 来获得渐近分布
-We summarize this discussion with the following formal statement	我们通过以下正式声明总结了这次讨论
+We summarize this discussion with the following formal statement	我们通过以下正式说法总结了这次讨论
 Static, Distributed Lag, and Autoregressive Distributed Lag Models	静态、分布滞后和自回归分布滞后模型
 In this section we describe standard linear time series regression models	在本节中，我们描述标准线性时间序列回归模型
 The simplest regression model is the static equation	最简单的回归模型是静态方程
 If this regression is estimated it is important that the standard errors be calculated using the Newey-West method to account for serial correlation in the error	如果估计此回归，则重要的是使用 Newey-West 方法计算标准误差，以考虑误差中的序列相关性
-A model which allows the regressor to have impact over several periods is called a distributed lag (DL) model	允许自变量在多个时期内产生影响的模型称为分布式滞后 (DL) 模型
+A model which allows the regressor to have impact over several periods is called a distributed lag (DL) model	允许自变量在多个时期内产生影响的模型称为分布滞后 (DL) 模型
 It is also necessary to use Newey-West standard errors to account for the serial correlation	还需要使用 Newey-West 标准误差来解释序列相关性
-A more complete model combines autoregressive and distributed lags	更完整的模型结合了自回归和分布式滞后
+A more complete model combines autoregressive and distributed lags	一个更完整的模型结合了自回归和分布滞后
 This is called an autoregressive distributed lag (AR-DL) model	这称为自回归分布式滞后 (AR-DL) 模型
 In an AR-DL specification the long-run multiplier is	在 AR-DL 设定中，长期乘数为
 which is a nonlinear function of the coefficients	这是系数的非线性函数
@@ -2501,37 +2489,36 @@ Many economic time series have means which change over time	许多经济时间�
 The trend component is often modeled as a linear function in the time index	趋势成分通常被建模为时间指数中的线性函数
 or a quadratic function in time	或时间的二次函数
 These models are typically not thought of as being literally true but rather as useful approximations	这些模型通常不被认为是字面上真实的，而是被认为是有用的近似值
-Consequently these should not be interpreted outside of how the time index is defined	因此，不应在时间标引的定义方式之外对这些进行解释
+Consequently these should not be interpreted outside of how the time index is defined	因此，不应在时间指数的定义方式之外对这些进行解释
 One traditional way of dealing with time trends is to "detrend" the data	处理时间趋势的一种传统方法是对数据进行“去趋势化”
-the coefficients are estimated by least squares	系数通过最小二乘法估计
-More intricate methods can be used but they have a similar flavor	可以使用更复杂的方法，但它们具有相似的味道
+the coefficients are estimated by least squares	这些系数通过最小二乘法估计
+More intricate methods can be used but they have a similar flavor	可以使用更复杂的方法，但它们具有类似的风格
 To understand the properties of the detrending method we can apply an asymptotic approximation	为了理解去趋势方法的特征，我们可以应用渐近近似
-The rates of convergence change but this does not affect anything of practical importance	收敛速度发生了变化，但这并不影响任何具有实际意义的事情
+The rates of convergence change but this does not affect anything of practical importance	收敛速度发生了变化，但这并不具有任何实际重要性
 Let us demonstrate that the least squares estimator of the coefficients in (14.57) is consistent	让我们证明 (14.57) 中系数的最小二乘估计是一致的
-We need to study the behavior of the sums in the design matrix	我们需要研究设计矩阵中总和的行为
+We need to study the behavior of the sums in the design matrix	我们需要研究构造矩阵中总和的行为
 An alternative is to include a time trend in the estimated regression	另一种方法是在估计的回归中包含时间趋势
-Estimation by least squares is equivalent to estimation after linear detrending by the FWL theorem	通过最小二乘估计相当于通过 FWL 定理线性去趋势后的估计
-Inclusion of a linear (and possibly quadratic) time trend in a regression model is typically the easiest method to incorporate time trends	在回归模型中包含线性（可能是二次）时间趋势通常是合并时间趋势的最简单方法
+Estimation by least squares is equivalent to estimation after linear detrending by the FWL theorem	通过最小二乘估计等价于通过 FWL 定理线性去趋势后的估计
+Inclusion of a linear (and possibly quadratic) time trend in a regression model is typically the easiest method to incorporate time trends	在回归模型中包含线性（可能是二次的）时间趋势通常是合并时间趋势的最简单方法
 We illustrate the models described in the previous section using a classical Phillips curve for inflation prediction	我们使用经典的菲利普斯曲线进行通货膨胀预测来说明上一节中描述的模型
 This specification relates the change in inflation in a given period to the level of the unemployment rate in the previous period	该设定将给定时期的通货膨胀变化与上一时期的失业率水平联系起来
 The least squares estimate of (14.58) using U.S. quarterly series from FRED-QD is reported in the first column of Table 14.3	表 14.3 的第一列报告了使用 FRED-QD 的美国季度序列得出的最小二乘估计值 (14.58)
 The estimate is consistent with a small effect of the unemployment rate on the inflation rate but it is not precisely estimated	该估计与失业率对通货膨胀率的微小影响一致，但并未精确估计
 A distributed lag (DL) model takes the form	分布式滞后 (DL) 模型采用以下形式
 The least squares estimate of (14.59) is reported in the second column of Table 14.3	表 14.3 的第二列报告了最小二乘估计 (14.59)
-It implies that an increase in the unemployment rate by 5 percentage points (a typical recession) decreases the long-run annual inflation rate by about a half of a percentage point	这意味着失业率上升 5 个百分点（典型的衰退）会使长期年通胀率降低约半个百分点
+It implies that an increase in the unemployment rate by 5 percentage points (a typical recession) decreases the long-run annual inflation rate by about a half of a percentage point	这意味着失业率上升 5 个百分点（典型的衰退）会使长期年通胀率降低约0.5个百分点
 An AR-DL takes the form	AR-DL 采用以下形式
 The point estimate of the long-run multiplier is also nearly identical but with a smaller standard error	长期乘数的点估计也几乎相同，但标准误差较小
 Granger Causality	格兰杰因果关系
 This definition of causality was developed by Granger (1969) and Sims (1972)	因果关系的定义是由 Granger (1969) 和 Sims (1972) 提出的
 The reason why we call this "Granger causality" rather than "causality" is because this is not a structural definition	我们之所以称其为“格兰杰因果关系”而不是“因果关系”，是因为这不是一个结构性定义
-An alternative label is "predictive causality"	另一个标签是“预测因果关系”
+An alternative label is "predictive causality"	另一个称谓是“预测因果关系”
 Table 14.3: Phillips Curve Regressions	表 14.3：菲利普斯曲线回归
 The definition can alternatively be written in terms of conditional expectations rather than projections	该定义也可以用条件期望而不是预测来编写
 Granger causality can be tested in AR-DL models using a standard Wald or F test	可以使用标准 Wald 或 F 检验在 AR-DL 模型中检验 Granger 因果关系
-The test rejects the hypothesis (and thus finds evidence of Granger causality) if the statistic is larger than the critical value (if the p-value is small) and fails to reject the hypothesis (and thus finds no evidence of causality) if the statistic is smaller than the critical value	小于临界值
 This is statistically significant at any conventional level so we can conclude that the unemployment rate has a predictively causal impact on inflation	这在任何传统水平上都具有统计显著性，因此我们可以得出结论，失业率对通货膨胀具有预测性因果影响
 Granger causality should not be interpreted structurally outside the context of an economic model	格兰杰因果关系不应在经济模型的背景下进行结构性解释
-The coefficients on the lagged stock price growth rates are small in magnitude but the first lag appears statistically significant	滞后股价增长率的系数幅度很小，但第一次滞后似乎具有统计显著性
+The coefficients on the lagged stock price growth rates are small in magnitude but the first lag appears statistically significant	滞后股价增长率的系数量值很小，但一阶滞后似乎具有统计显著性
 Thus stock prices move in advance of actual economic activity but are not necessarily structurally causal	因此，股票价格的变动先于实际经济活动，但不一定具有结构性因果关系
 Testing for Serial Correlation in Regression Models	回归模型中的序列相关性检验
 Consider the problem of testing for omitted serial correlation in an AR-DL model such as	考虑在 AR-DL 模型中检验遗漏的序列相关性的问题，例如
@@ -2539,11 +2526,11 @@ Therefore this approach is not recommended	因此不推荐这种方法
 The second approach is to combine equations (14.61)-(14.62) into a single model and execute the test as a restriction within this model	第二种方法是将方程（14.61）-（14.62）组合成单个模型，并作为该模型内的约束执行检验
 This test has a conventional asymptotic distribution so is simple to implement	该检验具有传统的渐近分布，因此易于实现
 The basic message is that testing for omitted serial correlation can be implement in regression models by estimating and contrasting different dynamic specifications	基本信息是，通过估计和对比不同的动态设定，可以在回归模型中实现对遗漏序列相关性的检验
-Bootstrap for Time Series	时间序列的 Bootstrap
+Bootstrap for Time Series	时间序列 Bootstrap
 Recall that the bootstrap approximates the sampling distribution of estimators and test statistics by the empirical distribution of the observations	回想一下，自助法通过观测的经验分布来近似估计量的抽样分布和检验统计量
-For dependent observations alternative methods should be used	对于相关观测，应使用替代方法
-Bootstrapping for time series is considerably more complicated than the cross section case	时间序列的自助比横截面情况复杂得多
-One of the challenges is that theoretical justifications are more difficult to establish than in the independent observation case	挑战之一是理论依据比独立观测案例更难建立
+For dependent observations alternative methods should be used	对于相依观测，应使用替代方法
+Bootstrapping for time series is considerably more complicated than the cross section case	时间序列的自助法比横截面情况复杂得多
+One of the challenges is that theoretical justifications are more difficult to establish than in the independent observation case	挑战之一是比独立性观测情形更难建立理论依据
 In this section we describe the most popular methods to implement bootstrap resampling for time series data	在本节中，我们将描述对时间序列数据实现自助重抽样的最流行的方法
 Recursive Bootstrap	递归自助法
 Another limitation is that it is inappropriate for AR-DL models unless the conditioning variables are strictly exogenous	另一个局限是它不适合 AR-DL 模型，除非条件变量是严格外生的
@@ -2551,30 +2538,28 @@ There are alternative versions of this basic method	这种基本方法还有其�
 This can improve precision when sample sizes are small but otherwise is not recommended	当样本量较小时，这可以提高精度，但在其他情况下不建议这样做
 Pairwise Bootstrap	成对自助
 This method may be useful when we are interested in the distribution of nonlinear functions of the coefficient estimates and therefore desire an improvement on the Delta Method approximation	当我们对系数估计的非线性函数的分布感兴趣并因此希望对 Delta 方法近似进行改进时，此方法可能很有用
-Fixed Design Residual Bootstrap	固定设计残差自助
-This construction is similar to the pairwise bootstrap but imposes an i.i.d. error	这种结构类似于成对自助，但强加了独立同分布
-Fixed Design Wild Bootstrap	固定设计狂原始自助法
-This construction is similar to the pairwise and fixed design bootstrap combined with the wild bootstrap	这种结构类似于成对固定设计自助法与狂原始自助法的结合
+Fixed Design Residual Bootstrap	固定构造残差自助
+This construction is similar to the pairwise bootstrap but imposes an i.i.d. error	这种结构类似于成对自助，但强加了独立同分布误差
+Fixed Design Wild Bootstrap	固定构造原始自助法
+This construction is similar to the pairwise and fixed design bootstrap combined with the wild bootstrap	这种结构类似于成对固定构造自助法与原始自助法的结合
 This imposes the conditional mean assumption on the error but allows heteroskedasticity	这对误差施加了条件均值假设，但允许异方差
 Block Bootstrap	块自助法
 This construction allows for arbitrary stationary serial correlation, heteroskedasticity, and modelmisspecification	这种结构允许任意平稳序列相关、异方差和模型误设
 Thus the block bootstrap is a natural generalization of the nonparametric bootstrap	因此，块自助法是非参数自助法的自然推广
 The second equality is Markov's inequality (B.36) and the following is the triangle inequality (B.1)	第二个不等式是马尔可夫不等式（B.36），接下来是三角不等式（B.1）
-Proof of Theorem 14.4 See Theorem 14.14	定理 14.4 的证明 参见定理 14.14
 Proof of Theorem 14.5 Strict stationarity follows from Theorem 14.2	定理 14.5 的证明 严格平稳性由定理 14.2 得出
-Proof of Theorem 14.9 We show (14.6). (14.7) follows by Markov's inequality (B.36)	定理 14.9 的证明 我们展示 (14.6)
 By the triangle inequality (B.1)	由三角不等式 (B.1)
 By another application of the triangle inequality and (14.63)	通过三角不等式的另一个应用和 (14.63)
 By Jensen's inequality (B.27), direct calculation, and (14.64)	通过 Jensen 不等式 (B.27)，直接计算，以及 (14.64)
 The approximation in (14.70) is (14.68)	(14.70) 中的近似值为 (14.68)
 This is why the MDS assumption cannot be easily replaced by a milder assumption such as white noise	这就是为什么 MDS 假设不能轻易地被更温和的假设（例如白噪声）取代
-which is (14.73) as claimed	正如所声称的那样，它是（14.73）
+which is (14.73) as claimed	正如所指出的那样，它是（14.73）
 The desired relationship (14.74) holds as follows	所需的关系 (14.74) 成立如下
 Consider separately the cases of real roots and complex roots	分别考虑实根和复根的情况
 Using the properties of the determinant (Theorem A.1.5)	使用行列式的性质（定理 A.1.5）
 Multivariate Time Series	多元时间序列
 VARs were introduced to econometrics by Sims (1980)	Sims (1980) 将 VAR 引入计量经济学
-Some excellent textbooks and review articles on multivariate time series include Hamilton (1994), Watson (1994), Canova (1995), Lütkepohl (2005), Ramey (2016), Stock and Watson (2016), and Kilian and Lütkepohl (2017)	关于多元时间序列的一些优秀教科书和评论文章包括 Hamilton (1994)、Watson (1994)、Canova (1995)、Lütkepohl (2005)、Ramey (2016)、Stock 和 Watson (2016) 以及 Kilian 和 Lütkepohl (2017)
+Some excellent textbooks and review articles on multivariate time series include Hamilton (1994), Watson (1994), Canova (1995), Lütkepohl (2005), Ramey (2016), Stock and Watson (2016), and Kilian and Lütkepohl (2017)	关于多元时间序列的一些优秀教科书和综述文章包括 Hamilton (1994)、Watson (1994)、Canova (1995)、Lütkepohl (2005)、Ramey (2016)、Stock 和 Watson (2016) 以及 Kilian 和 Lütkepohl (2017)
 Multiple Equation Time Series Models	多方程时间序列模型
 These two equations specify that each variable is a linear function of its own lag and the lag of the other variable	这两个方程设定每个变量都是其自身滞后和另一个变量滞后的线性函数
 Thus a multivariate autoregression is a set of autoregressive distributed lag models	因此，多元自回归是一组自回归分布式滞后模型
@@ -2583,38 +2568,37 @@ Furthermore, there is nothing special about the two variable case	此外，两�
 The VAR model falls in the class of multivariate regression models studied in Chapter 11	VAR 模型属于第 11 章中研究的多元回归模型类别
 In the following several sections we take a step back and provide a rigorous foundation for vector autoregressions for stationary time series	在下面的几个部分中，我们退后一步，为平稳时间序列的向量自回归提供严格的基础
 The uncorrelatedness of the projection errors is a property of a multivariate white noise process	投影误差的不相关性是多元白噪声过程的一个特征
-Multivariate Wold Decomposition	多元世界分解
-We can write the moving average representation using the lag operator notation as	我们可以使用滞后运算符符号将移动平均表示形式写为
-The series in (15.4) is convergent	(15.4) 中的级数是收敛的
+Multivariate Wold Decomposition	多元 Wold 分解
+We can write the moving average representation using the lag operator notation as	我们可以使用滞后算子符号将移动平均表达式写为
+The series in (15.4) is convergent	(15.4) 中的序列是收敛的
 For a proof see Section 2 of Meyer and Kreiss (2015)	证明请参见 Meyer 和 Kreiss (2015) 的第 2 节
-We can also provide an analog of Theorem 14.6	我们还可以提供定理 14.6 的模拟
+We can also provide an analog of Theorem 14.6	我们还可以提供定理 14.6 的类比
 While there is not a closed-form solution there is a simple recursion by which the coefficients may be calculated	虽然没有紧凑解方案，但可以通过简单的递归来计算系数
 Impulse Response	脉冲响应
-Recall the multivariate Wold representation	回想一下多元 Wold 表示
+Recall the multivariate Wold representation	回想一下多元 Wold 表达式
 Here we have defined the impulse response in terms of the linear projection operator	这里我们根据线性投影算子定义了脉冲响应
-In a linear vector autoregression the impulse response function is symmetric in negative and positive innovations	在线性向量自回归中，脉冲响应函数在负创新和正创新中是对称的
+In a linear vector autoregression the impulse response function is symmetric in negative and positive innovations	在线性向量自回归中，脉冲响应函数在负新息和正新息中是对称的
 The impulse response functions can be scaled as desired	脉冲响应函数可以根据需要标量化
-In this latter case impulse response functions can be interpreted as responses due to a "typical" sized (one standard deviation) innovation	在后一种情况下，脉冲响应函数可以解释为由于“典型”大小（一个标准误差）创新而产生的响应
+In this latter case impulse response functions can be interpreted as responses due to a "typical" sized (one standard deviation) innovation	在后一种情况下，脉冲响应函数可以解释为由于“典型”大小（一个标准误差）新息而产生的响应
 Closely related to the IRF is the cumulative impulse response function (CIRF) defined as	与 IRF 密切相关的是累积脉冲响应函数 (CIRF)，定义为
-This is the full (summed) effect of the innovation over all time	这是历年来创新的全部（总和）效果
+This is the full (summed) effect of the innovation over all time	这是所有时期下新息的全部（总和）效果
 In fact, in this context many authors will label the cumulative impulse response as "the impulse response"	事实上，在这种情况下，许多作者将累积脉冲响应标记为“脉冲响应”
 VAR(1) Model	VAR(1)模型
 The first-order vector autoregressive process, denoted VAR(1), is	一阶向量自回归过程，表示为 VAR(1)，为
 The proof is given in Section 15.31	第 15.31 节给出了证明
-We can write the model using the lag operator notation as	我们可以使用滞后运算符符号将模型编写为
+We can write the model using the lag operator notation as	我们可以使用滞后算子符号将模型编写为
 The condition for stationarity of the system can be expressed as a restriction on the roots of the determinantal equation of the autoregressive polynomial	系统平稳性的条件可以表示为对自回归多项式行列式方程根的约束
 Regression Notation	回归符号
 This is a multivariate regression model	这是一个多元回归模型
-Estimation	预估
 From Chapter 11 the systems estimator of a multivariate regression is least squares	从第 11 章开始，多元回归的系统估计量是最小二乘法
-VAR models can be estimated in Stata using the var command	可以使用 var 命令在 Stata 中估计 VAR 模型
+VAR models can be estimated in Stata using the var command	可以在 Stata 中使用 var 命令估计 VAR 模型
 In words, these are the correct lags and there is no omitted nonlinearity	换句话说，这些是正确的滞后并且没有遗漏非线性
 If we further strengthen the MDS assumption to conditional homoskedasticity	如果我们进一步将 MDS 假设强化为条件同方差
 then the asymptotic variance simplifies as	那么渐近方差简化为
 In contrast, if the VAR(p) is an approximation then the MDS assumption is not appropriate	相反，如果 VAR(p) 是近似值，则 MDS 假设不合适
 In this case the asymptotic distribution can be derived under mixing conditions	在这种情况下，可以在混合条件下导出渐近分布
 This theorem does not require that the true process is a VAR	该定理不要求真实过程是 VAR
-The theorem shows that the coefficient estimators are asymptotically normal with a covariance matrix which takes a "long-run" sandwich form	该定理表明，系数估计量对于采用“长期”三明治形式的协方差矩阵是渐近正态的
+The theorem shows that the coefficient estimators are asymptotically normal with a covariance matrix which takes a "long-run" sandwich form	该定理表明，系数估计量对于采用“长期” sandwich 形式的协方差矩阵是渐近正态的
 Estimators adjusted for degree-of-freedom can also be used though there is no established finite-sample justification	尽管没有确定的有限样本合理性，但也可以使用针对自由度进行调整的估计量
 The heteroskedasticity-robust estimator equals	异方差稳健估计量等于
 Traditional textbooks have only used the homoskedastic variance estimation formula (15.9) and consequently existing software follows the same convention	传统教科书仅使用同方差估计公式（15.9），因此现有软件遵循相同的约定
@@ -2627,14 +2611,14 @@ This does not affect the ranking of the models but makes the differences between
 We estimate a three-variable system which is a simplified version of a model often used to study the impact of monetary policy	我们估计一个三变量系统，这是经常用于研究货币政策影响的模型的简化版本
 The coefficient estimates and (homoskedastic) standard errors for the VAR(6) are reported in Table 15.1	表 15.1 报告了 VAR(6) 的系数估计值和（同方差）标准误差
 Examining the coefficients in the table we can see that GDP displays a moderate degree of serial correlation and shows a large response to the federal funds rate, especially at lags 2 and 3	检查表中的系数，我们可以看到 GDP 显示出中等程度的序列相关性，并对联邦基金利率显示出较大的响应，尤其是在滞后 2 和 3 时
-Because of this difficulty it is typical to focus on other representations of the coefficient estimates such as impulse responses which we discuss in the upcoming sections	由于这一困难，通常将重点放在系数估计的其他表示上，例如我们将在接下来的部分中讨论的脉冲响应
+Because of this difficulty it is typical to focus on other representations of the coefficient estimates such as impulse responses which we discuss in the upcoming sections	由于这一困难，通常将重点放在系数估计的其他表达式上，例如我们将在接下来的部分中讨论的脉冲响应
 Predictive Regressions	预测回归
 In some contexts (including prediction) it is useful to consider models where the dependent variable is dated multiple periods ahead of the right-hand-side variables	在某些情况下（包括预测），考虑因变量的日期早于右侧变量多个周期的模型是有用的
 There are several implications of this theorem	这个定理有几个含义
 The predictive regression (15.12) can be estimated by least squares	预测回归（15.12）可以通过最小二乘法来估计
 For a distributional theory we can apply Theorem 15.11	对于分布理论，我们可以应用定理 15.11
 Impulse Response Estimation	脉冲响应估计
-Reporting of impulse response estimates is one of the most common applications of vector autoregressive modeling	脉冲响应估计报告是矢量自回归建模最常见的应用之一
+Reporting of impulse response estimates is one of the most common applications of vector autoregressive modeling	脉冲响应估计报告是向量自回归建模最常见的应用之一
 In this section we review the most common estimator based on the estimated VAR parameters	在本节中，我们将回顾基于估计 VAR 参数的最常见估计量
 Within a VAR(p) model the impulse responses are determined by the VAR coefficients	在 VAR(p) 模型中，脉冲响应由 VAR 系数确定
 This is the the most commonly used method for impulse response estimation and it is the method implemented in standard packages	这是脉冲响应估计最常用的方法，并且是在标准包中实现的方法
@@ -2662,16 +2646,16 @@ Similar to the Durbin regression the Chang-Sakata estimator is a two-step estima
 Chang and Sakata (2007) also point out the following implication of the FWL theorem	Chang 和 Sakata (2007) 还指出了 FWL 定理的以下含义
 Thus the Chang-Sakata estimator is similar to a local projection estimator	因此，Chang-Sakata 估计量类似于局部投影估计量
 Orthogonalized Shocks	正交冲击
-We can use the impulse response function to examine how the innnovations impact the time-paths of the variables	我们可以使用脉冲响应函数来检查创新如何影响变量的时间路径
-The natural solution is to orthogonalize the innovations so that they are uncorrelated and then view the orthogonalized errors as the fundamental "shocks"	自然的解决方案是对创新进行正交化，使它们不相关，然后将正交化误差视为根本的“冲击”
+We can use the impulse response function to examine how the innnovations impact the time-paths of the variables	我们可以使用脉冲响应函数来检查新息如何影响变量的时间路径
+The natural solution is to orthogonalize the innovations so that they are uncorrelated and then view the orthogonalized errors as the fundamental "shocks"	自然的解决方案是对新息进行正交化，使它们不相关，然后将正交化误差视为根本的“冲击”
 with non-negative diagonal elements	具有非负对角线元素
-Equivalently, the innovations are related to the orthogonalized shocks by the equations	同样，创新与方程的正交冲击有关
+Equivalently, the innovations are related to the orthogonalized shocks by the equations	同样，新息与方程的正交冲击有关
 When using the Cholesky decomposition the recursive structure is determined by the ordering of the variables in the system	当使用 Cholesky 分解时，递归结构由系统中变量的顺序确定
 We will return to this issue later	我们稍后会回到这个问题
 Finally, we mention that the system (15.15) is equivalent to the system	最后，我们提到系统（15.15）相当于系统
-The representation (15.15) is more convenient, however, for most of our purposes	然而，对于我们的大多数目的来说，表示（15.15）更方便
+The representation (15.15) is more convenient, however, for most of our purposes	然而，对于我们的大多数目的来说，表达式（15.15）更方便
 Orthogonalized Impulse Response Function	正交脉冲响应函数
-We can write the multivariate Wold representation as	我们可以将多元 Wold 表示写为
+We can write the multivariate Wold representation as	我们可以将多元 Wold 表达式写为
 The cumulative orthogonalized impulse response function (COIRF) is	累积正交脉冲响应函数 (COIRF) 为
 Orthogonalized Impulse Response Estimation	正交脉冲响应估计
 We first estimate the VAR(p) model by least squares	我们首先通过最小二乘法估计 VAR(p) 模型
@@ -2687,7 +2671,7 @@ The forecast error decomposition indicates which shocks contribute towards the f
 Figure 15.1: Response of GDP Growth to Orthogonalized Fed Funds Shock	图 15.1：GDP 增长对正交联邦基金冲击的反应
 It is defined as follows	它的定义如下
 The variance of this forecast error is	该预测误差的方差为
-A forecast error decomposition requires orthogonalized innovations	预测误差分解需要正交创新
+A forecast error decomposition requires orthogonalized innovations	预测误差分解需要正交新息
 The forecast error decomposition can be calculated and displayed in Stata using the irf command	可以使用 irf 命令在 Stata 中计算并显示预测误差分解
 Identification of Recursive VARs	递归 VAR 的识别
 As we have discussed, a common method to orthogonalize the VAR errors is the lower triangular Cholesky decomposition which implies a recursive structure	正如我们所讨论的，正交化 VAR 误差的常用方法是下三角 Cholesky 分解，它意味着递归结构
@@ -2856,7 +2840,7 @@ Define the mean of a variable for a given individual as	将给定个体的变量
 We call this the individual-specific mean since it is the mean of a given individual	我们将其称为个体特定均值，因为它是给定个体的均值
 Contrarywise, some authors call this the time-average or time-mean since it is the average over the time periods	相反，一些作者将其称为时间平均或时间平均值，因为它是一段时间内的平均值
 Subtracting the individual-specific mean from the variable we obtain the deviations	从变量中减去个体特定平均值，我们得到离差
-This is known as the within transformation	这称为内部转换
+This is known as the within transformation	这称为内部变换
 What is important is that the demeaning has occured at the individual level	重要的是这种侮辱发生在个体层面
 Some algebra may also be useful	一些代数也可能有用
 Similarly for the regressors we define the individual-specific means and demeaned values:	同样，对于自变量，我们定义了个体特定的平均值和离差：
@@ -2870,7 +2854,7 @@ This means that the the endogeneity bias described in the previous section will 
 Another consequence, however, is that all time-invariant regressors are also eliminated	然而，另一个结果是所有时不变自变量也被消除
 The two have observationally equivalent effects and cannot be separately identified	两者在观察上具有相同的效果，无法单独识别
 The within transformation can greatly reduce the variance of the regressors	内变换可以大大减少自变量的方差
-It is not typically needed to directly program the within transformation, but if it is desired the following Stata commands easily do so	通常不需要直接对内部转换进行编程，但如果需要，可以使用以下 Stata 命令轻松实现
+It is not typically needed to directly program the within transformation, but if it is desired the following Stata commands easily do so	通常不需要直接对内部变换进行编程，但如果需要，可以使用以下 Stata 命令轻松实现
 Fixed Effects Estimator	固定效应估计量
 Consider least squares applied to the demeaned equation (17.21) or equivalently (17.22)	考虑将最小二乘应用于离差方程（17.21）或等效方程（17.22）
 It is called the within estimator because it is based on the variation of the data within each individual	它被称为内部估计量，因为它基于每个个体内数据的变化
@@ -2909,7 +2893,7 @@ In current practice the estimators (17.38) and (17.40) are the most commonly use
 The point estimates are similar to the random effects estimates, though the coefficients on debt and cash flow increase in magnitude	点估计与随机效应估计相似，尽管债务和现金流量的系数增加了
 Fixed Effects Estimation in Stata	Stata 中的固定效应估计
 The first method is dummy variable regression	第一种方法是虚拟变量回归
-(Other statistics can be reported as well.) The second method is to manually create the within transformed variables as described in Section 17.8, and then use regress	）第二种方法是手动创建内部转换变量，如第 17.8 节所述，然后使用回归
+(Other statistics can be reported as well.) The second method is to manually create the within transformed variables as described in Section 17.8, and then use regress	）第二种方法是手动创建内部变换变量，如第 17.8 节所述，然后使用回归
 The fourth method is areg absorb (id)	第四种方法是aregsorb(id)
 An important difference between the Stata xtreg and areg commands is that they implement different cluster-robust covariance matrix estimators: (17.38) in the case of xtreg and (17.40) in the case of areg	Stata xtreg 和 areg 命令之间的一个重要区别是，它们实现了不同的群组稳健协方差矩阵估计量：对于 xtreg 为 (17.38)，对于 areg 为 (17.40)
 As discussed in the previous section the adjustment used by areg is ad hoc and not well-justified but produces the largest and hence most conservative standard errors	正如上一节中所讨论的，areg 使用的调整是临时的且没有充分理由，但会产生最大且因此最保守的标准误差
@@ -2925,7 +2909,7 @@ Feasible GLS	可行的GLS
 The random effects estimator can be written as	随机效应估计量可以写为
 It is instructive to study these transformations	研究这些转变是有启发性的
 Therefore the transformation used by the GLS estimator is	因此 GLS 估计量使用的变换是
-which is a partial within transformation	这是转换中的一部分
+which is a partial within transformation	这是变换中的一部分
 The feasible random effects estimator is (17.45) using (17.49) and (17.50)	可行的随机效应估计量是使用（17.49）和（17.50）的（17.45）
 What this shows is the following	这表明了以下内容
 Thus when the variance estimates suggest that the individual effect is relatively large the random effect estimator is close to the fixed effects estimator	因此，当方差估计表明个体效应相对较大时，随机效应估计量接近固定效应估计量
@@ -3007,15 +2991,15 @@ so the individual and time effects are eliminated	这样就消除了个体和时
 The two-way within transformation applied to (17.63) yields	应用于 (17.63) 的双向内变换得到
 The two-way within estimator is least squares applied to (17.66)	双向内估计量是应用于 (17.66) 的最小二乘法
 For the unbalanced case there are two computational approaches to implement the estimator	对于不平衡的情况，有两种计算方法来实现估计量
-This is the dummy variable representation of the two-way error components model	这是双向误差成分模型的虚拟变量表示
+This is the dummy variable representation of the two-way error components model	这是双向误差成分模型的虚拟变量表达式
 As the number of time periods is typically modest this is a computationally attractive approach	由于时间段的数量通常是适度的，因此这是一种在计算上有吸引力的方法
 The second computational approach is to eliminate the time effects by residual regression	第二种计算方法是通过残差回归消除时间影响
-What is important about this two-step procedure is that the second step is not a within transformation across the time index but rather standard regression	这个两步过程的重要之处在于，第二步不是跨时间标引的内部转换，而是标准回归
+What is important about this two-step procedure is that the second step is not a within transformation across the time index but rather standard regression	这个两步过程的重要之处在于，第二步不是跨时间标引的内部变换，而是标准回归
 Coefficients are only identified for regressors which have variation both across individuals and across time	仅针对在个体和时间上都有变化的自变量来确定系数
 If the test rejects the hypothesis of zero coefficients then this indicates that the time effects are relevant in the regression model	如果检验拒绝零系数的假设，则表明时间效应在回归模型中相关
 In this example the coefficient estimates and standard errors are not greatly affected by the inclusion of the year dummy variables	在此示例中，包含年份虚拟变量不会对系数估计值和标准误差产生太大影响
 Take the fixed effects model	采用固定效应模型
-In Section 12.12, we described several alternative representations for the 2SLS estimator	在 12.12 节中，我们描述了 2SLS 估计量的几种替代表示
+In Section 12.12, we described several alternative representations for the 2SLS estimator	在 12.12 节中，我们描述了 2SLS 估计量的几种替代表达式
 This estimator can be obtained using the Stata command xtivreg fe	该估计量可以使用 Stata 命令 xtivreg fe 获得
 It can also be obtained using the Stata command ivregress after making the within transformations	也可以在进行内变换后使用 Stata 命令 ivregress 获得
 The presentation above focused for clarity on the one-way fixed effects model	为了清楚起见，上述演示重点关注单向固定效应模型
@@ -3023,7 +3007,7 @@ Identification with Instrumental Variables	工具变量的识别
 The 2SLS estimator is a function of the within transformed variables	2SLS 估计量是内部变换变量的函数
 Thus for identification of the fixed effects instrumental variables model we need	因此，为了识别固定效应工具变量模型，我们需要
 Condition (17.70) is the same as the condition for identification in fixed effects regression - the instruments must have full variation after the within transformation	条件 (17.70) 与固定效应回归中的识别条件相同 - 工具在内部变换后必须具有完全变异
-Condition (17.71) is analogous to the relevance condition for identification of instrumental variable regression in the cross-section context but applies to the within-transformed instruments and regressors	条件 (17.71) 类似于在横截面上下文中识别工具变量回归的相关条件，但适用于内部转换的工具和自变量
+Condition (17.71) is analogous to the relevance condition for identification of instrumental variable regression in the cross-section context but applies to the within-transformed instruments and regressors	条件 (17.71) 类似于在横截面上下文中识别工具变量回归的相关条件，但适用于内部变换的工具和自变量
 Condition (17.71) shows that to examine instrument validity in the context of fixed effects 2SLS it is important to estimate the reduced form equation using fixed effects (within) regression	条件 (17.71) 表明，要检查固定效应 2SLS 背景下的工具有效性，重要的是使用固定效应（内）回归来估计精简形式方程
 However, since the correlation structure of the reduced form equation is in general unknown it is appropriate to use a cluster-robust covariance matrix, clustered at the level of the individual	然而，由于精简形式方程的相关结构通常是未知的，因此适合使用在个体水平上聚类的群组稳健协方差矩阵
 Asymptotic Distribution of Fixed Effects 2SLS Estimator	固定效应 2SLS 估计量的渐近分布
@@ -3050,7 +3034,7 @@ Hausman-Taylor Model	豪斯曼泰勒模型
 Hausman and Taylor (1981) consider a generalization of the previous model	Hausman 和 Taylor (1981) 考虑了先前模型的推广
 Write the model in matrix notation as	将模型用矩阵表示法写为
 It is recommended to use cluster-robust covariance matrix estimation clustered at the individual level	建议使用在个体级别聚类的群组稳健协方差矩阵估计
-When the model is over-identified the equation can also be estimated by GMM with a cluster-robust weight matrix using the same equations and instruments	当模型被过度识别时，也可以使用相同的方程和工具，通过具有群组稳健权重矩阵的 GMM 来估计方程
+When the model is over-identified the equation can also be estimated by GMM with a cluster-robust weight matrix using the same equations and instruments	当模型过度识别时，也可以使用相同的方程和工具，通过具有群组稳健权重矩阵的 GMM 来估计方程
 The 2SLS estimator described above corresponds with the Hausman and Taylor (1981) estimator in the just-identified case with a balanced panel	上述 2SLS 估计量与刚刚确定的平衡面板情况下的 Hausman 和 Taylor (1981) 估计量相对应
 Otherwise, the estimator can be implemented using the instrumental variable method described above	否则，可以使用上述工具变量方法来实现估计量
 The Hausman-Taylor estimator was refined by Amemiya and MaCurdy (1986) and Breusch, Mizon and Schmidt (1989) who proposed more efficient versions using additional instruments which are valid under stronger orthogonality conditions	Hausman-Taylor 估计量由 Amemiya 和 MaCurdy (1986) 以及 Breusch、Mizon 和 Schmidt (1989) 进行了改进，他们提出了使用附加工具的更有效版本，这些工具在更强的正交性条件下有效
@@ -3086,7 +3070,7 @@ Arellano-Bond Estimator	阿雷拉诺债券估计量
 The orthogonality condition (17.88) is one of many implied by the dynamic panel model	正交条件 (17.88) 是动态面板模型隐含的众多条件之一
 This was first pointed out by Holtz-Eakin, Newey, and Rosen (1988) and further developed by Arellano and Bond (1991)	这首先由 Holtz-Eakin、Newey 和 Rosen (1988) 指出，并由 Arellano 和 Bond (1991) 进一步发展
 Using these extra instruments has a complication that there are a different number of instruments for each time period	使用这些额外的工具有一个复杂之处，即每个时间段都有不同数量的工具
-It will be useful to first write the model in vector notation	首先用矢量表示法编写模型会很有用
+It will be useful to first write the model in vector notation	首先用向量表示法编写模型会很有用
 Estimator (17.91) is known as the one-step Arellano-Bond GMM estimator	估计量 (17.91) 被称为一步 Arellano-Bond GMM 估计量
 An asymptotically efficient two-step GMM estimator which allows heterskedasticity is	允许异方差的渐近有效两步 GMM 估计量是
 Estimator (17.94) is known as the two-step Arellano-Bond GMM estimator	估计量 (17.94) 被称为两步 Arellano-Bond GMM 估计量
@@ -3169,7 +3153,7 @@ A restaurant with longer hours will tend to have more employees	营业时间较�
 The estimated treatment effect is not meaningfully changed	估计的处置效应没有发生有意义的改变
 Theorem 18.1 Suppose the following conditions hold:	定理 18.1 假设以下条件成立：
 Condition 1 states that the outcome equals the specified linear regression model which is additively separable in the observables, individual effect, and time effect	条件 1 表明结果等于指定的线性回归模型，该模型在可观察量、个体效应和时间效应中可加性分离
-Condition 2 states that the two-way within transformed regressors have a non-singular design matrix	条件 2 表明变换自变量内的双向具有非奇异设计矩阵
+Condition 2 states that the two-way within transformed regressors have a non-singular design matrix	条件 2 表明变换自变量内的双向具有非奇异构造矩阵
 Condition 3 is the standard exogeneity asumption for regressors in a fixed-effects model	条件 3 是固定效应模型中自变量的标准外生性假设
 Condition 4 states that the treatment variable is conditionally independent of the idiosyncratic error	条件 4 表明处置变量条件地独立于特殊误差
 This is the conditional independence assumption for fixed effects regression	这是固定效应回归的条件独立假设
@@ -3299,7 +3283,7 @@ For a proof for the local linear estimator see Fan and Gijbels (1996)	有关局�
 This is called smoothing bias	这称为平滑偏误
 We illustrate asymptotic smoothing bias in Figure 19.2	我们在图 19.2 中说明了渐近平滑偏误
 The dashed lines are smoothed versions of the CEF, attenuating the peaks and valleys	虚线是 CEF 的平滑版本，减弱了峰值和谷值
-Smoothing bias is a natural by-product of nonparametric estimation of nonlinear functions	平滑偏误是非线性函数非参数估计的自然副产品
+Smoothing bias is a natural by-product of nonparametric estimation of nonlinear functions	平滑偏误是非线性函数非参数估计的自然副产物
 As we see in the following section this will result in high estimation variance	正如我们在下一节中看到的，这将导致较高的估计方差
 Figure 19.2: Smoothing Bias	图 19.2：平滑偏误
 Asymptotic Variance	渐近方差
@@ -3485,7 +3469,7 @@ Linear spline models with a single knot have been recently popularized by Card, 
 The Global/Local Nature of Series Regression	系列回归的全局/局部性质
 While this description has some merit it is not a complete description	虽然这个描述有一些优点，但它并不是一个完整的描述
 To see this, observe that we can write the estimator as	为了看请这一点，观察到我们可以将估计量写为
-Figure 20.3: Kernel Representation of Polynomial Weight Function	图 20.3：多项式权重函数的核表示
+Figure 20.3: Kernel Representation of Polynomial Weight Function	图 20.3：多项式权重函数的核表达式
 Qualitatively similar plots are obtained for spline regression	样条回归获得了定性相似的图
 Stone-Weierstrass and Jackson Approximation Theory	斯通-韦尔斯特拉斯和杰克逊近似理论
 Formal statements can be derived from the mathematical theory of the approximation of functions	形式陈述可以从函数逼近的数学理论中导出
@@ -3499,11 +3483,11 @@ The available theory of the approximation of functions goes beyond the results d
 Regressor Bounds	自变量界
 Figure 20.4: Normalized Regressor Length	图 20.4：标准化自变量长度
 Matrix Convergence	矩阵收敛
-One of the challenges which arise when developing a theory for the least squares estimator is how to describe the large-sample behavior of the sample design matrix	开发最小二乘估计理论时出现的挑战之一是如何描述样本设计矩阵的大样本行为
+One of the challenges which arise when developing a theory for the least squares estimator is how to describe the large-sample behavior of the sample design matrix	开发最小二乘估计理论时出现的挑战之一是如何描述样本构造矩阵的大样本行为
 It turns out to be convenient if we first rotate the regressor vector so that the elements are orthogonal in expectation	如果我们首先旋转回归向量以使元素在期望中正交，结果会很方便
 The standardized regressors are not used in practice; they are introduced only to simplify the theoretical derivations	标准化自变量并未在实践中使用；引入它们只是为了简化理论推导
-We are now in a position to describe a convergence result for the standardized design matrix	我们现在可以描述标准化设计矩阵的收敛结果
-For the least squares estimator what is particularly important is the inverse of the sample design matrix	对于最小二乘估计量来说，特别重要的是样本设计矩阵的逆
+We are now in a position to describe a convergence result for the standardized design matrix	我们现在可以描述标准化构造矩阵的收敛结果
+For the least squares estimator what is particularly important is the inverse of the sample design matrix	对于最小二乘估计量来说，特别重要的是样本构造矩阵的逆
 Fortunately we can easily deduce consistency of its inverse from (20.19) when the regressors have been orthogonalized as described	幸运的是，当自变量按所述正交化时，我们可以轻松地从 (20.19) 推断出其逆的一致性
 Consistent Estimation	一致的估计
 We can establish the following	我们可以建立以下内容
@@ -3931,8 +3915,8 @@ Assumption 24.1 Conditions for Quantile Causal Effect	假设 24.1 分位数因�
 Assumption 24.1.1 excludes multi-dimensional unobserved heterogeneity	假设 24.1.1 排除了多维不可观察到的异质性
 Assumption 24.1.4 is the traditional conditional independence assumption	假设24.1.4是传统的条件独立假设
 The proof is in Section 24.16	证明在第 24.16 节中
-Random Coefficient Representation	随机系数表示
-For some theoretical purposes it is convenient to write the quantile regression model using a random coefficient representation	出于某些理论目的，使用随机系数表示形式编写分位数回归模型很方便
+Random Coefficient Representation	随机系数表达式
+For some theoretical purposes it is convenient to write the quantile regression model using a random coefficient representation	出于某些理论目的，使用随机系数表达式编写分位数回归模型很方便
 This also provides an alternative interpretation of the coefficients	这也提供了系数的另一种解释
 Nonparametric Quantile Regression	非参数分位数回归
 As emphasized in Section 24.10, quantile regression functions are undoubtedly nonlinear with unknown functional form and hence nonparametric	正如第 24.10 节所强调的，分位数回归函数无疑是非线性的，具有未知的函数形式，因此是非参数的
@@ -3942,7 +3926,7 @@ A spline approximation is defined similarly	样条近似的定义类似
 Undoubtedly these questions are an important topic for future study	毫无疑问，这些问题是未来研究的重要课题
 To illustrate we revisit the nonparametric polynomial estimates of the experience profile for collegeeducated women earlier displayed in Figure 20.1	为了说明这一点，我们重新审视之前图 20.1 中显示的受过大学教育的女性的经验概况的非参数多项式估计
 This means that heterogeneity in wages increases more than proportionately as experience increases	这意味着工资的异质性随着经验的增加而增加
-It seems natural to consider estimation by one of our standard methods: (1) Remove the individual effect by the within transformation; (2) Remove the invidual effect by first differencing; (3) Estimate a full quantile regression model using the dummy variable representation	考虑通过我们的标准方法之一进行估计似乎是很自然的：（1）通过内部变换消除个体效应； (2)通过一阶差分去除个体效应； (3) 使用虚拟变量表示估计完整分位数回归模型
+It seems natural to consider estimation by one of our standard methods: (1) Remove the individual effect by the within transformation; (2) Remove the invidual effect by first differencing; (3) Estimate a full quantile regression model using the dummy variable representation	考虑通过我们的标准方法之一进行估计似乎是很自然的：（1）通过内部变换消除个体效应； (2)通过一阶差分去除个体效应； (3) 使用虚拟变量表达式估计完整分位数回归模型
 Figure 24.6: Log Wage Quantile Regressions	图 24.6：对数工资分位数回归
 dummy variable model has the number of parameters proportional to sample size and in this context nonlinear estimators (including quantile regression) are inconsistent	虚拟变量模型的参数数量与样本大小成正比，在这种情况下，非线性估计量（包括分位数回归）是不一致的
 There have been several proposals to deal with this issue but none are particularly satisfactory	已经有几个解决这个问题的建议，但没有一个特别令人满意
@@ -4480,7 +4464,7 @@ Model Averaging	模型平均
 Recall that the problem of model selection is how to select a single model from a general set of models	回想一下，模型选择的问题是如何从一组通用模型中选择单个模型
 The key issue for estimation is how to select the averaging weights	估计的关键问题是如何选择平均权重
 All models are subsets of a general superset (overlapping) model which contains all submodels as special cases	所有模型都是通用超集（重叠）模型的子集，该模型包含所有子模型作为特殊情况
-Since the weights on the probability simplex sum to one, an alternative representation is to eliminate one weight by substitution	由于概率单纯形上的权重之和为 1，因此另一种表示方法是通过替换来消除一个权重
+Since the weights on the probability simplex sum to one, an alternative representation is to eliminate one weight by substitution	由于概率单纯形上的权重之和为 1，因此另一种表达方法是通过替换来消除一个权重
 Given a weight vector we define the averaging estimator	给定一个权重向量，我们定义平均估计量
 The positive-part version, however, imposes non-negativity and achieves reduced MSE as a result	然而，正部分版本强加了非负性并因此实现了 MSE 的降低
 The MSE of the optimal averaging estimator is less than the MSE of the estimator of the full model in any given sample	最优平均估计量的 MSE 小于任何给定样本中完整模型的估计量的 MSE
@@ -4608,7 +4592,7 @@ Ridge Regression	岭回归
 Ridge regression is a shrinkage-type estimator with similar but distinct properties from the JamesStein estimator (see Section 28.20)	岭回归是一种收缩型估计量，与 JamesStein 估计量具有相似但不同的特征（参见第 28.20 节）
 We discuss both in turn	我们依次讨论两者
 The second motivation is based on penalization	第二个动机是基于惩罚
-Minimization subject to a penalty has a dual representation as constrained minimization	受到惩罚的最小化具有作为约束最小化的双重表示
+Minimization subject to a penalty has a dual representation as constrained minimization	受到惩罚的最小化具有作为约束最小化的双重表达
 This shows that they have the same solution	这表明他们有相同的解决方案
 Figure 29.1: Ridge Regression Dual Minimization Solution	图 29.1：岭回归双极小化解决方案
 and minimize the SSE subject to the penalty	并将上交所受到的处罚降到最低
@@ -4666,7 +4650,7 @@ Therefore penalty selection by minimization of the K-fold criterion is aimed to 
 The idea is to select a model similar but more parsimonious than the CV-minimizing choice	这个想法是选择一个与 CV 最小化选择类似但更简约的模型
 Asymptotic consistency of CV selection for Lasso estimation has been demonstrated by Chetverikov, Liao, and Chernozhukov (2021)	Chetverikov、Liao 和 Chernozhukov (2021) 证明了 Lasso 估计的 CV 选择的渐近一致性
 Lasso Computation	套索计算
-The constraint representation of Lasso is minimization of a quadratic subject to linear inequality constraints	Lasso 的约束表示是受线性不等式约束的二次方程的最小化
+The constraint representation of Lasso is minimization of a quadratic subject to linear inequality constraints	Lasso 的约束表达式是受线性不等式约束的二次方程的最小化
 The LARS algorithm produces a path of coefficients starting at the origin and ending at least squares	LARS 算法生成一条从原点开始到至少平方结束的系数路径
 This algorithm produces the Lasso path	该算法生成 Lasso 路径
 The demonstration is tedious so is not shown here	演示比较繁琐，这里就不展示了
