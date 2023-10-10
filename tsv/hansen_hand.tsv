@@ -3456,7 +3456,7 @@ To illustrate we consider the data set CHJ2004 which is a sample of 8684 urban P
 Figure 20.2: Spline Regression Estimates	图 20.2：样条回归估计
 This model has a total of 22 coefficients	该模型共有 22 个系数
 A linear spline model is particularly well suited for this application as it allows for discontinuous changes in slope	线性样条模型特别适合此应用，因为它允许斜率的不连续变化
-Linear spline models with a single knot have been recently popularized by Card, Lee, Pei, and Weber (2015) with the label regression kink design	Card、Lee、Pei 和 Weber (2015) 最近通过回归拐点设计的标签推广了具有单结的线性样条模型
+Linear spline models with a single knot have been recently popularized by Card, Lee, Pei, and Weber (2015) with the label regression kink design	Card、Lee、Pei 和 Weber (2015) 最近通过回归扭结设计的标签推广了具有单结的线性样条模型
 The Global/Local Nature of Series Regression	系列回归的全局/局部性质
 While this description has some merit it is not a complete description	虽然这个描述有一些优点，但它并不是一个完整的描述
 To see this, observe that we can write the estimator as	为了看请这一点，观察到我们可以将估计量写为
@@ -3499,7 +3499,7 @@ It shows that the asymptotic distribution is normal but has a non-trivial finite
 Residuals and Regression Fit	残差和回归拟合
 Cross-Validation Model Selection	交叉验证模型选择
 What may be surprising is that even for panel (a), which has a large sample and smooth estimates, the CV-selected model is still relatively parsimonious	可能令人惊讶的是，即使对于具有大样本和平滑估计的面板 (a)，CV 选择的模型仍然相对简约
-Both CV functions are relatively similar across these values	两个 CV 函数在这些值上都相对相似
+Both CV functions are relatively similar across these values	两个 CV 函数在这些值上都相对近似
 Figure 20.6: Cross-Validation Functions for Polynomial Estimates of Experience Profile	图 20.6：经验曲线多项式估计的交叉验证函数
 In the case of conditional homoskedasticity the latter simplifies to	在条件同方差的情况下，后者简化为
 In either case we find that the variance is approximately	在任何一种情况下，我们发现方差大约为
@@ -3513,40 +3513,40 @@ Consequently we should interpret their coverage as having pointwise validity and
 Uniform Approximations	统一近似
 might converge to a stochastic (Gaussian) process, but this is not the case	可能会收敛到随机（高斯）过程，但事实并非如此
 To develop a uniform theory, Belloni, Chernozhukov, Chetverikov, and Kato (2015) have introduced what are known as strong approximations	为了发展统一理论，Belloni、Chernozhukov、Chetverikov 和 Kato (2015) 引入了所谓的强近似
-It can also be used to develop confidence bands (different from those from the previous section) with asymptotic uniform coverage	它还可用于开发具有渐进均匀覆盖的置信带（与上一节中的不同）
-Partially Linear Model	部分线性模型
+It can also be used to develop confidence bands (different from those from the previous section) with asymptotic uniform coverage	它还可用于开发具有渐进统一覆盖的置信带（与上一节中的不同）
+Partially Linear Model	偏线性模型
 Panel Fixed Effects	面板固定效果
 The one-way error components nonparametric regression model is	单向误差成分非参数回归模型为
 The fixed effects estimator is the same as in linear panel data regression	固定效应估计量与线性面板数据回归中的相同
 The coefficient is estimated by least squares on the within transformed variables	通过组内变换变量的最小二乘估计系数
-This includes all powers and cross-products	这包括所有权力和叉积
+This includes all powers and cross-products	这包括所有幂数和叉积
 The inclusion of cross-products greatly increases the number of coefficients relative to the univariate case	相对于单变量情况，包含叉积大大增加了系数的数量
-Consequently series applications with multiple regressors typically require large sample sizes	因此，具有多个自变量的系列应用通常需要大样本量
+Consequently series applications with multiple regressors typically require large sample sizes	因此，具有多个自变量的序列应用通常需要大样本量
 Additively Separable Models	可加分离模型
 Essentially, this is the same as the expansions discussed in the previous section but omitting the interaction terms	本质上，这与上一节中讨论的扩展相同，但省略了交互项
 The advantage of additive separability is the reduction in dimensionality	加法可分离性的优点是降维
 This is a major reduction	这是一个重大的减少
-The disadvantage of additive separability is that the interaction effects have been eliminated	加性可分离性的缺点是相互作用效应被消除了
-The decision to impose additive separability can be based on an economic model which suggests the absence of interaction effects, or can be a model selection decision similar to the selection of the number of series terms	施加加性可分性的决定可以基于表明不存在相互作用效应的经济模型，或者可以是类似于级数项数量的选择的模型选择决策
+The disadvantage of additive separability is that the interaction effects have been eliminated	加法可分离性的缺点是相互作用效应被消除了
+The decision to impose additive separability can be based on an economic model which suggests the absence of interaction effects, or can be a model selection decision similar to the selection of the number of series terms	施加加法可分离性的决定可以基于表明不存在交互作用效应的经济模型，或者可以是基于类似于序列项数量选择的模型选择
 Nonparametric Instrumental Variables Regression	非参数工具变量回归
 The basic nonparametric instrumental variables (NPIV) model takes the form	基本非参数工具变量 (NPIV) 模型采用以下形式
 In recent years there have been many papers in the econometrics literature examining the NPIV model, exploring identification, estimation, and inference	近年来，计量经济学文献中有许多论文研究了 NPIV 模型，探索识别、估计和推断
 Here we describe some of the primary results	在这里，我们描述了一些主要结果
 Notice that this is lower triangular and full rank	请注意，这是下三角且满秩的
 For state-of-the-art inference methods see Chen and Pouzo (2015) and Chen and Christensen (2018)	对于最先进的推断方法，请参阅 Chen 和 Pouzo (2015) 以及 Chen 和 Christensen (2018)
-NPIV Identification	NPIV鉴定
+NPIV Identification	NPIV 识别
 This is considerably more challenging	这更具挑战性
 Specifying and understanding the needed restrictions is more subtle than in the linear case	设定和理解所需的约束比线性情况更微妙
 Newey and Powell (2003) defined this fundamental condition as completeness	Newey 和 Powell (2003) 将这一基本条件定义为完整性
-This is analogous to the linear IV model where identification is a property of the reduced form equations, not a property of the structural equation	这类似于线性 IV 模型，其中识别是精简形式方程的特征，而不是结构方程的特征
+This is analogous to the linear IV model where identification is a property of the reduced form equations, not a property of the structural equation	这类似于线性 IV 模型，其中识别是精简方程的特征，而不是结构方程的特征
 As we stated above, completeness may not be satisfied even if the reduced form relationship is strong	如上所述，即使精简形式关系很强，也可能无法满足完整性
-This is despite the fact that the reduced form equation is strong	尽管事实上精简形式方程是强的
+This is despite the fact that the reduced form equation is strong	尽管事实上精简方程是强的
 While identification fails for some conditional distributions, it does not fail for all	虽然某些条件分布的识别失败，但并非所有条件分布都失败
 Andrews (2017) provides classes of distributions which satisfy the completeness condition and shows that these distribution classes are quite general	Andrews (2017) 提供了满足完整性条件的分布类，并表明这些分布类非常通用
 What does this mean in practice? If completeness fails then the structural equation is not identified and cannot be consistently estimated	这在实践中意味着什么？如果完整性失败，则结构方程无法识别并且无法一致地估计
 A partial answer is provided by Freyberger (2017)	Freyberger (2017) 提供了部分答案
 Unlike Stock and Yogo (2005), however, Freyberger's result does not address inference	然而，与 Stock 和 Yogo (2005) 不同的是，Freyberger 的结果并不涉及推断
-NPIV Convergence Rate	NPIV收敛率
+NPIV Convergence Rate	NPIV 收敛率
 This is not intuitive and requires a deeper mathematical treatment	这并不直观，需要更深入的数学处理
 Nonparametric vs Parametric Identification	非参数与参数识别
 One of the insights from the nonparametric identification literature is that it is important to understand which features of a model are nonparametrically identified, meaning which are identified without functional form assumptions, and which are only identified based on functional form assumptions	非参数识别文献的见解之一是，了解模型的哪些特征是非参数识别的非常重要，这意味着哪些特征是在没有函数形式假设的情况下识别的，哪些特征是仅根据函数形式假设识别的
@@ -3556,123 +3556,115 @@ If, however, the model is identified only under a parametric assumption, then it
 This means that researchers who estimate linear regressions (or other lowdimensional regressions) can interpret their estimated model as an approximation to the underlying CEF	这意味着估计线性回归（或其他低维回归）的研究人员可以将他们的估计模型解释为基础 CEF 的近似值
 But the analysis can also point out simple yet subtle mistakes	但分析也可以指出简单而微妙的错误
 then we can see that this model is not identified	然后我们可以看到这个模型没有被识别
-The apparent identification of (20.40) critically rests on the unknown truth of the linearity in (20.40)	(20.40) 的明显识别关键取决于 (20.40) 中线性的未知真相
+The apparent identification of (20.40) critically rests on the unknown truth of the linearity in (20.40)	(20.40) 的明显识别关键取决于 (20.40) 中未知真相的线性性
 As stated above, identification based on functional form restrictions alone is highly undesirable because functional form assumptions are dubious	如上所述，仅基于函数形式约束的识别是非常不可取的，因为函数形式假设是可疑的
-Example: Angrist and Lavy (1999)	示例：安格里斯特和拉维 (1999)
-To illustrate nonparametric instrumental variables in practice we follow Horowitz (2011) by extending the empirical work reported in Angrist and Lavy (1999)	为了说明实践中的非参数工具变量，我们遵循 Horowitz (2011)，扩展了 Angrist 和 Lavy (1999) 中报告的实证工作
-The variables enrollment and disadvantaged are treated as exogenous but classize is treated as endogenous because wealthier schools may be able to offer smaller class sizes	入学率和弱势群体变量被视为外生变量，但分类被视为内生变量，因为较富裕的学校可能能够提供较小的班级规模
+Example: Angrist and Lavy (1999)	案例：Angrist and Lavy (1999)
+To illustrate nonparametric instrumental variables in practice we follow Horowitz (2011) by extending the empirical work reported in Angrist and Lavy (1999)	为了说明实践中的非参数工具变量，我们遵循 Horowitz (2011)，它扩展了 Angrist 和 Lavy (1999) 中报告的实证工作
+The variables enrollment and disadvantaged are treated as exogenous but classize is treated as endogenous because wealthier schools may be able to offer smaller class sizes	入学率和弱势群体变量被视为外生变量，但分班被视为内生变量，因为较富裕的学校可能能够提供较小的班级规模
 The authors suggest the following instrumental variable for classsize	作者建议使用以下用于班级规模的工具变量
 Their estimates show a negative and statistically significant impact of classsize on reading test scores	他们的估计显示班级规模对阅读测试成绩产生负面且具有统计显著性的影响
 We are interested in a nonparametric version of their equation	我们对他们的方程的非参数版本感兴趣
 To keep the specification reasonably parsimonious yet flexible we use the following equation	为了保持设定合理简约但灵活，我们使用以下等式
-This is a cubic equation in classize and disadvantaged, with a single interaction term, and linear in enrollment and grade4	这是分类和弱势群体的三次方程，具有单个交互项，并且与入学和年级呈线性关系4
+This is a cubic equation in classize and disadvantaged, with a single interaction term, and linear in enrollment and grade	这是分班和弱势群体的三次方方程，具有单个交互项，并且与入学和年级呈线性关系
 Table 20.1: Nonparametric Instrumental Variable Regression for Reading Test Score	表 20.1：阅读测试成绩的非参数工具变量回归
 To obtain a better interpretation of the results we display the estimated regression functions in Figure 20.8	为了更好地解释结果，我们在图 20.8 中显示了估计的回归函数
-Figure 20.8: Nonparametric Instrumental Variables Estimates of the Effect of Classize and Disadvantaged on Reading Test Scores	图 20.8：分类和劣势对阅读测试成绩影响的非参数工具变量估计
+Figure 20.8: Nonparametric Instrumental Variables Estimates of the Effect of Classize and Disadvantaged on Reading Test Scores	图 20.8：分班和弱势对阅读测试成绩影响的非参数工具变量估计
 In panel (a) we can see that increasing class size decreases the average test score	在面板（a）中，我们可以看到增加班级规模会降低平均考试成绩
 The estimated effect is remarkably close to linear	估计的效果非常接近线性
 In panel (b) we can see that increasing the percentage of disadvantaged students greatly decreases the average test score	在面板（b）中，我们可以看到，增加弱势学生的比例会大大降低平均考试成绩
-The effect is precisely estimated with tight pointwise confidence bands	通过严格的逐点置信带精确估计效果
+The effect is precisely estimated with tight pointwise confidence bands	通过严格的逐点置信带精确估计效应
 We can also use the estimated model for hypothesis testing	我们还可以使用估计模型进行假设检验
 This suppports the hypothesis that class size has a negative effect on student performance	这支持了班级规模对学生成绩有负面影响的假设
 We can also use the model to quantify the impact of class size on test scores	我们还可以使用该模型来量化班级规模对考试成绩的影响
 This is a linear function of the coefficients	这是系数的线性函数
-(The point estimate is identical to the difference between the endpoints of the estimated function shown in panel (a).) This is a small but substantive impact	）这是一个微小但实质性的影响
-Proof of Theorem 20.4	定理20.4的证明
+This is a small but substantive impact	这是一个微小但实质性的影响
 Markov's inequality implies (20.19)	马尔可夫不等式意味着 (20.19)
-Proof of Theorem 20.5	定理 20.5 的证明
-Proof of Theorem 20.6	定理20.6的证明
-The first inequality is the Quadratic Inequality (B.18), the second is (20.21)	第一个不等式是二次不等式 (B.18)，第二个不等式是 (20.21)
-Proof of Theorem 20.7	定理20.7的证明
+The first inequality is the Quadratic Inequality (B.18), the second is (20.21)	第一个不等式是二次方不等式 (B.18)，第二个不等式是 (20.21)
 where the inequality is Assumption 20.1.2	其中不等式为假设 20.1.2
-Proof of Theorem 20.8	定理20.8的证明
 We show that (20.47) is asymptotically normal and (20.48)-(20.49) are asymptotically negligible	我们证明 (20.47) 是渐近正态的，而 (20.48)-(20.49) 是渐近可忽略的
 By Assumption 20.2.2	根据假设 20.2.2
 Then the left-side of (20.51) is smaller than	那么 (20.51) 的左边小于
 the final inequality by (20.52)	最终的不等式为(20.52)
 under Assumption 20.2.3	根据假设 20.2.3
-Together, we have shown that	我们共同证明了
 By the Triangle Inequality, the definition (20.10), the Schwarz Inequality, and definition (20.15)	由三角不等式及其定义 (20.10)、施瓦茨不等式及其定义 (20.15)
 The coefficients satisfy the relationship	系数满足关系
 which is (20.55), as required	根据要求，即 (20.55)
-Regression Discontinuity	回归不连续性
+Regression Discontinuity	断点回归
 One of the core goals in applied econometrics is estimation of treatment effects	应用计量经济学的核心目标之一是估计处置效应
 When it applies there are simple techniques for estimation of the causal effect of treatment	当它应用时，有一些简单的技术可以估计处置的因果效应
 The first use of regression discontinuity is attributed to Thistlethwaite and Campbell (1960)	Thistlethwaite 和 Campbell (1960) 首次使用了断点回归
-The core model is sharp regression discontinuity where treatment is a discontinuous deterministic rule of an observable	核心模型是尖锐回归不连续性，其中处理是可观察量的不连续确定性规则
-We start by reviewing sharp regression discontinuity and then cover fuzzy regression discontinuity	我们首先回顾尖锐回归不连续性，然后介绍模糊回归不连续性
-Sharp Regression Discontinuity	急剧回归不连续性
+The core model is sharp regression discontinuity where treatment is a discontinuous deterministic rule of an observable	核心模型是骤变断点回归，其中处理是可观察量的不连续确定性规则
+We start by reviewing sharp regression discontinuity and then cover fuzzy regression discontinuity	我们首先回顾骤变断点回归，然后介绍模糊断点回归
+Sharp Regression Discontinuity	骤变断点回归
 Take the potential outcomes framework	以潜在结果框架为例
 It may be helpful to discuss a specific example	讨论一个具体的例子可能会有所帮助
 Thus it seems reasonable to conclude that these counties received a substantial exogenous increase in funding	因此，可以合理地得出结论，这些县获得了外源性资金的大幅增加
-Ludwig and Miller were interested to see if this increase in Head Start funding led to measurable changes in outcomes	路德维希和米勒有兴趣了解启蒙资金的增加是否会导致结果发生可衡量的变化
+Ludwig and Miller were interested to see if this increase in Head Start funding led to measurable changes in outcomes	Ludwig and Miller 有兴趣了解启蒙资金的增加是否会导致结果发生可衡量的变化
 A subset of their data (assembled by Cattaneo, Titiunik, and VazquezBare (2017)) is posted on the textbook website as LM2007	他们的数据子集（由 Cattaneo、Titiunik 和 VazquezBare (2017) 汇总）以 LM2007 的形式发布在教科书网站上
-In this application the unit of measurement is a U.S. county	在此应用程序中，测量单位是美国县
-In this section we present the core identification theorem for the regression discontinuity model	在本节中，我们提出回归不连续模型的核心识别定理
+In this application the unit of measurement is a U.S. county	在此应用中，测度单位是美国的县
+In this section we present the core identification theorem for the regression discontinuity model	在本节中，我们提出断点回归模型的核心识别定理
 The following is the core identification theorem for the regression discontinuity design	以下是断点回归设计的核心识别定理
 It is due to Hahn, Todd, and Van der Klaauw (2001)	这是 Hahn、Todd 和 Van der Klaauw (2001) 的贡献
 There is no reason to expect a discontinuity in either function	没有理由预期这两个函数会出现不连续性
 The intuition for the theorem can be seen in Figure 21.1(a)	该定理的直觉如图 21.1(a) 所示
-The plot in Figure 21.1 (a) was designed to mimic what we might expect in the Head Start application	图 21.1 (a) 中的图旨在模拟我们在 Head Start 应用程序中的预期
+The plot in Figure 21.1 (a) was designed to mimic what we might expect in the Head Start application	图 21.1 (a) 中的图旨在模拟我们在 Head Start 应用中的预期
 Thus a limitation of the RDD approach is that it estimates a narrowly-defined treatment effect	因此，RDD 方法的局限性在于它估计的处置效应范围狭窄
 Thus a nonparametric treatment is essential to preclude falsely labeling nonlinearity as a discontinuity	因此，非参数处理对于防止将非线性错误地标记为不连续性至关重要
-The previous two chapters have studied nonparametric kernel and series regression	前两章研究了非参数核和级数回归
-Figure 21.1: Sharp Regression Discontinuity Design	图 21.1：急剧回归不连续性设计
-To describe the estimator set	描述估计量集
+The previous two chapters have studied nonparametric kernel and series regression	前两章研究了非参数核和序列回归
+Figure 21.1: Sharp Regression Discontinuity Design	图 21.1：骤变断点回归设计
 The estimator of the CEF is the first element of the coefficient vectors	CEF 的估计量是系数向量的第一个元素
 For efficient estimation at boundary points the Triangular kernel is recommended	为了有效估计边界点，建议使用三角核
-There is an efficiency loss (3% in root AMSE) in return for this convenience	这种便利性的回报是效率损失（根 AMSE 为 3%）
-These are calculated separately for the non-treatment and treatment subsamples but otherwise are identical to those described in Section 19.17	这些是针对未处理和处理子样本分别计算的，但在其他方面与第 19.17 节中描述的相同
+There is an efficiency loss (3% in root AMSE) in return for this convenience	这种便利性的好处是效率损失（平方根 AMSE 为 3%）
+These are calculated separately for the non-treatment and treatment subsamples but otherwise are identical to those described in Section 19.17	这些是针对未处置和处置子样本分别计算的，但在其他方面与第 19.17 节中描述的相同
 To illustrate, Figure 21.1(b) displays our estimates of the Ludwig-Miller (2007) Head Start RDD model for childhood mortality due to HS-related causes	为了说明这一点，图 21.1(b) 显示了我们对 Ludwig-Miller (2007) Head Start RDD 模型对由于热射病相关原因导致的儿童死亡率的估计
-The CEF in the treated sample appears nonlinear and the confidence bands are very wide	处理过的样品中的 CEF 呈现非线性且置信带非常宽
+The CEF in the treated sample appears nonlinear and the confidence bands are very wide	处置过的样本中的 CEF 呈现非线性且置信带非常宽
 There is a custom in the applied economics literature to display Figure 21.1(b) somewhat differently	应用经济学文献中习惯于以不同的方式显示图 21.1(b)
-The best practice is to plot the best possible nonparametric estimator and to plot confidence intervals to convey uncertainty	最优实践是绘制最优的非参数估计量并绘制置信区间以表达不确定性
+The best practice is to plot the best possible nonparametric estimator and to plot confidence intervals to convey uncertainty	最佳实践是绘制最优的非参数估计量并绘制置信区间以表达不确定性
 The asymptotic variance can be estimated by the sum of the asymptotic variance estimators of the two boundary regression estimators as described in Section 19.16	渐近方差可以通过两个边界回归估计量的渐近方差估计量之和来估计，如第 19.16 节所述
 Overall this leads to more honest inference statements	总的来说，这会导致更诚实的推断陈述
-Table 21.1: RDD Estimates of the Effect of Head Start Assistance on Childhood Mortality	表 21.1：启蒙援助对儿童死亡率影响的 RDD 估计
+Table 21.1: RDD Estimates of the Effect of Head Start Assistance on Childhood Mortality	表 21.1：Head Start 援助对儿童死亡率影响的 RDD 估计
 Bandwidth Selection	带宽选择
 In nonparametric estimation the most critical choice is the bandwidth	在非参数估计中，最关键的选择是带宽
 I will describe two simple approaches based on the global fit of the RDD estimator	我将描述两种基于 RDD 估计量全局拟合的简单方法
 Another useful method is cross-validation	另一种有用的方法是交叉验证
-For specific proposals see Imbens and Kalyanaraman (2012), Arai and Ichimura (2018), and Cattaneo, Idrobo, Titiunik (2020)	具体提案请参见 Imbens 和 Kalyanaraman (2012)、Arai 和 Ichimura (2018) 以及 Cattaneo、Idrobo、Titiunik (2020)
+For specific proposals see Imbens and Kalyanaraman (2012), Arai and Ichimura (2018), and Cattaneo, Idrobo, Titiunik (2020)	具体建议请参见 Imbens 和 Kalyanaraman (2012)、Arai 和 Ichimura (2018) 以及 Cattaneo、Idrobo、Titiunik (2020)
 Then reduce this bandwidth somewhat (perhaps 25%) to reduce estimation bias	然后稍微减少此带宽（也许 25%）以减少估计偏误
 Some robustness checking (estimation with alternative bandwidths) is prudent, but narrowly so	一些稳健性检查（使用替代带宽进行估计）是谨慎的，但也仅限于此
 This is the bandwidth used in the empirical results shown in this chapter	这是本章所示的实证结果中使用的带宽
-Larger bandwidths result in flatter (more linear) estimated conditional mean functions and a smaller estimated Head Start effect	较大的带宽会导致更平坦（更线性）的估计条件平均函数和更小的估计先行效应
-Smaller bandwidths result in more curvature in the estimated conditional mean functions, in particular for the section above the cut-off	较小的带宽会导致估计的条件平均函数的曲率更大，特别是对于截止以上的部分
+Larger bandwidths result in flatter (more linear) estimated conditional mean functions and a smaller estimated Head Start effect	较大的带宽会导致更平坦（更线性）的估计条件平均函数和更小的估计 Head Start 效应
+Smaller bandwidths result in more curvature in the estimated conditional mean functions, in particular for the section above the cut-off	较小的带宽会导致估计的条件平均函数的曲率更大，特别是对于断点以上的部分
 RDD with Covariates	带有协变量的 RDD
 It is therefore prudent to consider the addition of relevant covariates when available	因此，应谨慎考虑在可用时添加相关协变量
 For simplicity we assume that the linear coefficients are the same in the two equations	为简单起见，我们假设两个方程中的线性系数相同
 Different authors have suggested different methods for estimation of the RDD with covariates model	不同的作者提出了使用协变量模型估计 RDD 的不同方法
-(It is preferred because Robinson demonstrated that it is semiparametrically efficient while the other suggestions have no efficiency justification.) The estimation method is as follows	）估计方法如下
-As shown by Robinson (1988) and discussed in Section 19.24, the above estimator is semiparametrically efficient, the conventional asymptotic theory valid, and conventional inference is valid	正如 Robinson (1988) 所示以及第 19.24 节中所讨论的，上述估计量是半参数有效的，传统的渐近理论有效，并且传统的推断也是有效的
+As shown by Robinson (1988) and discussed in Section 19.24, the above estimator is semiparametrically efficient, the conventional asymptotic theory valid, and conventional inference is valid	正如 Robinson (1988) 所示以及第 19.24 节中所讨论的，上述估计量是半参数有效的，传统的渐近理论有效的，并且传统的推断也是有效的
 Thus the estimators can be used to assess the conditional ATE	因此，估计量可用于评估条件 ATE
 Covariates will also affect the precision of the estimator and standard errors	协变量还会影响估计量的精度和标准误差
-To illustrate, we augment the Ludwig-Miller Head Start estimates with two covariates: the countylevel Black population percentage, and the county-level urban population percentage	为了说明这一点，我们用两个协变量来增强 Ludwig-Miller Head Start 估计：县级黑人人口百分比和县级城市人口百分比
-We also see that the coefficient on the Black percentage is positive and that on the urban percentage is negative, consistent with the view that these are serving as proxies for income	我们还看到黑人百分比的系数为正，城市百分比的系数为负，这与这些作为收入代理的观点一致
+To illustrate, we augment the Ludwig-Miller Head Start estimates with two covariates: the countylevel Black population percentage, and the county-level urban population percentage	为了说明这一点，我们用两个协变量来增强 Ludwig-Miller Head Start 估计：县级黑人人口百分比和县级城镇人口百分比
+We also see that the coefficient on the Black percentage is positive and that on the urban percentage is negative, consistent with the view that these are serving as proxies for income	我们还看到黑人百分比的系数为正，城镇人口百分比的系数为负，这与二者作为收入的代理变量的观点一致
 Figure 21.2: RDD Diagnostics	图 21.2：RDD 诊断
 A Simple RDD Estimator	一个简单的 RDD 估计量
 A simple RDD estimator can be implement by a standard regression using conventional software	简单的 RDD 估计量可以通过使用传统软件的标准回归来实现
 To illustrate, take the Head Start sample	为了说明这一点，请看 Head Start 示例
-The standard error for the effect is also larger, consistent with our expectation that the rectangular kernel estimator is less accurate	效果的标准误差也较大，这与我们的预期一致，即矩形核估计量不太准确
+The standard error for the effect is also larger, consistent with our expectation that the rectangular kernel estimator is less accurate	效应的标准误差也较大，这与我们的预期一致，即矩形核估计量不太准确
 Density Discontinuity Test	密度不连续性检验
 Some care needs to be exercised in implementation, however, as conventional density estimators smooth over discontinuities and conventional density estimators are biased at boundary points (similarly to the bias of the Nadaraya-Watson estimator at boundary points)	然而，在实现过程中需要注意一些，因为传统的密度估计量会平滑不连续性，并且传统的密度估计量在边界点处有偏误（类似于 Nadaraya-Watson 估计量在边界点处的偏误）
-A simple visual check is the histogram of the running variable with narrow bins, carefully constructed so that no bin spans the cut-off	一个简单的目视检查是带有窄箱的运行变量的直方图，经过精心构建，以便没有箱跨越截止值
-If the histogram bins display no evidence of bunching at one side of the cut-off this is consistent with the hypothesis that the density is continuous at the cut-off; on the other hand if there is a noticable spike on either side this is inconsistent with the hypothesis of correct specification	如果直方图箱在截止点的一侧没有显示聚束的证据，则这与密度在截止点处连续的假设是一致的；另一方面，如果任一侧都有明显的尖峰，则这与正确规格的假设不一致
+A simple visual check is the histogram of the running variable with narrow bins, carefully constructed so that no bin spans the cut-off	一个简单的目视检查是带有窄箱组的运行变量的直方图，经过精心构建，以便没有箱组跨越断点值
+If the histogram bins display no evidence of bunching at one side of the cut-off this is consistent with the hypothesis that the density is continuous at the cut-off; on the other hand if there is a noticable spike on either side this is inconsistent with the hypothesis of correct specification	如果直方图箱在断点的一侧没有显示成团的证据，则这与密度在断点处连续的假设是一致的；另一方面，如果任一侧都有明显的陡增，则这与正确设定的假设不一致
 In the Head Start example it is not credible that the running variable was manipulated by the individual counties because it was constructed from the 1960 census by a federal agency in 1965	在 Head Start 示例中，运行变量是由各个县操纵的，这是不可信的，因为它是由联邦机构在 1965 年根据 1960 年人口普查构建的
-In particular there is no visual evidence of bunching around the cut-off	特别是没有视觉证据表明在截止点周围聚集
-McCrary (2008) implements a formal test for continuity of the density at the cut-off	McCrary (2008) 对截止处的密度连续性进行了正式检验
-If the statistic is large this is evidence against the assumption of no manipulation, suggesting that the RDD design is not appropriate	如果统计数据很大，这就是反对无操纵假设的证据，表明 RDD 设计不合适
-Fuzzy Regression Discontinuity	模糊回归不连续性
-The sharp regression discontinuity requires that the cut-off perfectly separates treatment from nontreatment	急剧的回归不连续性要求截止点将处置与未处置完全分开
-This is called fuzzy regression discontinuity (FRD)	这称为模糊回归不连续性 (FRD)
+In particular there is no visual evidence of bunching around the cut-off	特别是没有目视证据表明在断点周围成团
+McCrary (2008) implements a formal test for continuity of the density at the cut-off	McCrary (2008) 对断点的密度连续性进行了正式检验
+If the statistic is large this is evidence against the assumption of no manipulation, suggesting that the RDD design is not appropriate	如果统计数据很大，这就是拒绝无操纵假设的证据，表明 RDD 设计不合适
+Fuzzy Regression Discontinuity	模糊断点回归
+The sharp regression discontinuity requires that the cut-off perfectly separates treatment from nontreatment	骤变断点回归要求断点将处置与未处置完全分开
+This is called fuzzy regression discontinuity (FRD)	这称为模糊断点回归 (FRD)
 This siutation is illustrated in Figure 21.3(a)	这种情况如图 21.3(a) 所示
-Figure 21.3: Fuzzy Regression Discontinuity Design	图 21.3：模糊回归不连续性设计
-This broadens the scope for potential application of the regression discontinuity framework beyond the sharp RDD	这拓宽了断点回归框架的潜在应用范围，超越了 Sharp RDD
+Figure 21.3: Fuzzy Regression Discontinuity Design	图 21.3：模糊断点回归设计
+This broadens the scope for potential application of the regression discontinuity framework beyond the sharp RDD	这拓宽了断点回归框架的潜在应用范围，超越了骤变 RDD
 A display of the outcomes is given in Figure 21.3(b)	图 21.3(b) 显示了结果
-To prove the Theorem, first observe that the observed outcome is	为了证明该定理，首先看到能观察到的结果是
-Taking the difference and re-arranging we establish the theorem	采取差异并重新排列我们建立定理
-Estimation of FRD	FRD的估计
+To prove the Theorem, first observe that the observed outcome is	为了证明该定理，首先看到可观察到的结果是
+Taking the difference and re-arranging we establish the theorem	采取做差并重新排列我们建立定理
+Estimation of FRD	FRD 的估计
 This estimator bears a striking resemblance to the Wald expression (12.27) for the structural coefficient and estimator (12.28) in an IV regression with a binary instrument	该估计量与二值工具 IV 回归中的结构系数和估计量 (12.28) 的 Wald 表达式 (12.27) 非常相似
 The estimator (21.7) requires four LL regressions	估计量 (21.7) 需要四个 LL 回归
 Identification rests on its precision	识别取决于其精度
@@ -3684,12 +3676,12 @@ So far in this textbook we have primarily focused on estimators which have expli
 They have a common structure which allows for a unified treatment of estimation and inference	它们具有共同的结构，可以统一处理估计和推断
 An m-estimator is defined as a minimizer of a sample average	m 估计量被定义为样本平均值的最小化
 "m-estimators" are a broader class; the prefix "m" stands for "maximum likelihood-type"	“m-估计量”是一个更广泛的类别；前缀“m”代表“极大似然类型”
-The issues we focus on in this chaper are: (1) identification; (2) estimation; (3) consistency; (4) asymptotic distribution; and (5) covariance matrix estimation	本章我们关注的问题是：（1）识别； (2) 估算； (3)一致性； (4)渐近分布； (5)协方差矩阵估计
-There are many m-estimators in common econometric usage	计量经济学中有许多常见的 m 估计量
+The issues we focus on in this chaper are: (1) identification; (2) estimation; (3) consistency; (4) asymptotic distribution; and (5) covariance matrix estimation	本章我们关注的问题是：（1）识别； (2) 估计； (3)一致性； (4)渐近分布； (5)协方差矩阵估计
+There are many m-estimators in common econometric usage	计量经济学中有许多常见的 m-估计量
 Some examples include the following	一些示例包括以下内容
-Not all nonlinear estimators are m-estimators	并非所有非线性估计量都是 m 估计量
-Examples include method of moments, GMM, and minimum distance	示例包括矩量法、GMM 和最小距离
-Identification and Estimation	识别与估算
+Not all nonlinear estimators are m-estimators	并非所有非线性估计量都是 m-估计量
+Examples include method of moments, GMM, and minimum distance	示例包括矩法、GMM 和最小距离
+Identification and Estimation	识别与估计
 This is a property of the probability distribution, not of the estimator	这是概率分布的特征，而不是估计量的特征
 However, when discussing a specific estimator it is common to describe identification in terms of the criterion function	然而，在讨论特定估计量时，通常用准则函数来描述识别
 In nonlinear models it is difficult to provide general conditions under which a parameter is identified	在非线性模型中，很难提供识别参数的一般条件
@@ -3702,52 +3694,51 @@ Consistency	一致性
 It seems reasonable to expect that if a parameter is identified then we should be able to estimate the parameter consistently	似乎可以合理地预期，如果确定了一个参数，那么我们应该能够一致地估计该参数
 However, the WLLN by itself is not sufficient to make this extension	然而，WLLN 本身不足以进行此扩展
 To see the problem examine Figure 22.1(a)	要了解问题，请查看图 22.1(a)
-Uniform Law of Large Numbers	统一大数定律
-In this section we provide lower level sufficient conditions	在本节中，我们提供较低级别的充分条件
-Theorem 22.2 Uniform Law of Large Numbers (ULLN) Assume	定理 22.2 一致大数定律 (ULLN) 假设
+Uniform Law of Large Numbers	大数统一定律
+In this section we provide lower level sufficient conditions	在本节中，我们提供较低层次的充分条件
+Theorem 22.2 Uniform Law of Large Numbers (ULLN) Assume	定理 22.2 大数统一定律 (ULLN) 假设
 Lee (2019) for clustered samples	有关群组样本，请参阅 B. E. Hansen 和 S. Lee (2019)
 We now establish an asymptotic distribution theory	我们现在建立渐近分布理论
 Thus the summands in (22.2) are mean zero	因此（22.2）中的被加数均值为零
 The technical hurdle to make this derivation rigorous is justifying the Taylor expansion (22.1)	使这一推导变得严格的技术障碍是证明泰勒展开式 (22.1) 的合理性
 In some cases the asymptotic covariance matrix simplifies	在某些情况下，渐近协方差矩阵会简化
 Assumption 5 is required in order to justify the application of the mean-value expansion	为了证明均值展开的应用是合理的，需要假设 5
-Asymptotic Distribution Under Broader Conditions	更广泛条件下的渐近分布
+Asymptotic Distribution Under Broader Conditions	更宽泛条件下的渐近分布
 These are more flexible, but less intuitive	这些更灵活，但不太直观
 The following result is a simple generalization of Lipschitz-continuity	以下结果是 Lipschitz 连续性的简单概括
 We next present a set of flexible results	接下来我们将展示一组灵活的结果
 Second, one of the following holds	其次，下列条件之一成立
 See Theorem 18.6 of Probability and Statistics for Economists or Theorems 2 and 3 of Andrews (1994)	参见《经济学家的概率与统计》定理 18.6 或 Andrews (1994) 的定理 2 和定理 3
 As we will not be using this property in this textbook we will not discuss this further, but refer the interested reader to any textbook on empirical processes	由于我们不会在本教科书中使用这个特征，因此我们不会进一步讨论这一点，而是请感兴趣的读者参考任何有关实证过程的教科书
-There is no formal guidance	没有正式的指导
 This is unfortunately not uniformly done in practice	不幸的是，这在实践中并没有统一执行
 Proof of Theorem 22.1 The proof proceeds in two steps	定理22.1 的证明 证明分两步进行
-The final convergence is the assumed uniform convergence in probability	最终的收敛是假设的概率一致收敛
-Figure 22.2: Consistency of M-Estimator	图 22.2：M 估计量的一致性
+The final convergence is the assumed uniform convergence in probability	最终的收敛是假设的依概率一致收敛
+Figure 22.2: Consistency of M-Estimator	图 22.2：M-估计量的一致性
 The preceeding argument is illustrated in Figure 22.2	前面的论证如图 22.2 所示
 This completes the first step	这样就完成了第一步
 To illustrate, again examine Figure 22.2	为了说明这一点，请再次检查图 22.2
 The second inequality is (22.7) and the final inequality is (22.6)	第二个不等式是（22.7），最终的不等式是（22.6）
 Nonlinear Least Squares	非线性最小二乘法
 In nonlinear regression the ordinary least squares estimator does not apply	在非线性回归中，普通最小二乘估计量不适用
-NLLS is an m-estimator which requires numerical optimization	NLLS 是一个需要数值优化的 m 估计量
+NLLS is an m-estimator which requires numerical optimization	NLLS 是一个需要数值优化的 m-估计量
 We illustrate nonlinear regression with three examples	我们用三个案例来说明非线性回归
 Our first example is the Box-Cox regression model	我们的第一个案例是 Box-Cox 回归模型
 The Box-Cox regression model is	Box-Cox 回归模型为
-Our second example is a Constant Elasticity of Substitution (CES) production function, which was introduced by Arrow, Chenery, Minhas, and Solow (1961) as a generalization of the popular Cobb-Douglass production function	我们的第二个案例是恒定替代弹性 (CES) 生产函数，它是由 Arrow、Chenery、Minhas 和 Solow (1961) 提出的，作为流行的柯布-道格拉斯生产函数的推广
+Our second example is a Constant Elasticity of Substitution (CES) production function, which was introduced by Arrow, Chenery, Minhas, and Solow (1961) as a generalization of the popular Cobb-Douglass production function	我们的第二个案例是常数替代弹性 (CES) 生产函数，它是由 Arrow、Chenery、Minhas 和 Solow (1961) 提出的，是作为流行的柯布-道格拉斯生产函数的推广
 We illustrate CES production function estimation with a modification of Papageorgiou, Saam, and Schulte (2017)	我们通过对 Papageorgiou、Saam 和 Schulte (2017) 的修改来说明 CES 生产函数估计
-The data file PPS2017 is an extract of the authors' dataset	数据文件 PPS2017 是作者数据集的摘录
+The data file PPS2017 is an extract of the authors' dataset	数据文件 PPS2017 是作者数据集的摘用
 Our third example is the regression kink model	我们的第三个案例是回归扭结模型
 We illustrate the regression kink model with an application from B	我们使用 B. E. Hansen (2017) 的应用来说明回归扭结模型，该模型是 Reinhart 和 Rogoff (2010) 的形式化
-In correctly-specified nonlinear regression models the parameter is point identified if there is a unique true parameter	在正确设定的非线性回归模型中，如果存在唯一的真实参数，则参数被点识别
+In correctly-specified nonlinear regression models the parameter is point identified if there is a unique true parameter	在正确设定的非线性回归模型中，如果存在唯一的真实参数，则参数被点识别的
 Figure 23.1: Nonlinear Regression Models	图 23.1：非线性回归模型
 is the expected squared error	是期望的平方误差
 Hence identification of the pseudo-true value under mis-specification is typically assumed rather than deduced	因此，误设下的伪真值的识别通常是假设的，而不是推断的
 This is called the Nonlinear Least Squares (NLLS) estimator	这称为非线性最小二乘 (NLLS) 估计量
 Figure 23.2: Average of Squared Errors Functions	图 23.2：平方误差函数的平均值
 We illustrate with two of our examples	我们用两个案例来说明
-You can see that the function appears to be close to quadratic near the minimum but becomes increasingly non-quadratic away from the minimum	你可以看到，该函数在最小值附近似乎接近二次函数，但在远离最小值时变得越来越非二次函数
+You can see that the function appears to be close to quadratic near the minimum but becomes increasingly non-quadratic away from the minimum	你可以看到，该函数在最小值附近似乎接近二次方函数，但在远离最小值时变得越来越非二次方函数
 The parameter estimates and standard errors for the three models are presented in Table 23.1	三个模型的参数估计值和标准误差如表 23.1 所示
-The standard errors for the Box-Cox and Regression Kink models were calculated using the heteroskedasticity-robust formula, and those for the CES production function were calculated by the cluster-robust formula, clustering by country	Box-Cox 和 Regression Kink 模型的标准误差是使用异方差稳健公式计算的，CES 生产函数的标准误差是通过群组稳健公式计算的，按国家进行聚类
+The standard errors for the Box-Cox and Regression Kink models were calculated using the heteroskedasticity-robust formula, and those for the CES production function were calculated by the cluster-robust formula, clustering by country	Box-Cox 和回归扭结模型的标准误差是使用异方差稳健公式计算的，CES 生产函数的标准误差是通过群组稳健公式计算的，按国家进行聚类
 Take the Box-Cox regression	采用 Box-Cox 回归
 Take the CES production function	采用 CES 生产函数
 Take the regression kink function	采用回归扭结函数
@@ -3756,7 +3747,7 @@ We first consider the consistency of the NLLS estimator	我们首先考虑 NLLS 
 Assumptions 1-4 are fairly standard	假设 1-4 是相当标准的
 Theorem 23.1 Consistency of NLLS Estimator	定理23.1 NLLS估计量的一致性
 We next discuss the asymptotic distribution for differentiable models	接下来我们讨论可微模型的渐近分布
-Assumption 1 imposes that the model is correctly specified	假设 1 强制设定模型是正确的
+Assumption 1 imposes that the model is correctly specified	假设 1 强制模型设定是正确的
 This is important as otherwise the sampling distribution will be asymmetric	这很重要，否则抽样分布将不对称
 Thus, asymptotically, the distribution of NLLS is identical to a linear regression	因此，NLLS 的分布渐近与线性回归相同
 The asymptotic distribution simplifies under conditional homoskedasticity	渐近分布在条件同方差下得到简化
@@ -3766,8 +3757,8 @@ If the error is homoskedastic the covariance matrix can be estimated using the f
 To illustrate, standard errors for our three estimated models are displayed in Table 23.1	为了说明这一点，表 23.1 显示了我们三个估计模型的标准误差
 The standard errors for the CES model were clustered by country	CES 模型的标准误差按国家/地区进行聚类
 In small samples the standard errors for NLLS may not be reliable	在小样本中，NLLS 的标准误差可能不可靠
-Consider the nonlinear regression model with an additive individual effect	考虑具有加性个体效应的非线性回归模型
-To eliminate the individual effect we can apply the within or first-differencing transformations	为了消除个体效应，我们可以应用内变换或一阶差分变换
+Consider the nonlinear regression model with an additive individual effect	考虑具有可加性个体效应的非线性回归模型
+To eliminate the individual effect we can apply the within or first-differencing transformations	为了消除个体效应，我们可以应用组内变换或一阶差分变换
 using the panel data notation	使用面板数据符号
 An alternative is to apply the first-difference transformation	另一种方法是应用一阶差分变换
 GMM can be applied to (23.8) similar to linear dynamic panel regression models	GMM 可以应用于类似于线性动态面板回归模型的（23.8）
@@ -3777,51 +3768,51 @@ In this section we provide a review	在本节中，我们将进行评论
 A threshold regression model takes the form	阈值回归模型采用以下形式
 A threshold model is most suitable for a context where an economic model predicts a discontinuity in the CEF	阈值模型最适合经济模型预测 CEF 不连续性的情况
 The Regression Kink model, for example, does not allow for kink interaction effects	例如，回归扭结模型不允许扭结交互效应
-In principle this can be generalized by incorporating multiple thresholds in potentially different variables but this generalization is limited by sample size and information	原则上，这可以通过将多个阈值合并到可能不同的变量中来概括，但这种概括受到样本大小和信息的局限
+In principle this can be generalized by incorporating multiple thresholds in potentially different variables but this generalization is limited by sample size and information	原则上，这可以通过将多个阈值合并到可能不同的变量中来一般化，但这种一般化受到样本大小和信息的局限
 Many empirical applications estimate threshold models using informal ad hoc methods	许多实证应用使用非正式的临时方法来估计阈值模型
 To illustrate threshold regression we review an influential paper by Card, Mas and Rothstein (2008)	为了说明阈值回归，我们回顾了 Card、Mas 和 Rothstein (2008) 的一篇有影响力的论文
-The data file CMR2008 is an abridged version of the authors' dataset	数据文件 CMR2008 是作者数据集的删节版本
-Figure 23.3: Threshold Regression - Card-Mas-Rothstein (2008) Model	图 23.3：阈值回归 - Card-Mas-Rothstein (2008) 模型
+The data file CMR2008 is an abridged version of the authors' dataset	数据文件 CMR2008 是作者数据集的删减版本
+Figure 23.3: Threshold Regression Card-Mas-Rothstein (2008) Model	图 23.3：阈值回归 Card-Mas-Rothstein (2008) 模型
 The authors use a specification similar to the following	作者使用类似于以下的设定
 Our estimates are reported in Table 23.2	我们的估计见表 23.2
 This is nearly identical to the estimate obtained by Card, Mas and Rothstein (2008) using an ad hoc estimation method	这与 Card、Mas 和 Rothstein (2008) 使用临时估计方法获得的估计几乎相同
-The white population was also decreasing in response to the unemployment rate, the renter share, and the use of public transportation, but increasing in response to the vacancy rate	白人人口也因失业率、租房者份额和公共交通的使用而减少，但因空置率而增加
+The white population was also decreasing in response to the unemployment rate, the renter share, and the use of public transportation, but increasing in response to the vacancy rate	白人人口也因失业率、租房者分成和公共交通的使用而减少，但因空置率而增加
 The asymptotic theory of threshold regression is non-standard	阈值回归的渐近理论是非标准的
-This is constructed numerically by grid search	这是通过网格搜索以数字方式构建的
+This is constructed numerically by grid search	这是通过网格搜索以数值方式构建的
 Given the coefficient estimates the regression function can be plotted along with confidence intervals calculated conventionally	给定系数估计值，可以将回归函数与传统计算的置信区间一起绘制出来
 The confidence bands are widest at the estimated tipping point	置信区间在估计的临界点处最宽
 The empirical results presented in this section are distinct from, yet similar to, those reported in Card, Mas, and Rothstein (2008)	本节中提出的实证结果与 Card、Mas 和 Rothstein (2008) 中报告的结果不同但相似
 This is an influential paper as it used the rigor of an economic model to give insight about segregation behavior, and used a rich detailed dataset to investigate the strong tipping point prediction	这是一篇有影响力的论文，因为它使用了严格的经济模型来深入了解隔离行为，并使用丰富的详细数据集来研究强临界点预测
-Testing for Nonlinear Components	非线性元件检验
+Testing for Nonlinear Components	非线性成分检验
 Identification can be tricky in nonlinear regression models	在非线性回归模型中识别可能很棘手
 The latter arises in the Regression Kink and threshold regression models	后者出现在回归扭结和阈值回归模型中
-For example, in the Card-Mas-Rothstein (2008) application this is the hypothesis of no tipping point which is the key issue explored in their paper	例如，在 Card-Mas-Rothstein（2008）的应用中，这是没有临界点的假设，这是他们论文中探讨的关键问题
-As an example consider the threshold regression (23.9)	作为一个案例，考虑阈值回归（23.9）
+For example, in the Card-Mas-Rothstein (2008) application this is the hypothesis of no tipping point which is the key issue explored in their paper	例如，在 Card-Mas-Rothstein（2008）的应用中，这是没有临界点的假设，是他们论文中探讨的关键问题
+As an example consider the threshold regression (23.9)	作为一个示例，考虑阈值回归（23.9）
 To test the hypothesis a standard test is to reject for large values of the F statistic	为了检验假设，标准检验是拒绝较大的 F 统计值
 The F statistic can be written as	F 统计量可以写为
 Figure 23.4: Test for Threshold Regression in CMR Model	图 23.4：CMR 模型中的阈值回归检验
 This is extremely high by conventional standards	以传统标准来看，这是非常高的
-The asymptotic theory of the test has been worked out by Andrews and Ploberger (1994) and B	检验的渐近理论由 Andrews 和 Ploberger (1994) 以及 B. E. Hansen (1996) 制定
+The asymptotic theory of the test has been worked out by Andrews and Ploberger (1994) and B	渐近理论的检验由 Andrews 和 Ploberger (1994) 以及 B. E. Hansen (1996) 完成
 What is important is that the bootstrap data satisfy the null hypothesis	重要的是自助数据满足原假设
 For clustered samples we need to make a minor modification	对于群组样本，我们需要进行较小的修改
 The modified algorithm uses the following steps	修改后的算法使用以下步骤
 To illustrate we apply this test to the threshold regression (23.9) estimated with the Card-Mas-Rothstein (2008) data	为了说明这一点，我们将此检验应用于使用 Card-Mas-Rothstein (2008) 数据估计的阈值回归 (23.9)
 Thus despite the visually strong evidence of a tipping effect from the previous section the statistical evidence of this effect is strong but not overwhelming	因此，尽管上一节中的倾斜效应在视觉上有强有力的证据，但这种效应的统计证据是强有力的，但不是压倒性的
-Stata has a built-in command nl for NLLS estimation	Stata 有一个内置命令 nl 用于 NLLS 估计
+Stata has a built-in command nl for NLLS estimation	Stata 有一个内置命令 nl 可用于 NLLS 估计
 It is prudent to try several starting values because the algorithm is not guaranteed to converge to the global minimum	尝试多个起始值是谨慎的做法，因为该算法不能保证收敛到全局最小值
 Estimation of NLLS in R or MATLAB requires a bit more programming but is straightforward	在 R 或 MATLAB 中估计 NLLS 需要更多编程，但很简单
 For scalar parameters use optimize	对于标量参数，请使用优化
 Proof of Theorem 23.1	定理23.1的证明
 The right side has finite expectation under Assumptions 23.1, parts 3 and 4	根据假设 23.1 第 3 部分和第 4 部分，右侧的期望是有限的
 Proof of Theorem 23.2	定理23.2的证明
-To show condition 1, by the Cauchy-Schwarz inequality (B.32) and Assumption 23.2.2 and 23.2.4	为了显示条件 1，由 Cauchy-Schwarz 不等式 (B.32) 和假设 23.2.2 和 23.2.4
+To show condition 1, by the Cauchy-Schwarz inequality (B.32) and Assumption 23.2.2 and 23.2.4	为了展示条件 1，由 Cauchy-Schwarz 不等式 (B.32) 和假设 23.2.2 和 23.2.4
 We next show condition 3	接下来我们展示条件 3
 under Assumption 23.2.5	根据假设 23.2.5
 Condition 5 is implied by Assumption 23.2.6	条件 5 由假设 23.2.6 隐含
 Quantile Regression	分位数回归
 This chapter introduces median regression (least absolute deviations) and quantile regression	本章介绍中位数回归（最小绝对误差）和分位数回归
-An excellent monograph on the subject is Koenker (2005)	Koenker (2005) 是关于该主题的优秀专著
-Median Regression	中值回归
+An excellent monograph on the subject is Koenker (2005)	Koenker (2005) 是关于该话题的优秀专著
+Median Regression	中位数回归
 When a distribution is symmetric then the median equals the mean but when the distribution is asymmetric they differ	当分布对称时，中位数等于平均值，但当分布不对称时，中位数不同
 Throughout this textbook we have primarily focused on conditional relationships	在这本教科书中，我们主要关注条件关系
 Similarly we define the conditional median as the median of a sub-population	类似地，我们将条件中位数定义为子总体的中位数
@@ -3832,29 +3823,29 @@ Figure 24.1: LAD Criterion	图 24.1：LAD 准则
 Least Absolute Deviations	最小绝对误差
 This is similar to the classical average of squared errors function but instead is the average of absolute errors	这类似于经典的平方误差函数平均值，但它是绝对误差的平均值
 This is the sample version of (24.8)	这是 (24.8) 的示例版本
-In large samples the facets diminish in size and the criterion approaches a smooth function	在大样本中，面的尺寸减小并且标准接近平滑函数
-Since the criterion is faceted the minimum may be a set	由于标准是多面的，因此最小值可以是一组
+In large samples the facets diminish in size and the criterion approaches a smooth function	在大样本中，刻面的尺寸减小并且标准接近平滑函数
+Since the criterion is faceted the minimum may be a set	由于标准是多方面的，因此最小值可以是一组标准
 Fortunately for applications good estimation algorithms are available and simple to use	幸运的是，对于应用程序来说，可以使用良好的估计算法并且易于使用
-In Stata, LAD is implemented by qreg	在Stata中，LAD是由qreg实现的
-In R, LAD is implemented by rq in the quantreg package	在R中，LAD是由quantreg包中的rq实现的
+In Stata, LAD is implemented by qreg	在Stata中，LAD是由 qreg 实现的
+In R, LAD is implemented by rq in the quantreg package	在R中，LAD是由 quantreg 包中的 rq 实现的
 The mean and median are measures of the central tendency of a distribution	平均值和中位数是分布集中趋势的度量
 As an example, take the distribution of wages from the CPS dataset	以 CPS 数据集中的工资分布为例
 We are also interested in the quantiles of conditional distributions	我们还对条件分布的分位数感兴趣
 We see that the differences between men's and women's wages are increasing by quantile	我们看到男性和女性工资之间的差异正在按分位数增加
 Figure 24.2: Quantile Regressions	图 24.2：分位数回归
-These quantile regression functions provide a summary of the conditional distribution of wages given education	这些分位数回归函数提供了受教育程度工资条件分布的摘要
+These quantile regression functions provide a summary of the conditional distribution of wages given education	这些分位数回归函数提供了受教育程度工资条件分布的概要
 We define the quantile regression model analogously to the median regression model:	我们定义与中值回归模型类似的分位数回归模型：
 Recall that the mean minimizes the squared error loss and the median minimizes the absolute error loss	回想一下，平均值使平方误差损失最小化，中位数使绝对误差损失最小化
 We now describe some properties of the quantile regression function	我们现在描述分位数回归函数的一些特征
 Figure 24.3: Quantile Loss Function	图 24.3：分位数损失函数
 This connects quantile regression with median and mean regression	这将分位数回归与中值和均值回归联系起来
-This equals the true conditional quantile coefficient when true function is linear	当真函数是线性时，这等于真条件分位数系数
+This equals the true conditional quantile coefficient when true function is linear	当真实函数是线性时，这等于真实条件分位数系数
 Example Quantile Shapes	分位数形状示例
 Figure 24.4: Quantile Shapes	图 24.4：分位数形状
 Linear Quantile Functions	线性分位数函数
 Linear quantile regressions are convenient as they are simple to estimate and report	线性分位数回归很方便，因为它们易于估计和报告
 The quantile regression functions for the level of wages appear to be concave; in contrast the quantile regression functions for log wages are close to linear for education above 12 years	工资水平的分位数回归函数似乎是凹的；相比之下，对于 12 年以上受教育程度的人来说，对数工资的分位数回归函数接近线性
-Parallel Quantile Functions	并行分位数函数
+Parallel Quantile Functions	平行分位数函数
 An example is shown in Figure 24.4(b)	图 24.4(b) 显示了一个示例
 Here we plot a set of quantile regression functions which are mutually parallel	在这里，我们绘制了一组相互平行的分位数回归函数
 Thus parallel quantile functions is indicative of conditional homoskedasticity	因此，平行分位数函数表示条件同方差性
@@ -3862,28 +3853,27 @@ Once again examine the quantile regression functions for log wages displayed in 
 This is a strong motivation for applying the logarithmic transformation for a wage regression	这是应用对数变换进行工资回归的强烈动机
 Coefficient Heterogeneity	系数异质性
 These quantile functions are parabolic	这些分位数函数是抛物线的
-The minimization techniques are identical to those used for median regression; hence typical software packages treat the two together	最小化技术与中值回归所使用的技术相同；因此，典型的软件包将两者放在一起处理
-In Stata, quantile regression is implemented by qreg	在Stata中，分位数回归是通过qreg实现的
+The minimization techniques are identical to those used for median regression; hence typical software packages treat the two together	最小化技术与中位数回归所使用的技术相同；因此，典型的软件包将两者放在一起处理
+In Stata, quantile regression is implemented by qreg	在Stata中，分位数回归是通过 qreg 实现的
 We first provide conditions for consistent estimation	我们首先提供一致估计的条件
-Theorem 24.3 Consistency of Quantile Regression Estimator	定理24.3分位数回归估计量的一致性
+Theorem 24.3 Consistency of Quantile Regression Estimator	定理24.3 分位数回归估计量的一致性
 These conditions are rather abstract but mild	这些条件相当抽象但温和
 We now provide the asymptotic distribution	我们现在提供渐近分布
-Theorem 24.4 Asymptotic Distribution of Quantile Regression Estimator	定理24.4分位数回归估计量的渐近分布
-Combined with (24.19) we have three levels of asymptotic covariance matrices	结合（24.19），我们得到了三级渐近协方差矩阵
+Theorem 24.4 Asymptotic Distribution of Quantile Regression Estimator	定理24.4 分位数回归估计量的渐近分布
+Combined with (24.19) we have three levels of asymptotic covariance matrices	结合（24.19），我们得到了三层渐近协方差矩阵
 The most common method for estimation of quantile regression covariance matrices, standard errors, and confidence intervals is the bootstrap	估计分位数回归协方差矩阵、标准误差和置信区间的最常用方法是自助法
 This requires changing the default settings in common programs such as Stata	这需要更改Stata等常用程序中的默认设置
-In Stata, quantile regression is implemented using qreg	在Stata中，分位数回归是使用qreg实现的
-The bootstrap command followed by estat bootstrap produces BC percentile confidence intervals	bootstrap 命令后跟 estat bootstrap 会生成 BC 百分位置信区间
+The bootstrap command followed by estat bootstrap produces BC percentile confidence intervals	在 bootstrap 命令后跟 estat bootstrap 会生成 BC 百分数置信区间
 In R, quantile regression is implemented by the function rq in the quantreg package	在 R 中，分位数回归是通过 quantreg 包中的函数 rq 实现的
 At present, the quantreg package does not include bootstrap percentile confidence intervals	目前，quantreg 包不包括 bootstrap 百分数置信区间
 Under clustered dependence the asymptotic covariance matrix changes	在群组依赖下，渐近协方差矩阵会发生变化
 This can be estimated as	这可以估计为
-In Stata, the clustered bootstrap can be accomplished by: bootstrap, reps(\#) cluster(id): qreg y x, followed by estat bootstrap	在Stata中，群组自助可以通过以下方式完成：bootstrap,reps(\#) cluster(id):qreg y x，然后是estat bootstrap
-We illustrate the application of clustered quantile regression using the Duflo, Dupas, and Kremer (2011) school tracking application. (See Section 4.21.) Recall, the question was whether or not tracking (separating students into classrooms based on an initial test) influenced average end-of-year scores	我们使用 Duflo、Dupas 和 Kremer (2011) 学校追踪应用程序来说明群组分位数回归的应用
+In Stata, the clustered bootstrap can be accomplished by: bootstrap, reps(\#) cluster(id): qreg y x, followed by estat bootstrap	在Stata中，群组自助可以通过以下方式完成：bootstrap,reps(\#) cluster(id):qreg y x，然后是 estat bootstrap
+We illustrate the application of clustered quantile regression using the Duflo, Dupas, and Kremer (2011) school tracking application. (See Section 4.21.) Recall, the question was whether or not tracking (separating students into classrooms based on an initial test) influenced average end-of-year scores	我们使用 Duflo、Dupas 和 Kremer (2011) 学校追踪应用来说明群组分位数回归
 Overall the evidence that tracking affects student performance is weak	总体而言，追踪影响学生表现的证据很弱
 Table 24.2: Quantile Regressions of Student Testscores on Tracking	表 24.2：学生追踪测试成绩的分位数回归
 Quantile Crossings	分位数交叉
-This is only a problem in practical applications if estimated quantile functions actually cross	如果估计的分位数函数实际上交叉，这只是实际应用中的问题
+This is only a problem in practical applications if estimated quantile functions actually cross	如果估计的分位数函数实际上交叉，这仅仅是实际应用中的问题
 However when estimated quantile regression functions cross one another it can be prudent to address the issue	然而，当估计的分位数回归函数相互交叉时，可以谨慎地解决这一问题
 To illustrate examine Figure 24.5(a)	为了说明这一点，请查看图 24.5(a)
 This is the quantile regression crossing phenomenon	这就是分位数回归交叉现象
@@ -3892,14 +3882,14 @@ First, you could re-specify the model	首先，你可以重新设定模型
 Figure 24.5: Quantile Crossings	图 24.5：分位数交叉
 While the logarithmic/exponential transformation works well for a wage regression, it is not a generic solution	虽然对数/指数变换对于工资回归效果很好，但它不是一个通用的解决方案
 A second approach is to reassess the empirical task	第二种方法是重新评估实证任务
-A solution is to truncate the data to eliminate observations with low education levels	解决方案是截断数据以消除教育水平较低的观测结果
+A solution is to truncate the data to eliminate observations with low education levels	解决方案是截断数据以消除教育水平较低的观测
 A third approach is to constrain the estimated functions to satisfy monotonicity	第三种方法是约束估计函数以满足单调性
 This approach may be feasible if the quantile crossing problem is mild	如果分位数交叉问题较轻，这种方法可能是可行的
 A final approach is rearrangement	最后一种方法是重新排列
 The R package quantreg includes the option rearrange to implement their procedure	R 包 quantreg 包含选项重新排列来实现其过程
 Of these four approaches, my recommendation is to start with a careful and thoughtful re-specification of the model	在这四种方法中，我的建议是从仔细且深思熟虑地重新设定模型开始
 Quantile Causal Effects	分位数因果效应
-One question which frequently arises in the study of quantile regression is "Can we interpret the quantile regression causally?" We can partially answer this question in the treatment response framework by providing conditions under which the quantile regression derivatives equal quantile treatment effects	在分位数回归研究中经常出现的一个问题是“我们可以因果地解释分位数回归吗？”我们可以通过提供分位数回归导数等于分位数处置效应的条件，在处置反应框架中部分回答这个问题
+One question which frequently arises in the study of quantile regression is "Can we interpret the quantile regression causally?" We can partially answer this question in the treatment response framework by providing conditions under which the quantile regression derivatives equal quantile treatment effects	在分位数回归研究中经常出现的一个问题是“我们可以因果地解释分位数回归吗？”我们可以通过提出分位数回归导数等于分位数处置效应的条件，在处置反应框架中部分地回答这个问题
 In general this is heterogeneous	一般来说，这是异质的
 From observational data we can estimate the quantile regression function	根据观测数据，我们可以估计分位数回归函数
 Assumption 24.1 Conditions for Quantile Causal Effect	假设 24.1 分位数因果效应的条件
@@ -3911,46 +3901,46 @@ For some theoretical purposes it is convenient to write the quantile regression 
 This also provides an alternative interpretation of the coefficients	这也提供了系数的另一种解释
 Nonparametric Quantile Regression	非参数分位数回归
 As emphasized in Section 24.10, quantile regression functions are undoubtedly nonlinear with unknown functional form and hence nonparametric	正如第 24.10 节所强调的，分位数回归函数无疑是非线性的，具有未知的函数形式，因此是非参数的
-For brevity we briefly discuss series methods which have the advantage that they are easily implemented with conventional software	为了简洁起见，我们简要讨论系列方法，其优点是可以使用传统软件轻松实现
+For brevity we briefly discuss series methods which have the advantage that they are easily implemented with conventional software	为了简洁起见，我们简要讨论序列方法，其优点是可以使用传统软件轻松实现
 The nonparametric quantile regression model is	非参数分位数回归模型为
-A spline approximation is defined similarly	样条近似的定义类似
+A spline approximation is defined similarly	类似地定义样条近似
 Undoubtedly these questions are an important topic for future study	毫无疑问，这些问题是未来研究的重要课题
 To illustrate we revisit the nonparametric polynomial estimates of the experience profile for collegeeducated women earlier displayed in Figure 20.1	为了说明这一点，我们重新审视之前图 20.1 中显示的受过大学教育的女性的经验概况的非参数多项式估计
 This means that heterogeneity in wages increases more than proportionately as experience increases	这意味着工资的异质性随着经验的增加而增加
-It seems natural to consider estimation by one of our standard methods: (1) Remove the individual effect by the within transformation; (2) Remove the invidual effect by first differencing; (3) Estimate a full quantile regression model using the dummy variable representation	考虑通过我们的标准方法之一进行估计似乎是很自然的：（1）通过内部变换消除个体效应； (2)通过一阶差分去除个体效应； (3) 使用虚拟变量表达式估计完整分位数回归模型
+It seems natural to consider estimation by one of our standard methods: (1) Remove the individual effect by the within transformation; (2) Remove the invidual effect by first differencing; (3) Estimate a full quantile regression model using the dummy variable representation	考虑通过我们的标准方法之一进行估计似乎是很自然的：（1）通过组内变换消除个体效应； (2)通过一阶差分去除个体效应； (3) 使用虚拟变量表达式估计完整分位数回归模型
 Figure 24.6: Log Wage Quantile Regressions	图 24.6：对数工资分位数回归
 dummy variable model has the number of parameters proportional to sample size and in this context nonlinear estimators (including quantile regression) are inconsistent	虚拟变量模型的参数数量与样本大小成正比，在这种情况下，非线性估计量（包括分位数回归）是不一致的
 There have been several proposals to deal with this issue but none are particularly satisfactory	已经有几个解决这个问题的建议，但没有一个特别令人满意
 Given this assumption we can write the quantile regression model as	考虑到这个假设，我们可以将分位数回归模型写为
 Canay's estimator takes the following steps. 1	Canay 的估计量采取以下步骤
-In general the topic of panel quantile regression is a potentially important topic for further econometric research	一般来说，面板分位数回归主题是进一步计量经济学研究的潜在重要主题
-As we studied in Chapter 12, in many structural economic models some regressors are potentially endogenous, meaning jointly dependent with the regression error	正如我们在第 12 章中所研究的，在许多结构经济模型中，一些自变量可能是内生的，这意味着与回归误差共同相关
+In general the topic of panel quantile regression is a potentially important topic for further econometric research	一般来说，面板分位数回归是进一步计量经济学研究的潜在重要主题
+As we studied in Chapter 12, in many structural economic models some regressors are potentially endogenous, meaning jointly dependent with the regression error	正如我们在第 12 章中所研究的，在许多结构经济模型中，一些自变量可能是内生的，这意味着与回归误差联合相关
 Similar methods can be applied in quantile regression though the techniques are computationally more difficult, the theory less well developed, and applications limited	类似的方法可以应用于分位数回归，尽管这些技术在计算上更加困难，理论不够完善并且应用有限
 The method of IV quantile regression was articulated by Chernozhukov and C	IV 分位数回归方法由 Chernozhukov 和 C. Hansen (2005) 阐述，欲了解更多详细信息，请参阅该方法
-Proof of Theorem 24.3: The quantile regression estimator is an m-estimator, so we appeal to Theorem 22.3, which holds under five conditions	定理 24.3 的证明：分位数回归估计量是一个 m 估计量，因此我们求助于定理 22.3，它在五个条件下成立
-The right side has finite expectation under the assumptions	右边在假设下有有限的期望
-The inequality holds by assumption; we now establish the equality	假设不等式成立；我们现在建立等式
+Proof of Theorem 24.3: The quantile regression estimator is an m-estimator, so we appeal to Theorem 22.3, which holds under five conditions	定理 24.3 的证明：分位数回归估计量是一个 m-估计量，因此我们求助于定理 22.3，它在五个条件下成立
+The right side has finite expectation under the assumptions	右边在假设下具有有限的期望
+The inequality holds by assumption; we now establish the equality	假设下不等式成立；我们现在建立等式
 Thus the latter is the unique minimizer	因此后者是唯一的最小化
 Condition 5 holds by assumption	条件 5 通过假设成立
-Proof of Theorem 24.5: By the definition of the quantile treatment effect, monotonicity of causal effect (Assumption 24.1.2), definition of the causal effect, monotonicity of the treatment response (Assumption 24.1.3), and the definition of the quantile regression function, we find that	定理24.5的证明：通过分位数处置效应的定义、因果效应的单调性（假设24.1.2）、因果效应的定义、处置反应的单调性（假设24.1.3）以及分位数回归的定义函数，我们发现
+Proof of Theorem 24.5: By the definition of the quantile treatment effect, monotonicity of causal effect (Assumption 24.1.2), definition of the causal effect, monotonicity of the treatment response (Assumption 24.1.3), and the definition of the quantile regression function, we find that	定理24.5的证明：通过分位数处置效应的定义、因果效应的单调性（假设24.1.2）、因果效应的定义、处置反应的单调性（假设24.1.3）以及分位数回归函数的定义，我们发现
 Multiple Choice	多项选择
-This chapter surveys multinomial models	本章研究多项模型
-This includes multinomial response, multinomial logit, conditional logit, nested logit, mixed logit, multinomial probit, ordered response, count data, and the BLP demand model	这包括多项式响应、多项式 Logit、条件 Logit、嵌套 Logit、混合 Logit、多项式 Probit、有序响应、计数数据和 BLP 需求模型
+This chapter surveys multinomial models	本章研究多分类模型
+This includes multinomial response, multinomial logit, conditional logit, nested logit, mixed logit, multinomial probit, ordered response, count data, and the BLP demand model	这包括多分类响应、多分类 Logit、条件 Logit、嵌套 Logit、混合 Logit、多分类 Probit、有序响应、计数数据和 BLP 需求模型
 For more detailed treatments see Maddala (1983), Cameron and Trivedi (1998), Cameron and Trivedi (2005), Train (2009), and Wooldridge (2010)	更详细的处理参见 Maddala (1983)、Cameron 和 Trivedi (1998)、Cameron 和 Trivedi (2005)、Train (2009) 和 Wooldridge (2010)
-Multinomial Response	多项式响应
+Multinomial Response	多分类响应
 We illustrate by extending the marriage status example of the previous chapter	我们通过扩展上一章的婚姻状况示例来进行说明
 For our illustration we take the population of college-educated women	为了说明这一点，我们以受过大学教育的女性人口为例
 The estimates show that the probability of "never married" decreases monotonically with age, that for "married" increases until around 38 and then decreases slowly, the probability of "divorced" increases monotonically with age, and the probability of "separated" is low for all age groups	估计结果显示，“未婚”概率随年龄单调下降，“已婚”概率增加至38岁左右，然后缓慢下降，“离婚”概率随年龄单调上升，“分居”概率较低适合所有年龄段
 A defect of the estimates of Figure 26.1(a) is that the sum of the four estimated probabilities (displayed as "Total") does not equal one	图 26.1(a) 估计的一个缺陷是四个估计概率的总和（显示为“总计”）不等于 1
 For the remainder of this chapter the estimators discussed do not have this defect	在本章的其余部分中，讨论的估计量不存在此缺陷
 Figure 26.1: Probability of Marital Status Given Age for College Educated Women	图 26.1：受过大学教育的女性在特定年龄下的婚姻状况概率
-Multinomial response is typically motivated and derived from a model of latent utility	多项式响应通常是由潜在效用模型激发和导出的
+Multinomial response is typically motivated and derived from a model of latent utility	多分类响应通常是由潜在效用模型激发和导出的
 The choice is also unchanged if each utility (26.1) is multiplied by positive constant	如果每个效用 (26.1) 乘以正常数，则选择也不会改变
-Two classical multinomial response models are logit and probit	两个经典的多项响应模型是 Logit 和 Probit
-Multinomial Logit	多项式Logit
-The simple multinomial logit model is	简单的多项 Logit 模型是
-We call (26.2) the simple multinomial logit to distinguish it from the conditional logit model of the next section	我们将（26.2）称为简单多项式 Logit，以将其与下一节的条件 Logit 模型区分开
-The multinomial logit arises from the latent utility model (26.1) for the following error distributions	多项式 Logit 源自以下误差分布的潜在效用模型 (26.1)
+Two classical multinomial response models are logit and probit	两个经典的多分类响应模型是 Logit 和 Probit
+Multinomial Logit	多分类 Logit
+The simple multinomial logit model is	简单的多分类 Logit 模型是
+We call (26.2) the simple multinomial logit to distinguish it from the conditional logit model of the next section	我们将（26.2）称为简单多分类 Logit，以将其与下一节的条件 Logit 模型区分开
+The multinomial logit arises from the latent utility model (26.1) for the following error distributions	多分类 Logit 源自以下误差分布的潜在效用模型 (26.1)
 Definition 26.1 The Type I Extreme Value distribution function is	定义26.1 I型极值分布函数为
 Definition 26.2 The Generalized Extreme Value (GEV) joint distribution is	定义 26.2 广义极值 (GEV) 联合分布为
 The proof is in Section 26.13	证明在第 26.13 节中
@@ -3959,17 +3949,17 @@ A reasonable deduction is that this assumption is made for algebraic convenience
 The log-likelihood function is	对数似然函数是
 The maximum likelihood estimator (MLE) is:	极大似然估计量 (MLE) 为：
 The log-likelihood function is globally concave so maximization is numerically straightforward	对数似然函数是全局凹的，因此最大化在数值上很简单
-To illustrate, we estimate the marriage status example of the previous section using multinomial logit and display the estimated response probabilities in Figure 26.1(b)	为了说明这一点，我们使用多项 Logit 估计上一节的婚姻状况示例，并在图 26.1(b) 中显示估计的响应概率
+To illustrate, we estimate the marriage status example of the previous section using multinomial logit and display the estimated response probabilities in Figure 26.1(b)	为了说明这一点，我们使用多分类 Logit 估计上一节的婚姻状况示例，并在图 26.1(b) 中显示估计的响应概率
 The estimates are similar to the binary choice estimates in panel (a) but by construction sum to one	这些估计与图 (a) 中的二值选择估计类似，但构造总和为 1
-The coefficients of a multinomial choice model can be difficult to interpret	多项选择模型的系数可能难以解释
-In Stata, multinomial logit can be implemented using the mlogit command	在Stata中，可以使用mlogit命令实现多项式logit
+The coefficients of a multinomial choice model can be difficult to interpret	多分类选择模型的系数可能难以解释
+In Stata, multinomial logit can be implemented using the mlogit command	在Stata中，可以使用 mlogit 命令实现多项式 logit
 In R, multinomial logit can be implemented using the mlogit command	在 R 中，可以使用 mlogit 命令实现多项式 logit
-Conditional Logit	条件逻辑
+Conditional Logit	条件 Logit
 A choice model which allows for regressors which differ across alternatives was developed by McFadden in the 1970s, which he called the Conditional Logit model	McFadden 在 20 世纪 70 年代开发了一种选择模型，该模型允许不同替代方案之间存在不同的自变量，他将其称为条件 Logit 模型
 An example will help illustrate the setting	一个例子将有助于说明该设置
 As a concrete example consider the dataset Koppelman on the textbook webpage	作为一个具体示例，请考虑教科书网页上的数据集 Koppelman
-Available regressors include the cost of each alternative, the in-vehicle travel time (intime) of each alternative, household income, and an indicator if one of the trip endpoints is an urban center	可用的自变量包括每个替代方案的成本、每个替代方案的车内出行时间 (intime)、家庭收入以及行程终点之一是否为城市中心的指标
-To understand the difference between the multinomial logit and the conditional logit models, (26.1) describes how the utility of a specific alternative (e.g. married or divorced) is affected by a variable such as age	为了理解多项 Logit 模型和条件 Logit 模型之间的差异，（26.1）描述了特定替代方案（例如结婚或离婚）的效用如何受到年龄等变量的影响
+Available regressors include the cost of each alternative, the in-vehicle travel time (intime) of each alternative, household income, and an indicator if one of the trip endpoints is an urban center	可用的自变量包括每个替代方案的成本、每个替代方案的驾车出行时间 (intime)、家庭收入以及行程终点之一是否为城市中心的指标
+To understand the difference between the multinomial logit and the conditional logit models, (26.1) describes how the utility of a specific alternative (e.g. married or divorced) is affected by a variable such as age	为了理解多分类 Logit 模型和条件 Logit 模型之间的差异，（26.1）描述了特定替代方案（例如结婚或离婚）的效用如何受到年龄等变量的影响
 These variables have common meanings across alternatives so the restriction that the coefficients are common appears reasonable	这些变量在各个替代方案中具有共同的含义，因此系数共同的约束似乎是合理的
 Using the Koppelman dataset we estimate a conditional logit model	使用 Koppelman 数据集，我们估计条件 Logit 模型
 The income coefficient is positive for air travel and negative for bus travel, indicating that transportation choice is affected by a traveler's income in the expected way	航空旅行的收入系数为正，巴士旅行的收入系数为负，这表明交通选择以预期的方式受到旅行者收入的影响
@@ -3977,31 +3967,31 @@ As discussed previously, coefficient estimates can be difficult to interpret	如
 To illustrate, we report a set of estimated AME of cost and time factors on the probability of train travel in Table 26.2	为了说明这一点，我们在表 26.2 中报告了一组关于火车旅行概率的成本和时间因素的估计 AME
 Note: For ease of reading, the reported AME estimates have been multiplied by 100	注：为了便于阅读，报告的 AME 估计值已乘以 100
 In Stata, model (26.7) can be estimated using cmclogit	在 Stata 中，可以使用 cmclogit 估计模型 (26.7)
-Independence of Irrelevant Alternatives	不相关替代方案的独立性
-The multinomial logit model has an undesirable restriction	多项 Logit 模型有一个不希望的局限
-This property is strongly tied to the multinomial logit model as the latter was derived axiomatically by Luce (1959) from an IIA assumption	该特征与多项 Logit 模型密切相关，因为后者是 Luce (1959) 根据 IIA 假设公理地推导出来的
+Independence of Irrelevant Alternatives	不相关替代的独立性
+The multinomial logit model has an undesirable restriction	多分类 Logit 模型有一个不想看到的局限
+This property is strongly tied to the multinomial logit model as the latter was derived axiomatically by Luce (1959) from an IIA assumption	该特征与多分类 Logit 模型密切相关，因为后者是 Luce (1959) 根据 IIA 假设公理地推导出来的
 To understand why IIA may be problematic it is helpful to think through specific examples	为了理解为什么 IIA 可能存在问题，思考具体的案例会有所帮助
 In this latter setting a low airplane ticket may make it highly unlikely that an individual will select train travel while unaffecting their likelihood of selecting car travel	在后一种情况下，低廉的机票可能使个体不太可能选择火车旅行，同时不影响他们选择汽车旅行的可能性
 A famous example of this problem is the following setting	此问题的一个著名示例是以下设置
 This example is known as the "red bus/blue bus puzzle"	这个案例被称为“红色巴士/蓝色巴士谜题”
-The source of the problem is that the IIA structure and multinomial logit model exclude differentiated substitutability among the alternatives	问题的根源在于IIA结构和多项logit模型排除了替代方案之间有区别的可替代性
+The source of the problem is that the IIA structure and multinomial logit model exclude differentiated substitutability among the alternatives	问题的根源在于 IIA 结构和多分类 logit 模型排除了替代方案之间可替代性的区别
 red bus and blue bus) are close substitutes	当替代品的子集（例如红色巴士和蓝色巴士）是相近替代品时，这是不合适的
 Part of the problem is due to the restrictive correlation pattern imposed on the errors by the generalized extreme value distribution	部分问题是由于广义极值分布对误差施加的约束性相关模式造成的
-To allow for cases such as red bus/blue bus we require a more flexible correlation structure which allows subsets of alternatives to have differential correlations	为了允许诸如红色总线/蓝色总线之类的情况，我们需要更灵活的相关结构，该结构允许替代方案的子集具有差异相关性
-Nested Logit	嵌套逻辑
+To allow for cases such as red bus/blue bus we require a more flexible correlation structure which allows subsets of alternatives to have differential correlations	为了允许诸如红色巴士/蓝色巴士之类的情况，我们需要更灵活的相关性结构，该结构允许替代方案的子集具有不同相关性
+Nested Logit	嵌套 Logit
 The nested logit model circumvents the IIA problem described in the previous section by separating the alternatives into groups	嵌套 Logit 模型通过将备选方案分组来规避上一节中描述的 IIA 问题
 Alternatives within groups are allowed to be correlated but are assumed uncorrelated across groups	组内的替代方案允许相关，但假设组间不相关
 McFadden's Nested Logit model assumes that the errors have the following GEV joint distribution	McFadden 的嵌套 Logit 模型假设误差具有以下 GEV 联合分布
-This is a generalization of the GEV distribution (26.3)	这是 GEV 分布 (26.3) 的概括
+This is a generalization of the GEV distribution (26.3)	这是 GEV 分布 (26.3) 的一般化
 If a group has a single alternative its dissimilarity parameter is not identified so should be set to one	如果一个组只有一个替代方案，则其相异性参数不会被识别，因此应设置为 1
 The nested logit model (26.12)-(26.13) is structurally identical to the conditional logit model except that the error distribution is (26.13) instead of (26.3)	嵌套 Logit 模型 (26.12)-(26.13) 在结构上与条件 Logit 模型相同，只是误差分布是 (26.13) 而不是 (26.3)
 These can be included in the model with common coefficients	这些可以包含在具有公共系数的模型中
-The partition of alternatives into groups is a modeling decision	将备选方案划分为组是一个建模决策
-Alternatives with a low degree of substitutability should be placed in different groups	具有低可替代性的替代品应分为不同的组
+The partition of alternatives into groups is a modeling decision	将备选方案划分为组是一种建模决策
+Alternatives with a low degree of substitutability should be placed in different groups	具有低可替代性的替代方案应分为不同的组
 To illustrate, consider a consumer choice of an automobile purchase	为了说明这一点，请考虑消费者购买汽车的选择
 This shows the division of the decision "Car" into "Compact" and "Sports Utility Vehicle" and the further division by model	这显示了决策“汽车”分为“紧凑型”和“运动型多用途车”以及按型号的进一步划分
 Figure 26.2: Nested Choice	图 26.2：嵌套选择
-The scale of the coefficients is not identified separately from the scaling of the errors implicit in the GEV distribution (26.13)	系数的规模没有与 GEV 分布中隐含的误差的规模分开确定（26.13）
+The scale of the coefficients is not identified separately from the scaling of the errors implicit in the GEV distribution (26.13)	系数的规模没有与 GEV 分布中隐含的误差的尺度分开确定（26.13）
 Some authors interpret model (26.12) as a nested sequential choice	一些作者将模型（26.12）解释为嵌套的顺序选择
 The correct interpretation is degree of substitutability not the timing of decisions	正确的解释是可替代性的程度，而不是决策的时间安排
 We now describe the nested logit response probabilities	我们现在描述嵌套的 Logit 响应概率
@@ -4009,43 +3999,43 @@ Because the probability structure of a nested logit model is more complicated th
 Marginal effects can (in principle) be calculated but these are complicated functions of the coefficients	边际效应（原则上）可以计算，但这些是系数的复杂函数
 To illustrate, we estimate a nested logit model of transportation choice using the Koppelman dataset	为了说明这一点，我们使用 Koppelman 数据集估计了交通选择的嵌套 Logit 模型
 Nested logit modeling is limited by the necessity of selecting the groupings	嵌套 Logit 建模受到选择分组的必要性的限制
-Typically there is not a unique obvious structure; consequently any proposed grouping is subject to misspecification	通常没有独特的明显结构；因此，任何拟议的分组都可能出现误设
+Typically there is not a unique obvious structure; consequently any proposed grouping is subject to misspecification	通常没有独特的明显结构；因此，任何拟定的分组都可能出现误设
 In this section we described the nested logit model with one nested layer	在本节中，我们描述了具有一个嵌套层的嵌套 logit 模型
-The levels used in her analysis were (1) Buy/Not Buy; (2) New/Used; (3) Car Class; (4) Foreign/Domestic; and (5) Car Model	她的分析中使用的水平是（1）买入/不买入； (2) 新的/二手的； (3)轿车类； (4) 国外/国内； (5) 车型
-In Stata, nested logit models can be estimated by nlogit	在Stata中，嵌套logit模型可以通过nlogit来估计
-Mixed Logit	混合逻辑
+The levels used in her analysis were (1) Buy/Not Buy; (2) New/Used; (3) Car Class; (4) Foreign/Domestic; and (5) Car Model	她的分析中使用的水平是（1）买入/不买入； (2) 新的/二手的； (3)轿车类别； (4) 国外/国内； (5) 车型
+In Stata, nested logit models can be estimated by nlogit	在Stata中，嵌套 logit 模型可以通过 nlogit 来估计
+Mixed Logit	混合 Logit
 The model is also known as conditional mixed logit and random parameters logit	该模型也称为条件混合 Logit 和随机参数 Logit
 The above model allows the effect of cost and time on utility to be heterogeneous across individuals	上述模型允许成本和时间对效用的影响在个体之间是异质的
-The reason why these constraints may be desirable is parsimony and simpler computation	这些约束可能是理想的原因是简约和更简单的计算
+The reason why these constraints may be desirable is parsimony and simpler computation	这些约束可能是令人向往的原因是计算的简约和简单化
 A useful feature of the mixed logit model is that the random coefficients induce correlation among the alternatives	混合 Logit 模型的一个有用特征是随机系数引起备选方案之间的相关性
 The unconditional response probabilities are found by integration	通过积分可以找到无条件响应概率
-The integral in (26.14) is not available in closed form	(26.14) 中的积分不能以封闭形式获得
+The integral in (26.14) is not available in closed form	(26.14) 中的积分不能以紧凑形式获得
 To illustrate, we estimate a mixed logit model for the transportation application treating the coefficient on travel time as a normal random variable	为了说明这一点，我们估计了交通应用的混合 Logit 模型，将旅行时间系数视为正态随机变量
-An interpretation of this random coefficient is that travelers have heterogeneous costs associated with travel time	该随机系数的解释是旅行者具有与旅行时间相关的异质成本
-In Stata, mixed logit can be estimated by cmmixlogit	在Stata中，混合logit可以通过cmmixlogit来估计
-Simple Multinomial Probit	简单多项式概率
-The simple multinomial probit and simple conditional multinomial probit models combine the latent utility model	简单多项式概率和简单条件多项式概率模型结合了潜在效用模型
-Identification is identical to multinomial logit	识别与多项 Logit 相同
+An interpretation of this random coefficient is that travelers have heterogeneous costs associated with travel time	该随机系数的解释是旅行者具有与旅行时间有关的异质成本
+In Stata, mixed logit can be estimated by cmmixlogit	在Stata中，混合 logit 可以通过 cmmixlogit 来估计
+Simple Multinomial Probit	简单多分类概率
+The simple multinomial probit and simple conditional multinomial probit models combine the latent utility model	简单多分类概率和简单条件多分类概率模型结合了潜在效用模型
+Identification is identical to multinomial logit	识别与多分类 Logit 相同
 However, it can be expressed as a one-dimensional integral, as we now show	然而，正如我们现在所展示的，它可以表示为一维积分
-Theorem 26.3 In the simple multinomial probit and simple conditional multinomial probit models the response probabilities equal	定理26.3 在简单多项式概率和简单条件多项式概率模型中，响应概率相等
+Theorem 26.3 In the simple multinomial probit and simple conditional multinomial probit models the response probabilities equal	定理26.3 在简单多分类概率和简单条件多分类概率模型中，响应概率相等
 The proof is presented in Section 26.13	证明在第 26.13 节中给出
 This integral (26.18) is straightforward to numerically evaluate by quadrature methods	该积分 (26.18) 可以直接通过求积方法进行数值计算
-To illustrate, we estimate a simple conditional multinomial probit model for transportation choice using the same specification as before	为了说明这一点，我们使用与之前相同的设定来估计一个用于交通选择的简单条件多项概率模型
+To illustrate, we estimate a simple conditional multinomial probit model for transportation choice using the same specification as before	为了说明这一点，我们使用与之前相同的设定来估计一个运用于交通选择的简单条件多分类概率模型
 We see that the estimated AME are very close to those of the conditional logit model	我们看到估计的 AME 与条件 Logit 模型的 AME 非常接近
 In Stata, simple multivariate probit can be estimated by mprobit	在 Stata 中，简单的多元概率可以通过 mprobit 来估计
 The latter uses the method of simulated maximum likelihood (discussed in the next section) even though numerical calculation could be implemented efficiently using the one-dimensional integral (26.18)	后者使用模拟极大似然法（在下一节中讨论），尽管数值计算可以使用一维积分（26.18）有效地实现
-General Multinomial Probit	一般多项式概率
-Identification of the coefficients is the same as multinomial logit	系数的识别与多项式 Logit 相同
-This flexibility allows general multinomial probit to escape the IIA restrictions	这种灵活性允许一般多项式概率逃脱 IIA 约束
-Consequently it may be prudent to use simpler methods such as conditional and nested logit for exploratory analysis and multinomial probit for final-stage estimation	因此，谨慎使用更简单的方法（例如用于探索性分析的条件和嵌套 Logit 以及用于最终阶段估计的多项概率）可能是明智的
-To illustrate, we estimate the general multinomial probit model for the transportation application	为了说明这一点，我们估计了交通应用的一般多项式概率模型
+General Multinomial Probit	广义多分类概率
+Identification of the coefficients is the same as multinomial logit	系数的识别与多分类 Logit 相同
+This flexibility allows general multinomial probit to escape the IIA restrictions	这种灵活性允许一般多分类概率跳出 IIA 约束
+Consequently it may be prudent to use simpler methods such as conditional and nested logit for exploratory analysis and multinomial probit for final-stage estimation	因此，谨慎使用更简单的方法（例如用于探索性分析的条件和嵌套 Logit 以及用于最终阶段估计的多分类概率）可能是明智的
+To illustrate, we estimate the general multinomial probit model for the transportation application	为了说明这一点，我们估计了交通应用的一般多分类概率模型
 This is substantial but one-half of the increase estimated by conditional logit	这是相当大的，但只是条件 logit 估计的增长的一半
-A multinomial probit model with four alternatives has five covariance parameters	具有四个备选方案的多项概率模型具有五个协方差参数
+A multinomial probit model with four alternatives has five covariance parameters	具有四个备选方案的多分类概率模型具有五个协方差参数
 In both frameworks the estimates indicate a high correlation between air and car travel, implying that specifications with independent errors are misspecified	在这两个框架中，估计结果表明航空旅行和汽车旅行之间存在高度相关性，这意味着具有独立误差是被错误设定的
 In Stata, multivariate probit can be estimated by cmmprobit	在 Stata 中，多元概率可以通过 cmmprobit 来估计
 It uses GHK simulated maximum likelihood as described above	它使用如上所述的 GHK 模拟极大似然
 Ordered Response	有序响应
-multinomial logit or probit) but this ignores the ordinal structure and is therefore inefficient	我们可以使用标准多项式方法（例如多项式 logit 或 probit），但这忽略了序数结构，因此效率低下
+multinomial logit or probit) but this ignores the ordinal structure and is therefore inefficient	我们可以使用标准多分类方法（例如多分类 logit 或 probit），但这忽略了顺序结构，因此效率低下
 The standard approach to ordered response is based on the latent variable framework	有序响应的标准方法基于潜变量框架
 The threshold crossing model postulates that responses are increasing in the latent variable and are determined by the thresholds	阈值交叉模型假设潜在变量的响应正在增加，并且由阈值确定
 It may be easier to interpret the cumulative response probabilities	解释累积响应概率可能更容易
@@ -4060,15 +4050,15 @@ Since the second derivative is globally negative definite the log-likelihood fun
 Hence numerical optimization to find the MLE is computationally straightforward	因此，寻找 MLE 的数值优化在计算上是很简单的
 In general there is no reason to expect the Poisson model to be correctly specified	一般来说，没有理由期望泊松模型能够被正确设定
 To explore this concept further, suppose the true CEF is nonparametric	为了进一步探讨这个概念，假设真实的 CEF 是非参数的
-This is a broad justification for Poisson regression in count data applications if suitable attention is paid to the functional form for the included regressors	如果对所包含的自变量的函数形式给予适当的关注，那么这就是计数数据应用中泊松回归的广泛理由
+This is a broad justification for Poisson regression in count data applications if suitable attention is paid to the functional form for the included regressors	如果对所包含的自变量的函数形式给予适当的关注，那么这就是计数数据应用中泊松回归广泛适用的理由
 Since the model is an approximation, however, the conventional covariance matrix estimator will be inconsistent	然而，由于该模型是近似值，因此传统的协方差矩阵估计量将不一致
 Consequently it is advised to use the robust formula for covariance matrix and standard error estimation	因此，建议使用协方差矩阵和标准误差估计的稳健公式
 For more detail see the excellent monograph on count data models by Cameron and Trivedi (1998)	有关更多详细信息，请参阅 Cameron 和 Trivedi (1998) 撰写的关于计数数据模型的优秀专著
-In Stata, Poisson and Negative Binomial regression can be estimated by poisson and nbreg	在Stata中，泊松和负二项回归可以通过泊松和nbreg来估计
-Generalizations to allow truncation, fixed effects, and random effects are also available	还可以进行允许截断、固定效应和随机效应的概括
-BLP Demand Model	BLP需求模型
+In Stata, Poisson and Negative Binomial regression can be estimated by poisson and nbreg	在Stata中，泊松和负二项回归可以通过 poisson 和 nbreg 来估计
+Generalizations to allow truncation, fixed effects, and random effects are also available	广义上还可以允许截断、固定效应和随机效应
+BLP Demand Model	BLP 需求模型
 A major development in the 1990s was the extension of conditional logit to models of aggregate market demand	20 世纪 90 年代的一项重大发展是将条件 Logit 扩展到市场总需求模型
-To discuss implementation we use as examples the applications in Berry, Levinsohn, and Pakes (1995) and Nevo (2001)	为了讨论实现，我们使用 Berry、Levinsohn 和 Pakes (1995) 以及 Nevo (2001) 中的应用程序作为示例
+To discuss implementation we use as examples the applications in Berry, Levinsohn, and Pakes (1995) and Nevo (2001)	为了讨论操作，我们使用 Berry、Levinsohn 和 Pakes (1995) 以及 Nevo (2001) 中的应用作为示例
 The context is market-level observations	背景是市场层面的观测
 Observations typically include the price and sale quantities of each good, a set of characteristics of each good, and possibly information on demographic characteristics of the market population	观测通常包括每种商品的价格和销售数量、每种商品的一组特征，以及可能的有关市场总体的人口特征的信息
 The model is derived from a conditional logit specification of individual behavior	该模型源自个体行为的条件 Logit 设定
@@ -4078,94 +4068,91 @@ We mentioned earlier that observations may include demographic information	我�
 These random variables are then treated jointly with the random coefficients with no effective change in the estimation method	然后将这些随机变量与随机系数一起处理，而估计方法没有发生有效改变
 To estimate a BLP model in Stata there is an add-on command blp	为了在 Stata 中估计 BLP 模型，有一个附加命令 blp
 In Python there is a package PyBLP	Python 中有一个包 PyBLP
-Proof of Theorem 26.2: The proof method is similar to that of Theorem 26.1	定理26.2的证明：证明方法与定理26.1类似
-Censoring and Selection	审查和选择
+Proof of Theorem 26.2: The proof method is similar to that of Theorem 26.1	定理 26.2 的证明：证明方法与定理 26.1 类似
+Censoring and Selection	删失和选择
 Censored regression occurs when the dependent variable is constrained, resulting in a pile-up of observations on a boundary	当因变量受到约束时，就会发生删失回归，导致边界上的观测值堆积
 Methods have been developed to circumvent this bias, including the Tobit, CLAD, and sample selection estimators	已经开发出一些方法来规避这种偏误，包括 Tobit、CLAD 和样本选择估计量
 For more detail see Maddala (1983), Amemiya (1985), Gourieroux (2000), Cameron and Trivedi (2005), and Wooldridge (2010)	欲了解更多详细信息，请参阅 Maddala (1983)、Amemiya (1985)、Gourieroux (2000)、Cameron 和 Trivedi (2005) 以及 Wooldridge (2010)
-Censoring	审查
+Censoring	删失
 It is common in economic applications for a dependent variable to have a mixed discrete/continuous distribution, where the discrete component is on the boundary of support	在经济应用中，因变量具有混合离散/连续分布是很常见的，其中离散成分位于支持边界上
-The associated density is displayed by the line graph	相关的密度通过折线图显示
-Given such observations it is unclear how to proceed with a regression analysis	鉴于这些观测结果，尚不清楚如何进行回归分析
+The associated density is displayed by the line graph	相关的密度通过线型图显示
+Given such observations it is unclear how to proceed with a regression analysis	鉴于这些观测，尚不清楚如何进行回归分析
 To answer these questions it is useful to have a statistical model	为了回答这些问题，有一个统计模型很有用
-Without loss of generality we focus on the case of censoring from below at zero	不失一般性，我们重点关注从下到零进行审查的情况
+Without loss of generality we focus on the case of censoring from below at zero	不失一般性，我们重点关注从下值到零值进行删失的情况
 The censored regression model was proposed by Tobin (1958) to explain household consumption of durable goods	审查回归模型由 Tobin (1958) 提出，用于解释家庭耐用品消费
-He proposed treating the observations as censored realizations from a continuou	他建议将观测结果视为来自连续的审查的实现
-Figure 27.1: Censored Densities	图 27.1：截尾密度
+He proposed treating the observations as censored realizations from a continuou	他建议将观测视为来自连续的删失实现
+Figure 27.1: Censored Densities	图 27.1：删失密度
 This model is known as Tobit regression or censored regression	该模型称为 Tobit 回归或删失回归
-This censoring model replicates the observed phenomenon of a pile-up of observations at 0	该审查模型复现了在 0 处观测到的堆积现象
+This censoring model replicates the observed phenomenon of a pile-up of observations at 0	该删失模型复现了在 0 处观测到的堆积现象
 This may be a strained interpretation for consumption purchases, but may be reasonable when negative values make economic sense	对于消费购买来说，这可能是一种紧张的解释，但当负值具有经济意义时，这可能是合理的
-The censoring process is depicted in Figure 27.1(b)	审查过程如图 27.1(b) 所示
-A common "remedy" to the censoring problem is deletion of the censored observations	审查问题的常见“补救措施”是删除审查的观测结果
-In Figure 27.1(a) and Figure 27.1(b) the truncated distribution is the continuous portion above 0 with the mass point at 0 omitted	在图27.1(a)和图27.1(b)中，截断分布是0以上的连续部分，省略了0处的质点
-The truncated distribution is obtained by deleting the censored observations so consists of just the open squares	截断分布是通过删除删失观测值获得的，因此仅包含空心方块
-Figure 27.2: Properties of Censored Distributions	图 27.2：截尾分布的特征
+The censoring process is depicted in Figure 27.1(b)	删失过程如图 27.1(b) 所示
+A common "remedy" to the censoring problem is deletion of the censored observations	删失问题的常见“补救措施”是删除删失的观测结果
+In Figure 27.1(a) and Figure 27.1(b) the truncated distribution is the continuous portion above 0 with the mass point at 0 omitted	在图27.1(a)和图27.1(b)中，截断分布是0以上的连续部分，省略了0处的数点
+The truncated distribution is obtained by deleting the censored observations so consists of just the open squares	截断分布是通过删除删失观测获得的，因此仅包含空心方块
+Figure 27.2: Properties of Censored Distributions	图 27.2：删失分布的特征
 The censored regression model (27.1) makes several strong assumptions: (1) linearity of the conditional mean; (2) independence of the error; (3) normal distribution	删失回归模型（27.1）做出了几个强有力的假设：（1）条件均值的线性； (2) 误差的独立性； (3)正态分布
 The normality assumption is also quite important, yet difficult to justify from first principles	正态性假设也相当重要，但很难从第一原理中证明其合理性
 Censored Regression Functions	删失回归函数
 We can calculate some properties of the conditional distribution of the censored random variable	我们可以计算删失随机变量的条件分布的一些特征
-The conditional mean of the uncensored, censored, and truncated distributions are	未经审查、审查和截断分布的条件平均值为
+The conditional mean of the uncensored, censored, and truncated distributions are	未经删失、删失和截断分布的条件平均值为
 To obtain (27.2) and (27.3) see Theorems 5.8.4 and 5.8.6 of Probability and Statistics for Economists and Exercise 27.1	要获得 (27.2) 和 (27.3)，请参阅《经济学家概率论与数理统计》的定理 5.8.4 和 5.8.6 以及练习 27.1
-with strict inequality if the censoring probability is positive	如果审查概率为正，则具有严格的不等式
-This shows that the conditional means of the truncated and censored distributions are biased for the uncensored conditional mean	这表明截断和审查分布的条件均值相对于未经审查的条件均值存在偏误
+with strict inequality if the censoring probability is positive	如果删失概率为正，则具有严格的不等式
+This shows that the conditional means of the truncated and censored distributions are biased for the uncensored conditional mean	这表明截断和删失分布的条件均值相对于未经删失的条件均值存在偏误
 We illustrate in Figure 27.2(a)	我们在图 27.2(a) 中进行了说明
 The functions are strictly ranked with the truncated mean exhibiting the highest bias	这些函数严格按照显示最高偏误的截断均值进行排序
 The Bias of Least Squares Estimation	最小二乘估计的偏误
 We derive (27.4) at the end of this section	我们在本节末尾推导出(27.4)
-Greene's formula (27.4) shows that the least squares slope coefficients are shrunk towards zero proportionately with the censoring percentage	格林公式（27.4）表明最小二乘斜率系数随着审查百分比成比例地向零收缩
-10%) then estimation methods which correct for censoring bias may be desired	然而，如果审查比例 $\pi$ 足够高（例如 10%），则可能需要纠正审查偏误的估计方法
+Greene's formula (27.4) shows that the least squares slope coefficients are shrunk towards zero proportionately with the censoring percentage	Greene 的公式（27.4）表明最小二乘斜率系数随着删失百分比成比例地向零收缩
 We close this section by deriving (27.4)	我们通过推导（27.4）来结束本节
 which is (27.4) as claimed	正如所声称的那样，这是（27.4）
-Tobit Estimator	托比特估计量
+Tobit Estimator	Tobit 估计量
 Tobin (1958) proposed estimation of the censored regression model (27.1) by maximum likelihood	Tobin (1958) 提出通过极大似然估计删失回归模型 (27.1)
-The first component is the probability of censoring and the second component is the normal regression density	第一个成分是审查概率，第二个成分是正态回归密度
+The first component is the probability of censoring and the second component is the normal regression density	第一个成分是删失概率，第二个成分是正态回归密度
 The log-likelihood is the sum of the log density functions evaluated at the observations:	对数似然是根据观测值评估的对数密度函数的总和：
 Amemiya (1973) established its asymptotic normality	Amemiya (1973) 建立了其渐近正态性
 Hence the first term in (27.5) is concave	因此（27.5）中的第一项是凹的
 In Stata, Tobit regression can be estimated with the tobit command	在 Stata 中，可以使用 tobit 命令估计 Tobit 回归
 In R there are several options including the tobit command in the AER package	在 R 中，有多个选项，包括 AER 包中的 tobit 命令
-James Tobin (1918-2002) of the United States was one of the leading macroe-\\	美国的詹姆斯·托宾（James Tobin，1918-2002）是宏观经济学的领军人物之一
-conomists of the mid-twentieth century and winner of the 1981 Nobel Memorial\\	二十世纪中叶的经济学家和 1981 年诺贝尔奖得主\
+James Tobin (1918-2002) of the United States was one of the leading macro economic	美国的詹姆斯·托宾（James Tobin，1918-2002）是宏观经济学的领军人物之一
+conomists of the mid-twentieth century and winner of the 1981 Nobel Memorial	二十世纪中叶的经济学家和 1981 年诺贝尔奖得主
 its MLE, typically called the Tobit estimator	它的 MLE，通常称为 Tobit 估计量
-destroyer during World War II	第二次世界大战期间的驱逐舰
-a crew member named "Tobit" who had "a mind like a sponge" because of his\\	一位名叫“托比特”的船员，拥有“像海绵一样的头脑”，因为他的……
 on the same Navy destroyer during WWII	二战期间在同一艘海军驱逐舰上
-Identification in Tobit Regression	Tobit 回归中的识别
+Identification in Tobit Regression	Tobit 回归的识别
 The Tobit model (27.1) makes several strong assumptions	Tobit 模型 (27.1) 做出了几个强有力的假设
 These two assumptions, however, are essential as we now discuss	然而，正如我们现在所讨论的，这两个假设是必不可少的
-The key insight is that quantiles, not means, are nonparametrically identified from a censored distribution	关键的见解是分位数，而不是均值，是从审查分布中非参数确定的
-Figure 27.3: Censored Regression Quantiles	图 27.3：截尾回归分位数
+The key insight is that quantiles, not means, are nonparametrically identified from a censored distribution	关键的见解是分位数，而不是均值，是从删失分布中非参数确定的
+Figure 27.3: Censored Regression Quantiles	图 27.3：删失回归分位数
 CLAD and CQR Estimators	CLAD 和 CQR 估计量
-The model in Powell (1984) is censored median regression:	Powell (1984) 中的模型是删失中值回归：
-The appropriate estimator for median regression is least absolute deviations (LAD)	中值回归的适当估计量是最小绝对误差 (LAD)
-As for CLAD, the criterion is not globally concave so numerical minimization is not guarenteed to converge to the global minimum	对于 CLAD，标准不是全局凹的，因此不能保证数值最小化收敛到全局最小值
-Essentially, there must be sufficient variation in the regressors over the region of the sample space where there is no censoring	本质上，在没有审查的样本空间区域内，自变量必须有足够的变化
+The model in Powell (1984) is censored median regression:	Powell (1984) 中的模型是删失中位数回归：
+The appropriate estimator for median regression is least absolute deviations (LAD)	中位数回归的适当估计量是最小绝对误差 (LAD)
+As for CLAD, the criterion is not globally concave so numerical minimization is not guarenteed to converge to the global minimum	对于 CLAD，准则不是全局凹的，因此不能保证数值最小化收敛到全局最小值
+Essentially, there must be sufficient variation in the regressors over the region of the sample space where there is no censoring	本质上，在没有删失的样本空间区域内，自变量必须有足够的变化
 CLAD can be estimated in Stata with the add-on package clad	CLAD 可以在 Stata 中使用附加包 clad 进行估算
 In R, CLAD and CQR can be estimated with the crq command in the package quantreg	在 R 中，可以使用 quantreg 包中的 crq 命令来估计 CLAD 和 CQR
-Illustrating Censored Regression	说明审查回归
-To illustrate the methods we revisit of the applications reported in Section 20.6, where we used a linear spline to estimate the impact of income on non-governmental transfers for a sample of 8684 Phillipino households	为了说明方法，我们重新审视第 20.6 节中报告的应用程序，其中我们使用线性样条来估计 8684 个菲律宾家庭样本的收入对非政府转移的影响
-This proportion is sufficiently high that we should expect significant censoring bias if censoring is ignored	这个比例足够高，如果忽略审查，我们应该预期会出现显著的审查偏误
+Illustrating Censored Regression	说明删失回归
+To illustrate the methods we revisit of the applications reported in Section 20.6, where we used a linear spline to estimate the impact of income on non-governmental transfers for a sample of 8684 Phillipino households	为了说明方法，我们重新审视第 20.6 节中报告的应用，其中我们使用线性样条来估计 8684 个菲律宾家庭样本的收入对非政府转移的影响
+This proportion is sufficiently high that we should expect significant censoring bias if censoring is ignored	这个比例足够高，如果忽略删失，我们应该预期会出现显著的删失偏误
 We display the estimated regression as a function of income (with remaining regressors set at sample means) in Figure 27.3(b)	我们将估计的回归显示为收入的函数（其余自变量设置为样本均值），如图 27.3(b) 所示
-Overall, the CLAD estimates are the preferred choice because they are robust to both censoring and non-normality	总体而言，CLAD 估计是首选，因为它们对于审查和非正态性都很稳健
+Overall, the CLAD estimates are the preferred choice because they are robust to both censoring and non-normality	总体而言，CLAD 估计是首选，因为它们对于删失和非正态性都很稳健
 Sample Selection Bias	样本选择偏误
 While econometric models typically assume random sampling, actual observations are typically gathered non-randomly	虽然计量经济学模型通常假设随机抽样，但实际观测结果通常是非随机收集的
 The following are examples of potential sample selection	以下是潜在样本选择的示例
-The decision to work may be endogenously related to the person's observed and unobserved characteristics	工作决定可能与人的观察到和未观察到的特征有内在的联系
+The decision to work may be endogenously related to the person's observed and unobserved characteristics	工作决策可能与人的观察到和未观察到的特征有内在的联系
 Individuals who volunteer for a training program may have abilities which are correlated with outcomes	自愿参加培训计划的个体可能具有与结果相关的能力
-Endogenous selection arises when the decision to complete and return the survey is correlated with the survey responses	当完成和返回调查的决定与调查答复相关时，就会出现内生选择
-Endogenous selection arises when the decision to rate the product is correlated with the response	当对产品进行评级的决定与响应相关时，就会出现内生选择
+Endogenous selection arises when the decision to complete and return the survey is correlated with the survey responses	当完成和返回调查的决策与调查回复相关时，就会出现内生选择
+Endogenous selection arises when the decision to rate the product is correlated with the response	当对产品进行评级的决策与响应相关时，就会出现内生选择
 To understand the effect of sample selection it is useful to view sampling as a two-stage process	为了理解样本选择的效果，将抽样视为一个两阶段过程很有用
 Selection bias occurs when the second term is non-zero	当第二项非零时，就会出现选择偏误
 Thus sample selection bias arises if (and only if) selection is correlated with the equation error	因此，当（且仅当）选择与方程误差相关时，才会出现样本选择偏误
-In Figure 27.2(a) we saw that censoring attenuates (flattens) the regression function	在图 27.2(a) 中，我们看到审查削弱（压平）了回归函数
+In Figure 27.2(a) we saw that censoring attenuates (flattens) the regression function	在图 27.2(a) 中，我们看到删失削弱（压平）了回归函数
 In general it is difficult to predict the effect of selection on regression functions	一般来说，很难预测选择对回归函数的影响
 As we have shown, endogenous selection changes the conditional expectation	正如我们所表明的，内生选择改变了条件期望
 In the next section we discuss one approach which corrects for sample selection bias when we have information on the selection process	在下一节中，我们讨论一种当我们掌握有关选择过程的信息时纠正样本选择偏误的方法
-Heckman's Model	赫克曼模型
-Heckman (1979) showed that sample selection bias can be corrected if we have a sample which includes the non-selected observations	Heckman (1979) 表明，如果我们有一个包含未选择的观测值的样本，则可以纠正样本选择偏误
+Heckman's Model	Heckman 模型
+Heckman (1979) showed that sample selection bias can be corrected if we have a sample which includes the non-selected observations	Heckman (1979) 表明，如果我们有一个包含未选择的观测的样本，则可以纠正样本选择偏误
 Heckman's approach is to build a joint model of the full sample (not just the selected sample) and use this to estimate the model parameters	Heckman 的方法是建立完整样本（而不仅仅是所选样本）的联合模型，并用它来估计模型参数
-Heckman proposed a two-step estimator of the coefficients	赫克曼提出了系数的两步估计量
-The method is sometimes called "Heckit" as it is an analog of probit, logit, and Tobit regression	该方法有时称为“Heckit”，因为它是概率、logit 和 Tobit 回归的模拟
+Heckman proposed a two-step estimator of the coefficients	Heckman 提出了系数的两步估计量
+The method is sometimes called "Heckit" as it is an analog of probit, logit, and Tobit regression	该方法有时称为“Heckit”，因为它是probit、logit 和 Tobit 回归的类似
 An alternative to two-step estimation is joint maximum likelihood	两步估计的替代方法是联合极大似然
 Evaluated at the observations we obtain the log-likelihood function	根据观测值进行评估，我们获得对数似然函数
 The MLE is the preferred estimation method for final reporting	MLE 是最终报告的首选估计方法
@@ -4184,11 +4171,11 @@ These nonparametric selection estimators are two-step estimators with generated 
 The latter should be implemented as an explicit two-step estimator so that the first-step estimation is treated by the bootstrap distribution	后者应作为显式两步估计量实现，以便通过自助分布处理第一步估计
 A panel censored regression (panel Tobit) equation is	面板删失回归（面板 Tobit）方程为
 A random effects estimator can be derived under the assumption of joint normality of the errors	可以在误差联合正态性的假设下导出随机效应估计量
-The disadvantages are those typically associated with random effects estimators	缺点通常与随机效应估计量相关
+The disadvantages are those typically associated with random effects estimators	缺点是通常与随机效应估计量相关
 A fixed effects estimator was developed by Honoré (1992)	Honoré (1992) 开发了固定效应估计量
 A method to estimated this model is presented in Kyriazidou (1997)	Kyriazidou (1997) 提出了一种估计该模型的方法
 Kyriazidou (1997) provides a complete distribution theory	Kyriazidou (1997) 提供了完整的分布理论
-Model Selection, Stein Shrinkage, and Model Averaging	模型选择、斯坦因收缩和模型平均
+Model Selection, Stein Shrinkage, and Model Averaging	模型选择、Stein  收缩和模型平均
 The chapter reviews model selection, James-Stein shrinkage, and model averaging	本章回顾了模型选择、James-Stein 收缩和模型平均
 Model selection is a tool for selecting one model (or estimator) out of a set of models	模型选择是从一组模型中选择一个模型（或估计量）的工具
 Different model selection methods are distinguished by the criteria used to rank and compare models	不同的模型选择方法通过用于对模型进行排序和比较的标准来区分
@@ -4201,7 +4188,8 @@ See also Wasserman (2006) and Efron (2010)	另请参见 Wasserman (2006) 和 Efr
 In the course of an applied project an economist will routinely estimate multiple models	在应用项目的过程中，经济学家通常会估计多个模型
 The question arises: Which model is best? Which should be used in practice? How can we select the best choice? This is the question of model selection	问题出现了：哪种模型最好？实际中应该使用哪个？我们怎样才能做出最好的选择呢？这就是模型选择的问题
 Take, for example, a wage regression	以工资回归为例
-How should we proceed? Should we estimate a simple linear model plus a quadratic in experience? Should education enter linearly, a simple spline as in Figure 2.6(a), or with separate dummies for each education level? Should marital status enter as a simple dummy (married or not) or allowing for all recorded categories? Should interactions be included? Which? How many? Taken together we need to select the specific regressors to include in the regression model	我们应该如何着手？我们应该估计一个简单的线性模型加上经验的二次模型吗？教育应该线性输入，如图 2.6(a) 所示的简单样条曲线，还是为每个教育级别使用单独的虚拟变量？婚姻状况应该作为一个简单的虚拟变量（已婚或未婚）输入还是允许所有记录的类别？是否应该包括互动？哪个？多少？综上所述，我们需要选择要包含在回归模型中的特定自变量
+How should we proceed? Should we estimate a simple linear model plus a quadratic in experience? Should education enter linearly, a simple spline as in Figure 2.6(a), or with separate dummies for each education level? Should marital status enter as a simple dummy (married or not) or allowing for all recorded categories? Should interactions be included? Which? How many? Taken together we need to select the specific regressors to include in the regression model	我们应该如何着手？我们应该估计一个简单的线性模型加上经验的二次方模型吗？教育应该线性输入，如图 2.6(a) 所示的简单样条曲线，还是为每个教育
+层次使用单独的虚拟变量？婚姻状况应该作为一个简单的虚拟变量（已婚或未婚）输入还是允许所有记录的类别？是否应该包括交互项？哪个？多少？综上所述，我们需要选择要包含在回归模型中的特定自变量
 Model "selection" may be mis-named	模型“选择”的命名可能被误解了
 For our two estimators we calculate that	对于两个估计量，我们计算出
 The comparison between (28.1) and (28.2) is a basic bias-variance trade-off	（28.1）和（28.2）之间的比较是基本的偏误-方差权衡
@@ -4219,13 +4207,13 @@ The Bayesian Information Criterion (BIC), also known as the Schwarz Criterion, w
 It is appropriate for parametric models estimated by maximum likelihood and is used to select the model with the highest approximate probability of being the true model	它适用于通过极大似然估计的参数模型，用于选择作为真实模型的渐近概率最高的模型
 Schwarz (1978) established the following approximation	Schwarz (1978) 建立了以下渐近值
 A heuristic proof for normal linear regression is given in Section 28.32	第 28.32 节给出了正态线性回归的启发式证明
-A "diffuse" prior is one which distributes weight uniformly over the parameter space	“扩散”先验是将权重均匀分布在参数空间上的先验
-Schwarz's theorem shows that the marginal likelihood approximately equals the maximized likelihood multiplied by an adjustment depending on the number of estimated parameters and the sample size	施瓦茨定理表明，边际似然大约等于极大似然乘以根据估计参数数量和样本大小进行的矫正
+A "diffuse" prior is one which distributes weight uniformly over the parameter space	“扩散”先验是将权重均匀分布在参数空间上
+Schwarz's theorem shows that the marginal likelihood approximately equals the maximized likelihood multiplied by an adjustment depending on the number of estimated parameters and the sample size	Schwarz 定理表明，边际似然大约等于极大似然乘以根据估计参数数量和样本大小进行的矫正
 However, this is an unwise choice because it alters the scaling, making it difficult to compare the degree of difference between models	然而，这是一个不明智的选择，因为它改变了尺度比例，使得比较模型之间的差异程度变得困难
 Bayes selection picks the model with highest probability	贝叶斯选择挑出概率最高的模型
 Thus BIC selection is approximate Bayes selection	因此，BIC 选择是渐近贝叶斯选择
 The above discussion concerned two models but applies to any number of models	上述讨论涉及两个模型，但适用于任意数量的模型
-The BIC may be obtained in Stata by using the command estimates stats after an estimated	BIC 可以在 Stata 中通过对一个估计量使用命令 estimates stats 获得
+The BIC may be obtained in Stata by using the command estimates stats after an estimated	BIC 可以在 Stata 中在对一个估计量后使用命令 estimates stats 获得
 Akaike Information Criterion for Regression	回归的 Akaike 信息准则
 The Akaike Information Criterion (AIC) was introduced by Akaike (1973)	Akaike 信息准则 (AIC) 由 Akaike (1973) 提出
 It is designed for parametric models estimated by maximum likelihood	它专为通过极大似然估计的参数模型而设计
@@ -4234,63 +4222,63 @@ This would be the value obtained if there were no estimation error	如果没有�
 Expression (28.13) shows the converse story	表达式（28.13）显示了相反的情况
 This is the combined cost of over-fitting and parameter estimation	这是过度拟合和参数估计的综合成本
 Interestingly the AIC takes a similar form to the BIC	有趣的是，AIC 的形式与 BIC 类似
-One of the interesting features of these results are that they are exact - there is no approximation and they do not require that the true error is normally distributed	这些结果的有趣特征之一是它们是精确的 - 没有近似值，并且不要求真实误差呈正态分布
+One of the interesting features of these results are that they are exact - there is no approximation and they do not require that the true error is normally distributed	这些结果的有趣特征之一是它们是精确的 —— 没有近似值，并且不要求真实误差呈正态分布
 If homoskedasticity fails then the AIC loses its validity	如果同方差性失败，则 AIC 就会失去有效性
-The AIC may be obtained in Stata by using the command estimates stats after an estimated model	AIC 可以在 Stata 中通过使用估计模型后的估计统计命令来获得
+The AIC may be obtained in Stata by using the command estimates stats after an estimated model	AIC 可以在 Stata 中估计模型后通过使用命令 estimates stats 来获得
 Akaike Information Criterion for Likelihood	似然性的 Akaike 信息准则
-For the general likelihood context Akaike proposed the criterion (28.7)	对于一般似然情形，Akaike 提出了标准（28.7）
+For the general likelihood context Akaike proposed the criterion (28.7)	对于一般似然情形，Akaike 提出了准则（28.7）
 This specializes to (28.4) for the case of a normal linear regression model	这专门针对正态线性回归模型的情况（28.4）
 As for regression, AIC selection is performed by estimating a set of models, calculating AIC for each, and selecting the model with the smallest AIC	对于回归，AIC 选择是通过估计一组模型、计算每个模型的 AIC，并选择 AIC 最小的模型来执行的
-The advantages of the AIC are that it is simple to calculate, easy to implement, and straightforward to interpret	AIC的优点是计算简单、易于实现、解释简单
-It is intuitive as it is a simple penalized likelihood	它很直观，因为它是一个简单的惩罚可能性
+The advantages of the AIC are that it is simple to calculate, easy to implement, and straightforward to interpret	AIC 的优点是计算简单、易于实现、解释简单
+It is intuitive as it is a simple penalized likelihood	它很直观，因为它是一个简单的惩罚似然
 The disadvantage is that its simplicity may be deceptive	缺点是它的简单性可能具有欺骗性
 The following is an analog of Theorem 28.3	以下是定理 28.3 的模拟
 This result shows that the AIC is, in general, a reasonable estimator of the KLIC fit of an estimated parametric model	该结果表明，一般来说，AIC 是估计参数模型的 KLIC 拟合的合理估计量
 The theorem holds broadly for maximum likelihood estimation and thus the AIC can be used in a wide variety of contexts	该定理广泛适用于极大似然估计，因此 AIC 可以用于多种情况
-Mallows Criterion	锦葵准则
+Mallows Criterion	Mallows 准则
 It is appropriate for linear estimators of homoskedastic regression models	它适用于同方差回归模型的线性估计
 Take the homoskedastic regression framework	采取同方差回归框架
 Mallows (1973) proposed the criterion	Mallows (1973) 提出了该准则
-The Mallows crierion can be used similarly to the AIC	Mallows 标准的使用方式与 AIC 类似
-This is the expected squared difference between the estimated and true regressions evaluated at the observations	这是根据观测值评估的估计回归与真实回归之间的预期平方差
+The Mallows crierion can be used similarly to the AIC	Mallows 准则的使用方式与 AIC 类似
+This is the expected squared difference between the estimated and true regressions evaluated at the observations	这是根据观测评估的估计回归与真实回归之间的预期平方差
 The best possible (infeasible) value of this quantity is	该数量的最优可能（不可行）值为
 The difference is the prediction accuracy of the estimator:	差异在于估计量的预测精度：
-which equals Mallows' measure of fit	这等于马洛斯的拟合度
+which equals Mallows' measure of fit	这等于 Mallows 的拟合度
 The proof is given in Section 28.32	第 28.32 节给出了证明
-Hold-Out Criterion	坚持标准
+Hold-Out Criterion	Hold-Out 准则
 Dividing the sample into two parts, one for estimation and the second for evaluation, creates a simple device for model evaluation and selection	将样本分为两部分，一部分用于估计，第二部分用于评估，创建了一个用于模型评估和选择的简单装置
-In the recent machine learning literature the data division is typically described as a training sample and a test sample	在最近的机器学习文献中，数据划分通常被描述为训练样本和检验样本
+In the recent machine learning literature the data division is typically described as a training sample and a test sample	在最近的机器学习文献中，数据划分通常被描述为训练样本和测试样本
 Such divisions are most suited for a context of an extremely large sample	这种划分最适合样本量极大的情况
 The method is intuitive, general, and flexible, and does not rely on technical assumptions	该方法直观、通用、灵活，不依赖于技术假设
-The hold-out method has two disadvantages	保留方法有两个缺点
+The hold-out method has two disadvantages	hold-out 方法有两个缺点
 Results can depend on the initial sample sorting and are therefore partially arbitrary	结果可能取决于初始样本排序，因此部分是任意的
-Cross-Validation Criterion	交叉验证标准
+Cross-Validation Criterion	交叉验证准则
 In applied statistics and machine learning the default method for model selection and tuning parameter selection is cross-validation	在应用统计学和机器学习中，模型选择和调整参数选择的默认方法是交叉验证
-Cross-validation is closely related to the hold-out criterion introduced in the previous section	交叉验证与上一节中介绍的保留标准密切相关
+Cross-validation is closely related to the hold-out criterion introduced in the previous section	交叉验证与上一节中介绍的 hold-out 准则密切相关
 The estimator CV is called the cross-validation (CV) criterion	估计量 CV 称为交叉验证 (CV) 准则
-As there is no random component the criterion takes the same value in any implementation	由于没有随机成分，该标准在任何实现中都取相同的值
+As there is no random component the criterion takes the same value in any implementation	由于没有随机成分，该准则在任何实现中都取相同的值
 In least squares estimation the CV criterion has a simple computational implementation	在最小二乘估计中，CV 准则具有简单的计算实现
 where the second equality is from Theorem 3.7	其中第二个等式来自定理 3.7
-Recall as well that in our study of nonparametric regression (Section 19.12) we defined the crossvalidation criterion for kernel regression as the weighted average of the squared prediction errors	还记得在我们的非参数回归研究（第 19.12 节）中，我们将核回归的交叉验证标准定义为预测误差平方的加权平均值
+Recall as well that in our study of nonparametric regression (Section 19.12) we defined the crossvalidation criterion for kernel regression as the weighted average of the squared prediction errors	还记得在我们的非参数回归研究（第 19.12 节）中，我们将核回归的交叉验证准则定义为预测误差平方的加权平均值
 These results show that CV is an unbiased estimator for both the MSFE and IMSE, showing a close connection between these measures of accuracy	这些结果表明 CV 是 MSFE 和 IMSE 的无偏估计量，显示出这些准确性度量之间的密切联系
 This is not an artifact of the proof method; cross-validation is inherently more robust than AIC or BIC	交叉验证本质上比 AIC 或 BIC 更稳健
-Implementation of CV model selection is the same as for the other criteria	CV 模型选择的实施与其他标准相同
-The model with the smallest value of CV is the CVselected model	CV 值最小的模型是 CVselected 模型
+Implementation of CV model selection is the same as for the other criteria	CV 模型选择的实施与其他准则相同
+The model with the smallest value of CV is the CV selected model	CV 值最小的模型是 CV 选定模型
 The CV method is also much broader in concept and potential application	CV 方法在概念和潜在应用方面也更广泛
-Computationally and conceptually it is straightforward to select models by minimizing such criterion	从计算和概念上讲，通过最小化此类标准来选择模型是很简单的
-However, the properties of applying CV to general criterion is not known	然而，将 CV 应用于一般标准的特征尚不清楚
-Stata does not have a standard command to calculate the CV criterion for regression models	Stata 没有标准命令来计算回归模型的 CV 标准
+Computationally and conceptually it is straightforward to select models by minimizing such criterion	从计算和概念上讲，通过最小化此类准则来选择模型是很简单的
+However, the properties of applying CV to general criterion is not known	然而，将 CV 应用于一般准则的特征尚不清楚
+Stata does not have a standard command to calculate the CV criterion for regression models	Stata 没有准则命令来计算回归模型的 CV 准则
 K-Fold Cross-Validation	K 折交叉验证
-There are two deficiencies with the CV criterion which can be alleviated by the closely related K-fold cross-validation criterion	CV 标准有两个缺陷，可以通过密切相关的 K 折交叉验证标准来缓解
+There are two deficiencies with the CV criterion which can be alleviated by the closely related K-fold cross-validation criterion	CV 准则有两个缺陷，可以通过密切相关的 K 折交叉验证准则来缓解
 The method works by the following steps	该方法按以下步骤进行
 This is similar to a clustered variance formula, where the folds are treated as clusters	这类似于群组方差公式，其中折叠被视为群组
 One disadvantage of K-fold cross-validation is that CV can be sensitive to the initial random sorting of the observations, leading to partially arbitrary results	K 折交叉验证的一个缺点是 CV 可能对观测值的初始随机排序敏感，导致部分任意的结果
 An associated standard error can be obtained by taking the square root of the average squared standard errors	可以通过平均平方标准误差的平方根来获得相关的标准误差
-CV model selection is typically implemented by selecting the model with the smallest value of CV	CV模型选择通常是通过选择CV值最小的模型来实现的
+CV model selection is typically implemented by selecting the model with the smallest value of CV	CV 模型选择通常是通过选择 CV 值最小的模型来实现的
 In contrast, for inference many econometricians recommend undersmoothing bandwidths, which means selecting a less parsimonious model than the CV minimizing choice	相比之下，为了进行推断，许多计量经济学家建议使用欠平滑带宽，这意味着选择比 CV 最小化选择更简洁的模型
-Many Selection Criteria are Similar	许多选择标准都是相似的
-For the linear regression model many selection criteria have been introduced	对于线性回归模型，引入了许多选择标准
-Shibata (1980) proposed the criteria	Shibata (1980) 提出了该标准
+Many Selection Criteria are Similar	许多选择准则都是相似的
+For the linear regression model many selection criteria have been introduced	对于线性回归模型，引入了许多选择准则
+Shibata (1980) proposed the criteria	Shibata (1980) 提出了该准则
 as an estimator of the MSFE	作为 MSFE 的估计量
 Thus the two are quite similar in practice	因此，两者在实践中非常相似
 Thus minimization of Shibata's criterion and AIC are similar	因此 Shibata 准则的最小化和 AIC 是相似的
@@ -4304,7 +4292,7 @@ But rather that there is a similar structure in the decision	而是该决定中�
 There are two useful practical implications	有两个有用的实际意义
 Similar comments apply to BIC selection though the effective critical values are different	尽管有效临界值不同，但类似的评论也适用于 BIC 选择
 Hence BIC selection becomes stricter as sample sizes increase	因此，随着样本量的增加，BIC 选择变得更加严格
-Consistent Selection	一致的选择
+Consistent Selection	一致性选择
 An important property of a model selection procedure is whether it selects a true model in large samples	模型选择过程的一个重要特征是它是否在大样本中选择真实模型
 We call such a procedure consistent	我们称这样的过程为一致的
 To discuss this further we need to thoughtfully define what is a "true" model	为了进一步讨论这个问题，我们需要仔细地定义什么是“真实”模型
@@ -4327,7 +4315,7 @@ Thus consistent model selection is only one of several desirable statistical pro
 Asymptotic Selection Optimality	渐近选择最优性
 Regressor selection by the AIC/Shibata/Mallows/CV class turns out to be asymptotically optimal with respect to out-of-sample prediction under quite broad conditions	AIC/Shibata/Mallows/CV 类的自变量选择在相当广泛的条件下对于样本外预测来说是渐近最优的
 This may appear to conflict with the results of the previous section but it does not as there is a critical difference between the goals of consistent model selection and accurate prediction	这可能看起来与上一节的结果相冲突，但事实并非如此，因为一致的模型选择和准确预测的目标之间存在重大差异
-Now consider model selection using the Mallow's criterion for regression models	现在考虑使用回归模型的马洛准则进行模型选择
+Now consider model selection using the Mallow's criterion for regression models	现在考虑使用回归模型的 Mallow 准则进行模型选择
 Li (1987) established the asymptotic optimality (28.18)	Li（1987）建立了渐近最优性（28.18）
 His result depends on the following conditions	他的结果取决于以下条件
 Assumptions 28.1.2 and 28.1.3 state that the true model is a conditionally homoskedastic regression	假设 28.1.2 和 28.1.3 表明真实模型是条件同方差回归
@@ -4336,121 +4324,120 @@ Thus Mallows selection is asymptotically equivalent to using the infeasible opti
 The primary message is that the selection methods discussed in the previous section asymptotically select a sequence of models which are best-fitting in the sense of minimizing the prediction error	主要信息是上一节中讨论的选择方法渐进地选择一系列模型，这些模型在最小化预测误差的意义上是最优拟合的
 Using a similar argument, Andrews (1991c) showed that selection by cross-validation satisfies the same asymptotic optimality condition without requiring conditional homoskedasticity	Andrews (1991c) 使用类似的论点表明，通过交叉验证进行的选择满足相同的渐近最优性条件，而不需要条件同方差
 This indicates an important advantage for crossvalidation selection over the other methods	这表明交叉验证选择相对于其他方法具有重要优势
-Focused Information Criterion	重点信息标准
-Claeskens and Hjort (2003) introduced the Focused Information Criterion (FIC) as an estimator of the MSE of a scalar parameter	Claeskens 和 Hjort (2003) 引入了聚焦信息准则 (FIC) 作为标量参数 MSE 的估计量
+Focused Information Criterion	焦点信息准则
+Claeskens and Hjort (2003) introduced the Focused Information Criterion (FIC) as an estimator of the MSE of a scalar parameter	Claeskens 和 Hjort (2003) 引入了焦点信息准则 (FIC) 作为标量参数 MSE 的估计量
 Estimation accuracy is measured by the MSE of the estimator of the target parameter, which is the squared bias plus the variance:	估计精度通过目标参数估计量的 MSE 来衡量，即偏误平方加上方差：
 It turns out to be convenient to normalize the MSE by that of the unrestricted estimator	事实证明，通过无约束估计量来标准化 MSE 是很方便的
-The Claeskens-Hjort FIC is an estimator of F	Claeskens-Hjort FIC 是 F 的估计量
+The Claeskens-Hjort FIC is an estimator of FIC	Claeskens-Hjort FIC 是一个 FIC 估计量
 The FIC is used similarly to AIC	FIC 的使用方式与 AIC 类似
 The FIC is calculated for each sub-model of interest and the model with the lowest value of FIC is selected	计算每个感兴趣的子模型的 FIC，并选择 FIC 值最低的模型
-The advantage of the FIC is that it is specifically targeted to minimize the MSE of the target parameter	FIC的优点是它专门针对最小化目标参数的MSE
+The advantage of the FIC is that it is specifically targeted to minimize the MSE of the target parameter	FIC 的优点是它专门针对最小化目标参数的 MSE
 Computationally it may be convenient to implement the FIC using an alternative formulation	在计算上，使用替代公式来实现 FIC 可能会很方便
 This adds the same quantity to all models and therefore does not alter the minimizing model	这会向所有模型添加相同的数量，因此不会改变最小化模型
-The formula (28.19) also provides an intuitive understanding of the FIC	公式（28.19）也提供了对FIC的直观理解
+The formula (28.19) also provides an intuitive understanding of the FIC	公式（28.19）也提供了对 FIC 的直观理解
 Second take the restricted MLE	其次采用受限 MLE
 Best Subset and Stepwise Regression	最优子集和逐步回归
 It simply does not make sense to estimate all subset regressions in such cases	在这种情况下估计所有子集回归根本没有意义
-If the goal is to find the set of regressors which produces the smallest selection criterion it seems likely that we should be able to find an approximating set of regressors at much reduced computation cost	如果目标是找到产生最小选择标准的自变量集合，那么我们似乎应该能够以大大降低的计算成本找到自变量的近似集合
+If the goal is to find the set of regressors which produces the smallest selection criterion it seems likely that we should be able to find an approximating set of regressors at much reduced computation cost	如果目标是找到产生最小选择准则的自变量集合，那么我们似乎应该能够以大大降低的计算成本找到自变量的近似集合
 We use the terms here as described in Hastie, Tibshirani, and Friedman (2008)	我们在这里使用 Hastie、Tibshirani 和 Friedman (2008) 中描述的术语
-Backward Stepwise Regression	向后逐步回归
+Backward Stepwise Regression	后向逐步回归
 Forward Stepwise Regression	前向逐步回归
 There are combined algorithms which check both forward and backward movements at each step	有组合算法可以检查每一步的向前和向后运动
-There are also old-fashioned versions which use significance testing rather than selection criterion (this is generally not advised)	还有一些老式版本使用显著性检验而不是选择标准（通常不建议这样做）
+There are also old-fashioned versions which use significance testing rather than selection criterion (this is generally not advised)	还有一些老式版本使用显著性检验而不是选择准则（通常不建议这样做）
 Stepwise regression based on old-fashioned significance testing can be implemented in Stata using the stepwise command	基于老式显著性检验的逐步回归可以在 Stata 中使用 stepwise 命令实现
-Stepwise regression can be implemented in R using the lars command	可以使用 lars 命令在 R 中实现逐步回归
+Stepwise regression can be implemented in R using the lars command	在 R 中可以使用 lars 命令实现逐步回归
 The MSE of Model Selection Estimators	模型选择估计量的 MSE
-Model selection can lead to estimators with poor sampling performance	模型选择可能会导致估计量的抽样性能较差
+Model selection can lead to estimators with poor sampling performance	模型选择可能会导致估计量的抽样表现较差
 In this section we show that the mean squared error of estimation is not necessarily improved, and can be considerably worsened, by model selection	在本节中，我们将表明，通过模型选择，估计的均方误差不一定会得到改善，而且可能会大大恶化
 To keep things simple consider an estimator with an exact normal distribution and known covariance matrix	为了简单起见，请考虑具有精确正态分布和已知协方差矩阵的估计量
 and the class of model selection estimators	以及模型选择估计量的类别
 We can see the following limiting cases	我们可以看到以下约束情况
 A sensible reading of the plots leads to the practical recommendation to not use the BIC for model selection, and use the AIC with care	对图的合理解读会导致实际建议不要使用 BIC 进行模型选择，并谨慎使用 AIC
 Figure 28.1: MSE of Post-Model-Selection Estimators	图 28.1：模型选择后估计量的 MSE
-Unfortunately it is impossible to known a priori the appropriate models	不幸的是，不可能先验地知道适当的模型
-The fact that the MSE of the AIC estimator somewhat exceeds that of the BIC in this region is due to the over-selection property of the AIC	事实上，AIC 估计量的 MSE 在此区域略高于 BIC 的 MSE，这是由于 AIC 的超选特性造成的
+Unfortunately it is impossible to known a priori the appropriate models	不幸的是，不可能先验地知道合适的模型
+The fact that the MSE of the AIC estimator somewhat exceeds that of the BIC in this region is due to the over-selection property of the AIC	事实上，AIC 估计量的 MSE 在此区域略高于 BIC 的 MSE，这是由于 AIC 的过度选择特性造成的
 Inference After Model Selection	模型选择后的推断
 Economists are typically interested in inferential questions such as hypothesis tests and confidence intervals	经济学家通常对推断问题感兴趣，例如假设检验和置信区间
-The distribution of the t-ratio, conditional on exceeding a critical value, is not conventionally distributed and there seems little point to push this issue further	以超过临界值为条件的 t 比分布不是传统分布的，似乎没有必要进一步推动这个问题
-We illustrate the issue numerically	我们用数字来说明这个问题
+The distribution of the t-ratio, conditional on exceeding a critical value, is not conventionally distributed and there seems little point to push this issue further	以超过临界值为条件的 t 比率分布不是常规分布的，似乎没有必要进一步推动这个问题
+We illustrate the issue numerically	我们用数值来说明这个问题
 Figure 28.2: Coverage Probability of Post-Model Selection	图 28.2：模型选择后的覆盖概率
 The degree of under-coverage is enormous and greatly troubling	覆盖率不足的程度是巨大的并且非常令人不安
-The message from this display is that inference after model selection is problematic	此显示的消息是模型选择后的推断存在问题
-Conventional inference procedures do not have conventional distributions and the distortions are potentially unbounded	传统的推断过程不具有传统的分布，并且扭曲可能是无限的
+The message from this display is that inference after model selection is problematic	此消息显示的是模型选择后的推断存在问题
+Conventional inference procedures do not have conventional distributions and the distortions are potentially unbounded	传统的推断过程不具有常规的分布，并且扭曲可能是无限的
 We illustrate the model selection methods with an application	我们通过一个应用来说明模型选择方法
 The estimated models range in complexity concerning the impact of education and experience	估计模型的复杂性涉及教育和经验的影响
 Table 28.1: Estimates of Return to Experience among Asian Women	表 28.1：亚洲女性的经验回归估计
-Terms for education: - Models 1, 4, and 7 include a single dummy variable college indicating that years of education is 16 or higher	教育术语： - 模型 1、4 和 7 包括一个虚拟变量 College，表明受教育年限为 16 或更高
-Another item to notice is that the standard errors are most affected by the number of experience terms	另一个需要注意的事项是标准误差受经验项数量的影响最大
-The BIC picks a parsimonious model with the linear spline in education and a quadratic in experience	BIC 选择了一个简约模型，其中教育为线性样条，经验为二次
-When selecting a model using information criteria it is useful to examine several criteria	当使用信息标准选择模型时，检查几个标准很有用
-However, the uncertainty reflected by the flatness of the CV criterion suggests that uncertainty remains in the choice of specification	然而，CV 标准的平坦度所反映的不确定性表明，规格的选择仍然存在不确定性
+Terms for education: Models 1, 4, and 7 include a single dummy variable college indicating that years of education is 16 or higher	教育术语：  模型 1、4 和 7 包括一个虚拟变量 College，表明受教育年限为 16 或更高
+Another item to notice is that the standard errors are most affected by the number of experience terms	另一个需要注意的事项是标准误差受经验变量项数的影响最大
+The BIC picks a parsimonious model with the linear spline in education and a quadratic in experience	BIC 选择了一个简约模型，其中教育为线性样条，经验为二次方
+When selecting a model using information criteria it is useful to examine several criteria	当使用信息准则选择模型时，检查几个准则很有用
+However, the uncertainty reflected by the flatness of the CV criterion suggests that uncertainty remains in the choice of specification	然而，CV 准则的平坦度所反映的不确定性表明，设定的选择仍然存在不确定性
 Shrinkage Methods	收缩方法
 This and the next few sections review material presented in Chapter 15 of Probability and Statistics for Economists	本节和接下来的几节回顾了《经济学家的概率与统计》第 15 章中介绍的材料
-This is often called a Stein-Rule estimator	这通常称为斯坦因规则估计量
+This is often called a Stein-Rule estimator	这通常称为 Stein-Rule 估计量
 This estimator has many appealing properties	该估计量具有许多吸引人的特性
-However when this Wald statistic is small (when the evidence is consistent with the hypothesis of a zero coefficient) then the shrinkage estimator moves the original estimator towards zero	然而，当 Wald 统计量很小时（当证据与零系数的假设一致时），收缩估计量会将原始估计量移向零
+However when this Wald statistic is small (when the evidence is consistent with the hypothesis of a zero coefficient) then the shrinkage estimator moves the original estimator towards zero	然而，当 Wald 统计量很小时（当证据与零系数的假设一致时），收缩估计量会将原始估计量移向零值
 James-Stein Shrinkage Estimator	James-Stein 收缩估计量
 James and Stein (1961) made the following discovery	James 和 Stein (1961) 做出了以下发现
 This result stunned the world of statistics	这一结果震惊了统计界
 This is a stunning result because it had previously been assumed that it would be impossible to find an estimator which dominates the MLE	这是一个令人震惊的结果，因为之前人们认为不可能找到一个主导 MLE 的估计量
-This means that shrinkage achieves uniform improvements only in dimensions three or larger	这意味着收缩率仅在三维或更大维度上实现均匀改善
+This means that shrinkage achieves uniform improvements only in dimensions three or larger	这意味着收缩率仅在三维或更大维度上实现统一改善
 which is fully feasible as it does not depend on unknowns or tuning parameters	这是完全可行的，因为它不依赖于未知数或调整参数
-Interpretation of the Stein Effect	斯坦因效应的解释
-The James-Stein Theorem appears to conflict with classical statistical theory	詹姆斯-斯坦定理似乎与经典统计理论相冲突
+Interpretation of the Stein Effect	Stein 效应的解释
+The James-Stein Theorem appears to conflict with classical statistical theory	James-Stein 定理似乎与经典统计理论相冲突
 Part of the answer is that classical theory has caveats	部分答案是经典理论有一些警告
-On the other hand, the James-Stein Theorem shows that if unbiasedness is not a critical property but instead MSE is important, then there are better estimators than the MLE	另一方面，詹姆斯-斯坦定理表明，如果无偏性不是关键特征，而是 MSE 很重要，那么就有比 MLE 更好的估计量
+On the other hand, the James-Stein Theorem shows that if unbiasedness is not a critical property but instead MSE is important, then there are better estimators than the MLE	另一方面，James-Stein 定理表明，如果无偏性不是关键特征，而是 MSE 很重要，那么就有比 MLE 更好的估计量
 The James-Stein estimator is able to achieve reduced variance because it is a soft threshold function	James-Stein 估计量能够减少方差，因为它是一个软阈值函数
 This means that the user needs to choose the centering point wisely	这意味着用户需要明智地选择中心点
-Positive Part Estimator	正部分估计量
+Positive Part Estimator	正部估计量
 The simple James-Stein estimator has the odd property that it can "over-shrink"	简单的 James-Stein 估计量有一个奇怪的特性，它可以“过度收缩”
-The positive part estimator simultaneously performs "selection" as well as "shrinkage"	正部分估计量同时执行“选择”和“收缩”
-Consistent with our intuition the positive part estimator has uniformly lower WMSE than the unadjusted James-Stein estimator	与我们的直觉一致，正部分估计量的 WMSE 均低于未调整的 James-Stein 估计量
+The positive part estimator simultaneously performs "selection" as well as "shrinkage"	正部估计量同时执行“选择”和“收缩”
+Consistent with our intuition the positive part estimator has uniformly lower WMSE than the unadjusted James-Stein estimator	与我们的直觉一致，正部估计量的 WMSE 均低于未调整的 James-Stein 估计量
 In summary, the positive-part transformation is an important improvement over the unadjusted James-Stein estimator	总之，正部分变换是对未经调整的 James-Stein 估计量的重要改进
 The broader message is that imposing boundary conditions on shrinkage weights can improve estimation efficiency	更广泛的信息是，对收缩权重施加边界条件可以提高估计效率
 Shrinkage Towards Restrictions	向约束收缩
 The classical James-Stein estimator does not have direct use in applications because it is rare that we wish to shrink an entire parameter vector towards a specific point	经典的 James-Stein 估计量在应用中没有直接使用，因为我们很少希望将整个参数向量收缩到特定点
 Figure 28.3: WMSE of James-Stein Estimator	图 28.3：James-Stein 估计量的 WMSE
 The way to think generally about these applications it that the researcher wants to allow for generality with the large model but believes that the smaller model may be a useful approximation	一般思考这些应用的方式是，研究人员希望允许大型模型的通用性，但相信较小的模型可能是一个有用的近似值
-A shrinkage estimator allows the data to smoothly select between these two options depending on the strength of information for the two specifications	收缩估计量允许数据根据两个规格的信息强度在这两个选项之间平滑地进行选择
-The James-Stein estimator with positive-part trimming is	具有正部分修剪的 James-Stein 估计量为
+A shrinkage estimator allows the data to smoothly select between these two options depending on the strength of information for the two specifications	收缩估计量允许数据根据两个设定的信息强度在这两个选项之间平滑地进行选择
+The James-Stein estimator with positive-part trimming is	具有正部修剪的 James-Stein 估计量为
 The shrinkage estimator achieves uniformly smaller MSE if the number of restrictions is three or greater	如果约束数量为 3 或更多，则收缩估计量将获得一致较小的 MSE
 It is therefore important to select the restrictions carefully	因此，仔细选择约束非常重要
 These substitutions do not produce the same exact finite sample distribution but are asymptotically equivalent	这些替换不会产生完全相同的有限样本分布，但渐近等效
 In linear regression we have some very convenient simplifications available	在线性回归中，我们有一些非常方便的简化方法
-Group James-Stein	詹姆斯·斯坦集团
 The James-Stein estimator can be applied to groups (blocks) of parameters	James-Stein 估计量可以应用于参数组（块）
 The group James-Stein estimator separately shrinks each block of coefficients	James-Stein 群估计量分别缩小每个系数块
 The trade-off between these factors will depend on how heterogeneous the optimal shrinkage weight varies across the parameters	这些因素之间的权衡将取决于最优收缩权重在参数之间变化的异质性
-The groups should be selected based on two criteria	应根据两个标准选择组
+The groups should be selected based on two criteria	应根据两个准则选择组
 In this case it is appropriate to separate the education and experience coefficients into different groups	在这种情况下，将教育和经验系数分成不同的组是适当的
-The proof is a simple extension of the classical James-Stein theory	该证明是经典詹姆斯-斯坦理论的简单扩展
+The proof is a simple extension of the classical James-Stein theory	该证明是经典 James-Stein 理论的简单扩展
 Thus the total WMSE is reduced by shrinkage	因此，总 WMSE 因收缩而降低
 Empirical Illustrations	实证例证
-We illustrate James-Stein shrinkage with three empirical applications	我们通过三个实证应用来说明詹姆斯-斯坦收缩
+We illustrate James-Stein shrinkage with three empirical applications	我们通过三个实证应用来说明 James-Stein 收缩
 The estimated experience profiles are displayed in Figure 28.4(a)	估计的经验概况如图 28.4(a) 所示
 Figure 28.4: Shrinkage Illustrations	图 28.4：收缩图解
 The two least squares estimates are visually distinct	两个最小二乘估计在视觉上是不同的
-It retains most features of the quartic specification, except that it smooths out the unappealing 25-year dip	它保留了四次设定的大部分特性，只是它消除了 25 年以来毫无吸引力的下降
+It retains most features of the quartic specification, except that it smooths out the unappealing 25-year dip	它保留了四次方设定的大部分特性，只是它消除了 25 年以来毫无吸引力的下降
 The second application is to the Invest1993 data set used in Chapter 17	第二个应用是第 17 章中使用的 Invest1993 数据集
 Accurate estimation of firm effects is challenging when the number of time series observations per firm is small	当每个公司的时间序列观测数量很少时，准确估计公司效应是具有挑战性的
-To keep the analysis focused we restrict attention to firms which are traded on either the NYSE or AMEX and to the last ten years of the sample (1982-1991)	为了保持分析的重点，我们将注意力限定在纽约证券交易所或美国证券交易所交易的公司以及样本的最后十年（1982-1991）
+To keep the analysis focused we restrict attention to firms which are traded on either the NYSE or AMEX and to the last ten years of the sample (1982-1991)	为了保持分析的聚焦，我们将注意力限定在纽约证券交易所或美国证券交易所交易的公司以及样本的最后十年（1982-1991）
 The latter will do well if most of the fixed effects are explained by industry rather than firm-specific variation	如果大多数固定效应是由行业而不是公司特定的变化来解释的，那么后者会表现得很好
 Due to the large number of estimated coefficients in the unrestricted model we use the homoskedastic weight matrix as a simplification	由于无约束模型中存在大量估计系数，我们使用同方差权重矩阵作为简化
-The heteroskedastic covariance matrix is not appropriate and the cluster-robust covariance matrix will not be reliable due to the sparse dummy specification	异方差协方差矩阵不合适，并且由于稀疏虚拟设定，群组稳健协方差矩阵将不可靠
+The heteroskedastic covariance matrix is not appropriate and the cluster-robust covariance matrix will not be reliable due to the sparse dummy specification	异方差协方差矩阵不合适，并且由于稀疏虚拟变量，群组稳健协方差矩阵将不可靠
 To report our results we focus on the distribution of the firm-specific effects	为了报告我们的结果，我们重点关注公司特定效应的分布
-You can see that the fixed-effects estimate of the firm-specific density is more dispersed while the Stein estimator is sharper and more peaked indicating that the fixed effects estimator attributes more variation in firm-specific factors than the Stein estimator	你可以看到，公司特定密度的固定效应估计更加分散，而 Stein 估计量则更加尖锐且更加尖峰，这表明固定效应估计量比 Stein 估计量归因于公司特定因素的更多变化
-Our expectation is that the Stein estimates, if used for an application such as firm-specific forecasting, will be more accurate because they will have reduced variance relative to the fixed effects estimates	我们的预期是，斯坦因估计如果用于特定公司预测等应用，将会更加准确，因为相对于固定效应估计，它们的方差会减少
-A flexible specification interacts the six education dummy variables with the four regional dummies (omitting the intercept), which adds 18 coefficients and allows the return to education to vary without restriction in each region	灵活的设定将六个教育虚拟变量与四个区域相互作用dummies（省略截距），增加了 18 个系数，并允许教育回报在每个地区不受限制地变化
+You can see that the fixed-effects estimate of the firm-specific density is more dispersed while the Stein estimator is sharper and more peaked indicating that the fixed effects estimator attributes more variation in firm-specific factors than the Stein estimator	你可以看到，公司特定密度的固定效应估计更加分散，而 Stein 估计量则更加陡峭且更加尖峰，这表明固定效应估计量比 Stein 估计量有源于公司特定因素的更多变化
+Our expectation is that the Stein estimates, if used for an application such as firm-specific forecasting, will be more accurate because they will have reduced variance relative to the fixed effects estimates	我们的预期是，Stein 估计如果用于特定公司预测等应用，将会更加准确，因为相对于固定效应估计，它们的方差会减少
+A flexible specification interacts the six education dummy variables with the four regional dummies (omitting the intercept), which adds 18 coefficients and allows the return to education to vary without restriction in each region	灵活的设定将六个教育虚拟变量与四个区域虚拟变量（忽略截距），增加了 18 个系数，并允许教育回报在每个地区不受约束地变化
 The least squares estimate of the return to education by region is displayed in Figure 28.5(a)	按地区划分的教育回报的最小二乘估计如图 28.5(a) 所示
 That is, they are roughly linear in years of education with the same slope but different intercepts	也就是说，它们在教育年限中大致呈线性，具有相同的斜率但截距不同
-To improve the precision of the estimates we shrink the four profiles towards Model 6	为了提高估计的精度，我们将四个配置文件缩小为模型 6
-The Stein Rule estimates are displayed in Figure 28.5(b)	斯坦因规则估计如图 28.5(b) 所示
-This ranking is constant for nearly all levels of education	这个排名对于几乎所有级别的教育都是不变的
-While the Stein Rule estimates shrink the nonparametric estimates towards the common-educationfactor specification it does not impose the latter specification	虽然斯坦因规则估计将非参数估计缩小到共同教育因素设定，但它并不强加后者的设定
-Figure 28.5: Stein Rule Estimation of Education Profiles Across Regions	图 28.5：各地区教育概况的斯坦因规则估计
+To improve the precision of the estimates we shrink the four profiles towards Model 6	为了提高估计的精度，我们将四个配置缩小为模型 6
+The Stein Rule estimates are displayed in Figure 28.5(b)	Stein Rule估计如图 28.5(b) 所示
+This ranking is constant for nearly all levels of education	这个排名对于几乎所有层次的教育都是不变的
+While the Stein Rule estimates shrink the nonparametric estimates towards the common-educationfactor specification it does not impose the latter specification	虽然Stein Rule估计将非参数估计缩小到共同教育因素设定，但它并不强加后者的设定
+Figure 28.5: Stein Rule Estimation of Education Profiles Across Regions	图 28.5：各地区教育概况的Stein Rule估计
 put near zero weight on the common-factor model	对公因子模型赋予接近于零的权重
-The message from these three applications is that the James-Stein shrinkage approach can be constructively used to reduce estimation variance in economic applications	这三个应用程序传达的信息是，詹姆斯-斯坦收缩方法可以建设性地用于减少经济应用中的估计方差
-This shows that the benefits of Stein shrinkage are not confined to "small" samples but rather can be constructive used in moderately large samples with complicated structures	这表明斯坦因收缩的好处并不局限于“小”样品，而是可以建设性地用于结构复杂的中等大样品
+The message from these three applications is that the James-Stein shrinkage approach can be constructively used to reduce estimation variance in economic applications	这三个应用程序传达的信息是，James-Stein 收缩方法可以建设性地用于减少经济应用中的估计方差
+This shows that the benefits of Stein shrinkage are not confined to "small" samples but rather can be constructive used in moderately large samples with complicated structures	这表明 Stein 收缩的好处并不局限于“小”样本，而是可以建设性地用于结构复杂的中等大样本
 Model Averaging	模型平均
 Recall that the problem of model selection is how to select a single model from a general set of models	回想一下，模型选择的问题是如何从一组通用模型中选择单个模型
 The key issue for estimation is how to select the averaging weights	估计的关键问题是如何选择平均权重
@@ -4508,10 +4495,10 @@ Based on the latter observation	基于后一种观测
 The latter condition is analogous to the conditions for improvements in the Stein Rule theory	后一个条件类似于斯坦因规则理论中的改进条件
 This shows that using model selection tools to select the averaging weights is asymptotically optimal for regression fitting and point forecasting	这表明使用模型选择工具来选择平均权重对于回归拟合和点预测是渐近最优的
 Jackknife (CV) Model Averaging	Jackknife (CV) 模型平均
-A disadvantage of Mallows selection is that the criterion is valid only when the errors are conditionally homoskedastic	Mallows 选择的缺点是该标准仅在误差条件同方差时才有效
+A disadvantage of Mallows selection is that the criterion is valid only when the errors are conditionally homoskedastic	Mallows 选择的缺点是该准则仅在误差条件同方差时才有效
 In the Machine Learning literature this method is called stacking	在机器学习文献中，这种方法称为堆叠
 A fitted averaging regression (with fixed weights) can be written as	拟合平均回归（具有固定权重）可以写为
-This means that the jackknife estimate of variance (or equivalently the cross-validation criterion) equals	这意味着方差的折刀估计（或等效的交叉验证标准）等于
+This means that the jackknife estimate of variance (or equivalently the cross-validation criterion) equals	这意味着方差的折刀估计（或等效的交叉验证准则）等于
 which is a quadratic function of the weight vector	这是权重向量的二次函数
 Hansen and Racine (2012) call this the Jackknife Model Averaging (JMA) estimator	B. E. Hansen 和 Racine (2012) 将其称为 Jackknife 模型平均 (JMA) 估计量
 The algebraic properties of the solution are similar to Mallows	该解的代数性质与 Mallows 类似
@@ -4539,8 +4526,8 @@ The asymptotic convergence (28.35) holds for the MLE under standard regularity c
 Notice that this calculation relies on the assumption of conditional homoskedasticity	请注意，此计算依赖于条件同方差的假设
 Now consider the Mallows criterion	现在考虑 Mallows 准则
 This is the result as stated	这就是所说的结果
-This means that the selection criterion is model selection consistent as claimed	这意味着选择标准与所声称的模型选择一致
-This shows that the selection criterion asymptotically over-selects with positive probability	这表明选择标准以正概率渐近过度选择
+This means that the selection criterion is model selection consistent as claimed	这意味着选择准则与所声称的模型选择一致
+This shows that the selection criterion asymptotically over-selects with positive probability	这表明选择准则以正概率渐近过度选择
 The next step is to show that	下一步是证明
 Together these imply (28.36)	这些一起意味着（28.36）
 Finally we show that (28.36) implies (28.18)	最后我们证明 (28.36) 蕴涵 (28.18)
@@ -4588,7 +4575,7 @@ This shows that they have the same solution	这表明他们有相同的解决方
 Figure 29.1: Ridge Regression Dual Minimization Solution	图 29.1：岭回归双极小化解决方案
 and minimize the SSE subject to the penalty	并将上交所受到的处罚降到最低
 This allows some coefficients to be penalized more (or less) than other coefficients	这允许某些系数比其他系数受到更多（或更少）的惩罚
-As for least squares there is a simple formula to calculate the CV criterion for ridge regression which greatly speeds computation	对于最小二乘法，有一个简单的公式来计算岭回归的 CV 标准，这大大加快了计算速度
+As for least squares there is a simple formula to calculate the CV criterion for ridge regression which greatly speeds computation	对于最小二乘法，有一个简单的公式来计算岭回归的 CV 准则，这大大加快了计算速度
 Theorem 29.1 The leave-one-out ridge regression prediction errors are	定理 29.1 留一岭回归预测误差为
 For a proof see Exercise 29.1	证明参见练习 29.1
 I am unaware of a similar optimality result for cross-validated-selected ridge estimation	我不知道交叉验证选择的岭估计有类似的最优结果
@@ -4613,7 +4600,7 @@ Except for special cases the solution must be found numerically	除特殊情况�
 The Lasso minimization problem has the dual constrained minimization problem	Lasso最小化问题具有对偶约束最小化问题
 To see that the two problems are the same observe that the constrained minimization problem has the Lagrangian	要看到这两个问题是相同的，请观察约束最小化问题具有拉格朗日
 which has first order conditions	具有一阶条件
-This is the same as those for minimization of the penalized criterion	这与惩罚标准最小化的情况相同
+This is the same as those for minimization of the penalized criterion	这与惩罚准则最小化的情况相同
 Thus the solutions are identical	因此解决方案是相同的
 Figure 29.3: Lasso Dual Minimization Solution	图 29.3：套索对偶最小化解决方案
 This eliminates a subset of the coefficients	这消除了系数的子集
@@ -4726,7 +4713,7 @@ Ensembling	合奏
 Ensembling is the term used in machine learning for model averaging across machine learning algorithms	集成是机器学习中用于跨机器学习算法进行模型平均的术语
 Ensembling is popular in applied machine learning	集成在应用机器学习中很流行
 We discussed model averaging models in Sections 28.26-28.31	我们在第 28.26-28.31 节中讨论了模型平均模型
-This selects the model averaging weights by minimizing a cross-validation criterion, subject to the constraint that the weights are non-negative and sum to one	这通过最小化交叉验证标准来选择模型平均权重，但受到权重非负且总和为 1 的约束
+This selects the model averaging weights by minimizing a cross-validation criterion, subject to the constraint that the weights are non-negative and sum to one	这通过最小化交叉验证准则来选择模型平均权重，但受到权重非负且总和为 1 的约束
 Unfortunately, the theoretical literature concerning ensembling is thin	不幸的是，有关集成的理论文献很少
 Much of the advice concerning specific methods is based on empirical performance	关于具体方法的许多建议都是基于实证表现
 Lasso IV	套索四号
@@ -4775,7 +4762,7 @@ Proof of Theorem 29.2 Combining (29.8) and (29.9) we find that	定理 29.2 的�
 The MSE of the least squares estimator is	最小二乘估计量的 MSE 为
 This shows that (29.28) is positive definite	这表明 (29.28) 是正定的
 holds with arbitrarily large probability	以任意大的概率成立
-The remainder of the proof is algebraic, based on manipulations of the estimation criterion function, conditional on the event (29.31)	证明的其余部分是代数的，基于估计标准函数的操作，以事件（29.31）为条件
+The remainder of the proof is algebraic, based on manipulations of the estimation criterion function, conditional on the event (29.31)	证明的其余部分是代数的，基于估计准则函数的操作，以事件（29.31）为条件
 The second inequality is Hölder's (29.2) and the third holds by (29.31)	第二个不等式由 Hölder 的 (29.2) 成立，第三个不等式由 (29.31) 成立
 Together with (29.32), (29.33) implies	与 (29.32) 一起，(29.33) 意味着
 The second inequality is (29.4)	第二个不等式是（29.4）
