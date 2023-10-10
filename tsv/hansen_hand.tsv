@@ -4315,7 +4315,7 @@ Thus consistent model selection is only one of several desirable statistical pro
 Asymptotic Selection Optimality	渐近选择最优性
 Regressor selection by the AIC/Shibata/Mallows/CV class turns out to be asymptotically optimal with respect to out-of-sample prediction under quite broad conditions	AIC/Shibata/Mallows/CV 类的自变量选择在相当广泛的条件下对于样本外预测来说是渐近最优的
 This may appear to conflict with the results of the previous section but it does not as there is a critical difference between the goals of consistent model selection and accurate prediction	这可能看起来与上一节的结果相冲突，但事实并非如此，因为一致的模型选择和准确预测的目标之间存在重大差异
-Now consider model selection using the Mallow's criterion for regression models	现在考虑使用回归模型的 Mallow 准则进行模型选择
+Now consider model selection using the Mallows's criterion for regression models	现在考虑使用回归模型的 Mallows 准则进行模型选择
 Li (1987) established the asymptotic optimality (28.18)	Li（1987）建立了渐近最优性（28.18）
 His result depends on the following conditions	他的结果取决于以下条件
 Assumptions 28.1.2 and 28.1.3 state that the true model is a conditionally homoskedastic regression	假设 28.1.2 和 28.1.3 表明真实模型是条件同方差回归
@@ -4441,38 +4441,38 @@ This shows that the benefits of Stein shrinkage are not confined to "small" samp
 Model Averaging	模型平均
 Recall that the problem of model selection is how to select a single model from a general set of models	回想一下，模型选择的问题是如何从一组通用模型中选择单个模型
 The key issue for estimation is how to select the averaging weights	估计的关键问题是如何选择平均权重
-All models are subsets of a general superset (overlapping) model which contains all submodels as special cases	所有模型都是通用超集（重叠）模型的子集，该模型包含所有子模型作为特殊情况
+All models are subsets of a general superset (overlapping) model which contains all submodels as special cases	所有模型都是一般化超集（重叠）模型的子集，该模型包含所有子模型作为特殊情况
 Since the weights on the probability simplex sum to one, an alternative representation is to eliminate one weight by substitution	由于概率单纯形上的权重之和为 1，因此另一种表达方法是通过替换来消除一个权重
 Given a weight vector we define the averaging estimator	给定一个权重向量，我们定义平均估计量
-The positive-part version, however, imposes non-negativity and achieves reduced MSE as a result	然而，正部分版本强加了非负性并因此实现了 MSE 的降低
+The positive-part version, however, imposes non-negativity and achieves reduced MSE as a result	然而，正部版本强加了非负性并因此实现了 MSE 的降低
 The MSE of the optimal averaging estimator is less than the MSE of the estimator of the full model in any given sample	最优平均估计量的 MSE 小于任何给定样本中完整模型的估计量的 MSE
 The optimal averaging weights, however, are unknown	然而，最优平均权重是未知的
 A number of methods have been proposed for selection of the averaging weights	已经提出了多种方法来选择平均权重
 One simple method is equal weighting	一种简单的方法是等权重
-The advantages of equal weighting are that it is simple, easy to motivate, and no randomness is introduced by estimation of the weights	等权的优点是简单、易于激励、权重估计不会引入随机性
+The advantages of equal weighting are that it is simple, easy to motivate, and no randomness is introduced by estimation of the weights	等权的优点是简单、易于推动、权重估计不会引入随机性
 From the standpoint of econometric methodology equal weighting is not a proper statistical method as it is an incomplete methodology	从计量经济学方法论的角度来看，等权重不是一种正确的统计方法，因为它是一种不完整的方法论
 Despite these concerns equal weighting can be constructively employed when summarizing information for a non-technical audience	尽管存在这些担忧，但在为非技术受众总结信息时，可以建设性地采用同等权重
 The distinct estimates are presented to illustrate the range of possible results and the average taken to represent the "consensus" or "recommended" estimate	提出不同的估计是为了说明可能结果的范围以及代表“共识”或“推荐”估计的平均值
 As mentioned above, a number of methods have been proposed for selection of the averaging weights	如上所述，已经提出了多种方法来选择平均权重
 In the following sections we outline four popular methods: Smoothed BIC, Smoothed AIC, Mallows averaging, and Jackknife averaging	在以下部分中，我们概述了四种流行的方法：平滑 BIC、平滑 AIC、Mallows 平均和 Jackknife 平均
 Smoothed BIC and AIC	平滑的 BIC 和 AIC
-This has been been interpreted to mean that the model with the highest value of the right-hand-side approximately has the highest marginal likelihood and is thus the model with the highest probability of being the true model	这被解释为意味着右侧值最高的模型大约具有最高的边际似然，因此是成为真实模型的概率最高的模型
-There is another interpretation of Schwarz's result	对施瓦茨的结果还有另一种解释
-which is a simple exponential transformation of the BIC	这是 BIC 的简单指数变换
+This has been interpreted to mean that the model with the highest value of the right-hand-side approximately has the highest marginal likelihood and is thus the model with the highest probability of being the true model	这被解释为意指右侧最高值的模型大约具有最高的边际似然，因此是成为真实模型的概率最高的模型
+There is another interpretation of Schwarz's result	对 Schwarz的结果还有另一种解释
+which is a simple exponential transformation of the BIC	这是 BIC 的简单幂指变换
 These are known as BIC weights and produce the smoothed BIC estimator	这些称为 BIC 权重，并生成平滑的 BIC 估计量
 Some properties of the BIC weights are as follows	BIC 权重的一些特征如下
 The Smoothed BIC (SBIC) estimator is	平滑 BIC (SBIC) 估计量为
 The SBIC estimator is a smoother function of the data than BIC selection as there are no discontinuous jumps across models	SBIC 估计量是比 BIC 选择更平滑的数据函数，因为模型之间不存在不连续跳跃
 An advantage of the smoothed BIC weights and estimator is that it can be used to combine models from different probability families	平滑 BIC 权重和估计量的优点是它可用于组合来自不同概率族的模型
 It is also important that the full formula is used for the BIC (no omission of constants) when combining models from different probability families	在组合来自不同概率族的模型时，将完整公式用于 BIC（不遗漏常数）也很重要
-Computationally it is better to implement smoothed BIC with what are called "BIC differences" rather than the actual values of the BIC, as the formula as written can produce numerical overflow problems	在计算上，最好使用所谓的“BIC 差异”而不是 BIC 的实际值来实现平滑的 BIC，因为所编写的公式可能会产生数值溢出问题
-denote the lowest BIC among the models and define the BIC differences	表示模型中最低的 BIC 并定义 BIC 差异
-They do not provide a strong theoretical justification for this specific choice of transformation but it seems natural given the smoothed BIC formula and works well in simulations	他们没有为这种特定的变换选择提供强有力的理论依据，但考虑到平滑的 BIC 公式，这似乎很自然，并且在模拟中效果很好
+Computationally it is better to implement smoothed BIC with what are called "BIC differences" rather than the actual values of the BIC, as the formula as written can produce numerical overflow problems	在计算上，最好使用所谓的“BIC 差值”而不是 BIC 的实际值来实现平滑的 BIC，因为所编写的公式可能会产生数值溢出问题
+denote the lowest BIC among the models and define the BIC differences	表示模型中最低的 BIC 并定义 BIC 差值
+They do not provide a strong theoretical justification for this specific choice of transformation but it seems natural given the smoothed BIC formula and works well in simulations	他们没有为这种特定的变换选择提供强有力的理论依据，但考虑到平滑的 BIC 公式，这似乎很自然，并且在模拟中表现很好
 The algebraic properties of the AIC weights are similar to those of the BIC weights	AIC 权重的代数性质与 BIC 权重的代数性质相似
 The model with the smallest AIC receives the greatest AIC weight, and models with similar AIC values receive similar AIC weights	AIC 最小的模型获得最大的 AIC 权重，AIC 值相似的模型获得相似的 AIC 权重
 Computationally the AIC weights should be computed using AIC differences	在计算上，AIC 权重应使用 AIC 差值来计算
 The AIC weights algebraically equal	AIC 权重在代数上相等
-The AIC weights tend to be more spread out across models than the corresponding BIC weights	AIC 权重往往比相应的 BIC 权重更分散在模型中
+The AIC weights tend to be more spread out across models than the corresponding BIC weights	AIC 权重往往比相应的 BIC 权重在模型之间更分散
 The Smoothed AIC (SAIC) estimator is	平滑 AIC (SAIC) 估计量为
 The SAIC estimator is a smoother function of the data than AIC selection	SAIC 估计量是比 AIC 选择更平滑的数据函数
 Recall that both AIC selection and BIC selection are model selection consistent in the sense that as the sample size gets large the probability that the selected model is a true model is arbtrarily close to one	回想一下，AIC 选择和 BIC 选择都是模型选择一致的，因为随着样本量变大，所选模型是真实模型的概率任意接近 1
@@ -4485,40 +4485,39 @@ Mallows Model Averaging	Mallows 模型平均
 In linear regression the Mallows criterion (28.14) applies directly to the model averaging estimator (28.29)	在线性回归中，Mallows 准则 (28.14) 直接应用于模型平均估计量 (28.29)
 The model averaging estimator for fixed weights is	固定权重的模型平均估计量为
 The model averaging residual is	模型平均残差为
-In the case of model selection the Mallows penalty is proportional to the number of estimated coefficients	在模型选择的情况下，马洛斯惩罚与估计系数的数量成正比
-In the model averaging case the Mallows penalty is the average number of estimated coefficients	在模型平均情况下，Mallows 罚分是估计系数的平均数
+In the case of model selection the Mallows penalty is proportional to the number of estimated coefficients	在模型选择的情况下，Mallows 惩罚与估计系数的数量成正比
+In the model averaging case the Mallows penalty is the average number of estimated coefficients	在模型平均情况下，Mallows 惩罚是估计系数的平均数
 The Mallows-selected weight vector is that which minimizes the Mallows criterion	Mallows 选择的权重向量是最小化 Mallows 准则的权重向量
-Figure 28.7: Mallows Weight Selection	图 28.7：锦葵权重选择
+Figure 28.7: Mallows Weight Selection	图 28.7：Mallows 权重选择
 In the special case of two nested models the Mallows criterion can be written as	在两个嵌套模型的特殊情况下，Mallows 准则可以写为
-This is the same as the Stein Rule weight (28.27) with a slightly different shrinkage constant	这与斯坦因规则权重 (28.27) 相同，但收缩常数略有不同
-Based on the latter observation	基于后一种观测
-The latter condition is analogous to the conditions for improvements in the Stein Rule theory	后一个条件类似于斯坦因规则理论中的改进条件
+This is the same as the Stein Rule weight (28.27) with a slightly different shrinkage constant	这与Stein Rule 权重 (28.27) 相同，但收缩常数略有不同
+Based on the latter observation	基于后一观测
+The latter condition is analogous to the conditions for improvements in the Stein Rule theory	后一个条件类似于Stein Rule 理论中的改进条件
 This shows that using model selection tools to select the averaging weights is asymptotically optimal for regression fitting and point forecasting	这表明使用模型选择工具来选择平均权重对于回归拟合和点预测是渐近最优的
 Jackknife (CV) Model Averaging	Jackknife (CV) 模型平均
 A disadvantage of Mallows selection is that the criterion is valid only when the errors are conditionally homoskedastic	Mallows 选择的缺点是该准则仅在误差条件同方差时才有效
 In the Machine Learning literature this method is called stacking	在机器学习文献中，这种方法称为堆叠
 A fitted averaging regression (with fixed weights) can be written as	拟合平均回归（具有固定权重）可以写为
 This means that the jackknife estimate of variance (or equivalently the cross-validation criterion) equals	这意味着方差的折刀估计（或等效的交叉验证准则）等于
-which is a quadratic function of the weight vector	这是权重向量的二次函数
-Hansen and Racine (2012) call this the Jackknife Model Averaging (JMA) estimator	B. E. Hansen 和 Racine (2012) 将其称为 Jackknife 模型平均 (JMA) 估计量
+which is a quadratic function of the weight vector	这是权重向量的二次方函数
+Hansen and Racine (2012) call this the Jackknife Model Averaging (JMA) estimator	Hansen 和 Racine (2012) 将其称为 Jackknife 模型平均 (JMA) 估计量
 The algebraic properties of the solution are similar to Mallows	该解的代数性质与 Mallows 类似
 This result is similar to Andrews (1991c) generalization of Li (1987)'s result for model selection	这个结果类似于 Andrews (1991c) 对 Li (1987) 的模型选择结果的推广
-The implication of this theory is that JMA weight selection is computationally simple and has excellent sampling performance	该理论的含义是JMA权重选择计算简单并且具有优异的抽样性能
-Granger-Ramanathan Averaging	格兰杰-拉马纳森平均
+The implication of this theory is that JMA weight selection is computationally simple and has excellent sampling performance	该理论的含义是 JMA 权重选择计算简单并且具有优良的抽样表现
+Granger-Ramanathan Averaging	Granger-Ramanathan 平均
 A method similar to JMA based on hold-out samples was proposed for forecast combination by Granger and Ramanathan (1984), and has emerged as a popular method in the modern machine learning literature	Granger 和 Ramanathan (1984) 提出了一种类似于 JMA 的基于保留样本的预测组合方法，该方法已成为现代机器学习文献中的流行方法
-Randomly split the sample into two parts: an estimation an an evaluation sample	将样本随机分为两部分：估计样本和评估样本
-To impose the non-negativity constraints it is best to use quadratic programming	为了施加非负约束，最好使用二次规划
+Randomly split the sample into two parts: an estimation and an evaluation sample	将样本随机分为两部分：估计样本和评估样本
+To impose the non-negativity constraints it is best to use quadratic programming	为了施加非负约束，最好使用二次方编程
 This Granger-Ramanathan approach is best suited for applications with a very large sample size where the efficiency loss from the hold-out sample split is not a concern	这种 Granger-Ramanathan 方法最适合样本量非常大的应用，在这种情况下，保留样本分割带来的效率损失不构成问题
-We illustrate the model averaging methods with the empirical application from Section 28.18, which reported wage regression estimates for the CPS sub-sample of Asian women focusing on the return to experience between 0 and 30 years	我们通过第 28.18 节的实证应用来说明模型平均方法，该节报告了亚洲女性 CPS 子样本的工资回归估计，重点关注 0 到 30 年间的经验回报
-Also reported in the final column is the weighted average estimate of the return to experience as a percentage	最后一栏中还报告了经验回报的加权平均估计百分比
-The results show that the methods put weight on somewhat different models	结果表明，这些方法偏重于有些不同的模型
+We illustrate the model averaging methods with the empirical application from Section 28.18, which reported wage regression estimates for the CPS sub-sample of Asian women focusing on the return to experience between 0 and 30 years	我们通过第 28.18 节的实证应用来说明模型平均方法，该节报告了亚洲女性 CPS 子样本的工资回归估计，重点关注 0 到 30 年间经验的回报
+Also reported in the final column is the weighted average estimate of the return to experience as a percentage	最后一栏中还报告了经验对回报的加权平均估计百分比
+The results show that the methods put weight on somewhat different models	结果表明，这些方法偏重于一些不同的模型
 The averaging estimators from the non-BIC methods are similar to one another but SBIC produces a much smaller estimate than the other methods	非 BIC 方法的平均估计量彼此相似，但 SBIC 产生的估计值比其他方法小得多
-Table 28.2: Model Averaging Weights and Estimates of Return to Experience among Asian Women	表 28.2：亚洲女性的模型平均权重和经验回报估计
+Table 28.2: Model Averaging Weights and Estimates of Return to Experience among Asian Women	表 28.2：亚洲女性的模型平均权重和经验的回报估计
 Using (8.21) we can write	利用(8.21)我们可以写出
 where the final equality is the multivariate normal integral	其中最终的等式是多元正态积分
 Proof of Theorem 28.2 From (28.11)	定理 28.2 的证明来自 (28.11)
 The final equality holds under the assumption of conditional homoskedasticity	最终的等式在条件同方差的假设下成立
-The final equality holds under conditional homoskedasticity	最终的等式在条件同方差下成立
 Proof of Theorem 28.4 The proof uses Taylor expansions similar to those used for the asymptotic distribution theory of the MLE in nonlinear models	定理 28.4 的证明 该证明使用泰勒展开式，类似于非线性模型中 MLE 渐近分布理论所使用的泰勒展开式
 We avoid technical details so this is not a full proof	我们避免了技术细节，因此这不是完整的证明
 and the Wald statistic on the left-side of (28.35) is uniformly integrable	(28.35) 左侧的 Wald 统计量是一致可积的
@@ -4530,96 +4529,96 @@ This means that the selection criterion is model selection consistent as claimed
 This shows that the selection criterion asymptotically over-selects with positive probability	这表明选择准则以正概率渐近过度选择
 The next step is to show that	下一步是证明
 Together these imply (28.36)	这些一起意味着（28.36）
-Finally we show that (28.36) implies (28.18)	最后我们证明 (28.36) 蕴涵 (28.18)
+Finally we show that (28.36) implies (28.18)	最后我们展示 (28.36) 意味着 (28.18)
 The second inequality is (28.36)	第二个不等式是(28.36)
 The second technical result is from Bock (1975, Theorems A\&B)	第二个技术结果来自 Bock（1975，定理 A\&B）
-By expansion and Legendre's duplication formula	通过展开式和勒让德复制公式
-Proof of Theorem 28.10 By the quadratic structure we can calculate that	定理28.10的证明 通过二次结构我们可以计算出
+By expansion and Legendre's duplication formula	通过展开式和 Legendre 复制公式
+Proof of Theorem 28.10 By the quadratic structure we can calculate that	定理28.10的证明 通过二次方结构我们可以计算出
 Machine Learning	机器学习
 This chapter reviews machine learning methods for econometrics	本章回顾计量经济学的机器学习方法
-This chapter briefly covers ridge regression, Lasso, elastic net, regression trees, bagging, random forests, ensembling, Lasso IV, double-selection/post-regularization, and double/debiased machine learning	本章简要介绍了岭回归、Lasso、弹性网络、回归树、装袋、随机森林、集成、Lasso IV、双重选择/后正则化和双重/去偏机器学习
+This chapter briefly covers ridge regression, Lasso, elastic net, regression trees, bagging, random forests, ensembling, Lasso IV, double-selection/post-regularization, and double/debiased machine learning	本章简要介绍了脊回归、Lasso、弹性网络、回归树、套袋、随机森林、合成、Lasso IV、双重选择/后正则化和双重/去偏机器学习
 A classic reference is Hastie, Tibshirani, and Friedman (2008)	经典参考文献是 Hastie、Tibshirani 和 Friedman (2008)
-For reviews of machine learning in econometrics see Belloni, Chernozhukov and Hansen (2014a), Mullainathan and Spiess (2017), Athey and Imbens (2019), and Belloni, Chernozhukov, Chetverikov, Hansen, and Kato (2021)	有关计量经济学中机器学习的评论，请参阅 Belloni、Chernozhukov、Chetverikov、Hansen 和 Kato (2021)
+For reviews of machine learning in econometrics see Belloni, Chernozhukov and Hansen (2014a), Mullainathan and Spiess (2017), Athey and Imbens (2019), and Belloni, Chernozhukov, Chetverikov, Hansen, and Kato (2021)	有关计量经济学中机器学习的评述，请参阅 Belloni、Chernozhukov、Chetverikov、Hansen 和 Kato (2021)
 Big Data, High Dimensionality, and Machine Learning	大数据、高维和机器学习
 Three inter-related concepts are "big data", "high dimensionality", and "machine learning"	三个相互关联的概念是“大数据”、“高维”和“机器学习”
 Big data is typically used to describe datasets which are unusually large and/or complex relative to traditional applications	大数据通常用于描述相对于传统应用程序异常大和/或复杂的数据集
 Some challenges associated with big data are storage, transmission, and computation	与大数据相关的一些挑战是存储、传输和计算
-High Dimensional is typically used to describe datasets with an unusually large number of variables	高维通常用于描述具有异常大量变量的数据集
+High Dimensional is typically used to describe datasets with an unusually large number of variables	高维通常用于描述具有异常多变量数的数据集
 Machine Learning is typically used to describe a set of algorithmic approaches to statistical learning	机器学习通常用于描述一组统计学习的算法方法
 Only recently has the literature expanded to include inference	直到最近，文献才扩展到包括推断
 In this chapter we focus on supervised learning as it is a natural extension of linear regression	在本章中，我们重点关注监督学习，因为它是线性回归的自然延伸
-Machine learning arose from the computer science literature and thereby adopted a distinct set of labels to describe familar concepts	机器学习源于计算机科学文献，因此采用了一组不同的标签来描述熟悉的概念
+Machine learning arose from the computer science literature and thereby adopted a distinct set of labels to describe familar concepts	机器学习源于计算机科学文献，因此采用了一组不同的标签来刻画熟悉的概念
 In this chapter, however, we will use standard econometric language and terminology	然而，在本章中，我们将使用标准的计量经济学语言和术语
 For econometrics, machine learning can be thought of as "highly nonparametric"	对于计量经济学来说，机器学习可以被认为是“高度非参数的”
 Connections between nonparametric estimation, model selection, and machine learning methods arise in tuning parameter selection by cross-validation and evaluation by out-of-sample prediction accuracy	非参数估计、模型选择和机器学习方法之间的联系出现在通过交叉验证调整参数选择和通过样本外预测精度评估的过程中
 These issues are taken seriously in machine learning applications; frequently with multiple levels of hold-out samples	这些问题在机器学习应用中受到认真对待；经常使用多个级别的保留样本
 High Dimensional Regression	高维回归
-It may seem shocking to contemplate an application with more regressors than observations	考虑一个自变量多于观测值的应用程序似乎令人震惊
+It may seem shocking to contemplate an application with more regressors than observations	考虑一个自变量多于观测值的应用似乎令人震惊
 Many of the variables may be low-information but it is difficult to know a priori which are relevant and which irrelevant	许多变量可能是低信息的，但很难先验地知道哪些是相关的，哪些是不相关的
-In this chapter we discuss several alternative estimation methods, including ridge regression, Lasso, elastic net, regression trees, and random forests	在本章中，我们讨论几种替代估计方法，包括岭回归、套索、弹性网络、回归树和随机森林
+In this chapter we discuss several alternative estimation methods, including ridge regression, Lasso, elastic net, regression trees, and random forests	在本章中，我们讨论几种替代估计方法，包括脊回归、套索、弹性网络、回归树和随机森林
 p-norms	p-范数
-For discussion of ridge and Lasso regression we will be making extensive use of the 1-norm and 2norm, so it is useful to review the definition of the general p-norm	为了讨论岭回归和 Lasso 回归，我们将广泛使用 1-范数和 2-范数，因此回顾一下一般 p-范数的定义是有用的
+For discussion of ridge and Lasso regression we will be making extensive use of the 1-norm and 2norm, so it is useful to review the definition of the general p-norm	为了讨论脊回归和 Lasso 回归，我们将广泛使用 1-范数和 2-范数，因此回顾一下一般 p-范数的定义是有用的
 Important special cases include the 1-norm	重要的特殊情况包括 1-范数
 We also define the "0-norm"	我们还定义了“0-范数”
 the number of non-zero elements	非零元素的数量
-This is only heuristically labeled as a "norm"	这只是启发性地标记为“规范”
+This is only heuristically labeled as a "norm"	这只是启发性地标记为“范数”
 The p-norm satisfies the following additivity property	p-范数满足以下可加性性质
 The following inequalities are useful	以下不等式很有用
 Applying Hölder's (29.1) we also have the inequality	应用 Hölder 的 (29.1) 我们也有不等式
-Ridge Regression	岭回归
-Ridge regression is a shrinkage-type estimator with similar but distinct properties from the JamesStein estimator (see Section 28.20)	岭回归是一种收缩型估计量，与 JamesStein 估计量具有相似但不同的特征（参见第 28.20 节）
+Ridge Regression	脊回归
+Ridge regression is a shrinkage-type estimator with similar but distinct properties from the James-Stein estimator (see Section 28.20)	脊回归是一种收缩型估计量，与 James-Stein 估计量具有相似但不同的特征（参见第 28.20 节）
 We discuss both in turn	我们依次讨论两者
 The second motivation is based on penalization	第二个动机是基于惩罚
 Minimization subject to a penalty has a dual representation as constrained minimization	受到惩罚的最小化具有作为约束最小化的双重表达
-This shows that they have the same solution	这表明他们有相同的解决方案
-Figure 29.1: Ridge Regression Dual Minimization Solution	图 29.1：岭回归双极小化解决方案
-and minimize the SSE subject to the penalty	并将上交所受到的处罚降到最低
+This shows that they have the same solution	这表明他们有相同的解
+Figure 29.1: Ridge Regression Dual Minimization Solution	图 29.1：脊回归双最小化解
+and minimize the SSE subject to the penalty	并将 SSE 受到的处罚降到最低
 This allows some coefficients to be penalized more (or less) than other coefficients	这允许某些系数比其他系数受到更多（或更少）的惩罚
-As for least squares there is a simple formula to calculate the CV criterion for ridge regression which greatly speeds computation	对于最小二乘法，有一个简单的公式来计算岭回归的 CV 准则，这大大加快了计算速度
-Theorem 29.1 The leave-one-out ridge regression prediction errors are	定理 29.1 留一岭回归预测误差为
+As for least squares there is a simple formula to calculate the CV criterion for ridge regression which greatly speeds computation	对于最小二乘法，有一个简单的公式来计算脊回归的 CV 准则，这大大加快了计算速度
+Theorem 29.1 The leave-one-out ridge regression prediction errors are	定理 29.1 留一法脊回归预测误差为
 For a proof see Exercise 29.1	证明参见练习 29.1
-I am unaware of a similar optimality result for cross-validated-selected ridge estimation	我不知道交叉验证选择的岭估计有类似的最优结果
-An important caveat is that the ridge regression estimator is not invariant to rescaling the regressors nor other linear transformations	一个重要的警告是，岭回归估计量对于重新调整自变量或其他线性变换并不是不变的
-Therefore it is common to apply ridge regression after applying standardizing transformations to the regressors	因此，通常在对自变量应用标准化变换后应用岭回归
-In Stata, ridge regression is available in the downloadable package lassopack	在 Stata 中，岭回归可在可下载包 lassopack 中找到
-Statistical Properties of Ridge Regression	岭回归的统计特性
-Under the assumptions of the linear regression model it is straightforward to calculate the exact bias and variance of the ridge regression estimator	在线性回归模型的假设下，可以直接计算岭回归估计量的精确偏误和方差
+I am unaware of a similar optimality result for cross-validated-selected ridge estimation	我不知道交叉验证选择的脊估计有类似的最优结果
+An important caveat is that the ridge regression estimator is not invariant to rescaling the regressors nor other linear transformations	一个重要的警告是，脊回归估计量对于重新调整自变量或其他线性变换并不是不变的
+Therefore it is common to apply ridge regression after applying standardizing transformations to the regressors	因此，通常在对自变量应用标准化变换后应用脊回归
+In Stata, ridge regression is available in the downloadable package lassopack	在 Stata 中，脊回归可在可下载包 lassopack 中找到
+Statistical Properties of Ridge Regression	脊回归的统计特性
+Under the assumptions of the linear regression model it is straightforward to calculate the exact bias and variance of the ridge regression estimator	在线性回归模型的假设下，可以直接计算脊回归估计量的精确偏误和方差
 Under random sampling its covariance matrix is	随机抽样下其协方差矩阵为
-Under cluster or serial dependence the central component modifies in the standard way	在群组或序列依赖下，中心成分以标准方式进行修改
+Under cluster or serial dependence the central component modifies in the standard way	在群组或序列相依下，中心成分以标准方式进行修改
 We can measure estimation efficiency by the mean squared error (MSE) matrix	我们可以通过均方误差（MSE）矩阵来衡量估计效率
-Given that the ridge estimator is explicitly biased there are natural concerns about how to interpret standard errors calculated from these covariance matrix estimators	鉴于岭估计量明显有偏误，自然会担心如何解释从这些协方差矩阵估计量计算出的标准误差
-Illustrating Ridge Regression	岭回归说明
-Figure 29.2: Least Squares and Ridge Regression Estimates of the Return to Experience To illustrate ridge regression we use the CPS dataset with the sample of Asian men with a college education (16 years of education or more) to estimate the experience profile	图 29.2：经验回报的最小二乘法和岭回归估计 为了说明岭回归，我们使用 CPS 数据集和受过大学教育（16 年或以上教育）的亚洲男性样本来估计经验概况
-We estimate the polynomial regression by least squares and by ridge regression, the latter shrinking the five coefficients on experience but not the intercept	我们通过最小二乘法和岭回归来估计多项式回归，后者根据经验缩小五个系数，但不缩小截距
-We calculate the ridge parameter by cross-validation	我们通过交叉验证计算岭参数
+Given that the ridge estimator is explicitly biased there are natural concerns about how to interpret standard errors calculated from these covariance matrix estimators	鉴于脊估计量明显有偏误，自然会担心如何解释从这些协方差矩阵估计量计算出的标准误差
+Illustrating Ridge Regression	脊回归说明
+Figure 29.2: Least Squares and Ridge Regression Estimates of the Return to Experience To illustrate ridge regression we use the CPS dataset with the sample of Asian men with a college education (16 years of education or more) to estimate the experience profile	图 29.2：经验回报的最小二乘法和脊回归估计 为了说明脊回归，我们使用 CPS 数据集和受过大学教育（16 年或以上教育）的亚洲男性样本来估计经验概况
+We estimate the polynomial regression by least squares and by ridge regression, the latter shrinking the five coefficients on experience but not the intercept	我们通过最小二乘法和脊回归来估计多项式回归，后者对经验缩小五个系数，但不缩小截距
+We calculate the ridge parameter by cross-validation	我们通过交叉验证计算脊参数
 Figure 29.2(b) displays the estimated experience profiles	图 29.2(b) 显示了估计的经验概况
 Lasso	套索
-In the previous section we learned that ridge regression minimizes the sum of squared errors plus a 2-norm penalty on the coefficient vector	在上一节中，我们了解到岭回归最小化了误差平方和加上系数向量的 2-范数惩罚
+In the previous section we learned that ridge regression minimizes the sum of squared errors plus a 2-norm penalty on the coefficient vector	在上一节中，我们了解到脊回归最小化了误差平方和加上系数向量的 2-范数惩罚
 The Lasso estimator is its minimizer	Lasso 估计量是其最小化
 Except for special cases the solution must be found numerically	除特殊情况外，必须通过数值方式找到解决方案
-The Lasso minimization problem has the dual constrained minimization problem	Lasso最小化问题具有对偶约束最小化问题
+The Lasso minimization problem has the dual constrained minimization problem	Lasso 最小化问题具有对偶约束最小化问题
 To see that the two problems are the same observe that the constrained minimization problem has the Lagrangian	要看到这两个问题是相同的，请观察约束最小化问题具有拉格朗日
 which has first order conditions	具有一阶条件
 This is the same as those for minimization of the penalized criterion	这与惩罚准则最小化的情况相同
-Thus the solutions are identical	因此解决方案是相同的
+Thus the solutions are identical	因此解是相同的
 Figure 29.3: Lasso Dual Minimization Solution	图 29.3：套索对偶最小化解决方案
 This eliminates a subset of the coefficients	这消除了系数的子集
 The Lasso path is drawn with the dashed line	套索路径用虚线绘制
 Thus while Lasso is a shrinkage estimator it does not shrink individual coefficients monotonically	因此，虽然 Lasso 是收缩估计量，但它不会单调收缩各个系数
-However both estimators follow similar solution paths, following the ridge of the SSE criterion rather than taking a direct path towards the origin	然而，两个估计量都遵循相似的解决方案路径，遵循 SSE 准则的山脊，而不是采取直接通往原点的路径
+However both estimators follow similar solution paths, following the ridge of the SSE criterion rather than taking a direct path towards the origin	然而，两个估计量都遵循相似的解决方案路径，遵循 SSE 准则的脊，而不是采取直接通往原点的路径
 which has the explicit solution	有显式解
-This shows that theLasso estimate is a continuous transformation of the least squares estimate	这表明Lasso估计是最小二乘估计的连续变换
-Figure 29.4: Transformations of Least Squares Estimates by Selection, Ridge, and Lasso	图 29.4：通过选择、岭和套索进行最小二乘估计的变换
-It is constructive to contrast this behavior with ridge regression and selection estimation	将这种行为与岭回归和选择估计进行对比是有建设性的
-Panel (a) displays the selection and ridge transformations, and panel (b) displays the Lasso transformation	面板 (a) 显示选择和山脊变换，面板 (b) 显示套索变换
-The Lasso and ridge estimators are continuous functions while the selection estimator is a discontinuous function	Lasso 和岭估计量是连续函数，而选择估计量是不连续函数
+This shows that the Lasso estimate is a continuous transformation of the least squares estimate	这表明 Lasso 估计是最小二乘估计的连续变换
+Figure 29.4: Transformations of Least Squares Estimates by Selection, Ridge, and Lasso	图 29.4：通过选择、脊和套索进行最小二乘估计的变换
+It is constructive to contrast this behavior with ridge regression and selection estimation	将这种行为与脊回归和选择估计进行对比是有建设性的
+Panel (a) displays the selection and ridge transformations, and panel (b) displays the Lasso transformation	面板 (a) 显示选择和脊变换，面板 (b) 显示套索变换
+The Lasso and ridge estimators are continuous functions while the selection estimator is a discontinuous function	Lasso 和脊估计量是连续函数，而选择估计量是不连续函数
 Consequently, we expect the Lasso to have reduced variance relative to selection estimators, permitting overall lower MSE	因此，我们预计 Lasso 相对于选择估计量的方差会减少，从而总体上降低 MSE
-As for ridge regression, Lasso is not invariant to the scaling of the regressors	对于岭回归，Lasso 对于自变量的标量化并不是不变的
+As for ridge regression, Lasso is not invariant to the scaling of the regressors	对于脊回归，Lasso 对于自变量的标量化并不是不变的
 It is conventional to scale all the variables to have mean zero and unit variance	通常将所有变量标量化至均值为零和单位方差
 Lasso is also not invariant to rotations of the regressors	套索对于自变量的旋转也不是不变的
 This is troubling as typically there is no default specification	这很令人不安，因为通常没有默认设定
 Applications of Lasso estimation in economics are growing	Lasso 估计在经济学中的应用正在不断增长
-Oster (2018) uses household scanner data to measure the effect of a diabetes diagnosis on food purchases	Oster（2018）使用家用扫描仪数据来衡量糖尿病诊断对食品购买的影响
+Oster (2018) uses household scanner data to measure the effect of a diabetes diagnosis on food purchases	Oster（2018）使用家用扫描数据来衡量糖尿病诊断对食品购买的影响
 Lasso Penalty Selection	套索惩罚选择
 It does not, however, provide a statistical rule for selection	然而，它没有提供选择的统计规则
 The most common selection method is minimization of K-fold cross validation (see Section 28.9)	最常见的选择方法是最小化 K 倍交叉验证（参见第 28.9 节）
@@ -4629,10 +4628,10 @@ The idea is to select a model similar but more parsimonious than the CV-minimizi
 Asymptotic consistency of CV selection for Lasso estimation has been demonstrated by Chetverikov, Liao, and Chernozhukov (2021)	Chetverikov、Liao 和 Chernozhukov (2021) 证明了 Lasso 估计的 CV 选择的渐近一致性
 Lasso Computation	套索计算
 The constraint representation of Lasso is minimization of a quadratic subject to linear inequality constraints	Lasso 的约束表达式是受线性不等式约束的二次方程的最小化
-The LARS algorithm produces a path of coefficients starting at the origin and ending at least squares	LARS 算法生成一条从原点开始到至少平方结束的系数路径
+The LARS algorithm produces a path of coefficients starting at the origin and ending at least squares	LARS 算法生成一条从原点开始到最小平方结束的系数路径
 This algorithm produces the Lasso path	该算法生成 Lasso 路径
 The demonstration is tedious so is not shown here	演示比较繁琐，这里就不展示了
-The most popular computational implementation for Lasso is the R glmnet command in the glmnet package	Lasso 最流行的计算实现是 glmnet 包中的 R glmnet 命令
+The most popular computational implementation for Lasso is the R glmnet command in the glmnet package	Lasso 最流行的计算实现是R软件 glmnet 包中的  glmnet 命令
 In Stata, Lasso is available with the command lasso	在 Stata 中，可以通过 lasso 命令使用 Lasso
 An alternative downloadable package with many options is lassopack	lassopack 是一个具有多种选项的替代下载包
 Asymptotic Theory for the Lasso	套索的渐近理论
@@ -4640,7 +4639,7 @@ The current distribution theory of Lasso estimation is challenging and mostly fo
 The model is the high-dimensional projection framework:	该模型是高维投影框架：
 Assumption 29.1 Restricted Eigenvalue Condition (REC)	假设29.1 受约束特征值条件（REC）
 We provide a rate for the Lasso estimator under the assumption of normal errors	我们在正常误差假设下提供了 Lasso 估计量的速率
-Instead, the assumption of sparsity enables the Lasso estimator to achieve a much improved rate of convergence	相反，稀疏性的假设使 Lasso 估计量能够实现大大提高的收敛速度
+Instead, the assumption of sparsity enables the Lasso estimator to achieve a much improved rate of convergence	相反，稀疏性的假设使 Lasso 估计量能够实现大大改进的收敛速度
 Other papers in the statistics literature (see the monograph of Bühlmann and van de Geer (2011)) use instead the assumption of sub-Gaussian tails, which is weaker than normality	统计文献中的其他论文（参见 Bühlmann 和 van de Geer (2011) 的专著）使用亚高斯尾部假设，该假设比正态性弱
 A theory which allows for non-normal heteroskedastic errors has been developed by Belloni, Chen, Chernozhukov, and Hansen (2012)	Belloni、Chen、Chernozhukov 和 Hansen (2012) 提出了一种允许非正态异方差误差的理论
 Fortunately there are alternatives to the sparsity assumption as we discuss in the following section	幸运的是，正如我们在下一节中讨论的那样，稀疏性假设还有其他选择
@@ -4648,7 +4647,7 @@ Approximate Sparsity	近似稀疏性
 The theory of the previous section used the strong assumption that the true regression is sparse: only a subset of the coefficients are non-zero, and the convergence rate depends on the cardinality of the nonzero coefficients	上一节的理论使用了真实回归是稀疏的强假设：只有系数的子集非零，并且收敛速度取决于非零系数的基数
 Assumption 29.2 Approximate Sparsity	假设 29.2 近似稀疏性
 Belloni, Chen, Chernozhukov, and Hansen (2012) show that convergence results similar to Theorem 29.3 hold under the approximate sparsity condition of Assumption 29.2	Belloni、Chen、Chernozhukov 和 Hansen (2012) 表明，在假设 29.2 的近似稀疏条件下，类似于定理 29.3 的收敛结果成立
-Their results show that exact sparsity is not required for Lasso estimation, rather what is needed is approximation properties similar to those used in series regression theory	他们的结果表明，Lasso 估计不需要精确的稀疏性，而需要的是类似于级数回归理论中使用的近似特征
+Their results show that exact sparsity is not required for Lasso estimation, rather what is needed is approximation properties similar to those used in series regression theory	他们的结果表明，Lasso 估计不需要精确的稀疏性，而需要的是类似于序列回归理论中使用的近似特征
 The approximate sparsity condition fails when the regressors cannot be easily ordered	当自变量无法轻松排序时，近似稀疏条件就会失败
 Elastic Net	弹性网
 The difference between Lasso and ridge regression is that the Lasso uses the 1-norm penalty while ridge uses the 2-norm penalty	Lasso 和 Ridge 回归之间的区别在于 Lasso 使用 1-范数惩罚，而 Ridge 使用 2-范数惩罚
@@ -4662,20 +4661,20 @@ Belloni and Chernozhukov (2013) provide conditions under which the post-Lasso es
 The post-Lasso is a hard thresholding or post-model-selection estimator	后套索是一种硬阈值或后模型选择估计量
 Regression Trees	回归树
 Regression trees were introduced by Breiman, Friedman, Olshen, and Stone (1984), and are also known by the acronym CART for Classification and Regression Trees	回归树由 Breiman、Friedman、Olshen 和 Stone (1984) 提出，也被称为分类和回归树的缩写 CART
-Regression trees may be especially useful when there are a combination of continuous and discrete regressors so that traditional kernel and series methods are challenging to implement	当存在连续和离散自变量的组合时，回归树可能特别有用，因此传统的核方法和级数方法难以实现
-They are also similar to threshold regression with intercepts only (no slope coefficients) and a very large number of thresholds	它们也类似于仅具有截距（无斜率系数）和大量阈值的阈值回归
+Regression trees may be especially useful when there are a combination of continuous and discrete regressors so that traditional kernel and series methods are challenging to implement	当存在连续和离散自变量的组合时，回归树可能特别有用，因此传统的核方法和序列方法难以实现
+They are also similar to threshold regression with intercepts only (no slope coefficients) and a very large number of thresholds	它们也类似于仅含截距（无斜率系数）和大量阈值的阈值回归
 If a regressor is categorical is should be first transformed to a set of binary variables	如果自变量是分类的，则应首先将其转换为一组二值变量
-The literature on regression trees has developed some colorful language to describe the tools based on the metaphor of a living tree. 1	关于回归树的文献已经发展了一些丰富多彩的语言来描述基于活树的隐喻的工具
-A subsample is a branch	1. 子样本是一个分支
+The literature on regression trees has developed some colorful language to describe the tools based on the metaphor of a living tree	关于回归树的文献已经发展了一些丰富多彩的语言来描述基于活树隐喻的工具
+A subsample is a branch 子样本是一个分支
 The basic algorithm starts with a single branch	基本算法从单个分支开始
 Pruning back is an application of backward stepwise regression with the goal of reducing over-parameterization and estimation variance	向后剪枝是向后逐步回归的一种应用，其目标是减少过度参数化和估计方差
 The regression tree algorithm makes extensive use of the regression sample split algorithm	回归树算法大量使用了回归样本分割算法
 The regression tree algorithm applies sequential sample splitting to make a large number of splits, each on a sub-sample of observations	回归树算法应用顺序样本分割来进行大量分割，每个分割针对观测的子样本
 The basic growth algorithm is as follows	基本增长算法如下
 This is the minimal number of observations on each leaf	这是每片叶子上的最小观测数量
-After the growth algorithm has been run, the estimated regression is a multi-dimensional step function with a large number of branches and leaves	运行增长算法后，估计的回归是一个具有大量分支和叶子的多维阶跃函数
+After the growth algorithm has been run, the estimated regression is a multi-dimensional step function with a large number of branches and leaves	运行增长算法后，估计的回归是一个具有大量分支和叶子的多维步阶函数
 The basic pruning algorithm is as follows	基本剪枝算法如下
-The Mallows-type criterion is used because of its simplicity, but to my knowledge does not have a theoretical foundation for regression tree penalty selection	使用Mallows型准则是因为它简单，但据我所知，它没有回归树惩罚选择的理论基础
+The Mallows-type criterion is used because of its simplicity, but to my knowledge does not have a theoretical foundation for regression tree penalty selection	使用 Mallows 型准则是因为它简单，但据我所知，它没有回归树惩罚选择的理论基础
 The advantage of regression trees is that they provide a highly flexible nonparametric approximation	回归树的优点是它们提供了高度灵活的非参数近似
 To obtain a good approximation a regression tree may require a high number of leaves which can result in a non-parsimonious model with high estimation variance	为了获得良好的近似值，回归树可能需要大量的叶子，这可能会导致具有高估计方差的非简约模型
 The sampling distribution of regression trees is difficult to derive, in part because of the strong correlation between the placement of the sample splits and the estimated means	回归树的抽样分布很难推导，部分原因是样本分割的位置和估计均值之间存在很强的相关性
@@ -4683,40 +4682,40 @@ While reducing estimation efficiency (the sample is effectively halved) the esti
 Regression trees algorithms are implemented in the R package rpart	回归树算法在 R 包 rpart 中实现
 Bagging	套袋
 Bagging (bootstrap aggregating) was introduced by Breiman (1996) as a method to reduce the variance of a predictor	Breiman (1996) 引入 Bagging（自助聚合）作为减少预测变量方差的方法
-The average of the bootstrap estimates is the bagging estimator of the CEF	Bootstrap 估计的平均值是 CEF 的 bagging 估计量
-Bagging is believed to be useful when the CEF estimator has low bias but high variance	当 CEF 估计量具有低偏误但高方差时，Bagging 被认为是有用的
-Bagging is believed to be less useful for estimators with high bias, as bagging may exaggerate the bias	据信，Bagging 对于具有高偏误的估计量来说不太有用，因为 bagging 可能会夸大偏误
+The average of the bootstrap estimates is the bagging estimator of the CEF	Bootstrap 估计的平均值是 CEF 的套袋估计量
+Bagging is believed to be useful when the CEF estimator has low bias but high variance	当 CEF 估计量具有低偏误但高方差时，套袋被认为是有用的
+Bagging is believed to be less useful for estimators with high bias, as bagging may exaggerate the bias	据信，套袋对于具有高偏误的估计量来说不太有用，因为套袋可能会夸大偏误
 We first describe the estimation algorithm	我们首先描述估计算法
-To understand the bagging process we use an example from Bühlmann and Yu (2002)	为了理解装袋过程，我们使用 Bühlmann 和 Yu (2002) 的例子
-Figure 29.5: Bagging and Selection	图 29.5：装袋和选择
-Bühlmann and Yu (2002) also calculate that most of this MSE reduction is due to a reduction in the variance of the bagged estimator	Bühlmann 和 Yu (2002) 还计算出 MSE 减少的大部分是由于袋装估计量方差的减少
+To understand the bagging process we use an example from Bühlmann and Yu (2002)	为了理解套袋过程，我们使用 Bühlmann 和 Yu (2002) 的例子
+Figure 29.5: Bagging and Selection	图 29.5：套袋和选择
+Bühlmann and Yu (2002) also calculate that most of this MSE reduction is due to a reduction in the variance of the bagged estimator	Bühlmann 和 Yu (2002) 还计算出 MSE 减少的大部分是由于套袋估计量方差的减少
 The most common application of bagging is to regression trees	bagging 最常见的应用是回归树
 This variance estimator is based on Efron (2014)	该方差估计量基于 Efron (2014)
-While Breiman's proposal and most applications of bagging are implemented using the nonparametric bootstrap, an alternative is to use subsampling	虽然 Breiman 的提议和大多数装袋应用都是使用非参数自助法实现的，但另一种方法是使用子抽样
-It turns out that it is somewhat easier to develop a distribution theory for bagging under subsampling, so a subsampling assumption is frequently employed in theoretical treatments	事实证明，在子抽样下开发 bagging 的分布理论要容易一些，因此在理论处理中经常采用子抽样假设
+While Breiman's proposal and most applications of bagging are implemented using the nonparametric bootstrap, an alternative is to use subsampling	虽然 Breiman 的提议和大多数套袋应用都是使用非参数自助法实现的，但另一种方法是使用子抽样
+It turns out that it is somewhat easier to develop a distribution theory for bagging under subsampling, so a subsampling assumption is frequently employed in theoretical treatments	事实证明，在子抽样下开发套袋的分布理论要容易一些，因此在理论处理中经常采用子抽样假设
 Random Forests	随机森林
-Random forests, introduced by Breiman (2001), are a modification of bagged regression trees	Breiman (2001) 引入的随机森林是袋装回归树的改进
+Random forests, introduced by Breiman (2001), are a modification of bagged regression trees	Breiman (2001) 引入的随机森林是套袋回归树的改进
 Random forests are popular in machine learning applications and have effectively displaced simple regression trees	随机森林在机器学习应用中很流行，并且有效地取代了简单的回归树
-Consider the procedure of applying bagging to regression trees	考虑将装袋应用于回归树的过程
+Consider the procedure of applying bagging to regression trees	考虑将套袋应用于回归树的过程
 This decorrelation reduces the variance of the bootstrap average, thereby reducing its MSE	这种去相关减少了自助平均值的方差，从而降低了其 MSE
 The basic random forest algorithm is as follows	基本的随机森林算法如下
 The recommended defaults are taken from the description in Hastie, Tibshirani, and Friedman (2008)	推荐的默认值取自 Hastie、Tibshirani 和 Friedman (2008) 中的描述
 This reduces the variance of the bootstrap average	这减少了自助平均值的方差
 The infinitesimal jackknife (29.18) can be used for variance and standard error estimation, as discussed in Wager, Hastie, and Efron (2014)	无穷小折刀 (29.18) 可用于方差和标准误差估计，如 Wager、Hastie 和 Efron (2014) 中所述
-While random forests are popular in applications, a distributional theory has been slow to develop	虽然随机森林在应用中很流行，但分布式理论的发展却很缓慢
+While random forests are popular in applications, a distributional theory has been slow to develop	虽然随机森林在应用中很流行，但分布理论的发展却很缓慢
 Some of the more recent results have made progress by focusing on random forests generated by subsampling rather than bootstrap (see the discussion at the end of the previous section)	最近的一些结果通过关注子抽样而不是自助生成的随机森林而取得了进展（请参阅上一节末尾的讨论）
 A variant proposed by Wager and Athey (2018) is to use honest trees (see the discussion at the end of Section 29.15) to remove the dependence between the sample splits and the sample means	Wager 和 Athey（2018）提出的一个变体是使用诚实树（参见第 29.15 节末尾的讨论）来消除样本分割和样本均值之间的依赖性
 Consistency and asymptotic normality has been established by Wager and Athey (2018)	Wager 和 Athey (2018) 建立了一致性和渐近正态性
 When combined with the honest tree construction, this ensures asymptotic normality of the estimator	当与诚实树结构相结合时，这确保了估计量的渐近正态性
-The standard computational implementation of random forests is the R randomForest command	随机森林的标准计算实现是 R randomForest 命令
-Ensembling	合奏
-Ensembling is the term used in machine learning for model averaging across machine learning algorithms	集成是机器学习中用于跨机器学习算法进行模型平均的术语
-Ensembling is popular in applied machine learning	集成在应用机器学习中很流行
+The standard computational implementation of random forests is the R randomForest command	随机森林的标准计算实现是 R 命令 randomForest 
+Ensembling	合成
+Ensembling is the term used in machine learning for model averaging across machine learning algorithms	合成是机器学习中用于跨机器学习算法进行模型平均的术语
+Ensembling is popular in applied machine learning	合成在应用机器学习中很流行
 We discussed model averaging models in Sections 28.26-28.31	我们在第 28.26-28.31 节中讨论了模型平均模型
 This selects the model averaging weights by minimizing a cross-validation criterion, subject to the constraint that the weights are non-negative and sum to one	这通过最小化交叉验证准则来选择模型平均权重，但受到权重非负且总和为 1 的约束
-Unfortunately, the theoretical literature concerning ensembling is thin	不幸的是，有关集成的理论文献很少
+Unfortunately, the theoretical literature concerning ensembling is thin	不幸的是，有关合成的理论文献很少
 Much of the advice concerning specific methods is based on empirical performance	关于具体方法的许多建议都是基于实证表现
-Lasso IV	套索四号
+Lasso IV	套索IV
 Belloni, Chen, Chernozhukov, and Hansen (2012) propose Lasso for estimation of the reduced form of an instrumental variables regression	Belloni、Chen、Chernozhukov 和 Hansen（2012）提出 Lasso 来估计工具变量回归的精简形式
 The model is linear IV	该模型是线性 IV
 The paper discusses alternative formulations	本文讨论了替代方案
@@ -4725,7 +4724,7 @@ Theorem 29.4 Under the Assumptions listed in Theorem 3 of Belloni, Chen, Chernoz
 Condition (29.19) is one of the key assumptions needed for the distribution result (29.20)	条件（29.19）是分布结果（29.20）所需的关键假设之一
 For Lasso SSIV, equation (29.21) replaces (29.19)	对于 Lasso SSIV，方程 (29.21) 替代 (29.19)
 Both interpretations suggest that Lasso SSIV is the preferred estimator	两种解释都表明 Lasso SSIV 是首选估计量
-IV Lasso can be implemented in Stata using the downloadable package ivlasso	IV Lasso 可以使用可下载的 ivlasso 包在 Stata 中实现
+IV Lasso can be implemented in Stata using the downloadable package ivlasso	IV Lasso 可以在 Stata 中使用可下载的 ivlasso 包实现
 Double Selection Lasso	双选套索
 Post-estimation inference is difficult with most machine learning estimators	对于大多数机器学习估计量来说，估计后推断很困难
 Belloni, Chernozhukov, and Hansen (2014b) proposed an alternative estimation and inference method which achives better coverage rates	Belloni、Chernozhukov 和 Hansen（2014b）提出了一种替代的估计和推断方法，可以实现更好的覆盖率
@@ -4735,14 +4734,14 @@ Furthermore, the result rests on the adequacy of the approximate sparsity assump
 The primary advantage of the double-selection estimator is its simplicity and clear intuitive structure	双选估计量的主要优点是其简单性和清晰直观的结构
 In Stata, the double-selection Lasso estimator can be computed by the dsregress command or with the pdslasso add-on package	在 Stata 中，双重选择 Lasso 估计量可以通过 dsregress 命令或使用 pdslasso 附加包来计算
 Post-Regularization Lasso	后正则化套索
-A potential improvement on double-selection Lasso is the post-regularization Lasso estimator of Chernozhukov, Hansen, and Spindler (2015), which is labeled as partialing-out Lasso in the Stata manual	双选 Lasso 的一个潜在改进是 Chernozhukov、Hansen 和 Spindler (2015) 的正则化后 Lasso 估计量，在 Stata 手册中被标记为部分化 Lasso
+A potential improvement on double-selection Lasso is the post-regularization Lasso estimator of Chernozhukov, Hansen, and Spindler (2015), which is labeled as partialing-out Lasso in the Stata manual	双选 Lasso 的一个潜在改进是 Chernozhukov、Hansen 和 Spindler (2015) 的正则化后 Lasso 估计量，在 Stata 手册中被标记为 partialing-out Lasso
 The estimator is essentially the same as Robinson (1988) for the partially linear model (see Section 19.24) but estimated by Lasso rather than kernel regression	该估计量本质上与 Robinson (1988) 的部分线性模型相同（参见第 19.24 节），但通过 Lasso 而不是核回归进行估计
 We first transform the structural equation (29.22) to eliminate the high-dimensional component	我们首先对结构方程（29.22）进行变换以消除高维成分
 The estimator recommended by Chernozhukov, Hansen, and Spindler (2015) is:	Chernozhukov、Hansen 和 Spindler（2015）推荐的估计量是：
 These insights are formalized in the following distribution theory	这些见解在以下分布理论中得到了形式化
 Chernozhukov, Hansen, and Spindler (2015) state the same distributional result under weaker regularity conditions	Chernozhukov、Hansen 和 Spindler (2015) 在较弱的正则性条件下陈述了相同的分布结果
-Regarding the theory, the derivation of the asymptotic theory for the post-regularization estimator is considerably easier than that for the double-selection estimator, as it only involves the manipulation of rates of convergence, while the double-selection estimator requires a careful attention to the handling of the union of the regressor sets	关于理论，后正则化估计量的渐近理论的推导比双选择估计量的渐进理论要容易得多，因为它只涉及收敛率的操纵，而双选择估计量需要仔细注意自变量集并集的处理
-The partialing-out Lasso estimator is available with the poregress command in Stata (implemented with post-Lasso estimation only), or with the pdslasso add-on package	部分化 Lasso 估计量可通过 Stata 中的 poregress 命令使用（仅通过后 Lasso 估计实现），或使用 pdslasso 附加包
+Regarding the theory, the derivation of the asymptotic theory for the post-regularization estimator is considerably easier than that for the double-selection estimator, as it only involves the manipulation of rates of convergence, while the double-selection estimator requires a careful attention to the handling of the union of the regressor sets	关于理论，后正则化估计量的渐近理论的推导比双选择估计量的渐进理论要容易得多，因为它只涉及收敛率的操纵，而双选择估计量需要仔细注意自变量集合并的处理
+The partialing-out Lasso estimator is available with the poregress command in Stata (implemented with post-Lasso estimation only), or with the pdslasso add-on package	partialing-out Lasso 估计量可通过 Stata 中的 poregress 命令使用（仅通过后 Lasso 估计实现），或使用 pdslasso 附加包
 Double/Debiased Machine Learning	双重/去偏误机器学习
 The most recent contribution to inference methods for model (29.22) is the Double/Debiased machine learning (DML) estimator of Chernozhukov, Chetverikov, Demirer, Duflo, Hansen, Newey, and Robins (2018)	对模型推断方法 (29.22) 的最新贡献是 Chernozhukov、Chetverikov、Demirer、Duflo、Hansen、Newey 和 Robins (2018) 的 Double/Debiased 机器学习 (DML) 估计量
 This estimation method has received considerable attention among econometricians in recent years and is considered the state-of-the-art estimation method	这种估计方法近年来受到计量经济学家的广泛关注，被认为是最先进的估计方法
@@ -4752,12 +4751,12 @@ The estimation algorithm is as follows	估计算法如下
 They are asymptotically equivalent but DML2 is preferred	它们渐近等价，但首选 DML2
 Theorem 29.6 Under the assumptions of Theorem 29.5,	定理29.6 在定理29.5的假设下，
 The authors argue that the DML estimator has improved sampling performance due to an improved rate of convergence of certain error terms	作者认为，由于某些误差项的收敛速度有所提高，DML 估计量提高了抽样性能
-Under sample splitting, however, we have an improved rate of convergence	然而，在样本分割下，我们的收敛速度有所提高
+Under sample splitting, however, we have an improved rate of convergence	然而，在样本分割下，我们获得改进的收敛速度
 Consequently, it is unclear if the distributional impact of sample splitting is large or small	因此，尚不清楚样本分割的分布影响是大还是小
 The advantage of the DML estimator over the post-regularization estimator is that the sample splitting eliminates the dependence between the two estimation steps, thereby reducing post-model-selection bias	DML 估计量相对于后正则化估计量的优点在于样本分割消除了两个估计步骤之间的依赖性，从而减少了后模型选择偏误
 At the beginning of this section the DML estimator was described as the "state-of-the-art"	在本节的开头，DML 估计量被描述为“最先进的”
 This field is rapidly developing so this specific estimator may be soon eclipsed by a further iteration	这个领域正在迅速发展，因此这个特定的估计量可能很快就会因进一步的迭代而黯然失色
-In Stata, the DML estimator is available with the xporegress command	在 Stata 中，DML 估计量可通过 xporegress 命令使用
+In Stata, the DML estimator is available with the xporegress command	在 Stata 中，DML 估计量可通过使用 xporegress 命令
 Proof of Theorem 29.2 Combining (29.8) and (29.9) we find that	定理 29.2 的证明 结合 (29.8) 和 (29.9) 我们发现
 The MSE of the least squares estimator is	最小二乘估计量的 MSE 为
 This shows that (29.28) is positive definite	这表明 (29.28) 是正定的
@@ -4770,11 +4769,11 @@ Equation (29.34) also implies	方程（29.34）也意味着
 Using (29.4) and (29.17)	使用（29.4）和（29.17）
 Proof of Theorem 29.4 We provide a sketch of the proof	定理 29.4 的证明 我们提供了证明的草图
 Similar to (29.30), under sufficient regularity conditions	与(29.30)类似，在充分正则条件下
-By the Schwarz inequality and (29.37)	由施瓦茨不等式和 (29.37)
+By the Schwarz inequality and (29.37)	由 Schwarz 不等式和 (29.37)
 the final inequality under (29.19)	(29.19) 下的最终不等式
-By the Hölder inequality (29.2), (29.38), and (29.39),	根据霍尔德不等式 (29.2)、(29.38) 和 (29.39)，
+By the Hölder inequality (29.2), (29.38), and (29.39),	根据  Hölder 不等式 (29.2)、(29.38) 和 (29.39)，
 the final bounds by (29.37) and (29.21)	最终界限为（29.37）和（29.21）
-which has the stated asymptotic distribution	其具有规定的渐近分布
+which has the stated asymptotic distribution	其具有声称的渐近分布
 The terms on the right side beyond the first are asymptotically negligible because	第一项之外的右侧项渐近可以忽略不计，因为
 by the Schwarz inequality and the above results, and	由 Schwarz 不等式和上述结果，以及
-by Hölder's (29.2), Theorem 29.3, (29.39), and Assumption (29.26)	由霍尔德 (29.2)、定理 29.3、(29.39) 和假设 (29.26) 得出
+by Hölder's (29.2), Theorem 29.3, (29.39), and Assumption (29.26)	由 Hölder (29.2)、定理 29.3、(29.39) 和假设 (29.26) 得出
