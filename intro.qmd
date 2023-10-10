@@ -26,5 +26,46 @@
 
 - 古扎拉蒂分别给出了主题（subject）索引或作者索引（Name）
 
+:::
+
+
+## Google Translation ML模型训练
+
+### 参考和准备
+
+::: {.callout-tip}
+
+操作参考：[Guide: How to Train a Google Translate AutoML v3 Model](https://custom.mt/guide-how-to-train-a-google-translate-automl-v3-model/)
 
 :::
+
+
+::: {.callout-note}
+
+1. 请将VPN网络模型调整为全局模式。考虑到训练模型的project受到google服务区域的限制，例如必须事先选定project的服务区域为洛杉矶。如果不开启全局模式，google云将不能正确匹配ID地址区域与设定的服务区域。
+
+2. 选定已经配置好的Google translation项目。例如My firs project（id: "reliable-proton-287507"）
+
+3. AutoML Translation 价格。简单地，训练时长 $\times$ 45\$/每小时；一般而言，训练对的数量10000以内，大概训练总时长需要2-3小时。具体 [参看](https://cloud.google.com/translate/automl/pricing?_ga=2.244445760.-437791585.1696945323&_gac=1.128506238.1696946469.Cj0KCQjw7JOpBhCfARIsAL3bobfoL3nxOhApasGBUzg1h9fwvXHIAZr1okVWKzb1_tCyrj_Kkk8AGyUaAtH_EALw_wcB&hl=zh-cn)
+
+:::
+
+
+
+
+### 检查tsv数据
+
+准备R包
+
+```{r}
+library(readr)
+library(magrittr)
+library(tidyverse)
+
+```
+
+```{r}
+file_path <- "tsv/hansen_hand.tsv"
+df_tsv <- read_tsv(file_path, col_names = FALSE, show_col_types = FALSE)
+
+```
